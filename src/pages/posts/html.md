@@ -1,30 +1,24 @@
 ---
-title: How To Choose An Interior Designer
+title: HTML Cheat Sheet
 subtitle: >-
-  Interior design is “the art or process of designing the interior, often
-  including the exterior, of a room or building”.
+  Html cheat sheet is a collection of html tags and attributes
 excerpt: >-
-  Interior design is “the art or process of designing the interior, often
-  including the exterior, of a room or building”. An interior designer is
-  someone who coordinates and manages such projects. Interior design is a
-  multifaceted profession that includes conceptual development, communicating
-  with the stakeholders of a project and the management and execution of the
-  design.
+  Html cheat sheet is a collection of html tags and attributes.
 date: '2017-03-26'
 thumb_img_path: images/1.jpg
-thumb_img_alt: A wooden table and white chairs
+thumb_img_alt: html
 seo:
-  title: How To Choose An Interior Designer
-  description: Interior design is “the art or process of designing the interior
+  title: HTML Cheat Sheet
+  description: Html cheat sheet is a collection of html tags and attributes.
   extra:
     - name: 'og:type'
       value: article
       keyName: property
     - name: 'og:title'
-      value: How To Choose An Interior Designer
+      value: HTML Cheat Sheet
       keyName: property
     - name: 'og:description'
-      value: Interior design is “the art or process of designing the interior
+      value: Html cheat sheet is a collection of html tags and attributes.
       keyName: property
     - name: 'og:image'
       value: images/1.jpg
@@ -35,12 +29,13 @@ seo:
     - name: 'twitter:title'
       value: How To Choose An Interior Designer
     - name: 'twitter:description'
-      value: Interior design is “the art or process of designing the interior
+      value: Html cheat sheet is a collection of html tags and attributes.
     - name: 'twitter:image'
       value: images/1.jpg
       relativeUrl: true
 template: post
 ---
+
 
 ## Html
 
