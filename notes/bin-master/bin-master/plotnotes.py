@@ -5,6 +5,7 @@
 (C) Lilian BESSON ~ Janvier 2014
 """
 
+
 from __future__ import print_function  # Python 2/3 compatibility !
 
 try:
@@ -34,9 +35,7 @@ csv_file_object = csv.reader(open(csv_file, 'rb'))
 #: Skip the fist line as it is a header
 header = csv_file_object.next()
 
-data = []
-for row in csv_file_object:
-    data.append(row)  # adding each row to the data variable
+data = [row for row in csv_file_object]
 #: Then convert from a list to an array
 data = np.array(data)
 

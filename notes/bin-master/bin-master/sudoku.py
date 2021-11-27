@@ -8,6 +8,7 @@
 - Dependency: install z3-solver (https://pypi.org/project/z3-solver/)
 """
 
+
 from __future__ import print_function
 import sys
 
@@ -32,10 +33,12 @@ X = [
 ]
 
 # each cell contains a value in {1, ..., 9}
-cells_c = [ z3.And(1 <= X[i][j], X[i][j] <= SIZE**2)
-            for i in range(SIZE**2)
-            for j in range(SIZE**2)
-          ]
+cells_c = [
+    z3.And(X[i][j] >= 1, X[i][j] <= SIZE ** 2)
+    for i in range(SIZE ** 2)
+    for j in range(SIZE ** 2)
+]
+
 
 # each row contains a digit at most once
 rows_c = [ z3.Distinct(X[i]) for i in range(SIZE**2) ]

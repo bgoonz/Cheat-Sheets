@@ -10,6 +10,7 @@ I am mainly trying to write fun and "Pythonic" Python, rather than trying to sol
 - Online: https://bitbucket.org/lbesson/bin/src/master/battleserver.py
 - License: MIT License (http://lbesson.mit-license.org).
 """
+
 __author__ = "Lilian Besson"
 __name_of_app__ = "Battle Server"
 __version__ = "0.1"
@@ -33,7 +34,7 @@ ships = OrderedDict({
     "Submarine": 3,
     "Destroyer": 2,
 })
-max_length = max(l for l in ships.values())
+max_length = max(ships.values())
 
 symbol_of_ship = OrderedDict({
     name: str.lower(list(set(name).intersection(ascii_uppercase))[0])
@@ -101,7 +102,7 @@ class Board(object):
             if x + size > self.x:
                 if debug: print(f"Unable to place ship '{name}' of size {size} at position {x}, {y} horizontally... ({x + size} > {self.x})")
                 return 1
-            if not set(self.board[x:x+size, y]) == {0}:
+            if set(self.board[x : x + size, y]) != {0}:
                 if debug: print(f"Unable to place ship '{name}' at position {x}, {y} horizontally: line from {x} to {x+size} is not empty!")
                 return 3
             self.board[x:x+size, y] = uint8_of_symbol[symbol_of_ship[name]]
@@ -109,7 +110,7 @@ class Board(object):
             if y + size > self.y:
                 if debug: print(f"Unable to place ship '{name}' of size {size} at position {x}, {y} vertically... ({x + size} > {self.x})")
                 return 2
-            if not set(self.board[x, y:y+size]) == {0}:
+            if set(self.board[x, y : y + size]) != {0}:
                 if debug: print(f"Unable to place ship '{name}' at position {x}, {y} vertically: row from {y} to {y+size} is not empty!")
                 return 4
             self.board[x, y:y+size] = uint8_of_symbol[symbol_of_ship[name]]

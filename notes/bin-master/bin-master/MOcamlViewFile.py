@@ -106,11 +106,7 @@ def open_file(buffer, filename):
     # stylescheme = manager.get_style_scheme("Naereen")
     buffer.set_style_scheme(stylescheme)
 
-    if os.path.isabs(filename):
-        path = filename
-    else:
-        path = os.path.abspath(filename)
-
+    path = filename if os.path.isabs(filename) else os.path.abspath(filename)
     language = manager.guess_language(filename)
     if language:
         buffer.set_highlight_syntax(True)
@@ -216,10 +212,7 @@ def update_cursor_position(buffer, view):
     start.set_line_offset(0)
     col = 0
     while start.compare(iter) < 0:
-        if start.get_char() == '\t':
-            col += tabwidth - col % tabwidth
-        else:
-            col += 1
+        col += tabwidth - col % tabwidth if start.get_char() == '\t' else 1
         start.forward_char()
     pos_label.set_text('[Caractère: %d, Ligne: %d, Colonne: %d]' % (nchars, row, col + 1))
 
@@ -245,10 +238,7 @@ def button_press_cb(view, ev):
         return False
     # check that the click was on the left gutter
     if ev.window == view.get_window(gtk.TEXT_WINDOW_LEFT):
-        if ev.button == 1:
-            mark_category = MARK_CATEGORY_1
-        else:
-            mark_category = MARK_CATEGORY_2
+        mark_category = MARK_CATEGORY_1 if ev.button == 1 else MARK_CATEGORY_2
         x_buf, y_buf = view.window_to_buffer_coords(gtk.TEXT_WINDOW_LEFT,
                                                     int(ev.x), int(ev.y))
         # get line bounds

@@ -62,7 +62,7 @@ def Capitalize(text):
 		if word_start:
 			c = c.upper()
 		word_start = not c.isalpha()
-		s = s + c
+		s += c
 	return s
 
 def FindMatchingParenthesis(text):
@@ -70,9 +70,9 @@ def FindMatchingParenthesis(text):
 	end = 0
 	for i in range(1, len(text)):
 		if text[i] == '{':
-			nesting = nesting + 1
+			nesting += 1
 		elif text[i] == '}':
-			nesting = nesting - 1
+			nesting -= 1
 		end = i
 		if nesting == 0:
 			break
@@ -98,7 +98,7 @@ def NormalizeAuthors(text):
 
 def NormalizePages(text):
 	parts = text.split('--', 1)
-	if not '--' in text:
+	if '--' not in text:
 		parts = text.split('-', 1)
 	normalized = parts[0].strip()
 	if len(parts) >= 2:
@@ -156,7 +156,7 @@ class Entry(object):
 		if not m:
 			return None
 		key = m.group(1)
-		if not self.entry_type == 'String':
+		if self.entry_type != 'String':
 			key = Capitalize(key)
 		text = text[m.end():]
 
@@ -194,7 +194,7 @@ class Entry(object):
 			s += max(0, 13-len(key))*' '
 			s += ' = '
 			value = self.rows[key]
-			if (not self.entry_type == 'String'):
+			if self.entry_type != 'String':
 				if (key in ['Author', 'Editor']):
 					value = NormalizeAuthors(value)
 				if (key == 'Pages'):
@@ -246,8 +246,7 @@ def ReadFile():
 				print(line.strip())
 			else:
 				lines.append(line)
-	text = '\n'.join(lines)
-	return text
+	return '\n'.join(lines)
 
 # main
 def main():

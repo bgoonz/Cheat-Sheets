@@ -67,9 +67,8 @@ def main(args):
     for name, arg in zip(names, args):
         # print(f"Argument of name '{name}' : {arg}")  # DEBUG
         if name != "action":
-            if name == 'filepath' or 'coverpath':
-                if arg.startswith('/home/lilian/Music/'):
-                    arg = arg[len('/home/lilian/Music/'):]
+            if arg.startswith('/home/lilian/Music/'):
+                arg = arg[len('/home/lilian/Music/'):]
             data[name] = arg
     return update_ui(start, data)
 

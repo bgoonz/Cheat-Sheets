@@ -86,16 +86,15 @@ def stream_file(path, url, room, password):
             # osx wants this because EOF is cached
             f.seek(0, os.SEEK_CUR)
             data = f.read(4096)
-            if not (data == ""):
+            if data != "":
                 urlencoded = urllib_quote(data).encode('utf-8')
                 encoded_str = base64.b64encode(urlencoded).decode('utf-8')
                 for _ in range(retries):
                     success = post(conn, url, encoded_str, room, password)
                     if success:
                         break
-                    else:
-                        time.sleep(1)
-                        conn = create_connection(url)
+                    time.sleep(1)
+                    conn = create_connection(url)
         error('There was an error connecting to the server.')
     except NotAuthorizedException:
         error('You\'re not authorized to share on %s/%s.' % (url, room))
@@ -155,11 +154,7 @@ args = parse_args()
 room = 'r/%s' % args.room
 tmp = tempfile.NamedTemporaryFile()
 
-if platform.system() == 'Darwin':
-    shell_args = '-qt 0'
-else:
-    shell_args = '-qf'
-
+shell_args = '-qt 0' if platform.system() == 'Darwin' else '-qf'
 size = terminal_size()
 if (size['rows'] > 30 or size['cols'] > 160):
     print('Current terminal size is %dx%d.' % (size['rows'], size['cols']))

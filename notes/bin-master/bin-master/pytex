@@ -105,10 +105,7 @@ def randombase(n=6):
     """
     import random
     import string
-    rb=""
-    for i in range(0,n):
-        rb=rb+random.choice(string.ascii_letters)
-    return rb
+    return "".join(random.choice(string.ascii_letters) for _ in range(n))
 
 class Traitement(object):
     r"""
@@ -124,7 +121,7 @@ class Traitement(object):
                 The comments are removed.
                 This is for Arxiv.
     """
-    def __init__ (self,arguments):
+    def __init__(self,arguments):
         self.arguments=arguments
 
         self.pwd = subprocess.getoutput("pwd")  #.decode("utf8")
@@ -142,18 +139,18 @@ class Traitement(object):
         for arg in self.arguments:
             if arg[0]!="-":
                 self.LireFichier(arg)
-            if arg == "--all" :
+            if arg == "--all":
                 self.Compil.tout = 1
-            if arg == "--verif" :
-                self.Compil.verif = True
-            if arg == "--lotex" :
+            elif arg == "--lotex":
                 self.Compil.lotex = 1
-            if arg == "--no-compilation" :
+            elif arg == "--no-compilation":
                 self.Sortie.nocompilation = True
-            if arg == "--rough-source" :
+            elif arg == "--rough-source":
                 self.Sortie.rough_source = True
                 self.Sortie.nocompilation = True
 
+            elif arg == "--verif":
+                self.Compil.verif = True
         self.listeFichPris = []
         self.pytex_filename = self.pwd+"/"+"Inter_"+self.prefix+"-"+os.path.basename(self.original_file).replace(".tex","_pytex.tex")
         self.source_filename = self.pwd+"/"+self.prefix+"-source-"+os.path.basename(self.original_file)
@@ -163,14 +160,19 @@ class Traitement(object):
             self.pytex_filename = self.pwd+"/all-"+os.path.basename(self.original_file).replace(".tex","_pytex.tex")
         self.log_filename = self.pytex_filename.replace("_pytex.tex","_pytex.log")
     def accept_input(self,filename):
-        if filename in self.ok_filenames_list and filename not in self.refute_filenames_list :
-            return True
-        return False
+        return (
+            filename in self.ok_filenames_list
+            and filename not in self.refute_filenames_list
+        )
     def rough_code(self,medicament,fast=False):
         codeLaTeX = LaTeXparser.FileToCodeLaTeX(medicament.pytex_file())
         print("Creating rough code")
-        rough_code = codeLaTeX.rough_source(medicament.source_filename,medicament.bibliographie(),medicament.index(),fast=fast)
-        return rough_code
+        return codeLaTeX.rough_source(
+            medicament.source_filename,
+            medicament.bibliographie(),
+            medicament.index(),
+            fast=fast,
+        )
     def future_reference_verification(self,medicament,fast=True):
         r"""
         Print the list of references that are made to the future.
@@ -221,7 +223,7 @@ class Traitement(object):
 
         for occ in labels:
             label = occ.arguments[0]
-            if label in label_dict.keys() :
+            if label in label_dict:
                 print("The label <{0}> is used multiple times".format(label))
                 print("Here is the last time I see that")
                 print(occ.as_written)
@@ -239,7 +241,7 @@ class Traitement(object):
         ok_hash=self.myRequest.ok_hash
         usefull_ok_hash=[]
 
-        for lab in label_dict.keys():
+        for lab in label_dict:
             label_pos=label_dict[lab].position
             for ref in ref_dict[lab]:
                 if ref.position<label_pos:
@@ -250,8 +252,8 @@ class Traitement(object):
                     h.update(line_ref.encode("utf8"))
                     hexdigest=h.hexdigest()
 
-                    if hexdigest not in ok_hash :
-                        num=num+1
+                    if hexdigest not in ok_hash:
+                        num += 1
                         ecrire("--------- label {0} -----".format(lab),34)
                         A=pygrep.grep(re.escape(line_ref),star,first_result=True)
                         B=pygrep.grep(re.escape(line_label),star,first_result=True)
@@ -278,7 +280,7 @@ class Traitement(object):
 
                         print(hexdigest)
 
-                    else :
+                    else:
                         usefull_ok_hash.append(hexdigest)
 
         for f in concerned_files :
@@ -424,16 +426,15 @@ def ProduceIntermediateCode(medicament):
     if medicament.Compil.tout == 0:
         list_input = codeLaTeX.search_use_of_macro("\input",1)
         begin_document=codeLaTeX.find("\\begin{document}")
-        for occurrence in list_input :
+        for occurrence in list_input:
             A=occurrence.analyse()
             # If an "\input" is before "\begin{document}", we keep it.
             # This behaviour is due to the fact that some "\input" are in the preamble,
             # inside \newcommand for example.
-            if A.position > begin_document :
-                if not medicament.accept_input(A.filename):
-                    codeLaTeX = codeLaTeX.replace(occurrence.as_written,"%")
-                else :
-                    pass
+            if A.position > begin_document and not medicament.accept_input(
+                A.filename
+            ):
+                codeLaTeX = codeLaTeX.replace(occurrence.as_written,"%")
     return codeLaTeX
 
 def ProducePytexCode(medicament):
@@ -441,10 +442,7 @@ def ProducePytexCode(medicament):
     See the docstring of Traitement
     return an object LaTeXparser.CodeLaTeX because it has to be passed to plugins.
     """
-    # The plugin has to do itself the work to apply inputs if he wants to.
-    # The reason is that some plugin just want to deal with the main tex file.
-    codeLaTeX = medicament.intermediate_code()
-    return codeLaTeX
+    return medicament.intermediate_code()
 
 def CreateRoughCode(medicament):
     """
