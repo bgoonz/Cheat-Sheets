@@ -1,10 +1,9 @@
 ---
 title: Bash
 excerpt: >-
-  The Grand Canyon is a steep-sided canyon carved by the Colorado River in
-  Arizona, United States. The Grand Canyon is 277 miles (446 km) long, up to 18
-  miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857
-  meters).
+  Variables are how programming and scripting languages represent data. A variable is nothing more than a label, a name assigned to a location or set of locations in computer memory holding an item of data.
+
+Variables appear in arithmetic operations and manipulation of quantities, and in string parsing.
 date: '2021-11-27'
 thumb_img_path: images/bash.png
 thumb_img_alt: Hikers on the trail
