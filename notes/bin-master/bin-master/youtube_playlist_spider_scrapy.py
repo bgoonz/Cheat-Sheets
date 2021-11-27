@@ -32,9 +32,7 @@ class QuotesSpider(scrapy.Spider):
 
     def parse(self, response):
         """Parse the response to print a JSON file of all videos in /tmp/wl.html"""
-        i = 0
-        for item in response.css('td.pl-video-title'):
-            i += 1  # enumerate(...) was not working!
+        for i, item in enumerate(response.css('td.pl-video-title'), start=1):
             video = item.css('a.pl-video-title-link')[0]
             author = item.css('div.pl-video-owner')[0]
             res = {

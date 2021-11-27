@@ -103,7 +103,7 @@ if __name__ == '__main__':
 
     # Try 100 times to generate a sentence
     nb_max_trial = 100
-    for trial in range(nb_max_trial):
+    for _ in range(nb_max_trial):
         try:
             words = markov(corpus, start, length)
             if random.random() <= proba_title:

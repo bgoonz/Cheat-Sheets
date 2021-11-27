@@ -316,38 +316,36 @@ Sleep one minute.
             print(e)
             print("Trying to use the rest of the arguments to send the text message...")
             text = " ".join(argv)
-    else:
-        if argv:
-            # Text of the SMS
-            if isinstance(argv, list):
-                text = " ".join(argv)
-            elif isinstance(argv, str):
-                text = argv
-            else:
-                printc("<Warning>argv seems to be of unknown type (not list, not str, but {}) ...".format(type(argv)))
-                text = argv
-            text = text.replace("\\n", "\n")
-            # Durty hack to have true new lines in the message
+    elif argv:
+        # Text of the SMS
+        if isinstance(argv, list):
+            text = " ".join(argv)
+        elif isinstance(argv, str):
+            text = argv
         else:
-            text = """Test SMS sent from {machinename} with FreeSMS.py (the {date}).
+            printc("<Warning>argv seems to be of unknown type (not list, not str, but {}) ...".format(type(argv)))
+            text = argv
+        text = text.replace("\\n", "\n")
+        # Durty hack to have true new lines in the message
+    else:
+        text = """Test SMS sent from {machinename} with FreeSMS.py (the {date}).
 
     (a Python 2.7+ / 3.4+ script by Lilian Besson, open source, you can find the code
     at https://github.com/Naereen/FreeSMS.py
     or https://perso.crans.org/besson/bin/FreeSMS.py)
 
     For any issues, reach me by email at jarvis[at]crans[dot]org !"""
-            # FIXED Check that this is working correctly!
-            machinename = "jarvis"  # Default name!
-            try:
-                machinename = open("/etc/hostname").readline()[:-1]
-            except OSError:
-                print("Warning: unknown machine name (file '/etc/hostname' not readable?)...")
-                machinename = "unknown machine"
-            text = text.format(date=today, machinename=machinename)
-            text = text.replace("[at]", "@").replace("[dot]", ".")
+        # FIXED Check that this is working correctly!
+        machinename = "jarvis"  # Default name!
+        try:
+            machinename = open("/etc/hostname").readline()[:-1]
+        except OSError:
+            print("Warning: unknown machine name (file '/etc/hostname' not readable?)...")
+            machinename = "unknown machine"
+        text = text.format(date=today, machinename=machinename)
+        text = text.replace("[at]", "@").replace("[dot]", ".")
 
-    answers = send_sms(text, sleep_duration=sleep_duration)
-    return answers
+    return send_sms(text, sleep_duration=sleep_duration)
 
 
 if __name__ == "__main__":

@@ -10,6 +10,7 @@ The selected color is returned (printed) on the consol.
 - Licence: MIT Licence (http://lbesson.mit-license.org).
 """
 
+
 from __future__ import print_function  # Python 2/3 compatibility !
 
 from gi.repository import Gtk
@@ -18,9 +19,8 @@ import sys
 if __name__ == '__main__':
     color_sel = Gtk.ColorSelectionDialog("GTK Color Picker (color-picker.py)")
 
-    if len(sys.argv) > 1:
-        if Gtk.gdk.Color(sys.argv[1]):
-            color_sel.colorsel.set_current_color(Gtk.gdk.Color(sys.argv[1]))
+    if len(sys.argv) > 1 and Gtk.gdk.Color(sys.argv[1]):
+        color_sel.colorsel.set_current_color(Gtk.gdk.Color(sys.argv[1]))
 
     if color_sel.run() == Gtk.ResponseType.OK:
         color = color_sel.get_color_selection().get_current_color()

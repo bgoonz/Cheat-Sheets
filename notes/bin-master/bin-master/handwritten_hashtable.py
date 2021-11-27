@@ -159,8 +159,7 @@ class hashtable(object):
     def __iter__(self):
         for c in self._array:
             if len(c) > 0:
-                for kv in c:
-                    yield kv
+                yield from c
 
 
 # --- Testing

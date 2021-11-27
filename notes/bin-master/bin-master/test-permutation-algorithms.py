@@ -22,10 +22,7 @@ from itertools import permutations as itertools_permutations
 
 def ins_all_positions(x, l):
     """Return a list of lists obtained from l by inserting x at every possible index."""
-    res = []
-    for i in range(0, len(l) + 1):
-        res.append(l[:i] + [x] + l[i:])
-    return res
+    return [l[:i] + [x] + l[i:] for i in range(len(l) + 1)]
 
 
 # Now the main permutations generator.
@@ -114,16 +111,13 @@ def scan_largest_movable(a):
     def aux(acc, i):
         if i >= len(a):
             return acc
-        else:
-            if not is_movable(a, i):
-                return aux(acc, i + 1)
-            else:
-                x, _ = a[i]
-                if acc is None:
-                    return aux(i, i + 1)
-                else:
-                    j = acc if x < a[acc][0] else i
-                    return aux(j, i + 1)
+        if not is_movable(a, i):
+            return aux(acc, i + 1)
+        x, _ = a[i]
+        if acc is None:
+            return aux(i, i + 1)
+        j = acc if x < a[acc][0] else i
+        return aux(j, i + 1)
     return aux(None, 0)
 
 
@@ -148,13 +142,12 @@ def third_permutations(iterable):
         p = r[:]
         yield p
         i = scan_largest_movable(a)
-        if i is None:  # No more permutation!
+        if i is None:
             raise StopIteration
-        else:
-            x, _ = a[i]
-            move(a, i)
-            scan_flip_larger(x, a)
-            r = remove_direction(a)
+        x, _ = a[i]
+        move(a, i)
+        scan_flip_larger(x, a)
+        r = remove_direction(a)
 
 
 # --- Function to test and compare them
@@ -165,9 +158,7 @@ def test(list_of_f, iterable, stopearly=False):
     result = True
     print("Testing for the iterable {} ...".format(iterable))  # DEBUG
     i = iterable
-    allperms = []
-    for f in list_of_f:
-        allperms.append(sorted([list(p) for p in f(iterable)]))
+    allperms = [sorted([list(p) for p in f(i)]) for f in list_of_f]
     for i, pi in enumerate(allperms):
         for j in range(i + 1, len(allperms)):
             pj = allperms[j]

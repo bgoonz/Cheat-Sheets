@@ -53,10 +53,7 @@ class ColorMap:
         self.colors = colors
         self.min = 0
         self.max = 1
-        if name:
-            self.name = name
-        else:
-            self.name = "Default"
+        self.name = name or "Default"
 
     def __str__(self):
         return "ColorMap (name = {}): min = {}, max = {}, colors = {}.".format(self.name, self.min, self.max, self.colors)
@@ -68,9 +65,7 @@ class ColorMap:
         """ Return the color corresponding to value. """
         if not len(self.colors):
             return (0, 0, 0)
-        elif len(self.colors) == 1:
-            return self.colors[0][1]
-        elif value < self.min:
+        elif len(self.colors) == 1 or value < self.min:
             return self.colors[0][1]
         elif value > self.max:
             return self.colors[-1][1]
@@ -85,10 +80,9 @@ class ColorMap:
         r = (value - inf_color[0]) / (sup_color[0] - inf_color[0])
         if r < 0:
             r = -r
-        color = [sup_color[1][0] * r + inf_color[1][0] * (1 - r),
+        return [sup_color[1][0] * r + inf_color[1][0] * (1 - r),
                  sup_color[1][1] * r + inf_color[1][1] * (1 - r),
                  sup_color[1][2] * r + inf_color[1][2] * (1 - r)]
-        return color
 
 
 # Some colormaps

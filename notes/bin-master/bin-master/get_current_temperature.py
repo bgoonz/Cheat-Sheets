@@ -37,7 +37,7 @@ def save_data(time_of_data, data, filename):
 
 
 def load_data(filename):
-    old_data = dict()
+    old_data = {}
     if isfile(filename):
         with open(filename, "r") as fp:
             old_data = load(fp)

@@ -31,7 +31,7 @@ def get_data(location, key, delay=365):
     oneday = timedelta(days=1)
     alldata = {}
     all_cloud_cover = {}
-    for d in range(delay):
+    for _ in range(delay):
         t = thisday.isoformat()
         if 'T' not in t:
             t += 'T12:00:00'
@@ -48,9 +48,7 @@ def get_data(location, key, delay=365):
 
 
 def save_data(all_cloud_cover, filename):
-    new_dict = dict()
-    for d, k in all_cloud_cover.items():
-        new_dict[d.isoformat()] = k
+    new_dict = {d.isoformat(): k for d, k in all_cloud_cover.items()}
     with open(filename, "w") as fp:
         dump(new_dict, fp)
 
@@ -58,7 +56,7 @@ def save_data(all_cloud_cover, filename):
 def load_data(filename):
     with open(filename, "r") as fp:
         new_dict = load(fp)
-        all_cloud_cover = dict()
+        all_cloud_cover = {}
         for d, k in new_dict.items():
             dt = parse(d.replace('T12:00:00', ''))
             all_cloud_cover[dt] = k

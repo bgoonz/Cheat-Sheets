@@ -53,14 +53,12 @@ def main(url):
     xs_pixels, ys_pixels = ax.transData.transform(numpy.vstack([xs, ys]).T).T
     img_height = fig.get_figheight() * fig.dpi
 
-    f = open('/home/lilian/Public/commit_size_vs_commit_message_size.html', 'w')
-    f.write('<img src="commit_size_vs_commit_message_size.png" usemap="#points"/>')
-    f.write('<map name="points">')
-    for x_pixel, y_pixel, msg, commit in zip(xs_pixels, ys_pixels, msgs, commits):
-        f.write('<area shape="circle" coords="%d,%d,5" href="https://%s/commit/%s" title="%s">' % (x_pixel, img_height-y_pixel, url, commit, msg.replace('"', '')))
-    f.write('</map>')
-    f.close()
-
+    with open('/home/lilian/Public/commit_size_vs_commit_message_size.html', 'w') as f:
+        f.write('<img src="commit_size_vs_commit_message_size.png" usemap="#points"/>')
+        f.write('<map name="points">')
+        for x_pixel, y_pixel, msg, commit in zip(xs_pixels, ys_pixels, msgs, commits):
+            f.write('<area shape="circle" coords="%d,%d,5" href="https://%s/commit/%s" title="%s">' % (x_pixel, img_height-y_pixel, url, commit, msg.replace('"', '')))
+        f.write('</map>')
     fig.savefig('/home/lilian/Public/commit_size_vs_commit_message_size.png', dpi=fig.dpi)
 
 

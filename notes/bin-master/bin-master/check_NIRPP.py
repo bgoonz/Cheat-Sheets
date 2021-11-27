@@ -215,10 +215,7 @@ def pprint_nirpp(nirpp, length_checksum=length_checksum):
     for (i, l) in sorted(information_nirpp):
         n = nirpp[i: i + l]
         info = information_nirpp[(i, l)]
-        if n in info["mapping"]:
-            explain = "\"{}\"".format(info["mapping"][n])
-        else:
-            explain = n
+        explain = "\"{}\"".format(info["mapping"][n]) if n in info["mapping"] else n
         # For towns, durty hack to extract the town from the INSEE database
         if i == 7:
             try:

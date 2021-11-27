@@ -201,7 +201,7 @@ def main(argv):
     printc("<green>Reading the files<reset>, from: <blue>{}<reset>.".format(args['INFILE']))
     text = readfiles(args['INFILE'])
     # Decide where to save it
-    outname = args['--outfile'] if args['--outfile'] else 'wordcloud.png'
+    outname = args['--outfile'] or 'wordcloud.png'
     # Generate the wordcloud
     # print("Making a wordcloud from this text:\n", text)  # DEBUG
     wordcloud = generate(text,

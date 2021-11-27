@@ -76,11 +76,7 @@ def main(args):
         x, y = 0, 0
         t = len(all_possible_positions)
         if t > 0:
-            if next_x_y:
-                # FIXME that's where I can improve!
-                x, y = next_x_y.pop(0)
-            else:
-                x, y = choice(all_possible_positions)
+            x, y = next_x_y.pop(0) if next_x_y else choice(all_possible_positions)
         print(f"bot: {x},{y}")
         print(f"{x},{y}", file=child_stdin, flush=True)
         return x, y

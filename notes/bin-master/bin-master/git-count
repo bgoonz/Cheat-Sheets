@@ -77,11 +77,7 @@ def count(author=None, period='weekly', first='monday', number=None, range='', p
         if not number:
             number = 8
     elif period.startswith('m'):
-        until = date(
-            today.year+(today.month+1 > 12),
-            (today.month+1) % 12,
-            1
-        )
+        until = date(today.year + (today.month > 11), (today.month+1) % 12, 1)
         if not number:
             number = 12
     elif period.startswith('y'):
@@ -100,10 +96,11 @@ def count(author=None, period='weekly', first='monday', number=None, range='', p
             since = until - WEEK
         elif period.startswith('m'):
             since = date(
-                until.year-(until.month-1 <= 0),
-                1 + ((12+(until.month-1)-1) % 12),
-                1
+                until.year - (until.month <= 1),
+                1 + ((12 + (until.month - 1) - 1) % 12),
+                1,
             )
+
         elif period.startswith('y'):
             since = date(until.year-1, 1, 1)
 
