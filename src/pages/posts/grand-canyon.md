@@ -5,7 +5,7 @@ excerpt: >-
   Arizona, United States. The Grand Canyon is 277 miles (446 km) long, up to 18
   miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857
   meters).
-date: '2019-03-10'
+date: '2021-11-27'
 thumb_img_path: images/8.jpg
 thumb_img_alt: Hikers on the trail
 content_img_path: images/8.jpg
