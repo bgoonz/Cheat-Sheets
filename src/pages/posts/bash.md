@@ -43,6 +43,10 @@ template: post
 subtitle: Cheat Sheet
 ---
 
+
+
+
+
 Simple:
 
 ---
