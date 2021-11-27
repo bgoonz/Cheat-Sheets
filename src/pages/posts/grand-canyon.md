@@ -43,6 +43,7 @@ seo:
       value: images/8.jpg
       relativeUrl: true
 template: post
+subtitle: Cheat Sheet
 ---
 
 Photo by [Galen Crout.](https://unsplash.com/photos/fItRJ7AHak8)
