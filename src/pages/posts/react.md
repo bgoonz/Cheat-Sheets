@@ -95,7 +95,7 @@ ES6 + JSX:
 
 ## Lifecycle Events
 
-Modern React lifecycle methods (v16+) ![](https://bgoonz-blog.netlify.app/docs/react/cheatsheet/DZ-97vzW4AAbcZj.jpg)
+Modern React lifecycle methods (v16+) ![](https://bgoonz-blog.netlify.app/docs/react/cheatsheet/DZ-97vzW4AAbcZj.jpg)
 
 Legacy Lifecycle Events:
 
@@ -117,29 +117,29 @@ Sequence of lifecycle events:
 
 ![](https://bgoonz-blog.netlify.app/docs/react/cheatsheet/lifecycle-events.png)
 
-Inspired by [http://react.tips](http://react.tips/)
+Inspired by [http://react.tips](http://react.tips/)
 
 ## Special Props
 
-*   key: Unique identifier for an element to turn arrays/lists into hashes for better performance, e.g., key={id}
+*   key: Unique identifier for an element to turn arrays/lists into hashes for better performance, e.g., key={id}
 
-*   ref: Reference to an element via this.refs.NAME, e.g., ref="email" will create this.refs.email DOM node or ReactDOM.findDOMNode(this.refs.email)
+*   ref: Reference to an element via this.refs.NAME, e.g., ref="email" will create this.refs.email DOM node or ReactDOM.findDOMNode(this.refs.email)
 
-*   style: Accept an object of styles, instead of a string (immutable since v0.14), e.g., style={{color: red}}
+*   style: Accept an object of styles, instead of a string (immutable since v0.14), e.g., style={{color: red}}
 
-*   className: the HTML class attribute, e.g., className="btn"
+*   className: the HTML class attribute, e.g., className="btn"
 
-*   htmlFor: the HTML for attribute, e.g., htmlFor="email"
+*   htmlFor: the HTML for attribute, e.g., htmlFor="email"
 
-*   dangerouslySetInnerHTML: raw HTML by providing an object with the key \__html
+*   dangerouslySetInnerHTML: raw HTML by providing an object with the key \__html
 
-*   children: content of the element via this.props.children, e.g., this.props.children\[0]
+*   children: content of the element via this.props.children, e.g., this.props.children\[0]
 
-*   data-NAME: custom attribute, e.g., data-tooltip-text="..."
+*   data-NAME: custom attribute, e.g., data-tooltip-text="..."
 
 ## propTypes
 
-Types available under React.PropTypes:
+Types available under React.PropTypes:
 
 *   any
 
@@ -159,7 +159,7 @@ Types available under React.PropTypes:
 
 *   string
 
-To make required, append .isRequired.
+To make required, append .isRequired.
 
 More methods:
 
@@ -175,19 +175,19 @@ More methods:
 
 Properties:
 
-*   this.refs: Lists components with a ref prop
+*   this.refs: Lists components with a ref prop
 
 *   this.props: Any props passed to an element (immutable)
 
-*   this.state: State set by setState and getInitialState (muttable) — avoid setting state manually with this.state=...
+*   this.state: State set by setState and getInitialState (muttable) — avoid setting state manually with this.state=...
 
 *   this.isMounted: Flag whether the element has a corresponding DOM node or not
 
 Methods:
 
-*   setState(changes): Change state (partially) to this.state and trigger re-render
+*   setState(changes): Change state (partially) to this.state and trigger re-render
 
-*   replaceState(newState): Replace this.state and trigger re-render
+*   replaceState(newState): Replace this.state and trigger re-render
 
 *   forceUpdate(): Trigger DOM re-render immediately
 
@@ -223,7 +223,7 @@ As npm modules:
 
 ## React Components
 
-*   <https://github.com/brillout/awesome-react-components> and <http://devarchy.com/react-components>: List of React components
+*   <https://github.com/brillout/awesome-react-components> and <http://devarchy.com/react-components>: List of React components
 
 *   [Material-UI](http://www.material-ui.com/): Material design React components
 

@@ -1,6 +1,6 @@
 ---
 title: nodejs
-subtitle: A cautionary tale about riding
+subtitle: Nodejs Cheat Sheet
 excerpt: >-
   A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
 date: '2021-11-21'
@@ -19,7 +19,7 @@ seo:
       value: nodejs
       keyName: property
     - name: 'og:description'
-      value: A cautionary tale about riding
+      value: Nodejs Cheat Sheet
       keyName: property
     - name: 'og:image'
       value: images/3.jpg
@@ -30,7 +30,7 @@ seo:
     - name: 'twitter:title'
       value: nodejs
     - name: 'twitter:description'
-      value: A cautionary tale about riding
+      value: Nodejs Cheat Sheet
     - name: 'twitter:image'
       value: images/3.jpg
       relativeUrl: true
@@ -64,15 +64,15 @@ npm with its simple structure helped the ecosystem of Node.js proliferate, and n
 
 The most common example Hello World of Node.js is a web server:
 
-This code first includes the Node.js [`http` module](https://nodejs.org/api/http.html).
+This code first includes the Node.js [`http` module](https://nodejs.org/api/http.html).
 
-Node.js has a fantastic [standard library](https://nodejs.org/api/), including first-class support for networking.
+Node.js has a fantastic [standard library](https://nodejs.org/api/), including first-class support for networking.
 
-The `createServer()` method of `http` creates a new HTTP server and returns it.
+The `createServer()` method of `http` creates a new HTTP server and returns it.
 
 The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing us that the server is running.
 
-Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
+Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
 
 Those 2 objects are essential to handle the HTTP call.
 
@@ -94,7 +94,7 @@ JScopy
 
 res.setHeader('Content-Type',  'text/plain')
 
-and we close the response, adding the content as an argument to `end()`:
+and we close the response, adding the content as an argument to `end()`:
 
 JScopy
 
@@ -112,15 +112,15 @@ Many of those established over time as popular options. Here is a non-comprehens
 -   [**Express**](https://expressjs.com/): It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
 -   [**Fastify**](https://fastify.io/): A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js web frameworks.
 -   [**FeatherJS**](https://feathersjs.com/): Feathers is a lightweight web-framework for creating real-time applications and REST APIs using JavaScript or TypeScript. Build prototypes in minutes and production-ready apps in days.
--   [**Gatsby**](https://www.gatsbyjs.com/): A [React](https://reactjs.org/)-based, [GraphQL](https://graphql.org/) powered, static site generator with a very rich ecosystem of plugins and starters.
+-   [**Gatsby**](https://www.gatsbyjs.com/): A [React](https://reactjs.org/)-based, [GraphQL](https://graphql.org/) powered, static site generator with a very rich ecosystem of plugins and starters.
 -   [**hapi**](https://hapijs.com/): A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
 -   [**koa**](http://koajs.com/): It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatible changes without disrupting the existing community.
 -   [**Loopback.io**](https://loopback.io/): Makes it easy to build modern applications that require complex integrations.
--   [**Meteor**](https://meteor.com/): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](https://reactjs.org/), [Vue](https://vuejs.org/), and [Angular](https://angular.io/). Can be used to create mobile apps as well.
+-   [**Meteor**](https://meteor.com/): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](https://reactjs.org/), [Vue](https://vuejs.org/), and [Angular](https://angular.io/). Can be used to create mobile apps as well.
 -   [**Micro**](https://github.com/zeit/micro): It provides a very lightweight server to create asynchronous HTTP microservices.
 -   [**NestJS**](https://nestjs.com/): A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
--   [**Next.js**](https://nextjs.org/): [React](https://reactjs.org/) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
--   [**Nx**](https://nx.dev/): A toolkit for full-stack monorepo development using NestJS, Express, [React](https://reactjs.org/), [Angular](https://angular.io/), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
+-   [**Next.js**](https://nextjs.org/): [React](https://reactjs.org/) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
+-   [**Nx**](https://nx.dev/): A toolkit for full-stack monorepo development using NestJS, Express, [React](https://reactjs.org/), [Angular](https://angular.io/), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
 -   [**Sapper**](https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 -   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
 -   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
