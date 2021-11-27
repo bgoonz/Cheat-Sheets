@@ -37,8 +37,7 @@ seo:
       value: Python Cheat Sheet
     - name: 'twitter:description'
       value: >-
-        Hiking refers to difficult walking through dense forest, undergrowth, or
-        bushes.
+        Python is an interpreted, high-level and general-purpose, dynamically typed programming language
     - name: 'twitter:image'
       value: images/6.jpg
       relativeUrl: true
