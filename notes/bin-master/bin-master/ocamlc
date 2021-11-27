@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#
+# __author__ = 'Lilian BESSON'
+# __email__ = 'Lilian.BESSON[AT]ens-cachan[DOT]fr'
+# __date__ = '10-12-2013'
+#
+# A small wrapper around the output of ocamlc and ocamlopt.
+# Can be save to ~/bin/ocamlc for example.
+#
+version='.1'
+LANG='en'
+
+GREP="grep --color=always --line-buffered"
+
+echo -e "${reset}ocamlc on $u$black$*$reset"
+
+# (/usr/bin/ocamlc.opt -annot $@ 2>&1) \
+(ocamlc.opt -annot $@ 2>&1) \
+ | $GREP -vP "^\s*((\[|\]|\(|\))\s*)+$" \
+ | GREP_COLOR="01;35" $GREP -P "^File|$" \
+ | GREP_COLOR="02;34" $GREP -P "\"[^\"]+\.ml\"|$" \
+ | GREP_COLOR="01;31" $GREP -P "characters [0-9]+-[0-9]+:|$" \
+ | GREP_COLOR="05;01;33" $GREP -P "[wW]arning [0-9]+:.*$|$" \
+ | GREP_COLOR="04;01;33" $GREP -P "[eE]rror:.*$|$" \
+ | GREP_COLOR="05;01;31" $GREP -P "line [0-9]+|$" \
+ | uniq

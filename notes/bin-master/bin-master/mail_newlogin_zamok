@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+content="$(w -h -s | grep "$USER")"
+# Subject: less than 16 characters are readable
+subj="zamok: on $(echo "$content" | grep -o pts/[0-9]*), #$(echo "$content" | wc -l) active connections [PushToTel]"
+AT="@"
+
+mail_ghost.py "${content}" "$(echo $subj)" "jarvis${AT}crans.org" "besson${AT}zamok.crans.org" "besson${AT}zamok"
+echo -e "Jarvis Mail Daemon (newlogin : ${content})"

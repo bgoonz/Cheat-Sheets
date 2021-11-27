@@ -1,0 +1,204 @@
+#!/usr/bin/env bash
+# By: Lilian BESSON
+# Email: Lilian.BESSON[AT]ens-cachan[DOT]fr
+# Date: 04-11-2016
+#
+# autotex, a small wrapper around the input of pdflatex.
+# (http://perso.crans.org/besson/bin/autotex)
+#
+# autotex is designed to allow you to have excellent looking PDF
+# even for minimal LaTeX file (1 line or more, but no painful \begin{document} or package imports)
+#
+# Simply edit ~/template.tex, and put ONE '\input{MyFileNameToChangeWithAutoTex}' on it,
+# between \begin{document} and \end{document}.
+#
+# New: now autotex supports auto changing the title of the produced PDF file
+# Simply add ONE line in you .tex file :
+# '%autotex% Titre: My awesome title'
+# or '%autotex% Title: My awesome title'
+#
+# New: now autotex supports auto changing the scale parameters for geometry package
+# Simply add ONE line in you .tex file :
+# '%autotex% Scale: 0.82' to import geometry with \usepackage[scale=0.82]{geometry}
+#
+# New: One can use two templates : ~/template.fr.tex to be used with French TeX files (*.fr.tex)
+# and ~/template.en.tex to be used with English TeX files (*.en.tex), which is the default.
+#
+# Example of a LaTeX2e template to use with autotex :
+# (http://perso.crans.org/besson/publis/latex/template.tex) (and .fr.tex and .en.tex)
+#
+readonly version='2.3'
+NOANSI='false'
+
+# Use https://bitbucket.org/lbesson/bin/src/master/.color.sh to add colors in Bash scripts
+[ -f ~/.color.sh ] && . ~/.color.sh
+
+readonly icon="-i $(ls -H -- /usr/share/icons/*/*/*/*x-tex*svg | uniq | head -n1) "
+readonly NOTIFY="notify-send -t 10000 $icon autoTeX_v$version"
+pdflatex="pdflatex"
+readonly logfile=/tmp/autotex.log
+readonly MAXINCLUDEDFILES=200
+
+# Add here options to use with PDFLaTeX
+case "$1" in
+    batchmode|nonstopmode|scrollmode|errorstopmode )
+        echo -e "${magenta}Using \$1 as an option to pass to pdflatex : -interaction=${1}." | tee -a $logfile
+        # Automatically, my color wrapper [pdflatex](http://perso.crans.org/besson/bin/pdflatex) uses "-synctex=1 -file-line-error"
+        pdflatex="${pdflatex} -interaction=${1}"
+		shift
+	;;
+    -noansi )
+        # Use https://bitbucket.org/lbesson/bin/src/master/.color.sh to disable my colors in Bash scripts
+        [ -f ~/.nocolor.sh ] && . ~/.nocolor.sh
+        NOANSI='true'
+        pdflatex="/usr/bin/pdflatex -synctex=1 -file-line-error -interaction=errorstopmode"
+        shift
+    ;;
+esac
+
+autotexf() {
+    # Back up the original directory, because we have to go back to it after
+    oridir="$(pwd)"
+
+    f="$(basename -- "$1")"
+    dossier="$(dirname -- "$1")"
+    # If PDF, find the appropriate TeX source
+    f="${f//.pdf/.tex}"
+    # If .tex was not there, add it
+    f="${f%.tex}.tex"
+    # Special hack. DURTY : FIXME !
+    if [ "${dossier:0:6}" = "/home/" ]; then
+        p="$(pwd)/"
+    else
+        p="$(pwd)/${dossier}"
+    fi
+
+    if [ ! -f "$p"/"$f" ]; then
+        echo -e "${red}The file ${cyan}${u}'$p/$f'${U}${red} is NOT HERE : I skip it...${white}"
+        return 1
+    fi
+
+    echo -e "Working with $u'$f'$U on $blue'$p'$white." | tee -a $logfile
+
+    title="$(grep -- "%autotex% Titre: " "${p}/${f}")"
+    title="${title#%autotex% Titre: }"
+    if [ "X$title" = "X" ]; then
+        title="$(grep -- "%autotex% Title: " "${p}/${f}")"
+        title="${title#%autotex% Title: }"
+    fi
+    echo -e "Title: $green${title}$white" | tee -a $logfile
+
+    scale="$(grep -- "%autotex% Scale: " "${p}/${f}")"
+    scale="${scale#%autotex% Scale: }"
+    scale="${scale:-0.70}"
+    echo -e "Scale: $green${scale}$white" | tee -a $logfile
+
+    policesize="$(grep -- "%autotex% PoliceSize: " "${p}/${f}")"
+    policesize="${policesize#%autotex% PoliceSize: }"
+    policesize="${policesize:-11pt}"
+    echo -e "PoliceSize: $green${policesize}$white" | tee -a $logfile
+
+    # Try to change the template regarding the language
+    echo -e "Try to change the template regarding the language (default template is '~/template.tex')..." | tee -a $logfile
+    echo -e "We have f='${f}', and {f%.fr.tex}.fr.tex='${f%.fr.tex}.fr.tex', and {f%.en.tex}.en.tex='${f%.en.tex}.en.tex'..." | tee -a $logfile
+    langf="en"
+    # template="template.en.tex"
+    template="template.tex"
+    if [ "${f%.fr.tex}.fr.tex" = "$f" ]; then
+        langf="fr"
+        template="template.fr.tex"
+        echo -e "Switching language from default (en) to ${green}fr (French)${white}..." | tee -a $logfile
+    elif [ "${f%.en.tex}.en.tex" = "$f" ]; then
+        langf="en"
+        template="template.en.tex"
+        echo -e "Switching language from default (en) to ${green}en (English)${white}..." | tee -a $logfile
+    elif [ "${f%_twocolumns.tex}_twocolumns.tex" = "$f" ]; then
+        langf="fr"
+        template="template_twocolumns.tex"
+        echo -e "Switching template from default (template.tex) to ${green}two columns${white} (template_twocolumns.tex)..." | tee -a $logfile
+    fi
+
+    # There you can perform any automatic transformation to ~/$template !
+    cat "$HOME"/$template \
+    	| sed s/"scale=[0-9\.]*"/"scale=${scale}"/ \
+        | sed s/"11pt"/"${policesize}"/ \
+    	| sed s#"MonTitreAChangerViaAutoTeX"#"${title}"# \
+    	| sed s/"MyFileNameToChangeWithAutoTex"/"${f%.tex}"/ \
+    	> /tmp/$template
+
+    # Adapt here to the name of your style sheet
+    [ -f "$HOME"/naereen.sty ] && ln -s -f -v -- "$HOME"/naereen.sty /tmp/naereen.sty
+    ln -s -f -v "$p"/"$f" /tmp/"$f"
+
+    ## If this is too slow, remove it.
+    # Try to create symlinks to every included TeX files ?
+    includedfiles=$(grep -o "input{[^}]*" "$p"/"$f" | sed s/"input{"//)
+    nbifi=$(for i in ${includedfiles}; do ls "$i" "$i".tex 2>/dev/null; done | wc -l)
+    if [ "X${includedfiles}" = "X" ]; then
+        nbifi=0
+    fi
+    echo -e "${magenta}I found ${nbifi} file(s) being included in $f (with the \\\\input{...} command).${white}"
+    if (( nbifi < MAXINCLUDEDFILES )); then
+        for ifi in $includedfiles; do
+            [ -f "$p"/"$ifi" ] && ln -s -f -v -- "$p"/"$ifi" /tmp/"$ifi"
+            [ -f "$p"/"$ifi".tex ] && ln -s -f -v -- "$p"/"$ifi".tex /tmp/"$ifi".tex
+        done
+    fi
+
+    #  Try to do the same for pictures.
+    includedfiles=$(grep -o "includegraphics\[.*\]*{[^}]*" "$p"/"$f" | sed s/"includegraphics\[.*\]*{"//)
+    nbifi=$(for i in ${includedfiles}; do ls "$i".pdf "$i".png "$i".jpg "$i".svg 2>/dev/null; done | wc -l)
+    if [ "X${includedfiles}" = "X" ]; then
+        nbifi=0
+    fi
+    echo -e "${magenta}I found ${nbifi} file(s) being included in $f (with the \\\\includegraphics{...} command).${white}"
+    if (( nbifi < 100 )); then
+        for ifi in $includedfiles; do
+            [ -f "$p"/"$ifi".pdf ] && ln -s -f -v -- "$p"/"$ifi".pdf /tmp/"$ifi".pdf
+            [ -f "$p"/"$ifi".png ] && ln -s -f -v -- "$p"/"$ifi".png /tmp/"$ifi".png
+            [ -f "$p"/"$ifi".jpg ] && ln -s -f -v -- "$p"/"$ifi".jpg /tmp/"$ifi".jpg
+            [ -f "$p"/"$ifi".svg ] && ln -s -f -v -- "$p"/"$ifi".svg /tmp/"$ifi".svg
+        done
+    fi
+
+    # TODO: for BibTeX ?
+    # CP *.bib /tmp/
+
+    cd /tmp/
+    rm -v -f -- /tmp/${template%.tex}.pdf
+
+    echo -e "${cyan}Using $pdflatex as the pdflatex command.${white}" | tee -a $logfile
+    echo -e "${cyan}Using ~/$template as the template file.${white}" | tee -a $logfile
+
+    echo -e "\n\n\n===============================================================================\n\n\n"
+    # $pdflatex $template && $pdflatex $template && \
+    # bibtex ${template%.tex} && \
+    $pdflatex $template && $pdflatex $template && \
+        mv -f -v -- ${template%.tex}.pdf "$p"/"${f%.tex}".pdf
+    answ="$?"
+    # FIXME: use latexmk instead, to be sure to compile a good enough number of time
+
+    echo -e "The return code of the PDFLaTeX call is : ${red}${answ}${white}."
+
+    if [ "X${answ}" = "X0" ]; then
+        $NOTIFY "<b>Success :)</b>\n autoTeX have been able to compile the file ${f%.tex}.pdf from ${f%.tex}.pdf\n (In the directory <i>$p</i>.)"
+        if [ -f "$p"/"${f%.tex}".pdf ]; then
+            evince "$p"/"${f%.tex}".pdf &>/dev/null&
+        fi
+    else
+        $NOTIFY "<b>Failure :(</b>\n autoTeX have <b>NOT</b> been able to compile the file ${f%.tex}.pdf from ${f%.tex}.pdf\n (In the directory <i>$p</i>.)"
+    fi
+
+    # We have to go back !
+    cd "${oridir}"
+}
+
+#######
+# Start
+echo -e "$0 have been called with the arguments (after processing the options) : ${blue}$*${white}." | tee -a $logfile
+
+for i in "$@"; do
+    echo -e "Calling the function ${magenta}'autotexf'${white} for the argument ${u}'${i}'${U} (on pwd = $(pwd))..." | tee -a $logfile
+    autotexf "$i"
+    echo -e "Done for ${magenta}'autotexf'${white} on ${u}'${i}'${U}..." | tee -a $logfile
+done

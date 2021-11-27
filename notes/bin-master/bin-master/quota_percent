@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+if [[ $1 = "" ]] || [[ $1 = $USER ]] ; then
+    /usr/bin/quota
+else
+    /usr/bin/quota $*
+fi | awk -F'(:| *)' '
+  BEGIN { fs = "" }
+  ## /Disk/ { print }
+  {
+    if (NF == 2) { fs = $2 }
+    else if (fs != "") {
+      	#unit = 512/1024
+      	#system(/usr/bin/stat -c %B " fs) | getline unit
+      	#if (fs == "/home") { total = 400 }
+      	#else if (fs == "/var/mail") { total = 75 }
+	      #else { total = 100 }
+      printf "%3.1f%% on zamok (/home/besson/ on %s)\n", $2*100/$3, fs
+      #printf "%3.2f\t%3.2f\t%3.2f\t%3.1f\t%s\n", $2/1024, $3/1024, $4/1024, $2*100/$3, fs
+      	#printf "%3.2f\t%3.2f\t%3.2f\t%3.1f\t%s\n", $2/1024*unit, $3/1024*unit, $4/1024*unit, $2*100/$3, fs
+      fs = ""
+    }
+  }'

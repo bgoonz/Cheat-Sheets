@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Simple Bash script to emulate octave-cli (available only after v4.0.0)
+# (C) Lilian Besson, 2016
+echo -e "Starting Octave CLI..."
+notify-send "Octave" "Starting the Octave CLI..."
+
+xtitle ".: Octave CLI (v4.0.0) on $(pwd). $(date), by $USER@$HOSTNAME :." ;
+/usr/bin/octave-cli --silent --verbose --traditional --persist "$@" ;
+
+notify-send "Octave" "Exiting the Octave CLI..."
+echo -e "(done with the script $0)."

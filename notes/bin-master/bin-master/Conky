@@ -1,0 +1,9 @@
+#!/usr/bin/env /bin/bash
+pkill conky
+pkill -9 conky
+pkill conky
+echo "$USER launching Conky." &>> /tmp/Conky.tmp
+if [ "X$1" = "Xstart" ]; then
+	sleep 120s
+fi
+conky -c ~/.ConkyWizardTheme/ConkyWizardTheme &>> /tmp/Conky.tmp &

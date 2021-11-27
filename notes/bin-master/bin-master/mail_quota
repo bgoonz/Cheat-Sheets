@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# See https://intranet.crans.org/quota/ for more details
+content="$(/usr/local/bin/quota)"
+# Subject: less than 16 characters are readable
+subj="quota: $(/home/besson/bin/quota_percent) [PushToTel]"
+AT="@"
+
+/home/besson/bin/mail_ghost.py "${content}" "${subj}" "jarvis${AT}crans.org" "besson${AT}zamok.crans.org" "besson${AT}zamok"
+echo -e "Jarvis Mail Daemon (quota : ${content})"

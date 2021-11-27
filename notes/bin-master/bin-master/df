@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/bin/df -h -l -t ext3 -t ext4 -t fuseblk -t vfat

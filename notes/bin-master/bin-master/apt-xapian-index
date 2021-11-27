@@ -1,0 +1,49 @@
+#!/bin/sh
+# Originally at /etc/cron.weekly/, now at /etc/cron.monthly/
+# Not fixing the bug, but notifying the user about it.
+# Source at https://bitbucket.org/lbesson/bin/src/master/apt-xapian-index
+
+# Added by [Lilian Besson](https://bitbucket.org/lbesson/)
+echo "\nDate: $(date)\n /etc/cron.monthly/apt-xapian-index has been launched (from $0)." \
+	| tee -a /tmp/crontab.log \
+	| tee -a /tmp/apt-xapian-index.log
+
+exit 1
+
+CMD=/usr/sbin/update-apt-xapian-index
+
+# ionice should not be called in a virtual environment
+# (similar to man-db cronjobs)
+egrep -q '(envID|VxID):.*[1-9]' /proc/self/status || IONICE=/usr/bin/ionice
+
+# Check if we're on battery
+if which on_ac_power >/dev/null 2>&1; then
+    on_ac_power >/dev/null 2>&1
+    ON_BATTERY=$?
+
+    # Here we use "-eq 1" instead of "-ne 0" because
+    # on_ac_power could also return 255, which means
+    # it can't tell whether we are on AC or not. In
+    # that case, run update-a-x-i nevertheless.
+    [ "$ON_BATTERY" -eq 1 ] && exit 0
+fi
+
+# Rebuild the index
+if [ -x "$CMD" ]; then
+	# Added by [Lilian Besson](https://bitbucket.org/lbesson/)
+	notify-send \
+		--app-name="/etc/cron.monthly/apt-xapian-index" \
+		--icon="$(ls -H /usr/share/icons/*/*/128/*gnome-apt*svg | uniq | shuf | head -n1)" \
+		--urgency=critical --expire-time=120000 \
+		"Your /etc/cron.monthly is running *update-apt-xapian-index*" \
+		"  Sorry buddy, the Debian APT xapian index is being updated.
+  So your system will <i>freeze for two minutes or so</i>.
+  If you need to kill this process, do it with <b>top</b> or <b>htop</b>."
+		>/tmp/notify-send.log 2>&1
+	# Launch the $CMD
+	if [ -x "$IONICE" ]; then
+		nice -n 19 $IONICE -c 3 $CMD --quiet
+	else
+		nice -n 19 $CMD --quiet
+	fi
+fi

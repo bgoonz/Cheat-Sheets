@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+#
+# __author__ = 'Lilian BESSON'
+# __email__ = 'Lilian.BESSON[AT]ens-cachan[DOT]fr'
+# __date__ = '07-08-2013'
+#
+# A small wrapper around the output of chktex.
+# Can be save to ~/bin/chktex for example.
+#
+version='0.1'
+LANG='en'
+
+GREP="grep --color=always --line-buffered"
+WITHOUT="${WITHOUT:-1 26 36}"
+# 1 Command terminated with space.
+# 26  You should put a space in front of parenthesis.
+# 36 You ought to remove spaces in front of punctuation.
+
+echo -e "${clear}${reset} Starting: check LaTeX.${yellow}${u}"
+
+OPTION=""
+for i in $WITHOUT; do
+ echo -e "Warning n°=$i: ignored."
+ OPTION="$OPTION -n $i"
+done
+echo -e "${reset}${white}"
+
+(/usr/bin/chktex -q -I1 $OPTION -v1 -V -H1 "$*" 2>&1) \
+ | GREP_COLOR="01;33" $GREP -P "[wW]arning|$" \
+ | GREP_COLOR="01;31" $GREP -P "[eE]rror|$" \
+ | GREP_COLOR="40" $GREP -P "line [0-9]+:.*$|$" \
+ | GREP_COLOR="4" $GREP -P "[0-9]+ in|$" \
+ | GREP_COLOR="01;36" $GREP -P "$1|$" \
+ | uniq
+

@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* Font face */
+@font-face {
+  font-weight: normal;
+  font-style: normal; }
+
+/* Communs */
+html, body {
+  height: 100%; }
+
+body {
+  text-align: left;
+  color: white;
+  font: 12px/18px "Lucida sans", sans-serif;
+  background: black; }
+
+h2 {
+  font-size: 140%;
+  text-decoration: underline;
+}
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+img {
+  max-width: 100%;
+  text-align: center;
+  padding: 0;
+  width: 300px;
+  height: auto;
+  max-width: 100%; }
+
+/* header */
+.tabbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #AAA;
+  height: 70px;
+  padding: 0px 20px;
+  font-size: 12px;
+  /*line-height: 10px;*/
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7f8f9), color-stop(100%, #cfd5dd));
+  background-image: -webkit-linear-gradient(#f7f8f9, #cfd5dd);
+  background-image: -moz-linear-gradient(#f7f8f9, #cfd5dd);
+  background-image: -o-linear-gradient(#f7f8f9, #cfd5dd);
+  background-image: -ms-linear-gradient(#f7f8f9, #cfd5dd);
+  background-image: linear-gradient(#f7f8f9, #cfd5dd); }
+
+  .tabbar p {
+    font-size: 95%;
+    color: black;
+    text-align: left;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px; }
+
+.tabbar h1 {
+  color: #74859e;
+  line-height: 40px;
+  text-shadow: 0 1px 0 white;
+  font-size: 1.125em;
+  font-weight: bold;
+  padding: 0 0 0 20px; }
+
+/* gallery content */
+#content {
+  margin: 41px 0 0 0;
+  padding: 10px;
+  text-align: center; }
+
+#content .gallery img {
+  display: block;
+  border: 1px solid transparent;
+  -moz-transition: all 0.025s ease;
+  -webkit-transition: all 0.025s ease;
+  -o-transition: all 0.025s ease;
+  transition: all 0.025s ease; }
+
+#content .gallery li {
+  display: inline-block;
+  padding: 6px;
+  margin: 10px;
+  cursor: pointer;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.025s ease;
+  -webkit-transition: all 0.025s ease;
+  -o-transition: all 0.025s ease;
+  transition: all 0.025s ease; }
+
+#content .gallery li:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #62b5ee), color-stop(100%, #0690e5));
+  background-image: -webkit-linear-gradient(#62b5ee, #0690e5);
+  background-image: -moz-linear-gradient(#62b5ee, #0690e5);
+  background-image: -o-linear-gradient(#62b5ee, #0690e5);
+  background-image: -ms-linear-gradient(#62b5ee, #0690e5);
+  background-image: linear-gradient(#62b5ee, #0690e5);
+  -moz-box-shadow: 0 0 0 1px #0873b9, inset 0 1px 0 #8bc8f2, 0 1px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 0 1px #0873b9, inset 0 1px 0 #8bc8f2, 0 1px 5px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 0 1px #0873b9, inset 0 1px 0 #8bc8f2, 0 1px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 1px #0873b9, inset 0 1px 0 #8bc8f2, 0 1px 5px rgba(0, 0, 0, 0.6); }
+
+#content .gallery li:hover img {
+  border: 1px solid #0174bd; }
+
+#glisse-close {
+  display: none; }
+
+#glisse-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  border-top: 1px solid #2d2f35;
+  text-shadow: 0 -1px 0 #333333;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(87, 90, 98, 0.9)), color-stop(100%, rgba(62, 65, 72, 0.9)));
+  background-image: -webkit-linear-gradient(rgba(87, 90, 98, 0.9), rgba(62, 65, 72, 0.9));
+  background-image: -moz-linear-gradient(rgba(87, 90, 98, 0.9), rgba(62, 65, 72, 0.9));
+  background-image: -o-linear-gradient(rgba(87, 90, 98, 0.9), rgba(62, 65, 72, 0.9));
+  background-image: -ms-linear-gradient(rgba(87, 90, 98, 0.9), rgba(62, 65, 72, 0.9));
+  background-image: linear-gradient(rgba(87, 90, 98, 0.9), rgba(62, 65, 72, 0.9));
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 3px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 3px rgba(0, 0, 0, 0.7); }
+
+.glisse-next a, .glisse-prev a {
+  position: absolute;
+  display: block;
+  left: 0;
+  height: 39px;
+  width: 39px;
+  /*font-family: 'WebSymbolsRegular';*/
+  line-height: 40px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 black; }
+
+.glisse-next a:active, .glisse-prev a:active {
+  text-shadow: 0 0 30px white, 0 0 10px white; }
+
+.glisse-prev a {
+  border-right: 1px solid #2d2f35;
+  -moz-box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.15);
+  -o-box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.15);
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.15); }
+
+.glisse-next a {
+  left: auto;
+  right: 0;
+  border-left: 1px solid #2d2f35;
+  -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.15);
+  -o-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.15);
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.15); }
+
+.glisse-legend {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  right: 40px;
+  text-align: center;
+  line-height: 40px; }
