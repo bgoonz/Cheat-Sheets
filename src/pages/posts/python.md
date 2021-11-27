@@ -13,8 +13,7 @@ content_img_alt: Hikers on the trail
 seo:
   title: Python Cheat Sheet
   description: >-
-    Hiking refers to difficult walking through dense forest, undergrowth, or
-    bushes.
+    Python is an interpreted, high-level and general-purpose, dynamically typed programming language
   extra:
     - name: 'og:type'
       value: article
