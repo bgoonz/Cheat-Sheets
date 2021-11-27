@@ -54,14 +54,13 @@ Example:
 >>> lang_to_text("fr")
 'french'
     """
-    if exception:
-        try:
-            # TODO improve this !
-            return {"en": "english", "fr": "french"}[lang]
-        except:
-            "unknown"
-    else:
+    if not exception:
         return {"en": "english", "fr": "french"}[lang]
+    try:
+        # TODO improve this !
+        return {"en": "english", "fr": "french"}[lang]
+    except:
+        "unknown"
 
 latest = 30  # also 60 or 90 are available
 
@@ -134,7 +133,7 @@ def plot_stats_from_json(json_obj, graphic_name=None, graphic_name_template="{ti
     """
     assert(ext in ["png", "svg", "pdf", "all"])
 
-    title = title if title else json_obj["title"]
+    title = title or json_obj["title"]
     lang = json_obj["project"]
     rank = json_obj["rank"]
     if rank == "-1":
@@ -153,14 +152,11 @@ def plot_stats_from_json(json_obj, graphic_name=None, graphic_name_template="{ti
         year, month, day = "2016", "01", "01"
 
     # stats = {}
-    data = []
+    data = [
+        [year_month_day, views[year_month_day]]
+        for year_month_day in sorted(views, key=lambda s: s[-5:-3] + s[-2:])
+    ]
 
-    # We sort the keys by increasing dates
-    for year_month_day in sorted(views, key=lambda s: s[-5:-3] + s[-2:]):
-        # newkey = year_month_day[-5:-3] + "-" + year_month_day[-2:]
-        # stats[newkey] = views[year_month_day]
-        data.append([year_month_day, views[year_month_day]])
-        # print("On {year}, the {date} the page \"{title}\" (lang={lang}) had {number} visitor{plural}.".format(date=newkey, number=stats[newkey], title=title, lang=lang, year=year, plural=("s" if stats[newkey]>1 else "")))
 
     # Now make a graphic thanks to this data
     print("A graphic will be produced to the file \"{graphic_name}\" (with the type \"{ext}\").".format(graphic_name=graphic_name, ext=ext))
@@ -214,7 +210,6 @@ def plot_stats_from_json(json_obj, graphic_name=None, graphic_name_template="{ti
 
     # Tweak spacing to prevent clipping of ylabel
     pylab.subplots_adjust(left=0.15)  # bottom=0.5
-
 #    pylab.show()  # only if interactive will testing
     # Plot the histogram on 3 files (png, svg, pdf)
     if ext == "all":

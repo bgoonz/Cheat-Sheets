@@ -76,10 +76,9 @@ class PasteBox:
         print("downloading %s.." % pasteid)
         response = self.read(pasteid)
         if response:
-            x = open('pastebox_%s.txt' % pasteid, 'w')
-            for line in response.readlines():
-                x.write(line.decode('utf-8'))
-            x.close()
+            with open('pastebox_%s.txt' % pasteid, 'w') as x:
+                for line in response.readlines():
+                    x.write(line.decode('utf-8'))
             print('stored as: pastebox_%s.txt' % pasteid)
         else:
             print("Paste does not exist")
@@ -136,10 +135,10 @@ def main(argv):
         if opt in ("-h", "--help"):
             usage()
             sys.exit()
-        elif opt == '-s' or opt == '--stdout':
+        elif opt in ['-s', '--stdout']:
             for pasteid in args:
                 paste.stdout(pasteid)
-        elif opt == '-d' or opt == '--download':
+        elif opt in ['-d', '--download']:
             for pasteid in args:
                 paste.download(pasteid)
 

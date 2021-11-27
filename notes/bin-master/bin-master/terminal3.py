@@ -126,12 +126,11 @@ class GeditTerminal3(Gtk.Box):
         return Gio.Settings.new("org.gnome.gedit.plugins.terminal")
 
     def get_font(self):
-        if self.profile_settings.get_boolean("use-system-font"):
-            font = self.system_settings.get_string("monospace-font-name")
-        else:
-            font = self.profile_settings.get_string("font")
-
-        return font
+        return (
+            self.system_settings.get_string("monospace-font-name")
+            if self.profile_settings.get_boolean("use-system-font")
+            else self.profile_settings.get_string("font")
+        )
 
     def font_changed(self, settings=None, key=None):
         font = self.get_font()

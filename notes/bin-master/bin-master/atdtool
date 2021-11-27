@@ -69,10 +69,10 @@ class Error:
         self.precontext = e.find('precontext').text
         self.type = e.find('type').text
         self.url = ''
-        if not e.find('url') is None:
+        if e.find('url') is not None:
             self.url = e.find('url').text
         self.suggestions = []
-        if not e.find('suggestions') is None:
+        if e.find('suggestions') is not None:
             self.suggestions = [ o.text for o in e.find('suggestions').findall('option') ]
 
 
@@ -125,21 +125,18 @@ class FileWords:
                 self.eof = True
                 return False, ''
             t.append(text[self.i+j])
-            w = w + text[self.i+j]
+            w += text[self.i+j]
             if self.i + j + 1 < self.len and text[self.i+j+1] == '.':
                 t.append(t.pop() + text[self.i+j+2])
                 w = w + '.' + text[self.i+j+2]
-            j = j + 1
+            j += 1
         return tuple(t) == words, w
 
     def goto(self, prec, words):
         '''Goes to words preceded by prec; returns False and stays at eof if not found.'''
         found = False
         w = ''
-        if prec:
-            target = prec
-        else:
-            target = words
+        target = prec or words
         while not self.eof and not found:
             found, w = self.checkpos(target)
             if not found:
@@ -167,9 +164,7 @@ def showerrs(filename, fd, errs):
     '''Shows the errors found, in the context of the file.'''
     t = FileWords(fd)
     for e in errs:
-        exactstr = ''
-        if not t.find(e.precontext, e.string):
-            exactstr = ' (?)'
+        exactstr = ' (?)' if not t.find(e.precontext, e.string) else ''
         print('%s:%d:%d:%s %s "%s"' % (filename, t.line, t.col, exactstr, e.description, t.words if hasattr(t, 'words') else ''))
         if len(e.suggestions) > 0:
             print('  suggestions: %s' % ', '.join(e.suggestions))

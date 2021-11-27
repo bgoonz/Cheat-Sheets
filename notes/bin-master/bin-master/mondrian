@@ -73,7 +73,7 @@ class Mondrian(object):
                 if (1, x + dx) in splits:
                     return None
             p = []
-            for y in range(0, h):
+            for y in range(h):
                 if grid[y][x] == 2:
                     p.append(y)
             if len(p) < 2:
@@ -88,7 +88,7 @@ class Mondrian(object):
                 if (2, y + dy) in splits:
                     return None
             p = []
-            for x in range(0, w):
+            for x in range(w):
                 if grid[y][x] == 1:
                     p.append(x)
             if len(p) < 2:

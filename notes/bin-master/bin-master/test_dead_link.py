@@ -21,12 +21,10 @@ def exclude_dir(directory):
 def _tex_file_iterator(directory):
     for p in os.listdir(directory):
         path=os.path.join(directory,p)
-        if os.path.isfile(path):
-            if path.endswith(".tex"):
-                yield path
+        if os.path.isfile(path) and path.endswith(".tex"):
+            yield path
         if os.path.isdir(path) and not exclude_dir(path):
-            for f in _tex_file_iterator(path):
-                yield f
+            yield from _tex_file_iterator(path)
 
 def tex_file_iterator(directory):
     """
@@ -34,8 +32,7 @@ def tex_file_iterator(directory):
     directory (recursive).
     """
     yield os.path.join(directory,"mazhe.bib")
-    for p in _tex_file_iterator(directory):
-        yield p
+    yield from _tex_file_iterator(directory)
 
 def _file_to_url_iterator(filename):
     """
@@ -63,12 +60,13 @@ def _file_to_url_iterator(filename):
                 yield url
 
 # List of death links that we don't care (because from other projects)
-useless_url=[]
-useless_url.append("http://xmaths.free.fr/1S/exos/1SstatexA2.pdf")
-useless_url.append("http://www.daniel-botton.fr/mathematiques/seconde/geometrie_plane/seconde_geometrie_plane_devoir.pdf")
-useless_url.append("<++>")
-useless_url.append("<++>")
-useless_url.append("<++>")
+useless_url = [
+    'http://xmaths.free.fr/1S/exos/1SstatexA2.pdf',
+    'http://www.daniel-botton.fr/mathematiques/seconde/geometrie_plane/seconde_geometrie_plane_devoir.pdf',
+    '<++>',
+    '<++>',
+    '<++>',
+]
 
 def is_serious_url(url):
     if url == r"\lstname":
@@ -127,9 +125,6 @@ for f in tex_file_iterator(starting_path):
     for url in file_to_url_iterator(f):
         print("  URL", url)
         check_url_corectness(url,f)
-        if not is_not_dead(url):
-            print("death link in ",f," :")
-            print(url)
-        elif not checkUrl(url):
+        if not is_not_dead(url) or is_not_dead(url) and not checkUrl(url):
             print("death link in ",f," :")
             print(url)

@@ -103,11 +103,11 @@ def get_reactions(list_of_ts_channel, sc):
             text = {t['name']: t['count'] for t in reaction['message']['reactions']}
             logging.info("text =", text)
             if any(s in text.keys() for s in POSITIVE_REACTIONS):
-                nb = max([0.5] + [text[s] for s in POSITIVE_REACTIONS if s in text.keys()])
+                nb = max([0.5] + [text[s] for s in POSITIVE_REACTIONS if s in text])
                 logging.info("I read {} positive reactions ...".format(int(nb)))
                 scale_factor /= 2 * nb
             elif any(s in text for s in NEGATIVES_REACTIONS):
-                nb = max([0.5] + [text[s] for s in NEGATIVES_REACTIONS if s in text.keys()])
+                nb = max([0.5] + [text[s] for s in NEGATIVES_REACTIONS if s in text])
                 logging.info("I read {} negative reactions ...".format(int(nb)))
                 scale_factor *= 2 * nb
             elif "rage" in text:

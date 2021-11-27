@@ -186,7 +186,7 @@ class CheatSheets(object):
 
     def list(self):
         """Lists the cheatsheets that are currently available"""
-        max_command = max([len(x) for x in self.sheets.keys()]) + 3
+        max_command = max(len(x) for x in self.sheets.keys()) + 3
         return ('\n'.join(sorted(['%s [%s]' % (key.ljust(max_command), value)
                                   for key, value in self.sheets.items()])))
 

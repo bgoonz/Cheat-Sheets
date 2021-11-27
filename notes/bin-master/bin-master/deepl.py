@@ -102,20 +102,19 @@ Me gusta usar la línea de comandos para traducir mi texto.
             print(e)
             printc("<red>Trying to use the rest of the arguments to send the text message...<white>")
             text = "".join(argv)
-    else:
-        if argv:
-            # Text
-            if isinstance(argv, list):
-                text = "".join(argv)
-            elif isinstance(argv, str):
-                text = argv
-            else:
-                printc("<Warning>argv seems to be of unknown type (not list, not str, but {}) ...".format(type(argv)))
-                text = argv
-            text = text.replace("\\n", "\n")
-            # Durty hack to have true new lines in the message
+    elif argv:
+        # Text
+        if isinstance(argv, list):
+            text = "".join(argv)
+        elif isinstance(argv, str):
+            text = argv
         else:
-            text = "I like using command line to translate my text."
+            printc("<Warning>argv seems to be of unknown type (not list, not str, but {}) ...".format(type(argv)))
+            text = argv
+        text = text.replace("\\n", "\n")
+        # Durty hack to have true new lines in the message
+    else:
+        text = "I like using command line to translate my text."
 
     # print("text = '{}'".format(text))  # DEBUG
     results = []
