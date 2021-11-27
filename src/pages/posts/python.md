@@ -45,28 +45,324 @@ seo:
 template: post
 ---
 
-Photo by [David Marcu.](https://unsplash.com/photos/wcHCzgo0_mQ)
+# Python
 
-In the United States, Canada, the Republic of Ireland, and United Kingdom, **hiking** refers to walking outdoors on a trail, or off trail, for recreational purposes. A day hike refers to a hike that can be completed in a single day. However, in the United Kingdom, the word walking is also used, as well as rambling, while walking in mountainous areas is called hillwalking. In Northern England, Including the Lake District and Yorkshire Dales, fellwalking describes hill or mountain walks, as fell is the common word for both features there.
+* Python is an interpreted, high-level and general-purpose, dynamically typed programming language
 
-Hiking can sometimes involves bushwhacking and hiking is sometimes referred to as such. This specifically refers to difficult walking through dense forest, undergrowth, or bushes, where forward progress requires pushing vegetation aside. In extreme cases of bushwhacking, where the vegetation is so dense that human passage is impeded, a machete is used to clear a pathway. The Australian term bushwalking refers to both on and off-trail hiking. Common terms for hiking used by [New Zealanders](https://en.wikipedia.org/wiki/New_Zealand) are tramping (particularly for overnight and longer trips), walking or bushwalking. Trekking is the preferred word used to describe multi-day hiking in the mountainous regions of India, Pakistan, Nepal, North America, South America, Iran and in the highlands of East Africa. Hiking a long-distance trail from end-to-end is also referred to as trekking and as thru-hiking in some places. In North America, multi-day hikes, usually with camping, are referred to as [backpacking](https://en.wikipedia.org/wiki/Backpacking_(wilderness)).
+* It is also Object oriented, modular oriented and a scripting language.
 
-## Long Distance Hiking
+* In Python, everything is considered as an Object.
 
-Frequently nowadays long distance hikes (walking tours) are undertaken along long distance paths, including the National Trails in England and Wales, the National Trail System in the USA and The Grande Randonnée (France), Grote Routepaden, or Lange-afstand-wandelpaden (Holland), Grande Rota (Portugal), Gran Recorrido (Spain) is a network of long-distance footpaths in Europe, mostly in France, Belgium, the Netherlands and Spain. There are extensive networks in other European countries of long distance trails, as well as in Canada, Australia, New Zealand, Nepal, and to a lesser extent other Asiatic countries, like Turkey, Israel, and Jordan. In the Alps of Austria, Slovenia, Switzerland, Germany, France, and Italy walking tours are often made from 'hut-to-hut', using an extensive system of mountain huts.
+* A python file has an extension of .py
 
-In the late 20th-century there has been a proliferation of official and unofficial long distance routes, which mean that hikers now are more likely to refer to using a long distance way (Britain), trail (USA), The Grande Randonnée (France), etc., than setting out on a walking tour. Early examples of long distance paths, include the Appalachian Trail in the USA and the Pennine Way in Britain. Pilgrimage routes are now treated, by some walkers, as long distance routes, and the route taken by the British National Trail the North Downs Way closely follows that of the Pilgrims' Way to Canterbury. Hiking times can be estimated by Naismith's rule or Tobler's hiking function.
+* Python follows Indentation to separate code blocks instead of flower brackets({}).
 
-## Equipment
+* We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
 
-The equipment required for hiking depends on the length of the hike, but day hikers generally carry at least water, food, a map, and rain-proof gear. Hikers usually wear sturdy hiking boots for mountain walking and backpacking, as protection from the rough terrain, as well as providing increased stability. The Mountaineers club recommends a list of "Ten Essentials" equipment for hiking, including a compass, sunglasses, sunscreen, a flashlight, a first aid kit, a fire starter, and a knife. Other groups recommend items such as hat, gloves, insect repellent, and an emergency blanket. A GPS navigation device can also be helpful and route cards may be used as a guide.
+    `python <filename.py>`
 
-> Returning home is the most difficult part of long-distance hiking; You have grown outside the puzzle and your piece no longer fits. ― Cindy Ross
+#### By default, the python doesn't require any imports to run a python file.
 
-Proponents of ultralight backpacking argue that long lists of required items for multi-day hikes increases pack weight, and hence fatigue and the chance of injury. Instead, they recommend reducing pack weight, in order to make hiking long distances easier. Even the use of hiking boots on long-distances hikes is controversial among ultralight hikers, because of their weight.
+## Create and execute a program
 
-## Environmental Impact
+1. Open up a terminal/cmd
+1. Create the program: nano/cat > nameProgram.py
+1. Write the program and save it
+1. python nameProgram.py
 
-Natural environments are often fragile, and may be accidentally damaged, especially when a large number of hikers are involved. For example, years of gathering wood can strip an alpine area of valuable nutrients. and some species, such as martens or bighorn sheep, are very sensitive to the presence of humans, especially around mating season. Generally, protected areas such as parks have regulations in place to protect the environment, so as to minimize such impact. Such regulations include banning wood fires, restricting camping to established camp sites, disposing or packing out faecal matter, and imposing a quota on the number of hikers. Many hikers espouse the philosophy of Leave No Trace, following strict practices on dealing with food waste, food packaging, and other impact on the environment.
+<br>
 
-Human waste is often a major source of environmental impact from hiking, and can contaminate the watershed and make other hikers ill. 'Catholes' dug 10 to 25 cm (4 to 10 inches) deep, depending on local soil composition and covered after use, at least 60 m (200 feet) away from water sources and trails, are recommended to reduce the risk of bacterial contamination. [Source](https://en.wikipedia.org/wiki/Hiking)
+### Basic Datatypes
+
+| Data Type | Description |
+| --------- | ----------- |
+| int | Integer values [0, 1, -2, 3] |
+| float | Floating point values [0.1, 4.532, -5.092] |
+| char | Characters [a, b, @, !, `] |
+| str | Strings [abc, AbC, A@B, sd!, `asa] |
+| bool | Boolean Values [True, False] |
+| char | Characters [a, b, @, !, `] |
+| complex | Complex numbers [2+3j, 4-1j] |
+
+<br>
+
+## Keywords
+<br>
+
+| Keyword | Description |
+| --------- | ----------- |
+| break 	| used to exit loop and used to exit|
+| char	  |   basic declaration of a type character |
+| const	  |   prefix declaration meaning variable can not be changed|
+| continue |	go to bottom of loop in for, while loops|
+| class |	to define a class|
+| def |	to define a function|
+| elif |	shortcut for (else if) used in else if ladder |
+| else	  |  executable statement, part of "if" structure |
+| float	  |  basic declaration of floating point|
+| for	  |    executable statement, for loop|
+| from	  |    executable statement, used to import only specific objects from a package|
+| if	  |    executable statement|
+| import |	to import modules|
+|pass| keyword to specify noting is happening in the codeblock, generally used in classes|
+|return	 | executable statement with or without a value|
+|while| executable statement, while loop|
+<br>
+
+## Operators
+
+<br>
+
+| Operator | Description |
+|-|-|
+|  ( )	|  grouping parenthesis, function call, tuple declaration |
+|  [ ]	|  array indexing, also declaring lists etc.|
+|  !	|    relational not, complement, ! a  yields true or false |
+|  ~   | 	bitwise not, ones complement, ~a |
+| \-   |	unary minus, - a |
+|  \+   | 	unary plus,  + a |
+|  \*   |	multiply, a * b |
+|  /   	| divide, a / b |
+|  %    |	modulo, a % b |
+|  \+   | 	add, a + b |
+| \-   | 	subtract, a - b |
+| <<   | shift left,  left operand is shifted left by right operand bits |
+| \>>   |	shift right, left operand is shifted right by right operand bits|
+ | <    |	less than, result is true or false,  a %lt; b
+| <=   |	less than or equal, result is true or false,  a <= b
+| \>    |	greater than, result is true or false,  a > b
+| \>=   |	greater than or equal, result is true or false, a >= b
+|  ==   |	equal, result is true or false,  a == b
+| !=  | 	not equal, result is true or false,  a != b
+|  & | bitwise and,  a & b
+| ^ | bitwise exclusive or XOR,  a ^ b
+| \| | bitwise or,  a | b
+|  &&, and | relational and, result is true or false,  a < b && c >= d
+| \|\|, or | relational or, result is true or false,  a < b \|\| c >= d |
+| =  | store or assignment |
+|  += | add and store |
+|  -=  | subtract and store |
+|  *= | multiply and store |
+|  /= | divide and store|
+|  %= | modulo and store|
+| <<= | shift left and store|
+|  \>>= | shift right and store|
+|  &= | bitwise and and store|
+|  ^= | bitwise exclusive or and store|
+|  \|= | bitwise or and store|
+|  , | separator as in   ( y=x,z=++x )|
+
+### Basic Data Structures
+
+### List
+
+- List is a collection which is ordered and changeable. Allows duplicate members.
+
+
+- Lists are created using square brackets:
+
+```py
+thislist = ["apple", "banana", "cherry"] 
+```
+
+- List items are ordered, changeable, and allow duplicate values.
+
+- List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+
+- The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+
+- To determine how many items a list has, use the `len()` function.
+
+- A list can contain different data types:
+```py
+list1 = ["abc", 34, True, 40, "male"]
+```
+- It is also possible to use the list() constructor when creating a new list
+```py
+thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
+```
+### Tuple
+- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+- A tuple is a collection which is ordered and unchangeable.
+- Tuples are written with round brackets.
+```py
+thistuple = ("apple", "banana", "cherry")
+```
+- Tuple items are ordered, unchangeable, and allow duplicate values.
+- Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+- When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+
+- Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+- Since tuple are indexed, tuples can have items with the same value:
+- Tuples allow duplicate values:
+```py
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+```
+- To determine how many items a tuple has, use the  `len()`function:
+```py
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
+```
+- To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+```py
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+```
+- It is also possible to use the tuple() constructor to make a tuple.
+```py
+
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
+```
+
+### Set
+- Set is a collection which is unordered and unindexed. No duplicate members.
+- A set is a collection which is both unordered and unindexed.
+```py
+thisset = {"apple", "banana", "cherry"}
+```
+- Set items are unordered, unchangeable, and do not allow duplicate values.
+- Unordered means that the items in a set do not have a defined order.
+
+- Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+
+- Sets are unchangeable, meaning that we cannot change the items after the set has been created.
+- Duplicate values will be ignored.
+- To determine how many items a set has, use the `len()` method.
+```py
+thisset = {"apple", "banana", "cherry"}
+
+print(len(thisset))
+```
+- Set items can be of any data type:
+```py
+set1 = {"apple", "banana", "cherry"}
+set2 = {1, 5, 7, 9, 3}
+set3 = {True, False, False}
+set4 = {"abc", 34, True, 40, "male"}
+```
+- It is also possible to use the `set()` constructor to make a set.
+```py
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+```
+### Dictionary
+- Dictionary is a collection which is unordered and changeable. No duplicate members.
+- Dictionaries are used to store data values in key:value pairs.
+- Dictionaries are written with curly brackets, and have keys and values:
+```py
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+```
+- Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+```py
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"])
+```
+- Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+- Dictionaries cannot have two items with the same key.
+- Duplicate values will overwrite existing values.
+- To determine how many items a dictionary has, use the `len()` function.
+```py
+print(len(thisdict))
+```
+- The values in dictionary items can be of any data type
+```py
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+```
+
+### Conditional branching
+
+```py
+    if condition:
+        pass
+    elif condition2:
+        pass
+    else:
+        pass
+```
+### Loops
+
+ Python has two primitive loop commands:
+1. while loops
+2. for loops
+
+#### While loop
+- With the `while` loop we can execute a set of statements as long as a condition is true.
+- Example: Print i as long as i is less than 6
+```py
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+```
+- The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
+- With the `break` statement we can stop the loop even if the while condition is true
+- With the continue statement we can stop the current iteration, and continue with the next.
+
+- With the else statement we can run a block of code once when the condition no longer is true.
+
+#### For loop
+- A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+- This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+
+- With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+```py
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+```
+- The for loop does not require an indexing variable to set beforehand.
+- To loop through a set of code a specified number of times, we can use the range() function.
+- The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+- The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).
+- The else keyword in a for loop specifies a block of code to be executed when the loop is finished.
+A nested loop is a loop inside a loop.
+
+- The "inner loop" will be executed one time for each iteration of the "outer loop":
+
+```py
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+```
+- for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+
+```py
+for x in [0, 1, 2]:
+  pass
+```
+
+### Function definition
+```py
+def function_name():
+    return
+```
+### Function call
+
+```py 
+function_name()
+```
+
+* We need not to specify the return type of the function.
+* Functions by default return `None` 
+* We can return any datatype.
