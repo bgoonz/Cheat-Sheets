@@ -24,8 +24,7 @@ seo:
       keyName: property
     - name: 'og:description'
       value: >-
-        Hiking refers to difficult walking through dense forest, undergrowth, or
-        bushes.
+        Python is an interpreted, high-level and general-purpose, dynamically typed programming language
       keyName: property
     - name: 'og:image'
       value: images/6.jpg
