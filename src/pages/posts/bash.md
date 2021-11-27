@@ -962,3 +962,6 @@ fi
 
 
 
+---
+
+# Bash Involved Cheat Sheet
