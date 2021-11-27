@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+# author: Lilian BESSON
+# email: Lilian.BESSON[AT]ens-cachan[DOT]fr
+# date: 18-11-2014
+# web: https://bitbucket.org/lbesson/bin/src/master/watch-file
+#
+# Rerun a command when a file changes.
+# This provides automatic refresh functionality to software that doesn't have it built in.
+#
+# Usage: watch-file FILE COMMAND ARG1 ARG2 ...
+# Run a command when the contents of FILE changes, killing the process corresponding to the previous command if it is still running
+#
+# Example: You can use the following command to view a file file.out whose content changes:
+# $ watch-file file.out less file.out
+# watch-file runs less file.out. It inspects file.out for changes periodically, and when a change is detected the current less process is terminated and a new one is created.
+#
+# Fork of Martin's Jambon [watch-file](https://github.com/mjambon/watch-file)
+#
+# Licence: GPL v3
+
+function usage() {
+    echo -e "\nUsage: watch-file FILE COMMAND ARG1 ARG2 ...
+Run a command when the contents of FILE changes, killing the
+process corresponding to the previous command if it is still running.
+\nLicence: GPL v3\n"
+}
+
+file="$1"
+if [ -z "$1" ]; then
+    usage
+    exit 1
+fi
+
+if [ $# -lt 3 ]; then
+    usage
+    exit 1
+fi
+
+hash0=""
+hash=""
+pid=""
+
+shift
+while : ; do
+    hash=$(md5sum "$file" | cut -f1 -d' ')
+    if [ "$hash0" != "$hash" ]; then
+        hash0="$hash"
+        if test -n "$pid" && kill -0 $pid; then
+            kill $pid
+            wait $pid 2> /dev/null
+        fi
+        "$@" &
+        pid=$!
+    fi
+    sleep 1
+done

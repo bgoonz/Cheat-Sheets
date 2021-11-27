@@ -1,0 +1,495 @@
+#! /usr/bin/python3
+# -*- coding: utf8 -*-
+#
+# Copyright 2015 Laurent Claessens
+# contact : moky.math@gmail.com
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Web: https://github.com/LaurentClaessens/pytex
+
+from __future__ import division
+
+import os
+import sys
+import hashlib
+import subprocess
+import importlib
+
+# Add current path to the path (if LaTeXparser is locally installed)
+sys.path.append('.')
+import LaTeXparser, LaTeXparser.PytexTools
+
+
+"""
+Note 25637 : THE PLUGIN TYPES
+
+        * 'medicament' : applied to the Traitement itself, it is applied after the import
+        * 'before_pytex' : applied on the text (as sting) before to create the pytex file.
+        * 'after_pytex' : applied on the LaTeXCode of the pytex file.
+        * 'before_compilation' : applied on nothing, before the compilation
+
+"""
+
+"""
+Options :
+    --lotex     compile until the cross-references are right.
+    --no-compilation    Do not compile, but produce the final _pytex.tex file and print the commands that were to be launched without.
+    --rough-source  Output an extremely hard-coded pytex file which is ready for ArXiv.
+    - ``--pdflatex`` - Use pdflatex (default)
+    - ``--dvi`` - Use latex and produce a dvi file instead of pdf.
+
+"""
+
+
+#       La couleur dans laquelle sont écrits les textes.
+ColTexte = 33
+# C'est peut-être encore un peu tricher
+utilisateur=subprocess.getoutput("whoami")
+HOME=subprocess.getoutput("echo $HOME")
+PYTHONPATH=subprocess.getoutput("echo $PYTHONPATH")
+
+
+def ecrire(texte,couleur):
+    # Noir 30 40, Rouge 31 41, Vert 32 42, Jaune 33 43, Bleu 34 44, Magenta 35 45, Cyan 36 46, Blanc 37 47,
+    # la police: 0->rien,  1->gras, 4->souligné, 5->clignotant, 7->inversée
+    print("\033[0;"+str(couleur)+";40m"+texte+"\033[0;47;40m")
+
+class Compil(object):
+    def __init__(self):
+        self.simple=1
+        self.tout=0
+        self.lotex=0
+        self.pdflatex=True
+        self.dvi=False
+        self.verif=0
+
+class Sortie(object):
+    def __init__(self):
+        self.ps=False
+        self.pdf=False
+        self.nocompilation=False
+        self.rough_source=False
+
+def set_no_useexternal(A):
+    r"""
+    This plugin is automatically applied when 'pytex' is invoked with '--no-external'. You have to put something like this before '\begin{document}' :
+
+
+    \newcounter{useexternal}
+    \setcounter{useexternal}{1}
+    \ifthenelse{\value{useexternal}=1}{ \usetikzlibrary{external} \tikzexternalize }{ \newcommand{\tikzsetnextfilename}[1]{} }
+
+    This plugin will change the '1' into '0', in such a way that 'external' will not be used.
+
+    See position 2764113936
+    """
+    u="\setcounter{useexternal}{1}"
+    A = A.replace(u,u.replace("1","0"))
+    return A
+
+def randombase(n=6):
+    """
+    return a random string of (by default) 6 characters.
+    """
+    import random
+    import string
+    rb=""
+    for i in range(0,n):
+        rb=rb+random.choice(string.ascii_letters)
+    return rb
+
+class Traitement(object):
+    r"""
+    self.original_file : the original file, written by hand
+    self.intermediate_code() : LaTeXparser.CodeLaTeX object containing the same as original_file but with
+                    removed \input that are not in the list.
+                    This does not has to be written in a real file.
+    self.pytex_file : all the remaining \input are explicitly performed.
+                (the bibliography/index still have to be created by bibtex/makeindex)
+                This file still contains the comments.
+                This is the one to be usually compiled.
+    self.source_file : the file with everything explicit including the bibliography and the index.
+                The comments are removed.
+                This is for Arxiv.
+    """
+    def __init__ (self,arguments):
+        self.arguments=arguments
+
+        self.pwd = subprocess.getoutput("pwd")  #.decode("utf8")
+        self._pytex_file = None
+        self._intermediate_code = None
+        self.ok_filenames_list = []         # Cette liste sont les fichiers .tex à accepter par input
+        self.refute_filenames_list = []         # Cette liste sont les fichiers .tex qui sont à refuser par input
+        self.Sortie = Sortie()
+        self.Compil = Compil()
+        self.Compil.verif=False
+        self.plugin_list = []
+        self.before_pytex_plugin_list = []
+        self.nombre_prob=0
+        self.new_output_filename=None  # see copy_final_file
+        for arg in self.arguments:
+            if arg[0]!="-":
+                self.LireFichier(arg)
+            if arg == "--all" :
+                self.Compil.tout = 1
+            if arg == "--verif" :
+                self.Compil.verif = True
+            if arg == "--lotex" :
+                self.Compil.lotex = 1
+            if arg == "--no-compilation" :
+                self.Sortie.nocompilation = True
+            if arg == "--rough-source" :
+                self.Sortie.rough_source = True
+                self.Sortie.nocompilation = True
+
+        self.listeFichPris = []
+        self.pytex_filename = self.pwd+"/"+"Inter_"+self.prefix+"-"+os.path.basename(self.original_file).replace(".tex","_pytex.tex")
+        self.source_filename = self.pwd+"/"+self.prefix+"-source-"+os.path.basename(self.original_file)
+
+        if self.Compil.tout == 1:
+            self.source_filename = self.pwd+"/all-"+os.path.basename(self.original_file)
+            self.pytex_filename = self.pwd+"/all-"+os.path.basename(self.original_file).replace(".tex","_pytex.tex")
+        self.log_filename = self.pytex_filename.replace("_pytex.tex","_pytex.log")
+    def accept_input(self,filename):
+        if filename in self.ok_filenames_list and filename not in self.refute_filenames_list :
+            return True
+        return False
+    def rough_code(self,medicament,fast=False):
+        codeLaTeX = LaTeXparser.FileToCodeLaTeX(medicament.pytex_file())
+        print("Creating rough code")
+        rough_code = codeLaTeX.rough_source(medicament.source_filename,medicament.bibliographie(),medicament.index(),fast=fast)
+        return rough_code
+    def future_reference_verification(self,medicament,fast=True):
+        r"""
+        Print the list of references that are made to the future.
+
+        If fast is true, make more assumptions on the LaTeX code. You will only catch references and label like
+        \ref{foo}
+        \label{bar}
+        while not matching
+        \ref
+        {foo}
+        or
+        \label{foo\Macro{bar}boor}
+        """
+        import pygrep  # home made
+        import re
+
+
+        # rough_code with fast=True is buggy.
+        rough_code=self.rough_code(medicament,fast=False)
+
+        print("Analysing the document for label")
+        labels=rough_code.search_use_of_macro("\label",1,fast=fast)
+
+        print("Analysing the document for ref")
+        ref=rough_code.search_use_of_macro(r"\\ref",1,fast=fast)    # why r"\ref" does not work ?
+
+        print("Analysing the document for eqref")
+        eqref=rough_code.search_use_of_macro("\eqref",1,fast=fast)
+
+        ref_dict={}
+        label_dict={}
+
+        print("Working on future references ...")
+        for occ in labels :
+            label = occ.arguments[0]
+            ref_dict[label]=[]
+
+        references=ref[:]
+        references.extend(eqref)
+
+        for occ in references :
+            label = occ.arguments[0]
+            ref_dict[label]=[]
+
+        for occ in references :
+            label = occ.arguments[0]
+            ref_dict[label].append(occ)
+
+        for occ in labels:
+            label = occ.arguments[0]
+            if label in label_dict.keys() :
+                print("The label <{0}> is used multiple times".format(label))
+                print("Here is the last time I see that")
+                print(occ.as_written)
+                raise NameError
+            label_dict[label]=occ
+        num=0
+        star=[x for x in os.listdir(".") if x.endswith(".tex") if "-source-" not in x]
+        #star=rough_code.included_file_list
+        concerned_files=[]
+        try :
+            star.remove(os.path.split(self.source_filename)[1])
+        except ValueError:
+            pass
+
+        ok_hash=self.myRequest.ok_hash
+        usefull_ok_hash=[]
+
+        for lab in label_dict.keys():
+            label_pos=label_dict[lab].position
+            for ref in ref_dict[lab]:
+                if ref.position<label_pos:
+
+                    line_ref=rough_code.position_to_line(ref.position).replace("\n","")
+                    line_label=rough_code.position_to_line(label_pos).replace("\n","")
+                    h=hashlib.new("sha1")
+                    h.update(line_ref.encode("utf8"))
+                    hexdigest=h.hexdigest()
+
+                    if hexdigest not in ok_hash :
+                        num=num+1
+                        ecrire("--------- label {0} -----".format(lab),34)
+                        A=pygrep.grep(re.escape(line_ref),star,first_result=True)
+                        B=pygrep.grep(re.escape(line_label),star,first_result=True)
+                        for result in A:
+                            print(result.filename,":",result.linenumber)
+                            print(result.string.replace(lab,"\033[0;33;40m"+lab+"\033[0;47;40m"))
+
+                            star.remove(result.filename)
+                            star.insert(0,result.filename)  # Thus the next time we begin with this file.
+
+                            # Not test if result.filename is already in concerned_files.
+                            # Thus the myRequest.append lines will appear by pairs of linked files.
+
+                            #if result.filename not in concerned_files :
+                            #    concerned_files.append(result.filename)
+                            concerned_files.append(result.filename)
+                        for result in B:
+                            print(result.filename,":",result.linenumber)
+
+                            print(result.string.replace(lab,"\033[0;33;40m"+lab+"\033[0;47;40m"))
+                            #if result.filename not in concerned_files :
+                            #    concerned_files.append(result.filename)
+                            concerned_files.append(result.filename)
+
+                        print(hexdigest)
+
+                    else :
+                        usefull_ok_hash.append(hexdigest)
+
+        for f in concerned_files :
+            print("""myRequest.ok_filenames_list.append("{0}")""".format(f))
+        if num==0 :
+            print("No future references")
+        elif num > 1:
+            print("Still {0} future references".format(num))
+        elif num==1:
+            print("Still one future reference".format(num))
+        print("Concerned files :")
+    def copy_final_file(self):
+        """
+        It is intended to be used after the compilation. It copies the 'pdf' resulting file to a new one.
+        The aim is to let the pdf viewer with the same pdf file until the last moment.
+        """
+        pdf_filename=os.path.split(self.pytex_filename)[1]
+        output_filename=pdf_filename.replace(".tex",".pdf")
+        if not self.new_output_filename :
+            self.new_output_filename="0-"+output_filename
+        import shutil
+        print("Copy : ",output_filename,"-->",self.new_output_filename)
+        shutil.copy2(output_filename,self.new_output_filename)
+
+        # One has to copy the file foo.synctex.gz to  0-foo.synctex.gz
+        output_synctex=output_filename.replace(".pdf",".")+"synctex.gz"
+        self.new_output_filename=self.new_output_filename#.decode('utf8')
+        new_output_synctex=self.new_output_filename.replace(".pdf",".synctex.gz")
+        if not os.path.exists(output_synctex):
+            raise NameError("This is a problem about synctex. {0} do not exist".format(output_synctex))
+            # TODO : this message produces an unicode error when there are accents in the path name.
+        shutil.copy2(output_synctex,new_output_synctex)
+    def bibliographie(self):
+        """
+        Return the bbl file that corresponds to the principal file
+
+        We take as basis the pytex filename because the bibliorgaphy is created (via bibtex) when we
+        compile that one.
+        """
+        return self.pytex_filename.replace("_pytex.tex","_pytex.bbl")
+        #return Fichier(self.pytex_filename.replace("_pytex.tex","_pytex.bbl"))
+    def index(self):
+        """ retourne le fichier ind qui correspond au fichier principal """
+        return self.pytex_filename.replace("_pytex.tex","_pytex.ind")
+    def NomVersChemin (self,nom):
+        return self.pwd+"/"+nom
+    def LireFichier(self,nom):
+        """
+        If the file extension is .py, interpret it as a module and we extract the relevant informations.
+        module.plugin_list  : a list of functions that will be applied to the LaTeX code before to give it to LaTeX
+        module.original_file
+        module.ok_filenames_list
+        """
+        FichierReq = self.NomVersChemin(nom)
+        self.prefix = os.path.basename(FichierReq).replace(".py","").replace("lst-","").replace("lst_","")
+        if FichierReq.endswith(".py"):
+            sys.path.append(os.path.dirname(FichierReq))
+
+            # Before Python3 :   (december 15, 2014)
+            #module = __import__(os.path.basename(FichierReq))
+            module=importlib.import_module(os.path.basename(FichierReq.replace('.py','')))
+
+
+            self.myRequest = module.myRequest
+
+            #See explanatons at position 2764113936
+            if "--no-external" in sys.argv :
+                self.myRequest.add_plugin(set_no_useexternal,"after_pytex")
+
+            # This is the application of a plugin on Traitement itself, see note  25637
+            for plugin in [ x for x in self.myRequest.plugin_list if x.hook_name=="medicament"]:
+                plugin(self)
+
+
+            #self.original_file = manip.Fichier(self.myRequest.original_filename)
+            self.original_file = self.myRequest.original_filename
+            self.new_output_filename=self.myRequest.new_output_filename
+            self.ok_filenames_list.extend([x.replace(".tex","") for x in self.myRequest.ok_filenames_list])
+        if FichierReq.endswith(".lst"):
+            self.listeFichPrendre.append(FichierReq)
+    def create_rough_source(self,filename):
+        """
+        Write the file that contains the source code to be sent to Arxiv in the file <filename> :)
+        """
+        self.source_filename=filename
+        CreateRoughCode(self)
+    def intermediate_code(self):
+        if not self._intermediate_code:
+            self._intermediate_code=ProduceIntermediateCode(self)
+        return self._intermediate_code
+    def apply_plugin(self,A,hook_name):
+        for plugin in [x for x in self.myRequest.plugin_list if x.hook_name==hook_name]:
+            print("Applying the plugin",plugin.fun)
+            A=plugin(A)
+        return A
+    def pytex_file(self):
+        if not self._pytex_file :
+
+            A=LaTeXparser.FileToText(self.original_file)
+
+            A=self.apply_plugin(A,"before_pytex")
+            self.text_before_pytex=A
+
+            A=ProducePytexCode(self)                   # The conversion text -> CodeLaTeX is done here
+            A=self.apply_plugin(A,"after_pytex")
+
+            # Writing \UseCorrectionFile does not work because of \U which is a Unicode stuff causing a syntax error.
+            # But Writing \\UseCorrectionFile will not work neither because it will write an explicit \\UseCorrectionFile in the LaTeX file.
+
+            rbase=randombase()
+            A=A.replace(r"""\begin{document}""",r"""\begin{document}
+                    \makeatletter
+\@ifundefined{UseCorrectionFile}{}{"""+"\\"+r"""UseCorrectionFile{AEWooFLTbT}}
+\makeatother
+                    """.replace("AEWooFLTbT","CorrPytexFile"+rbase+"corr"))
+
+            A.save(self.pytex_filename)
+            self._pytex_file = A.filename
+        return self._pytex_file
+    def compilation(self):
+        self.apply_plugin("","before_compilation")
+        f=self.pytex_file()
+        return LaTeXparser.PytexTools.Compilation(f,self.Sortie.nocompilation,pdflatex=self.Compil.pdflatex,dvi=self.Compil.dvi)
+
+def verif_grep(medicament):
+    if medicament.nombre_prob > 1 :
+        print("Still "+str(medicament.nombre_prob)+" problems to be fixed. Good luck !")
+    if medicament.nombre_prob == 1 :
+        print("Only one problem to be fixed. Next to perfection !!")
+    x = LaTeXparser.FileToCodeLog(medicament.log_filename)
+    print(x)
+
+#def vide_out():
+#    print("Je vide le répertoire intermédiaire :")
+#    for file in os.listdir(REP_OUT_LI) :
+#        nom_filei=REP_OUT_LI+"/"+file
+#        print(nom_filei)
+#        os.remove(nom_filei)
+
+def ProduceIntermediateCode(medicament):
+    #codeLaTeX = LaTeXparser.FileToCodeLaTeX(medicament.original_file)
+    codeLaTeX = LaTeXparser.CodeLaTeX(medicament.text_before_pytex)
+    if medicament.Compil.tout == 0:
+        list_input = codeLaTeX.search_use_of_macro("\input",1)
+        begin_document=codeLaTeX.find("\\begin{document}")
+        for occurrence in list_input :
+            A=occurrence.analyse()
+            # If an "\input" is before "\begin{document}", we keep it.
+            # This behaviour is due to the fact that some "\input" are in the preamble,
+            # inside \newcommand for example.
+            if A.position > begin_document :
+                if not medicament.accept_input(A.filename):
+                    codeLaTeX = codeLaTeX.replace(occurrence.as_written,"%")
+                else :
+                    pass
+    return codeLaTeX
+
+def ProducePytexCode(medicament):
+    """
+    See the docstring of Traitement
+    return an object LaTeXparser.CodeLaTeX because it has to be passed to plugins.
+    """
+    # The plugin has to do itself the work to apply inputs if he wants to.
+    # The reason is that some plugin just want to deal with the main tex file.
+    codeLaTeX = medicament.intermediate_code()
+    return codeLaTeX
+
+def CreateRoughCode(medicament):
+    """
+    Creates a latex file that is ready to be send to Arxiv.
+
+    See docstring of CodeLaTeX.rough_source in LaTeXparser
+    """
+    rough_code = medicament.rough_code(medicament)
+    rough_code.save(medicament.source_filename)
+    print("I created the source",medicament.source_filename)
+    return medicament.source_filename
+
+
+def RunMe(medicament):
+    try:
+        medicament.myRequest.run_prerequistes(medicament)
+    except AttributeError:
+        pass
+    if medicament.Sortie.rough_source:
+        medicament.create_rough_source(medicament.source_filename)
+
+    if (medicament.Compil.verif==False)and(medicament.Compil.lotex==0)and(medicament.Compil.simple==1)and(medicament.Sortie.pdf==0):
+        medicament.compilation().latex_more()
+        medicament.copy_final_file()
+
+    if (medicament.Compil.lotex == 1) :
+        on=True
+        while on:
+            medicament.compilation().latex_more()
+            medicament.copy_final_file()
+            x = LaTeXparser.FileToCodeLog(medicament.log_filename,stop_on_first=True)
+            on = x.rerun_to_get_cross_references(stop_on_first=True)
+    if not medicament.Sortie.nocompilation and not medicament.Compil.verif :
+        verif_grep(medicament)
+    if medicament.Sortie.nocompilation :
+        print("Le fichier qui ne fut pas compilé est",medicament.pytex_filename)
+    else :
+        print("Le fichier qui fut compilé est",medicament.pytex_filename)
+    if medicament.Compil.verif:
+        medicament.future_reference_verification(medicament)
+
+#############################
+#
+# Le début de l'exécution proprement dite
+#
+###############################
+
+RunMe(Traitement(sys.argv[1:]))

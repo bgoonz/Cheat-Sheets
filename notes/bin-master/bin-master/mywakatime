@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+# Colorless version of WakaTime-CLI
+# Origin: https://github.com/JoshLankford/WakaTimeCLI/tree/master/src
+
+arg="${1:--w}"
+# line="${2:--n3}"
+
+# FIXME adapt here to the localtion of the wakatime binary
+# Might be erased with python cli (https://github.com/wakatime/wakatime)
+/usr/local/bin/wakatime.js "${arg}" | sed -r "s:\x1B\[[0-9;]*[mK]::g"
+

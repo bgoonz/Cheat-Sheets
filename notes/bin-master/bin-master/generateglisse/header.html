@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Galerie photo pour « CURRENTDIR »</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+<!-- © and (C) Lilian Besson, 2014 : for //perso.crans.org/besson/generateglisse.sh -->
+    <link rel="stylesheet" type="text/css" href="//0.0.0.0/_static/buttons.css">
+    <link rel="stylesheet" type="text/css" href="//0.0.0.0/_static/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="//0.0.0.0/_static/glisse.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//0.0.0.0/_static/glisse-app-stack.css"> -->
+    <link rel="stylesheet" type="text/css" href="//0.0.0.0/_static/glisse-app-gallery.css">
+
+    <link rel="shortcut icon" type="image/gif" href="//perso.crans.org/besson/favicon.ico">
+
+    <script type="text/javascript" src="//0.0.0.0/_static/jquery.js"></script>
+    <!-- jQuery.Noty.js (Source: //ned.im/noty/) -->
+    <script type="text/javascript" src="//0.0.0.0/_static/noty/jquery.noty.packaged.min.js"></script>
+    <!-- NProgress.js (https://github.com/rstacruz/nprogress)-->
+    <script type="text/javascript" src="//0.0.0.0/_static/nprogress.js"></script>
+    <!-- MouseTrap.js (//craig.is/killing/mice) -->
+    <script type="text/javascript" src="//0.0.0.0/_static/mousetrap.min.js"></script>
+    <script type="text/javascript" src="//0.0.0.0/_static/jquery.lazyload.js"></script>
+
+    <script type="text/javascript">
+     console.log("[INFO] Loading jQuery, jQuery.noty, Moustrap, NProgress, jQuery.lazyload !");
+     // jQuery.noty plugin
+     $.noty.defaults = {
+        layout: 'bottomRight', theme: 'defaultTheme', type: 'alert',
+        text: 'Default text for a noty notification (change it !).',
+        dismissQueue: true, // If you want to use queue feature set this true
+        template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+        animation: {
+            open: {height: 'toggle'},
+            close: {height: 'toggle'},
+            easing: 'swing',
+            speed: 300 // opening & closing animation speed
+        },
+        timeout: 1000, // delay for closing event. Set false for sticky notifications
+        force: true, // adds notification to the beginning of queue when set to true
+        modal: false, maxVisible: 15, // you can set max visible notification for dismissQueue true option
+        closeWith: ['click', 'button'],
+        callback: {
+            onShow: function() { },
+            afterShow: function() { },
+            onClose: function() { },
+            afterClose: function() { }
+        },
+        buttons: false // an array of buttons
+      };
+      function alert(texttoprint, extradict) {
+        if ($.noty !== undefined){
+          if (extradict !== undefined){
+            var args = extradict;
+            if (args.layout == undefined){ args.layout = 'bottomRight'; }
+            args.text = texttoprint;
+            noty(args);
+          } else { noty({text: texttoprint, layout: 'bottomRight'}); }
+        }
+        else {
+          window.alert(texttoprint);
+        }; };
+    </script>
+</head>
+<body>
+    <div class="tabbar">
+		<p>
+			Cette page a pour but d'afficher des photos
+			<a href="https://bitbucket.org/lbesson/web-sphinx-scripts/issues/new">(n'hésitez pas à signaler un bug !)</a><br>
+			Générée le DATE par <a title="Version VERSION !" href="https://bitbucket.org/lbesson/bin/src/master/generateglisse.sh">generateglisse.sh</a> <i>vVERSION</i>
+			(basé sur <a href="//glisse.victorcoulon.fr/">glisse.js</a> pour la gallerie photo).<br>
+            Programme pour GNU/Linux, par <a href="//perso.crans.org/besson">Lilian BESSON</a> © 2013-2017. <a href="https://bitbucket.org/lbesson/bin/">Sur Bitbucket.</a>
+			<a href="..">Dossier parent !</a>
+			Changer l'effet de transition :
+        <select id="changefx">
+            <option selected="selected" value="fadeBig">fadeBig</option>
+            <option value="bounce">bounce</option>
+            <option value="fade">fade</option>
+            <option value="roll">roll</option>
+            <option value="rotate">rotate</option>
+            <option value="flipX">flipX</option>
+            <option value="flipY">flipY</option>
+        </select>
+		</p>
+    </div>
+
+    <div id="content">
+<!-- End of header.html -->
+

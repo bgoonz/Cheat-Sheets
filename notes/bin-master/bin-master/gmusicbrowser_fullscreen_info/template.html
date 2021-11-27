@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Screen Mode for GMusicBrowser</title>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <meta name="description" content="Full Screen Mode for GMusicBrowser">
+    <meta name="author" content="Lilian Besson (Naereen)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
+    <!-- MouseTrap.js (http://craig.is/killing/mice) -->
+    <script type="text/javascript" src="static/js/mousetrap.min.js"></script>
+    <script type="text/javascript" src="static/js/toggleFullScreen.js"></script>
+    <style type="text/css">
+        body {
+            font-size: 250%;
+            background: black;
+            color: #DDD;
+            overflow-x: hidden !important;
+        }
+        h1 {
+            font-size: 375%;
+        }
+        h2 {
+            font-size: 350%;
+        }
+        h3 {
+            font-size: 325%;
+        }
+        h4 {
+            font-size: 300%;
+        }
+        h5 {
+            font-size: 265%;
+        }
+        h6 {
+            font-size: 260%;
+        }
+        small {
+            color: darkgray;
+        }
+        h4 {
+            color: gray;
+        }
+        .btn-lg {
+            font-size: 54px;
+        }
+        /* Responsive hack */
+        @media (max-width: 1400px) {
+            body {
+                font-size: 200%;
+            }
+        }
+        @media (min-width: 1400px) {
+            .container {
+                width: 95%;
+            }
+        }
+        /* Pulsing Heart animation */
+        .love {
+            display: inline-block;
+            position: relative;
+            font-size: 1.5em;
+            color: #f95959;
+            /*
+            -webkit-transform: scale(.9);
+               -moz-transform: scale(.9);
+                 -o-transform: scale(.9);
+                    transform: scale(.9);
+            -webkit-animation: love .5s infinite linear alternate-reverse;
+               -moz-animation: love .5s infinite linear alternate-reverse;
+                 -o-animation: love .5s infinite linear alternate-reverse;
+                    animation: love .5s infinite linear alternate-reverse;
+            */
+        }
+        /*
+        @-webkit-keyframes love {
+            to { -webkit-transform: scale(1.1); }
+        }
+        @-moz-keyframes love {
+            to {    -moz-transform: scale(1.1); }
+        }
+        @-o-keyframes love {
+            to {      -o-transform: scale(1.1); }
+        }
+        @keyframes love {
+            to {         transform: scale(1.1); }
+        }
+        */
+        /* Hack to have fireworks in the background */
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+    <script type="text/javascript">
+        function doublereload(){
+            console.log("Will reload in 1.0 seconds...");
+            setTimeout(function(){
+                console.log("Reloading after 1.0 seconds...");
+                window.location.reload(true);
+            }, 1000);  // XXX after 1.0 seconds?
+            // window.location.reload(true);  // not required
+        }
+        function prev () {
+            $.ajax({ type: 'POST', url: '/prev', complete: function(){console.log("Ajax request 'prev' completed...")} });
+            doublereload();
+        };
+        function playpause () {
+            $.ajax({ type: 'POST', url: '/playpause', complete: function(){console.log("Ajax request 'playpause' completed...")} });
+            doublereload();
+        };
+        function next () {
+            $.ajax({ type: 'POST', url: '/next', complete: function(){console.log("Ajax request 'next' completed...")} });
+            doublereload();
+        };
+        function volumedown () {
+            $.ajax({ type: 'POST', url: '/volumedown', complete: function(){console.log("Ajax request 'volumedown' completed...")} });
+        };
+        function volumeup () {
+            $.ajax({ type: 'POST', url: '/volumeup', complete: function(){console.log("Ajax request 'volumeup' completed...")} });
+        };
+
+        $(document).ready(function() {
+            console.log("Adding keyboard shortcut...");
+            // MouseTrap keyboard shortcut (http://craig.is/killing/mice)
+            Mousetrap.bind(["r", "R"], doublereload);
+            Mousetrap.bind(["left", "p", "P"], prev);
+            Mousetrap.bind(["space", "b", "B"], playpause);
+            Mousetrap.bind(["right", "n", "N"], next);
+            Mousetrap.bind(["down", "d", "D"], volumedown);
+            Mousetrap.bind(["up", "u", "U"], volumeup);
+            Mousetrap.bind(["h", "H", "?"], function() { alert("Use 'p' for previous song, 'n' for next song, 'space' for pause, 'f' to toggle full screen.")} );
+            Mousetrap.bind(["f", "F"], toggleFullScreen);
+            // XXX Try to force the full screen, but it does not work
+            // fullScreen();
+        });
+	</script>
+	<meta http-equiv="refresh" content="1">
+</head>
+<body>
+	<div class="container text-center" style="padding-top: 5%; padding-bottom: 5%;">
+        <!-- Large UI buttons -->
+        <button type="button" class="btn btn-danger btn-lg" id="volumedown" onclick="volumedown();" title="Increase volume">🔉</button>
+        <button type="button" class="btn btn-info btn-lg" id="prev" onclick="prev();" title="Previous song">⏮</button>
+        <button type="button" class="btn btn-warning btn-lg" id="playpause" onclick="playpause();" title="Pause/Play song">⏯</button>
+        <button type="button" class="btn btn-success btn-lg" id="next" onclick="next();" title="Next song">⏭</button>
+        <button type="button" class="btn btn-danger btn-lg" id="volumeup" onclick="volumeup();" title="Increase volume">🔊</button>
+
+        <!-- Meta data -->
+        {% if 'title' in data and data['title'] != '<Inconnu>' %}
+            <hr>
+            <h2><small>Titre :</small> <b>{{ data['title'] }}</b></h2>
+            <hr>
+        {% endif %}
+        {% if 'artist' in data and data['artist'] != '<Inconnu>' %}
+            <h4><small>Par :</small> {{ data['artist'] }}</h4>
+            <hr>
+        {% endif %}
+        {% if 'album' in data and data['album'] != '<Inconnu>' %}
+            <h4><small>Dans :</small> <em>{{ data['album'] }}</em></h4>
+            <hr>
+        {% endif %}
+        {% if 'year' in data or 'disk' in data or 'track' in data %}
+        <h5>
+            {% if 'year' in data and data['year'] != '' %}
+                {{ data['year'] }}
+            {% endif %}
+            {% if 'disk' in data and data['disk'] != '' %}
+                {{ data['disk'] }}
+            {% endif %}
+            {% if 'track' in data and data['track'] != '' %}
+                Piste #{{ data['track'] }}
+            {% endif %}
+        </h5>
+        {% endif %}
+        {% if 'filepath' in data %}
+            <small style="font-size: 85%;">
+                Fichier '{{ data['filepath'] }}'.
+            </small>
+        {% endif %}
+        <!-- TODO something with the album cover? -->
+        <!-- {% if 'coverpath' in data %}
+        <small>Cover path</small>
+            {{ data['coverpath'] }}
+        {% endif %} -->
+
+        <!-- <canvas class="fireworks" id="fireworks"></canvas> -->
+        <!-- anime.min.js and fireworks.js to have nice fireworks -->
+        <!-- <script type="text/javascript" src="static/js/anime.min.js"></script> -->
+        <!-- <script type="text/javascript" src="static/js/fireworks.js"></script> -->
+    </div>
+    <footer class="container text-center">
+        <small>
+            <a href="http://localhost/gmusicbrowser/">This page</a> is (dynamically) generated with a <a href="http://flask.pocoo.org/">Flask webapp</a>,
+            written with <span class="love">&hearts;</span> by <a href="https://bitbucket.org/lbesson/">Lilian Besson</a>.<br>
+            Sources are <a href="https://bitbucket.org/lbesson/bin/src/master/gmusicbrowser_fullscreen_info/">here</a>, under the <a href="https://lbesson.mit-license.org/"></a> MIT License.
+        </small>
+    </footer>
+</body>
+</html>

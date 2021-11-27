@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+cd ~/.local/tor-browser_fr/
+./start-tor-browser

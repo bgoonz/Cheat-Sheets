@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#
+# Exporter une liste d'alias crée par mutt vers les contacts gmail en utilisant goobook.
+# La syntaxe de mutt est du type: alias nom prenom
+# La syntaxe de goobook est du type: "nom prenom" "adresse@email.truc"
+
+# A modifier en fonction de vos reglages
+alias=~/.mutt_alias
+
+# Pour chaque ligne du fichier alias, effectuer l'action suivante
+cat $alias | while read ligne
+do
+    # Remise en forme
+    nom_prenom=`echo $ligne | sed "s/alias\ \(.*\)\ <.*/\1/"`
+    email=`echo $ligne | sed "s/.*<\(.*\)>/\1/"`
+    goobook add  "$nom_prenom" "$email"
+done
+
+echo '' > $alias
+
+goobook reload

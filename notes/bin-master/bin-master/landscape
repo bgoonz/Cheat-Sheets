@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Just remove the "Graph this data and manage this system at https://landscape.canonical.com/"
+# line from landscape-sysinfo
+#
+# (C) Lilian BESSON, 2013
+# http://perso.crans.org/besson/bin/landscape
+
+landscape-sysinfo | head --lines=-3

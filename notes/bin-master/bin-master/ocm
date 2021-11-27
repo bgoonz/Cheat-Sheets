@@ -1,0 +1,35 @@
+#!/usr/bin/env /bin/bash
+#
+# Author:	Lilian BESSON
+# Email :	Lilian.BESSON[AT]ens-cachan[DOT]fr
+# Date  :	28-04-2014
+#
+# A small wrapper around the output of ocaml.
+# Can be save to ~/bin/ocm for example.
+#
+
+# Détection initiale: à adapter.
+#ocaml=`whereis ocaml | grep -o "/[a-zA-Z/]*bin[a-zA-Z/]*ocaml" | head -n1`
+#visual="$PAGER"
+
+# Interpréteur ocaml à utiliser (il faut le changer si non standard)
+ocaml="/usr/bin/ocaml graphics.cma"
+
+# Pager à utiliser (peut être less, nano, pygmentize, emacs, vi ou ...)
+visual="nano -v -Y ocaml"
+# visual="pygmentize -l ocaml"
+# visual="less -r"
+
+# Destination (à changer si conflit)
+tmp="/tmp/ocm.log.ml"
+
+use='#use "'$1'";;'
+shift
+for i in $@; do
+ use="${use}\n"'#use "'$i'";;'
+done
+
+echo "$use" | $ocaml &> "$tmp"
+$visual "$tmp"
+
+# END

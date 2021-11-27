@@ -1,0 +1,128 @@
+#!/usr/bin/env /bin/bash
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU General Public License version 2 for
+# more details.
+#
+# You should have received a copy of the GNU General Public License version 2
+# along with this program; if not, write to the Free Software Foundation, Inc., 51
+# Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+#
+# (C) Valentin Samir, https://github.com/nitmir/vlc-cli-vrun
+# /!\ Lilian Besson is NOT the author of this wonderful script
+# However, you can find it there : http://perso.crans.org/besson/bin/vrun
+
+##############################################################
+#                 Default configuration                      #
+#                                                            #
+# To be overload in ~/.config/vrun/configrc                  #
+##############################################################
+
+
+# vlc telnet port
+tport=4212
+#vlc telnet address
+taddress="127.0.0.1"
+# local vlc binding address
+tbind="127.0.0.1"
+# vlc telnet password
+password="admin"
+#############################################################
+
+if [ -f ~/.config/vrun/configrc ]; then
+. ~/.config/vrun/configrc
+fi
+
+if [[ $1 = "-p" ]] || [[ $1 = "--port" ]]
+then
+    tport=$2
+    shift 2
+fi
+
+
+run(){
+	/bin/sh -c "echo \"$password\n$*\"; sleep 0.1; echo \"logout\"" | nc $taddress $tport |
+	sed '/Password:/d;/VLC media player .*/d;/Welcome, Master/d;/Bye-bye/d'
+}
+
+contain(){
+    local i
+    for i in $2; do
+        if [[ "$i" = "$1" ]]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+second_to_time(){
+    local min seconde
+    if [ $1 -ge 60 ]; then
+        min=$(( $1 / 60 ))
+        echo -n "${min}:"
+    else
+        min=0;
+    fi
+    seconde=$(( $1 - 60 * $min ))
+    printf "%02d\n" $seconde
+}
+
+case $1 in
+	get_time|get_length)
+		a=`run $1`
+		a=${a%?}
+		if [[ $a = [0-9]* ]]; then
+			second_to_time $a;
+		fi
+	;;
+	pause)
+		a=`run is_playing`;
+		a=${a:0:1}
+		if [ $a -le 0 ]; then
+			run play
+                else
+                        run pause
+		fi
+	;;
+	add|enqueue)
+		i=0
+		for path in "${@:2}"; do
+			c=${path:0:1}
+			d=${path:0:6}
+			if [[ "$c" != "/" ]] && [[ "$d" != "http://" ]] && [[ "$d" != "ftp://" ]] && [[ "$d" != "udp://" ]]; then
+				run $1 "`pwd`/$path"
+			else
+				run $1 $path
+			fi;
+		done
+	;;
+	goto|playlist|atrack|vtrack|vratio|vcrop|crop|vzoom|zoom|vdeinterlace|vdeinterlace_mode|vdeinterlace_mode)
+		c=${2/ */} # supprime tout après un espace insécable
+		run $1 $c
+	;;
+	move)
+		c=${2/ */}
+		d=${3/ */}
+		run $1 $c $d
+	;;
+	delete)
+		for file in "${@:2}"; do
+			c=${file/ */} # supprime tout après un espace insécable
+			run $1 $c
+		done
+	;;
+	start)
+		if [ `pidof vlc | wc -l` -le 0 ]; then
+			shift
+			vlc --extraintf telnet --telnet-port $tport --telnet-host $tbind --telnet-password $password "$@" &>/dev/null &
+			sleep 2
+			if [ `pidof vlc | wc -l` -le 0 ]; then
+				cvlc --extraintf telnet --telnet-port $tport --telnet-host $tbind --telnet-password $password "$@" &>/dev/null &
+				sleep 2
+			fi
+		fi
+	;;
+	*)
+		run $*;
+	;;
+esac

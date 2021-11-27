@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# By: Lilian BESSON
+# Email: Lilian.BESSON[AT]ens-cachan[DOT]fr
+# Date: 05-11-2014
+# Web: http://perso.crans.org/besson/bin/latex2png
+# Web2: http://lbesson.bitbucket.org/latex2png.html
+#
+# latex2png, a small script to quickly produce a PNG image of a LaTeX formula, thanks to a webservice.
+#
+# Licence: [GPLv3](http://perso.crans.org/besson/LICENCE.html)
+#
+version='0.1'
+
+# $OPTARG can contain the argument of the option k (if specified with hvk: or hk:v for example)
+while getopts vh option
+do
+     case $option in
+        v|version|-version)
+            echo -e "latex2png $version"
+            exit 0
+            ;;
+        h|help|-help)
+            echo -e "${green}latex2png${white} -help | [options]"
+            echo -e ""
+            echo -e "Small script to quickly produce a PNG image of a LaTeX formula, thanks to a webservice."
+            echo -e "Help:"
+            echo -e "    ${yellow}-h${white}           to print this help message (and quit)."
+            echo -e "    ${yellow}-v${white}           to print just the version of latex2png (and quit)."
+            echo -e ""
+            echo -e "latex2png v$version : Copyrights: (c) Lilian Besson 2011-2014."
+            echo -e "Released under the term of the GPL v3 Licence (more details on http://perso.crans.org/besson/LICENSE.html)."
+            echo -e "In particular, latex2png is provided WITHOUT ANY WARANTY."
+            exit 0
+            ;;
+     esac
+done
+
+
+LatexFormula() {
+    out="${1}"
+    out="${out%.png}.png"
+    shift
+    echo -e "A PNG image of the LaTeX formula in being produced, to ${out}, thanks to a webservice on ${u}s0.wp.com${U} (or ${u}numberempire.com${U})."
+    # out="/tmp/LatexFormula_$$.jpg"
+    # tente d'afficher les arguments interpretes comme une formule LaTeX, via le bon service web.
+    latex="${@//+/}"
+    latex="${@// /+}"
+    wget --quiet 'http://s0.wp.com/latex.php?bg=ffffff&fg=1c1c1c&s=0&zoom=10&latex='"${latex}" -O "${out}" \
+    || wget --quiet 'http://numberempire.com/equation.render?'"${*// /%20}" -O "${out}"
+    display -title "Image for the LaTeX formula: '${*//\\/\\\\}'   (thanks to the script latex2png)" "${out}"
+    echo -e "The image has been produced, to ${out}, for the LaTeX formula."
+    echo -e ""
+    echo -e "Now you can use this image on Facebook or Twitter."
+}
+
+log="/tmp/latex2png.log"
+LatexFormula "$@" | tee -a "${log}"
+
+## END

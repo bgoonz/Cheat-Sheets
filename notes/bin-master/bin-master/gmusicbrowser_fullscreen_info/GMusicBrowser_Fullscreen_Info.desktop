@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Full screen mode for GMusicBrowser
+Comment=Full screen mode for GMusicBrowser, a web app using Python and Flask
+Exec=/home/lilian/bin/gmusicbrowser_fullscreen_info/launch.sh
+Icon=/home/lilian/bin/gmusicbrowser_fullscreen_info/icon.png
+Terminal=false
+Type=Application
+InitialPreference=6
+TryExec=/home/lilian/bin/gmusicbrowser_fullscreen_info/launch.sh
