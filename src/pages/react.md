@@ -1,10 +1,10 @@
 ---
-title: lorem-ipsum
-subtitle: lorem-ipsum
-img_alt: lorem-ipsum
+title: React Reference Guide
+subtitle: React Reference Guide
+img_alt: React Reference Guide
 seo:
-  title: ''
-  description: ''
+  title: 'React Reference Guide'
+  description: 'The key abstraction that React provides is that of a component. To reiterate, a component is some thing that is being rendered in the browser. It could be a button, a form with a bunch of fields in it, a navigation bar at the top of the page, a single input field, etc. Any of these could be its own component. React doesn't place any restrictions on how large or small a component can be. You _could_ have an entire static site encapsulated in a single React component, but that at that point you may as well not be using React. So the first thing to remember about a component is that a component must _render_ something. If nothing is being rendered from a component, then React will throw an error. '
   robots: []
   extra: []
 template: page
