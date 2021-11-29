@@ -20,8 +20,7 @@ seo:
       keyName: property
     - name: "og:description"
       value: >-
-        The Grand Canyon is a steep-sided canyon carved by the Colorado River in
-        Arizona
+        CSS is a language for designing your website, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
       keyName: property
     - name: "og:image"
       value: images/8.jpg
