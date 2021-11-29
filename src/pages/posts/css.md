@@ -1,12 +1,12 @@
 ---
 title: CSS
 excerpt: >-
-  CSS is a language for designing your website, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
+  Hiking The Grand Canyon, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
 date: '2021-11-27'
 thumb_img_path: images/bash.png
-thumb_img_alt: CSS is a language for designing your website
+thumb_img_alt: Hiking The Grand Canyon
 content_img_path: images/css-a3da8bfa.jpg
-content_img_alt: CSS is a language for designing your website
+content_img_alt: Hiking The Grand Canyon
 seo:
   title: Hiking The Grand Canyon
   description: >-
@@ -20,7 +20,7 @@ seo:
       keyName: property
     - name: "og:description"
       value: >-
-        CSS is a language for designing your website, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
+        Hiking The Grand Canyon, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
       keyName: property
     - name: "og:image"
       value: images/8.jpg
@@ -32,7 +32,7 @@ seo:
       value: Hiking The Grand Canyon
     - name: "twitter:description"
       value: >-
-        CSS is a language for designing your website, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
+        Hiking The Grand Canyon, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
     - name: "twitter:image"
       value: images/8.jpg
       relativeUrl: true
