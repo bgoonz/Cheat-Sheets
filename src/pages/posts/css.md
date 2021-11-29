@@ -6,7 +6,7 @@ date: '2021-11-27'
 thumb_img_path: images/bash.png
 thumb_img_alt: CSS is a language for designing your website
 content_img_path: images/css-a3da8bfa.jpg
-content_img_alt: Hikers on the trail
+content_img_alt: CSS is a language for designing your website
 seo:
   title: Hiking The Grand Canyon
   description: >-
