@@ -39,8 +39,8 @@ category: JavaScript libraries
 
 ### See also
 
- * [Mocha BDD](mocha.html)
- * [Mocha HTML](mocha-html.html)
- * [Chai](chai.html)
- * [Sinon](sinon.html)
- * [Sinon Chai](sinon-chai.html)
+- [Mocha BDD](mocha.html)
+- [Mocha HTML](mocha-html.html)
+- [Chai](chai.html)
+- [Sinon](sinon.html)
+- [Sinon Chai](sinon-chai.html)

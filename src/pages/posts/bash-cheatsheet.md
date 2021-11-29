@@ -2,7 +2,7 @@
 title: Bash Cheatsheet
 excerpt: >-
   Variables are how programming and scripting languages represent data. A variable is nothing more than a label, a name assigned to a location or set of locations in computer memory holding an item of data.Variables appear in arithmetic operations and manipulation of quantities, and in string parsing.
-date: '2021-11-27'
+date: "2021-11-27"
 thumb_img_path: images/bash.png
 thumb_img_alt: bash cheatsheet
 content_img_path: images/8.jpg
@@ -13,37 +13,35 @@ seo:
     The Grand Canyon is a steep-sided canyon carved by the Colorado River in
     Arizona
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: bash cheatsheet
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         The Grand Canyon is a steep-sided canyon carved by the Colorado River in
         Arizona
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/8.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: bash cheatsheet
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: >-
         The Grand Canyon is a steep-sided canyon carved by the Colorado River in
         Arizona
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/8.jpg
       relativeUrl: true
 template: post
 subtitle: Cheat Sheet
 ---
-
-
 
 ## Bash Cheat Sheet:
 
@@ -220,7 +218,7 @@ echo $varname                # checks a variable's value
 echo $$                      # prints process ID of the current shell
 echo $!                      # prints process ID of the most recently invoked background job
 echo $?                      # displays the exit status of the last command
-read <varname>               # reads a string from the input and assigns it to a variable 
+read <varname>               # reads a string from the input and assigns it to a variable
 let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
 
@@ -509,7 +507,7 @@ function returntrap {
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
 ##############################################################################
-# COLORS AND BACKGROUNDS 
+# COLORS AND BACKGROUNDS
 ##############################################################################
 
 # Reset
@@ -568,7 +566,7 @@ On_White='\033[47m' # White
 
 # Example of usage
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
-echo -e "${Red}${On_White}This is Red test on White background${Color_Off}" 
+echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
 # option -e is mandatory, it enable interpretation of backslash escapes
 
 

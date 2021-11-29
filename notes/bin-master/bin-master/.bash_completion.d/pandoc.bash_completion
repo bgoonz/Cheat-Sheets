@@ -1,6 +1,0 @@
-#!/bin/bash
-# Add autocomplete support for pandoc for bash.
-if type pandoc &>/dev/null; then
-    eval "$(pandoc --bash-completion)"
-fi
-

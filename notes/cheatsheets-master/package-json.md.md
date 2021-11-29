@@ -27,9 +27,10 @@ weight: -3
   "repository": {
     "type": "git",
     "url": "https://github.com/rstacruz/___.git"
-  },
+  }
 }
 ```
+
 {: data-line="2,3,4,5"}
 
 Highlighted lines are required.
@@ -61,7 +62,7 @@ See [Semver cheatsheet](./semver) for explanation of version ranges.
   "start": "node ./bin/xxx",       /* npm start */
   "test": "vows --spec --isolate", /* npm test */
   "postinstall": "...",
-  "prepublish": "grunt build",     /* after 'npm install' and before 'npm 
+  "prepublish": "grunt build",     /* after 'npm install' and before 'npm
                                       publish' */
 }
 ```
@@ -89,8 +90,9 @@ See [Semver cheatsheet](./semver) for explanation of version ranges.
 Keys in `config` are exposed as env vars to scripts.
 
 ## References
+
 {: .-one-column}
 
- * <http://package.json.nodejitsu.com/>
- * `npm help package.json`
-{: .-also-see}
+- <http://package.json.nodejitsu.com/>
+- `npm help package.json`
+  {: .-also-see}

@@ -30,19 +30,21 @@ args == {
 
 ```js
 if (args.help) {
-  console.log([
-      'Usage:',
-      '  hicat [options] [file]',
-      '',
-      'Options:',
-      '  -h, --help         print usage information',
-      '  -v, --version      show version info and exit',
-  ].join('\n'));
+  console.log(
+    [
+      "Usage:",
+      "  hicat [options] [file]",
+      "",
+      "Options:",
+      "  -h, --help         print usage information",
+      "  -v, --version      show version info and exit",
+    ].join("\n")
+  );
   process.exit(0);
 }
 
 if (args.version) {
-  console.log(require('../package.json').version);
+  console.log(require("../package.json").version);
   process.exit(0);
 }
 ```

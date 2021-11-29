@@ -8,15 +8,15 @@ updated: 2018-05-14
 ### Properties
 
 ```js
-import {observable, computed} from 'mobx'
+import { observable, computed } from "mobx";
 
 class Page {
-  @observable title = ''
-  @observable published = false
-  @observable author = null
+  @observable title = "";
+  @observable published = false;
+  @observable author = null;
 
-  @computed get authorName () {
-    return this.author || 'Anonymous'
+  @computed get authorName() {
+    return this.author || "Anonymous";
   }
 }
 ```
@@ -25,8 +25,8 @@ class Page {
 
 ```js
 class Page {
-  @action publish () {
-    this.published = true
+  @action publish() {
+    this.published = true;
     // do ajax/async here if you like
   }
 }
@@ -36,8 +36,8 @@ class Page {
 
 ```js
 const person = observable({
-  name: 'Ella Fitzgerald'
-})
+  name: "Ella Fitzgerald",
+});
 ```
 
 ```js
@@ -52,7 +52,7 @@ temp.observe(...)
 ### Importing
 
 ```js
-import {autorun, autorunAsync, when} from 'mobx'
+import { autorun, autorunAsync, when } from "mobx";
 ```
 
 ### autorun()
@@ -60,18 +60,19 @@ import {autorun, autorunAsync, when} from 'mobx'
 ```js
 // Runs it, finds out what it accessed, then observe those
 autorun(() => {
-  console.log(page.title)
-})
+  console.log(page.title);
+});
 ```
 
 ### when()
 
 ```js
 class Foo {
-  constructor () {
+  constructor() {
     when(
       () => !this.isVisible,
-      () => this.doSomething())
+      () => this.doSomething()
+    );
   }
 }
 ```
@@ -98,16 +99,16 @@ render () {
 ### mobx-react
 
 ```js
-import { observer } from 'mobx-react'
+import { observer } from "mobx-react";
 
 @observer
 class PageView extends React.Component {
-  render () {
-    return <div>{this.props.page.title}</div>
+  render() {
+    return <div>{this.props.page.title}</div>;
   }
 }
 
-<PageView page={page} />
+<PageView page={page} />;
 ```
 
 ### Functional components

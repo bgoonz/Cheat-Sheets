@@ -19,8 +19,8 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition: width .15s ease;
-  transition: width .15s ease;
+  -webkit-transition: width 0.15s ease;
+  transition: width 0.15s ease;
   width: 20px;
 
   &:before,
@@ -30,9 +30,9 @@
     height: 100%;
     position: absolute;
     right: 0;
-    -webkit-transition: -webkit-transform .15s ease;
-    -webkit-transition: transform .15s ease;
-    transition: transform .15s ease;
+    -webkit-transition: -webkit-transform 0.15s ease;
+    -webkit-transition: transform 0.15s ease;
+    transition: transform 0.15s ease;
     width: 20px;
   }
 
@@ -69,8 +69,8 @@
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 16px;
 }
 
@@ -81,8 +81,8 @@
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 2px;
 }
 
