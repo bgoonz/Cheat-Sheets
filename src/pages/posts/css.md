@@ -1,10 +1,7 @@
 ---
 title: CSS
 excerpt: >-
-  Variables are how programming and scripting languages represent data. A
-  variable is nothing more than a label, a name assigned to a location or set of
-  locations in computer memory holding an item of data.Variables appear in
-  arithmetic operations and manipulation of quantities, and in string parsing.
+  CSS is a language for designing your website, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
 date: '2021-11-27'
 thumb_img_path: images/bash.png
 thumb_img_alt: Hikers on the trail
