@@ -38,6 +38,9 @@ template: post
 
 ## Html
 
+
+
+
 ```html
 <!DOCTYPE html>
 <!-- Tells the browser that HTML5 version of HTML to be recognized by the browser -->
