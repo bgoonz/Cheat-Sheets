@@ -5,6 +5,7 @@ layout: 2017/sheet
 ---
 
 ## Vagrantfile
+
 {: .-one-column}
 
 ```rb
@@ -124,4 +125,4 @@ end
 
 ## Also see
 
-* [Vagrant cheatsheet](./vagrant)
+- [Vagrant cheatsheet](./vagrant)

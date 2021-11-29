@@ -6,9 +6,9 @@ updated: 2018-12-25
 authors:
   - github: lucywyman
 keywords:
-    - Puppet
-    - tasks
-    - modules
+  - Puppet
+  - tasks
+  - modules
 description: |
   A quick guide to getting started writing Bolt tasks
 ---

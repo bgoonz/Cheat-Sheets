@@ -7,18 +7,18 @@ layout: 2017/sheet
 ### Assertions
 
 ```js
-assert(val)
-assert.equal(actual, expected)
-assert.notEqual(a, e)
+assert(val);
+assert.equal(actual, expected);
+assert.notEqual(a, e);
 ```
 
 ```js
-assert.deepEqual(a, e)
-assert.notDeepEqual(a, e)
+assert.deepEqual(a, e);
+assert.notDeepEqual(a, e);
 ```
 
 ```js
-assert.throws(fn)
+assert.throws(fn);
 ```
 
 ### References

@@ -9,7 +9,7 @@ tags: [Featurable]
 ### Parsing
 
 ```js
-m = moment('2013-03-01', 'YYYY-MM-DD')
+m = moment("2013-03-01", "YYYY-MM-DD");
 ```
 
 This parses the given date using the given format. Returns a moment object.
@@ -17,24 +17,24 @@ This parses the given date using the given format. Returns a moment object.
 ### Formatting
 
 ```js
-m.format()            // "2013-03-01T00:00:00+01:00"
-m.format('dddd')      // "Friday"
-m.format('MMM Do YY') // "Mar 1st 13"
-m.fromNow()           // "7 years ago"
-m.calendar()          // "03/01/2013"
+m.format(); // "2013-03-01T00:00:00+01:00"
+m.format("dddd"); // "Friday"
+m.format("MMM Do YY"); // "Mar 1st 13"
+m.fromNow(); // "7 years ago"
+m.calendar(); // "03/01/2013"
 ```
 
 ### Add
 
 ```js
-m.add(1, 'day')
-m.subtract(2, 'days')
+m.add(1, "day");
+m.subtract(2, "days");
 ```
 
 ```js
-m.startOf('day')
-m.endOf('day')
-m.startOf('hour')
+m.startOf("day");
+m.endOf("day");
+m.startOf("hour");
 ```
 
 ### Internationalization
@@ -58,10 +58,10 @@ See [datetime](./datetime) for more.
 
 ### Alternatives
 
-* [You don't need Moment.js](https://github.com/you-dont-need/You-Dont-Need-Momentjs) _(github.com)_
+- [You don't need Moment.js](https://github.com/you-dont-need/You-Dont-Need-Momentjs) _(github.com)_
 
 ### Also see
 
-* [Datetime cheatsheet](./datetime) _(devhints.io)_
-* [Moment website](http://momentjs.com/) _(momentjs.com)_
-* [Moment docs](http://momentjs.com/docs/) _(momentjs.com)_
+- [Datetime cheatsheet](./datetime) _(devhints.io)_
+- [Moment website](http://momentjs.com/) _(momentjs.com)_
+- [Moment docs](http://momentjs.com/docs/) _(momentjs.com)_

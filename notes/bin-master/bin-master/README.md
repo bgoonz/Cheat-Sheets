@@ -1,9 +1,11 @@
 # [bitbucket.org/lbesson/bin](https://bitbucket.org/lbesson/bin)
 
-## En *français*
-Ce dossier contient plein de petits scripts, la plupart en Bash (*GNU Bash v4+*), certains en Python (*v2 or v3*).
+## En _français_
+
+Ce dossier contient plein de petits scripts, la plupart en Bash (_GNU Bash v4+_), certains en Python (_v2 or v3_).
 
 #### Plus d'informations
+
 La page [bin.html](http://perso.crans.org/besson/bin.html) présente une rapide description des différents scripts.
 J'essaie de la garder à jour le mieux que je peux.
 
@@ -16,19 +18,23 @@ Généralement, chaque script contient une description de sa fonction, avec parf
 [![Demandez moi n'importe quoi !](https://img.shields.io/badge/Demandez%20moi-n'%20importe%20quoi-1abc9c.svg)](https://bitbucket.org/lbesson/ama.fr)
 
 #### Licence ?
+
 Tout est distribué sous les termes de la [Licence GPLv3](http://perso.crans.org/besson/LICENSE.html) (document en anglais).
 
 #### Copyright ?
+
 Sauf contre-indications, tous les documents stockés dans ce dépôt sont © [Lilian Besson](https://bitbucket.org/lbesson), 2011-2017.
 
 ---
 
-## In *English*
-This repository is full of small programs and scripts, mostly written in Bash (*GNU Bash, v4.2+*), some in Python (*v2 or v3*).
+## In _English_
+
+This repository is full of small programs and scripts, mostly written in Bash (_GNU Bash, v4.2+_), some in Python (_v2 or v3_).
 
 #### More details
+
 The page [bin.html](http://perso.crans.org/besson/bin.html) presents a rapid overview of some of these scripts.
-I try to keep it up-to-date, and an English translation will *soon* be available !
+I try to keep it up-to-date, and an English translation will _soon_ be available !
 
 I aslo try to embed a small description of its purpose in every program,
 and sometimes there is even details on which option you can give to the script !
@@ -40,9 +46,11 @@ and sometimes there is even details on which option you can give to the script !
 [![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://bitbucket.org/lbesson/ama)
 
 #### Licence ? [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+
 Everything here is publicly released under the term of the [GPLv3 Licence](http://perso.crans.org/besson/LICENSE.html).
 
 #### Copyright ?
+
 Without other indications, every documents stored here are © [Lilian Besson](https://bitbucket.org/lbesson), 2011-2018.
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://bitbucket.org/lbesson/bin/commits/)
@@ -50,4 +58,3 @@ Without other indications, every documents stored here are © [Lilian Besson](ht
 
 [![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)](http://ForTheBadge.com)
 [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://bitbucket.org/lbesson)
-

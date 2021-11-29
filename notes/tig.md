@@ -36,6 +36,7 @@ $ sudo apt install tig
 You can substitute `git log` → `tig`.
 
 ## Shortcut keys
+
 {: .-three-column}
 
 ### Switching views
@@ -51,9 +52,9 @@ You can substitute `git log` → `tig`.
 ### All views
 
 | Shortcut | Description             |
-| ---      | ---                     |
-| `j`  `k` | Up/down                 |
-| `J`  `K` | Next/previous           |
+| -------- | ----------------------- |
+| `j` `k`  | Up/down                 |
+| `J` `K`  | Next/previous           |
 | ---      | ---                     |
 | `<`      | Back                    |
 | `R`      | Refresh                 |
@@ -62,23 +63,24 @@ You can substitute `git log` → `tig`.
 | ---      | ---                     |
 | `^N`     | Next on parent view     |
 | `^P`     | Previous on parent view |
+
 {: .-shortcuts}
 
 ### `m` - Main view
 
-| `D` | Toggle date display modes   |
+| `D` | Toggle date display modes |
 | `A` | Toggle author display modes |
-| `X` | Toggle commit sha           |
-| `C` | Cherry pick a commit        |
+| `X` | Toggle commit sha |
+| `C` | Cherry pick a commit |
 {: .-shortcuts}
 
 ### `s` - Status view
 
-| `u`     | Stage/unstage file or chunk        |
-| `!`     | Revert file or chunk               |
-| `C`     | Commit                             |
-| `M`     | Merge                              |
-| `1`     | Stage line                         |
+| `u` | Stage/unstage file or chunk |
+| `!` | Revert file or chunk |
+| `C` | Commit |
+| `M` | Merge |
+| `1` | Stage line |
 | `[` `]` | Increase/decrease the diff context |
 {: .-shortcuts}
 

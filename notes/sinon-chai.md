@@ -4,14 +4,13 @@ category: JavaScript libraries
 layout: default-ad
 ---
 
-  * [Sinon-chai](https://github.com/domenic/sinon-chai)
-
+- [Sinon-chai](https://github.com/domenic/sinon-chai)
 
 ### Initialization
 
 ```js
-var sinon = require('sinon');
-require('chai').use(require('sinon-chai'));
+var sinon = require("sinon");
+require("chai").use(require("sinon-chai"));
 ```
 
 ### Assert

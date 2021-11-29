@@ -17,9 +17,11 @@ intro: |
 ---
 
 ## Quick-start guide
+
 {: .-three-column}
 
 ### Getting started
+
 {: .-prime}
 
 #### JavaScript
@@ -45,7 +47,7 @@ export class MyComponent {
 #### HTML
 
 ```html
-<my-component name='Groot' />
+<my-component name="Groot" />
 ```
 
 That's the same example in the [Readme](https://github.com/ionic-team/stencil), that's as simple as you can get! Just use `<my-component>` like you would use any other HTML tag.
@@ -54,19 +56,16 @@ That's the same example in the [Readme](https://github.com/ionic-team/stencil), 
 
 ```js
 export class MyComponent {
-  render () {
-    return (
-      <input
-        onChange={(event: UIEvent) => this.inputChanged(event)}
-      />
-    )
+  render() {
+    return <input onChange={(event: UIEvent) => this.inputChanged(event)} />;
   }
 
-  inputChanged (event) {
-    console.log('input changed:', event.target.value)
+  inputChanged(event) {
+    console.log("input changed:", event.target.value);
   }
 }
 ```
+
 {: data-line="5,10,11"}
 
 Stencil uses DOM events.
@@ -83,6 +82,7 @@ render () {
   ]
 }
 ```
+
 {: data-line="3,4"}
 
 `render()` can return an array of elements.
@@ -95,13 +95,14 @@ See: [Complex template content](https://stenciljs.com/docs/templating#complex-te
 
 ```js
 export class MyComponent {
-  @State() isVisible: boolean
+  @State() isVisible: boolean;
 
-  show () {
-    this.isVisible = true
+  show() {
+    this.isVisible = true;
   }
 }
 ```
+
 {: data-line="4,5"}
 
 Just do assignments. You can't do mutations though, see next section.
@@ -111,16 +112,17 @@ See: [Managing component state](https://stenciljs.com/docs/decorators#managing-c
 ### Updating arrays and objects
 
 #### ✗ Bad
+
 ```js
-this.names.push('Larry')  // ⚠️
-this.options.show = true  // ⚠️
+this.names.push("Larry"); // ⚠️
+this.options.show = true; // ⚠️
 ```
 
 #### ✓ OK
 
 ```js
-this.names = [ ...this.names, 'Larry' ]
-this.options = { ...this.options, show: true }
+this.names = [...this.names, "Larry"];
+this.options = { ...this.options, show: true };
 ```
 
 Mutable operations such as `push()` won't work. You'll need to assign a new copy.
@@ -136,6 +138,7 @@ See: [Updating arrays](https://stenciljs.com/docs/reactive-data/#updating-arrays
   <span>Hello, friends</span>
 </my-component>
 ```
+
 {: data-line="2"}
 
 #### Component
@@ -145,6 +148,7 @@ render() {
   return <h1><slot /></h1>
 }
 ```
+
 {: data-line="2"}
 
 You can pass JSX/HTML as child elements. Use the `slot` tag to use them inside your component.
@@ -155,10 +159,11 @@ See: [Slots](https://stenciljs.com/docs/templating#slots)
 
 ```html
 <my-component>
-  <p slot='my-header'>Hello</p>
-  <p slot='my-footer'>Thanks</p>
+  <p slot="my-header">Hello</p>
+  <p slot="my-footer">Thanks</p>
 </my-component>
 ```
+
 {: data-line="2,3"}
 
 #### Component
@@ -171,6 +176,7 @@ render () {
   </div>
 }
 ```
+
 {: data-line="3,4"}
 
 See: [Slots](https://stenciljs.com/docs/templating#slots)
@@ -180,7 +186,7 @@ See: [Slots](https://stenciljs.com/docs/templating#slots)
 ### Lifecycle hooks
 
 | Event                   | Description      |
-| ---                     | ---              |
+| ----------------------- | ---------------- |
 | `componentWillLoad()`   | Before rendering |
 | `componentDidLoad()`    | After rendering  |
 | ---                     | ---              |
@@ -195,8 +201,8 @@ See: [Component lifecycle](https://stenciljs.com/docs/component-lifecycle)
 
 ```js
 export class MyComponent {
-  componentWillUpdate () {
-    console.log('updating')
+  componentWillUpdate() {
+    console.log("updating");
   }
 }
 ```

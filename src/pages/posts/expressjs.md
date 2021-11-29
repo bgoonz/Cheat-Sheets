@@ -1,5 +1,5 @@
 ---
-title:  ExpressJS Cheat Sheet
+title: ExpressJS Cheat Sheet
 subtitle: >-
   Apparently, Japan is covered in magical and irresistibly cute animal
   sanctuaries.
@@ -7,41 +7,41 @@ excerpt: >-
   Miyagi Zao Fox Village, aka Kitsune Mura, is a popular tourist attraction
   situated in Shiroishi, Miyagi it based in the Miyagi Zao mountains. Visitors
   can visit a village where there is a vast population of foxes.
-date: '2018-01-11'
+date: "2018-01-11"
 thumb_img_path: images/5.jpg
 thumb_img_alt: A red fox in a rocky forest
 content_img_path: images/5.jpg
 content_img_alt: A red fox in a rocky forest
 seo:
-  title:  ExpressJS Cheat Sheet
+  title: ExpressJS Cheat Sheet
   description: >-
     Apparently, Japan is covered in magical and irresistibly cute animal
     sanctuaries.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
-      value:  ExpressJS Cheat Sheet
+    - name: "og:title"
+      value: ExpressJS Cheat Sheet
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         Apparently, Japan is covered in magical and irresistibly cute animal
         sanctuaries.
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/5.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
-      value:  ExpressJS Cheat Sheet
-    - name: 'twitter:description'
+    - name: "twitter:title"
+      value: ExpressJS Cheat Sheet
+    - name: "twitter:description"
       value: >-
         Apparently, Japan is covered in magical and irresistibly cute animal
         sanctuaries.
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/5.jpg
       relativeUrl: true
 template: post
@@ -49,8 +49,7 @@ template: post
 
 ## Background:
 
-Installing
-==========
+# Installing
 
 Assuming you've already installed [Node.js](https://nodejs.org/), create a directory to hold your application, and make that your working directory.
 
@@ -92,8 +91,6 @@ $ npm install express --no-save
 
 By default with version npm 5.0+ npm install adds the module to the `dependencies` list in the `package.json` file; with earlier versions of npm, you must specify the `--save` option explicitly. Then, afterwards, running `npm install` in the app directory will automatically install modules in the dependencies list.
 
-
-
 # Express Cheatsheet
 
 - [Installing](#installing)
@@ -116,7 +113,7 @@ By default with version npm 5.0+ npm install adds the module to the `dependencie
 ## Creating an App
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
 ```
 
@@ -126,7 +123,7 @@ const app = express();
 const PORT = 4000;
 
 app.listen(PORT, () => {
-    console.log(`Listening on ${PORT}`);
+  console.log(`Listening on ${PORT}`);
 });
 ```
 
@@ -152,11 +149,10 @@ server.listen(PORT, () => {
 
 Every callback we define in express is middleware.
 
-
 ### Standard middleware function signature
 
 ```js
-    (req, res, next) => {}
+(req, res, next) => {};
 ```
 
 - `req` - The Request object that represents the incoming Request to the server
@@ -166,21 +162,23 @@ Every callback we define in express is middleware.
 ### `app.use`
 
 `app.use` is how you register a middleware function with express. Functions are added
-to the express app in the order the `app.use()` functions are invoked.  The callback
+to the express app in the order the `app.use()` functions are invoked. The callback
 (middleware) functions aren't called until a new request comes in to the server.
 
 ```js
 app.use((req, res, next) => {
-    // this runs when a request comes in.
+  // this runs when a request comes in.
 });
-
 ```
 
 `app.use` can accept a list of middleware functions OR an array of them.
 
 ```js
 // Two arrow functions.
-app.use((req, res, next) => {}, (req, res, next) => {});
+app.use(
+  (req, res, next) => {},
+  (req, res, next) => {}
+);
 
 // Two named functions.
 app.use(middleware1, middleware2);
@@ -189,8 +187,7 @@ app.use(middleware1, middleware2);
 app.use([middleware1, middleware2]);
 
 // Or any combination. It's flexible!
-app.use([middleware1, middleware2], middleware3, (req, res, next) => {
-});
+app.use([middleware1, middleware2], middleware3, (req, res, next) => {});
 ```
 
 The important thing is, you are just giving express function _references_, the
@@ -205,12 +202,12 @@ They depend on the HTTP Method and the Path matching in order to run.
 The first argument to these routes is the path to match.
 
 ```js
-app.get('/', (req, res, next) => {
-    // Runs only for a GET request to / 
+app.get("/", (req, res, next) => {
+  // Runs only for a GET request to /
 });
 
-app.post('/users', (req, res, next) => {
-    // Runs only for a POST request to /users
+app.post("/users", (req, res, next) => {
+  // Runs only for a POST request to /users
 });
 ```
 
@@ -221,8 +218,8 @@ As a way of organizing your router, express includes a router object.
 #### Making a new router
 
 ```jsx
-    const express = require('express');
-    const userRouter = express.Router();
+const express = require("express");
+const userRouter = express.Router();
 ```
 
 #### Letting app know about the router and it's prefix.
@@ -235,7 +232,7 @@ const app = express();
 const userRouter = express.Router();
 
 // every route we create on userRouter will have the prefix `/users`
-app.use('/users', userRouter); 
+app.use("/users", userRouter);
 ```
 
 #### Defining Routes on the Router
@@ -247,14 +244,12 @@ However, the path matching matches everything _after_ the router's prefix.
 // Passing a middleware to the router
 userRouter.use(middleware);
 
-userRouter.get('/profile', (req, res, next) => {
-    // Runs when the router path matches /profile
-    // excluding the prefix
-
-    // Example: If the userRouter's prefix was /users
-    // then the full path that matches is /users/profile
+userRouter.get("/profile", (req, res, next) => {
+  // Runs when the router path matches /profile
+  // excluding the prefix
+  // Example: If the userRouter's prefix was /users
+  // then the full path that matches is /users/profile
 });
-
 ```
 
 ## Error handling
@@ -267,8 +262,8 @@ express app, it might be completely hidden from you.
 
 ```js
 app.use((err, req, res, next) => {
-    // The first argument will be an error.
-    console.error(err); // This is a good idea
+  // The first argument will be an error.
+  console.error(err); // This is a good idea
 });
 ```
 
@@ -279,9 +274,9 @@ app.use((err, req, res, next) => {
 This will cause express to hang forever. Your browser will never get a response.
 
 ```js
-app.get('/', (req, res, next) => {
-    // if I don't res.send or res.json
-    // And I don't call next()
-    // This will cause express to hang.
+app.get("/", (req, res, next) => {
+  // if I don't res.send or res.json
+  // And I don't call next()
+  // This will cause express to hang.
 });
 ```

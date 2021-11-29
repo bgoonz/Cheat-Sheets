@@ -6,6 +6,7 @@ updated: 2019-11-17
 ---
 
 ### Usage
+
 {: .-prime}
 
 ```bash
@@ -35,7 +36,7 @@ find <path> <conditions> <actions>
 ```
 
 ```bash
--size 8            # Exactly 8 512-bit blocks 
+-size 8            # Exactly 8 512-bit blocks
 -size -128c        # Smaller than 128 bytes
 -size 1440k        # Exactly 1440KiB
 -size +10M         # Larger than 10MiB

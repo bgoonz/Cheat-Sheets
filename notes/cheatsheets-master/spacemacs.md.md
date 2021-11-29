@@ -8,14 +8,14 @@ intro: |
   [Spacemacs](http://spacemacs.org) is a distribution for Emacs.
 ---
 
-Shortcuts
----------
+## Shortcuts
+
 {: .-three-column}
 
 ### Layers
 
 | Shortcut  | Description       |
-| ---       | ---               |
+| --------- | ----------------- |
 | `SPC` `f` | File              |
 | `SPC` `p` | Project           |
 | `SPC` `t` | Toggle            |
@@ -28,64 +28,70 @@ Shortcuts
 | `SPC` `l` | Layout            |
 | `SPC` `a` | Apps              |
 | `SPC` `h` | Help              |
+
 {: .-shortcuts.-prime}
 
 ### More
 
 | Description | Shortcut    |
-| ---         | ---         |
+| ----------- | ----------- |
 | **M-x**     | `SPC` `SPC` |
 | Terminal    | `SPC` `'`   |
 | Search      | `SPC` `/`   |
+
 {: .-shortcuts-right}
 
 ### `SPC` `h` - Help
 
 | Description        | Shortcut |
-| ---                | ---      |
+| ------------------ | -------- |
 | **Spacemacs help** | `SPC`    |
 | ---                | ---      |
 | Layers             | `l`      |
 | Documentation      | `r`      |
 | FAQ                | `f`      |
 | Vimtutor           | `T`      |
+
 {: .-shortcuts-right}
 
 ### `SPC` `f` - File
 
 | Description   | Shortcut |
-| ---           | ---      |
+| ------------- | -------- |
 | **Save**      | `s`      |
 | Save all      | `S`      |
 | Copy          | `c`      |
 | Delete        | `D`      |
 | ---           | ---      |
 | Show filename | `y`      |
+
 {: .-shortcuts-right}
 
 ### `SPC` `b` - Buffer
 
 | Description                | Shortcut |
-| ---                        | ---      |
+| -------------------------- | -------- |
 | Next buffer (`:bnext`)     | `n`      |
 | Previous buffer (`:bprev`) | `p`      |
 | Delete buffer (`:bd`)      | `d`      |
+
 {: .-shortcuts-right}
 
 ### `SPC` `f` `e` - Config
 
 | Description              | Shortcut |
-| ---                      | ---      |
+| ------------------------ | -------- |
 | **Edit config**          | `d`      |
 | Edit config and template | `D`      |
 | ---                      | ---      |
 | Reload config            | `R`      |
+
 {: .-shortcuts}
 
 ### `SPC` `w` - Window
 
 | Description         | Shortcut              |
-| ---                 | ---                   |
+| ------------------- | --------------------- |
 | Help                | `.`                   |
 |                     | ---                   |
 | Select              | `h` / `j` / `k` / `l` |
@@ -96,12 +102,13 @@ Shortcuts
 | ---                 | ---                   |
 | Split vert          | `v`                   |
 | Split vert & follow | `V`                   |
+
 {: .-shortcuts-right}
 
 ### `SPC` `p` - Project
 
 | Description             | Shortcut |
-| ---                     | ---      |
+| ----------------------- | -------- |
 | **Switch project**      | `l`      |
 | Switch project          | `p`      |
 | ---                     | ---      |
@@ -112,34 +119,38 @@ Shortcuts
 | ---                     | ---      |
 | Open terminal           | `'`      |
 | Open terminal in root   | `$` `t`  |
+
 {: .-shortcuts-right}
 
 ### `SPC` `l` `w` - Workspaces
 
 | Description                 | Shortcut    |
-| ---                         | ---         |
+| --------------------------- | ----------- |
 | Help                        | `?`         |
 | ---                         | ---         |
 | Switch previous layout      | `TAB`       |
 | **Switch to nth workspace** | `0` ... `9` |
 | ---                         | ---         |
 | Rename                      | `R`         |
+
 {: .-shortcuts-right}
 
 ### `SPC` `t` - Toggle
 
 | Description  | Shortcut |
-| ---          | ---      |
+| ------------ | -------- |
 | Line numbers | `n`      |
+
 {: .-shortcuts
 
 ### `SPC` `j` - Jump
 
 | Description | Shortcut |
-| ---         | ---      |
+| ----------- | -------- |
 | Character   | `j`      |
 | Line        | `l`      |
 | Word        | `w`      |
+
 {: .-shortcuts-right}
 
 ## Major modes
@@ -147,9 +158,10 @@ Shortcuts
 ### Markdown
 
 | Shortcut    | Description            |
-| ---         | ---                    |
+| ----------- | ---------------------- |
 | `,` `-`     | Insert horizontal rule |
 | `,` `h` `1` | Insert H1              |
+
 {: .-shortcuts}
 
 ## Other layers
@@ -157,7 +169,7 @@ Shortcuts
 ### version-control
 
 | Shortcut              | Description            |
-| ---                   | ---                    |
+| --------------------- | ---------------------- |
 | `SPC` `g` `s`         | **Status**             |
 | ---                   | ---                    |
 | `SPC` `g` `m`         | **Open dispatch menu** |
@@ -169,6 +181,7 @@ Shortcuts
 | ---                   | ---                    |
 | `SPC` `g` `l` `l`     | Open in GitHub         |
 | `SPC` `g` `l` `L`     | Show GitHub URL        |
+
 {: .-shortcuts}
 
 Version control is provided by Magit.
@@ -178,7 +191,7 @@ Version control is provided by Magit.
 ### File
 
 | Description      | Emacs       | Spacemacs     |
-| ---              | ---         | ---           |
+| ---------------- | ----------- | ------------- |
 | Save             | `C-x` `C-s` | `SPC` `f` `s` |
 | Open             | `C-x` `C-f` | `SPC` `f` `f` |
 | Close            | `C-x` `C-k` |               |
@@ -188,6 +201,7 @@ Version control is provided by Magit.
 | ---              | ---         | ---           |
 | Confirm          | `C-c` `C-c` |               |
 | Abort            | `C-c` `C-k` |               |
+
 {: .-shortcuts-right}
 
 ## References

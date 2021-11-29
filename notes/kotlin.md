@@ -5,11 +5,11 @@ updated: 2018-12-06
 category: Java & JVM
 prism_languages: [kotlin]
 intro: |
-    [Kotlin](http://kotlinlang.org/) is a statically typed programming language for modern multiplatform applications.
+  [Kotlin](http://kotlinlang.org/) is a statically typed programming language for modern multiplatform applications.
 ---
 
-Variables
----------
+## Variables
+
 {: .-three-column}
 
 ### Mutability
@@ -59,8 +59,8 @@ class Person {
 val key = Person.NAME_KEY
 ```
 
-Null Safety
------------
+## Null Safety
+
 {: .-two-column}
 
 ### Nullable properties
@@ -101,13 +101,14 @@ val nonNullDepartmentHead: String = person?.department?.head?.name.orEmpty()
 ```
 
 ### Safe Casts
+
 ```kotlin
 // Will not throw ClassCastException
 val nullableCar: Car? = (input as? Car)
 ```
 
-Collections
------------
+## Collections
+
 {: .-two-column}
 
 ### Creation
@@ -155,7 +156,7 @@ myList.forEach {
     print(it)
 }
 
-myList.forEachIndexed { index, item -> 
+myList.forEachIndexed { index, item ->
     print("Item at $index is: $item")
 }
 ```
@@ -173,8 +174,8 @@ val firstEvenOrNull: Int? = numList.firstOrNull { it % 2 == 0 }
 
 Note: `it` is the [implicit name for a single parameter](https://kotlinlang.org/docs/reference/lambdas.html#it-implicit-name-of-a-single-parameter).
 
-Functions
----------
+## Functions
+
 {: .-two-column}
 
 ### Parameters & Return Types
@@ -261,10 +262,10 @@ class Fragment(val args: Bundle) {
 val fragment = Fragment.newInstance(args)
 ```
 
-* [Companion Objects](https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects)
+- [Companion Objects](https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects)
 
-Classes
--------
+## Classes
+
 {: .-two-column}
 
 ### Primary Constructor
@@ -306,8 +307,8 @@ class Machine : Runner {
 }
 ```
 
-Control Flow
-------------
+## Control Flow
+
 {: .-two-column}
 
 ### If Statements
@@ -355,8 +356,8 @@ do {
 } while (x > 0)
 ```
 
-Destructuring Declarations
---------------------------
+## Destructuring Declarations
+
 {: .-two-column}
 
 ### Objects & Lists
@@ -386,18 +387,18 @@ class Person(val name: String, val age: Int) {
 }
 ```
 
-References
-----------
+## References
+
 {: .-one-column}
 
-* [Defining Variables](https://kotlinlang.org/docs/reference/basic-syntax.html#defining-variables) _(kotlinlang.org)_
-* [Strings Documentation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) _(kotlinlang.org)_
-* [String Templates](https://kotlinlang.org/docs/reference/basic-types.html#string-templates) _(kotlinlang.org)_
-* [Basic Types](https://kotlinlang.org/docs/reference/basic-types.html) _(kotlinlang.org)_
-* [Companion Objects](https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects) _(kotlinlang.org)_
-* [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html) _(kotlinlang.org)_
-* [Collections Overview](https://kotlinlang.org/docs/reference/collections.html) _(kotlinlang.org)_
-* [Collections Documentation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/index.html) _(kotlinlang.org)_
-* [Functions Documentation](https://kotlinlang.org/docs/reference/functions.html) _(kotlinlang.org)_
-* [Classes Documentation](https://kotlinlang.org/docs/reference/classes.html) _(kotlinlang.org)_
-* [Destructuring Declarations](https://kotlinlang.org/docs/reference/multi-declarations.html) _(kotlinlang.org)_
+- [Defining Variables](https://kotlinlang.org/docs/reference/basic-syntax.html#defining-variables) _(kotlinlang.org)_
+- [Strings Documentation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) _(kotlinlang.org)_
+- [String Templates](https://kotlinlang.org/docs/reference/basic-types.html#string-templates) _(kotlinlang.org)_
+- [Basic Types](https://kotlinlang.org/docs/reference/basic-types.html) _(kotlinlang.org)_
+- [Companion Objects](https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects) _(kotlinlang.org)_
+- [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html) _(kotlinlang.org)_
+- [Collections Overview](https://kotlinlang.org/docs/reference/collections.html) _(kotlinlang.org)_
+- [Collections Documentation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/index.html) _(kotlinlang.org)_
+- [Functions Documentation](https://kotlinlang.org/docs/reference/functions.html) _(kotlinlang.org)_
+- [Classes Documentation](https://kotlinlang.org/docs/reference/classes.html) _(kotlinlang.org)_
+- [Destructuring Declarations](https://kotlinlang.org/docs/reference/multi-declarations.html) _(kotlinlang.org)_

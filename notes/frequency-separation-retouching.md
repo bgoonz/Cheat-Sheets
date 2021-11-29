@@ -25,4 +25,4 @@ Duplicate the layer twice. Perform these in each layer:
 ### Reference
 
 - <https://phlearn.com/amazing-power-frequency-separation-retouching-photoshop>
-{: .-also-see}
+  {: .-also-see}

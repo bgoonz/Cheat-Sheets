@@ -14,12 +14,12 @@ intro: |
 ```js
 module.exports = {
   context: __dirname,
-  entry: 'src/app.js',
+  entry: "src/app.js",
   output: {
-    path: __dirname + '/public',
-    filename: 'app.js'
-  }
-}
+    path: __dirname + "/public",
+    filename: "app.js",
+  },
+};
 ```
 
 #### Terminal
@@ -41,15 +41,16 @@ This compiles `src/app.js` into `public/app.js`. (Note: you may need to use `./n
 ```js
 module.exports = {
   entry: {
-    app: 'src/app.js',
-    vendor: 'src/vendor.js'
+    app: "src/app.js",
+    vendor: "src/vendor.js",
   },
   output: {
-    path: __dirname + '/public',
-    filename: '[name].js'
-  }
-}
+    path: __dirname + "/public",
+    filename: "[name].js",
+  },
+};
 ```
+
 {: data-line="2,3,4,8"}
 
 This creates `app.js` and `vendor.js`.
@@ -84,6 +85,7 @@ module.exports = {
   }
 }
 ```
+
 {: data-line="3,4,5,6,7,8"}
 
 #### .babelrc
@@ -124,14 +126,15 @@ module.exports = {
   }
 }
 ```
+
 {: data-line="3,4,5,6,7,8,9"}
 
 #### Your JavaScript
 
 ```js
-import './styles.css'
+import "./styles.css";
 // or:
-require('./styles.css')
+require("./styles.css");
 ```
 
 This allows you to use CSS inside your JavaScript. This packages your CSS inside your JavaScript bundle.
@@ -159,17 +162,17 @@ npm install --save-dev \
     { loader: 'postcss-loader' }
 ···
 ```
+
 {: data-line="8"}
 
 #### postcss.config.js
 
 ```js
 module.exports = {
-  plugins: [
-    require('postcss-cssnext')()
-  ]
-}
+  plugins: [require("postcss-cssnext")()],
+};
 ```
+
 {: data-line="3"}
 
 This example adds [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext) support to your CSS files.
@@ -187,6 +190,7 @@ This example adds [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnex
   }
 }
 ```
+
 {: data-line="3"}
 
 #### Terminal

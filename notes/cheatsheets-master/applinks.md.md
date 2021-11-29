@@ -3,7 +3,6 @@ title: Applinks
 category: HTML
 ---
 
-
     <meta property="al:ios:url" content="applinks://docs" />
     <meta property="al:ios:app_store_id" content="12345" />
     <meta property="al:ios:app_name" content="App Links" />
@@ -16,13 +15,13 @@ category: HTML
 
 ### Device types
 
- * `ios`
- * `ipad`
- * `iphone`
- * `android`
- * `windows_phone`
- * `web`
+- `ios`
+- `ipad`
+- `iphone`
+- `android`
+- `windows_phone`
+- `web`
 
 ### Reference
 
- * [applinks.org](http://applinks.org/documentation/)
+- [applinks.org](http://applinks.org/documentation/)

@@ -30,45 +30,48 @@ category: JavaScript libraries
 ### Unbinding events
 
 ```js
-object.off('change', onChange)    // just the `onChange` callback
-object.off('change')              // all 'change' callbacks
-object.off(null, onChange)        // `onChange` callback for all events
-object.off(null, null, context)   // all callbacks for `context` all events
-object.off()                      // all
+object.off("change", onChange); // just the `onChange` callback
+object.off("change"); // all 'change' callbacks
+object.off(null, onChange); // `onChange` callback for all events
+object.off(null, null, context); // all callbacks for `context` all events
+object.off(); // all
 ```
 
 ### Events
 
 ```js
-object.trigger('event')
+object.trigger("event");
 ```
 
 ```js
-view.listenTo(object, event, callback)
-view.stopListening()
+view.listenTo(object, event, callback);
+view.stopListening();
 ```
 
 ### List of events
 
-  * Collection:
-    * `add` (model, collection, options)
-    * `remove` (model, collection, options)
-    * `reset` (collection, options)
-    * `sort` (collection, options)
+- Collection:
 
-  * Model:
-    * `change` (model, options)
-    * `change:[attr]` (model, value, options)
-    * `destroy` (model, collection, options)
-    * `error` (model, xhr, options)
+  - `add` (model, collection, options)
+  - `remove` (model, collection, options)
+  - `reset` (collection, options)
+  - `sort` (collection, options)
 
-  * Model and collection:
-    * `request` (model, xhr, options)
-    * `sync` (model, resp, options)
+- Model:
 
-  * Router:
-    * `route:[name]` (params)
-    * `route` (router, route, params)
+  - `change` (model, options)
+  - `change:[attr]` (model, value, options)
+  - `destroy` (model, collection, options)
+  - `error` (model, xhr, options)
+
+- Model and collection:
+
+  - `request` (model, xhr, options)
+  - `sync` (model, resp, options)
+
+- Router:
+  - `route:[name]` (params)
+  - `route` (router, route, params)
 
 ## Views
 
@@ -104,6 +107,7 @@ var View = Backbone.View.extend({
   render: function() { ··· }
 })
 ```
+
 ### Instantiating
 
 ```js
@@ -114,17 +118,17 @@ view = new View({ el: ··· })
 ### Methods
 
 ```js
-view.$el.show()
-view.$('input')
+view.$el.show();
+view.$("input");
 ```
 
 ```js
-view.remove()
+view.remove();
 ```
 
 ```js
-view.delegateEvents()
-view.undelegateEvents()
+view.delegateEvents();
+view.undelegateEvents();
 ```
 
 ## Models
@@ -145,7 +149,7 @@ var Model = Backbone.Model.extend({
 ### Instantiating
 
 ```js
-var obj = new Model({ title: 'Lolita', author: 'Nabokov' })
+var obj = new Model({ title: "Lolita", author: "Nabokov" });
 ```
 
 ```js
@@ -155,79 +159,84 @@ var obj = new Model({ collection: ··· })
 ### Methods
 
 ```js
-obj.id
-obj.cid   // → 'c38' (client-side ID)
+obj.id;
+obj.cid; // → 'c38' (client-side ID)
 ```
 
 ```js
-obj.clone()
+obj.clone();
 ```
 
 ```js
-obj.hasChanged('title')
-obj.changedAttributes()  // false, or hash
-obj.previousAttributes() // false, or hash
-obj.previous('title')
+obj.hasChanged("title");
+obj.changedAttributes(); // false, or hash
+obj.previousAttributes(); // false, or hash
+obj.previous("title");
 ```
 
 ```js
-obj.isNew()
+obj.isNew();
 ```
 
 ```js
-obj.set({ title: 'A Study in Pink' })
-obj.set({ title: 'A Study in Pink' }, { validate: true, silent: true })
-obj.unset('title')
+obj.set({ title: "A Study in Pink" });
+obj.set({ title: "A Study in Pink" }, { validate: true, silent: true });
+obj.unset("title");
 ```
 
 ```js
-obj.get('title')
-obj.has('title')
-obj.escape('title')     /* Like .get() but HTML-escaped */
+obj.get("title");
+obj.has("title");
+obj.escape("title"); /* Like .get() but HTML-escaped */
 ```
 
 ```js
-obj.clear()
-obj.clear({ silent: true })
+obj.clear();
+obj.clear({ silent: true });
 ```
 
 ```js
-obj.save()
-obj.save({ attributes })
+obj.save();
+obj.save({ attributes });
 obj.save(null, {
-  silent: true, patch: true, wait: true,
-  success: callback, error: callback
-})
+  silent: true,
+  patch: true,
+  wait: true,
+  success: callback,
+  error: callback,
+});
 ```
 
 ```js
-obj.destroy()
+obj.destroy();
 obj.destroy({
   wait: true,
-  success: callback, error: callback
-})
+  success: callback,
+  error: callback,
+});
 ```
 
 ```js
-obj.toJSON()
+obj.toJSON();
 ```
 
 ```js
-obj.fetch()
-obj.fetch({ success: callback, error: callback })
+obj.fetch();
+obj.fetch({ success: callback, error: callback });
 ```
 
 ### Validation
 
 ```js
 var Model = Backbone.Model.extend({
-  validate: function(attrs, options) {
+  validate: function (attrs, options) {
     if (attrs.end < attrs.start) {
-      return "Can't end before it starts"
+      return "Can't end before it starts";
     }
-  }
-})
+  },
+});
 ```
+
 {: data-line="2"}
 
 ```js
@@ -264,6 +273,7 @@ var obj = new Model({ urlRoot: ··· })
 ```
 
 ## References
+
 {: .-one-column}
 
 - [Backbone website](http://backbonejs.org/) _(backbonejs.org)_

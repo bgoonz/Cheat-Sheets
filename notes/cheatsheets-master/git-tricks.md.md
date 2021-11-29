@@ -27,21 +27,21 @@ category: Git
 
     # delete remote branch
       git push origin :$branchname
-      
+
     # go back to previous branch
       git checkout -
-      
+
+
 ## Collaboration
 
     # Rebase your changes on top of the remote master
       git pull --rebase upstream master
-      
+
     # Squash multiple commits into one for a cleaner git log
     # (on the following screen change the word pick to either 'f' or 's')
       git rebase -i $commit_ref
 
-Submodules
-----------
+## Submodules
 
     # Import .gitmodules
       git submodule init
@@ -53,8 +53,7 @@ Submodules
     # (Use when you changed remotes in submodules)
       git submodule sync
 
-Diff
-----
+## Diff
 
 ### Diff with stats
 
@@ -67,8 +66,7 @@ Diff
 
     git diff --summary
 
-Log options
------------
+## Log options
 
     --oneline
       e11e9f9 Commit message here
@@ -82,8 +80,7 @@ Log options
     --date=relative
       "2 hours ago"
 
-Misc
-----
+## Misc
 
 ### Cherry pick
 
@@ -145,4 +142,3 @@ Misc
 
     git config set commit.gpgsign true                # Sign commits by default
     git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
-    

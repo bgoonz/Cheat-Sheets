@@ -16,6 +16,7 @@ intro: |
 ---
 
 ## Basics
+
 {: .-three-column}
 
 ### CLI Options
@@ -40,9 +41,9 @@ intro: |
 ### Visual pleasure
 
 | Keybind                         | Description                  |
-| ------------------------------- | ---------------------------- |
+| ------------------------------- | ---------------------------- | ------------------------- |
 | `ctrl+a S`                      | Split a screen horizontally  |
-| `ctrl+a |`                      | Split a screen vertically    |
+| `ctrl+a                         | `                            | Split a screen vertically |
 | `ctrl+a ctrl+I` or `ctrl+a tab` | Change screen split          |
 | `ctrl+a Q`                      | Remove all screen splits     |
 | `ctrl+a C`                      | Clear the current screen tab |

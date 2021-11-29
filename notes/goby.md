@@ -9,19 +9,20 @@ intro: |
   Goby's language design is based on Ruby language's, slim and shaped up. Differences in syntax between them is very small.
 ---
 
-
 ## Getting started
 
 ### Hello world
+
 {: .-prime}
 
 #### hello.gb
+
 {: .-file}
 
 ```ruby
 class Greet
   attr_accessor :audience, :head, :tail
-  
+
   def initialize
     @head = "Hello, "
     @tail = "!"
@@ -66,14 +67,15 @@ $ goby hello.gb
 $ goby -i
 ```
 
-* `reset`: reset the VM
-* `exit`: exit REPL
-* `help`: show help
-* ctrl-c: cancel the block entered, or exit (on top level)
+- `reset`: reset the VM
+- `exit`: exit REPL
+- `help`: show help
+- ctrl-c: cancel the block entered, or exit (on top level)
 
 See [igb manual & test script](https://github.com/goby-lang/goby/blob/master/igb/manual_test.md). You can use `readline` features such as command history by arrow keys.
 
 ## Variables
+
 {: .-three-column}
 
 ### Local variable
@@ -166,7 +168,7 @@ If a default value is provided to a parameter, the parameter can be omitted when
 1. **normal parameters** (like `a`)
 2. **normal parameters with default value** (like `a=1`)
 3. **optional parameters** (array or hash, like `ary=[]` or `hs={}`)
-4. **keyword parameters** (like `kwd:`) 
+4. **keyword parameters** (like `kwd:`)
 5. **keyword parameters with default value** (like `kwd: 1` or `ary: [1,2,3]` or `hsh: {key: "value"}`)
 6. **splat parameters** (like `*sp`)
 
@@ -207,7 +209,7 @@ module Foo
   def bar       # defining instance method
     puts "bar"
   end
-  
+
   def baz(count, email: "goby@example.com")
     count.times do
       puts email
@@ -248,7 +250,7 @@ end
 ### Singleton method #3
 
 ```ruby
-module Foo  
+module Foo
   def Foo.bar   #3 singleton method with a class name (unrecommended)
     88
   end
@@ -287,9 +289,9 @@ foo.baz = 88
 
 You can use the following shorthands to declare attribute accessor methods in classes/modules:
 
-* `attr_accessor`
-* `attr_reader`
-* `attr_writer`
+- `attr_accessor`
+- `attr_reader`
+- `attr_writer`
 
 ### Private method (to be implemented)
 
@@ -298,7 +300,7 @@ class Foo
   def bar
     42
   end
-  
+
   def _baz  # leading '_' means private method
     99
   end
@@ -306,6 +308,7 @@ end
 ```
 
 ## Module/Class definition
+
 {: .-three-column}
 
 ### Module definition and `include`
@@ -336,19 +339,19 @@ module Foo
 end
 
 class Bar
-  extend Foo   # to extend Foo  
+  extend Foo   # to extend Foo
 end
 
 Bar.foo        #=> Foo's instance method will be a singleton method
 ```
 
-`extend` is to use the instance methods in the specified modules as **singleton methods** in your class or module. 
+`extend` is to use the instance methods in the specified modules as **singleton methods** in your class or module.
 
 ### Module instantiation
 
 ```ruby
 module Foo   #module definition
-  def foo   
+  def foo
     99
   end
 end
@@ -425,7 +428,7 @@ require("uri")   # to activate URL class
 
 u = URI.parse("http://example.com")
 u.scheme   #=> "http"
-```	
+```
 
 ### `require_relative`
 
@@ -446,6 +449,7 @@ end
 ```
 
 ## Literal
+
 {: .-three-column}
 
 ### Keyword
@@ -493,7 +497,7 @@ h = { key: "value", key2: "value2" }
 h[:key2]   #=> value2
 ```
 
-Hash literal's keys should always be **symbol literals**. 
+Hash literal's keys should always be **symbol literals**.
 
 ### Range literal
 
@@ -534,7 +538,7 @@ Any objects except `nil` and `false` will be treated as `true` on conditionals.
 =           # assignment
 ```
 
-*Priority of operators are TBD
+\*Priority of operators are TBD
 
 ### Other operators
 
@@ -545,7 +549,7 @@ Any objects except `nil` and `false` will be treated as `true` on conditionals.
 ..          # range
 ```
 
-*Priority of operators are TBD
+\*Priority of operators are TBD
 
 ### Delimiter
 
@@ -577,11 +581,12 @@ Use the annotations to keep the comments concise.
 
 ### I/O
 
-* `#puts`
+- `#puts`
 
-* special constants: `ARGV`, `STDIN`, `STDOUT`, `STDERR`, `ENV` 
+- special constants: `ARGV`, `STDIN`, `STDOUT`, `STDERR`, `ENV`
 
 ## Flow control
+
 {: .-three-column}
 
 ### `if`, `else`, `elsif`
@@ -658,6 +663,7 @@ end
 Under construction. Join [#605](https://github.com/goby-lang/goby/issues/605).
 
 ## Block
+
 {: .-three-column}
 
 ### Block
@@ -750,7 +756,7 @@ foo do
 end
 ```
 
-`get_block` is not a method but a **keyword** to retrive a given block argument as a block object. By this, you can pass around or `call` the given block arguments as block objects. 
+`get_block` is not a method but a **keyword** to retrive a given block argument as a block object. By this, you can pass around or `call` the given block arguments as block objects.
 
 ### Closure
 
@@ -773,9 +779,10 @@ Foo.new.bar b  #=> 3
 ```
 
 ## Native class (Primary)
+
 {: .-three-column}
 
-Goby's most "native" classes cannot instantiate with `new` in principle. 
+Goby's most "native" classes cannot instantiate with `new` in principle.
 
 ### `Object`
 
@@ -788,9 +795,9 @@ Bar.singleton_class.ancestors
 
 `Object` is actually just for creating singleton classes. See `Class`.
 
-* **`Object.methods`**: `!`, `!=`, `==`, `block_given?`, `class`, `exit`, `instance_eval`, `instance_variable_get`, `instance_variable_set`, `is_a?`, `methods`, `nil?`, `object_id`, `puts`, `raise`, `require`, `require_relative`, `send`, `singleton_class`, `sleep`, `thread`, `to_s`, `<`, `<=`, `>`, `>=`, `ancestors`, `attr_accessor`, `attr_reader`, `attr_writer`, `extend`, `include`, `name`, `new`, `superclass`
+- **`Object.methods`**: `!`, `!=`, `==`, `block_given?`, `class`, `exit`, `instance_eval`, `instance_variable_get`, `instance_variable_set`, `is_a?`, `methods`, `nil?`, `object_id`, `puts`, `raise`, `require`, `require_relative`, `send`, `singleton_class`, `sleep`, `thread`, `to_s`, `<`, `<=`, `>`, `>=`, `ancestors`, `attr_accessor`, `attr_reader`, `attr_writer`, `extend`, `include`, `name`, `new`, `superclass`
 
-* **`Object.new.methods`**: `!`, `!=`, `==`, `block_given?`, `class`, `exit`, `instance_eval`, `instance_variable_get`, `instance_variable_set`, `is_a?`, `methods`, `nil?`, `object_id`, `puts`, `raise`, `require`, `require_relative`, `send`, `singleton_class`, `sleep`, `thread`, `to_s`
+- **`Object.new.methods`**: `!`, `!=`, `==`, `block_given?`, `class`, `exit`, `instance_eval`, `instance_variable_get`, `instance_variable_set`, `is_a?`, `methods`, `nil?`, `object_id`, `puts`, `raise`, `require`, `require_relative`, `send`, `singleton_class`, `sleep`, `thread`, `to_s`
 
 ### `Class`
 
@@ -798,9 +805,9 @@ Bar.singleton_class.ancestors
 String.ancestors      #=> [String, Object]
 ```
 
-`Class` and `Object`can actually be regarded as the same and you don't need to distinguish them in almost all the cases. 
+`Class` and `Object`can actually be regarded as the same and you don't need to distinguish them in almost all the cases.
 
-* **`Class.methods`**: `<`, `<=`, `>`, `>=`, `ancestors`, `attr_accessor`, `attr_reader`, `attr_writer`, `extend`, `include`, `name`, `new`, `superclass`, `!`, `!=`, `==`, `block_given?`, `class`, `exit`, `instance_eval`, `instance_variable_get`, `instance_variable_set`, `is_a?`, `methods`, `nil?`, `object_id`, `puts`, `raise`, `require`, `require_relative`, `send`, `singleton_class`, `sleep`, `thread`, `to_s`
+- **`Class.methods`**: `<`, `<=`, `>`, `>=`, `ancestors`, `attr_accessor`, `attr_reader`, `attr_writer`, `extend`, `include`, `name`, `new`, `superclass`, `!`, `!=`, `==`, `block_given?`, `class`, `exit`, `instance_eval`, `instance_variable_get`, `instance_variable_set`, `is_a?`, `methods`, `nil?`, `object_id`, `puts`, `raise`, `require`, `require_relative`, `send`, `singleton_class`, `sleep`, `thread`, `to_s`
 
 ### `String`
 
@@ -810,10 +817,10 @@ puts "Hello" + ' ' + 'world'  #=> Hello world
 
 Fixed to **UTF-8** with mb4 support.
 
-* **`String.methods`**: `fmt`,
-    * the rest: `Class.methods`
-* **`"a".methods`**:  `!=`, `*`, `+`, `<`, `<=>`, `==`, `=~`, `>`, `[]`, `[]=`, `capitalize`, `chop`, `concat`, `count`, `delete`, `downcase`, `each_byte`, `each_char`, `each_line`, `empty?`, `end_with?`, `eql?`, `fmt`, `include?`, `insert`, `length`, `ljust`, `match`, `new`, `replace`, `replace_once`, `reverse`, `rjust`, `size`, `slice`, `split`, `start_with`, `strip`, `to_a`, `to_bytes`, `to_d`, `to_f`, `to_i`, `to_s`, `upcase`,
-    * the rest: `Object.new.methods`
+- **`String.methods`**: `fmt`,
+  - the rest: `Class.methods`
+- **`"a".methods`**: `!=`, `*`, `+`, `<`, `<=>`, `==`, `=~`, `>`, `[]`, `[]=`, `capitalize`, `chop`, `concat`, `count`, `delete`, `downcase`, `each_byte`, `each_char`, `each_line`, `empty?`, `end_with?`, `eql?`, `fmt`, `include?`, `insert`, `length`, `ljust`, `match`, `new`, `replace`, `replace_once`, `reverse`, `rjust`, `size`, `slice`, `split`, `start_with`, `strip`, `to_a`, `to_bytes`, `to_d`, `to_f`, `to_i`, `to_s`, `upcase`,
+  - the rest: `Object.new.methods`
 
 ### `Integer`
 
@@ -821,9 +828,9 @@ Fixed to **UTF-8** with mb4 support.
 37037 * 27      #=> 999999
 ```
 
-* **`Integer.methods`**: the same as `Class.methods`
-* **`1.methods`**: `!=`, `%`, `*`, `**`, `+`, `-`, `/`, `<`, `<=`, `<=>`, `==`, `>`, `>=`, `even?`, `new`, `next`, `odd?`, `pred`, `ptr`, `times`, `to_f`, `to_float32`, `to_float64`, `to_i`, `to_int`, `to_int16`, `to_int32`, `to_int64`, `to_int8`, `to_s`, `to_uint`, `to_uint16`, `to_uint32`, `to_uint64`, `to_uint8`
-    * the rest: `Object.new.methods`
+- **`Integer.methods`**: the same as `Class.methods`
+- **`1.methods`**: `!=`, `%`, `*`, `**`, `+`, `-`, `/`, `<`, `<=`, `<=>`, `==`, `>`, `>=`, `even?`, `new`, `next`, `odd?`, `pred`, `ptr`, `times`, `to_f`, `to_float32`, `to_float64`, `to_i`, `to_int`, `to_int16`, `to_int32`, `to_int64`, `to_int8`, `to_s`, `to_uint`, `to_uint16`, `to_uint32`, `to_uint64`, `to_uint8`
+  - the rest: `Object.new.methods`
 
 ### `Array`
 
@@ -831,9 +838,9 @@ Fixed to **UTF-8** with mb4 support.
 [1, "2", :card, [4, 5], { john: "doe" }]
 ```
 
-* **`Array.methods`**: the same as `Class.methods`
-* **`[1].methods`**: `*`, `+`, `[]`, `[]=`, `any?`, `at`, `clear`, `concat`, `count`, `delete_at`, `dig`, `each`, `each_index`, `empty?`, `first`, `flatten`, `include?`, `join`, `last`, `lazy`, `length`, `map`, `new`, `pop`, `push`, `reduce`, `reverse`, `reverse_each`, `rotate`, `select`, `shift`, `to_enum`, `unshift`, `values_at`
-    * the rest: `Object.new.methods`
+- **`Array.methods`**: the same as `Class.methods`
+- **`[1].methods`**: `*`, `+`, `[]`, `[]=`, `any?`, `at`, `clear`, `concat`, `count`, `delete_at`, `dig`, `each`, `each_index`, `empty?`, `first`, `flatten`, `include?`, `join`, `last`, `lazy`, `length`, `map`, `new`, `pop`, `push`, `reduce`, `reverse`, `reverse_each`, `rotate`, `select`, `shift`, `to_enum`, `unshift`, `values_at`
+  - the rest: `Object.new.methods`
 
 ### `Hash`
 
@@ -847,9 +854,9 @@ h[:key]   #=> value
 
 Keys in hash literals should be **symbol literals**, while Hash index can be either string or symbol literals.
 
-* **`Hash.methods`**: the same as `Class.methods`
-* **`{ key: "value" }.methods`**: `[]`, `[]=`, `any?`, `clear`, `default`, `default=`, `delete`, `delete_if`, `dig`, `each`, `each_key`, `each_value`, `empty?`, `eql?`, `fetch`, `fetch_values`, `has_key?`, `has_value?`, `keys`, `length`, `map_values`, `merge`, `new`, `select`, `sorted_keys`, `to_a`, `to_json`, `to_s`, `transform_values`, `values`, `values_at`
-    * the rest: `Object.new.methods`
+- **`Hash.methods`**: the same as `Class.methods`
+- **`{ key: "value" }.methods`**: `[]`, `[]=`, `any?`, `clear`, `default`, `default=`, `delete`, `delete_if`, `dig`, `each`, `each_key`, `each_value`, `empty?`, `eql?`, `fetch`, `fetch_values`, `has_key?`, `has_value?`, `keys`, `length`, `map_values`, `merge`, `new`, `select`, `sorted_keys`, `to_a`, `to_json`, `to_s`, `transform_values`, `values`, `values_at`
+  - the rest: `Object.new.methods`
 
 ### `Range`
 
@@ -859,9 +866,9 @@ Keys in hash literals should be **symbol literals**, while Hash index can be eit
 end
 ```
 
-* **`Range.methods`**: the same as `Class.methods`
-* **`(1..10).methods`**: `!=`, `==`, `bsearch`, `each`, `first`, `include?`, `last`, `lazy`, `map`, `new`, `size`, `step`, `to_a`, `to_enum`
-    * the rest: `Object.new.methods`
+- **`Range.methods`**: the same as `Class.methods`
+- **`(1..10).methods`**: `!=`, `==`, `bsearch`, `each`, `first`, `include?`, `last`, `lazy`, `map`, `new`, `size`, `step`, `to_a`, `to_enum`
+  - the rest: `Object.new.methods`
 
 ### `Block`
 
@@ -873,11 +880,12 @@ end
 b.call  #=> 100
 ```
 
-* **`Block.methods`**: the same as `Class.methods`
-* **`(Block.new do end).methods`**: `call`
-    * the rest: `Object.new.methods`
+- **`Block.methods`**: the same as `Class.methods`
+- **`(Block.new do end).methods`**: `call`
+  - the rest: `Object.new.methods`
 
 ## Native class (secondary)
+
 {: .-three-column}
 
 ### `Float`
@@ -889,16 +897,16 @@ b.call  #=> 100
 
 Float literals like `3.14` or `-273.15`. `Float` class is based on Golang's `float64` type.
 
-* **`Float.methods`**: the same as `Class.methods`
-* **`3.14.methods`**: `!=`, `%`, `*`, `**`, `+`, `-`, `/`, `<`, `<=`, `<=>`, `==`, `>`, `>=`, `new`, `ptr`, `to_d`, `to_i`
-    * the rest: `Object.new.methods`
+- **`Float.methods`**: the same as `Class.methods`
+- **`3.14.methods`**: `!=`, `%`, `*`, `**`, `+`, `-`, `/`, `<`, `<=`, `<=>`, `==`, `>`, `>=`, `new`, `ptr`, `to_d`, `to_i`
+  - the rest: `Object.new.methods`
 
 ### `Decimal`
 
 ```ruby
 "3.14".to_d            # => 3.14
 "-0.7238943".to_d      # => -0.7238943
-"355/113".to_d         
+"355/113".to_d
 # => 3.1415929203539823008849557522123893805309734513274336283185840
 
 a = "16.1".to_d
@@ -913,9 +921,9 @@ a + b == e # => true
 
 Experimental: the size is arbitrary and internally a fraction from Golang's `big.Rat` type. Decimal literal is TBD for now and you can get `Decimal` number via `to_d` method from `Integer`/`Float`/`String`.
 
-* **`Decimal.methods`**: the same as `Class.methods`
-* **`(1.1).to_d.methods`**: `!=`, `*`, `**`, `+`, `-`, `/`, `<`, `<=`, `<=>`, `==`, `>`, `>=`, `denominator`, `fraction`, `inverse`
-    * the rest: `Object.new.methods`
+- **`Decimal.methods`**: the same as `Class.methods`
+- **`(1.1).to_d.methods`**: `!=`, `*`, `**`, `+`, `-`, `/`, `<`, `<=`, `<=>`, `==`, `>`, `>=`, `denominator`, `fraction`, `inverse`
+  - the rest: `Object.new.methods`
 
 ### `Regexp`
 
@@ -935,9 +943,9 @@ c.match?("居ずまいを正す")      #=> false
 
 Using `/ /` is to be implemented.
 
-* **`Regexp.methods`**: the same as `Class.methods`
-* **`Regexp.new("^aa$").methods`**: `==`, `match?`
-    * the rest: `Object.new.methods`
+- **`Regexp.methods`**: the same as `Class.methods`
+- **`Regexp.new("^aa$").methods`**: `==`, `match?`
+  - the rest: `Object.new.methods`
 
 ### `MatchData`
 
@@ -957,9 +965,9 @@ Using `/ /` is to be implemented.
 
 The number keys in the captures are actually `String` class.The key `0` is the mached string.
 
-* **`MatchData.methods`**: the same as `Class.methods`
-* **`'abcd'.match(Regexp.new('(b.)')).methods`**: `captures`, `length`, `new`, `to_a`, `to_h`
-    * the rest: `Object.new.methods`
+- **`MatchData.methods`**: the same as `Class.methods`
+- **`'abcd'.match(Regexp.new('(b.)')).methods`**: `captures`, `length`, `new`, `to_a`, `to_h`
+  - the rest: `Object.new.methods`
 
 ### `File`
 
@@ -968,12 +976,13 @@ f = File.new("../test_fixtures/file_test/size.gb")
 f.name  #=> "../test_fixtures/file_test/size.gb"
 ```
 
-* **`File.methods`**: `basename`, `chmod`, `delete`, `exist?`, `extname`, `join`
-    * the rest: `Class.methods`
-* **`File.new.methods`**: `basename`, `chmod`, `close`, `delete`, `exist?`, `extname`, `join`, `name`
-    * the rest: `Object.new.methods`
+- **`File.methods`**: `basename`, `chmod`, `delete`, `exist?`, `extname`, `join`
+  - the rest: `Class.methods`
+- **`File.new.methods`**: `basename`, `chmod`, `close`, `delete`, `exist?`, `extname`, `join`, `name`
+  - the rest: `Object.new.methods`
 
 ## Native class (Golang-oriented)
+
 {: .-three-column}
 
 ### `GoMap`
@@ -985,9 +994,9 @@ h2 = m.to_hash
 h2[:foo]   #=> "bar"
 ```
 
-* **`GoMap.methods`**: the same as `Class.methods`
-* **`GoMap.new.methods`**: `get`, `set`, `to_hash`
-    * the rest: `Object.new.methods`
+- **`GoMap.methods`**: the same as `Class.methods`
+- **`GoMap.new.methods`**: `get`, `set`, `to_hash`
+  - the rest: `Object.new.methods`
 
 ### `Channel`
 
@@ -1010,9 +1019,9 @@ r #=> 500500
 
 `Channel` class is to hold channels to work with `#thread`. See `thread`.
 
-* **`Channel.methods`**: the same as `Class.methods`
-* **`Channel.new.methods`**: `close`, `deliver`, `new`, `receive`
-    * the rest: `Object.new.methods`
+- **`Channel.methods`**: the same as `Class.methods`
+- **`Channel.new.methods`**: `close`, `deliver`, `new`, `receive`
+  - the rest: `Object.new.methods`
 
 ## Enumerator & lazy
 
@@ -1034,11 +1043,11 @@ end
 result   #=> [2, 4, 6]
 ```
 
-A shorthand `#lazy` method is also provided in `Array` and `Range` by now. See "Tips & tricks" below. 
+A shorthand `#lazy` method is also provided in `Array` and `Range` by now. See "Tips & tricks" below.
 
-* **`LazyEnumerator.methods`**: the same as `Class.methods`
-* **`[1, 2].lazy`**: `each`, `first`, `has_next?`, `initialize`, `map`, `next`
-    * the rest: `Object.new.methods`
+- **`LazyEnumerator.methods`**: the same as `Class.methods`
+- **`[1, 2].lazy`**: `each`, `first`, `has_next?`, `initialize`, `map`, `next`
+  - the rest: `Object.new.methods`
 
 ### `ArrayEnumerator`
 
@@ -1054,9 +1063,9 @@ end
 iterated_values   #=> [1, 2, 4]
 ```
 
-* **`ArrayEnumerator.methods`**: the same as `Class.methods`
-* **`ArrayEnumerator.new([1, 2, 3]).methods`**: `has_next?`, `initialize`, `next`
-    * the rest: `Object.new.methods`
+- **`ArrayEnumerator.methods`**: the same as `Class.methods`
+- **`ArrayEnumerator.new([1, 2, 3]).methods`**: `has_next?`, `initialize`, `next`
+  - the rest: `Object.new.methods`
 
 ### `RangeEnumerator`
 
@@ -1072,9 +1081,9 @@ end
 iterated_values   #=> [1, 2, 3, 4]
 ```
 
-* **`RangeEnumerator.methods`**: the same as `Class.methods`
-* **`RangeEnumerator.new(1..2).methods`**: `has_next?`, `initialize`, `next`
-    * the rest: `Object.new.methods`
+- **`RangeEnumerator.methods`**: the same as `Class.methods`
+- **`RangeEnumerator.new(1..2).methods`**: `has_next?`, `initialize`, `next`
+  - the rest: `Object.new.methods`
 
 ## Special class
 
@@ -1123,10 +1132,10 @@ end
 Spec.run
 ```
 
-* **`Spec.methods`**: `describe`, `describes`, `instance`, `run`
-    * the rest: `Object.methods`
-* **`Spec.new.methods`**: `describes`, `initialize`, `run`, `session_successful`, `session_successful=`
-    * the rest: `Hash.new.methods`
+- **`Spec.methods`**: `describe`, `describes`, `instance`, `run`
+  - the rest: `Object.methods`
+- **`Spec.new.methods`**: `describes`, `initialize`, `run`, `session_successful`, `session_successful=`
+  - the rest: `Hash.new.methods`
 
 ## Tips & tricks
 
@@ -1233,24 +1242,24 @@ enumerator.each do |value|
 end
 
 result  #=> [2, 4, 6]
-```	
+```
 
-You can call `#lazy.map` on `Array`, `Range`, or `JSON` objects. 
+You can call `#lazy.map` on `Array`, `Range`, or `JSON` objects.
 
 ## Styling
 
 ### Quick style guide
 
-* UTF-8 should be used.
-* Only two spaces `  ` should be used for one indentation.
-    * Tab cannot be used for indentation.
-* For more, follow [RuboCop's style guide](https://github.com/bbatsov/ruby-style-guide) in principle.
+- UTF-8 should be used.
+- Only two spaces ` ` should be used for one indentation.
+  - Tab cannot be used for indentation.
+- For more, follow [RuboCop's style guide](https://github.com/bbatsov/ruby-style-guide) in principle.
 
 ### Document notation
 
-* `Class#instance_method` -- use `#` to represent instance methods in documents
-* `Class.class_method`
-* `Module.module_method`
+- `Class#instance_method` -- use `#` to represent instance methods in documents
+- `Class.class_method`
+- `Module.module_method`
 
 ### Syntax highlighting
 
@@ -1260,18 +1269,18 @@ Ready for Vim and Sublime text. You can also use Ruby's syntax highlighting so f
 
 ### Official
 
-* Official site: [https://goby-lang.org/](https://goby-lang.org/)
-* Repository: [https://github.com/goby-lang/goby/](https://github.com/goby-lang/goby/)
-* DevHints: [https://devhints.io/goby](https://devhints.io/goby) (this page)
+- Official site: [https://goby-lang.org/](https://goby-lang.org/)
+- Repository: [https://github.com/goby-lang/goby/](https://github.com/goby-lang/goby/)
+- DevHints: [https://devhints.io/goby](https://devhints.io/goby) (this page)
 
 ### Readings for Goby developers
 
-* [Write an Interpreter in Go](https://interpreterbook.com/)
-* [Nand2Tetris II](https://www.coursera.org/learn/nand2tetris2/home/welcome)
-* [Ruby under a microscope](http://patshaughnessy.net/ruby-under-a-microscope)
-* [YARV's instruction table](http://www.atdot.net/yarv/insnstbl.html)
+- [Write an Interpreter in Go](https://interpreterbook.com/)
+- [Nand2Tetris II](https://www.coursera.org/learn/nand2tetris2/home/welcome)
+- [Ruby under a microscope](http://patshaughnessy.net/ruby-under-a-microscope)
+- [YARV's instruction table](http://www.atdot.net/yarv/insnstbl.html)
 
 ### JP resource
 
-* [Goby: Rubyライクな言語（1）Gobyを動かしてみる](https://techracho.bpsinc.jp/hachi8833/2017_11_10/47787)
-* [Gobyの組み込みクラスにメソッドを追加する方法](https://qiita.com/hanachin_/items/efc1c976a4f5749514ef)
+- [Goby: Ruby ライクな言語（1）Goby を動かしてみる](https://techracho.bpsinc.jp/hachi8833/2017_11_10/47787)
+- [Goby の組み込みクラスにメソッドを追加する方法](https://qiita.com/hanachin_/items/efc1c976a4f5749514ef)

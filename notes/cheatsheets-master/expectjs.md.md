@@ -11,19 +11,20 @@ weight: -1
 ```
 npm install --save-dev expect
 ```
+
 {: .-setup}
 
 ```js
 // using ES6 modules
-import expect, { createSpy, spyOn, isSpy } from 'expect'
+import expect, { createSpy, spyOn, isSpy } from "expect";
 ```
 
 ```js
 // using CommonJS modules
-var expect = require('expect')
-var createSpy = expect.createSpy
-var spyOn = expect.spyOn
-var isSpy = expect.isSpy
+var expect = require("expect");
+var createSpy = expect.createSpy;
+var spyOn = expect.spyOn;
+var isSpy = expect.isSpy;
 ```
 
 Expect is a library for assertions in tests.
@@ -32,23 +33,24 @@ See: [mjackson/expect](https://github.com/mjackson/expect)
 ### Assertions
 
 ```js
-expect(x).toBe(y)
+expect(x)
+  .toBe(y)
   .toBe(val)
   .toEqual(val)
   .toThrow(err)
-  .toExist()          // aka: toBeTruthy()
-  .toNotExist()       // aka: toBeFalsy()
+  .toExist() // aka: toBeTruthy()
+  .toNotExist() // aka: toBeFalsy()
   .toBeA(constructor)
-  .toBeA('string')
+  .toBeA("string")
   .toMatch(/expr/)
   .toBeLessThan(n)
   .toBeGreaterThan(n)
   .toBeLessThanOrEqualTo(n)
   .toBeGreaterThanOrEqualTo(n)
-  .toInclude(val)     // aka: toContain(val)
+  .toInclude(val) // aka: toContain(val)
   .toExclude(val)
   .toIncludeKey(key)
-  .toExcludeKey(key)
+  .toExcludeKey(key);
 ```
 
 Also: `toNotBe`, `toNotEqual`, etc for negatives.
@@ -56,10 +58,7 @@ Also: `toNotBe`, `toNotEqual`, etc for negatives.
 ### Chaining assertions
 
 ```js
-expect(3.14)
-  .toExist()
-  .toBeLessThan(4)
-  .toBeGreaterThan(3)
+expect(3.14).toExist().toBeLessThan(4).toBeGreaterThan(3);
 ```
 
 Assertions can be chained.
@@ -71,10 +70,11 @@ const video = {
   play: function () { ··· }
 }
 ```
+
 {: .-setup}
 
 ```js
-spy = expect.spyOn(video, 'play')
+spy = expect.spyOn(video, "play");
 ```
 
 ```js
@@ -95,8 +95,8 @@ expect(spy.getLastCall().arguments).toEqual(...)
 ```
 
 ```js
-expect(spy).toHaveBeenCalled()
-expect(spy).toHaveBeenCalledWith('some', 'args')
+expect(spy).toHaveBeenCalled();
+expect(spy).toHaveBeenCalledWith("some", "args");
 ```
 
 ### References

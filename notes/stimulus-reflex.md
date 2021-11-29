@@ -43,17 +43,17 @@ Stimulus.js controllers registered with StimulusReflex can use the `stimulate` m
 
 ```javascript
 // counter_controller.js
-import { Controller } from 'stimulus'
-import StimulusReflex from 'stimulus_reflex'
+import { Controller } from "stimulus";
+import StimulusReflex from "stimulus_reflex";
 
 export default class extends Controller {
   connect() {
-    StimulusReflex.register(this)
+    StimulusReflex.register(this);
   }
 
   increment(event) {
-    event.preventDefault()
-    this.stimulate('Counter#increment', 1)
+    event.preventDefault();
+    this.stimulate("Counter#increment", 1);
   }
 }
 ```
@@ -170,9 +170,9 @@ If a Reflex is called on a form element - or a child of that form element - then
 `stimulate()` method returns a promise
 
 ```javascript
-this.stimulate('Comments#create')
+this.stimulate("Comments#create")
   .then(() => this.doSomething())
-  .catch(() => this.handleError())
+  .catch(() => this.handleError());
 ```
 
 ### Inheriting data-attributes from parent elements

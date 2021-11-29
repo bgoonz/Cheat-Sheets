@@ -93,7 +93,7 @@ category: Ansible
 
 ## References
 
-  * [Intro](http://www.ansibleworks.com/docs/intro_configuration.html)
-  * [Modules](http://www.ansibleworks.com/docs/modules.html)
+- [Intro](http://www.ansibleworks.com/docs/intro_configuration.html)
+- [Modules](http://www.ansibleworks.com/docs/modules.html)
 
 {% endraw %}

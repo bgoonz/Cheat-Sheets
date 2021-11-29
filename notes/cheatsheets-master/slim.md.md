@@ -80,7 +80,6 @@ javascript:
   alert('Slim supports embedded javascript!')
 ```
 
-
 ### Comments
 
 ```jade

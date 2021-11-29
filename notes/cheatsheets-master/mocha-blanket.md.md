@@ -19,11 +19,11 @@ In your test helpers, use Blanket before `require`ing:
 
 ```js
 if (process.env.COVERAGE) {
-  require('blanket')({
-    pattern: require('path').resolve('./index.js')
+  require("blanket")({
+    pattern: require("path").resolve("./index.js"),
   });
 }
-thing = require('../index');
+thing = require("../index");
 ```
 
 Add to `package.json`:

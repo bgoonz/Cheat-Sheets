@@ -18,6 +18,7 @@ intro: |
 ---
 
 ## Parsley
+
 {: .-three-column}
 
 ### Installing via NPM
@@ -34,13 +35,14 @@ npm install --save parsleyjs
 
 ```html
 <form data-parsley-validate>
-<!-- ✗ not preferred -->
+  <!-- ✗ not preferred -->
+</form>
 ```
 
 #### via JavaScript
 
 ```js
-$('#form').parsley(/* options */)
+$("#form").parsley(/* options */);
 ```
 
 It's preferable to explicitly call `$.fn.parsley()`.
@@ -50,94 +52,80 @@ It's preferable to explicitly call `$.fn.parsley()`.
 #### Form
 
 ```js
-$('#myform').parsley()
-  .isValid()  // → true | null
+$("#myform")
+  .parsley()
+  .isValid() // → true | null
   .validate()
   .reset()
-  .destroy()
+  .destroy();
 ```
 
 #### Input
 
 ```js
-$('#myform input').parsley()
-  .isValid()
-  .validate() // returns errors
+$("#myform input").parsley().isValid().validate(); // returns errors
 ```
 
 ### Validators
 
 ```html
-<input ...>
+<input ... />
 ```
 
 #### Required
 
 ```html
-  required
+required
 ```
 
 #### Types
 
 ```html
-  type='email'
+type='email'
 ```
 
 ```html
-  type='url'
-  data-parsley-type='url'
+type='url' data-parsley-type='url'
 ```
 
 #### Length
 
 ```html
-  maxlength='6'
-  data-parsley-maxlength='6'
-  minlength='10'
-  data-parsley-minlength='10'
+maxlength='6' data-parsley-maxlength='6' minlength='10'
+data-parsley-minlength='10'
 ```
 
 #### Numeric
 
 ```html
-  pattern='\d+'
-  data-parsley-pattern='\d+'
+pattern='\d+' data-parsley-pattern='\d+'
 ```
 
 ```html
-  type='number'
-  data-parsley-type='number'
-  data-parsley-type='integer'
-  data-parsley-type='digits'
-  data-parsley-type='alphanum'
+type='number' data-parsley-type='number' data-parsley-type='integer'
+data-parsley-type='digits' data-parsley-type='alphanum'
 ```
 
 #### Range
 
 ```html
-  type='range'
-  data-parsley=range='[6, 10]'
+type='range' data-parsley=range='[6, 10]'
 ```
 
 ```html
-  max='10'
-  data-parsley-max='10'
-  min='6'
-  data-parsley-min='6'
+max='10' data-parsley-max='10' min='6' data-parsley-min='6'
 ```
 
 #### Checkboxes
 
 ```html
-  data-parsley-mincheck='1'
-  data-parsley-maxcheck='3'
-  data-parsley-check='[1, 3]'
+data-parsley-mincheck='1' data-parsley-maxcheck='3' data-parsley-check='[1, 3]'
 ```
 
 #### Confirmation
 
 ```html
-  data-parsley-equalto='#confirm'
+data-parsley-equalto='#confirm'
 ```
 
 ## Options
@@ -146,13 +134,13 @@ $('#myform input').parsley()
 
 ```js
 // Supported & excluded inputs by default
-  inputs: 'input, textarea, select'
-  excluded: 'input[type=button], input[type=submit], input[type=reset], input[type=hidden]'
+inputs: "input, textarea, select";
+excluded: "input[type=button], input[type=submit], input[type=reset], input[type=hidden]";
 ```
 
 ```js
 // Stop validating field on highest priority failing constraint
-  priorityEnabled: true
+priorityEnabled: true;
 ```
 
 See: [Options](http://parsleyjs.org/doc/annotated-source/defaults.html)
@@ -162,13 +150,13 @@ See: [Options](http://parsleyjs.org/doc/annotated-source/defaults.html)
 ```js
 // identifier used to group together inputs
 // (e.g. radio buttons…)
-  multiple: null
+multiple: null;
 ```
 
 ```js
 // identifier (or array of identifiers) used to
 // validate only a select group of inputs
-  group: null
+group: null;
 ```
 
 These options are only available for fields.
@@ -177,29 +165,29 @@ These options are only available for fields.
 
 ```js
 // Enable/disable error messages
-  uiEnabled: true
+uiEnabled: true;
 ```
 
 ```js
 // Key events threshold before validation
-  validationThreshold: 3
+validationThreshold: 3;
 ```
 
 ```js
 // Focused field on form validation error. ‘first’|’last’|’none’
-  focus: 'first'
+focus: "first";
 ```
 
 ```js
 // $.Event() that will trigger validation. eg: keyup, change…
-  trigger: false
+trigger: false;
 ```
 
 ```js
 // Class that would be added on every failing validation
 // Parsley field
-  errorClass: 'parsley-error'
-  successClass: 'parsley-success'
+errorClass: "parsley-error";
+successClass: "parsley-success";
 ```
 
 ```js
@@ -218,12 +206,12 @@ These options are only available for fields.
 
 ```js
 // ul elem that would receive errors’ list
-  errorsWrapper: '<ul class="parsley-errors-list"></ul>'
+errorsWrapper: '<ul class="parsley-errors-list"></ul>';
 ```
 
 ```js
 // li elem that would receive error message
-  errorTemplate: '<li></li>'
+errorTemplate: "<li></li>";
 ```
 
 ## Examples
@@ -231,11 +219,11 @@ These options are only available for fields.
 ### Custom container
 
 ```js
-$('[data-parsley]').parsley({
-  errorsContainer (field) {
-    return field.$element.closest('.block, .control')
-  }
-})
+$("[data-parsley]").parsley({
+  errorsContainer(field) {
+    return field.$element.closest(".block, .control");
+  },
+});
 ```
 
 Appends the error to the closest `.block` or `.control`.
@@ -243,13 +231,13 @@ Appends the error to the closest `.block` or `.control`.
 ### Custom markup
 
 ```js
-$('[data-parsley]').parsley({
-  errorClass: '-error',
-  successClass: '-success',
+$("[data-parsley]").parsley({
+  errorClass: "-error",
+  successClass: "-success",
 
   errorsWrapper: '<ul class="parsley-error-list"></ul>',
-  errorTemplate: '<li class="parsley-error"></li>'
-})
+  errorTemplate: '<li class="parsley-error"></li>',
+});
 ```
 
 Uses custom markup.
@@ -257,14 +245,14 @@ Uses custom markup.
 ### Custom fields
 
 ```js
-$('[data-parsley]').parsley({
-  classHandler (field) {
-    const $parent = field.$element.closest('.input-group')
-    if ($parent.length) return $parent
+$("[data-parsley]").parsley({
+  classHandler(field) {
+    const $parent = field.$element.closest(".input-group");
+    if ($parent.length) return $parent;
 
-    return field.$element
-  }
-})
+    return field.$element;
+  },
+});
 ```
 
 Applies the `errorClass` and `successClass` to the closest `.input-group`, if available.
@@ -274,26 +262,25 @@ Applies the `errorClass` and `successClass` to the closest `.input-group`, if av
 #### HTML
 
 ```html
-<input type='text' data-parsley-multiple-of='3' />
+<input type="text" data-parsley-multiple-of="3" />
 ```
 
 #### JavaScript
 
 ```js
-window.Parsley
-  .addValidator('multipleOf', {
-    // string | number | integer | date | regexp | boolean
-    requirementType: 'integer',
+window.Parsley.addValidator("multipleOf", {
+  // string | number | integer | date | regexp | boolean
+  requirementType: "integer",
 
-    // validateString | validateDate | validateMultiple
-    validateNumber (value, requirement) {
-      return 0 === value % requirement
-    },
+  // validateString | validateDate | validateMultiple
+  validateNumber(value, requirement) {
+    return 0 === value % requirement;
+  },
 
-    messages: {
-      en: 'This value should be a multiple of %s'
-    }
-  })
+  messages: {
+    en: "This value should be a multiple of %s",
+  },
+});
 ```
 
 See: [Custom validators](http://parsleyjs.org/doc/index.html#custom)
