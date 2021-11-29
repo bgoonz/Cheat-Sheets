@@ -13,8 +13,7 @@ content_img_alt: Hikers on the trail
 seo:
   title: Hiking The Grand Canyon
   description: >-
-    The Grand Canyon is a steep-sided canyon carved by the Colorado River in
-    Arizona
+    Css Cheat sheet
   extra:
     - name: "og:type"
       value: article
