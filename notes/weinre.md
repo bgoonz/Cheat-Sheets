@@ -32,4 +32,3 @@ $ open http://localhost:8080
 ### References
 
 - [Weinre](http://people.apache.org/~pmuellr/weinre/)
-

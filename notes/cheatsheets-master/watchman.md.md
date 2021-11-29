@@ -4,9 +4,9 @@ layout: 2017/sheet
 updated: 2017-10-18
 weight: -1
 keywords:
-- "watchman watch ~/src"
-- "watchman watch-list"
-- "watchman -- trigger ~/rsc remake '*.js' -- make "
+  - "watchman watch ~/src"
+  - "watchman watch-list"
+  - "watchman -- trigger ~/rsc remake '*.js' -- make "
 ---
 
 ### Getting started
@@ -33,4 +33,4 @@ watchman watch-del ~/src
 
 ## Also see
 
- * [Documentation](https://facebook.github.io/watchman/docs/install.html) _(facebook.github.io)_
+- [Documentation](https://facebook.github.io/watchman/docs/install.html) _(facebook.github.io)_

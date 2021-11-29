@@ -62,7 +62,7 @@ category: Rails
 
 ### Time tag
 
-    time_tag Date.today 
+    time_tag Date.today
     #=> '<time datetime="2010-11-04">November 04, 2010<%rtime>'
 
     time_tag Time.now

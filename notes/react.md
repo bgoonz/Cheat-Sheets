@@ -18,43 +18,45 @@ intro: |
 
 {%raw%}
 
-Components
-----------
+## Components
+
 {: .-three-column}
 
 ### Components
+
 {: .-prime}
 
 ```jsx
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 ```
+
 {: .-setup}
 
 ```jsx
 class Hello extends React.Component {
-  render () {
-    return <div className='message-box'>
-      Hello {this.props.name}
-    </div>
+  render() {
+    return <div className="message-box">Hello {this.props.name}</div>;
   }
 }
 ```
 
 ```jsx
-const el = document.body
-ReactDOM.render(<Hello name='John' />, el)
+const el = document.body;
+ReactDOM.render(<Hello name="John" />, el);
 ```
 
 Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hacking. (or the unofficial [jsbin](http://jsbin.com/yafixat/edit?js,output))
 
 ### Import multiple exports
+
 {: .-prime}
 
 ```jsx
-import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 ```
+
 {: .-setup}
 
 ```jsx
@@ -66,8 +68,9 @@ class Hello extends Component {
 ### Properties
 
 ```html
-<Video fullscreen={true} autoplay={false} />
+<video fullscreen="{true}" autoplay="{false}" />
 ```
+
 {: .-setup}
 
 ```jsx
@@ -77,6 +80,7 @@ render () {
   ···
 }
 ```
+
 {: data-line="2,3"}
 
 Use `this.props` to access properties passed to the component.
@@ -93,7 +97,7 @@ constructor(props) {
 ```
 
 ```jsx
-this.setState({ username: 'rstacruz' })
+this.setState({ username: "rstacruz" });
 ```
 
 ```jsx
@@ -103,6 +107,7 @@ render () {
   ···
 }
 ```
+
 {: data-line="2,3"}
 
 Use states (`this.state`) to manage dynamic data.
@@ -118,39 +123,38 @@ class Hello extends Component {
 
 See: [States](https://reactjs.org/docs/tutorial.html#reactive-state)
 
-
 ### Nesting
 
 ```jsx
 class Info extends Component {
-  render () {
-    const { avatar, username } = this.props
+  render() {
+    const { avatar, username } = this.props;
 
-    return <div>
-      <UserAvatar src={avatar} />
-      <UserProfile username={username} />
-    </div>
+    return (
+      <div>
+        <UserAvatar src={avatar} />
+        <UserProfile username={username} />
+      </div>
+    );
   }
 }
 ```
+
 As of React v16.2.0, fragments can be used to return multiple children without adding extra wrapping nodes to the DOM.
 
 ```jsx
-import React, {
-  Component,
-  Fragment
-} from 'react'
+import React, { Component, Fragment } from "react";
 
 class Info extends Component {
-  render () {
-    const { avatar, username } = this.props
+  render() {
+    const { avatar, username } = this.props;
 
     return (
       <Fragment>
         <UserAvatar src={avatar} />
         <UserProfile username={username} />
       </Fragment>
-    )
+    );
   }
 }
 ```
@@ -168,31 +172,31 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
   <h1>You have pending notifications</h1>
 </AlertBox>
 ```
+
 {: data-line="2"}
 
 ```jsx
 class AlertBox extends Component {
-  render () {
-    return <div className='alert-box'>
-      {this.props.children}
-    </div>
+  render() {
+    return <div className="alert-box">{this.props.children}</div>;
   }
 }
 ```
+
 {: data-line="4"}
 
 Children are passed as the `children` property.
 
-Defaults
---------
+## Defaults
 
 ### Setting default props
 
 ```jsx
 Hello.defaultProps = {
-  color: 'blue'
-}
+  color: "blue",
+};
 ```
+
 {: data-line="1"}
 
 See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
@@ -201,12 +205,13 @@ See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
 
 ```jsx
 class Hello extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { visible: true }
+  constructor(props) {
+    super(props);
+    this.state = { visible: true };
   }
 }
 ```
+
 {: data-line="4"}
 
 Set the default state in the `constructor()`.
@@ -215,26 +220,26 @@ And without constructor using [Babel](https://babeljs.io/) with [proposal-class-
 
 ```jsx
 class Hello extends Component {
-  state = { visible: true }
+  state = { visible: true };
 }
 ```
+
 {: data-line="2"}
 
 See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html#setting-the-initial-state)
 
-Other components
-----------------
+## Other components
+
 {: .-three-column}
 
 ### Functional components
 
 ```jsx
-function MyComponent ({ name }) {
-  return <div className='message-box'>
-    Hello {name}
-  </div>
+function MyComponent({ name }) {
+  return <div className="message-box">Hello {name}</div>;
 }
 ```
+
 {: data-line="1"}
 
 Functional components have no state. Also, their `props` are passed as the first parameter to a function.
@@ -250,6 +255,7 @@ class MessageBox extends PureComponent {
   ···
 }
 ```
+
 {: data-line="3"}
 
 Performance-optimized version of `React.Component`. Doesn't rerender if props/state hasn't changed.
@@ -259,7 +265,7 @@ See: [Pure components](https://reactjs.org/docs/react-api.html#react.purecompone
 ### Component API
 
 ```jsx
-this.forceUpdate()
+this.forceUpdate();
 ```
 
 ```jsx
@@ -268,16 +274,16 @@ this.setState(state => { ... })
 ```
 
 ```jsx
-this.state
-this.props
+this.state;
+this.props;
 ```
 
 These methods and properties are available for `Component` instances.
 
 See: [Component API](http://facebook.github.io/react/docs/component-api.html)
 
-Lifecycle
----------
+## Lifecycle
+
 {: .-two-column}
 
 ### Mounting
@@ -309,14 +315,14 @@ Called when parents change properties and `.setState()`. These are not called fo
 
 See: [Component specs](http://facebook.github.io/react/docs/component-specs.html#updating-componentwillreceiveprops)
 
-Hooks (New)
------------
+## Hooks (New)
+
 {: .-two-column}
 
 ### State Hook
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Example() {
   // Declare a new state variable, which we'll call "count"
@@ -325,13 +331,12 @@ function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
 ```
+
 {: data-line="5,10"}
 
 Hooks are a new addition in React 16.8.
@@ -344,8 +349,8 @@ See: [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
 function ExampleWithManyStates() {
   // Declare multiple state variables!
   const [age, setAge] = useState(42);
-  const [fruit, setFruit] = useState('banana');
-  const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+  const [fruit, setFruit] = useState("banana");
+  const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
   // ...
 }
 ```
@@ -353,7 +358,7 @@ function ExampleWithManyStates() {
 ### Effect hook
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Example() {
   const [count, setCount] = useState(0);
@@ -367,13 +372,12 @@ function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
 ```
+
 {: data-line="6,7,8,9,10"}
 
 If you’re familiar with React class lifecycle methods, you can think of `useEffect` Hook as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined.
@@ -383,8 +387,9 @@ By default, React runs the effects after every render — including the first re
 ### Building your own hooks
 
 #### Define FriendStatus
+
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function FriendStatus(props) {
   const [isOnline, setIsOnline] = useState(null);
@@ -401,14 +406,15 @@ function FriendStatus(props) {
   }, [props.friend.id]);
 
   if (isOnline === null) {
-    return 'Loading...';
+    return "Loading...";
   }
-  return isOnline ? 'Online' : 'Offline';
+  return isOnline ? "Online" : "Offline";
 }
 ```
+
 {: data-line="11,12,13,14"}
 
-Effects may also optionally specify how to “clean up” after them by returning a function. 
+Effects may also optionally specify how to “clean up” after them by returning a function.
 
 #### Use FriendStatus
 
@@ -417,11 +423,12 @@ function FriendStatus(props) {
   const isOnline = useFriendStatus(props.friend.id);
 
   if (isOnline === null) {
-    return 'Loading...';
+    return "Loading...";
   }
-  return isOnline ? 'Online' : 'Offline';
+  return isOnline ? "Online" : "Offline";
 }
 ```
+
 {: data-line="2"}
 
 See: [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)
@@ -442,37 +449,40 @@ Full details: [Basic Hooks](https://reactjs.org/docs/hooks-reference.html#basic-
 
 #### Additional Hooks
 
-| Hook                                         | Description                                                                 |
-| -------------------------------------------- | ---------------------------------------------------------------------------- |
-| `useReducer`_(reducer, initialArg, init)_    |                                                                              |
-| `useCallback`_(() => { ... })_               |                                                                              |
-| `useMemo`_(() => { ... })_                   |                                                                              |
-| `useRef`_(initialValue)_                     |                                                                              |
-| `useImperativeHandle`_(ref, () => { ... })_  |                                                                              |
-| `useLayoutEffect`                            | identical to `useEffect`, but it fires synchronously after all DOM mutations |
-| `useDebugValue`_(value)_                     | display a label for custom hooks in React DevTools                           |
+| Hook                                        | Description                                                                  |
+| ------------------------------------------- | ---------------------------------------------------------------------------- |
+| `useReducer`_(reducer, initialArg, init)_   |                                                                              |
+| `useCallback`_(() => { ... })_              |                                                                              |
+| `useMemo`_(() => { ... })_                  |                                                                              |
+| `useRef`_(initialValue)_                    |                                                                              |
+| `useImperativeHandle`_(ref, () => { ... })_ |                                                                              |
+| `useLayoutEffect`                           | identical to `useEffect`, but it fires synchronously after all DOM mutations |
+| `useDebugValue`_(value)_                    | display a label for custom hooks in React DevTools                           |
 
 Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#additional-hooks)
 
-DOM nodes
----------
+## DOM nodes
+
 {: .-two-column}
 
 ### References
 
 ```jsx
 class MyComponent extends Component {
-  render () {
-    return <div>
-      <input ref={el => this.input = el} />
-    </div>
+  render() {
+    return (
+      <div>
+        <input ref={(el) => (this.input = el)} />
+      </div>
+    );
   }
 
-  componentDidMount () {
-    this.input.focus()
+  componentDidMount() {
+    this.input.focus();
   }
 }
 ```
+
 {: data-line="4,9"}
 
 Allows access to DOM nodes.
@@ -483,17 +493,20 @@ See: [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 ```jsx
 class MyComponent extends Component {
-  render () {
-    <input type="text"
-        value={this.state.value}
-        onChange={event => this.onChange(event)} />
+  render() {
+    <input
+      type="text"
+      value={this.state.value}
+      onChange={(event) => this.onChange(event)}
+    />;
   }
 
-  onChange (event) {
-    this.setState({ value: event.target.value })
+  onChange(event) {
+    this.setState({ value: event.target.value });
   }
 }
 ```
+
 {: data-line="5,9"}
 
 Pass functions to attributes like `onChange`.
@@ -507,15 +520,17 @@ See: [Events](https://reactjs.org/docs/events.html)
 ```html
 <VideoPlayer src="video.mp4" />
 ```
+
 {: .-setup}
 
 ```jsx
 class VideoPlayer extends Component {
-  render () {
-    return <VideoEmbed {...this.props} />
+  render() {
+    return <VideoEmbed {...this.props} />;
   }
 }
 ```
+
 {: data-line="3"}
 
 Propagates `src="..."` down to the sub-component.
@@ -530,32 +545,32 @@ React.isValidElement(c)
 ```
 
 ```jsx
-ReactDOM.render(<Component />, domnode, [callback])
-ReactDOM.unmountComponentAtNode(domnode)
+ReactDOM.render(<Component />, domnode, [callback]);
+ReactDOM.unmountComponentAtNode(domnode);
 ```
 
 ```jsx
-ReactDOMServer.renderToString(<Component />)
-ReactDOMServer.renderToStaticMarkup(<Component />)
+ReactDOMServer.renderToString(<Component />);
+ReactDOMServer.renderToStaticMarkup(<Component />);
 ```
 
 There are more, but these are most common.
 
 See: [React top-level API](https://reactjs.org/docs/react-api.html)
 
-JSX patterns
-------------
+## JSX patterns
+
 {: .-two-column}
 
 ### Style shorthand
 
 ```jsx
-const style = { height: 10 }
-return <div style={style}></div>
+const style = { height: 10 };
+return <div style={style}></div>;
 ```
 
 ```jsx
-return <div style={{ margin: 0, padding: 0 }}></div>
+return <div style={{ margin: 0, padding: 0 }}></div>;
 ```
 
 See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
@@ -563,8 +578,10 @@ See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
 ### Inner HTML
 
 ```jsx
-function markdownify() { return "<p>...</p>"; }
-<div dangerouslySetInnerHTML={{__html: markdownify()}} />
+function markdownify() {
+  return "<p>...</p>";
+}
+<div dangerouslySetInnerHTML={{ __html: markdownify() }} />;
 ```
 
 See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-html.html)
@@ -573,16 +590,20 @@ See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-
 
 ```jsx
 class TodoList extends Component {
-  render () {
-    const { items } = this.props
+  render() {
+    const { items } = this.props;
 
-    return <ul>
-      {items.map(item =>
-        <TodoItem item={item} key={item.key} />)}
-    </ul>
+    return (
+      <ul>
+        {items.map((item) => (
+          <TodoItem item={item} key={item.key} />
+        ))}
+      </ul>
+    );
   }
 }
 ```
+
 {: data-line="6,7"}
 
 Always supply a `key` property.
@@ -590,11 +611,7 @@ Always supply a `key` property.
 ### Conditionals
 
 ```jsx
-<Fragment>
-  {showMyComponent
-    ? <MyComponent />
-    : <OtherComponent />}
-</Fragment>
+<Fragment>{showMyComponent ? <MyComponent /> : <OtherComponent />}</Fragment>
 ```
 
 ### Short-circuit evaluation
@@ -606,8 +623,8 @@ Always supply a `key` property.
 </Fragment>
 ```
 
-New features
-------------
+## New features
+
 {: .-three-column}
 
 ### Returning multiple elements
@@ -625,9 +642,11 @@ render () {
   ]
 }
 ```
+
 {: data-line="3,4,5,6"}
 
 #### Fragments
+
 ```js
 render () {
   // Fragments don't require keys!
@@ -639,6 +658,7 @@ render () {
   )
 }
 ```
+
 {: data-line="3,4,5,6,7,8"}
 
 See: [Fragments and strings](https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-render-return-types-fragments-and-strings)
@@ -650,6 +670,7 @@ render() {
   return 'Look ma, no spans!';
 }
 ```
+
 {: data-line="2"}
 
 You can return just a string.
@@ -666,6 +687,7 @@ class MyComponent extends Component {
   }
 }
 ```
+
 {: data-line="3,4,5"}
 
 Catch errors via `componentDidCatch`. (React 16+)
@@ -682,6 +704,7 @@ render () {
   )
 }
 ```
+
 {: data-line="2,3,4,5"}
 
 This renders `this.props.children` into any location in the DOM.
@@ -691,24 +714,26 @@ See: [Portals](https://reactjs.org/docs/portals.html)
 ### Hydration
 
 ```js
-const el = document.getElementById('app')
-ReactDOM.hydrate(<App />, el)
+const el = document.getElementById("app");
+ReactDOM.hydrate(<App />, el);
 ```
+
 {: data-line="2"}
 
 Use `ReactDOM.hydrate` instead of using `ReactDOM.render` if you're rendering over the output of [ReactDOMServer](https://reactjs.org/docs/react-dom-server.html).
 
 See: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 
-Property validation
--------------------
+## Property validation
+
 {: .-three-column}
 
 ### PropTypes
 
 ```js
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 ```
+
 {: .-setup}
 
 See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
@@ -766,20 +791,20 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 
 ```jsx
 MyComponent.propTypes = {
-  email:      PropTypes.string,
-  seats:      PropTypes.number,
-  callback:   PropTypes.func,
-  isClosed:   PropTypes.bool,
-  any:        PropTypes.any
-}
+  email: PropTypes.string,
+  seats: PropTypes.number,
+  callback: PropTypes.func,
+  isClosed: PropTypes.bool,
+  any: PropTypes.any,
+};
 ```
 
 ### Required types
 
 ```jsx
 MyCo.propTypes = {
-  name:  PropTypes.string.isRequired
-}
+  name: PropTypes.string.isRequired,
+};
 ```
 
 ### Elements
@@ -790,18 +815,16 @@ MyCo.propTypes = {
   element: PropTypes.element,
 
   // num, string, element, or an array of those
-  node: PropTypes.node
-}
+  node: PropTypes.node,
+};
 ```
 
 ### Enumerables (oneOf)
 
 ```jsx
 MyCo.propTypes = {
-  direction: PropTypes.oneOf([
-    'left', 'right'
-  ])
-}
+  direction: PropTypes.oneOf(["left", "right"]),
+};
 ```
 
 ### Arrays and objects
@@ -812,17 +835,17 @@ MyCo.propTypes = {
   ages: PropTypes.arrayOf(PropTypes.number),
   user: PropTypes.object,
   user: PropTypes.objectOf(PropTypes.number),
-  message: PropTypes.instanceOf(Message)
-}
+  message: PropTypes.instanceOf(Message),
+};
 ```
 
 ```jsx
 MyCo.propTypes = {
   user: PropTypes.shape({
     name: PropTypes.string,
-    age:  PropTypes.number
-  })
-}
+    age: PropTypes.number,
+  }),
+};
 ```
 
 Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
@@ -833,18 +856,17 @@ Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
 MyCo.propTypes = {
   customProp: (props, key, componentName) => {
     if (!/matchme/.test(props[key])) {
-      return new Error('Validation failed!')
+      return new Error("Validation failed!");
     }
-  }
-}
+  },
+};
 ```
 
-Also see
---------
+## Also see
 
-* [React website](https://reactjs.org) _(reactjs.org)_
-* [React cheatsheet](https://reactcheatsheet.com/) _(reactcheatsheet.com)_
-* [Awesome React](https://github.com/enaqx/awesome-react) _(github.com)_
-* [React v0.14 cheatsheet](react@0.14) _Legacy version_
+- [React website](https://reactjs.org) _(reactjs.org)_
+- [React cheatsheet](https://reactcheatsheet.com/) _(reactcheatsheet.com)_
+- [Awesome React](https://github.com/enaqx/awesome-react) _(github.com)_
+- [React v0.14 cheatsheet](react@0.14) _Legacy version_
 
 {%endraw%}

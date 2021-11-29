@@ -13,7 +13,7 @@ title: PlantUML
 
 ## Classes
 
- * http://plantuml.sourceforge.net/classes.html
+- http://plantuml.sourceforge.net/classes.html
 
 ### Methods
 
@@ -85,10 +85,8 @@ title: PlantUML
 
     Car -- Client.Driver : owns >
 
-
 ## Activities
 
     (*) --> "First Activity"
     -->[You can put also labels] "Second Activity"
     --> (*)
-

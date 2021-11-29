@@ -109,4 +109,4 @@ node.mask["right"]
 
 ### Reference
 
- * [layervault/psd.rb](https://github.com/layervault/psd.rb) _(github.com)_
+- [layervault/psd.rb](https://github.com/layervault/psd.rb) _(github.com)_

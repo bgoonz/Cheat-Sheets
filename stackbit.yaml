@@ -25,82 +25,82 @@ sourceMapping:
       file: config.yml
       fieldPath: params.header.profile_img
   - source:
-      fieldPath: 'social.links[0].url'
+      fieldPath: "social.links[0].url"
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[0].url'
+      fieldPath: "params.header.social_links[0].url"
   - source:
       fieldPath: social.twitter.url
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[0].url'
+      fieldPath: "params.header.social_links[0].url"
   - source:
       fieldPath: social.instagram.url
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[1].url'
+      fieldPath: "params.header.social_links[1].url"
   - source:
       fieldPath: social.github.url
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[2].url'
+      fieldPath: "params.header.social_links[2].url"
   - source:
       fieldPath: social.linkedin.url
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[3].url'
+      fieldPath: "params.header.social_links[3].url"
   - source:
       fieldPath: social.devto.url
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[4].url'
+      fieldPath: "params.header.social_links[4].url"
   - action: delete
     condition: context.social && !context.social.devto
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[4]'
+      fieldPath: "params.header.social_links[4]"
   - action: delete
     condition: context.social && !context.social.linkedin
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[3]'
+      fieldPath: "params.header.social_links[3]"
   - action: delete
     condition: context.social && !context.social.github
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[2]'
+      fieldPath: "params.header.social_links[2]"
   - action: delete
     condition: context.social && !context.social.instagram
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[1]'
+      fieldPath: "params.header.social_links[1]"
   - action: delete
     condition: context.social && !context.social.twitter
     target:
       file: config.yml
-      fieldPath: 'params.header.social_links[0]'
+      fieldPath: "params.header.social_links[0]"
   - source:
       fieldPath: source.title
     target:
       file: config.yml
-      fieldPath: 'params.footer.links[0].label'
+      fieldPath: "params.footer.links[0].label"
   - source:
       fieldPath: source.url
     target:
       file: config.yml
-      fieldPath: 'params.footer.links[0].url'
+      fieldPath: "params.footer.links[0].url"
   - source:
       value: true
     condition: context.source.url
     target:
       file: config.yml
-      fieldPath: 'params.footer.links[0].new_window'
+      fieldPath: "params.footer.links[0].new_window"
   - source:
       value: link
     condition: context.source.url
     target:
       file: config.yml
-      fieldPath: 'params.footer.links[0].style'
+      fieldPath: "params.footer.links[0].style"
 logicFields:
   - section_posts.posts_number
 models:
@@ -308,7 +308,7 @@ models:
           - stackbit_page_meta
   post:
     type: page
-    urlPath: '/posts/{slug}'
+    urlPath: "/posts/{slug}"
     label: Post
     layout: post
     folder: posts
@@ -469,7 +469,7 @@ models:
         name: url
         label: URL
         required: true
-        default: '#'
+        default: "#"
       - type: enum
         name: style
         label: Style
@@ -524,12 +524,12 @@ models:
       - type: string
         name: name
         label: Name
-        description: 'The name of the field, submitted with the form.'
+        description: "The name of the field, submitted with the form."
         required: true
       - type: string
         name: label
         label: Label
-        description: 'The caption of the field, shown above the field input.'
+        description: "The caption of the field, shown above the field input."
       - type: string
         name: default_value
         description: The default value for textual field types.
@@ -548,12 +548,12 @@ models:
         name: title
         label: Title
         description: The page title that goes into the <title> tag
-        default: ''
+        default: ""
       - type: string
         name: description
         label: Description
         description: The page description that goes into the <meta name="description"> tag
-        default: ''
+        default: ""
       - type: list
         name: robots
         label: Robots
@@ -581,10 +581,10 @@ models:
           fields:
             - type: string
               name: name
-              default: ''
+              default: ""
             - type: string
               name: value
-              default: ''
+              default: ""
             - type: string
               name: keyName
               default: name

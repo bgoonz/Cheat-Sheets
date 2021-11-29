@@ -21,7 +21,7 @@ weight: -1
  */
 
 function foo(n) {
-  return n
+  return n;
 }
 ```
 
@@ -30,10 +30,10 @@ See: <https://jsdoc.app/index.html>
 ### Types
 
 | Type                            | Description                           |
-| ------------------------------- | ------------------------------------- |
+| ------------------------------- | ------------------------------------- | -------------- |
 | `@param {string=} n`            | Optional                              |
 | `@param {string} [n]`           | Optional                              |
-| `@param {(string|number)} n`    | Multiple types                        |
+| `@param {(string                | number)} n`                           | Multiple types |
 | `@param {*} n`                  | Any type                              |
 | `@param {...string} n`          | Repeatable arguments                  |
 | `@param {string} [n="hi"]`      | Optional with default                 |
@@ -48,14 +48,14 @@ See: <https://jsdoc.app/tags-type.html>
 /**
  * @type {number}
  */
-var FOO = 1
+var FOO = 1;
 ```
 
 ```js
 /**
  * @const {number}
  */
-const FOO = 1
+const FOO = 1;
 ```
 
 ### Typedef

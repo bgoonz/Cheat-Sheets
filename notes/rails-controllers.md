@@ -153,6 +153,6 @@ category: Rails
 
 ### References
 
- * [Guide](http://guides.rubyonrails.org/action_controller_overview.html)
- * [HttpAuthentication::Basic](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic.html)
- * [HttpAuthentication::Token](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Token.html)
+- [Guide](http://guides.rubyonrails.org/action_controller_overview.html)
+- [HttpAuthentication::Basic](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic.html)
+- [HttpAuthentication::Token](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Token.html)

@@ -108,6 +108,7 @@ f.collection_select :city_id, City.all, :id, :name
 f.time_zone_select :time_zone
 f.date_select :birthday
 ```
+
 ### I18n
 
 ```yaml
@@ -147,4 +148,3 @@ select(method, choices = nil, options = {}, html_options = {}, &block)
 
 submit(value=nil, options={})
 ```
-

@@ -12,6 +12,7 @@ t(:hello, scope: [:my, :messages])
 
 t('my.messages.hello', default: "Hello")
 ```
+
 {:.light}
 
 ```yml
@@ -26,6 +27,7 @@ en:
 ```rb
 t('hello', name: "John")
 ```
+
 {:.light}
 
 ```yml
@@ -38,6 +40,7 @@ hello: "Hello %{name}"
 # from the 'books/index' view
 t('.title')
 ```
+
 {:.light}
 
 ```yml
@@ -53,6 +56,7 @@ en:
 t(:inbox, count: 1)  #=> 'one message'
 t(:inbox, count: 2)  #=> '2 messages'
 ```
+
 {:.light}
 
 ```yml
@@ -69,6 +73,7 @@ inbox:
 l(Time.now)
 l(Time.now, format: :short)
 ```
+
 {:.light}
 
 ```yml
@@ -85,6 +90,7 @@ en:
 ```rb
 l(Date.today)
 ```
+
 {:.light}
 
 ```yml
@@ -92,8 +98,8 @@ en:
   date:
     formats:
       default: "%Y-%m-%d" # 2015-06-25
-      long: "%B %d, %Y"   # June 25, 2015
-      short: "%b %d"      # Jun 25
+      long: "%B %d, %Y" # June 25, 2015
+      short: "%b %d" # Jun 25
 ```
 
 ## ActiveRecord
@@ -104,6 +110,7 @@ en:
 User.model_name.human            #=> "User"
 Child.model_name.human(count: 2) #=> "Children"
 ```
+
 {:.light}
 
 ```yml
@@ -121,6 +128,7 @@ en:
 ```rb
 User.human_attribute_for :name   #=> "Name"
 ```
+
 {:.light}
 
 ```yml
@@ -138,6 +146,7 @@ en:
 ```rb
 error_messages_for(...)
 ```
+
 {:.light}
 
 ```yml
@@ -164,15 +173,15 @@ Where `[error]` can be:
 
 ```yml
 validates
-  confirmation - :confirmation
-  acceptance   - :accepted
-  presence     - :blank
-  length       - :too_short (%{count})
-  length       - :too_long (%{count})
-  length       - :wrong_length (%{count})
-  uniqueness   - :taken
-  format       - :invalid
-  numericality - :not_a_number
+confirmation - :confirmation
+acceptance   - :accepted
+presence     - :blank
+length       - :too_short (%{count})
+length       - :too_long (%{count})
+length       - :wrong_length (%{count})
+uniqueness   - :taken
+format       - :invalid
+numericality - :not_a_number
 ```
 
 ### Form labels
@@ -181,6 +190,7 @@ validates
 form_for @post do
   f.label :body
 ```
+
 {:.light}
 
 ```yml
@@ -197,6 +207,7 @@ helpers:
 form_for @post do
   f.submit
 ```
+
 {:.light}
 
 ```yml
@@ -211,7 +222,6 @@ helpers:
       create: "Publish article"
       update: "Update article"
 ```
- 
 
 ## Numbers
 
@@ -223,6 +233,7 @@ number_to_rounded(3.14, precision: 0) #=> "3"
 number_to_human(12_000)               #=> "12 Thousand"
 number_to_human_size(12345)           #=> "12.3 kb"
 ```
+
 {:.light}
 
 ### Delimited
@@ -230,13 +241,14 @@ number_to_human_size(12345)           #=> "12.3 kb"
 ```rb
 number_to_delimited(n)
 ```
+
 {:.light}
 
 ```yml
 number:
   format:
-    separator: '.'
-    delimiter: ','
+    separator: "."
+    delimiter: ","
     precision: 3
     significant: false
     strip_insignificant_zeroes: false
@@ -247,6 +259,7 @@ number:
 ```rb
 number_to_currency(n)
 ```
+
 {:.light}
 
 ```yml
@@ -255,8 +268,8 @@ number:
     format:
       format: "%u%n" # %u = unit, %n = number
       unit: "$"
-      separator: '.'
-      delimiter: ','
+      separator: "."
+      delimiter: ","
       precision: 3
       # (see number.format)
 ```
@@ -266,6 +279,7 @@ number:
 ```rb
 number_to_percentage(n)
 ```
+
 {:.light}
 
 ```yml
@@ -288,11 +302,12 @@ I18n.available_locales
 I18n.translate :ok   # aka, I18n.t
 I18n.localize date   # aka, I18n.l
 ```
+
 {:.light}
 
 ## Reference
 
- * http://guides.rubyonrails.org/i18n.html
- * http://rails-i18n.org/wiki
- * https://github.com/svenfuchs/i18n
- * https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/en.yml
+- http://guides.rubyonrails.org/i18n.html
+- http://rails-i18n.org/wiki
+- https://github.com/svenfuchs/i18n
+- https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/en.yml

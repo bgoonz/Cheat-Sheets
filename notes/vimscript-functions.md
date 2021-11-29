@@ -3,8 +3,7 @@ title: Vimscript functions
 category: Vim
 ---
 
-Dictionaries
-------------
+## Dictionaries
 
 ```vim
 let colors = {
@@ -39,8 +38,7 @@ for key in keys(mydict)
 endfor
 ```
 
-Lists
------
+## Lists
 
 ```vim
 let mylist = [1, two, 3, "four"]
@@ -53,8 +51,7 @@ let second = get(mylist, 1)
 let second = get(mylist, 1, "NONE")
 ```
 
-Functions
----------
+## Functions
 
 ### Buffer
 
@@ -192,8 +189,7 @@ Functions
     getreg('*')
     getregtype('*')     " v(char), V(line) <ctrl-v>(block)
 
-Comparisons
------------
+## Comparisons
 
     if name ==# 'John'     " case-sensitive
     if name ==? 'John'     " case-insensitive
@@ -203,8 +199,7 @@ Comparisons
     if "hello" =~ '.*'
     if "hello" !~ '.*'
 
-Executing
----------
+## Executing
 
 ### Running commands
 

@@ -19,13 +19,14 @@ intro: |
 
 ```js
 export default {
-  input: 'src/main.js',
+  input: "src/main.js",
   output: {
-    file: 'bundle.js',
-    format: 'cjs'
-  }
-}
+    file: "bundle.js",
+    format: "cjs",
+  },
+};
 ```
+
 #### Terminal
 
 ```bash
@@ -33,7 +34,7 @@ npm install -D rollup
 ```
 
 | Command                                | Description         |
-| ---                                    | ---                 |
+| -------------------------------------- | ------------------- |
 | `rollup -c -o bundle.js`               | bundle using config |
 | `rollup main.js --o bundle.js --f cjs` | bundle              |
 | `rollup --watch`                       | bundle continuously |
@@ -47,22 +48,22 @@ You may need to use `./node_modules/.bin/rollup` as a command if you did not ins
 ```js
 export default [
   {
-    input: 'src/main.js',
+    input: "src/main.js",
     output: {
-      file: __dirname + '/public/main.js',
-      format: 'cjs',
-      name: 'main'
-    }
+      file: __dirname + "/public/main.js",
+      format: "cjs",
+      name: "main",
+    },
   },
   {
-    input: 'src/vendor.js',
+    input: "src/vendor.js",
     output: {
-      file: __dirname + 'public/vendor.js',
-      format: 'cjs',
-      name: 'vendor'
-    }
-  }
-]
+      file: __dirname + "public/vendor.js",
+      format: "cjs",
+      name: "vendor",
+    },
+  },
+];
 ```
 
 This creates `main.js` and `vendor.js`.
@@ -80,38 +81,39 @@ npm install -D @rollup/plugin-json
 #### rollup.config.js
 
 ```js
-import json from '@rollup/plugin-json'
+import json from "@rollup/plugin-json";
 
 export default {
-  input: 'src/main.js',
+  input: "src/main.js",
   output: {
-    file: 'bundle.js',
-    format: 'cjs'
+    file: "bundle.js",
+    format: "cjs",
   },
-  plugins: [ json() ]
-}
-
+  plugins: [json()],
+};
 ```
 
 ### npm packages
 
 #### Terminal
+
 ```bash
 npm install -D @rollup/plugin-node-resolve
 ```
 
 #### rollup.config.js
+
 ```js
-import resolve from '@rollup/plugin-node-resolve'
+import resolve from "@rollup/plugin-node-resolve";
 
 export default {
-  input: 'src/main.js',
+  input: "src/main.js",
   output: {
-    file: 'bundle.js',
-    format: 'cjs'
+    file: "bundle.js",
+    format: "cjs",
   },
-  plugins: [ resolve() ]
-}
+  plugins: [resolve()],
+};
 ```
 
 When you run a npm run build, no warning is emitted and contains the imported modules.
@@ -127,23 +129,25 @@ npm install -D @rollup/plugin-node-resolve
 #### rollup.config.js
 
 ```js
-import resolve from '@rollup/plugin-node-resolve'
+import resolve from "@rollup/plugin-node-resolve";
 
 export default {
-  input: 'src/main.js',
+  input: "src/main.js",
   output: {
-    file: 'bundle.js',
-    format: 'cjs'
+    file: "bundle.js",
+    format: "cjs",
   },
-  plugins: [resolve({
-    // pass custom options to the resolve plugin
-    customResolveOptions: {
-      moduleDirectory: 'node_modules'
-    }
-  })],
+  plugins: [
+    resolve({
+      // pass custom options to the resolve plugin
+      customResolveOptions: {
+        moduleDirectory: "node_modules",
+      },
+    }),
+  ],
   // indicate which modules should be treated as external
-  external: ['lodash']
-}
+  external: ["lodash"],
+};
 ```
 
 ### Babel
@@ -157,22 +161,22 @@ npm install -D rollup-plugin-babel
 #### rollup.config.js
 
 ```js
-import resolve from '@rollup/plugin-node-resolve'
-import babel from 'rollup-plugin-babel'
+import resolve from "@rollup/plugin-node-resolve";
+import babel from "rollup-plugin-babel";
 
 export default {
-  input: 'src/main.js',
+  input: "src/main.js",
   output: {
-    file: 'bundle.js',
-    format: 'cjs'
+    file: "bundle.js",
+    format: "cjs",
   },
   plugins: [
     resolve(),
     babel({
-      exclude: 'node_modules/**' // only transpile our source code
-    })
-  ]
-}
+      exclude: "node_modules/**", // only transpile our source code
+    }),
+  ],
+};
 ```
 
 #### src/.babelrc

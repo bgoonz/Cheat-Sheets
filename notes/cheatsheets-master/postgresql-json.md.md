@@ -14,17 +14,19 @@ category: Databases
 SELECT * FROM users WHERE data->>'name' = 'John';
 SELECT data->>'name' AS name FROM users;
 ```
+
 {: .-setup}
 
-| Operator       | Description                        | Example          | Returns |
-| ----           | ----                               | ----             | ----    |
-| `->` _int_     | Get array element `2`              | `data->2`        | JSON    |
-| `->` _text_    | Get object key `name`              | `data->'name'`   | JSON    |
-| `#>` _text[]_  | Get keypath `a,b` (eg, `data.a.b`) | `data#>'{a,b}'`  | JSON    |
+| Operator      | Description                        | Example         | Returns |
+| ------------- | ---------------------------------- | --------------- | ------- |
+| `->` _int_    | Get array element `2`              | `data->2`       | JSON    |
+| `->` _text_   | Get object key `name`              | `data->'name'`  | JSON    |
+| `#>` _text[]_ | Get keypath `a,b` (eg, `data.a.b`) | `data#>'{a,b}'` | JSON    |
+
 | -
-| `->>` _int_    | Get array element `2`              | `data->>2`       | Text    |
-| `->>` _text_   | Get object key `name`              | `data->>'name'`  | Text    |
-| `#>>` _text[]_ | Get keypath `a,b` (eg, `data.a.b`) | `data#>>'{a,b}'` | Text    |
+| `->>` _int_ | Get array element `2` | `data->>2` | Text |
+| `->>` _text_ | Get object key `name` | `data->>'name'` | Text |
+| `#>>` _text[]_ | Get keypath `a,b` (eg, `data.a.b`) | `data#>>'{a,b}'` | Text |
 {: .-headers.-shortcuts}
 
 `>` returns JSON, `>>` returns text.
@@ -35,15 +37,17 @@ SELECT data->>'name' AS name FROM users;
 SELECT * FROM users WHERE data->tags ? 'admin';
 SELECT data->tags ? 'admin' AS is_admin FROM users;
 ```
+
 {: .-setup}
 
 | Operator      | Description                   | Example                          |
-| ----          | ----                          | ----                             |
+| ------------- | ----------------------------- | -------------------------------- | ------- | --------------- |
 | `?` _str_     | Does `data` have key `name`?  | `data ? 'name'`                  |
-| `?|` _text[]_ | Does `data` have `a` or `b`?  | `data ?| array['a','b']`         |
+| `?            | ` _text[]_                    | Does `data` have `a` or `b`?     | `data ? | array['a','b']` |
 | `?&` _text[]_ | Does `data` have `a` and `b`? | `data ?& array['a','b']`         |
 | `@>` _jsonb_  | Does `left` include `right`?  | `data @> '{"b":2}'::jsonb`       |
 | `<@` _jsonb_  | Does `right` include `left`?  | `data <@ '{"a":1,"b":2}'::jsonb` |
+
 {: .-headers.-shortcuts.-left-align}
 
 When `?`/`?|`/`?&` works on objects, it checks keys; when it works on arrays, it checks for elements.
@@ -55,14 +59,16 @@ When `?`/`?|`/`?&` works on objects, it checks keys; when it works on arrays, it
 ```sql
 UPDATE users SET tags = tags || array['admin'];
 ```
+
 {: .-setup}
 
-| Operator       |  Example                   |  Description
-| ----           |  ----                      |  ----
-| `||` _json_    |  `data || array['a','b']`  |  Concatenate
-| `-` _str_      |  `data - 'a'`              |  Delete a key
-| `-` _int_      |  `data - 1`                |  Delete an array item
-| `#-` _text[]_  |  `data #- '{us,name}'`     |  Delete a path
+| Operator      | Example               | Description          |
+| ------------- | --------------------- | -------------------- | ----- | --- | --------------- | ----------- |
+| `             |                       | ` _json_             | `data |     | array['a','b']` | Concatenate |
+| `-` _str_     | `data - 'a'`          | Delete a key         |
+| `-` _int_     | `data - 1`            | Delete an array item |
+| `#-` _text[]_ | `data #- '{us,name}'` | Delete a path        |
+
 {: .-headers.-shortcuts}
 
 Only available in PostgreSQL 9.5+.

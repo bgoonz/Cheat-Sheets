@@ -5,9 +5,11 @@ layout: 2017/sheet
 ---
 
 ## Reference
+
 {:.-three-column}
 
 ### Introduction
+
 {: .-intro}
 
 intro: A quick reference to the JavaScript [Promise API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
@@ -21,12 +23,12 @@ intro: A quick reference to the JavaScript [Promise API](https://developer.mozil
 new Promise((resolve, reject) => {
   doStuff(() => {
     if (success) {
-      resolve('good')
+      resolve("good");
     } else {
-      reject(new Error('oops'))
+      reject(new Error("oops"));
     }
-  })
-})
+  });
+});
 ```
 
 Use [new Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#Contstructor) to create new promises.
@@ -40,7 +42,7 @@ promise
   })
   .catch((error) => {
     /* failure */
-  })
+  });
 ```
 
 [then()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) runs a function when a promise resolves. [catch()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) runs when a promise fails.
@@ -48,35 +50,35 @@ promise
 ### Multiple promises
 
 ```js
-const promises = [promise1(), promise2() /* ... */]
+const promises = [promise1(), promise2() /* ... */];
 ```
 
 ```js
 // Succeeds when all succeed
 Promise.all(promises).then((results) => {
   /* ... */
-})
+});
 ```
 
 ```js
 // Succeeds when one finishes first
 Promise.race(promises).then((result) => {
   /* ... */
-})
+});
 ```
 
 ### Converting other promises
 
 ```js
-return Promise.resolve('result')
-return Promise.resolve(promise)
-return Promise.resolve(thenable)
+return Promise.resolve("result");
+return Promise.resolve(promise);
+return Promise.resolve(thenable);
 
-return Promise.reject('reason')
+return Promise.reject("reason");
 
 Promise.resolve(result).then(() => {
   /* ... */
-})
+});
 ```
 
 `Promise.resolve(val)` will return a promise that resolves to the value given to it.

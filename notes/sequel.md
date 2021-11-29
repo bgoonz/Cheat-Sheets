@@ -101,18 +101,18 @@ Without a filename argument, the sqlite adapter will setup a new sqlite database
 
 #### AND/OR/NOT
 
-    DB[:items].filter{(x > 5) & (y > 10)}.sql 
+    DB[:items].filter{(x > 5) & (y > 10)}.sql
     # SELECT * FROM items WHERE ((x > 5) AND (y > 10))
 
-    DB[:items].filter({:x => 1, :y => 2}.sql_or & ~{:z => 3}).sql 
+    DB[:items].filter({:x => 1, :y => 2}.sql_or & ~{:z => 3}).sql
     # SELECT * FROM items WHERE (((x = 1) OR (y = 2)) AND (z != 3))
 
 #### Mathematical operators
 
-    DB[:items].filter((:x + :y) > :z).sql 
+    DB[:items].filter((:x + :y) > :z).sql
     # SELECT * FROM items WHERE ((x + y) > z)
 
-    DB[:items].filter{price - 100 < avg(price)}.sql 
+    DB[:items].filter{price - 100 < avg(price)}.sql
     # SELECT * FROM items WHERE ((price - 100) < avg(price))
 
 ### Ordering
@@ -128,12 +128,12 @@ Without a filename argument, the sqlite adapter will setup a new sqlite database
 
 ### Joins
 
-    DB[:items].left_outer_join(:categories, :id => :category_id).sql 
+    DB[:items].left_outer_join(:categories, :id => :category_id).sql
     # SELECT * FROM items LEFT OUTER JOIN categories ON categories.id = items.category_id
 
-    DB[:items].join(:categories, :id => :category_id).join(:groups, :id => :items__group_id) 
+    DB[:items].join(:categories, :id => :category_id).join(:groups, :id => :items__group_id)
     # SELECT * FROM items INNER JOIN categories ON categories.id = items.category_id INNER JOIN groups ON groups.id = items.group_id
-	
+
 ### Aggregate functions methods
 
     dataset.count #=> record count
@@ -161,7 +161,7 @@ Without a filename argument, the sqlite adapter will setup a new sqlite database
       TrueClass :active, :default => true
       foreign_key :category_id, :categories
       DateTime :created_at
-      
+
       index :created_at
     end
 
@@ -225,7 +225,7 @@ Savepoints can be used if the database supports it:
     dataset.columns #=> array of columns in the result set, does a SELECT
     DB.schema(:items) => [[:id, {:type=>:integer, ...}], [:name, {:type=>:string, ...}], ...]
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ### Documents
 
@@ -310,7 +310,7 @@ Provided by many_to_many
         validates_min_length 3, :name
         validates_max_length 100, :name
         validates_length_range 3..100, :name
-        
+
         # Setter override
         def filename=(name)
           @values[:filename] = name
@@ -359,7 +359,7 @@ Provided by many_to_many
         primary_key :id
         primary_key [:id, :title]
         String :name, primary_key: true
-        
+
         String  :title
         Numeric :price
         DateTime :expires

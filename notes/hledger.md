@@ -9,6 +9,7 @@ category: Ledger
 hledger bal {query}
 hledger reg {query}
 ```
+
 {:.large.terminal}
 
 ## Query
@@ -49,6 +50,7 @@ status:          #     --uncleared
 ```
 
 ### Periods
+
 For dates and intervals (see above).
 
 ```
@@ -70,6 +72,7 @@ date2:PERIODEXPR
 ```
 
 ### Intervals
+
 Used on all commands (`bal`, `reg`, etc). Displays in multi-column mode. In `ledger-cli`, only `reg` is supported. Can also specified via `-p` (period).
 
 ```
@@ -81,6 +84,7 @@ Used on all commands (`bal`, `reg`, etc). Displays in multi-column mode. In `led
 ```
 
 ### Smart dates
+
 Used for `--period`, `--begin` and `--end` (`-p` `-b` `-e`).
 
 ```
@@ -118,6 +122,7 @@ Used for `--period`, `--begin` and `--end` (`-p` `-b` `-e`).
 ```
 
 ## Multi-column mode
+
 When used with intervals (like `--weekly`):
 
 ```
@@ -132,7 +137,6 @@ Also: (only in `bal`)
 -I, --historical    # like --cumulative but only for --begin
 -A, --average
 ```
-
 
 ## Accounts
 
@@ -170,5 +174,5 @@ hledger stats
 
 ## See also
 
-* <http://hledger.org/manual.html>
-* <http://ledger-cli.org/3.0/doc/ledger3.html>
+- <http://hledger.org/manual.html>
+- <http://ledger-cli.org/3.0/doc/ledger3.html>

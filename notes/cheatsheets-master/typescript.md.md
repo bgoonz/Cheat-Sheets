@@ -27,15 +27,19 @@ never  /* unreachable */
 ```
 
 ```ts
-enum Color {Red, Green, Blue = 4}
-let c: Color = Color.Green
+enum Color {
+  Red,
+  Green,
+  Blue = 4,
+}
+let c: Color = Color.Green;
 ```
 
 ## Declarations
 
 ```ts
-let isDone: boolean
-let isDone: boolean = false
+let isDone: boolean;
+let isDone: boolean = false;
 ```
 
 ```ts
@@ -50,37 +54,37 @@ function add (a: number, b: number) { ... }
 ## Type assertions
 
 #### Variables
+
 ```ts
-let len: number = (input as string).length
-let len: number = (<string> input).length  /* not allowed in JSX */
+let len: number = (input as string).length;
+let len: number = (<string>input).length; /* not allowed in JSX */
 ```
 
 #### Functions
+
 ```ts
-function object(this: {a: number, b: number}, a: number, b: number) {
+function object(this: { a: number; b: number }, a: number, b: number) {
   this.a = a;
   this.b = b;
   return this;
 }
 
 // this is used only for type declaration
-let a = object(1,2);
+let a = object(1, 2);
 // a has type {a: number, b: number}
 ```
-
 
 ## Interfaces
 
 ### Inline
 
 ```ts
-function printLabel (options: { label: string }) {
-  console.log(options.label)
+function printLabel(options: { label: string }) {
+  console.log(options.label);
 }
 
 // Note the semicolon
-function getUser (): { name: string; age?: number } {
-}
+function getUser(): { name: string; age?: number } {}
 ```
 
 ### Explicit
@@ -97,8 +101,8 @@ function printLabel(options: LabelOptions) { ... }
 
 ```ts
 interface User {
-  name: string,
-  age?: number
+  name: string;
+  age?: number;
 }
 ```
 
@@ -106,7 +110,7 @@ interface User {
 
 ```ts
 interface User {
-  readonly name: string
+  readonly name: string;
 }
 ```
 
@@ -121,7 +125,7 @@ interface User {
 ## Type aliases
 
 ```ts
-type Name = string | string[]
+type Name = string | string[];
 ```
 
 ## Function types
@@ -138,12 +142,12 @@ getUser(function (user: User) { ... })
 
 ```ts
 class Point {
-  x: number
-  y: number
-  static instances = 0
+  x: number;
+  y: number;
+  static instances = 0;
   constructor(x: number, y: number) {
-    this.x = x
-    this.y = y
+    this.x = x;
+    this.y = y;
   }
 }
 ```
@@ -165,14 +169,12 @@ class Pixel extends Point implements Colored {...}
 ```ts
 class Point {
   static instances = 0;
-  constructor(
-    public x: number,
-    public y: number,
-  ){}
+  constructor(public x: number, public y: number) {}
 }
 ```
 
 #### Fields which do not require initialisation
+
 ```ts
 class Point {
   public someUselessValue!: number;
@@ -184,13 +186,13 @@ class Point {
 
 ```ts
 class Greeter<T> {
-  greeting: T
+  greeting: T;
   constructor(message: T) {
-    this.greeting = message
+    this.greeting = message;
   }
 }
 
-let greeter = new Greeter<string>('Hello, world')
+let greeter = new Greeter<string>("Hello, world");
 ```
 
 ## Modules
@@ -204,10 +206,10 @@ export interface User { ... }
 ```ts
 interface Building {
   room: {
-    door: string,
-    walls: string[],
+    door: string;
+    walls: string[];
   };
 }
 
-type Walls = Building['room']['walls']; // string[]
+type Walls = Building["room"]["walls"]; // string[]
 ```

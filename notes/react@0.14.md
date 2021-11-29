@@ -15,13 +15,14 @@ intro: |
 var Component = React.createClass({
   render: function () {
     return <div>Hello {this.props.name}</div>;
-  }
+  },
 });
 ```
 
 ```js
 ReactDOM.render(<Component name="John" />, document.body);
 ```
+
 {:.light}
 
 Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hacking. (or the unofficial [jsbin](http://jsbin.com/yafixat/edit?js,output))
@@ -32,31 +33,36 @@ Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hack
 var UserAvatar  = React.createClass({...});
 var UserProfile = React.createClass({...});
 ```
+
 {:.light}
 
 ```js
 var Info = React.createClass({
   render() {
-    return <div>
-      <UserAvatar src={this.props.avatar} />
-      <UserProfile username={this.props.username} />
-    </div>;
-  }
+    return (
+      <div>
+        <UserAvatar src={this.props.avatar} />
+        <UserProfile username={this.props.username} />
+      </div>
+    );
+  },
 });
 ```
 
 Nest components to separate concerns. See [multiple components](http://facebook.github.io/react/docs/multiple-components.html).
 
 ## States & Properties
+
 {:.center}
 
 ### States and props
 
 ```html
-<MyComponent fullscreen={true} />
+<MyComponent fullscreen="{true}" />
 ```
+
 {:.light}
- 
+
 ```js
 // props
   this.props.fullscreen //=> true
@@ -99,10 +105,11 @@ Pre-populates `this.state.comments` and `this.props.name`.
 ### Component API
 
 ```js
-ReactDOM.findDOMNode(c)  // 0.14+
-React.findDOMNode(c)  // 0.13
-c.getDOMNode()        // 0.12 below
+ReactDOM.findDOMNode(c); // 0.14+
+React.findDOMNode(c); // 0.13
+c.getDOMNode(); // 0.12 below
 ```
+
 {:.light}
 
 ```js
@@ -125,17 +132,18 @@ These are methods available for `Component` instances. See [Component API](http:
 
 ### Component specs
 
-| Method | What |
-| ---- | ---- |
-| [`render()`](http://facebook.github.io/react/docs/component-specs.html#render) | |
-| ---- | ---- |
-| [`getInitialState()`](http://facebook.github.io/react/docs/component-specs.html#getinitialstate) | |
-| [`getDefaultProps()`](http://facebook.github.io/react/docs/component-specs.html#getdefaultprops) |  |
-| ---- | ---- |
-| [`mixins: [ ... ]`](http://facebook.github.io/react/docs/component-specs.html#mixins) | Mixins ... [more](#mixins) |
-| [`propTypes: { ... }`](http://facebook.github.io/react/docs/component-specs.html#proptypes) | Validation ... [more](#property-validation) |
-| [`statics: { ... }`](http://facebook.github.io/react/docs/component-specs.html#statics) | Static methods |
-| [`displayName: "..."`](http://facebook.github.io/react/docs/component-specs.html#displayname) | Automatically filled by JSX |
+| Method                                                                                           | What                                        |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------- |
+| [`render()`](http://facebook.github.io/react/docs/component-specs.html#render)                   |                                             |
+| ----                                                                                             | ----                                        |
+| [`getInitialState()`](http://facebook.github.io/react/docs/component-specs.html#getinitialstate) |                                             |
+| [`getDefaultProps()`](http://facebook.github.io/react/docs/component-specs.html#getdefaultprops) |                                             |
+| ----                                                                                             | ----                                        |
+| [`mixins: [ ... ]`](http://facebook.github.io/react/docs/component-specs.html#mixins)            | Mixins ... [more](#mixins)                  |
+| [`propTypes: { ... }`](http://facebook.github.io/react/docs/component-specs.html#proptypes)      | Validation ... [more](#property-validation) |
+| [`statics: { ... }`](http://facebook.github.io/react/docs/component-specs.html#statics)          | Static methods                              |
+| [`displayName: "..."`](http://facebook.github.io/react/docs/component-specs.html#displayname)    | Automatically filled by JSX                 |
+
 {:.greycode.no-head}
 
 Methods and properties you can override. See [component specs](http://facebook.github.io/react/docs/component-specs.html).
@@ -152,10 +160,10 @@ Before initial rendering occurs. Add your DOM stuff on didMount (events, timers,
 
 ### Updating
 
-| `componentWillReceiveProps`*(newProps={})* | Use `setState()` here |
-| `shouldComponentUpdate`*(newProps={}, newState={})* | Skips `render()` if returns false |
-| `componentWillUpdate`*(newProps={}, newState={})* | Can't use `setState()` here |
-| `componentDidUpdate`*(prevProps={}, prevState={})* | Operate on the DOM here |
+| `componentWillReceiveProps`_(newProps={})_ | Use `setState()` here |
+| `shouldComponentUpdate`_(newProps={}, newState={})_ | Skips `render()` if returns false |
+| `componentWillUpdate`_(newProps={}, newState={})_ | Can't use `setState()` here |
+| `componentDidUpdate`_(prevProps={}, prevState={})_ | Operate on the DOM here |
 {:.greycode.no-head.lc}
 
 Called when parents change properties and `.setState()`. These are not called for initial renders. See [reference](http://facebook.github.io/react/docs/component-specs.html#updating-componentwillreceiveprops).
@@ -174,14 +182,17 @@ Clear your DOM stuff here (probably done on didMount). See [reference](http://fa
 ```js
 React.createClass({
   componentDidMount: function () {
-    $.get(this.props.url, function (data) {
-      this.setState(data);
-    }.bind(this));
+    $.get(
+      this.props.url,
+      function (data) {
+        this.setState(data);
+      }.bind(this)
+    );
   },
 
   render: function () {
-    return <CommentList data={this.state.data} />
-  }
+    return <CommentList data={this.state.data} />;
+  },
 });
 ```
 
@@ -192,24 +203,25 @@ See [initial AJAX data](http://facebook.github.io/react/tips/initial-ajax.html).
 ### References
 
 ```html
-<input ref="myInput">
+<input ref="myInput" />
 ```
+
 {:.light}
 
 ```js
-this.refs.myInput
-ReactDOM.findDOMNode(this.refs.myInput).focus()
-ReactDOM.findDOMNode(this.refs.myInput).value
+this.refs.myInput;
+ReactDOM.findDOMNode(this.refs.myInput).focus();
+ReactDOM.findDOMNode(this.refs.myInput).value;
 ```
 
 ### DOM Events
+
 Add attributes like `onChange`. See [events](https://facebook.github.io/react/docs/events.html).
 
 ```html
-<input type="text"
-    value={this.state.value}
-    onChange={this.handleChange} />
+<input type="text" value="{this.state.value}" onChange="{this.handleChange}" />
 ```
+
 {:.light}
 
 ```js
@@ -225,16 +237,17 @@ Allows access to DOM nodes. See [References](http://facebook.github.io/react/doc
 ```html
 Email: <input type="text" valueLink={this.linkState('email')} />
 ```
+
 {:.light}
 
 ```js
 React.createClass({
-  mixins: [React.addons.LinkedStateMixin]
+  mixins: [React.addons.LinkedStateMixin],
 });
 ```
 
 ```js
-this.state.email
+this.state.email;
 ```
 
 Use [LinkedStateMixin](http://facebook.github.io/react/docs/two-way-binding-helpers.html) for easier two-way binding.
@@ -246,15 +259,16 @@ Use [LinkedStateMixin](http://facebook.github.io/react/docs/two-way-binding-help
 ```js
 React.createClass({
   propTypes: {
-    email:      React.PropTypes.string,
-    seats:      React.PropTypes.number,
-    settings:   React.PropTypes.object,
-    callback:   React.PropTypes.func,
-    isClosed:   React.PropTypes.bool,
-    any:        React.PropTypes.any,
-  }
+    email: React.PropTypes.string,
+    seats: React.PropTypes.number,
+    settings: React.PropTypes.object,
+    callback: React.PropTypes.func,
+    isClosed: React.PropTypes.bool,
+    any: React.PropTypes.any,
+  },
 });
 ```
+
 Primitive types: `.string`, `.number`, `.func`, and `.bool`. See [propTypes](http://facebook.github.io/react/docs/reusable-components.html#prop-validation).
 
 ### Required types
@@ -348,14 +362,15 @@ Manipulate DOM classes with [classnames](https://www.npmjs.org/package/classname
 ```html
 <VideoPlayer src="video.mp4" />
 ```
+
 {:.light}
 
 ```js
 var VideoPlayer = React.createClass({
-  render: function() {
+  render: function () {
     /* propagates src="..." down to this sub component */
-    return <VideoEmbed {...this.props} controls='false' />;
-  }
+    return <VideoEmbed {...this.props} controls="false" />;
+  },
 });
 ```
 
@@ -368,6 +383,7 @@ var SetIntervalMixin = {
   componentWillMount: function() { .. }
 }
 ```
+
 {:.light}
 
 ```js
@@ -398,7 +414,7 @@ ReactDOMServer.renderToStaticMarkup(<Component />) // 0.14+
 ### Style shorthand
 
 ```js
-var style = { backgroundImage: 'url(x.jpg)', height: 10 };
+var style = { backgroundImage: "url(x.jpg)", height: 10 };
 return <div style={style}></div>;
 ```
 
@@ -407,8 +423,10 @@ See [inline styles](https://facebook.github.io/react/tips/inline-styles.html).
 ### InnerHTML
 
 ```js
-function markdownify() { return "<p>...</p>"; }
-<div dangerouslySetInnerHTML={{__html: markdownify()}} />
+function markdownify() {
+  return "<p>...</p>";
+}
+<div dangerouslySetInnerHTML={{ __html: markdownify() }} />;
 ```
 
 See [dangerously set innerHTML](https://facebook.github.io/react/tips/dangerously-set-inner-html.html).
@@ -417,16 +435,16 @@ See [dangerously set innerHTML](https://facebook.github.io/react/tips/dangerousl
 
 ```js
 var TodoList = React.createClass({
-  render: function() {
+  render: function () {
     function item(itemText) {
       return <li>{itemText}</li>;
-    };
+    }
     return <ul>{this.props.items.map(item)}</ul>;
-  }
+  },
 });
 ```
 
 ## See also
 
-* [Animations](http://facebook.github.io/react/docs/animation.html)
-{%endraw%}
+- [Animations](http://facebook.github.io/react/docs/animation.html)
+  {%endraw%}

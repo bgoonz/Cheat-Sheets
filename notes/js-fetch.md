@@ -6,6 +6,7 @@ weight: -3
 ---
 
 ### Fetch
+
 {: .-prime}
 
 ```js
@@ -16,26 +17,26 @@ fetch('/data.json')
   })
   .catch(err => ...)
 ```
+
 {: data-line="4"}
 
 ### Response
 
 ```js
-fetch('/data.json')
-.then(res => {
-  res.text()       // response body (=> Promise)
-  res.json()       // parse via JSON (=> Promise)
-  res.status       //=> 200
-  res.statusText   //=> 'OK'
-  res.redirected   //=> false
-  res.ok           //=> true
-  res.url          //=> 'http://site.com/data.json'
-  res.type         //=> 'basic'
-                   //   ('cors' 'default' 'error'
-                   //    'opaque' 'opaqueredirect')
+fetch("/data.json").then((res) => {
+  res.text(); // response body (=> Promise)
+  res.json(); // parse via JSON (=> Promise)
+  res.status; //=> 200
+  res.statusText; //=> 'OK'
+  res.redirected; //=> false
+  res.ok; //=> true
+  res.url; //=> 'http://site.com/data.json'
+  res.type; //=> 'basic'
+  //   ('cors' 'default' 'error'
+  //    'opaque' 'opaqueredirect')
 
-  res.headers.get('Content-Type')
-})
+  res.headers.get("Content-Type");
+});
 ```
 
 ### Request options
@@ -59,18 +60,17 @@ fetch('/data.json', {
 ### Catching errors
 
 ```js
-fetch('/data.json')
-  .then(checkStatus)
+fetch("/data.json").then(checkStatus);
 ```
 
 ```js
-function checkStatus (res) {
+function checkStatus(res) {
   if (res.status >= 200 && res.status < 300) {
-    return res
+    return res;
   } else {
-    let err = new Error(res.statusText)
-    err.response = res
-    throw err
+    let err = new Error(res.statusText);
+    err.response = res;
+    throw err;
   }
 }
 ```
@@ -80,12 +80,13 @@ Non-2xx responses are still successful requests. Use another function to turn th
 ### Using with node.js
 
 ```js
-const fetch = require('isomorphic-fetch')
+const fetch = require("isomorphic-fetch");
 ```
 
 See: [isomorphic-fetch](https://npmjs.com/package/isomorphic-fetch) _(npmjs.com)_
 
 ## References
+
 {: .-one-column}
 
 - <https://fetch.spec.whatwg.org/>

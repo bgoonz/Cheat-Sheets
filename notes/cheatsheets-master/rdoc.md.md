@@ -28,7 +28,7 @@ layout: 2017/sheet
 # @option opts [String] :subject The subject
 # @option opts [String] :from ('nobody') From address
 # @option opts [String] :to Recipient email
-# @option opts [String] :body ('') The email's body 
+# @option opts [String] :body ('') The email's body
 ```
 
 ### Parameter types
@@ -49,7 +49,7 @@ layout: 2017/sheet
 ### Inline
 
 ```markdown
-*bold*
+_bold_
 _emphasized_
 +code+
 ```
@@ -131,8 +131,9 @@ def expired?
 Place this at the beginning of the file.
 
 ## Also see
+
 {: .-one-column}
 
-* <http://rdoc.rubyforge.org/RDoc/Markup.html>
-* <https://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md>
-{: .-also-see}
+- <http://rdoc.rubyforge.org/RDoc/Markup.html>
+- <https://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md>
+  {: .-also-see}

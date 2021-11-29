@@ -5,12 +5,12 @@ category: Devops
 
 ## circle.yml
 
-* __machine__: adjusting the VM to your preferences and requirements
-* __checkout__: checking out and cloning your git repo
-* __dependencies__: setting up your project's language-specific dependencies
-* __database__: preparing the databases for your tests
-* __test__: running your tests
-* __deployment__: deploying your code to your web servers
+- **machine**: adjusting the VM to your preferences and requirements
+- **checkout**: checking out and cloning your git repo
+- **dependencies**: setting up your project's language-specific dependencies
+- **database**: preparing the databases for your tests
+- **test**: running your tests
+- **deployment**: deploying your code to your web servers
 
 See: <https://circleci.com/docs/configuration>
 
@@ -19,14 +19,11 @@ See: <https://circleci.com/docs/configuration>
 ```yml
 ## Customize the test machine
 machine:
-
-  timezone:
-    America/Los_Angeles # Set the timezone
+  timezone: America/Los_Angeles # Set the timezone
 
   # Version of ruby to use
   ruby:
-    version:
-      1.8.7-p358-falcon-perf
+    version: 1.8.7-p358-falcon-perf
 
   # Override /etc/hosts
   hosts:
@@ -58,7 +55,7 @@ dependencies:
   # we automatically cache and restore many dependencies between
   # builds. If you need to, you can add custom paths to cache:
   cache_directories:
-    - "custom_1"   # relative to the build directory
+    - "custom_1" # relative to the build directory
     - "~/custom_2" # relative to the user's home directory
 
 ## Customize database setup

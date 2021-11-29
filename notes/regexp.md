@@ -14,6 +14,7 @@ description: |
 ---
 
 ## RegExp
+
 {: .-three-column}
 
 ### Character classes
@@ -35,18 +36,18 @@ description: |
 
 ### Anchors
 
-| Pattern | Description             |
-| ------- | ----------------------- |
-| `\G`    | Start of match          |
-| `^`     | Start of string         |
-| `$`     | End of string           |
-| `\A`    | Start of string         |
-| `\Z`    | End of string           |
-| `\z`    | Absolute end of string  |
-| `\b`    | A word boundry          |
-| `\B`    | Non-word boundry        |
-| `^abc`  | Start with `abc`        |
-| `abc$`  | End with `abc`          |
+| Pattern | Description            |
+| ------- | ---------------------- |
+| `\G`    | Start of match         |
+| `^`     | Start of string        |
+| `$`     | End of string          |
+| `\A`    | Start of string        |
+| `\Z`    | End of string          |
+| `\z`    | Absolute end of string |
+| `\b`    | A word boundry         |
+| `\B`    | Non-word boundry       |
+| `^abc`  | Start with `abc`       |
+| `abc$`  | End with `abc`         |
 
 ### Escaped characters
 
@@ -60,11 +61,10 @@ description: |
 ### Groups
 
 | Pattern   | Description                    |
-| --------- | ------------------------------ |
+| --------- | ------------------------------ | ---------------- |
 | `(abc)`   | Capture group                  |
-| `(a|b)`   | Match `a` or `b`               |
+| `(a       | b)`                            | Match `a` or `b` |
 | `(?:abc)` | Match `abc`, but don't capture |
-
 
 ### Quantifiers
 
@@ -80,10 +80,10 @@ description: |
 
 ### Lookahead & Lookbehind
 
-| Pattern      | Description                               |
-| ---          | ---                                       |
-| `a(?=b)`     | Match `a` in `baby` but not in `bay`      |
-| `a(?!b)`     | Match `a` in `Stan` but not in `Stab`     |
-| ---          | ---                                       |
-| `(?<=a)b`    | Match `b` in `crabs` but not in `cribs`   |
-| `(?<!a)b`    | Match `b` in `fib` but not in `fab`       |
+| Pattern   | Description                             |
+| --------- | --------------------------------------- |
+| `a(?=b)`  | Match `a` in `baby` but not in `bay`    |
+| `a(?!b)`  | Match `a` in `Stan` but not in `Stab`   |
+| ---       | ---                                     |
+| `(?<=a)b` | Match `b` in `crabs` but not in `cribs` |
+| `(?<!a)b` | Match `b` in `fib` but not in `fab`     |

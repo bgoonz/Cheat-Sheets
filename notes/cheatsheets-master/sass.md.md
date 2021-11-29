@@ -16,9 +16,11 @@ keywords:
 ---
 
 ## Basics
+
 {: .-three-column}
 
 ### Introduction
+
 {: .-intro}
 
 This is a quick reference to [Sass stylesheets](https://sass-lang.com).
@@ -51,10 +53,11 @@ body {
 ```
 
 #### to properties
+
 ```scss
 text: {
-  align: center;          // like text-align: center
-  transform: uppercase;   // like text-transform: uppercase
+  align: center; // like text-align: center
+  transform: uppercase; // like text-transform: uppercase
 }
 ```
 
@@ -144,7 +147,7 @@ body {
 ### Composing
 
 ```scss
-@import './other_sass_file';
+@import "./other_sass_file";
 ```
 
 The `.scss` or `.sass` extension is optional.
@@ -311,10 +314,10 @@ feature-exists(global-variable-shadowing)
 
 ### Features
 
-* global-variable-shadowing
-* extend-selector-pseudoclass
-* units-level-3
-* at-error
+- global-variable-shadowing
+- extend-selector-pseudoclass
+- units-level-3
+- at-error
 
 ## Loops
 
@@ -322,7 +325,9 @@ feature-exists(global-variable-shadowing)
 
 ```scss
 @for $i from 1 through 4 {
-  .item-#{$i} { left: 20px * $i; }
+  .item-#{$i} {
+    left: 20px * $i;
+  }
 }
 ```
 
@@ -333,14 +338,15 @@ $menu-items: home about services contact;
 
 @each $item in $menu-items {
   .photo-#{$item} {
-    background: url('images/#{$item}.jpg');
+    background: url("images/#{$item}.jpg");
   }
 }
 ```
 
 ### Each loops (nested)
+
 ```scss
-$backgrounds: (home, 'home.jpg'), (about, 'about.jpg');
+$backgrounds: (home, "home.jpg"), (about, "about.jpg");
 
 @each $id, $image in $backgrounds {
   .photo-#{$id} {
@@ -354,7 +360,9 @@ $backgrounds: (home, 'home.jpg'), (about, 'about.jpg');
 ```scss
 $i: 6;
 @while $i > 0 {
-  .item-#{$i} { width: 2em * $i; }
+  .item-#{$i} {
+    width: 2em * $i;
+  }
   $i: $i - 2;
 }
 ```
@@ -364,16 +372,14 @@ $i: 6;
 ### Conditionals
 
 ```scss
-@if $position == 'left' {
-   position: absolute;
-   left: 0;
-}
-@else if $position == 'right' {
-   position: absolute;
-   right: 0;
-}
-@else {
-   position: static;
+@if $position == "left" {
+  position: absolute;
+  left: 0;
+} @else if $position == "right" {
+  position: absolute;
+  right: 0;
+} @else {
+  position: static;
 }
 ```
 
@@ -408,6 +414,7 @@ map-get($map, key1)
 ```
 
 ## See also
+
 {: .-one-column}
 
 - <http://sass-lang.com/documentation/Sass/Script/Functions.html>

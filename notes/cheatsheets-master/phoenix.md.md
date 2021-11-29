@@ -53,6 +53,7 @@ See: [Installation](https://hexdocs.pm/phoenix/installation.html) _(hexdocs.pm)_
 ├── priv/
 └── test/
 ```
+
 {: .-box-chars}
 
 See: [Adding pages](https://hexdocs.pm/phoenix/adding_pages.html) _(hexdocs.pm)_

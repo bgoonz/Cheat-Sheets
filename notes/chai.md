@@ -12,46 +12,47 @@ description: |
 ### Assert
 
 ```js
-const { assert } = require('chai')
+const { assert } = require("chai");
 ```
+
 {: .-setup}
 
 ```js
-assert(val)
-assert.fail(actual, expected)
-assert.ok(val)                        // is truthy
-assert.equal(actual, expected)        // compare with ==
-assert.strictEqual(actual, expected)  // compare with ===
-assert.deepEqual(actual, expected)    // deep equal check
+assert(val);
+assert.fail(actual, expected);
+assert.ok(val); // is truthy
+assert.equal(actual, expected); // compare with ==
+assert.strictEqual(actual, expected); // compare with ===
+assert.deepEqual(actual, expected); // deep equal check
 ```
 
 ```js
-assert.isTrue(val)
-assert.isFalse(val)
+assert.isTrue(val);
+assert.isFalse(val);
 ```
 
 ```js
-assert.isNull(val)
-assert.isNotNull(val)
-assert.isUndefined(val)
-assert.isDefined(val)
-assert.isFunction(val)
-assert.isObject(val)
-assert.isArray(val)
-assert.isString(val)
-assert.isNumber(val)
-assert.isBoolean(val)
+assert.isNull(val);
+assert.isNotNull(val);
+assert.isUndefined(val);
+assert.isDefined(val);
+assert.isFunction(val);
+assert.isObject(val);
+assert.isArray(val);
+assert.isString(val);
+assert.isNumber(val);
+assert.isBoolean(val);
 ```
 
 ```js
-assert.typeOf(/tea/, 'regexp') // Object.prototype.toString()
-assert.instanceOf(chai, Tea)
-assert.include([ a,b,c ], a)
-assert.match(val, /regexp/)
-assert.property(obj, 'tea') // 'tea' in object
-assert.deepProperty(obj, 'tea.green')
-assert.propertyVal(person, 'name', 'John')
-assert.deepPropertyVal(post, 'author.name', 'John')
+assert.typeOf(/tea/, "regexp"); // Object.prototype.toString()
+assert.instanceOf(chai, Tea);
+assert.include([a, b, c], a);
+assert.match(val, /regexp/);
+assert.property(obj, "tea"); // 'tea' in object
+assert.deepProperty(obj, "tea.green");
+assert.propertyVal(person, "name", "John");
+assert.deepPropertyVal(post, "author.name", "John");
 ```
 
 ```js
@@ -62,8 +63,8 @@ assert.doesNotThrow
 ```
 
 ```js
-assert.operator(1, '<', 2)
-assert.closeTo(actual, expected)
+assert.operator(1, "<", 2);
+assert.closeTo(actual, expected);
 ```
 
 See: [Assert API](http://chaijs.com/api/assert/) _(chaijs.com)_
@@ -71,17 +72,18 @@ See: [Assert API](http://chaijs.com/api/assert/) _(chaijs.com)_
 ### BDD syntax
 
 ```js
-const { expect } = require('chai')
+const { expect } = require("chai");
 ```
+
 {: .-setup}
 
 ```js
 expect(object)
   .to.equal(expected)
-  .to.eql(expected)        // deep equality
+  .to.eql(expected) // deep equality
   .to.deep.equal(expected) // same as .eql
-  .to.be.a('string')
-  .to.include(val)
+  .to.be.a("string")
+  .to.include(val);
 ```
 
 ```js
@@ -134,7 +136,7 @@ These don't do anything and can be chained.
 ### Should not
 
 ```js
-expect(object).not.equal('x')
+expect(object).not.equal("x");
 ```
 
 ## Chai with jQuery
@@ -145,15 +147,16 @@ expect(object).not.equal('x')
 global.jQuery = ···
 chai.use(require('chai-jquery'))
 ```
+
 {: .-setup}
 
 ```js
 expect($body)
-  .have.attr('foo')
-  .have.prop('disabled')
-  .have.css('background')
-  .have.css('background-color', '#ffffff')
-  .have.data('foo')
+  .have.attr("foo")
+  .have.prop("disabled")
+  .have.css("background")
+  .have.css("background-color", "#ffffff")
+  .have.data("foo");
 ```
 
 ```js
@@ -170,7 +173,7 @@ expect($body)
 ### Continued
 
 ```js
-expect($body)
+expect($body);
 ```
 
 ```js

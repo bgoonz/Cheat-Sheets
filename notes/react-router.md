@@ -9,17 +9,17 @@ layout: default-ad
 ### Basic
 
 ```js
-import { default as Router, Route } from 'react-router'
+import { default as Router, Route } from "react-router";
 
 const routes = (
   <Route>
-    <Route path='*' handler={RootView} />
+    <Route path="*" handler={RootView} />
   </Route>
-)
+);
 
 Router.run(routes, Router.HashLocation, (Root) => {
-  React.render(<Root />, document.getElementById('all'))
-})
+  React.render(<Root />, document.getElementById("all"));
+});
 ```
 
 ### Nesting
@@ -27,24 +27,24 @@ Router.run(routes, Router.HashLocation, (Root) => {
 ```js
 const routes = (
   <Route handler={Chrome}>
-    <Route path='about' handler={About} />
-    <Route path='inbox' handler={Inbox} />
-    <Route path='messages/:id' handler={Message} />
+    <Route path="about" handler={About} />
+    <Route path="inbox" handler={Inbox} />
+    <Route path="messages/:id" handler={Message} />
   </Route>
-)
+);
 
-import { RouteHandler } from 'react-router'
+import { RouteHandler } from "react-router";
 
 const Chrome = React.createClass({
-  render () {
+  render() {
     return (
       <div>
         <h1>App</h1>
         <RouteHandler />
       </div>
-    )
-  }
-})
+    );
+  },
+});
 ```
 
 ### URL params
@@ -77,7 +77,7 @@ import { Link } from 'react-router'
 <Route path='/'>
   <DefaultRoute handler={Home} />
   <NotFoundRoute handler={NotFound} />
-  
+
   <Redirect from='login' to='sessions/new' />
   <Redirect from='login' to='sessions/new' params={{from: 'home'}} />
   <Redirect from='profile/:id' to='about-user' />

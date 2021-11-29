@@ -9,6 +9,7 @@ intro: |
 ---
 
 ## Common usage
+
 {: .-three-column}
 
 ### Tables
@@ -16,6 +17,7 @@ intro: |
 ```
 :Tab /|
 ```
+
 {: .-setup}
 
 ```
@@ -31,6 +33,7 @@ intro: |
 ```
 :Tab /=
 ```
+
 {: .-setup}
 
 ```
@@ -44,6 +47,7 @@ width = 640
 ```
 :Tab /:\zs/l0l1
 ```
+
 {: .-setup}
 
 ```
@@ -55,6 +59,7 @@ width:       640
 ```
 
 ## Tab command
+
 {: .-three-column}
 
 ### Basic example
@@ -62,6 +67,7 @@ width:       640
 ```
 :Tab /:
 ```
+
 {: .-setup}
 
 ```bash
@@ -74,6 +80,7 @@ src   : img.jpg
 ```
 :Tab /:/r0
 ```
+
 {: .-setup}
 
 ```bash
@@ -86,6 +93,7 @@ title:My picture
 ```
 :Tab /:\zs
 ```
+
 {: .-setup}
 
 ```
@@ -100,6 +108,7 @@ The `\zs` atom will exclude the `:` from the search match.
 ```
 :Tab /:/r1c1l0
 ```
+
 {: .-setup}
 
 ```bash
@@ -118,6 +127,7 @@ title : My picture
 ```
 :Tab /^[^,]*\zs,/r0
 ```
+
 {: .-setup}
 
 ```bash
@@ -128,13 +138,13 @@ abc,hello
 
 ### Specifiers
 
-| Specifier | Description |
-| --- | --- |
-| `r1c1l0` |  multiple specifiers, one per column<br>(the separator counts as a column) |
-| --- | --- |
-| `lN` | Left-align (with N spaces padding) |
-| `rN` | Right-align (with N spaces padding) |
-| `cN` | Center-align (with N spaces padding) |
+| Specifier | Description                                                               |
+| --------- | ------------------------------------------------------------------------- |
+| `r1c1l0`  | multiple specifiers, one per column<br>(the separator counts as a column) |
+| ---       | ---                                                                       |
+| `lN`      | Left-align (with N spaces padding)                                        |
+| `rN`      | Right-align (with N spaces padding)                                       |
+| `cN`      | Center-align (with N spaces padding)                                      |
 
 ## Also see
 

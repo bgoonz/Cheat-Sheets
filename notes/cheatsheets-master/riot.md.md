@@ -9,10 +9,7 @@ layout: default-ad
 ```js
 /* tag-name.tag */
 <tag-name>
-  <div>
-    hello {name}
-  </div>
-
+  <div>hello {name}</div>
   this.name = opts.name
 </tag-name>
 ```
@@ -20,9 +17,16 @@ layout: default-ad
 ```html
 <!-- in html -->
 <tag-name>
-<script>riot.mount('*')</script>
-<script>riot.mount('tag-name')</script>
-<script>riot.mount('tag-name', { title: 'my app', ... })</script>
+  <script>
+    riot.mount("*");
+  </script>
+  <script>
+    riot.mount("tag-name");
+  </script>
+  <script>
+    riot.mount('tag-name', { title: 'my app', ... })
+  </script></tag-name
+>
 ```
 
 ## Expressions
@@ -42,6 +46,7 @@ layout: default-ad
 ```
 
 ### Conditional
+
 ```
 <div if={error}>
 <div show={error}> /* show using display: '' */
@@ -89,64 +94,63 @@ riot.update() // update all
 ## Nested HTML
 
 ```js
-<yield/>
+<yield />
 ```
 
 ### Yield to/from
 
 ```js
 <post>
-  <yield to='title'>Hello</yield>
-  <yield to='body'>Hey there world</yield>
+  <yield to="title">Hello</yield>
+  <yield to="body">Hey there world</yield>
 </post>
 ```
 
 ```js
 <post>
-  <yield from='title'/>
-  <yield from='body'/>
+  <yield from="title" />
+  <yield from="body" />
 </post>
 ```
 
 ## Router
 
 ```js
-riot.route('customers/*/edit', (id) => {
-})
-riot.route('customers/234/edit')
-riot.route.start()
-riot.route.start(true) // exec the current url
+riot.route("customers/*/edit", (id) => {});
+riot.route("customers/234/edit");
+riot.route.start();
+riot.route.start(true); // exec the current url
 ```
 
 ## Lifecycle
 
 ```js
-this.on('before-mount', function() {
-// before the tag is mounted
-})
+this.on("before-mount", function () {
+  // before the tag is mounted
+});
 
-this.on('mount', function() {
-// right after the tag is mounted on the page
-})
+this.on("mount", function () {
+  // right after the tag is mounted on the page
+});
 
-this.on('update', function() {
-// allows recalculation of context data before the update
-})
+this.on("update", function () {
+  // allows recalculation of context data before the update
+});
 
-this.on('updated', function() {
-// right after the tag template is updated
-})
+this.on("updated", function () {
+  // right after the tag template is updated
+});
 
-this.on('before-unmount', function() {
-// before the tag is removed
-})
+this.on("before-unmount", function () {
+  // before the tag is removed
+});
 
-this.on('unmount', function() {
-// when the tag is removed from the page
-})
+this.on("unmount", function () {
+  // when the tag is removed from the page
+});
 
 // curious about all events ?
-this.on('all', function(eventName) {
-console.info(eventName)
-})
+this.on("all", function (eventName) {
+  console.info(eventName);
+});
 ```

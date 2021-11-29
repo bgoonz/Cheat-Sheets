@@ -14,6 +14,7 @@ intro: |
 ---
 
 ## Shortcuts
+
 {: .-three-column}
 
 ### Command palette
@@ -22,6 +23,7 @@ intro: |
 | ----- | ----------------- |
 | `⇧⌘P` | Show all commands |
 | `⌘P`  | Show files        |
+
 {: .-shortcuts}
 
 ### Sidebars
@@ -35,6 +37,7 @@ intro: |
 | `⇧⌘D` | Debug          |
 | `⇧⌘X` | Extensions     |
 | `⇧^G` | Git (SCM)      |
+
 {: .-shortcuts}
 
 ### Search
@@ -46,18 +49,20 @@ intro: |
 | ----  | ----             |
 | `⇧⌘F` | Find in files    |
 | `⇧⌘H` | Replace in files |
+
 {: .-shortcuts}
 
 ### Panel
 
-| Key                        | Description   |
-| -------------------------- | ------------- |
-| `⌘J`                       | Toggle panel  |
-| ----                       | ----          |
-| `⇧⌘M`                      | Problems      |
-| `⇧⌘U`                      | Output        |
-| `⇧⌘Y`                      | Debug console |
-| <code>^`</code>            | Terminal      |
+| Key             | Description   |
+| --------------- | ------------- |
+| `⌘J`            | Toggle panel  |
+| ----            | ----          |
+| `⇧⌘M`           | Problems      |
+| `⇧⌘U`           | Output        |
+| `⇧⌘Y`           | Debug console |
+| <code>^`</code> | Terminal      |
+
 {: .-shortcuts}
 
 ### View
@@ -68,6 +73,7 @@ intro: |
 | ----     | ----             |
 | `⌘k` `u` | Close unmodified |
 | `⌘k` `w` | Close all        |
+
 {: .-shortcuts}
 
 ### Debug
@@ -88,10 +94,11 @@ intro: |
 | ----   | ----                    |
 | `⇧⌘D`  | Debug sidebar           |
 | `⇧⌘Y`  | Debug panel             |
+
 {: .-shortcuts}
 
 ## References
 
-* [Keyboard shortcuts (MacOS)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) _(code.visualstudio.com)_
-* [Keyboard shortcuts (Windows)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) _(code.visualstudio.com)_
-* [Keyboard shortcuts (Linux)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) _(code.visualstudio.com)_
+- [Keyboard shortcuts (MacOS)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) _(code.visualstudio.com)_
+- [Keyboard shortcuts (Windows)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) _(code.visualstudio.com)_
+- [Keyboard shortcuts (Linux)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) _(code.visualstudio.com)_

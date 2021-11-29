@@ -31,7 +31,7 @@ Replace `.png` with `.jpg.png` in `*.png`.
 ### Options
 
 | Option | Description               |
-| ---    | ---                       |
+| ------ | ------------------------- |
 | `-n`   | Simulation                |
 | `-l`   | Symlink instead of rename |
 | `-i`   | Interactive               |

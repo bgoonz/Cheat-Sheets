@@ -28,7 +28,6 @@ category: JavaScript libraries
     # When all either succeeds or errors
     Q.allSettled(promises).done -> ...
 
-
 ### Creating promises from Node
 
     # Works like .call() or .apply()
@@ -64,12 +63,12 @@ category: JavaScript libraries
 
 ### Try
 
-  Q.try ->
-    promise()
+Q.try ->
+promise()
 
-  .catch (e) ->
-    console.error "Oh well", e
+.catch (e) ->
+console.error "Oh well", e
 
 ### Reference
 
- * https://github.com/kriskowal/q/wiki/API-Reference
+- https://github.com/kriskowal/q/wiki/API-Reference

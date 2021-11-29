@@ -8,6 +8,7 @@ authors:
 ---
 
 ### Usage
+
 {: .-prime}
 
 ```bash
@@ -17,7 +18,7 @@ scp <options> source_path destination_path
 ### Conditions
 
 ```bash
--r      # transfer directory 
+-r      # transfer directory
 -v      # see the transfer details
 -C      # copy files with compression
 -l 800  # limit bandwith with 800

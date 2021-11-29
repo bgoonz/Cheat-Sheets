@@ -174,10 +174,9 @@ vim: ft=python
     photo.album()
     photo.album_id
 
-
 ### See
 
- * http://spinejs.com/api/index
- * http://spinejs.com/api/models
- * http://spinejs.com/docs/ajax
-* http://spinejs.com/docs/relations
+- http://spinejs.com/api/index
+- http://spinejs.com/api/models
+- http://spinejs.com/docs/ajax
+- http://spinejs.com/docs/relations

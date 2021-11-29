@@ -4,7 +4,7 @@ excerpt: >-
   Iceland is a Nordic country between the North Atlantic and the Arctic Ocean.
   It has a population of 325,671 and an area of 103,000 km2 (40,000 sq mi),
   making it the most sparsely populated country in Europe.
-date: '2019-03-27'
+date: "2019-03-27"
 thumb_img_path: images/7.jpg
 thumb_img_alt: Icelandic horses
 content_img_path: images/7.jpg
@@ -13,37 +13,36 @@ seo:
   title: Fragments of Iceland
   description: Iceland is a Nordic country between the North Atlantic and the Arctic Ocean.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Fragments of Iceland
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         Iceland is a Nordic country between the North Atlantic and the Arctic
         Ocean.
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/7.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Fragments of Iceland
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: >-
         Iceland is a Nordic country between the North Atlantic and the Arctic
         Ocean.
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/7.jpg
       relativeUrl: true
 template: post
 ---
 
 ## Sequelize:
-
 
 ---
 
@@ -53,13 +52,14 @@ template: post
 
 ## Command Line
 
-Sequelize provides utilities for generating migrations, models, and seed files.  They are exposed through the `sequelize-cli` command.
+Sequelize provides utilities for generating migrations, models, and seed files. They are exposed through the `sequelize-cli` command.
 
 ### Init Project
 
 ```bash
 $ npx sequelize-cli init
 ```
+
 You must create a database user, and update the `config/config.json` file to match your database settings to complete the initialization process.
 
 ### Create Database
@@ -136,13 +136,13 @@ $ npx sequelize-cli db:seed:undo:all
 `student.js`
 
 ```js
-    Student.hasOne(models.Scholarship, { foreignKey: 'studentId' });
+Student.hasOne(models.Scholarship, { foreignKey: "studentId" });
 ```
 
 `scholarship.js`
 
 ```js
-    Scholarship.belongsTo(models.Student, { foreignKey: 'studentId' });
+Scholarship.belongsTo(models.Student, { foreignKey: "studentId" });
 ```
 
 ### One to Many between Student and Class
@@ -150,13 +150,13 @@ $ npx sequelize-cli db:seed:undo:all
 `student.js`
 
 ```js
-    Student.belongsTo(models.Class, { foreignKey: 'classId' });
+Student.belongsTo(models.Class, { foreignKey: "classId" });
 ```
 
 `class.js`
 
 ```js
-    Class.hasMany(models.Student, { foreignKey: 'classId' });
+Class.hasMany(models.Student, { foreignKey: "classId" });
 ```
 
 ### Many to Many between Student and Lesson through StudentLessons table
@@ -164,25 +164,25 @@ $ npx sequelize-cli db:seed:undo:all
 `student.js`
 
 ```js
-    const columnMapping = {
-        through: 'StudentLesson', // This is the model name referencing the join table.
-        otherKey: 'lessonId',
-        foreignKey: 'studentId'
-    }
+const columnMapping = {
+  through: "StudentLesson", // This is the model name referencing the join table.
+  otherKey: "lessonId",
+  foreignKey: "studentId",
+};
 
-    Student.belongsToMany(models.Lesson, columnMapping);
+Student.belongsToMany(models.Lesson, columnMapping);
 ```
 
 `lesson.js`
 
 ```js
-    const columnMapping = {
-        through: 'StudentLesson', // This is the model name referencing the join table.
-        otherKey: 'studentId',
-        foreignKey: 'lessonId'
-    }
+const columnMapping = {
+  through: "StudentLesson", // This is the model name referencing the join table.
+  otherKey: "studentId",
+  foreignKey: "lessonId",
+};
 
-    Lesson.belongsToMany(models.Student, columnMapping);
+Lesson.belongsToMany(models.Student, columnMapping);
 ```
 
 ## Query Format
@@ -214,9 +214,7 @@ $ npx sequelize-cli db:seed:undo:all
 });
 ```
 
-
 ### findByPk
-
 
 ```js
 <Model>.findByPk(<primary_key>, {
@@ -257,11 +255,7 @@ const Op = Sequelize.Op
 [Op.like]: { [Op.any]: ['cat', 'hat']}
 ```
 
-
-
-
 ---
-
 
 ## sequelize-getting-started.md
 
@@ -269,8 +263,7 @@ const Op = Sequelize.Op
 
 [Connecting2database.md](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#file-connecting2database-md)
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#connecting-to-a-database)Connecting to a database
---------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#connecting-to-a-database)Connecting to a database
 
 To connect to the database, you must create a Sequelize instance. This can be done by either passing the connection parameters separately to the Sequelize constructor or by passing a single connection URI:
 
@@ -315,13 +308,11 @@ try {
 
 Sequelize will keep the connection open by default, and use the same connection for all queries. If you need to close the connection, call `sequelize.close()` (which is asynchronous and returns a Promise).
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#terminology-convention)Terminology convention
-----------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#terminology-convention)Terminology convention
 
 Observe that, in the examples above, `Sequelize` refers to the library itself while `sequelize` refers to an instance of Sequelize, which represents a connection to one database. This is the recommended convention and it will be followed throughout the documentation.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#tip-for-reading-the-docs)Tip for reading the docs
---------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#tip-for-reading-the-docs)Tip for reading the docs
 
 You are encouraged to run code examples locally while reading the Sequelize docs. This will help you learn faster. The easiest way to do this is using the SQLite dialect:
 
@@ -335,15 +326,13 @@ const sequelize = new Sequelize("sqlite::memory:");
 
 To experiment with the other dialects, which are harder to setup locally, you can use the [Sequelize SSCCE](https://github.com/papb/sequelize-sscce) GitHub repository, which allows you to run code on all supported dialects directly from GitHub, for free, without any setup!
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#new-databases-versus-existing-databases)New databases versus existing databases
---------------------------------------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#new-databases-versus-existing-databases)New databases versus existing databases
 
 If you are starting a project from scratch, and your database is still empty, Sequelize can be used since the beginning in order to automate the creation of every table in your database.
 
 Also, if you want to use Sequelize to connect to a database that is already filled with tables and data, that works as well! Sequelize has got you covered in both cases.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#logging)Logging
-----------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#logging)Logging
 
 By default, Sequelize will log to console every SQL query it performs. The `options.logging` option can be used to customize this behavior, by defining the function that gets executed every time Sequelize would log something. The default value is `console.log` and when using that only the first log parameter of log function call is displayed. For example, for query logging the first parameter is the raw query and the second (hidden by default) is the Sequelize object.
 
@@ -361,8 +350,7 @@ const sequelize = new Sequelize('sqlite::memory:', {
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#promises-and-asyncawait)Promises and async/await
--------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#promises-and-asyncawait)Promises and async/await
 
 Most of the methods provided by Sequelize are asynchronous and therefore return Promises. They are all [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) , so you can use the Promise API (for example, using `then`, `catch`, `finally`) out of the box.
 
@@ -374,19 +362,17 @@ Of course, using `async` and `await` works normally as well.
 
 Hooks (also known as lifecycle events), are functions which are called before and after calls in sequelize are executed. For example, if you want to always set a value on a model before saving it, you can add a `beforeUpdate` hook.
 
-Note: *You can't use hooks with instances. Hooks are used with models.*
+Note: _You can't use hooks with instances. Hooks are used with models._
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#available-hooks)Available hooks
---------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#available-hooks)Available hooks
 
 Sequelize provides a lot of hooks. The full list can be found in directly in the [source code - lib/hooks.js](https://github.com/sequelize/sequelize/blob/v6/lib/hooks.js#L7).
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#hooks-firing-order)Hooks firing order
---------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#hooks-firing-order)Hooks firing order
 
 The diagram below shows the firing order for the most common hooks.
 
-*Note: this list is not exhaustive.*
+_Note: this list is not exhaustive._
 
 ```
 (1)
@@ -423,8 +409,7 @@ The diagram below shows the firing order for the most common hooks.
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#declaring-hooks)Declaring Hooks
---------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#declaring-hooks)Declaring Hooks
 
 Arguments to hooks are passed by reference. This means, that you can change the values, and this will be reflected in the insert / update statement. A hook may contain async actions - in this case the hook function should return a promise.
 
@@ -472,8 +457,7 @@ User.afterValidate('myHookAfter', (user, options) => {
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#removing-hooks)Removing hooks
-------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#removing-hooks)Removing hooks
 
 Only a hook with name param can be removed.
 
@@ -493,8 +477,7 @@ Book.removeHook('afterCreate', 'notifyUsers');
 
 You can have many hooks with same name. Calling `.removeHook()` will remove all of them.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#global--universal-hooks)Global / universal hooks
--------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#global--universal-hooks)Global / universal hooks
 
 Global hooks are hooks which are run for all models. They can define behaviours that you want for all your models, and are especially useful for plugins. They can be defined in two ways, which have slightly different semantics:
 
@@ -569,20 +552,20 @@ new Sequelize(..., {
 
 ```
 
-Note that the above is not the same as the *Default Hooks* mentioned above. That one uses the `define` option of the constructor. This one does not.
+Note that the above is not the same as the _Default Hooks_ mentioned above. That one uses the `define` option of the constructor. This one does not.
 
 ### [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#connection-hooks)Connection Hooks
 
 Sequelize provides four hooks that are executed immediately before and after a database connection is obtained or released:
 
--   `sequelize.beforeConnect(callback)`
-    -   The callback has the form `async (config) => /* ... */`
--   `sequelize.afterConnect(callback)`
-    -   The callback has the form `async (connection, config) => /* ... */`
--   `sequelize.beforeDisconnect(callback)`
-    -   The callback has the form `async (connection) => /* ... */`
--   `sequelize.afterDisconnect(callback)`
-    -   The callback has the form `async (connection) => /* ... */`
+- `sequelize.beforeConnect(callback)`
+  - The callback has the form `async (config) => /* ... */`
+- `sequelize.afterConnect(callback)`
+  - The callback has the form `async (connection, config) => /* ... */`
+- `sequelize.beforeDisconnect(callback)`
+  - The callback has the form `async (connection) => /* ... */`
+- `sequelize.afterDisconnect(callback)`
+  - The callback has the form `async (connection) => /* ... */`
 
 These hooks can be useful if you need to asynchronously obtain database credentials, or need to directly access the low-level database connection after it has been created.
 
@@ -595,17 +578,16 @@ sequelize.beforeConnect(async (config) => {
 
 ```
 
-These hooks may *only* be declared as a permanent global hook, as the connection pool is shared by all models.
+These hooks may _only_ be declared as a permanent global hook, as the connection pool is shared by all models.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#instance-hooks)Instance hooks
-------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#instance-hooks)Instance hooks
 
 The following hooks will emit whenever you're editing a single object:
 
--   `beforeValidate`
--   `afterValidate` / `validationFailed`
--   `beforeCreate` / `beforeUpdate` / `beforeSave` / `beforeDestroy`
--   `afterCreate` / `afterUpdate` / `afterSave` / `afterDestroy`
+- `beforeValidate`
+- `afterValidate` / `validationFailed`
+- `beforeCreate` / `beforeUpdate` / `beforeSave` / `beforeDestroy`
+- `afterCreate` / `afterUpdate` / `afterSave` / `afterDestroy`
 
 ```
 User.beforeCreate(user => {
@@ -639,18 +621,18 @@ console.log(user); // user object with username 'Boss' and accessLevel of 20
 
 Sometimes you'll be editing more than one record at a time by using methods like `bulkCreate`, `update` and `destroy`. The following hooks will emit whenever you're using one of those methods:
 
--   `YourModel.beforeBulkCreate(callback)`
-    -   The callback has the form `(instances, options) => /* ... */`
--   `YourModel.beforeBulkUpdate(callback)`
-    -   The callback has the form `(options) => /* ... */`
--   `YourModel.beforeBulkDestroy(callback)`
-    -   The callback has the form `(options) => /* ... */`
--   `YourModel.afterBulkCreate(callback)`
-    -   The callback has the form `(instances, options) => /* ... */`
--   `YourModel.afterBulkUpdate(callback)`
-    -   The callback has the form `(options) => /* ... */`
--   `YourModel.afterBulkDestroy(callback)`
-    -   The callback has the form `(options) => /* ... */`
+- `YourModel.beforeBulkCreate(callback)`
+  - The callback has the form `(instances, options) => /* ... */`
+- `YourModel.beforeBulkUpdate(callback)`
+  - The callback has the form `(options) => /* ... */`
+- `YourModel.beforeBulkDestroy(callback)`
+  - The callback has the form `(options) => /* ... */`
+- `YourModel.afterBulkCreate(callback)`
+  - The callback has the form `(instances, options) => /* ... */`
+- `YourModel.afterBulkUpdate(callback)`
+  - The callback has the form `(options) => /* ... */`
+- `YourModel.afterBulkDestroy(callback)`
+  - The callback has the form `(options) => /* ... */`
 
 Note: methods like `bulkCreate` do not emit individual hooks by default - only the bulk hooks. However, if you want individual hooks to be emitted as well, you can pass the `{ individualHooks: true }` option to the query call. However, this can drastically impact performance, depending on the number of records involved (since, among other things, all instances will be loaded into memory). Examples:
 
@@ -695,16 +677,15 @@ await Users.bulkCreate([
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#associations)Associations
---------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#associations)Associations
 
 For the most part hooks will work the same for instances when being associated.
 
 ### [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#one-to-one-and-one-to-many-associations)One-to-One and One-to-Many associations
 
--   When using `add`/`set` mixin methods the `beforeUpdate` and `afterUpdate` hooks will run.
+- When using `add`/`set` mixin methods the `beforeUpdate` and `afterUpdate` hooks will run.
 
--   The `beforeDestroy` and `afterDestroy` hooks will only be called on associations that have `onDelete: 'CASCADE'` and `hooks: true`. For example:
+- The `beforeDestroy` and `afterDestroy` hooks will only be called on associations that have `onDelete: 'CASCADE'` and `hooks: true`. For example:
 
 ```
 class Projects extends Model {}
@@ -735,19 +716,19 @@ However, adding `hooks: true` explicitly tells Sequelize that optimization is no
 
 ### [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#many-to-many-associations)Many-to-Many associations
 
--   When using `add` mixin methods for `belongsToMany` relationships (that will add one or more records to the junction table) the `beforeBulkCreate` and `afterBulkCreate` hooks in the junction model will run.
+- When using `add` mixin methods for `belongsToMany` relationships (that will add one or more records to the junction table) the `beforeBulkCreate` and `afterBulkCreate` hooks in the junction model will run.
 
-    -   If `{ individualHooks: true }` was passed to the call, then each individual hook will also run.
--   When using `remove` mixin methods for `belongsToMany` relationships (that will remove one or more records to the junction table) the `beforeBulkDestroy` and `afterBulkDestroy` hooks in the junction model will run.
+  - If `{ individualHooks: true }` was passed to the call, then each individual hook will also run.
 
-    -   If `{ individualHooks: true }` was passed to the call, then each individual hook will also run.
+- When using `remove` mixin methods for `belongsToMany` relationships (that will remove one or more records to the junction table) the `beforeBulkDestroy` and `afterBulkDestroy` hooks in the junction model will run.
+
+  - If `{ individualHooks: true }` was passed to the call, then each individual hook will also run.
 
 If your association is Many-to-Many, you may be interested in firing hooks on the through model when using the `remove` call. Internally, sequelize is using `Model.destroy` resulting in calling the `bulkDestroy` instead of the `before/afterDestroy` hooks on each through instance.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#hooks-and-transactions)Hooks and Transactions
-----------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#hooks-and-transactions)Hooks and Transactions
 
-Many model operations in Sequelize allow you to specify a transaction in the options parameter of the method. If a transaction *is* specified in the original call, it will be present in the options parameter passed to the hook function. For example, consider the following snippet:
+Many model operations in Sequelize allow you to specify a transaction in the options parameter of the method. If a transaction _is_ specified in the original call, it will be present in the options parameter passed to the hook function. For example, consider the following snippet:
 
 ```
 User.addHook('afterCreate', async (user, options) => {
@@ -778,8 +759,8 @@ If we had not included the transaction option in our call to `User.update` in th
 
 It is very important to recognize that sequelize may make use of transactions internally for certain operations such as `Model.findOrCreate`. If your hook functions execute read or write operations that rely on the object's presence in the database, or modify the object's stored values like the example in the preceding section, you should always specify `{ transaction: options.transaction }`:
 
--   If a transaction was used, then `{ transaction: options.transaction }` will ensure it is used again;
--   Otherwise, `{ transaction: options.transaction }` will be equivalent to `{ transaction: undefined }`, which won't use a transaction (which is ok).
+- If a transaction was used, then `{ transaction: options.transaction }` will ensure it is used again;
+- Otherwise, `{ transaction: options.transaction }` will be equivalent to `{ transaction: undefined }`, which won't use a transaction (which is ok).
 
 This way your hooks will always behave correctly.
 
@@ -789,13 +770,11 @@ Generated by [ESDoc(1.1.0)](https://esdoc.org/)
 
 [model-basics.md](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#file-model-basics-md)
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-basics)Model Basics
-============================================================================================
+# [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-basics)Model Basics
 
 In this tutorial you will learn what models are in Sequelize and how to use them.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#concept)Concept
-----------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#concept)Concept
 
 Models are the essence of Sequelize. A model is an abstraction that represents a table in your database. In Sequelize, it is a class that extends [Model](https://sequelize.org/master/class/lib/model.js~Model.html).
 
@@ -803,13 +782,12 @@ The model tells Sequelize several things about the entity it represents, such as
 
 A model in Sequelize has a name. This name does not have to be the same name of the table it represents in the database. Usually, models have singular names (such as `User`) while tables have pluralized names (such as `Users`), although this is fully configurable.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-definition)Model Definition
-----------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-definition)Model Definition
 
 Models can be defined in two equivalent ways in Sequelize:
 
--   Calling [`sequelize.define(modelName, attributes, options)`](https://sequelize.org/master/class/lib/sequelize.js~Sequelize.html#instance-method-define)
--   Extending [Model](https://sequelize.org/master/class/lib/model.js~Model.html) and calling [`init(attributes, options)`](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-init)
+- Calling [`sequelize.define(modelName, attributes, options)`](https://sequelize.org/master/class/lib/sequelize.js~Sequelize.html#instance-method-define)
+- Extending [Model](https://sequelize.org/master/class/lib/model.js~Model.html) and calling [`init(attributes, options)`](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-init)
 
 After a model is defined, it is available within `sequelize.models` by its model name.
 
@@ -873,8 +851,7 @@ console.log(User === sequelize.models.User); // true
 
 Internally, `sequelize.define` calls `Model.init`, so both approaches are essentially equivalent.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#table-name-inference)Table name inference
-------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#table-name-inference)Table name inference
 
 Observe that, in both methods above, the table name (`Users`) was never explicitly defined. However, the model name was given (`User`).
 
@@ -923,16 +900,15 @@ sequelize.define('User', {
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-synchronization)Model synchronization
---------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-synchronization)Model synchronization
 
 When you define a model, you're telling Sequelize a few things about its table in the database. However, what if the table actually doesn't even exist in the database? What if it exists, but it has different columns, less columns, or any other difference?
 
 This is where model synchronization comes in. A model can be synchronized with the database by calling [`model.sync(options)`](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-sync), an asynchronous function (that returns a Promise). With this call, Sequelize will automatically perform an SQL query to the database. Note that this changes only the table in the database, not the model in the JavaScript side.
 
--   `User.sync()` - This creates the table if it doesn't exist (and does nothing if it already exists)
--   `User.sync({ force: true })` - This creates the table, dropping it first if it already existed
--   `User.sync({ alter: true })` - This checks what is the current state of the table in the database (which columns it has, what are their data types, etc), and then performs the necessary changes in the table to make it match the model.
+- `User.sync()` - This creates the table if it doesn't exist (and does nothing if it already exists)
+- `User.sync({ force: true })` - This creates the table, dropping it first if it already existed
+- `User.sync({ alter: true })` - This checks what is the current state of the table in the database (which columns it has, what are their data types, etc), and then performs the necessary changes in the table to make it match the model.
 
 Example:
 
@@ -984,12 +960,11 @@ sequelize.sync({ force: true, match: /_test$/ });
 
 As shown above, `sync({ force: true })` and `sync({ alter: true })` can be destructive operations. Therefore, they are not recommended for production-level software. Instead, synchronization should be done with the advanced concept of [Migrations](https://sequelize.org/master/manual/migrations.html), with the help of the [Sequelize CLI](https://github.com/sequelize/cli).
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#timestamps)Timestamps
-----------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#timestamps)Timestamps
 
 By default, Sequelize automatically adds the fields `createdAt` and `updatedAt` to every model, using the data type `DataTypes.DATE`. Those fields are automatically managed as well - whenever you use Sequelize to create or update something, those fields will be set correctly. The `createdAt` field will contain the timestamp representing the moment of creation, and the `updatedAt` will contain the timestamp of the latest update.
 
-Note: This is done in the Sequelize level (i.e. not done with *SQL triggers*). This means that direct SQL queries (for example queries performed without Sequelize by any other means) will not cause these fields to be updated automatically.
+Note: This is done in the Sequelize level (i.e. not done with _SQL triggers_). This means that direct SQL queries (for example queries performed without Sequelize by any other means) will not cause these fields to be updated automatically.
 
 This behavior can be disabled for a model with the `timestamps: false` option:
 
@@ -1021,8 +996,7 @@ Foo.init({ /* attributes */ }, {
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#column-declaration-shorthand-syntax)Column declaration shorthand syntax
-------------------------------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#column-declaration-shorthand-syntax)Column declaration shorthand syntax
 
 If the only thing being specified about a column is its data type, the syntax can be shortened:
 
@@ -1039,8 +1013,7 @@ sequelize.define('User', { name: DataTypes.STRING });
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#default-values)Default Values
-------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#default-values)Default Values
 
 By default, Sequelize assumes that the default value of a column is `NULL`. This behavior can be changed by passing a specific `defaultValue` to the column definition:
 
@@ -1067,8 +1040,7 @@ sequelize.define('Foo', {
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#data-types)Data Types
-----------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#data-types)Data Types
 
 Every column you define in your model must have a data type. Sequelize provides [a lot of built-in data types](https://github.com/sequelize/sequelize/blob/main/lib/data-types.js). To access a built-in data type, you must import `DataTypes`:
 
@@ -1159,8 +1131,7 @@ For UUIDs, use `DataTypes.UUID`. It becomes the `UUID` data type for PostgreSQL 
 
 There are other data types, covered in a [separate guide](https://sequelize.org/master/manual/other-data-types.html).
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#column-options)Column Options
-------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#column-options)Column Options
 
 When defining a column, apart from specifying the `type` of the column, and the `allowNull` and `defaultValue` options mentioned above, there are a lot more options that can be used. Some examples are below.
 
@@ -1233,8 +1204,7 @@ Foo.init({
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#taking-advantage-of-models-being-classes)Taking advantage of Models being classes
-----------------------------------------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#taking-advantage-of-models-being-classes)Taking advantage of Models being classes
 
 The Sequelize models are [ES6 classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes). You can very easily add custom instance or class level methods.
 
@@ -1268,17 +1238,15 @@ Generated by [ESDoc(1.1.0)](https://esdoc.org/)
 
 [model-querrying.md](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#file-model-querrying-md)
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-querying---basics)Model Querying - Basics
-==================================================================================================================
+# [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#model-querying---basics)Model Querying - Basics
 
 Sequelize provides various methods to assist querying your database for data.
 
-*Important notice: to perform production-ready queries with Sequelize, make sure you have read the [Transactions guide](https://sequelize.org/master/manual/transactions.html) as well. Transactions are important to ensure data integrity and to provide other benefits.*
+_Important notice: to perform production-ready queries with Sequelize, make sure you have read the [Transactions guide](https://sequelize.org/master/manual/transactions.html) as well. Transactions are important to ensure data integrity and to provide other benefits._
 
 This guide will show how to make the standard [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) queries.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-insert-queries)Simple INSERT queries
---------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-insert-queries)Simple INSERT queries
 
 First, a simple example:
 
@@ -1304,8 +1272,7 @@ console.log(user.isAdmin); // false
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-select-queries)Simple SELECT queries
---------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-select-queries)Simple SELECT queries
 
 You can read the whole table from the database with the [`findAll`](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-findAll) method:
 
@@ -1322,8 +1289,7 @@ SELECT * FROM ...
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#specifying-attributes-for-select-queries)Specifying attributes for SELECT queries
-----------------------------------------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#specifying-attributes-for-select-queries)Specifying attributes for SELECT queries
 
 To select only some attributes, you can use the `attributes` option:
 
@@ -1415,8 +1381,7 @@ SELECT id, foo, bar, qux FROM ...
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#applying-where-clauses)Applying WHERE clauses
-----------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#applying-where-clauses)Applying WHERE clauses
 
 The `where` option is used to filter the query. There are lots of operators to use for the `where` clause, available as Symbols from [`Op`](https://sequelize.org/master/variable/index.html#static-variable-Op).
 
@@ -1765,8 +1730,7 @@ Foo.findAll({
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-update-queries)Simple UPDATE queries
---------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-update-queries)Simple UPDATE queries
 
 Update queries also accept the `where` option, just like the read queries shown above.
 
@@ -1780,8 +1744,7 @@ await User.update({ lastName: "Doe" }, {
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-delete-queries)Simple DELETE queries
---------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#simple-delete-queries)Simple DELETE queries
 
 Delete queries also accept the `where` option, just like the read queries shown above.
 
@@ -1805,8 +1768,7 @@ await User.destroy({
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#creating-in-bulk)Creating in bulk
-----------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#creating-in-bulk)Creating in bulk
 
 Sequelize provides the `Model.bulkCreate` method to allow creating multiple records at once, with only one query.
 
@@ -1861,14 +1823,13 @@ await User.bulkCreate([
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#ordering-and-grouping)Ordering and Grouping
---------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#ordering-and-grouping)Ordering and Grouping
 
 Sequelize provides the `order` and `group` options to work with `ORDER BY` and `GROUP BY`.
 
 ### [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#ordering)Ordering
 
-The `order` option takes an array of items to order the query by or a sequelize method. These *items* are themselves arrays in the form `[column, direction]`. The column will be escaped correctly and the direction will be checked in a whitelist of valid directions (such as `ASC`, `DESC`, `NULLS FIRST`, etc).
+The `order` option takes an array of items to order the query by or a sequelize method. These _items_ are themselves arrays in the form `[column, direction]`. The column will be escaped correctly and the direction will be checked in a whitelist of valid directions (such as `ASC`, `DESC`, `NULLS FIRST`, etc).
 
 ```
 Subtask.findAll({
@@ -1944,13 +1905,13 @@ Foo.findOne({
 
 To recap, the elements of the order array can be the following:
 
--   A string (which will be automatically quoted)
--   An array, whose first element will be quoted, second will be appended verbatim
--   An object with a `raw` field:
-    -   The content of `raw` will be added verbatim without quoting
-    -   Everything else is ignored, and if raw is not set, the query will fail
--   A call to `Sequelize.fn` (which will generate a function call in SQL)
--   A call to `Sequelize.col` (which will quoute the column name)
+- A string (which will be automatically quoted)
+- An array, whose first element will be quoted, second will be appended verbatim
+- An object with a `raw` field:
+  - The content of `raw` will be added verbatim without quoting
+  - Everything else is ignored, and if raw is not set, the query will fail
+- A call to `Sequelize.fn` (which will generate a function call in SQL)
+- A call to `Sequelize.col` (which will quoute the column name)
 
 ### [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#grouping)Grouping
 
@@ -1964,8 +1925,7 @@ Project.findAll({ group: 'name' });
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#limits-and-pagination)Limits and Pagination
---------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#limits-and-pagination)Limits and Pagination
 
 The `limit` and `offset` options allow you to work with limiting / pagination:
 
@@ -1983,8 +1943,7 @@ Project.findAll({ offset: 5, limit: 5 });
 
 Usually these are used alongside the `order` option.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#utility-methods)Utility methods
---------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#utility-methods)Utility methods
 
 Sequelize also provides a few utility methods.
 
@@ -2040,13 +1999,11 @@ Generated by [ESDoc(1.1.0)](https://esdoc.org/)
 
 [sequelize-getting-started.md](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#file-sequelize-getting-started-md)
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#getting-started)Getting Started
-==================================================================================================
+# [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#getting-started)Getting Started
 
 In this tutorial you will learn to make a simple setup of Sequelize.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#installing)Installing
-----------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#installing)Installing
 
 Sequelize is available via [npm](https://www.npmjs.com/package/sequelize) (or [yarn](https://yarnpkg.com/package/sequelize)).
 
@@ -2067,8 +2024,7 @@ $ npm install --save tedious # Microsoft SQL Server
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#connecting-to-a-database)Connecting to a database
---------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#connecting-to-a-database)Connecting to a database
 
 To connect to the database, you must create a Sequelize instance. This can be done by either passing the connection parameters separately to the Sequelize constructor or by passing a single connection URI:
 
@@ -2113,13 +2069,11 @@ try {
 
 Sequelize will keep the connection open by default, and use the same connection for all queries. If you need to close the connection, call `sequelize.close()` (which is asynchronous and returns a Promise).
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#terminology-convention)Terminology convention
-----------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#terminology-convention)Terminology convention
 
 Observe that, in the examples above, `Sequelize` refers to the library itself while `sequelize` refers to an instance of Sequelize, which represents a connection to one database. This is the recommended convention and it will be followed throughout the documentation.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#tip-for-reading-the-docs)Tip for reading the docs
---------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#tip-for-reading-the-docs)Tip for reading the docs
 
 You are encouraged to run code examples locally while reading the Sequelize docs. This will help you learn faster. The easiest way to do this is using the SQLite dialect:
 
@@ -2133,15 +2087,13 @@ const sequelize = new Sequelize("sqlite::memory:");
 
 To experiment with the other dialects, which are harder to setup locally, you can use the [Sequelize SSCCE](https://github.com/papb/sequelize-sscce) GitHub repository, which allows you to run code on all supported dialects directly from GitHub, for free, without any setup!
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#new-databases-versus-existing-databases)New databases versus existing databases
---------------------------------------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#new-databases-versus-existing-databases)New databases versus existing databases
 
 If you are starting a project from scratch, and your database is still empty, Sequelize can be used since the beginning in order to automate the creation of every table in your database.
 
 Also, if you want to use Sequelize to connect to a database that is already filled with tables and data, that works as well! Sequelize has got you covered in both cases.
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#logging)Logging
-----------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#logging)Logging
 
 By default, Sequelize will log to console every SQL query it performs. The `options.logging` option can be used to customize this behavior, by defining the function that gets executed every time Sequelize would log something. The default value is `console.log` and when using that only the first log parameter of log function call is displayed. For example, for query logging the first parameter is the raw query and the second (hidden by default) is the Sequelize object.
 
@@ -2159,10 +2111,8 @@ const sequelize = new Sequelize('sqlite::memory:', {
 
 ```
 
-[](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#promises-and-asyncawait)Promises and async/await
--------------------------------------------------------------------------------------------------------------------
+## [](https://gist.github.com/bgoonz/a86e8a334a332aaa6250094fbfb095cc#promises-and-asyncawait)Promises and async/await
 
 Most of the methods provided by Sequelize are asynchronous and therefore return Promises. They are all [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) , so you can use the Promise API (for example, using `then`, `catch`, `finally`) out of the box.
 
 Of course, using `async` and `await` works normally as well.
-

@@ -22,7 +22,7 @@ FB.authWithOAuthToken(···)
 ### Using
 
 ```js
-Users = FB.child('users')
+Users = FB.child("users");
 ```
 
 ```js
@@ -32,7 +32,7 @@ user = Users.push(first: "Frank", last: "Sinatra")
 
 ```js
 // Retrieve
-user = Users.child('alan')  // gets `users/alan`
+user = Users.child("alan"); // gets `users/alan`
 ```
 
 ```js
@@ -44,7 +44,7 @@ user.setWithPriority({ ··· }, priority)
 
 ```js
 // Destroy
-user.remove()
+user.remove();
 ```
 
 ```js
@@ -61,7 +61,7 @@ user.once('value', (snap) => {
 
 ```js
 // traversal
-user.parent()
+user.parent();
 ```
 
 ### Querying
@@ -74,6 +74,7 @@ Users
   .equalTo(priority, [name])
   .on 'child_added', (snap) -> ···
 ```
+
 ### Lists
 
 ```coffeescript
@@ -82,7 +83,8 @@ post = Posts.push({ title: "How to do things", author: "alan" })
 ```
 
 ## References
+
 {: .-one-column}
 
-* <https://www.firebase.com/docs/web/api/>
-* <https://www.firebase.com/docs/web/recipes.html>
+- <https://www.firebase.com/docs/web/api/>
+- <https://www.firebase.com/docs/web/recipes.html>

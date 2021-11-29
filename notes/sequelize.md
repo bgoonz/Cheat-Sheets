@@ -45,7 +45,6 @@ category: Ruby libraries
 
     .count()
 
-
 ### Build
 
     item = Project.build({ ... })
@@ -59,4 +58,3 @@ category: Ruby libraries
     item.destroy().success ->
 
     item.values
-

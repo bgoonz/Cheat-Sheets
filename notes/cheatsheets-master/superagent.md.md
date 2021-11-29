@@ -8,6 +8,7 @@ tags:
 ---
 
 ### Response object
+
 ```javascript
   res: {
     // The HTTP Status Code (see: httpstatuses.com for definitions on HTTP status codes)
@@ -23,7 +24,7 @@ tags:
 
     // True when res.status == 202
     accepted: true,
-    // True when res.status == 204 || res.status == 1223 
+    // True when res.status == 204 || res.status == 1223
     noContent: false,
     // True when res.status == 400
     badRequest: false,

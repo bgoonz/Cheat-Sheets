@@ -88,7 +88,7 @@ category: Rails
 
     # logout_path
     match 'exit' => 'sessions#destroy', as: :logout
-    
+
 ### Constraints
 
     match '/', constraints: { subdomain: 'admin' }
@@ -106,12 +106,12 @@ category: Rails
       def initialize
         @ips = Blacklist.retrieve_ips
       end
-     
+
       def matches?(request)
         @ips.include?(request.remote_ip)
       end
     end
-     
+
     TwitterClone::Application.routes.draw do
       match "*path" => "blacklist#index",
         :constraints => BlacklistConstraint.new
@@ -132,7 +132,6 @@ category: Rails
 
     projects_path   # /projects
     projects_url    # http://site.com/projects
-
 
 ### Default help text
 
@@ -158,7 +157,7 @@ category: Rails
         get 'short'
         post 'toggle'
       end
-    
+
       collection do
         get 'sold'
       end
@@ -197,8 +196,7 @@ category: Rails
 
 ### References
 
- * [Guides/Routing](http://guides.rubyonrails.org/routing.html)
+- [Guides/Routing](http://guides.rubyonrails.org/routing.html)
 
- * [ActionDispatch::Routing::Mapper](http://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper.html)
-    (See included modules)
-
+- [ActionDispatch::Routing::Mapper](http://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper.html)
+  (See included modules)

@@ -5,6 +5,7 @@ vim: ft=javascript
 ---
 
 {% raw %}
+
 ### [Initialization](http://docs.ractivejs.org/latest/options)
 
     new Ractive({

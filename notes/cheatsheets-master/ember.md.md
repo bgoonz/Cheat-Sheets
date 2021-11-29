@@ -36,7 +36,7 @@ category: JavaScript libraries
         return this.store.find('posts');
         return this.store.find('post', params.post_id);
       },
-      
+
       serialize: function(model) {
         // this will make the URL `/posts/foo-post`
         return { post_slug: model.get('slug') };
@@ -69,6 +69,6 @@ Actions:
 
     <button {{action invite emailAddresses}}>Invite></button>
 
-    <a href="#" {{action set "isEditingContacts" true target="view"}} 
+    <a href="#" {{action set "isEditingContacts" true target="view"}}
 
 {% endraw %}

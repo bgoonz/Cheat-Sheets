@@ -14,7 +14,7 @@ image = ChunkyPNG::Image.from_file('file.png')
 
 ```ruby
 image = ChunkyPNG::Image.from_blob(File.read('file.png'))
-image = ChunkyPNG::Image.from_io(io) 
+image = ChunkyPNG::Image.from_io(io)
 ```
 
 Loads from `file.png`.

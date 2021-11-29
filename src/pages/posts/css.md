@@ -2,7 +2,7 @@
 title: Bash
 excerpt: >-
   Variables are how programming and scripting languages represent data. A variable is nothing more than a label, a name assigned to a location or set of locations in computer memory holding an item of data.Variables appear in arithmetic operations and manipulation of quantities, and in string parsing.
-date: '2021-11-27'
+date: "2021-11-27"
 thumb_img_path: images/bash.png
 thumb_img_alt: Hikers on the trail
 content_img_path: images/8.jpg
@@ -13,30 +13,30 @@ seo:
     The Grand Canyon is a steep-sided canyon carved by the Colorado River in
     Arizona
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Hiking The Grand Canyon
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         The Grand Canyon is a steep-sided canyon carved by the Colorado River in
         Arizona
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/8.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Hiking The Grand Canyon
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: >-
         The Grand Canyon is a steep-sided canyon carved by the Colorado River in
         Arizona
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/8.jpg
       relativeUrl: true
 template: post
@@ -69,8 +69,8 @@ echo "${NAME}!"
 
 ```
 NAME="John"
-echo "Hi $NAME"  
-echo 'Hi $NAME'  
+echo "Hi $NAME"
+echo 'Hi $NAME'
 ```
 
 ### Conditional execution
@@ -135,47 +135,47 @@ See: [Brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
 ```
 name="John"
 echo ${name}
-echo ${name/J/j}    
-echo ${name:0:2}    
-echo ${name::2}     
-echo ${name::-1}    
-echo ${name:(-1)}   
-echo ${name:(-2):1} 
-echo ${food:-Cake}  
+echo ${name/J/j}
+echo ${name:0:2}
+echo ${name::2}
+echo ${name::-1}
+echo ${name:(-1)}
+echo ${name:(-2):1}
+echo ${food:-Cake}
 ```
 
 ```
 length=2
-echo ${name:0:length}  
+echo ${name:0:length}
 ```
 
 See: [Parameter expansion](http://wiki.bash-hackers.org/syntax/pe)
 
 ```
 STR="/path/to/foo.cpp"
-echo ${STR%.cpp}    
-echo ${STR%.cpp}.o  
-echo ${STR%/*}      
+echo ${STR%.cpp}
+echo ${STR%.cpp}.o
+echo ${STR%/*}
 
-echo ${STR##*.}     
-echo ${STR##*/}     
+echo ${STR##*.}
+echo ${STR##*/}
 
-echo ${STR#*/}      
-echo ${STR##*/}     
+echo ${STR#*/}
+echo ${STR##*/}
 
-echo ${STR/foo/bar} 
+echo ${STR/foo/bar}
 ```
 
 ```
 STR="Hello world"
-echo ${STR:6:5}   
-echo ${STR: -5:5}  
+echo ${STR:6:5}
+echo ${STR: -5:5}
 ```
 
 ```
 SRC="/path/to/foo.cpp"
-BASE=${SRC##*/}   
-DIR=${SRC%$BASE}  
+BASE=${SRC##*/}
+DIR=${SRC%$BASE}
 ```
 
 ### Substitution
@@ -252,12 +252,12 @@ Length of `$FOO`
 
 ```
 STR="HELLO WORLD!"
-echo ${STR,}   
-echo ${STR,,}  
+echo ${STR,}
+echo ${STR,,}
 
 STR="hello world!"
-echo ${STR^}   
-echo ${STR^^}  
+echo ${STR^}
+echo ${STR^^}
 ```
 
 ### Default values
@@ -595,26 +595,26 @@ Fruits[2]="Orange"
 ### Working with arrays
 
 ```
-echo ${Fruits[0]}           
-echo ${Fruits[-1]}          
-echo ${Fruits[@]}           
-echo ${#Fruits[@]}          
-echo ${#Fruits}             
-echo ${#Fruits[3]}          
-echo ${Fruits[@]:3:2}       
-echo ${!Fruits[@]}          
+echo ${Fruits[0]}
+echo ${Fruits[-1]}
+echo ${Fruits[@]}
+echo ${#Fruits[@]}
+echo ${#Fruits}
+echo ${#Fruits[3]}
+echo ${Fruits[@]:3:2}
+echo ${!Fruits[@]}
 ```
 
 ### Operations
 
 ```
-Fruits=("${Fruits[@]}" "Watermelon")    
-Fruits+=('Watermelon')                  
-Fruits=( ${Fruits[@]/Ap*/} )            
-unset Fruits[2]                         
-Fruits=("${Fruits[@]}")                 
-Fruits=("${Fruits[@]}" "${Veggies[@]}") 
-lines=(`cat "logfile"`)                 
+Fruits=("${Fruits[@]}" "Watermelon")
+Fruits+=('Watermelon')
+Fruits=( ${Fruits[@]/Ap*/} )
+unset Fruits[2]
+Fruits=("${Fruits[@]}")
+Fruits=("${Fruits[@]}" "${Veggies[@]}")
+lines=(`cat "logfile"`)
 ```
 
 ### Iteration
@@ -645,11 +645,11 @@ Declares `sound` as a Dictionary object (aka associative array).
 ### Working with dictionaries
 
 ```
-echo ${sounds[dog]} 
-echo ${sounds[@]}   
-echo ${!sounds[@]}  
-echo ${#sounds[@]}  
-unset sounds[dog]   
+echo ${sounds[dog]}
+echo ${sounds[@]}
+echo ${!sounds[@]}
+echo ${#sounds[@]}
+unset sounds[dog]
 ```
 
 ### Iteration
@@ -675,20 +675,20 @@ done
 ### Options
 
 ```
-set -o noclobber  
-set -o errexit    
-set -o pipefail   
-set -o nounset    
+set -o noclobber
+set -o errexit
+set -o pipefail
+set -o nounset
 ```
 
 ### Glob options
 
 ```
-shopt -s nullglob    
-shopt -s failglob    
-shopt -s nocaseglob  
-shopt -s dotglob     
-shopt -s globstar    
+shopt -s nullglob
+shopt -s failglob
+shopt -s nocaseglob
+shopt -s dotglob
+shopt -s globstar
 ```
 
 Set `GLOBIGNORE` as a colon-separated list of patterns to be removed from glob matches.
@@ -796,33 +796,33 @@ Expand `n`th token to last from most recent command
 ### Numeric calculations
 
 ```
-$((a + 200))      
+$((a + 200))
 ```
 
 ```
-$(($RANDOM%200))  
+$(($RANDOM%200))
 ```
 
 ### Subshells
 
 ```
 (cd somedir; echo "I'm now in $PWD")
-pwd 
+pwd
 ```
 
 ### Redirection
 
 ```
-python hello.py > output.txt   
-python hello.py >> output.txt  
-python hello.py 2> error.log   
-python hello.py 2>&1           
-python hello.py 2>/dev/null    
-python hello.py &>/dev/null    
+python hello.py > output.txt
+python hello.py >> output.txt
+python hello.py 2> error.log
+python hello.py 2>&1
+python hello.py 2>/dev/null
+python hello.py &>/dev/null
 ```
 
 ```
-python hello.py < foo.txt      
+python hello.py < foo.txt
 ```
 
 ### Trap errors
@@ -910,7 +910,7 @@ echo $ans
 ```
 
 ```
-read -n 1 ans    
+read -n 1 ans
 ```
 
 ### Special variables

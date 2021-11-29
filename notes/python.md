@@ -9,7 +9,7 @@ category: Python
     list[i:j]  # returns list subset
     list[-1]   # returns last element
     list[:-1]  # returns all but the last element
-    
+
     list[i] = val
     list[i:j] = otherlist  # replace ith to jth-1 elements with otherlist
     del list[i:j]
@@ -20,7 +20,7 @@ category: Python
     list.pop()        # returns and removes last element from the list
     list.pop(i)       # returns and removes i-th element from the list
     list.remove(i)    # removes the first item from the list whose value is i
-    list1 + list2     # combine two list    
+    list1 + list2     # combine two list
     set(list)         # remove duplicate elements from a list
 
     list.reverse()    # reverses the elements of the list in-place
@@ -73,7 +73,7 @@ category: Python
     str.strip()
 
     str.islower()
-    
+
     /* escape characters */
     >>> 'doesn\'t'  # use \' to escape the single quote...
         "doesn't"
@@ -98,7 +98,7 @@ category: Python
 
     [fn(i) for i in list]            # .map
     map(fn, list)                    # .map, returns iterator
-    
+
     filter(fn, list)                 # .filter, returns iterator
     [fn(i) for i in list if i > 0]   # .filter.map
 
@@ -115,12 +115,12 @@ category: Python
     expr.sub(...)
 
 ## File manipulation
-    
+
 ### Reading
 
 ```py
 file = open("hello.txt", "r") # open in read mode 'r'
-file.close() 
+file.close()
 ```
 
 ```py
@@ -133,9 +133,9 @@ file.seek(0, 0) # place the cursor at the beggining of the file
 
 ```py
 file = open("hello.txt", "w") # open in write mode 'w'
-file.write("Hello World") 
+file.write("Hello World")
 
-text_lines = ["First line", "Second line", "Last line"] 
+text_lines = ["First line", "Second line", "Last line"]
 file.writelines(text_lines)
 
 file.close()
@@ -145,7 +145,7 @@ file.close()
 
 ```py
 file = open("Hello.txt", "a") # open in append mode
-file.write("Hello World again")  
+file.write("Hello World again")
 file.close()
 ```
 
@@ -158,4 +158,3 @@ with open("welcome.txt", "r") as file:
 
 # It closes the file automatically at the end of scope, no need for `file.close()`.
 ```
-

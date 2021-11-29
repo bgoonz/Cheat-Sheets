@@ -8,27 +8,31 @@ deprecated_by: /enzyme
 ---
 
 ## Getting started
+
 {: .-three-column}
 
 ### Introduction
+
 {: .-intro}
 
 **(Deprecated)** [Enzyme](http://airbnb.io/enzyme) lets you write unit tests for React components. This guide covers a previous version (v2.x).
 
 ### Mounting
+
 {: .-prime}
 
 ```js
-import {shallow, mount} from 'enzyme'
+import { shallow, mount } from "enzyme";
 ```
+
 {: .-setup}
 
 ```js
-wrap = shallow(<MyComponent />)
+wrap = shallow(<MyComponent />);
 ```
 
 ```js
-wrap = mount(<MyComponent />)
+wrap = mount(<MyComponent />);
 ```
 
 Shallow wrapping doesn't descend down to sub-components.
@@ -39,15 +43,16 @@ See: [Shallow rendering](http://airbnb.io/enzyme/docs/api/shallow.html),
 ### Jest
 
 ```js
-import toJson from 'enzyme-to-json'
+import toJson from "enzyme-to-json";
 ```
+
 {: .-setup}
 
 ```js
-it('works', () => {
-  wrap = mount(<MyComponent />)
-  expect(toJson(wrap)).toMatchSnapshot()
-})
+it("works", () => {
+  wrap = mount(<MyComponent />);
+  expect(toJson(wrap)).toMatchSnapshot();
+});
 ```
 
 Converts an Enzyme wrapper to a format compatible with Jest snapshots. See: [enzyme-to-json](https://www.npmjs.com/package/enzyme-to-json)
@@ -55,7 +60,7 @@ Converts an Enzyme wrapper to a format compatible with Jest snapshots. See: [enz
 ### Debugging
 
 ```js
-console.log(wrap.debug())
+console.log(wrap.debug());
 ```
 
 Shows HTML for debugging purposes. See: [debug()](http://airbnb.io/enzyme/docs/api/ReactWrapper/debug.html)
@@ -65,23 +70,23 @@ Shows HTML for debugging purposes. See: [debug()](http://airbnb.io/enzyme/docs/a
 ### Traversing
 
 ```js
-wrap.find('button')   // => ReactWrapper
-wrap.filter('button') // => ReactWrapper
-wrap.not('span')      // => ReactWrapper (inverse of filter())
-wrap.children()       // => ReactWrapper
-wrap.parent()         // => ReactWrapper
-wrap.closest('div')   // => ReactWrapper
-wrap.childAt(0)       // => ReactWrapper
-wrap.at(0)            // => ReactWrapper
-wrap.first()          // => ReactWrapper
-wrap.last()           // => ReactWrapper
+wrap.find("button"); // => ReactWrapper
+wrap.filter("button"); // => ReactWrapper
+wrap.not("span"); // => ReactWrapper (inverse of filter())
+wrap.children(); // => ReactWrapper
+wrap.parent(); // => ReactWrapper
+wrap.closest("div"); // => ReactWrapper
+wrap.childAt(0); // => ReactWrapper
+wrap.at(0); // => ReactWrapper
+wrap.first(); // => ReactWrapper
+wrap.last(); // => ReactWrapper
 ```
 
 ```js
-wrap.get(0)           // => ReactElement
-wrap.getNode()        // => ReactElement
-wrap.getNodes()       // => Array<ReactElement>
-wrap.getDOMNode()     // => DOMComponent
+wrap.get(0); // => ReactElement
+wrap.getNode(); // => ReactElement
+wrap.getNodes(); // => Array<ReactElement>
+wrap.getDOMNode(); // => DOMComponent
 ```
 
 See: [Full rendering API](http://airbnb.io/enzyme/docs/api/mount.html)
@@ -89,7 +94,7 @@ See: [Full rendering API](http://airbnb.io/enzyme/docs/api/mount.html)
 ### Actions
 
 ```js
-wrap.simulate('click')
+wrap.simulate("click");
 ```
 
 ### React components
@@ -109,28 +114,28 @@ wrap.instance()         // => ReactComponent
 ### Mount
 
 ```js
-wrap.mount()
-wrap.unmount()
-wrap.update()      // calls forceUpdate()
+wrap.mount();
+wrap.unmount();
+wrap.update(); // calls forceUpdate()
 ```
 
 ### Tests
 
 ```js
-wrap.debug()               // => string
-wrap.html()                // => string
-wrap.text()                // => string
-wrap.type()                // => string | function
-wrap.name()                // => string
-wrap.is('.classname')      // => boolean
-wrap.hasClass('class')     // => boolean
-wrap.exists()              // => boolean
-wrap.contains(<div />)     // => boolean
-wrap.contains([ <div /> ]) // => boolean
+wrap.debug(); // => string
+wrap.html(); // => string
+wrap.text(); // => string
+wrap.type(); // => string | function
+wrap.name(); // => string
+wrap.is(".classname"); // => boolean
+wrap.hasClass("class"); // => boolean
+wrap.exists(); // => boolean
+wrap.contains(<div />); // => boolean
+wrap.contains([<div />]); // => boolean
 
-wrap.containsMatchingElement(<div />)         // => boolean
-wrap.containsAllMatchingElements([ <div /> ]) // => boolean
-wrap.containsAnyMatchingElements([ <div /> ]) // => boolean
+wrap.containsMatchingElement(<div />); // => boolean
+wrap.containsAllMatchingElements([<div />]); // => boolean
+wrap.containsAnyMatchingElements([<div />]); // => boolean
 ```
 
 ## References

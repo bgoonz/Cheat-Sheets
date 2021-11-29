@@ -3,7 +3,6 @@ title: Projectionist
 category: Vim
 ---
 
-
 ```json
 /* .projectionist.vim */
 {
@@ -37,22 +36,23 @@ category: Vim
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `:A` | Edit alternate |
-| `:A {file}` | Edit file |
-|---------|-------------|
-| `:AS` | Edit in split |
-| `:AV` | Edit in vsplit |
-| `:AT` | Edit in tab |
-|---------|-------------|
-| `:AD` | Replace with template |
-|---------|-------------|
-| `:Cd` | cd to root |
-| `:Cd {path}` | cd to path in root |
-| `:Lcd` | cd to root using :lcd |
-|---------|-------------|
-| `:ProjectDo {cmd}` | run command in root |
+| Command            | Description           |
+| ------------------ | --------------------- |
+| `:A`               | Edit alternate        |
+| `:A {file}`        | Edit file             |
+| ---------          | -------------         |
+| `:AS`              | Edit in split         |
+| `:AV`              | Edit in vsplit        |
+| `:AT`              | Edit in tab           |
+| ---------          | -------------         |
+| `:AD`              | Replace with template |
+| ---------          | -------------         |
+| `:Cd`              | cd to root            |
+| `:Cd {path}`       | cd to path in root    |
+| `:Lcd`             | cd to root using :lcd |
+| ---------          | -------------         |
+| `:ProjectDo {cmd}` | run command in root   |
+
 {:.shortcuts}
 
 ## Reference

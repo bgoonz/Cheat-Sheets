@@ -7,7 +7,7 @@ category: Rails
 
     $ rails generate migration RemovePartNumberFromProducts part_number:string
     $ rails generate migration remove_part_number_from_products part_number # rails assumes string if not type given - and you can use snake_case
-    
+
     $ rails generate migration AddNameToWidgets name:string
     $ rails g migration add_name_to_widgets name:string # you can use the short cut 'g' instead of generate - they both do the same thing
 
@@ -68,7 +68,7 @@ category: Rails
     class AddFlagToProduct < ActiveRecord::Migration
       class Product < ActiveRecord::Base
       end
-     
+
       def change
         add_column :products, :flag, :boolean
         Product.reset_column_information
@@ -79,14 +79,14 @@ category: Rails
     end
 
 ### Associations
-    
+
     t.references :category   # kinda same as t.integer :category_id
 
     # Can have different types
     t.references :category, polymorphic: true
 
 ### Auto-Add/remove columns
-  
+
     $ rails generate migration RemovePartNumberFromProducts part_number:string
 
 ### Indices
@@ -113,10 +113,11 @@ category: Rails
       :order => {:branch_id => :desc, :part_id => :asc}
 
 ### In console
+
 Use `ActiveRecord::Migration`.
 
     ActiveRecord::Migration.add_index :posts, :slug
 
 ### References
 
- * http://apidock.com/rails/ActiveRecord/ConnectionAdapters/SchemaStatements/add_index
+- http://apidock.com/rails/ActiveRecord/ConnectionAdapters/SchemaStatements/add_index

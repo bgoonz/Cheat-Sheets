@@ -101,6 +101,7 @@ Commands with `.` are shell commands.
     pry(main)> .cat hello.txt
 
 ## hirb
+
 Add the [hirb](https://rubygems.org/gems/hirb) gem.
 
     > table User.all
@@ -108,6 +109,7 @@ Add the [hirb](https://rubygems.org/gems/hirb) gem.
     > view User.all, fields: %w[id name email]
 
 ## pry-rescue
+
 Add the [pry-rescue](https://github.com/ConradIrwin/pry-rescue) gem.
 
 ```rb
@@ -130,6 +132,7 @@ pry(main)> try-again
 ```
 
 ## pry-remote
+
 Add the [pry-remote](https://github.com/Mon-Ouie/pry-remote) gem.
 
 ```rb
@@ -142,5 +145,5 @@ bundle exec pry-remote
 
 ## Reference
 
- * [Pry](https://github.com/pry/pry)
- * [Hirb](https://github.com/cldwalker/hirb)
+- [Pry](https://github.com/pry/pry)
+- [Hirb](https://github.com/cldwalker/hirb)

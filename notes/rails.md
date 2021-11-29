@@ -3,12 +3,11 @@ title: Rails
 category: Rails
 ---
 
-Helpers
--------
+## Helpers
 
     class ApplicationController
       helper_method :logged_in?
-    
+
       def logged_in?
         "Something"
       end
@@ -45,8 +44,7 @@ Helpers
     # radio_button, range_field, search_field, telephonen_field,
     # text_area, text_field, url_field
 
-Controllers
------------
+## Controllers
 
 http://apidock.com/rails/ActionController/Base
 
@@ -62,15 +60,15 @@ http://apidock.com/rails/ActionController/Base
     end
 
 ### Before filter
-  
+
     class ApplicationController < ActionController::Base
       before_filter :validate, only: [:save, :edit]
       before_filter :ensure_auth, except: [:logout]
 
       before_filter :require_login
-     
+
       private
-     
+
       def require_login
         unless logged_in?
           flash[:error] = "You must be logged in to access this section"
@@ -95,7 +93,7 @@ http://apidock.com/rails/ActionController/Base
     params[:id]
 
 ### XML and JSON
-  
+
     class UsersController < ApplicationController
       def index
         @users = User.all
@@ -135,8 +133,7 @@ http://apidock.com/rails/ActionController/Base
     head :bad_request
     head :created, location: photo_path(@photo)
 
-Layouts
--------
+## Layouts
 
     # app/views/layouts/application.html.erb
     <%= content_for?(:content) ? yield :content : yield %>
@@ -146,4 +143,3 @@ Layouts
        ...
     <% end %>
     <% render template: :'layouts/application' %>
-    
