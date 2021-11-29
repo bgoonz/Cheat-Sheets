@@ -1,1 +1,0 @@
-generatejplayer.sh
