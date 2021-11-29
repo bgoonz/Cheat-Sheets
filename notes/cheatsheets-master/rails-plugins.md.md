@@ -31,7 +31,6 @@ Subclass Railtie and provide an `initializer` method.
       end
     end
 
-
 ## Custom routes
 
 - [ActionDispatch::Routing::Mapper](http://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper.html)
