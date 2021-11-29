@@ -38,7 +38,6 @@ category: macOS
     mdutil -i off MOUNT_POINT           # disable for specific volume
     touch FOLDER/.metadata_never_index  # disable for FOLDER
 
-
 ### Turn on/off proxy
 
     sudo networksetup -setsocksfirewallproxystate Wi-Fi off
