@@ -17,4 +17,5 @@
 * [Cheatsheets](cheatsheets.md)
 * [ES6 EXPORTS](es6-exports.md)
 * [JavaScript \\| MDN](javascript-or-mdn.md)
+* [Regex In Python](regex-in-python.md)
 * [Google dork cheatsheet](google-dork-cheatsheet.md)
