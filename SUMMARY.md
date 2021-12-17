@@ -26,6 +26,7 @@
 * [React Patterns:](react-patterns-2.md)
 * [Bash Shortcuts Cheat Sheet](bash-shortcuts-cheat-sheet.md)
 * [SSH Cheatsheet](ssh-cheatsheet.md)
+* [Python](python.md)
 * [ES6 EXPORTS](es6-exports-1.md)
 * [Cheatsheet](cheatsheet.md)
 * [Cheatsheet Compilation](cheatsheet-compilation.md)
