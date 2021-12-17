@@ -40,4 +40,4 @@ template: page
 
 
 
-# JavaScript Cheat Sheet**
+# **JavaScript Cheat Sheet**
