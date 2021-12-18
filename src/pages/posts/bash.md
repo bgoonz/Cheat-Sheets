@@ -43,6 +43,7 @@ seo:
       relativeUrl: true
 template: post
 subtitle: Cheat Sheet
+thumb_img_path: images/data-structure.jpg
 ---
 
 
