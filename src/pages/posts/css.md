@@ -1,39 +1,43 @@
 ---
 title: CSS
 excerpt: >-
-  Hiking The Grand Canyon, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
+  Hiking The Grand Canyon, which you can use to add background, colors, and even
+  transitions or other interactive elements. It will also help you create a
+  lightweight and responsive website that is SEO-friendly. 
 date: '2021-11-27'
-thumb_img_path: images/bash.png
 thumb_img_alt: Hiking The Grand Canyon
 content_img_path: images/css-a3da8bfa.jpg
 content_img_alt: Hiking The Grand Canyon
 seo:
   title: Hiking The Grand Canyon
-  description: >-
-    Css Cheat sheet
+  description: Css Cheat sheet
   extra:
-    - name: "og:type"
+    - name: 'og:type'
       value: article
       keyName: property
-    - name: "og:title"
+    - name: 'og:title'
       value: Hiking The Grand Canyon
       keyName: property
-    - name: "og:description"
+    - name: 'og:description'
       value: >-
-        Hiking The Grand Canyon, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
+        Hiking The Grand Canyon, which you can use to add background, colors,
+        and even transitions or other interactive elements. It will also help
+        you create a lightweight and responsive website that is SEO-friendly. 
       keyName: property
-    - name: "og:image"
+    - name: 'og:image'
       value: images/8.jpg
       keyName: property
       relativeUrl: true
-    - name: "twitter:card"
+    - name: 'twitter:card'
       value: summary_large_image
-    - name: "twitter:title"
+    - name: 'twitter:title'
       value: Hiking The Grand Canyon
-    - name: "twitter:description"
+    - name: 'twitter:description'
       value: >-
-        Hiking The Grand Canyon, which you can use to add background, colors, and even transitions or other interactive elements. It will also help you create a lightweight and responsive website that is SEO-friendly. 
-    - name: "twitter:image"
+        Hiking The Grand Canyon, which you can use to add background, colors,
+        and even transitions or other interactive elements. It will also help
+        you create a lightweight and responsive website that is SEO-friendly. 
+    - name: 'twitter:image'
       value: images/8.jpg
       relativeUrl: true
 template: post
