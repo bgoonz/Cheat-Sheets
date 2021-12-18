@@ -5,7 +5,7 @@ excerpt: >-
   variable is nothing more than a label, a name assigned to a location or set of
   locations in computer memory holding an item of data.Variables appear in
   arithmetic operations and manipulation of quantities, and in string parsing.
-date: '2021-11-27'
+date: '2021-12-17'
 thumb_img_alt: Hikers on the trail
 content_img_path: images/8.jpg
 content_img_alt: Hikers on the trail
