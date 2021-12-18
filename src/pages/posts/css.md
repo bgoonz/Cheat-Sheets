@@ -42,6 +42,7 @@ seo:
       relativeUrl: true
 template: post
 subtitle: Cheat Sheet
+thumb_img_path: images/css3-original-wordmark.png
 ---
 
 
