@@ -14,7 +14,7 @@
 * [bash\_cheatsheet](bash\_cheatsheet.md)
 * [Sequelize Cheatsheet](sequelize-cheatsheet.md)
 * [Function Context Cheatsheet](function-context-cheatsheet.md)
-* [Cheatsheets](cheatsheets.md)
+* [🧘♂ PSQL Cheatsheet](cheatsheets.md)
 * [ES6 EXPORTS](es6-exports.md)
 * [JavaScript \\| MDN](javascript-or-mdn.md)
 * [Regex In Python](regex-in-python.md)
