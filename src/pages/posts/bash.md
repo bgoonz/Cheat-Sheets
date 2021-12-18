@@ -1,5 +1,5 @@
 ---
-title: Reac
+title: JavaScript
 excerpt: >-
   Variables are how programming and scripting languages represent data. A
   variable is nothing more than a label, a name assigned to a location or set of
