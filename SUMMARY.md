@@ -2,6 +2,8 @@
 
 * [📋 Cheat Sheets](README.md)
 * [Terminal Cheat Sheet](terminal-cheat-sheet.md)
+* [NPM Cheat Sheet](npm-cheat-sheet/README.md)
+  * [NPM Command Line Cheat Sheet](npm-cheat-sheet/npm-command-line-cheat-sheet.md)
 * [Typescript](typescript.md)
 * [Common HTTP status codes Cheat Sheet](common-http-status-codes-cheat-sheet.md)
 * [networking\_cheatsheet](networking\_cheatsheet.md)
