@@ -30,7 +30,7 @@
 * [SSH Cheatsheet](ssh-cheatsheet.md)
 * [Python](python.md)
 * [ES6 EXPORTS](es6-exports-1.md)
-* [Cheatsheet](cheatsheet.md)
+* [Js-Array-Cheatsheet](cheatsheet.md)
 * [Cheatsheet Compilation](cheatsheet-compilation.md)
 * [CHEATSHEET (3)](cheatsheet-3.md)
 * [JavaScript \\| MDN](javascript-or-mdn-1.md)
