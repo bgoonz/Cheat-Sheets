@@ -13,24 +13,21 @@ intro: |
 ### Lists
 
 ```html
-<li v-for="todo in todos">
-  {{ todo.text }}
-  {{ $index }}
-</li>
+<li v-for="todo in todos">{{ todo.text }} {{ $index }}</li>
 ```
 
 ### Events
 
 ```html
-<button v-on:click='submit'>Go</button>
+<button v-on:click="submit">Go</button>
 ```
 
 ### Components
 
 ```js
 new Vue({
-  components: { app: App }
-})
+  components: { app: App },
+});
 ```
 
 ## API
@@ -87,6 +84,7 @@ new Vue({
 ```
 
 ## Vue templates
+
 Via [vueify](https://www.npmjs.com/package/vueify)
 
 ```js
@@ -94,7 +92,7 @@ Via [vueify](https://www.npmjs.com/package/vueify)
 <template>
   <h1 class="red">{{msg}}</h1>
 </template>
- 
+
 <script>
   module.exports = {
     data () {
@@ -103,15 +101,13 @@ Via [vueify](https://www.npmjs.com/package/vueify)
       }
     }
   }
-</script> 
+</script>
 ```
 
 Also
 
 ```html
-<template lang='jade'>
-h1(class='red') {{msg}}
-</template>
+<template lang="jade"> h1(class='red') {{msg}} </template>
 ```
 
 {% endraw %}

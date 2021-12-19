@@ -3,7 +3,7 @@ title: jQuery
 subtitle: jQuery Cheat Sheet
 excerpt: >-
   A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
-date: '2021-11-21'
+date: "2021-11-21"
 thumb_img_path: images/3.jpg
 thumb_img_alt: jQuery
 content_img_path: images/3.jpg
@@ -12,49 +12,46 @@ seo:
   title: jQuery
   description: A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: jQuery
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: jQuery Cheat Sheet
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/3.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: jQuery
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: jQuery Cheat Sheet
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/3.jpg
       relativeUrl: true
 template: post
 ---
 
-
-
-
 ### jQuery streamlines dynamic behavior
 
-*jQuery* is a JavaScript library that streamlines the creation of dynamic behavior with predefined methods for selecting and manipulating DOM elements. It offers a simplified approach to implementing responsiveness and requires fewer lines of code to assign behaviors to DOM elements than traditional JavaScript methods.
+_jQuery_ is a JavaScript library that streamlines the creation of dynamic behavior with predefined methods for selecting and manipulating DOM elements. It offers a simplified approach to implementing responsiveness and requires fewer lines of code to assign behaviors to DOM elements than traditional JavaScript methods.
 
 ```js
 //Selecting DOM elements and adding an event listener in JS
-const menu = document.getElementById('menu');
-const closeMenuButton = document.getElementById('close-menu-button');
-closeMenuButton.addEventListener('click', () => {
-    menu.style.display = 'none';
+const menu = document.getElementById("menu");
+const closeMenuButton = document.getElementById("close-menu-button");
+closeMenuButton.addEventListener("click", () => {
+  menu.style.display = "none";
 });
- 
+
 //Selecting DOM elements and adding an event listener in jQuery
-$('#close-menu-button').on('click', () =>{
-  $('#menu').hide();  
+$("#close-menu-button").on("click", () => {
+  $("#menu").hide();
 });
 ```
 
@@ -65,39 +62,36 @@ JavaScript code runs as soon as its file is loaded into the browser. If this hap
 jQuery's `.ready()` method waits until the DOM is fully rendered, at which point it invokes the specified callback function.
 
 ```js
-
-$(document).ready(function() {
+$(document).ready(function () {
   // This code only runs after the DOM is loaded.
-  alert('DOM fully loaded!');
+  alert("DOM fully loaded!");
 });
 ```
 
 ### jquery object variables start with
 
-*jQuery objects* are typically stored in variables where the variable name begins with a `$` symbol. This naming convention makes it easier to identify which variables are jQuery objects as opposed to other JavaScript objects or values.
+_jQuery objects_ are typically stored in variables where the variable name begins with a `$` symbol. This naming convention makes it easier to identify which variables are jQuery objects as opposed to other JavaScript objects or values.
 
 ```js
-
 //A variable representing a jQuery object
-const $myButton = $('#my-button');
+const $myButton = $("#my-button");
 ```
 
 ### jQuery CDN Import
 
-*jQuery* is typically imported from a CDN (Content Delivery Network) and added at the bottom of an HTML document in a `<script>` tag before the closing `</body>` tag.
+_jQuery_ is typically imported from a CDN (Content Delivery Network) and added at the bottom of an HTML document in a `<script>` tag before the closing `</body>` tag.
 
 The jQuery `<script>` tag must be listed before linking to any other JavaScript file that uses the jQuery library.
 
 ```html
-
 <html>
   <head></head>
   <body>
     <!-- HTML code -->
-    
+
     <!--The jQuery library-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
- 
+
     <!--Site-specific JavaScript code using jQuery-->
     <script src="script.js"></script>
   </body>
@@ -105,41 +99,39 @@ The jQuery `<script>` tag must be listed before linking to any other JavaScript 
 ```
 
 ---
+
 ### jquery fadeIn effect method
 
-The jQuery `.fadeIn()` effect method causes a hidden element to gradually appear on the page. The method takes *optional* parameters.
+The jQuery `.fadeIn()` effect method causes a hidden element to gradually appear on the page. The method takes _optional_ parameters.
 
 The first optional parameter specifies the duration of the fading effect. The default value is 400 milliseconds.
 
 The second parameter specifies the name of an "easing" function that determines the speed of the fading effect at different points in the animation. The default value is 'swing', where the fade-in effect is slower at the beginning/end and faster in the middle.
 
 ```js
-
-// The '#menu' element will gradually appear 
+// The '#menu' element will gradually appear
 // on the page when the '#menu-button' is clicked.
-$('#menu-button').on('click', () => {
+$("#menu-button").on("click", () => {
   // equivalent to $('#menu').fadeIn(400, 'swing')
-  $('#menu').fadeIn();
+  $("#menu").fadeIn();
 });
 ```
 
 ### jquery fadeOut effect method
 
-The jQuery `.fadeOut()` effect method causes an element and the space it was occupying to gradually disappear from the page. The method takes *optional* parameters.
+The jQuery `.fadeOut()` effect method causes an element and the space it was occupying to gradually disappear from the page. The method takes _optional_ parameters.
 
 The first optional parameter specifies the duration of the fading effect. The default value is 400 milliseconds.
 
 The second parameter specifies an "easing" function that determines the speed of the fading effect at different points in the animation. The default value is 'swing', where the fade-out effect is slower at the beginning/end and faster in the middle.
 
 ```js
-
-// The '#menu' element will gradually disappear from 
+// The '#menu' element will gradually disappear from
 // the page when the '#menu-button' is clicked.
-$('#menu-button').on('click', () => {
+$("#menu-button").on("click", () => {
   // equivalent to $('#menu').fadeOut(400, 'swing')
-  $('#menu').fadeOut();
+  $("#menu").fadeOut();
 });
-
 ```
 
 ### jquery slideToggle method
@@ -149,14 +141,12 @@ The jQuery `.slideToggle()` effect method combines the effects of the `.slideDow
 The `.slideToggle()` method takes an optional parameter that specifies the duration of the effect. If not specified, the default value is 400 milliseconds.
 
 ```js
-
-// The '#menu' element will alternate between 
-// gradually sliding down and gradually sliding up 
+// The '#menu' element will alternate between
+// gradually sliding down and gradually sliding up
 // every time the '#menu-button' is clicked.
-$('#menu-button').on('click', () => {
-  $('#menu').slideToggle();
+$("#menu-button").on("click", () => {
+  $("#menu").slideToggle();
 });
-
 ```
 
 ### jquery show effect
@@ -164,13 +154,10 @@ $('#menu-button').on('click', () => {
 The jQuery `.show()` effect method causes an element, assuming it is hidden, to instantly appear on the page.
 
 ```js
-
-
 //Instantly reveals the '#menu' element when the '#show-menu-button' is clicked.
-$('#show-menu-button').on('click', () => {
-  $('#menu').show();
+$("#show-menu-button").on("click", () => {
+  $("#menu").show();
 });
-
 ```
 
 ### jquery toggle effect
@@ -178,27 +165,22 @@ $('#show-menu-button').on('click', () => {
 The jQuery `.toggle()` effect method combines the effects of the `.hide()` and `.show()` methods. Every time the event listener is triggered, the element will alternate between displayed on the page and hidden from the page.
 
 ```js
-
-//The '#menu' element will alternate between being displayed and hidden every time the '#menu-button' is clicked. 
-$('#menu-button').on('click', () =>{
-  $('#menu').toggle(); 
+//The '#menu' element will alternate between being displayed and hidden every time the '#menu-button' is clicked.
+$("#menu-button").on("click", () => {
+  $("#menu").toggle();
 });
-
 ```
 
 ### jquery effects
 
-*jQuery Effects* are jQuery object methods used to add animation and dynamic behavior to page elements. Effects can be used to show or hide elements, fade elements in and out, and more.
+_jQuery Effects_ are jQuery object methods used to add animation and dynamic behavior to page elements. Effects can be used to show or hide elements, fade elements in and out, and more.
 
 ```js
-
-
-// The .show() effect causes the #menu element to 
-// appear once the #menu-button element is clicked. 
-$('#menu-button').on('click', event => {
-  $('#menu').show();  
+// The .show() effect causes the #menu element to
+// appear once the #menu-button element is clicked.
+$("#menu-button").on("click", (event) => {
+  $("#menu").show();
 });
-
 ```
 
 ### jquery fadeToggle method
@@ -210,16 +192,13 @@ The first optional parameter specifies the duration of the fading effect. The de
 The second parameter specifies the name of an "easing" function that determines the speed of the fading effect at different points in the animation. The default value is 'swing', where the fading effect is slower at the beginning/end and faster in the middle.
 
 ```js
-
-
-// The '#menu' element will alternate between 
-// gradually disappearing and gradually appearing 
+// The '#menu' element will alternate between
+// gradually disappearing and gradually appearing
 // on the page when the '#menu-button' is clicked.
-$('#menu-button').on('click', () => {
+$("#menu-button").on("click", () => {
   // equivalent to $('#menu').fadeToggle(400, 'swing')
-  $('#menu').fadeToggle();
+  $("#menu").fadeToggle();
 });
-
 ```
 
 ### jquery slideUp method
@@ -229,16 +208,13 @@ The jQuery `.slideUp()` effect method causes an element and the space it was occ
 This method takes an optional parameter that specifies the duration of the effect in milliseconds. If not specified, the default duration is 400 milliseconds.
 
 ```js
-
-
-// The '#menu' element will gradually disappear 
-// from the page by sliding up its content when 
+// The '#menu' element will gradually disappear
+// from the page by sliding up its content when
 // the '#menu-button' is clicked.
-$('#menu-button').on('click', () => {
+$("#menu-button").on("click", () => {
   // slide up over half a second
-  $('#menu').slideUp(500);
+  $("#menu").slideUp(500);
 });
-
 ```
 
 ### jquery hide effect
@@ -246,12 +222,10 @@ $('#menu-button').on('click', () => {
 The jQuery `.hide()` effect method causes an element and the space it was occupying to disappear instantly from the page. When executed, the browser will render the HTML as if the hidden element does not exist.
 
 ```js
-
-//The '#menu' element will disappear instantly from the page when the '#hide-menu-button' is clicked. 
-$('#hide-menu-button').on('click', () => {
-  $('#menu').hide();  
+//The '#menu' element will disappear instantly from the page when the '#hide-menu-button' is clicked.
+$("#hide-menu-button").on("click", () => {
+  $("#menu").hide();
 });
-
 ```
 
 ### jquery slideDown method
@@ -261,23 +235,16 @@ The jQuery `.slideDown()` effect method causes a hidden element to gradually app
 This method takes an optional parameter that specifies the duration of the effect in milliseconds. If not specified, the default value of 400 milliseconds is used.
 
 ```js
-
-// The '#menu' element will gradually appear on 
-// the page by sliding down its content when the 
+// The '#menu' element will gradually appear on
+// the page by sliding down its content when the
 // '#menu-button' element is clicked.
-$('#menu-button').on('click', () => {
+$("#menu-button").on("click", () => {
   // menu appears over 400ms duration
-  $('#menu').slideDown();
+  $("#menu").slideDown();
 });
-
 ```
 
 ---
-
-
-
-
-
 
 ## Jquery Cheat Sheet:
 
@@ -395,8 +362,6 @@ $('p').each(function() {
 });
 
 ```
-
-
 
 ## Basics
 

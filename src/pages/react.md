@@ -3,7 +3,7 @@ title: ReactJS
 subtitle: ReactJS Cheat Sheet
 excerpt: >-
   A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
-date: '2021-11-21'
+date: "2021-11-21"
 thumb_img_path: images/3.jpg
 thumb_img_alt: ReactJS
 content_img_path: images/3.jpg
@@ -12,42 +12,40 @@ seo:
   title: ReactJS
   description: A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: ReactJS
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: ReactJS Cheat Sheet
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/3.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: ReactJS
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: ReactJS Cheat Sheet
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/3.jpg
       relativeUrl: true
 template: page
 ---
 
-
-
 ## React Docs
 
-
 # A Basic Component
- 
-The key abstraction that React provides is that of a component. To reiterate, a component is some thing that is being rendered in the browser. It could be a button, a form with a bunch of fields in it, a navigation bar at the top of the page, a single input field, etc. Any of these could be its own component. React doesn't place any restrictions on how large or small a component can be. You _could_ have an entire static site encapsulated in a single React component, but that at that point you may as well not be using React. So the first thing to remember about a component is that a component must _render_ something. If nothing is being rendered from a component, then React will throw an error. 
 
-Let's write the most basic of components we can possibly write. Inside of `BasicComponent.js`, first import React at the top of the file. Our most basic of 
+The key abstraction that React provides is that of a component. To reiterate, a component is some thing that is being rendered in the browser. It could be a button, a form with a bunch of fields in it, a navigation bar at the top of the page, a single input field, etc. Any of these could be its own component. React doesn't place any restrictions on how large or small a component can be. You _could_ have an entire static site encapsulated in a single React component, but that at that point you may as well not be using React. So the first thing to remember about a component is that a component must _render_ something. If nothing is being rendered from a component, then React will throw an error.
+
+Let's write the most basic of components we can possibly write. Inside of `BasicComponent.js`, first import React at the top of the file. Our most basic of
 components looks like this:
+
 ```
 import React from 'react';
 
@@ -57,28 +55,28 @@ export default BasicComponent;
 ```
 
 This is a component that simply returns a div tag with the words Hello World! inside. The last line simply exports our component so that it can be imported
-by another file. 
+by another file.
 
 Notice that this component looks exactly like an anonymous arrow function that we've named `BasicComponent`. In fact, that is literally what this is. Nothing
 more, nothing less. The arrow function then is simply returning the div tag. When a component is written as a function like this one is, it is called a
-_functional_ component. 
+_functional_ component.
 
-While a component can of course get a lot more complicated than this, fundamentally, all a component does is render some HTML. 
-
-
+While a component can of course get a lot more complicated than this, fundamentally, all a component does is render some HTML.
 
 # A Basic Class Component
 
 The basic component you wrote in the previous exercise is an example of a functional component, which is appropriate since that component is literally
 nothing more than a function that returns some HTML. Functional components are great when all you want a component to do is to render some stuff; they
-are really good at doing just that. 
+are really good at doing just that.
 
 Components can also be written as classes. For this exercise, we're going to write a class component that does exactly the same thing as the functional component we just wrote. We'll again need to import React at the top of the file, but we'll also need to add a little something. Our import statement will look like this:
+
 ```
 import React, { Component } from 'react';
 ```
 
 So, in addition to importing React, we're also importing the base Component class that is included in the React library. The export statement at the bottom of the file also stays, completely unchanged. Our class component will thus look like this:
+
 ```
 import React, { Component } from 'react';
 
@@ -93,23 +91,22 @@ class BasicClassComponent extends Component {
 export default BasicClassComponent;
 ```
 
-Notice that our `BasicClassComponent` inherits from the base `Component` class that we imported from the React library, by virtue of the 'extends' keyword. That being said, there's nothing in this minimal component that takes advantage of any of those inherited methods. All we have is a method on our component class called `render` that returns the same div tag. 
+Notice that our `BasicClassComponent` inherits from the base `Component` class that we imported from the React library, by virtue of the 'extends' keyword. That being said, there's nothing in this minimal component that takes advantage of any of those inherited methods. All we have is a method on our component class called `render` that returns the same div tag.
 
 In this case, if we really were deciding between whether to use a functional component versus a class component to render a simple div tag, then the functional style is more appropriate to use. This is because class components are much better suited for handling component state and triggering events based on the component's lifecycle. Don't worry if you don't know what all these terms meant, we will get to them shortly.
 
-The important takeaways at this point are that there are two types of components, functional and class components, and that functional components are well-suited if you're just looking to render some HTML. Class components, on the other hand, are much better suited for handling components that require more complex functionality, need to exhibit more varied behavior, and/or need to keep track of some state that may change throughout said component's lifecycle. 
-
-
+The important takeaways at this point are that there are two types of components, functional and class components, and that functional components are well-suited if you're just looking to render some HTML. Class components, on the other hand, are much better suited for handling components that require more complex functionality, need to exhibit more varied behavior, and/or need to keep track of some state that may change throughout said component's lifecycle.
 
 # A Class Component with Some State
 
 When we talked about class components, it was mentioned that class components can handle state. So what does that mean? Component state is any dynamic data that we want the component to keep track of. For example, let's say we have a form component. This form has some input fields that we'd like users to fill out. When a user types characters into an input field, how is that input persisted from the point of view of our form component?
 
-The answer is by using component state! There are a few important concepts regarding component state, such as how to update it, pass it to another component, render it, etc. We'll talk about all of these in a bit, but for now, let's just focus on how to add state to a class component. 
+The answer is by using component state! There are a few important concepts regarding component state, such as how to update it, pass it to another component, render it, etc. We'll talk about all of these in a bit, but for now, let's just focus on how to add state to a class component.
 
-Only class components have the ability to persist state, so if at any time you realize that a component needs to keep track of some state, you know that you'll automatically need a class component instead of a functional component. 
+Only class components have the ability to persist state, so if at any time you realize that a component needs to keep track of some state, you know that you'll automatically need a class component instead of a functional component.
 
 Our class component with state will look a lot like the basic class component we just wrote, but with some extra stuff:
+
 ```
 import React, { Component } from 'react';
 
@@ -131,11 +128,11 @@ export default ClassComponentWithState;
 
 So far, the only new thing going on here is the constructor block. If you recall how classes in JavaScript work, classes need constructors. Additionally, if a class is extending off of another class and wants access to its parent class's methods and properties, then the `super` function needs to be called inside the class's constructor function. Point being, the constructor function and the call to the `super` function are _not_ associated with React, they are associated with all JavaScript classes.
 
-Then there is the `this.state` property inside the constructor function that is set as an empty object. We're adding a property called `state` to our class and setting it to an empty object. State objects in React are always just plain old objects. 
+Then there is the `this.state` property inside the constructor function that is set as an empty object. We're adding a property called `state` to our class and setting it to an empty object. State objects in React are always just plain old objects.
 
 The observant student may be wondering why the basic class component we wrote in the previous exercise had no constructor function within its body. That is because we had no need for them since all our class component was doing was rendering some HTML. The constructor is needed here because that is where we need to initialize our state object. The call to `super` is needed because we can't reference `this` inside of our constructor without a call to `super` first.
 
-Ok, now let's actually use this state object. One very common application of state objects in React components is to render the data being stored inside  them within our component's render function. Let's change our current class component to do that.
+Ok, now let's actually use this state object. One very common application of state objects in React components is to render the data being stored inside them within our component's render function. Let's change our current class component to do that.
 
 ```
 class ClassComponentWithState extends Component {
@@ -156,7 +153,7 @@ class ClassComponentWithState extends Component {
 export default ClassComponentWithState;
 ```
 
-So what's changed here? Well, we added a key-value pair to our state object inside our constructor. Then we changed the contents of the render function. Now, it's actually rendering the data that we have inside the state object. Notice that inside the div tags we're using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content. This is a very handy piece of functionality that React provides for us when writing components. 
+So what's changed here? Well, we added a key-value pair to our state object inside our constructor. Then we changed the contents of the render function. Now, it's actually rendering the data that we have inside the state object. Notice that inside the div tags we're using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content. This is a very handy piece of functionality that React provides for us when writing components.
 
 With React's newest version, we can actually now add state to a component without explicitly defining a constructor on the class. We can refactor our class component to look like this:
 
@@ -175,25 +172,15 @@ class ClassComponentWithState extends Component {
 
 export default ClassComponentWithState;
 ```
-Our code is slightly cleaner, and doesn't require as many keystrokes as the older version. Fewer keystrokes are always a plus in my book! This new syntax is what is often referred to as 'syntactic sugar': under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter. The clue to this is the fact that when we want to access some data from the state object, we still need to call it with `this.state.someData`; changing it to just `state.someData` does not work. 
 
-While being able to write our code in this way is nice and convenient, going forward, I'm going to stick with the 'older' style of writing my React components by explicitly defining constructors so that you'll all have a better idea of what's going on under the hood. In other words, it's more "pedagogically sound". If you prefer the newer style (and I would in my own code), feel free to write your React components that way. 
+Our code is slightly cleaner, and doesn't require as many keystrokes as the older version. Fewer keystrokes are always a plus in my book! This new syntax is what is often referred to as 'syntactic sugar': under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter. The clue to this is the fact that when we want to access some data from the state object, we still need to call it with `this.state.someData`; changing it to just `state.someData` does not work.
 
-
-
-
-
-
-
-
-
-
-
-
+While being able to write our code in this way is nice and convenient, going forward, I'm going to stick with the 'older' style of writing my React components by explicitly defining constructors so that you'll all have a better idea of what's going on under the hood. In other words, it's more "pedagogically sound". If you prefer the newer style (and I would in my own code), feel free to write your React components that way.
 
 # Class Component Updating State
 
-Great, so we can render some state that our component persists for us. However, we said an important use case of component state is to handle _dynamic_ data. A single static number isn't very dynamic at all. So now let's walk through how to update component state. 
+Great, so we can render some state that our component persists for us. However, we said an important use case of component state is to handle _dynamic_ data. A single static number isn't very dynamic at all. So now let's walk through how to update component state.
+
 ```
 import React, { Component } from 'react';
 
@@ -227,23 +214,19 @@ class ClassComponentUpdatingState extends Component {
 export default ClassComponentUpdatingState;
 ```
 
-Notice that we've added two methods to our class: `increment` and `decrement`. `increment` and `decrement` are methods that _we_ are adding to our class component. Unlike the `render` method,`increment` and `decrement` were not already a part of our class component. This is why `increment` and `decrement` are written as arrow functions, so that they are automatically bound to our class component. This needs to happen so that we can call them later on. Again, there's no crazy React black magic going on here, we simply added two methods to our class. 
+Notice that we've added two methods to our class: `increment` and `decrement`. `increment` and `decrement` are methods that _we_ are adding to our class component. Unlike the `render` method,`increment` and `decrement` were not already a part of our class component. This is why `increment` and `decrement` are written as arrow functions, so that they are automatically bound to our class component. This needs to happen so that we can call them later on. Again, there's no crazy React black magic going on here, we simply added two methods to our class.
 
-The more interesting thing is what is going on within the bodies of these methods. Each calls this funky `setState`function. `setState` in fact _is_ provided to us by React. It is the canonical way to update a component's state. Actually, it's the _only_ way you should ever update a component's state. It may seem more verbose than necessary, but there are good reasons for why you should be doing it this way. I'm not going to get into those reasons now. I'll leave a [link](https://reactjs.org/docs/react-component.html#setstate) to the official documentation on the `setState` function, although I'm pretty sure at this point it will probably just blow your mind and/or overwhelm you with jargon. So for now, take this as a case of "because I'm telling you so". 
+The more interesting thing is what is going on within the bodies of these methods. Each calls this funky `setState`function. `setState` in fact _is_ provided to us by React. It is the canonical way to update a component's state. Actually, it's the _only_ way you should ever update a component's state. It may seem more verbose than necessary, but there are good reasons for why you should be doing it this way. I'm not going to get into those reasons now. I'll leave a [link](https://reactjs.org/docs/react-component.html#setstate) to the official documentation on the `setState` function, although I'm pretty sure at this point it will probably just blow your mind and/or overwhelm you with jargon. So for now, take this as a case of "because I'm telling you so".
 
 So the way to use `setState` to update a component's state is to pass it an object with each of the state keys you wish to update, along with the updated value. In our `increment` method we said "I would like to update the `aNumber` property on my component state by adding one to it and then setting the new value as my new `aNumber`". The same thing happens in our `decrement` method, only we're subtracting instead of adding.
 
-Then the other new concept we're running into here is how to actually call these methods we've added to our class. We added two HTML button tags within our `render` function, then in their respective `onClick` handlers, we specify the method that should be called whenever this button gets clicked. So whenever we click either of the buttons, our state gets updated appropriately and our component will re-render to show the correct value we're expecting. 
-
-
-
-
+Then the other new concept we're running into here is how to actually call these methods we've added to our class. We added two HTML button tags within our `render` function, then in their respective `onClick` handlers, we specify the method that should be called whenever this button gets clicked. So whenever we click either of the buttons, our state gets updated appropriately and our component will re-render to show the correct value we're expecting.
 
 # Class Component Iterating State
 
-Another common state pattern you'll see being used in React components is iterating over an array in our state object and rendering each array element in its own tag. This is often used in order to render lists. 
+Another common state pattern you'll see being used in React components is iterating over an array in our state object and rendering each array element in its own tag. This is often used in order to render lists.
 
-Additionally, we want to be able to easily update lists and have React re-render our updated list. We'll see how both of these are done and how they work together within a single component in order to create the behavior of a dynamic list. 
+Additionally, we want to be able to easily update lists and have React re-render our updated list. We'll see how both of these are done and how they work together within a single component in order to create the behavior of a dynamic list.
 
 ```
 import React, { Component } from 'react';
@@ -293,25 +276,22 @@ The `addIngredient` and `handleIngredientInput` methods we've added to our class
 
 The `handleIngredientInput` method is what gets invoked every time the user presses a key to enter text in the input box for adding a new ingredient. Every character the user types gets persisted in the `newIngredient` field on the state object. We're able to grab the text in the input box using `event.target.value`, which holds the value of the string text that is currently in the input box. We use that to update our `newIngredient` string field.
 
-Breaking down the `addIngredient` method, we see this `event.preventDefault()` invocation. This is because this method will be used upon submitting a form, and it turns out that submitting a form triggers some default form behavior that we don't want to trigger when we submit the form (namely refreshing the entire page). `event.preventDefault()` will prevent this default form behavior, meaning our form will only do what we want it to do when it is submitted. 
+Breaking down the `addIngredient` method, we see this `event.preventDefault()` invocation. This is because this method will be used upon submitting a form, and it turns out that submitting a form triggers some default form behavior that we don't want to trigger when we submit the form (namely refreshing the entire page). `event.preventDefault()` will prevent this default form behavior, meaning our form will only do what we want it to do when it is submitted.
 
 Next, we store a reference to `this.state.ingredients` in a variable called `ingredientsList`. So we now have a copy of the array that is stored in our state object. We want to update the copy of the ingredients array first instead of directly updating the actual array itself in state. This is a React best practice.
 
 Now we push whatever value is being stored at our `newIngredient` field onto the `ingredientsList` array so that our `ingredientsList` array is now more up-to-date than our `this.state.ingredients` array. So all we have to do now is call `setState` appropriately in order to update the value in our state object. Additionally, we also set the `newIngredient` field back to an empty string in order to clear out the input field once we submit a new ingredient. Now it's ready to accept more user input!
 
-Looking at our render function, first note the `this.state.ingredients.map` call. This is looping through each ingredient in our `ingredients` array and returning each one within its own div tag. This is a very common syntax for rendering everything inside an array. 
+Looking at our render function, first note the `this.state.ingredients.map` call. This is looping through each ingredient in our `ingredients` array and returning each one within its own div tag. This is a very common syntax for rendering everything inside an array.
 
 Then we have an HTML form which contains an input field. The purpose of this form is to allow a user to add new ingredients to the list. Note that we're passing our `addIngredient` method to the form's `onSubmit` handler. This means that our `addIngredient` method gets invoked whenever our form is submitted.
 
 Lastly, the input field has an `onChange` handler that invokes our `handleIngredientInput` method whenever there is some sort of change in the input field, namely when a user types into it. Notice that the `value` field in our input tag reads off of `this.state.newIngredient` in order to know what value to display. So when a user enters text into the input field, the `onChange` handler is invoked every time, which updates our `this.state.newIngredient` field, which the input field
-then renders. 
-
-
-
+then renders.
 
 # Parent and Child Components
 
-Now let's get into talking about how to have components interact with each other. A single isolated component isn't going to do us much good. That being said, it's _possible_ to simply throw all of the HTML for a page into a single React component, though at that point that one component would be so bloated and monolithic that you might as well not have used React at all. 
+Now let's get into talking about how to have components interact with each other. A single isolated component isn't going to do us much good. That being said, it's _possible_ to simply throw all of the HTML for a page into a single React component, though at that point that one component would be so bloated and monolithic that you might as well not have used React at all.
 
 The beauty of React lies in the fact that it allows us to compose modular components together. Let's start off with the component we just saw, but let's change its name to `ParentComponent`.
 
@@ -358,11 +338,12 @@ class ParentComponent extends Component {
 export default ParentComponent;
 ```
 
-The only two other differences in this component are that we're importing a `ChildComponent` and then using it inside our `this.state.ingredients.map` call. `ChildComponent` is another React component. Notice that we're using it just as if it were any other HTML tag. This is how we lay out our component hierarchy: the ChildComponent is rendered within the ParentComponent. We can see this to be the case if we open up the developer console and inspect these elements. 
+The only two other differences in this component are that we're importing a `ChildComponent` and then using it inside our `this.state.ingredients.map` call. `ChildComponent` is another React component. Notice that we're using it just as if it were any other HTML tag. This is how we lay out our component hierarchy: the ChildComponent is rendered within the ParentComponent. We can see this to be the case if we open up the developer console and inspect these elements.
 
-Note also that we're passing each ingredient as a 'thing' to the ChildComponent component. This is how a parent component passes data to a child component. It doesn't need to be called 'thing'; you can call it whatever you want. Conceptually though, every piece of data that a parent component passes down to a child component is called a 'prop' in React lingo. 
+Note also that we're passing each ingredient as a 'thing' to the ChildComponent component. This is how a parent component passes data to a child component. It doesn't need to be called 'thing'; you can call it whatever you want. Conceptually though, every piece of data that a parent component passes down to a child component is called a 'prop' in React lingo.
 
-Let's take a look now at the Child Component. It serves two purposes: 1) to render the props data that it gets from a parent component, and 2) to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete'. 
+Let's take a look now at the Child Component. It serves two purposes: 1) to render the props data that it gets from a parent component, and 2) to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete'.
+
 ```
 import React, { Component } from 'react';
 
@@ -388,20 +369,18 @@ class ChildComponent extends Component {
 
 export default ChildComponent;
 ```
-The overall structure of the child component is nothing we haven't seen. It's just another class component with its own state object and a method called `handleClick`. 
+
+The overall structure of the child component is nothing we haven't seen. It's just another class component with its own state object and a method called `handleClick`.
 
 A component accesses its props via the `this.props` object. Any prop a parent component passes down to a child component is accessible inside the child component's `this.prop` object.
 
-So our child component keeps its own state that tracks whether the component has been clicked or not. Then at the top of the `render` function, it uses a ternary condition to determine whether the div tag that is being rendered should have a strikethrough or not. The `handleClick` method is then invoked via an `onClick` handler on the div tag; it does the work of toggling the `this.state.clicked` boolean. 
+So our child component keeps its own state that tracks whether the component has been clicked or not. Then at the top of the `render` function, it uses a ternary condition to determine whether the div tag that is being rendered should have a strikethrough or not. The `handleClick` method is then invoked via an `onClick` handler on the div tag; it does the work of toggling the `this.state.clicked` boolean.
 
-The overall structure of React applications can be represented as a hierarchical tree structure, just like how the DOM itself is structure. There is an overarching root component at the top of the hierarchy that every other component sits underneath. Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component's render function, just like how we did it in this example. 
+The overall structure of React applications can be represented as a hierarchical tree structure, just like how the DOM itself is structure. There is an overarching root component at the top of the hierarchy that every other component sits underneath. Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component's render function, just like how we did it in this example.
 
+# **Hello World**
 
-**Hello World**
-===============
-
-The smallest React example looks like this:
-===========================================
+# The smallest React example looks like this:
 
 ```
 ReactDOM.render(
@@ -419,8 +398,7 @@ It displays a heading saying "Hello, world!" on the page.
 
 Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
 
-How to Read This Guide
-======================
+# How to Read This Guide
 
 In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
 
@@ -430,18 +408,15 @@ This is the first chapter in a step-by-step guide about main React concepts. You
 
 Every chapter in this guide builds on the knowledge introduced in earlier chapters. **You can learn most of React by reading the "Main Concepts" guide chapters in the order they appear in the sidebar.** For example, ["Introducing JSX"](https://reactjs.org/docs/introducing-jsx.html) is the next chapter after this one.
 
-Knowledge Level Assumptions
-===========================
+# Knowledge Level Assumptions
 
 React is a JavaScript library, and so we'll assume you have a basic understanding of the JavaScript language. **If you don't feel very confident, we recommend [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won't have to feel like you're learning both React and JavaScript at the same time.
 
 > NoteThis guide occasionally uses some newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, these three points should get you most of the way.
 
-**Introducing JSX**
-===================
+# **Introducing JSX**
 
-Consider this variable declaration:
-===================================
+# Consider this variable declaration:
 
 ```
 const element = <h1>Hello, world!</h1>;
@@ -454,19 +429,17 @@ It is called JSX, and it is a syntax extension to JavaScript. We recommend using
 
 JSX produces React "elements". We will explore rendering them to the DOM in the [next section](https://reactjs.org/docs/rendering-elements.html). Below, you can find the basics of JSX necessary to get you started.
 
-Why JSX?
-========
+# Why JSX?
 
 React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
 
-Instead of artificially separating *technologies* by putting markup and logic in separate files, React [separates *concerns*](https://en.wikipedia.org/wiki/Separation_of_concerns) with loosely coupled units called "components" that contain both. We will come back to components in a [further section](https://reactjs.org/docs/components-and-props.html), but if you're not yet comfortable putting markup in JS, [this talk](https://www.youtube.com/watch?v=x7cQ3mrcKaY) might convince you otherwise.
+Instead of artificially separating _technologies_ by putting markup and logic in separate files, React [separates _concerns_](https://en.wikipedia.org/wiki/Separation_of_concerns) with loosely coupled units called "components" that contain both. We will come back to components in a [further section](https://reactjs.org/docs/components-and-props.html), but if you're not yet comfortable putting markup in JS, [this talk](https://www.youtube.com/watch?v=x7cQ3mrcKaY) might convince you otherwise.
 
 React [doesn't require](https://reactjs.org/docs/react-without-jsx.html) using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.
 
 With that out of the way, let's get started!
 
-Embedding Expressions in JSX
-============================
+# Embedding Expressions in JSX
 
 In the example below, we declare a variable called `name` and then use it inside JSX by wrapping it in curly braces:
 
@@ -509,8 +482,7 @@ ReactDOM.render(
 
 We split JSX over multiple lines for readability. While it isn't required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of [automatic semicolon insertion](https://stackoverflow.com/q/2846283).
 
-JSX is an Expression Too
-========================
+# JSX is an Expression Too
 
 After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.
 
@@ -524,8 +496,7 @@ function getGreeting(user) {
 
 ```
 
-Specifying Attributes with JSX
-==============================
+# Specifying Attributes with JSX
 
 You may use quotes to specify string literals as attributes:
 
@@ -545,8 +516,7 @@ Don't put quotes around curly braces when embedding a JavaScript expression in a
 
 > Warning:Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names.For example, class becomes className in JSX, and tabindex becomes tabIndex.
 
-Specifying Children with JSX
-============================
+# Specifying Children with JSX
 
 If a tag is empty, you may close it immediately with `/>`, like XML:
 
@@ -566,8 +536,7 @@ const element = (
 
 ```
 
-JSX Prevents Injection Attacks
-==============================
+# JSX Prevents Injection Attacks
 
 It is safe to embed user input in JSX:
 
@@ -580,8 +549,7 @@ const element = <h1>{title}</h1>;
 
 By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html) any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that's not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent [XSS (cross-site-scripting)](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
 
-JSX Represents Objects
-======================
+# JSX Represents Objects
 
 Babel compiles JSX down to `React.createElement()` calls.
 
@@ -624,11 +592,9 @@ We will explore rendering React elements to the DOM in the [next section](https:
 
 > Tip:We recommend using the "Babel" language definition for your editor of choice so that both ES6 and JSX code is properly highlighted.
 
-**Rendering Elements**
-======================
+# **Rendering Elements**
 
-Elements are the smallest building blocks of React apps.
-========================================================
+# Elements are the smallest building blocks of React apps.
 
 An element describes what you want to see on the screen:
 
@@ -638,8 +604,7 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 > Note:One might confuse elements with a more widely known concept of "components". We will introduce components in the next section. Elements are what components are "made of", and we encourage you to read this section before jumping ahead.
 
-Rendering an Element into the DOM
-=================================
+# Rendering an Element into the DOM
 
 Let's say there is a `<div>` somewhere in your HTML file:
 
@@ -666,8 +631,7 @@ ReactDOM.render(element, document.getElementById('root'));
 
 It displays "Hello, world" on the page.
 
-Updating the Rendered Element
-=============================
+# Updating the Rendered Element
 
 React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can't change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
 
@@ -693,8 +657,7 @@ It calls `[ReactDOM.render()](<https://reactjs.org/docs/react-dom.html#render>)`
 
 > Note:In practice, most React apps only call ReactDOM.render() once. In the next sections we will learn how such code gets encapsulated into stateful components.We recommend that you don't skip topics because they build on each other.
 
-React Only Updates What's Necessary
-===================================
+# React Only Updates What's Necessary
 
 React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
 
@@ -706,16 +669,13 @@ Even though we create an element describing the whole UI tree on every tick, onl
 
 In our experience, thinking about how the UI should look at any given moment, rather than how to change it over time, eliminates a whole class of bugs.
 
-**Components and Props**
-========================
+# **Components and Props**
 
-Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a [detailed component API reference here](https://reactjs.org/docs/react-component.html).
-================================================================================================================================================================================================================================================================================
+# Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a [detailed component API reference here](https://reactjs.org/docs/react-component.html).
 
 Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
 
-Function and Class Components
-=============================
+# Function and Class Components
 
 The simplest way to define a component is to write a JavaScript function:
 
@@ -743,8 +703,7 @@ The above two components are equivalent from React's point of view.
 
 Function and Class components both have some additional features that we will discuss in the [next sections](https://reactjs.org/docs/state-and-lifecycle.html).
 
-Rendering a Component
-=====================
+# Rendering a Component
 
 Previously, we only encountered React elements that represent DOM tags:
 
@@ -788,8 +747,7 @@ Let's recap what happens in this example:
 
 > Note: Always start component names with a capital letter.React treats components starting with lowercase letters as DOM tags. For example, <div /> represents an HTML div tag, but <Welcome /> represents a component and requires Welcome to be in [scope.To](http://scope.To) learn more about the reasoning behind this convention, please read JSX In Depth.
 
-Composing Components
-====================
+# Composing Components
 
 Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.
 
@@ -818,8 +776,7 @@ ReactDOM.render(
 
 Typically, new React apps have a single `App` component at the very top. However, if you integrate React into an existing app, you might start bottom-up with a small component like `Button` and gradually work your way to the top of the view hierarchy.
 
-Extracting Components
-=====================
+# Extracting Components
 
 Don't be afraid to split components into smaller components.
 
@@ -903,8 +860,7 @@ function Comment(props) {
 
 Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times (`Button`, `Panel`, `Avatar`), or is complex enough on its own (`App`, `FeedStory`, `Comment`), it is a good candidate to be extracted to a separate component.
 
-Props are Read-Only
-===================
+# Props are Read-Only
 
 Whether you declare a component [as a function or a class](https://reactjs.org/docs/components-and-props.html#function-and-class-components), it must never modify its own props. Consider this `sum` function:
 
@@ -932,11 +888,9 @@ React is pretty flexible but it has a single strict rule:
 
 Of course, application UIs are dynamic and change over time. In the [next section](https://reactjs.org/docs/state-and-lifecycle.html), we will introduce a new concept of "state". State allows React components to change their output over time in response to user actions, network responses, and anything else, without violating this rule.
 
-**State and Lifecycle**
-=======================
+# **State and Lifecycle**
 
-This page introduces the concept of state and lifecycle in a React component. You can find a [detailed component API reference here](https://reactjs.org/docs/react-component.html).
-====================================================================================================================================================================================
+# This page introduces the concept of state and lifecycle in a React component. You can find a [detailed component API reference here](https://reactjs.org/docs/react-component.html).
 
 Consider the ticking clock example from [one of the previous sections](https://reactjs.org/docs/rendering-elements.html#updating-the-rendered-element). In [Rendering Elements](https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom), we have only learned one way to update the UI. We call `ReactDOM.render()` to change the rendered output:
 
@@ -991,8 +945,7 @@ To implement this, we need to add "state" to the `Clock` component.
 
 State is similar to props, but it is private and fully controlled by the component.
 
-Converting a Function to a Class
-================================
+# Converting a Function to a Class
 
 You can convert a function component like `Clock` to a class in five steps:
 
@@ -1023,8 +976,7 @@ class Clock extends React.Component {
 
 The `render` method will be called each time an update happens, but as long as we render `<Clock />` into the same DOM node, only a single instance of the `Clock` class will be used. This lets us use additional features such as local state and lifecycle methods.
 
-Adding Local State to a Class
-=============================
+# Adding Local State to a Class
 
 We will move the `date` from props to state in three steps:
 
@@ -1100,8 +1052,7 @@ ReactDOM.render(
 
 Next, we'll make the `Clock` set up its own timer and update itself every second.
 
-Adding Lifecycle Methods to a Class
-===================================
+# Adding Lifecycle Methods to a Class
 
 In applications with many components, it's very important to free up resources taken by the components when they are destroyed.
 
@@ -1195,13 +1146,11 @@ Let's quickly recap what's going on and the order in which the methods are calle
 4.  Every second the browser calls the `tick()` method. Inside it, the `Clock` component schedules a UI update by calling `setState()` with an object containing the current time. Thanks to the `setState()` call, React knows the state has changed, and calls the `render()` method again to learn what should be on the screen. This time, `this.state.date` in the `render()` method will be different, and so the render output will include the updated time. React updates the DOM accordingly.
 5.  If the `Clock` component is ever removed from the DOM, React calls the `componentWillUnmount()` lifecycle method so the timer is stopped.
 
-Using State Correctly
-=====================
+# Using State Correctly
 
 There are three things you should know about `setState()`.
 
-Do Not Modify State Directly
-============================
+# Do Not Modify State Directly
 
 For example, this will not re-render a component:
 
@@ -1221,8 +1170,7 @@ this.setState({comment: 'Hello'});
 
 The only place where you can assign `this.state` is the constructor.
 
-State Updates May Be Asynchronous
-=================================
+# State Updates May Be Asynchronous
 
 React may batch multiple `setState()` calls into a single update for performance.
 
@@ -1260,8 +1208,7 @@ this.setState(function(state, props) {
 
 ```
 
-State Updates are Merged
-========================
+# State Updates are Merged
 
 When you call `setState()`, React merges the object you provide into the current state.
 
@@ -1295,8 +1242,7 @@ Then you can update them independently with separate `setState()` calls:
 
 The merging is shallow, so `this.setState({comments})` leaves `this.state.posts` intact, but completely replaces `this.state.comments`.
 
-The Data Flows Down
-===================
+# The Data Flows Down
 
 Neither parent nor child components can know if a certain component is stateful or stateless, and they shouldn't care whether it is defined as a function or a class.
 
@@ -1349,14 +1295,12 @@ Each `Clock` sets up its own timer and updates independently.
 
 In React apps, whether a component is stateful or stateless is considered an implementation detail of the component that may change over time. You can use stateless components inside stateful components, and vice versa.
 
-**Handling Events**
-===================
+# **Handling Events**
 
-Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
-==========================================================================================================================
+# Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
 
--   React events are named using camelCase, rather than lowercase.
--   With JSX you pass a function as the event handler, rather than a string.
+- React events are named using camelCase, rather than lowercase.
+- With JSX you pass a function as the event handler, rather than a string.
 
 For example, the HTML:
 
@@ -1463,8 +1407,7 @@ class LoggingButton extends React.Component {
 
 The problem with this syntax is that a different callback is created each time the `LoggingButton` renders. In most cases, this is fine. However, if this callback is passed as a prop to lower components, those components might do an extra re-rendering. We generally recommend binding in the constructor or using the class fields syntax, to avoid this sort of performance problem.
 
-Passing Arguments to Event Handlers
-===================================
+# Passing Arguments to Event Handlers
 
 Inside a loop, it is common to want to pass an extra parameter to an event handler. For example, if `id` is the row ID, either of the following would work:
 
@@ -1474,11 +1417,9 @@ The above two lines are equivalent, and use [arrow functions](https://developer.
 
 In both cases, the `e` argument representing the React event will be passed as a second argument after the ID. With an arrow function, we have to pass it explicitly, but with `bind` any further arguments are automatically forwarded.
 
-**Conditional Rendering**
-=========================
+# **Conditional Rendering**
 
-In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
-====================================================================================================================================================================
+# In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
 
 Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like `[if](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else>)` or the [conditional operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to create elements representing the current state, and let React update the UI to match them.
 
@@ -1513,8 +1454,7 @@ ReactDOM.render(
 
 This example renders a different greeting depending on the value of `isLoggedIn` prop.
 
-Element Variables
-=================
+# Element Variables
 
 You can use variables to store elements. This can help you conditionally render a part of the component while the rest of the output doesn't change.
 
@@ -1577,8 +1517,7 @@ ReactDOM.render(
 
 While declaring a variable and using an `if` statement is a fine way to conditionally render a component, sometimes you might want to use a shorter syntax. There are a few ways to inline conditions in JSX, explained below.
 
-Inline If with Logical && Operator
-==================================
+# Inline If with Logical && Operator
 
 You may [embed expressions in JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) by wrapping them in curly braces. This includes the JavaScript logical `&&` operator. It can be handy for conditionally including an element:
 
@@ -1615,8 +1554,7 @@ render() {
 
 ```
 
-Inline If-Else with Conditional Operator
-========================================
+# Inline If-Else with Conditional Operator
 
 Another method for conditionally rendering elements inline is to use the JavaScript conditional operator `[condition ? true : false](<https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator>)`.
 
@@ -1645,8 +1583,7 @@ render() {
 
 Just like in JavaScript, it is up to you to choose an appropriate style based on what you and your team consider more readable. Also remember that whenever conditions become too complex, it might be a good time to [extract a component](https://reactjs.org/docs/components-and-props.html#extracting-components).
 
-Preventing Component from Rendering
-===================================
+# Preventing Component from Rendering
 
 In rare cases you might want a component to hide itself even though it was rendered by another component. To do this return `null` instead of its render output.
 
@@ -1690,11 +1627,9 @@ ReactDOM.render(
 
 Returning `null` from a component's `render` method does not affect the firing of the component's lifecycle methods. For instance `componentDidUpdate` will still be called.
 
-**Lists and Keys**
-==================
+# **Lists and Keys**
 
-First, let's review how you transform lists in JavaScript.
-==========================================================
+# First, let's review how you transform lists in JavaScript.
 
 Given the code below, we use the `[map()](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map>)` function to take an array of `numbers` and double their values. We assign the new array returned by `map()` to the variable `doubled` and log it:
 
@@ -1708,8 +1643,7 @@ This code logs `[2, 4, 6, 8, 10]` to the console.
 
 In React, transforming arrays into lists of [elements](https://reactjs.org/docs/rendering-elements.html) is nearly identical.
 
-Rendering Multiple Components
-=============================
+# Rendering Multiple Components
 
 You can build collections of elements and [include them in JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) using curly braces `{}`.
 
@@ -1736,8 +1670,7 @@ ReactDOM.render(
 
 This code displays a bullet list of numbers between 1 and 5.
 
-Basic List Component
-====================
+# Basic List Component
 
 Usually you would render lists inside a [component](https://reactjs.org/docs/components-and-props.html).
 
@@ -1783,8 +1716,7 @@ ReactDOM.render(
 
 [](https://codepen.io/bgoonz/pen/yLXyMMP?editors=0011)<https://codepen.io/bgoonz/pen/yLXyMMP?editors=0011>
 
-Keys
-====
+# Keys
 
 Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity:
 
@@ -1818,8 +1750,7 @@ We don't recommend using indexes for keys if the order of items may change. This
 
 Here is an [in-depth explanation about why keys are necessary](https://reactjs.org/docs/reconciliation.html#recursing-on-children) if you're interested in learning more.
 
-Extracting Components with Keys
-===============================
+# Extracting Components with Keys
 
 Keys only make sense in the context of the surrounding array.
 
@@ -1879,8 +1810,7 @@ ReactDOM.render(
 
 A good rule of thumb is that elements inside the `map()` call need keys.
 
-Keys Must Only Be Unique Among Siblings
-=======================================
+# Keys Must Only Be Unique Among Siblings
 
 Keys used within arrays should be unique among their siblings. However, they don't need to be globally unique. We can use the same keys when we produce two different arrays:
 
@@ -1920,8 +1850,7 @@ const content = posts.map((post) =>
 
 With the example above, the `Post` component can read `props.id`, but not `props.key`.
 
-Embedding map() in JSX
-======================
+# Embedding map() in JSX
 
 In the examples above we declared a separate `listItems` variable and included it in JSX:
 
@@ -1952,11 +1881,9 @@ function NumberList(props) {
 
 Sometimes this results in clearer code, but this style can also be abused. Like in JavaScript, it is up to you to decide whether it is worth extracting a variable for readability. Keep in mind that if the `map()` body is too nested, it might be a good time to [extract a component](https://reactjs.org/docs/components-and-props.html#extracting-components).
 
-**Forms**
-=========
+# **Forms**
 
-HTML form elements work a bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
-=================================================================================================================================================================================================
+# HTML form elements work a bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
 
 ```
 <form><label>
@@ -1967,8 +1894,7 @@ HTML form elements work a bit differently from other DOM elements in React, beca
 
 This form has the default HTML form behavior of browsing to a new page when the user submits the form. If you want this behavior in React, it just works. But in most cases, it's convenient to have a JavaScript function that handles the submission of the form and has access to the data that the user entered into the form. The standard way to achieve this is with a technique called "controlled components".
 
-Controlled Components
-=====================
+# Controlled Components
 
 In HTML, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with `[setState()](<https://reactjs.org/docs/react-component.html#setstate>)`.
 
@@ -2006,8 +1932,7 @@ Since the `value` attribute is set on our form element, the displayed value will
 
 With a controlled component, the input's value is always driven by the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.
 
-The textarea Tag
-================
+# The textarea Tag
 
 In HTML, a `<textarea>` element defines its text by its children:
 
@@ -2044,8 +1969,7 @@ class EssayForm extends React.Component {
 
 Notice that `this.state.value` is initialized in the constructor, so that the text area starts off with some text in it.
 
-The select Tag
-==============
+# The select Tag
 
 In HTML, `<select>` creates a drop-down list. For example, this HTML creates a drop-down list of flavors:
 
@@ -2081,8 +2005,7 @@ Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select
 
 > NoteYou can pass an array into the value attribute, allowing you to select multiple options in a select tag:<select multiple={true} value={['B', 'C']}>
 
-The file input Tag
-==================
+# The file input Tag
 
 In HTML, an `<input type="file">` lets the user choose one or more files from their device storage to be uploaded to a server or manipulated by JavaScript via the [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications).
 
@@ -2090,8 +2013,7 @@ In HTML, an `<input type="file">` lets the user choose one or more files from th
 
 Because its value is read-only, it is an **uncontrolled** component in React. It is discussed together with other uncontrolled components [later in the documentation](https://reactjs.org/docs/uncontrolled-components.html#the-file-input-tag).
 
-Handling Multiple Inputs
-========================
+# Handling Multiple Inputs
 
 When you need to handle multiple controlled `input` elements, you can add a `name` attribute to each element and let the handler function choose what to do based on the value of `event.target.name`.
 
@@ -2148,8 +2070,7 @@ partialState[name] = value;this.setState(partialState);
 
 Also, since `setState()` automatically [merges a partial state into the current state](https://reactjs.org/docs/state-and-lifecycle.html#state-updates-are-merged), we only needed to call it with the changed parts.
 
-Controlled Input Null Value
-===========================
+# Controlled Input Null Value
 
 Specifying the value prop on a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) prevents the user from changing the input unless you desire so. If you've specified a `value` but the input is still editable, you may have accidentally set `value` to `undefined` or `null`.
 
@@ -2164,21 +2085,17 @@ setTimeout(function() {
 
 ```
 
-Alternatives to Controlled Components
-=====================================
+# Alternatives to Controlled Components
 
 It can sometimes be tedious to use controlled components, because you need to write an event handler for every way your data can change and pipe all of the input state through a React component. This can become particularly annoying when you are converting a preexisting codebase to React, or integrating a React application with a non-React library. In these situations, you might want to check out [uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html), an alternative technique for implementing input forms.
 
-Fully-Fledged Solutions
-=======================
+# Fully-Fledged Solutions
 
 If you're looking for a complete solution including validation, keeping track of the visited fields, and handling form submission, [Formik](https://jaredpalmer.com/formik) is one of the popular choices. However, it is built on the same principles of controlled components and managing state --- so don't neglect to learn them.
 
-**Lifting State Up**
-====================
+# **Lifting State Up**
 
-Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor. Let's see how this works in action.
-================================================================================================================================================================================
+# Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor. Let's see how this works in action.
 
 In this section, we will create a temperature calculator that calculates whether the water would boil at a given temperature.
 
@@ -2218,8 +2135,7 @@ class Calculator extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010)<https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010>
 
-Adding a Second Input
-=====================
+# Adding a Second Input
 
 Our new requirement is that, in addition to a Celsius input, we provide a Fahrenheit input, and they are kept in sync.
 
@@ -2266,8 +2182,7 @@ We have two inputs now, but when you enter the temperature in one of them, the o
 
 We also can't display the `BoilingVerdict` from `Calculator`. The `Calculator` doesn't know the current temperature because it is hidden inside the `TemperatureInput`.
 
-Writing Conversion Functions
-============================
+# Writing Conversion Functions
 
 First, we will write two functions to convert from Celsius to Fahrenheit and back:
 
@@ -2301,8 +2216,7 @@ function tryConvert(temperature, convert) {
 
 For example, `tryConvert('abc', toCelsius)` returns an empty string, and `tryConvert('10.22', toFahrenheit)` returns `'50.396'`.
 
-Lifting State Up
-================
+# Lifting State Up
 
 Currently, both `TemperatureInput` components independently keep their values in the local state:
 
@@ -2432,19 +2346,18 @@ Now, no matter which input you edit, `this.state.temperature` and `this.state.sc
 
 Let's recap what happens when you edit an input:
 
--   React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
--   The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
--   When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
--   Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
--   React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
--   React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
--   React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
--   React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
+- React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
+- The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
+- When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
+- Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
+- React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
+- React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
+- React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
+- React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
 
 Every update goes through the same steps so the inputs stay in sync.
 
-Lessons Learned
-===============
+# Lessons Learned
 
 There should be a single "source of truth" for any data that changes in a React application. Usually, the state is first added to the component that needs it for rendering. Then, if other components also need it, you can lift it up to their closest common ancestor. Instead of trying to sync the state between different components, you should rely on the [top-down data flow](https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down).
 
@@ -2456,16 +2369,13 @@ When you see something wrong in the UI, you can use [React Developer Tools](http
 
 ![https://reactjs.org/ef94afc3447d75cdc245c77efb0d63be/react-devtools-state.gif](https://reactjs.org/ef94afc3447d75cdc245c77efb0d63be/react-devtools-state.gif)
 
-**Composition vs Inheritance**
-==============================
+# **Composition vs Inheritance**
 
-React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.
-===================================================================================================================================
+# React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.
 
 In this section, we will consider a few problems where developers new to React often reach for inheritance, and show how we can solve them with composition.
 
-Containment
-===========
+# Containment
 
 Some components don't know their children ahead of time. This is especially common for components like `Sidebar` or `Dialog` that represent generic "boxes".
 
@@ -2514,8 +2424,7 @@ function App() {
 
 React elements like `<Contacts />` and `<Chat />` are just objects, so you can pass them as props like any other data. This approach may remind you of "slots" in other libraries but there are no limitations on what you can pass as props in React.
 
-Specialization
-==============
+# Specialization
 
 Sometimes we think about components as being "special cases" of other components. For example, we might say that a `WelcomeDialog` is a special case of `Dialog`.
 
@@ -2572,8 +2481,7 @@ class SignUpDialog extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/gwZbYa?editors=0010)**
 
-So What About Inheritance?
-==========================
+# So What About Inheritance?
 
 At Facebook, we use React in thousands of components, and we haven't found any use cases where we would recommend creating component inheritance hierarchies.
 
@@ -2581,16 +2489,13 @@ Props and composition give you all the flexibility you need to customize a compo
 
 If you want to reuse non-UI functionality between components, we suggest extracting it into a separate JavaScript module. The components may import it and use that function, object, or a class, without extending it.
 
-**Thinking in React**
-=====================
+# **Thinking in React**
 
-React is, in our opinion, the premier way to build big, fast Web apps with JavaScript. It has scaled very well for us at Facebook and Instagram.
-================================================================================================================================================
+# React is, in our opinion, the premier way to build big, fast Web apps with JavaScript. It has scaled very well for us at Facebook and Instagram.
 
 One of the many great parts of React is how it makes you think about apps as you build them. In this document, we'll walk you through the thought process of building a searchable product data table using React.
 
-Start With A Mock
-=================
+# Start With A Mock
 
 Imagine that we already have a JSON API and a mock from our designer. The mock looks like this:
 
@@ -2610,68 +2515,64 @@ Our JSON API returns some data that looks like this:
 
 ```
 
-Step 1: Break The UI Into A Component Hierarchy
-===============================================
+# Step 1: Break The UI Into A Component Hierarchy
 
 The first thing you'll want to do is to draw boxes around every component (and subcomponent) in the mock and give them all names. If you're working with a designer, they may have already done this, so go talk to them! Their Photoshop layer names may end up being the names of your React components!
 
 But how do you know what should be its own component? Use the same techniques for deciding if you should create a new function or object. One such technique is the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), that is, a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents.
 
-Since you're often displaying a JSON data model to a user, you'll find that if your model was built correctly, your UI (and therefore your component structure) will map nicely. That's because UI and data models tend to adhere to the same *information architecture*. Separate your UI into components, where each component matches one piece of your data model.
+Since you're often displaying a JSON data model to a user, you'll find that if your model was built correctly, your UI (and therefore your component structure) will map nicely. That's because UI and data models tend to adhere to the same _information architecture_. Separate your UI into components, where each component matches one piece of your data model.
 
 ![https://reactjs.org/static/eb8bda25806a89ebdc838813bdfa3601/6b2ea/thinking-in-react-components.png](https://reactjs.org/static/eb8bda25806a89ebdc838813bdfa3601/6b2ea/thinking-in-react-components.png)
 
 You'll see here that we have five components in our app. We've italicized the data each component represents.
 
 1.  **`FilterableProductTable` (orange):** contains the entirety of the example
-2.  **`SearchBar` (blue):** receives all *user input*
-3.  **`ProductTable` (green):** displays and filters the *data collection* based on *user input*
-4.  **`ProductCategoryRow` (turquoise):** displays a heading for each *category*
-5.  **`ProductRow` (red):** displays a row for each *product*
+2.  **`SearchBar` (blue):** receives all _user input_
+3.  **`ProductTable` (green):** displays and filters the _data collection_ based on _user input_
+4.  **`ProductCategoryRow` (turquoise):** displays a heading for each _category_
+5.  **`ProductRow` (red):** displays a row for each _product_
 
-If you look at `ProductTable`, you'll see that the table header (containing the "Name" and "Price" labels) isn't its own component. This is a matter of preference, and there's an argument to be made either way. For this example, we left it as part of `ProductTable` because it is part of rendering the *data collection* which is `ProductTable`'s responsibility. However, if this header grows to be complex (e.g., if we were to add affordances for sorting), it would certainly make sense to make this its own `ProductTableHeader` component.
+If you look at `ProductTable`, you'll see that the table header (containing the "Name" and "Price" labels) isn't its own component. This is a matter of preference, and there's an argument to be made either way. For this example, we left it as part of `ProductTable` because it is part of rendering the _data collection_ which is `ProductTable`'s responsibility. However, if this header grows to be complex (e.g., if we were to add affordances for sorting), it would certainly make sense to make this its own `ProductTableHeader` component.
 
 Now that we've identified the components in our mock, let's arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
--   `FilterableProductTable`
-    -   `SearchBar`
-    -   `ProductTable`
-        -   `ProductCategoryRow`
-        -   `ProductRow`
+- `FilterableProductTable`
+  - `SearchBar`
+  - `ProductTable`
+    - `ProductCategoryRow`
+    - `ProductRow`
 
-Step 2: Build A Static Version in React
-=======================================
+# Step 2: Build A Static Version in React
 
 See the Pen [Thinking In React: Step 2](https://codepen.io/gaearon/pen/BwWzwm) on [CodePen](https://codepen.io/).
 
 Now that you have your component hierarchy, it's time to implement your app. The easiest way is to build a version that takes your data model and renders the UI but has no interactivity. It's best to decouple these processes because building a static version requires a lot of typing and no thinking, and adding interactivity requires a lot of thinking and not a lot of typing. We'll see why.
 
-To build a static version of your app that renders your data model, you'll want to build components that reuse other components and pass data using *props*. *props* are a way of passing data from parent to child. If you're familiar with the concept of *state*, **don't use state at all** to build this static version. State is reserved only for interactivity, that is, data that changes over time. Since this is a static version of the app, you don't need it.
+To build a static version of your app that renders your data model, you'll want to build components that reuse other components and pass data using _props_. _props_ are a way of passing data from parent to child. If you're familiar with the concept of _state_, **don't use state at all** to build this static version. State is reserved only for interactivity, that is, data that changes over time. Since this is a static version of the app, you don't need it.
 
 You can build top-down or bottom-up. That is, you can either start with building the components higher up in the hierarchy (i.e. starting with `FilterableProductTable`) or with the ones lower in it (`ProductRow`). In simpler examples, it's usually easier to go top-down, and on larger projects, it's easier to go bottom-up and write tests as you build.
 
-At the end of this step, you'll have a library of reusable components that render your data model. The components will only have `render()` methods since this is a static version of your app. The component at the top of the hierarchy (`FilterableProductTable`) will take your data model as a prop. If you make a change to your underlying data model and call `ReactDOM.render()` again, the UI will be updated. You can see how your UI is updated and where to make changes. React's **one-way data flow** (also called *one-way binding*) keeps everything modular and fast.
+At the end of this step, you'll have a library of reusable components that render your data model. The components will only have `render()` methods since this is a static version of your app. The component at the top of the hierarchy (`FilterableProductTable`) will take your data model as a prop. If you make a change to your underlying data model and call `ReactDOM.render()` again, the UI will be updated. You can see how your UI is updated and where to make changes. React's **one-way data flow** (also called _one-way binding_) keeps everything modular and fast.
 
 Refer to the [React docs](https://reactjs.org/docs/) if you need help executing this step.
 
-A Brief Interlude: Props vs State
-=================================
+# A Brief Interlude: Props vs State
 
 There are two types of "model" data in React: props and state. It's important to understand the distinction between the two; skim [the official React docs](https://reactjs.org/docs/state-and-lifecycle.html) if you aren't sure what the difference is. See also [FAQ: What is the difference between state and props?](https://reactjs.org/docs/faq-state.html#what-is-the-difference-between-state-and-props)
 
-Step 3: Identify The Minimal (but complete) Representation Of UI State
-======================================================================
+# Step 3: Identify The Minimal (but complete) Representation Of UI State
 
 To make your UI interactive, you need to be able to trigger changes to your underlying data model. React achieves this with **state**.
 
-To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is [DRY: *Don't Repeat Yourself*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else you need on-demand. For example, if you're building a TODO list, keep an array of the TODO items around; don't keep a separate state variable for the count. Instead, when you want to render the TODO count, take the length of the TODO items array.
+To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is [DRY: _Don't Repeat Yourself_](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else you need on-demand. For example, if you're building a TODO list, keep an array of the TODO items around; don't keep a separate state variable for the count. Instead, when you want to render the TODO count, take the length of the TODO items array.
 
 Think of all the pieces of data in our example application. We have:
 
--   The original list of products
--   The search text the user has entered
--   The value of the checkbox
--   The filtered list of products
+- The original list of products
+- The search text the user has entered
+- The value of the checkbox
+- The filtered list of products
 
 Let's go through each one and figure out which one is state. Ask three questions about each piece of data:
 
@@ -2683,37 +2584,35 @@ The original list of products is passed in as props, so that's not state. The se
 
 So finally, our state is:
 
--   The search text the user has entered
--   The value of the checkbox
+- The search text the user has entered
+- The value of the checkbox
 
-Step 4: Identify Where Your State Should Live
-=============================================
+# Step 4: Identify Where Your State Should Live
 
 See the Pen [Thinking In React: Step 4](https://codepen.io/gaearon/pen/qPrNQZ) on [CodePen](https://codepen.io/).
 
-OK, so we've identified what the minimal set of app state is. Next, we need to identify which component mutates, or *owns*, this state.
+OK, so we've identified what the minimal set of app state is. Next, we need to identify which component mutates, or _owns_, this state.
 
 Remember: React is all about one-way data flow down the component hierarchy. It may not be immediately clear which component should own what state. **This is often the most challenging part for newcomers to understand,** so follow these steps to figure it out:
 
 For each piece of state in your application:
 
--   Identify every component that renders something based on that state.
--   Find a common owner component (a single component above all the components that need the state in the hierarchy).
--   Either the common owner or another component higher up in the hierarchy should own the state.
--   If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+- Identify every component that renders something based on that state.
+- Find a common owner component (a single component above all the components that need the state in the hierarchy).
+- Either the common owner or another component higher up in the hierarchy should own the state.
+- If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Let's run through this strategy for our application:
 
--   `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
--   The common owner component is `FilterableProductTable`.
--   It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
+- `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
+- The common owner component is `FilterableProductTable`.
+- It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
 
 Cool, so we've decided that our state lives in `FilterableProductTable`. First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable`'s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar`.
 
 You can start seeing how your application will behave: set `filterText` to `"ball"` and refresh your app. You'll see that the data table is updated correctly.
 
-Step 5: Add Inverse Data Flow
-=============================
+# Step 5: Add Inverse Data Flow
 
 See the Pen [Thinking In React: Step 5](https://codepen.io/gaearon/pen/LzWZvb) on [CodePen](https://codepen.io/).
 
@@ -2725,13 +2624,10 @@ If you try to type or check the box in the current version of the example, you'l
 
 Let's think about what we want to happen. We want to make sure that whenever the user changes the form, we update the state to reflect the user input. Since components should only update their own state, `FilterableProductTable` will pass callbacks to `SearchBar` that will fire whenever the state should be updated. We can use the `onChange` event on the inputs to be notified of it. The callbacks passed by `FilterableProductTable` will call `setState()`, and the app will be updated.
 
-And That's It
-=============
+# And That's It
 
 Hopefully, this gives you an idea of how to think about building components and applications with React. While it may be a little more typing than you're used to, remember that code is read far more than it's written, and it's less difficult to read this modular, explicit code. As you start to build large libraries of components, you'll appreciate this explicitness and modularity, and with code reuse, your lines of code will start to shrink. :)
 
 [Advanced Content](https://www.notion.so/Advanced-Content-fbe1ec3ca3544951b5763b051b843949)
 
 [React Component](https://www.notion.so/React-Component-3dc17bc49a8e4d7e89efcc1281e747d9)
-
-

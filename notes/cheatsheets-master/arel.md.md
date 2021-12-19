@@ -32,25 +32,31 @@ users.project(users[:id])
 ```
 
 ### `join`
+
 #### basic join
+
 In ActiveRecord (without Arel), if `:photos` is the name of the association, use `joins`
+
 ```rb
 users.joins(:photos)
 ```
 
 In Arel, if `photos` is defined as the Arel table,
+
 ```rb
 photos = Photo.arel_table
-users.join(photos) 
+users.join(photos)
 users.join(photos, Arel::Nodes::OuterJoin).on(users[:id].eq(photos[:user_id]))
 ```
 
 #### join with conditions
+
 ```rb
 users.joins(:photos).merge(Photo.where(published: true))
 ```
 
 If the simpler version doesn't help and you want to add more SQL statements to it:
+
 ```rb
 users.join(
    users.join(photos, Arel::Nodes::OuterJoin)
@@ -59,7 +65,9 @@ users.join(
 ```
 
 #### advanced join
+
 multiple `joins` with the same table but different meanings and/or conditions
+
 ```rb
 creators = User.arel_table.alias('creators')
 updaters = User.arel_table.alias('updaters')
@@ -113,11 +121,13 @@ User.where(id: 1).arel
 ### Clean code with arel
 
 Most of the clever stuff should be in scopes, e.g. the code above could become:
+
 ```rb
 photos_with_credits = Photo.with_creator.with_editor
 ```
 
 You can store requests in variables then add SQL segments:
+
 ```rb
 all_time      = photos_with_credits.count
 this_month    = photos_with_credits.where(photos[:created_at].gteq(Date.today.beginning_of_month))
@@ -126,4 +136,4 @@ recent_photos = photos_with_credits.where(photos[:created_at].gteq(Date.today.be
 
 ## Reference
 
-* <http://github.com/rails/arel>
+- <http://github.com/rails/arel>

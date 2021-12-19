@@ -37,4 +37,3 @@ category: Vim
     if version < 704
       echom "requires vim >= 7.4"
     endif
-

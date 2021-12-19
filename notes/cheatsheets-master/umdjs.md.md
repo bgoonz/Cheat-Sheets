@@ -5,58 +5,52 @@ category: JavaScript libraries
 
 ### [With dependency](https://github.com/umdjs/umd/blob/master/amdWebGlobal.js)
 
-~~~ js
-;(function (root, factory) {
-
-  if (typeof define === 'function' && define.amd) {
-    define(['jquery'], factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory(require('jquery'));
+```js
+(function (root, factory) {
+  if (typeof define === "function" && define.amd) {
+    define(["jquery"], factory);
+  } else if (typeof exports === "object") {
+    module.exports = factory(require("jquery"));
   } else {
     root.YourModule = factory(root.jQuery);
   }
-
-}(this, function (jquery) {
+})(this, function (jquery) {
   return {};
-}));
-~~~
+});
+```
 
 ### No dependencies
 
-~~~ js
-;(function (root, factory) {
-
-  if (typeof define === 'function' && define.amd) {
+```js
+(function (root, factory) {
+  if (typeof define === "function" && define.amd) {
     define(factory);
-  } else if (typeof exports === 'object') {
+  } else if (typeof exports === "object") {
     module.exports = factory();
   } else {
     root.YourModule = factory();
   }
-
-}(this, function () {
+})(this, function () {
   return {};
-}));
-~~~
+});
+```
 
 ### [Supports circular references](https://github.com/umdjs/umd/blob/master/commonjsStrict.js)
 
-~~~ js
+```js
 (function (root, factory) {
-
-  if (typeof define === 'function' && define.amd) {
-    define(['exports', 'jquery'], factory);
-  } else if (typeof exports === 'object') {
-    factory(exports, require('jquery'));
+  if (typeof define === "function" && define.amd) {
+    define(["exports", "jquery"], factory);
+  } else if (typeof exports === "object") {
+    factory(exports, require("jquery"));
   } else {
     factory((root.YourModule = {}), root.jQuery);
   }
-
-}(this, function (exports, jQuery) {
+})(this, function (exports, jQuery) {
   exports.action = function () {};
-}));
-~~~
+});
+```
 
 ### Reference
 
- * https://github.com/umdjs/umd
+- https://github.com/umdjs/umd

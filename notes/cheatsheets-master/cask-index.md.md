@@ -2,9 +2,7 @@
 title: Caskroom index
 ---
 
-
 # Caskroom
-
 
 #### A
 
@@ -1946,4 +1944,3 @@ title: Caskroom index
 - [zooom](http://coderage-software.com/zooom)
 - [zotero](http://www.zotero.org/)
 - [zterm](http://www.dalverson.com/zterm/)
-

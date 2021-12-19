@@ -13,7 +13,9 @@ intro: |
 ```css
 nav>ul>li
 ```
+
 Expands to
+
 ```html
 <nav>
   <ul>
@@ -22,13 +24,14 @@ Expands to
 </nav>
 ```
 
-
 ### Sibling: +
 
 ```css
 section>p+p+p
 ```
+
 Expands to
+
 ```html
 <section>
   <p></p>
@@ -42,7 +45,9 @@ Expands to
 ```css
 section>header>h1^footer
 ```
+
 Expands to
+
 ```html
 <section>
   <header>
@@ -57,7 +62,9 @@ Expands to
 ```css
 section>(header>nav>ul>li)+footer>p
 ```
+
 Expands to
+
 ```html
 <section>
   <header>
@@ -78,7 +85,9 @@ Expands to
 ```css
 ul>li*3
 ```
+
 Expands to
+
 ```html
 <ul>
   <li></li>
@@ -87,12 +96,14 @@ Expands to
 </ul>
 ```
 
-### IDs and Classes: . #
+### IDs and Classes: .
 
 ```css
 ul.menu>li.menu__item+li#id_item+li.menu__item#id_2
 ```
+
 Expands to
+
 ```html
 <ul class="menu">
   <li class="menu__item"></li>
@@ -109,7 +120,9 @@ ul>li.item$$*3
 ul>li.item$@-*3
 ul>li.item$@3*5
 ```
+
 Expands to
+
 ```html
 <ul>
   <li class="item1"></li>
@@ -146,7 +159,9 @@ Expands to
 input[type="text"]
 div[data-attr="test"]
 ```
+
 Expands to
+
 ```html
 <input type="text" />
 <div data-attr="test"></div>
@@ -157,7 +172,9 @@ Expands to
 ```css
 p{Lorem ipsum}
 ```
+
 Expands to
+
 ```html
 <p>Lorem ipsum</p>
 ```
@@ -166,11 +183,17 @@ Expands to
 
 ```css
 .default-block
-em>.default-inline
-ul>.default-list
-table>.default-table-row>.default-table-column
+  em
+  > .default-inline
+  ul
+  > .default-list
+  table
+  > .default-table-row
+  > .default-table-column;
 ```
+
 Expands to
+
 ```html
 <div class="default-block"></div>
 <em><span class="default-inline"></span></em>

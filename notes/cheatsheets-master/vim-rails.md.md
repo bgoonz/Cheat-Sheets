@@ -4,27 +4,25 @@ category: Vim
 html_class: key-codes
 ---
 
-Alternate files
----------------
+## Alternate files
 
-| `:A` |  alternate file (test)          |
-| `:R` |  related file (controller/view) |
+| `:A` | alternate file (test) |
+| `:R` | related file (controller/view) |
 
 ### What it does
 
 | .                     | :A                | :R              |
-| ----                  | ---               | ---             |
+| --------------------- | ----------------- | --------------- |
 | **Model**             | test/models/      | db/schema.rb    |
 | **Controller method** | test/controllers/ | app/views/      |
 | **View template**     | test/views/       | app/controllers |
 
-Abbreviations
--------------
+## Abbreviations
 
 Type `:Rabbrev` for a full list.
 
 | Abbrev  | Expansion        |
-| ---     | ---              |
+| ------- | ---------------- |
 | `AC::`  | ActionController |
 | `AR::`  | ActiveRecord     |
 | `AV::`  | ActionView       |
@@ -33,38 +31,41 @@ Type `:Rabbrev` for a full list.
 | `logd(` | logger.debug     |
 | `logi(` | logger.info      |
 | `...`   | ...              |
+
 {:.no-head.greycode}
 
 ### Model
 
 | Abbrev   | Expansion                 |
-| ---      | ---                       |
+| -------- | ------------------------- |
 | `bt(`    | `belongs_to`              |
 | `hm(`    | `has_many`                |
 | `ho(`    | `has_one`                 |
 | `habtm(` | `has_and_belongs_to_many` |
+
 {:.no-head.greycode}
 
 ### Controllers
 
-| Abbrev  | Expansion        |
-| ---     | ---              |
-| `pa[`   | params           |
-| `re(`   | redirect_to      |
-| `rp(`   | render partial:  |
-| `rst(`  | respond_to       |
+| Abbrev | Expansion       |
+| ------ | --------------- |
+| `pa[`  | params          |
+| `re(`  | redirect_to     |
+| `rp(`  | render partial: |
+| `rst(` | respond_to      |
+
 {:.no-head.greycode}
 
 ### Views
 
 | Abbrev  | Expansion                   |
-| ---     | ---                         |
+| ------- | --------------------------- |
 | `dotiw` | `distance_of_time_in_words` |
 | `taiw`  | `time_ago_in_words`         |
+
 {:.no-head.greycode}
 
-Extracting partials
--------------------
+## Extracting partials
 
 ```rb
 # from view => app/views/home/_foo_partial.haml
@@ -74,8 +75,7 @@ Extracting partials
   :Rextract FooConcern
 ```
 
-Loading files
--------------
+## Loading files
 
 ### App
 
@@ -89,7 +89,7 @@ Loading files
 
     :Emigration <file>     # db/migrations/*.rb
     :Eschema               # db/schema.rb
-    
+
 ### Lib
 
     :Elib <file>      # lib/*.rb
@@ -134,4 +134,4 @@ Loading files
 
 ## Reference
 
- * [vim-rails](https://github.com/tpope/vim-rails)
+- [vim-rails](https://github.com/tpope/vim-rails)

@@ -1,4 +1,4 @@
-window.onGatsbyPreRouteUpdate = function() {
-window.removeMainNavigationHandlers();
-window.removeVideoEmbedsHandlers();
+window.onGatsbyPreRouteUpdate = function () {
+  window.removeMainNavigationHandlers();
+  window.removeVideoEmbedsHandlers();
 };

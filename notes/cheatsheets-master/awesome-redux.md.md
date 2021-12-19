@@ -11,18 +11,18 @@ Create action creators in flux standard action format.
 {: .-setup}
 
 ```js
-increment = createAction('INCREMENT', amount => amount)
-increment = createAction('INCREMENT')  // same
+increment = createAction("INCREMENT", (amount) => amount);
+increment = createAction("INCREMENT"); // same
 ```
 
 ```js
-increment(42) === { type: 'INCREMENT', payload: 42 }
+increment(42) === { type: "INCREMENT", payload: 42 };
 ```
 
 ```js
 // Errors are handled for you:
-err = new Error()
-increment(err) === { type: 'INCREMENT', payload: err, error: true }
+err = new Error();
+increment(err) === { type: "INCREMENT", payload: err, error: true };
 ```
 
 [redux-actions](https://www.npmjs.com/package/redux-actions)
@@ -48,25 +48,26 @@ Dispatch multiple actions in one action creator.
 
 ```js
 store.dispatch([
-  { type: 'INCREMENT', payload: 2 },
-  { type: 'INCREMENT', payload: 3 }
-])
+  { type: "INCREMENT", payload: 2 },
+  { type: "INCREMENT", payload: 3 },
+]);
 ```
 
 [redux-multi](https://github.com/ashaffer/redux-multi)
 {: .-crosslink}
 
 ### reduce-reducers
-Combines reducers (like *combineReducers()*), but without namespacing magic.
+
+Combines reducers (like _combineReducers()_), but without namespacing magic.
 {: .-setup}
 
 ```js
 re = reduceReducers(
   (state, action) => state + action.number,
   (state, action) => state + action.number
-)
+);
 
-re(10, { number: 2 })  //=> 14
+re(10, { number: 2 }); //=> 14
 ```
 
 [reduce-reducers](https://www.npmjs.com/package/reduce-reducers)
@@ -84,8 +85,7 @@ Logs actions to your console.
 [redux-logger](https://github.com/evgenyrodionov/redux-logger)
 {: .-crosslink}
 
-Async
------
+## Async
 
 ### redux-promise
 
@@ -93,8 +93,8 @@ Pass promises to actions. Dispatches a flux-standard-action.
 {: .-setup}
 
 ```js
-increment = createAction('INCREMENT')  // redux-actions
-increment(Promise.resolve(42))
+increment = createAction("INCREMENT"); // redux-actions
+increment(Promise.resolve(42));
 ```
 
 [redux-promise](https://github.com/acdlite/redux-promise)
@@ -102,7 +102,7 @@ increment(Promise.resolve(42))
 
 ### redux-promises
 
-Sorta like that, too. Works by letting you pass *thunks* (functions) to `dispatch()`. Also has 'idle checking'.
+Sorta like that, too. Works by letting you pass _thunks_ (functions) to `dispatch()`. Also has 'idle checking'.
 {: .-setup}
 
 ```js
@@ -118,7 +118,7 @@ store.dispatch(fetchData('/posts'))
 
 ```js
 // That's actually shorthand for:
-fetchData('/posts')(store.dispatch)
+fetchData("/posts")(store.dispatch);
 ```
 
 [redux-promises](https://www.npmjs.com/package/redux-promises)
@@ -163,15 +163,15 @@ store.dispatch(fetchData('/posts'))
 
 ```js
 // That's actually shorthand for:
-fetchData('/posts')(store.dispatch, store.getState)
+fetchData("/posts")(store.dispatch, store.getState);
 ```
 
 ```js
 // Optional: since fetchData returns a promise, it can be chained
 // for server-side rendering
 store.dispatch(fetchPosts()).then(() => {
-  ReactDOMServer.renderToString(<MyApp store={store} />)
-})
+  ReactDOMServer.renderToString(<MyApp store={store} />);
+});
 ```
 
 [redux-thunk](https://www.npmjs.com/package/redux-thunk)

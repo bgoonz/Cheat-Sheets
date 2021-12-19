@@ -1,9 +1,11 @@
 ---
-title: Bash
+title: JavaScript
 excerpt: >-
-  Variables are how programming and scripting languages represent data. A variable is nothing more than a label, a name assigned to a location or set of locations in computer memory holding an item of data.Variables appear in arithmetic operations and manipulation of quantities, and in string parsing.
-date: '2021-11-27'
-thumb_img_path: images/bash.png
+  Variables are how programming and scripting languages represent data. A
+  variable is nothing more than a label, a name assigned to a location or set of
+  locations in computer memory holding an item of data.Variables appear in
+  arithmetic operations and manipulation of quantities, and in string parsing.
+date: '2021-12-17'
 thumb_img_alt: Hikers on the trail
 content_img_path: images/8.jpg
 content_img_alt: Hikers on the trail
@@ -41,82 +43,95 @@ seo:
       relativeUrl: true
 template: post
 subtitle: Cheat Sheet
+thumb_img_path: images/data-structure.jpg
 ---
 
-## My Commands: 
 
+
+## My Commands:
 
 #### Find:
 
-
 # To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG):
-find . -iname "*.jpg"
+
+find . -iname "\*.jpg"
 
 # To find directories:
+
 find . -type d
 
 # To find files:
+
 find . -type f
 
 # To find files by octal permission:
+
 find . -type f -perm 777
 
 # To find files with setuid bit set:
+
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 
 # To find files with extension '.txt' and remove them:
-find ./path/ -name '*.txt' -exec rm '{}' \;
+
+find ./path/ -name '\*.txt' -exec rm '{}' \;
 
 # To find files with extension '.txt' and look for a string into them:
-find ./path/ -name '*.txt' | xargs grep 'string'
+
+find ./path/ -name '\*.txt' | xargs grep 'string'
 
 # To find files with size bigger than 5 Mebibyte and sort them by size:
+
 find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
 
 # To find files bigger than 2 Megabyte and list them:
+
 find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 
 # To find files modified more than 7 days ago and list file information:
+
 find . -type f -mtime +7d -ls
 
 # To find symlinks owned by a user and list file information:
+
 find . -type l -user <username-or-userid> -ls
 
 # To search for and delete empty directories:
+
 find . -type d -empty -exec rmdir {} \;
 
 # To search for directories named build at a max depth of 2 directories:
+
 find . -maxdepth 2 -name build -type d
 
 # To search all files who are not in .git directory:
-find . ! -iwholename '*.git*' -type f
+
+find . ! -iwholename '_.git_' -type f
 
 # To find all files that have the same node (hard link) as MY_FILE_HERE:
+
 find . -type f -samefile MY_FILE_HERE 2>/dev/null
 
 # To find all files in the current directory and modify their permissions:
+
 find . -type f -exec chmod 644 {} \;
 
-
 ---
-
 
 # 1. Remove spaces from file and folder names and then remove numbers from files and folder names....
 
 ### Description: need to : `sudo apt install rename`
 
-
->Notes: Issue when renaming file without numbers collides with existing file name...
-
+> Notes: Issue when renaming file without numbers collides with existing file name...
 
 ###### code:
 
-
 ```sh
-find . -name "* *" -type d | rename 's/ /_/g'   
+find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
-```sh
+
+````sh
 
 ```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -148,21 +163,17 @@ fs.writeFile('output.md', cat, err => {
 });
 
 
-```
-
+````
 
 ---
-# 2. Download Website Using Wget:
 
+# 2. Download Website Using Wget:
 
 ### Description:
 
-
->Notes:       ==>     sudo apt install wget
-
+> Notes: ==> sudo apt install wget
 
 ###### code:
-
 
 ```sh
 
@@ -170,23 +181,20 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ```
 
-
 ---
+
 # 3. Clean Out Messy Git Repo:
 
-### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders 
+### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
-
->Notes:   To clear up clutter in repositories that only get used on your local machine.
-
+> Notes: To clear up clutter in repositories that only get used on your local machine.
 
 ###### code:
-
 
 ```sh
 
 
-find . -empty -type d -print -delete        
+find . -empty -type d -print -delete
 
 
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
@@ -197,19 +205,18 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ```
 
-
 ---
+
 # 4. clone all of a user's git repositories
 
-### Description: clone all of a user or organization's git  repositories.
+### Description: clone all of a user or organization's git repositories.
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
 # Generalized:
+
 ```sh
 
 
@@ -247,14 +254,12 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 ```
 
 ---
+
 # 5. Git Workflow
 
 ### Description:
 
-
-
 ###### code:
-
 
 ```sh
 git pull
@@ -263,12 +268,14 @@ git add .
 git commit -m"update"
 git push -u origin master
 ```
+
 ```sh
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
+
 ```sh
 
 git init
@@ -276,12 +283,14 @@ git add .
 git commit -m"update"
 git push -u origin bryan-guner
 ```
+
 ```sh
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
+
 ```sh
 git init
 git add .
@@ -289,18 +298,15 @@ git commit -m"update"
 git push -u origin preview
 ```
 
-
 ---
+
 # 6. Recursive Unzip In Place
 
 ### Description: recursively unzips folders and then deletes the zip file by the same name.
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -312,18 +318,15 @@ find . -name "*.zip" -type f -print -delete
 
 ```
 
-
 ---
+
 # 7. git pull keeping local changes:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -335,18 +338,15 @@ git stash pop
 
 ```
 
-
 ---
+
 # 8. Prettier Code Formatter:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -358,18 +358,15 @@ prettier --write .
 
 ```
 
-
 ---
-# 9.  Pandoc
+
+# 9. Pandoc
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -386,21 +383,18 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ```
 
-
 ---
+
 # 10. Gitpod Installs
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
 ```sh
-sudo apt install tree 
+sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
 sudo apt install black -y
@@ -411,6 +405,7 @@ npm i npm-recursive-install -g
 
 
 ```
+
 ```sh
 black .
 
@@ -419,34 +414,29 @@ npm-recursive-install
 ```
 
 ---
+
 # 11. Repo Utils Package:
 
 ### Description: my standard repo utis package
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 npm i @bgoonz11/repoutils
 
 ```
 
-
 ---
-# 12.  Unix Tree Package Usage:
+
+# 12. Unix Tree Package Usage:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 tree -d -I  'node_modules'
@@ -466,18 +456,15 @@ tree -f >README.md
 
 ```
 
-
 ---
+
 # 13. Find & Replace string in file & folder names recursively..
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -496,10 +483,10 @@ find . -type d -exec rename 's/-main//g' {} +
 
 
 
-rename 's/\.js\.download$/.js/' *.js\.download 
+rename 's/\.js\.download$/.js/' *.js\.download
 
 
-rename 's/\.html\.markdown$/.md/' *.html\.markdown 
+rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
 
 find . -type d -exec rename 's/es6//g' {} +
@@ -507,18 +494,15 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ```
 
-
 ---
+
 # 14. Remove double extensions :
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 #!/bin/bash
@@ -535,6 +519,7 @@ do
     mv "${file}" "${file%.html}"
 done
 ```
+
 ```sh
 
 
@@ -553,16 +538,14 @@ done
 ```
 
 ---
+
 # 15. Truncate folder names down to 12 characters:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -570,64 +553,51 @@ for d in ./*; do mv $d ${d:0:12}; done
 
 ```
 
-
 ---
+
 # 16.Appendir.js
 
 ### Description: combine the contents of every file in the contaning directory.
 
-
->Notes: this includes the contents of the file it's self...
-
+> Notes: this includes the contents of the file it's self...
 
 ###### code:
 
-
 ```js
 //APPEND-DIR.js
-const fs = require('fs');
-let cat = require('child_process')
-  .execSync('cat *')
-  .toString('UTF-8');
-fs.writeFile('output.md', cat, err => {
+const fs = require("fs");
+let cat = require("child_process").execSync("cat *").toString("UTF-8");
+fs.writeFile("output.md", cat, (err) => {
   if (err) throw err;
 });
-
-
 ```
 
-
 ---
+
 # 17. Replace space in filename with underscore
 
 ### Description: followed by replace `'#' with '_'` in directory name
 
-
->Notes: Can be re-purposed to find and replace any set of strings in file or folder names. 
-
+> Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
 
 ###### code:
-
 
 ```sh
 find . -name "* *" -type f | rename 's/_//g'
 
-find . -name "* *" -type d | rename 's/#/_/g'   
+find . -name "* *" -type d | rename 's/#/_/g'
 
 ```
 
-
 ---
+
 # 18. Filter & delete files by name and extension
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
@@ -646,15 +616,14 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 ```
 
-
 ---
-# 19. Remove lines containing string:
 
+# 19. Remove lines containing string:
 
 ### Description:
 
+> Notes: Remove lines not containing `'.js'`
 
->Notes: Remove lines not containing `'.js'`
 ```sh
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
@@ -663,7 +632,6 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 ```
 
 ###### code:
-
 
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
@@ -680,25 +648,20 @@ sudo sed -i '/author/d' ./*
 
 ```
 
-
 ---
+
 # 20. Remove duplicate lines from a text file
 
 ### Description:
 
+> Notes:
+> //...syntax of uniq...//
+> $uniq [OPTION] [INPUT[OUTPUT]]
+> The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output.
 
->Notes:
- //...syntax of uniq...// 
-$uniq [OPTION] [INPUT[OUTPUT]]
-The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output. 
-
-Now, let’s understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq. 
-
- 
-
+Now, let’s understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
 ###### code:
-
 
 ```sh
 sudo apt install uniq
@@ -706,18 +669,15 @@ uniq -u input.txt output.txt
 
 ```
 
-
 ---
+
 # 21. Remove lines containing string:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
@@ -752,19 +712,15 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ```
 
-
 ---
-# 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
+# 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -775,29 +731,25 @@ zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
 printf "\nCreated: $1.$TSTAMP.zip\n"
 
-# usage: 
+# usage:
 # - zipdir thedir
 # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-# if in windows/git-bash, add 'zip' command this way: 
+# if in windows/git-bash, add 'zip' command this way:
 # https://stackoverflow.com/a/55749636/1482990
 
 
 ```
 
-
 ---
-# 23. Delete files containing a certain string:
 
+# 23. Delete files containing a certain string:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
@@ -806,18 +758,15 @@ source doit.sh
 
 ```
 
-
 ---
-# 24. 
+
+# 24.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -919,15 +868,13 @@ cmd $listing --sort=extension >>$html
 
 ```
 
-
 ---
+
 # 25. Index of Iframes
 
 ### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags.
 
-
->Notes: Useful Follow up Code:
-
+> Notes: Useful Follow up Code:
 
 ```sh
 
@@ -938,7 +885,6 @@ cmd $listing --sort=extension >>$html
 ```
 
 ###### code:
-
 
 ```sh
 
@@ -1040,18 +986,15 @@ cmd $listing --sort=extension >>$html
 
 ```
 
-
 ---
+
 # 26. Filter Corrupted Git Repo For Troublesome File:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -1060,23 +1003,19 @@ git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_in
 
 ```
 
-
 ---
-# 27.  OVERWRITE LOCAL CHANGES:
 
-### Description: 
+# 27. OVERWRITE LOCAL CHANGES:
+
+### Description:
+
 Important: If you have any local changes, they will be lost. With or without --hard option, any local commits that haven't been pushed will be lost.[*]
 If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
 
-
->Notes: 
-First, run a fetch to update all origin/<branch> refs to latest:
-
-
-
+> Notes:
+> First, run a fetch to update all origin/<branch> refs to latest:
 
 ###### code:
-
 
 ```sh
 
@@ -1099,43 +1038,37 @@ git reset --hard origin/master
 
 ```
 
-
 ---
+
 # 28. Remove Submodules:
 
 ### Description: To remove a submodule you need to:
 
-
->Notes:
-
+> Notes:
 
 > Delete the relevant section from the .gitmodules file.
-Stage the .gitmodules changes git add .gitmodules
-Delete the relevant section from .git/config.
-Run git rm --cached path_to_submodule (no trailing slash).
-Run rm -rf .git/modules/path_to_submodule (no trailing slash).
-Commit git commit -m "Removed submodule "
-Delete the now untracked submodule files rm -rf path_to_submodule
+> Stage the .gitmodules changes git add .gitmodules
+> Delete the relevant section from .git/config.
+> Run git rm --cached path_to_submodule (no trailing slash).
+> Run rm -rf .git/modules/path_to_submodule (no trailing slash).
+> Commit git commit -m "Removed submodule "
+> Delete the now untracked submodule files rm -rf path_to_submodule
 
 ###### code:
-
 
 ```sh
 git submodule deinit
 ```
 
-
 ---
+
 # 29. GET GISTS
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 sudo apt install wget
@@ -1155,18 +1088,15 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ```
 
-
 ---
+
 # 30. Remove Remote OriginL
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -1174,18 +1104,15 @@ git remote remove origin
 
 ```
 
-
 ---
+
 # 31. just clone .git folder:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -1194,18 +1121,15 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ```
 
-
 ---
+
 # 32. Undo recent pull request:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -1214,18 +1138,15 @@ git reset --hard master@{"10 minutes ago"}
 
 ```
 
-
 ---
+
 # 33. Lebab
 
 ### Description: ES5 --> ES6
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 # Safe:
@@ -1252,12 +1173,12 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1266,29 +1187,26 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 
 
 ```
 
-
 ---
+
 # 34. Troubleshoot Ubuntu Input/Output Error
 
 ### Description: Open Powershell as Administrator...
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```ps1
 
@@ -1299,18 +1217,15 @@ lebab --replace ./ --transform includes
 
 ```
 
-
 ---
+
 # 35. Export Medium as Markdown
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 npm i mediumexporter -g
@@ -1321,18 +1236,15 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ```
 
-
 ---
+
 # 36. Delete files in violation of a given size range (100MB for git)
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -1345,18 +1257,15 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ```
 
-
 ---
+
 # 37. download all links of given file type
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -1366,32 +1275,28 @@ wget -r -A.pdf https://overapi.com/git
 
 ```
 
-
 ---
+
 # 38. Kill all node processes
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 killall -s KILL node
 
 ```
 
-
 ---
+
 # 39. Remove string from file names recursively
 
-### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories. 
+### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories.
 
 ###### code:
-
 
 ```sh
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
@@ -1403,8 +1308,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 ```
 
-
->Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
+> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
 ```sh
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
@@ -1416,939 +1320,781 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ```
 
-
-
-
 ---
-# 40. Remove spaces from file and folder names recursively 
+
+# 40. Remove spaces from file and folder names recursively
 
 ### Description: replaces spaces in file and folder names with an `_` underscore
 
-
->Notes: need to run `sudo apt install rename` to use this command
-
+> Notes: need to run `sudo apt install rename` to use this command
 
 ###### code:
-
 
 ```sh
 
-find . -name "* *" -type d | rename 's/ /_/g'   
+find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-
 ---
-# 41.  Zip Each subdirectories in a given directory into their own zip file
+
+# 41. Zip Each subdirectories in a given directory into their own zip file
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
 
-
 ---
-# 42. 
+
+# 42.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 43. 
+
+# 43.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 44. 
+
+# 44.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 45. 
+
+# 45.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 46. 
+
+# 46.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 47. 
+
+# 47.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 48. 
+
+# 48.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 49. 
+
+# 49.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 50. 
+
+# 50.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 51. 
+
+# 51.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 52. 
+
+# 52.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 53. 
+
+# 53.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 54. 
+
+# 54.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 55. 
+
+# 55.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 56. 
+
+# 56.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 57. 
+
+# 57.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 58. 
+
+# 58.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 59. 
+
+# 59.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 60. 
+
+# 60.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 61. 
+
+# 61.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 62. 
+
+# 62.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 63. 
+
+# 63.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 64. 
+
+# 64.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 65. 
+
+# 65.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 66. 
+
+# 66.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 67. 
+
+# 67.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 68. 
+
+# 68.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 69. 
+
+# 69.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 70. 
+
+# 70.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 71. 
+
+# 71.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 72. 
+
+# 72.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 73. 
+
+# 73.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 74. 
+
+# 74.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 75. 
+
+# 75.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 76. 
+
+# 76.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 77. 
+
+# 77.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 78. 
+
+# 78.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 79. 
+
+# 79.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 80. 
+
+# 80.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 81. 
+
+# 81.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 82. 
+
+# 82.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 83. 
+
+# 83.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 84. 
+
+# 84.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 85. 
+
+# 85.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 86. 
+
+# 86.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 87. 
+
+# 87.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 88. 
+
+# 88.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 89. 
+
+# 89.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
-# 90. 
+
+# 90.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
 
 ```
 
-
 ---
+
 # 91. Unzip PowerShell
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```ps1
 
@@ -2356,18 +2102,18 @@ PARAM (
     [string] $ZipFilesPath = "./",
     [string] $UnzipPath = "./RESULT"
 )
- 
+
 $Shell = New-Object -com Shell.Application
 $Location = $Shell.NameSpace($UnzipPath)
- 
+
 $ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
- 
+
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
- 
- 
+
+
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
@@ -2375,36 +2121,30 @@ foreach ($ZipFile in $ZipFiles) {
 
 ```
 
-
 ---
+
 # 92. return to bash from zsh
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
  sudo apt --purge remove zsh
 
 ```
 
-
 ---
+
 # 93. Symbolic Link
 
 ### Description: to working directory
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -2414,18 +2154,15 @@ ln -s "$(pwd)" ~/Downloads
 
 ```
 
-
 ---
+
 # 94. auto generate readme
 
 ### Description: rename existing readme to blueprint.md
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -2434,35 +2171,29 @@ npx @appnest/readme generate
 
 ```
 
-
 ---
+
 # 95. Log into postgres:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 sudo -u postgres psql
 ```
 
-
 ---
+
 # 96. URL To Subscribe To YouTube Channel
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```txt
 
@@ -2470,13 +2201,11 @@ https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 
 ```
 
-
 ---
+
 # 97. Embed Repl.it In Medium Post:
 
-
 ###### code:
-
 
 ```txt
 
@@ -2493,18 +2222,15 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ```
 
-
 ---
-# 98. 
+
+# 98.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 
@@ -2516,18 +2242,15 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ```
 
-
 ---
-# 99.  Cheat Sheet
+
+# 99. Cheat Sheet
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```sh
 #!/bin/bash
@@ -2719,7 +2442,7 @@ echo $$                      # prints process ID of the current shell
 echo $!                      # prints process ID of the most recently invoked background job
 echo $?                      # displays the exit status of the last command
 read <varname>               # reads a string from the input and assigns it to a variable
-read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value 
+read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value
 column -t <filename>         # display info in pretty columns (often used with pipe)
 let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
@@ -3016,9 +2739,9 @@ function returntrap {
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
 ##############################################################################
-# COLORS AND BACKGROUNDS 
+# COLORS AND BACKGROUNDS
 ##############################################################################
-# note: \e or \x1B also work instead of \033 
+# note: \e or \x1B also work instead of \033
 # Reset
 Color_Off='\033[0m' # Text Reset
 
@@ -3075,18 +2798,14 @@ On_White='\033[47m' # White
 
 # Example of usage
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
-echo -e "${Red}${On_White}This is Red test on White background${Color_Off}" 
+echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
 # option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
 
 
 ```
 
-
 ---
-
-
-
 
 Simple:
 
@@ -3114,8 +2833,8 @@ echo "${NAME}!"
 
 ```
 NAME="John"
-echo "Hi $NAME"  
-echo 'Hi $NAME'  
+echo "Hi $NAME"
+echo 'Hi $NAME'
 ```
 
 ### Conditional execution
@@ -3180,47 +2899,47 @@ See: [Brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
 ```
 name="John"
 echo ${name}
-echo ${name/J/j}    
-echo ${name:0:2}    
-echo ${name::2}     
-echo ${name::-1}    
-echo ${name:(-1)}   
-echo ${name:(-2):1} 
-echo ${food:-Cake}  
+echo ${name/J/j}
+echo ${name:0:2}
+echo ${name::2}
+echo ${name::-1}
+echo ${name:(-1)}
+echo ${name:(-2):1}
+echo ${food:-Cake}
 ```
 
 ```
 length=2
-echo ${name:0:length}  
+echo ${name:0:length}
 ```
 
 See: [Parameter expansion](http://wiki.bash-hackers.org/syntax/pe)
 
 ```
 STR="/path/to/foo.cpp"
-echo ${STR%.cpp}    
-echo ${STR%.cpp}.o  
-echo ${STR%/*}      
+echo ${STR%.cpp}
+echo ${STR%.cpp}.o
+echo ${STR%/*}
 
-echo ${STR##*.}     
-echo ${STR##*/}     
+echo ${STR##*.}
+echo ${STR##*/}
 
-echo ${STR#*/}      
-echo ${STR##*/}     
+echo ${STR#*/}
+echo ${STR##*/}
 
-echo ${STR/foo/bar} 
+echo ${STR/foo/bar}
 ```
 
 ```
 STR="Hello world"
-echo ${STR:6:5}   
-echo ${STR: -5:5}  
+echo ${STR:6:5}
+echo ${STR: -5:5}
 ```
 
 ```
 SRC="/path/to/foo.cpp"
-BASE=${SRC##*/}   
-DIR=${SRC%$BASE}  
+BASE=${SRC##*/}
+DIR=${SRC%$BASE}
 ```
 
 ### Substitution
@@ -3297,12 +3016,12 @@ Length of `$FOO`
 
 ```
 STR="HELLO WORLD!"
-echo ${STR,}   
-echo ${STR,,}  
+echo ${STR,}
+echo ${STR,,}
 
 STR="hello world!"
-echo ${STR^}   
-echo ${STR^^}  
+echo ${STR^}
+echo ${STR^^}
 ```
 
 ### Default values
@@ -3640,26 +3359,26 @@ Fruits[2]="Orange"
 ### Working with arrays
 
 ```
-echo ${Fruits[0]}           
-echo ${Fruits[-1]}          
-echo ${Fruits[@]}           
-echo ${#Fruits[@]}          
-echo ${#Fruits}             
-echo ${#Fruits[3]}          
-echo ${Fruits[@]:3:2}       
-echo ${!Fruits[@]}          
+echo ${Fruits[0]}
+echo ${Fruits[-1]}
+echo ${Fruits[@]}
+echo ${#Fruits[@]}
+echo ${#Fruits}
+echo ${#Fruits[3]}
+echo ${Fruits[@]:3:2}
+echo ${!Fruits[@]}
 ```
 
 ### Operations
 
 ```
-Fruits=("${Fruits[@]}" "Watermelon")    
-Fruits+=('Watermelon')                  
-Fruits=( ${Fruits[@]/Ap*/} )            
-unset Fruits[2]                         
-Fruits=("${Fruits[@]}")                 
-Fruits=("${Fruits[@]}" "${Veggies[@]}") 
-lines=(`cat "logfile"`)                 
+Fruits=("${Fruits[@]}" "Watermelon")
+Fruits+=('Watermelon')
+Fruits=( ${Fruits[@]/Ap*/} )
+unset Fruits[2]
+Fruits=("${Fruits[@]}")
+Fruits=("${Fruits[@]}" "${Veggies[@]}")
+lines=(`cat "logfile"`)
 ```
 
 ### Iteration
@@ -3690,11 +3409,11 @@ Declares `sound` as a Dictionary object (aka associative array).
 ### Working with dictionaries
 
 ```
-echo ${sounds[dog]} 
-echo ${sounds[@]}   
-echo ${!sounds[@]}  
-echo ${#sounds[@]}  
-unset sounds[dog]   
+echo ${sounds[dog]}
+echo ${sounds[@]}
+echo ${!sounds[@]}
+echo ${#sounds[@]}
+unset sounds[dog]
 ```
 
 ### Iteration
@@ -3720,20 +3439,20 @@ done
 ### Options
 
 ```
-set -o noclobber  
-set -o errexit    
-set -o pipefail   
-set -o nounset    
+set -o noclobber
+set -o errexit
+set -o pipefail
+set -o nounset
 ```
 
 ### Glob options
 
 ```
-shopt -s nullglob    
-shopt -s failglob    
-shopt -s nocaseglob  
-shopt -s dotglob     
-shopt -s globstar    
+shopt -s nullglob
+shopt -s failglob
+shopt -s nocaseglob
+shopt -s dotglob
+shopt -s globstar
 ```
 
 Set `GLOBIGNORE` as a colon-separated list of patterns to be removed from glob matches.
@@ -3841,33 +3560,33 @@ Expand `n`th token to last from most recent command
 ### Numeric calculations
 
 ```
-$((a + 200))      
+$((a + 200))
 ```
 
 ```
-$(($RANDOM%200))  
+$(($RANDOM%200))
 ```
 
 ### Subshells
 
 ```
 (cd somedir; echo "I'm now in $PWD")
-pwd 
+pwd
 ```
 
 ### Redirection
 
 ```
-python hello.py > output.txt   
-python hello.py >> output.txt  
-python hello.py 2> error.log   
-python hello.py 2>&1           
-python hello.py 2>/dev/null    
-python hello.py &>/dev/null    
+python hello.py > output.txt
+python hello.py >> output.txt
+python hello.py 2> error.log
+python hello.py 2>&1
+python hello.py 2>/dev/null
+python hello.py &>/dev/null
 ```
 
 ```
-python hello.py < foo.txt      
+python hello.py < foo.txt
 ```
 
 ### Trap errors
@@ -3955,7 +3674,7 @@ echo $ans
 ```
 
 ```
-read -n 1 ans    
+read -n 1 ans
 ```
 
 ### Special variables
@@ -4004,9 +3723,922 @@ fi
 
 ---
 
+---
 
 
+Simple:
 
 ---
 
-# Bash Involved Cheat Sheet
+### Example
+
+```
+#!/usr/bin/env bash
+
+NAME="John"
+echo "Hello $NAME!"
+```
+
+### Variables
+
+```
+NAME="John"
+echo $NAME
+echo "$NAME"
+echo "${NAME}!"
+```
+
+### String quotes
+
+```
+NAME="John"
+echo "Hi $NAME"
+echo 'Hi $NAME'
+```
+
+### Conditional execution
+
+```
+git commit && git push
+git commit || echo "Commit failed"
+```
+
+### Functions
+
+```
+get_name() {
+  echo "John"
+}
+
+echo "You are $(get_name)"
+```
+
+See: [Functions](https://devhints.io/bash#functions)
+
+### Conditionals
+
+```
+if [[ -z "$string" ]]; then
+  echo "String is empty"
+elif [[ -n "$string" ]]; then
+  echo "String is not empty"
+fi
+```
+
+See: [Conditionals](https://devhints.io/bash#conditionals)
+
+### Brace expansion
+
+```
+echo {A,B}.js
+```
+
+Expression
+
+Description
+
+`{A,B}`
+
+Same as `A B`
+
+`{A,B}.js`
+
+Same as `A.js B.js`
+
+`{1..5}`
+
+Same as `1 2 3 4 5`
+
+See: [Brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
+
+## [#](https://devhints.io/bash#parameter-expansions)Parameter expansions
+
+### Basics
+
+```
+name="John"
+echo ${name}
+echo ${name/J/j}
+echo ${name:0:2}
+echo ${name::2}
+echo ${name::-1}
+echo ${name:(-1)}
+echo ${name:(-2):1}
+echo ${food:-Cake}
+```
+
+```
+length=2
+echo ${name:0:length}
+```
+
+See: [Parameter expansion](http://wiki.bash-hackers.org/syntax/pe)
+
+```
+STR="/path/to/foo.cpp"
+echo ${STR%.cpp}
+echo ${STR%.cpp}.o
+echo ${STR%/*}
+
+echo ${STR##*.}
+echo ${STR##*/}
+
+echo ${STR#*/}
+echo ${STR##*/}
+
+echo ${STR/foo/bar}
+```
+
+```
+STR="Hello world"
+echo ${STR:6:5}
+echo ${STR: -5:5}
+```
+
+```
+SRC="/path/to/foo.cpp"
+BASE=${SRC##*/}
+DIR=${SRC%$BASE}
+```
+
+### Substitution
+
+Code
+
+Description
+
+`${FOO%suffix}`
+
+Remove suffix
+
+`${FOO#prefix}`
+
+Remove prefix
+
+`${FOO%%suffix}`
+
+Remove long suffix
+
+`${FOO##prefix}`
+
+Remove long prefix
+
+`${FOO/from/to}`
+
+Replace first match
+
+`${FOO//from/to}`
+
+Replace all
+
+`${FOO/%from/to}`
+
+Replace suffix
+
+`${FOO/#from/to}`
+
+Replace prefix
+
+```
+: '
+This is a
+multi line
+comment
+'
+```
+
+### Substrings
+
+Expression
+
+Description
+
+`${FOO:0:3}`
+
+Substring _(position, length)_
+
+`${FOO:(-3):3}`
+
+Substring from the right
+
+### Length
+
+Expression
+
+Description
+
+`${#FOO}`
+
+Length of `$FOO`
+
+### Manipulation
+
+```
+STR="HELLO WORLD!"
+echo ${STR,}
+echo ${STR,,}
+
+STR="hello world!"
+echo ${STR^}
+echo ${STR^^}
+```
+
+### Default values
+
+Expression
+
+Description
+
+`${FOO:-val}`
+
+`$FOO`, or `val` if unset (or null)
+
+`${FOO:=val}`
+
+Set `$FOO` to `val` if unset (or null)
+
+`${FOO:+val}`
+
+`val` if `$FOO` is set (and not null)
+
+`${FOO:?message}`
+
+Show error message and exit if `$FOO` is unset (or null)
+
+Omitting the `:` removes the (non)nullity checks, e.g. `${FOO-val}` expands to `val` if unset otherwise `$FOO`.
+
+## [#](https://devhints.io/bash#loops)Loops
+
+### Basic for loop
+
+```
+for i in /etc/rc.*; do
+  echo $i
+done
+```
+
+### C-like for loop
+
+```
+for ((i = 0 ; i < 100 ; i++)); do
+  echo $i
+done
+```
+
+### Ranges
+
+```
+for i in {1..5}; do
+    echo "Welcome $i"
+done
+```
+
+#### With step size
+
+```
+for i in {5..50..5}; do
+    echo "Welcome $i"
+done
+```
+
+### Reading lines
+
+```
+cat file.txt | while read line; do
+  echo $line
+done
+```
+
+## [#](https://devhints.io/bash#functions)Functions
+
+### Defining functions
+
+```
+myfunc() {
+    echo "hello $1"
+}
+```
+
+```
+
+function myfunc() {
+    echo "hello $1"
+}
+```
+
+```
+myfunc "John"
+```
+
+### Returning values
+
+```
+myfunc() {
+    local myresult='some value'
+    echo $myresult
+}
+```
+
+```
+result="$(myfunc)"
+```
+
+### Raising errors
+
+```
+myfunc() {
+  return 1
+}
+```
+
+```
+if myfunc; then
+  echo "success"
+else
+  echo "failure"
+fi
+```
+
+### Arguments
+
+Expression
+
+Description
+
+`$#`
+
+Number of arguments
+
+`$*`
+
+All positional arguments (as a single word)
+
+`$@`
+
+All positional arguments (as separate strings)
+
+`$1`
+
+First argument
+
+`$_`
+
+Last argument of the previous command
+
+**Note**: `$@` and `$*` must be quoted in order to perform as described. Otherwise, they do exactly the same thing (arguments as separate strings).
+
+See [Special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).
+
+## [#](https://devhints.io/bash#conditionals)Conditionals
+
+### Conditions
+
+Note that `[[` is actually a command/program that returns either `0` (true) or `1` (false). Any program that obeys the same logic (like all base utils, such as `grep(1)` or `ping(1)`) can be used as condition, see examples.
+
+Condition
+
+Description
+
+`[[ -z STRING ]]`
+
+Empty string
+
+`[[ -n STRING ]]`
+
+Not empty string
+
+`[[ STRING == STRING ]]`
+
+Equal
+
+`[[ STRING != STRING ]]`
+
+Not Equal
+
+`[[ NUM -eq NUM ]]`
+
+Equal
+
+`[[ NUM -ne NUM ]]`
+
+Not equal
+
+`[[ NUM -lt NUM ]]`
+
+Less than
+
+`[[ NUM -le NUM ]]`
+
+Less than or equal
+
+`[[ NUM -gt NUM ]]`
+
+Greater than
+
+`[[ NUM -ge NUM ]]`
+
+Greater than or equal
+
+`[[ STRING =~ STRING ]]`
+
+Regexp
+
+`(( NUM < NUM ))`
+
+Numeric conditions
+
+#### More conditions
+
+Condition
+
+Description
+
+`[[ -o noclobber ]]`
+
+If OPTIONNAME is enabled
+
+`[[ ! EXPR ]]`
+
+Not
+
+`[[ X && Y ]]`
+
+And
+
+`[[ X || Y ]]`
+
+Or
+
+### File conditions
+
+Condition
+
+Description
+
+`[[ -e FILE ]]`
+
+Exists
+
+`[[ -r FILE ]]`
+
+Readable
+
+`[[ -h FILE ]]`
+
+Symlink
+
+`[[ -d FILE ]]`
+
+Directory
+
+`[[ -w FILE ]]`
+
+Writable
+
+`[[ -s FILE ]]`
+
+Size is > 0 bytes
+
+`[[ -f FILE ]]`
+
+File
+
+`[[ -x FILE ]]`
+
+Executable
+
+`[[ FILE1 -nt FILE2 ]]`
+
+1 is more recent than 2
+
+`[[ FILE1 -ot FILE2 ]]`
+
+2 is more recent than 1
+
+`[[ FILE1 -ef FILE2 ]]`
+
+Same files
+
+### Example
+
+```
+
+if [[ -z "$string" ]]; then
+  echo "String is empty"
+elif [[ -n "$string" ]]; then
+  echo "String is not empty"
+else
+  echo "This never happens"
+fi
+```
+
+```
+
+if [[ X && Y ]]; then
+  ...
+fi
+```
+
+```
+
+if [[ "$A" == "$B" ]]
+```
+
+```
+
+if [[ "A" =~ . ]]
+```
+
+```
+if (( $a < $b )); then
+   echo "$a is smaller than $b"
+fi
+```
+
+```
+if [[ -e "file.txt" ]]; then
+  echo "file exists"
+fi
+```
+
+## [#](https://devhints.io/bash#arrays)Arrays
+
+### Defining arrays
+
+```
+Fruits=('Apple' 'Banana' 'Orange')
+```
+
+```
+Fruits[0]="Apple"
+Fruits[1]="Banana"
+Fruits[2]="Orange"
+```
+
+### Working with arrays
+
+```
+echo ${Fruits[0]}
+echo ${Fruits[-1]}
+echo ${Fruits[@]}
+echo ${#Fruits[@]}
+echo ${#Fruits}
+echo ${#Fruits[3]}
+echo ${Fruits[@]:3:2}
+echo ${!Fruits[@]}
+```
+
+### Operations
+
+```
+Fruits=("${Fruits[@]}" "Watermelon")
+Fruits+=('Watermelon')
+Fruits=( ${Fruits[@]/Ap*/} )
+unset Fruits[2]
+Fruits=("${Fruits[@]}")
+Fruits=("${Fruits[@]}" "${Veggies[@]}")
+lines=(`cat "logfile"`)
+```
+
+### Iteration
+
+```
+for i in "${arrayName[@]}"; do
+  echo $i
+done
+```
+
+## [#](https://devhints.io/bash#dictionaries)Dictionaries
+
+### Defining
+
+```
+declare -A sounds
+```
+
+```
+sounds[dog]="bark"
+sounds[cow]="moo"
+sounds[bird]="tweet"
+sounds[wolf]="howl"
+```
+
+Declares `sound` as a Dictionary object (aka associative array).
+
+### Working with dictionaries
+
+```
+echo ${sounds[dog]}
+echo ${sounds[@]}
+echo ${!sounds[@]}
+echo ${#sounds[@]}
+unset sounds[dog]
+```
+
+### Iteration
+
+#### Iterate over values
+
+```
+for val in "${sounds[@]}"; do
+  echo $val
+done
+```
+
+#### Iterate over keys
+
+```
+for key in "${!sounds[@]}"; do
+  echo $key
+done
+```
+
+## [#](https://devhints.io/bash#options)Options
+
+### Options
+
+```
+set -o noclobber
+set -o errexit
+set -o pipefail
+set -o nounset
+```
+
+### Glob options
+
+```
+shopt -s nullglob
+shopt -s failglob
+shopt -s nocaseglob
+shopt -s dotglob
+shopt -s globstar
+```
+
+Set `GLOBIGNORE` as a colon-separated list of patterns to be removed from glob matches.
+
+## [#](https://devhints.io/bash#history)History
+
+### Commands
+
+Command
+
+Description
+
+`history`
+
+Show history
+
+`shopt -s histverify`
+
+Don’t execute expanded result immediately
+
+### Expansions
+
+Expression
+
+Description
+
+`!$`
+
+Expand last parameter of most recent command
+
+`!*`
+
+Expand all parameters of most recent command
+
+`!-n`
+
+Expand `n`th most recent command
+
+`!n`
+
+Expand `n`th command in history
+
+`!<command>`
+
+Expand most recent invocation of command `<command>`
+
+### Operations
+
+Code
+
+Description
+
+`!!`
+
+Execute last command again
+
+`!!:s/<FROM>/<TO>/`
+
+Replace first occurrence of `<FROM>` to `<TO>` in most recent command
+
+`!!:gs/<FROM>/<TO>/`
+
+Replace all occurrences of `<FROM>` to `<TO>` in most recent command
+
+`!$:t`
+
+Expand only basename from last parameter of most recent command
+
+`!$:h`
+
+Expand only directory from last parameter of most recent command
+
+`!!` and `!$` can be replaced with any valid expansion.
+
+### Slices
+
+Code
+
+Description
+
+`!!:n`
+
+Expand only `n`th token from most recent command (command is `0`; first argument is `1`)
+
+`!^`
+
+Expand first argument from most recent command
+
+`!$`
+
+Expand last token from most recent command
+
+`!!:n-m`
+
+Expand range of tokens from most recent command
+
+`!!:n-$`
+
+Expand `n`th token to last from most recent command
+
+`!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`, `!42`, etc.
+
+## [#](https://devhints.io/bash#miscellaneous)Miscellaneous
+
+### Numeric calculations
+
+```
+$((a + 200))
+```
+
+```
+$(($RANDOM%200))
+```
+
+### Subshells
+
+```
+(cd somedir; echo "I'm now in $PWD")
+pwd
+```
+
+### Redirection
+
+```
+python hello.py > output.txt
+python hello.py >> output.txt
+python hello.py 2> error.log
+python hello.py 2>&1
+python hello.py 2>/dev/null
+python hello.py &>/dev/null
+```
+
+```
+python hello.py < foo.txt
+```
+
+### Trap errors
+
+```
+trap 'echo Error at about $LINENO' ERR
+```
+
+or
+
+```
+traperr() {
+  echo "ERROR: ${BASH_SOURCE[1]} at about ${BASH_LINENO[0]}"
+}
+
+set -o errtrace
+trap traperr ERR
+```
+
+### Case/switch
+
+```
+case "$1" in
+  start | up)
+    vagrant up
+    ;;
+
+  *)
+    echo "Usage: $0 {start|stop|ssh}"
+    ;;
+esac
+```
+
+### Source relative
+
+```
+source "${0%/*}/../share/foo.sh"
+```
+
+### printf
+
+```
+printf "Hello %s, I'm %s" Sven Olga
+
+
+printf "1 + 1 = %d" 2
+
+
+printf "This is how you print a float: %f" 2
+
+```
+
+### Getting options
+
+```
+while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do case $1 in
+  -V | --version )
+    echo $version
+    exit
+    ;;
+  -s | --string )
+    shift; string=$1
+    ;;
+  -f | --flag )
+    flag=1
+    ;;
+esac; shift; done
+if [[ "$1" == '--' ]]; then shift; fi
+```
+
+### Heredoc
+
+```
+cat <<END
+hello world
+END
+```
+
+### Reading input
+
+```
+echo -n "Proceed? [y/n]: "
+read ans
+echo $ans
+```
+
+```
+read -n 1 ans
+```
+
+### Special variables
+
+Expression
+
+Description
+
+`$?`
+
+Exit status of last task
+
+`$!`
+
+PID of last background task
+
+`$$`
+
+PID of shell
+
+`$0`
+
+Filename of the shell script
+
+`$_`
+
+Last argrument of the previous command
+
+See [Special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).
+
+### Check for command’s result
+
+```
+if ping -c 1 google.com; then
+  echo "It appears you have a working internet connection"
+fi
+```
+
+### Grep check
+
+```
+if grep -q 'foo' ~/.bash_history; then
+  echo "You appear to have typed 'foo' in the past"
+fi
+```
+
+---
+

@@ -120,7 +120,6 @@ title: Lua
 
 ## Metatables
 
-
     mt = {}
 
     -- A metatable is simply a table with functions in it.
@@ -209,8 +208,7 @@ title: Lua
     -- Call
     -- __call(func, ...)
 
-
-## API: Global functions  [(ref)](http://lua.gts-stolberg.de/en/Basis.php)
+## API: Global functions [(ref)](http://lua.gts-stolberg.de/en/Basis.php)
 
     dofile("hello.lua")
     loadfile("hello.lua")
@@ -296,5 +294,5 @@ title: Lua
 
 ## Reference
 
-  http://www.lua.org/pil/13.html
-  http://lua-users.org/wiki/ObjectOrientedProgramming
+http://www.lua.org/pil/13.html
+http://lua-users.org/wiki/ObjectOrientedProgramming

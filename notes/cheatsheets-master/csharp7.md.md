@@ -95,15 +95,18 @@ WriteLine($"found {names.first} {names.last}.");
 (var first, var middle, var last) = LookupName(id1);
 WriteLine($"found {first} {last}.");
 ```
+
 or
+
 ```csharp
 var (first, middle, last) = LookupName(id1); // var outside
 ```
+
 or
+
 ```csharp
 (first, middle, last) = LookupName(id2); // assign onto existing variables
 ```
-
 
 ### Local Functions
 
@@ -144,7 +147,7 @@ public ref int Find(int number, int[] numbers)
 {
     for (int i = 0; i < numbers.Length; i++)
     {
-        if (numbers[i] == number) 
+        if (numbers[i] == number)
         {
             return ref numbers[i]; // return the storage location, not the value
         }
@@ -178,7 +181,7 @@ class Person
 }
 ```
 
-### Throw Expressions 
+### Throw Expressions
 
 ```csharp
 class Person

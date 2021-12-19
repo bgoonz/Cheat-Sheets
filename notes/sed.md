@@ -22,9 +22,10 @@ In GNU sed: use `-i` without arg.
 sed -i '' -e 's/foo/bar/' example.md
 ```
 
- In OSX, `-i ''` is required.
+In OSX, `-i ''` is required.
 
 ## File regions
+
 {:.-three-column}
 
 ### Print until a certain line is met

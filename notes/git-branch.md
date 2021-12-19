@@ -6,6 +6,7 @@ updated: 2020-02-13
 ---
 
 ## Working with branches
+
 {: .-three-column}
 
 ### Creating
@@ -84,6 +85,7 @@ Works for tags, too!
 ```bash
 git show-ref HEAD -s
 ```
+
 ### Reset branch and remove all changes
 
 ```bash

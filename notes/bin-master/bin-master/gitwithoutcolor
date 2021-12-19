@@ -1,3 +1,0 @@
-#!/usr/bin/env /bin/sh
-echo "test" >> /tmp/test.log
-git -c color.ui=false "$@"

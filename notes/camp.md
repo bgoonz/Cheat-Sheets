@@ -8,27 +8,32 @@ intro: |
   [Camp](https://github.com/espadrine/sc/) is a Node.js web server framework. This guide targets Camp v17.x.
 ---
 
-Getting started
----------------
+## Getting started
+
 {: .-three-column}
 
 ### Quick start
+
 {: .-prime}
 
 #### app.js
+
 {: .-file}
 
 ```js
-const Camp = require('camp')
-const camp = Camp.start({ port: 1234 })
+const Camp = require("camp");
+const camp = Camp.start({ port: 1234 });
 ```
 
 #### web/index.html
+
 {: .-file}
 
 ```html
-<!doctype html>
-<body>Hello world!</body>
+<!DOCTYPE html>
+<body>
+  Hello world!
+</body>
 ```
 
 Camp serves files in `web/` by default.
@@ -43,6 +48,7 @@ camp.path('/search', (req, res) => {
   res.json({ results: ··· })
 })
 ```
+
 {: data-line="2"}
 
 Also available: `camp.post`, `camp.get`.
@@ -50,14 +56,18 @@ Also available: `camp.post`, `camp.get`.
 ### Templates
 
 ```js
-const tpl = Camp.template('./templates/post.html')
+const tpl = Camp.template("./templates/post.html");
 
-camp.path('/blog/:post.html', (req, res) => {
-  res.template({
-    text: 'Hello world'
-  }, tpl)
-})
+camp.path("/blog/:post.html", (req, res) => {
+  res.template(
+    {
+      text: "Hello world",
+    },
+    tpl
+  );
+});
 ```
+
 {: data-line="1,4"}
 
 See: [Templates](https://github.com/espadrine/sc/blob/master/doc/Readme.md#templates)
@@ -65,10 +75,11 @@ See: [Templates](https://github.com/espadrine/sc/blob/master/doc/Readme.md#templ
 ### Not found
 
 ```js
-camp.notFound('/*.lol', (req, res) => {
-  res.file('/404.html')
-})
+camp.notFound("/*.lol", (req, res) => {
+  res.file("/404.html");
+});
 ```
+
 {: data-line="1"}
 
 See: [Fall through](https://github.com/espadrine/sc/blob/master/doc/Readme.md#fall-through)
@@ -77,42 +88,45 @@ See: [Fall through](https://github.com/espadrine/sc/blob/master/doc/Readme.md#fa
 
 ```js
 camp.handle((req, res, next) => {
-  res.setHeader('X-Hello', 'world')
-  next()
-})
+  res.setHeader("X-Hello", "world");
+  next();
+});
 ```
+
 {: data-line="1"}
 
 See: [Handlers](https://github.com/espadrine/sc/blob/master/doc/Readme.md#handlers)
 
-Templates
----------
+## Templates
 
 ### Basic templates
 
 ```js
-const tpl = Camp.template('/templates/post.html')
+const tpl = Camp.template("/templates/post.html");
 
-camp.path('/blog/:post.html', (req, res) => {
-  res.template({
-    text: 'Hello world'
-  }, tpl)
-})
+camp.path("/blog/:post.html", (req, res) => {
+  res.template(
+    {
+      text: "Hello world",
+    },
+    tpl
+  );
+});
 ```
+
 {: data-line="1,4,5,6"}
 
 ### Implicit templates
 
 ```js
-camp.path('blog.html')
+camp.path("blog.html");
 ```
 
 Uses `blog.html` as a template.
 
 See: [Templates](https://github.com/espadrine/sc/blob/master/doc/Readme.md#templates)
 
-Advanced features
------------------
+## Advanced features
 
 ### Web sockets
 
@@ -121,12 +135,11 @@ camp.ws('/path', (socket) => { ··· })
 ```
 
 ```js
-camp.wsChannels[path]
+camp.wsChannels[path];
 ```
 
 ```js
-camp.wsBroadcast('/path', (req, res) => {
-})
+camp.wsBroadcast("/path", (req, res) => {});
 ```
 
 Sorry I don't completely understand this yet, but check it out in their docs.

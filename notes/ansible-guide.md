@@ -99,7 +99,7 @@ ok: [127.0.0.1]
 
 ## Read more
 
-* [Getting started with Ansible](http://lowendbox.com/blog/getting-started-with-ansible/) _(lowendbox.com)_
-* [Getting started](http://docs.ansible.com/ansible/latest/intro_getting_started.html) _(docs.ansible.com)_
-* [Intro to Inventory](http://docs.ansible.com/ansible/latest/intro_inventory.html) _(docs.ansible.com)_
-* [Intro to Playbooks](http://docs.ansible.com/ansible/latest/playbooks_intro.html) _(docs.ansible.com)_
+- [Getting started with Ansible](http://lowendbox.com/blog/getting-started-with-ansible/) _(lowendbox.com)_
+- [Getting started](http://docs.ansible.com/ansible/latest/intro_getting_started.html) _(docs.ansible.com)_
+- [Intro to Inventory](http://docs.ansible.com/ansible/latest/intro_inventory.html) _(docs.ansible.com)_
+- [Intro to Playbooks](http://docs.ansible.com/ansible/latest/playbooks_intro.html) _(docs.ansible.com)_

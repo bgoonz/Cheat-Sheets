@@ -1,4 +1,4 @@
-window.onGatsbyRouteUpdate = function() {
-window.addMainNavigationHandlers();
-window.addVideoEmbedsHandlers();
+window.onGatsbyRouteUpdate = function () {
+  window.addMainNavigationHandlers();
+  window.addVideoEmbedsHandlers();
 };

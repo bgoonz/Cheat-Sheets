@@ -9,24 +9,24 @@ updated: 2017-10-27
 ### Creating spies
 
 ```js
-fn = sinon.spy()
-fn()
+fn = sinon.spy();
+fn();
 ```
 
 ```js
-fn.calledOnce == true
-fn.callCount == 1
+fn.calledOnce == true;
+fn.callCount == 1;
 ```
 
 ### Spying/stubbing
 
 ```js
-sinon.spy($, 'ajax')
+sinon.spy($, "ajax");
 ```
 
 ```js
 $.ajax();
-$.ajax.calledOnce == true
+$.ajax.calledOnce == true;
 ```
 
 ```js
@@ -34,17 +34,14 @@ sinon.stub($, 'ajax', function () { ... }) // function optional
 ```
 
 ```js
-$.ajax.calledWithMatch({ url: '/x' })
-$.ajax.restore()
+$.ajax.calledWithMatch({ url: "/x" });
+$.ajax.restore();
 ```
 
 ### Spy/stub properties
 
 ```js
-spy
-  .args        //=> [ [..], [..] ] one per call
-  .thisValues
-  .returnValues
+spy.args.thisValues.returnValues; //=> [ [..], [..] ] one per call
 ```
 
 ```js
@@ -65,14 +62,12 @@ spy
 ### Anonymous stub
 
 ```js
-stub = sinon.stub().returns(42)
-stub() == 42
+stub = sinon.stub().returns(42);
+stub() == 42;
 ```
 
 ```js
-stub
-  .withArgs(42).returns(1)
-  .withArgs(43).throws("TypeError")
+stub.withArgs(42).returns(1).withArgs(43).throws("TypeError");
 ```
 
 ```js
@@ -80,19 +75,19 @@ stub
   .returns(1)
   .throws("TypeError")
   .returnsArg(0) // Return 1st argument
-  .callsArg(0)
+  .callsArg(0);
 ```
 
 ### Fake date
 
 ```js
-sinon.useFakeTimers(+new Date(2011,9,1));
+sinon.useFakeTimers(+new Date(2011, 9, 1));
 ```
 
 ### Fake server
 
 ```js
-server = sinon.fakeServer.create()
+server = sinon.fakeServer.create();
 ```
 
 ```js
@@ -105,26 +100,26 @@ server.requests[0].respond(
 ```
 
 ```js
-server.restore()
+server.restore();
 ```
 
 ### Fake XHR
 
 ```js
-xhr = sinon.useFakeXMLHttpRequest()
-xhr.restore()
+xhr = sinon.useFakeXMLHttpRequest();
+xhr.restore();
 ```
 
 ### Sandbox
 
 ```js
-beforeEach(function() {
-  global.sinon = require('sinon').sandbox.create()
-})
+beforeEach(function () {
+  global.sinon = require("sinon").sandbox.create();
+});
 ```
 
 ```js
-afterEach(function() {
-  global.sinon.restore()
-})
+afterEach(function () {
+  global.sinon.restore();
+});
 ```

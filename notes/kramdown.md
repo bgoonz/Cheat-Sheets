@@ -5,15 +5,15 @@ category: Markup
 
 ### Configuration
 
- * `parse_block_html` - process kramdown syntax inside blocks
- * `parse_span_html` - process kramdown syntax inside inlines
- * `html_to_native` - convert html elements to native elements
+- `parse_block_html` - process kramdown syntax inside blocks
+- `parse_span_html` - process kramdown syntax inside inlines
+- `html_to_native` - convert html elements to native elements
 
-    {::options parse_block_html="true" /}
+  {::options parse_block_html="true" /}
 
 For the GFM parser:
 
- * `hard_wrap`
+- `hard_wrap`
 
 http://kramdown.gettalong.org/parser/gfm.html
 
@@ -53,5 +53,5 @@ http://kramdown.gettalong.org/parser/gfm.html
 
 ### References
 
- * http://kramdown.gettalong.org/syntax.html
- * http://kramdown.gettalong.org/parser/kramdown.html
+- http://kramdown.gettalong.org/syntax.html
+- http://kramdown.gettalong.org/parser/kramdown.html

@@ -1,321 +1,160 @@
-# Python
+---
+title: Python
+category: Python
+---
 
-* Python is an interpreted, high-level and general-purpose, dynamically typed programming language
+### Lists
 
-* It is also Object oriented, modular oriented and a scripting language.
+    list = []
+    list[i:j]  # returns list subset
+    list[-1]   # returns last element
+    list[:-1]  # returns all but the last element
 
-* In Python, everything is considered as an Object.
+    list[i] = val
+    list[i:j] = otherlist  # replace ith to jth-1 elements with otherlist
+    del list[i:j]
 
-* A python file has an extension of .py
+    list.append(item)
+    list.extend(another_list)
+    list.insert(index, item)
+    list.pop()        # returns and removes last element from the list
+    list.pop(i)       # returns and removes i-th element from the list
+    list.remove(i)    # removes the first item from the list whose value is i
+    list1 + list2     # combine two list
+    set(list)         # remove duplicate elements from a list
 
-* Python follows Indentation to separate code blocks instead of flower brackets({}).
+    list.reverse()    # reverses the elements of the list in-place
+    list.count(item)
+    sum(list)
 
-* We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
+    zip(list1, list2)  # returns list of tuples with n-th element of both list1 and list2
+    list.sort()        # sorts in-place, returns None
+    sorted(list)       # returns sorted copy of list
+    ",".join(list)     # returns a string with list elements seperated by comma
 
-    `python <filename.py>`
+### Dict
 
-#### By default, the python doesn't require any imports to run a python file.
+    dict.keys()
+    dict.values()
+    "key" in dict    # let's say this returns False, then...
+    dict["key"]      # ...this raises KeyError
+    dict.get("key")  # ...this returns None
+    dict.setdefault("key", 1)
 
-## Create and execute a program
+### Iteration
 
-1. Open up a terminal/cmd
-1. Create the program: nano/cat > nameProgram.py
-1. Write the program and save it
-1. python nameProgram.py
+    for item in ["a", "b", "c"]:
+    for i in range(4):        # 0 to 3
+    for i in range(4, 8):     # 4 to 7
+    for i in range(1, 9, 2):  # 1, 3, 5, 7
+    for key, val in dict.items():
+    for index, item in enumerate(list):
 
-<br>
+### [String](https://docs.python.org/2/library/stdtypes.html#string-methods)
 
-### Basic Datatypes
+    str[0:4]
+    len(str)
 
-| Data Type | Description |
-| --------- | ----------- |
-| int | Integer values [0, 1, -2, 3] |
-| float | Floating point values [0.1, 4.532, -5.092] |
-| char | Characters [a, b, @, !, `] |
-| str | Strings [abc, AbC, A@B, sd!, `asa] |
-| bool | Boolean Values [True, False] |
-| char | Characters [a, b, @, !, `] |
-| complex | Complex numbers [2+3j, 4-1j] |
+    string.replace("-", " ")
+    ",".join(list)
+    "hi {0}".format('j')
+    f"hi {name}" # same as "hi {}".format('name')
+    str.find(",")
+    str.index(",")   # same, but raises IndexError
+    str.count(",")
+    str.split(",")
 
-<br>
+    str.lower()
+    str.upper()
+    str.title()
 
-## Keywords
-<br>
+    str.lstrip()
+    str.rstrip()
+    str.strip()
 
-| Keyword | Description |
-| --------- | ----------- |
-| break 	| used to exit loop and used to exit|
-| char	  |   basic declaration of a type character |
-| const	  |   prefix declaration meaning variable can not be changed|
-| continue |	go to bottom of loop in for, while loops|
-| class |	to define a class|
-| def |	to define a function|
-| elif |	shortcut for (else if) used in else if ladder |
-| else	  |  executable statement, part of "if" structure |
-| float	  |  basic declaration of floating point|
-| for	  |    executable statement, for loop|
-| from	  |    executable statement, used to import only specific objects from a package|
-| if	  |    executable statement|
-| import |	to import modules|
-|pass| keyword to specify noting is happening in the codeblock, generally used in classes|
-|return	 | executable statement with or without a value|
-|while| executable statement, while loop|
-<br>
+    str.islower()
 
-## Operators
+    /* escape characters */
+    >>> 'doesn\'t'  # use \' to escape the single quote...
+        "doesn't"
+    >>> "doesn't"  # ...or use double quotes instead
+        "doesn't"
+    >>> '"Yes," they said.'
+        '"Yes," they said.'
+    >>> "\"Yes,\" they said."
+        '"Yes," they said.'
+    >>> '"Isn\'t," they said.'
+        '"Isn\'t," they said.'
 
-<br>
+### Casting
 
-| Operator | Description |
-|-|-|
-|  ( )	|  grouping parenthesis, function call, tuple declaration |
-|  [ ]	|  array indexing, also declaring lists etc.|
-|  !	|    relational not, complement, ! a  yields true or false |
-|  ~   | 	bitwise not, ones complement, ~a |
-| \-   |	unary minus, - a |
-|  \+   | 	unary plus,  + a |
-|  \*   |	multiply, a * b |
-|  /   	| divide, a / b |
-|  %    |	modulo, a % b |
-|  \+   | 	add, a + b |
-| \-   | 	subtract, a - b |
-| <<   | shift left,  left operand is shifted left by right operand bits |
-| \>>   |	shift right, left operand is shifted right by right operand bits|
- | <    |	less than, result is true or false,  a %lt; b
-| <=   |	less than or equal, result is true or false,  a <= b
-| \>    |	greater than, result is true or false,  a > b
-| \>=   |	greater than or equal, result is true or false, a >= b
-|  ==   |	equal, result is true or false,  a == b
-| !=  | 	not equal, result is true or false,  a != b
-|  & | bitwise and,  a & b
-| ^ | bitwise exclusive or XOR,  a ^ b
-| \| | bitwise or,  a | b
-|  &&, and | relational and, result is true or false,  a < b && c >= d
-| \|\|, or | relational or, result is true or false,  a < b \|\| c >= d |
-| =  | store or assignment |
-|  += | add and store |
-|  -=  | subtract and store |
-|  *= | multiply and store |
-|  /= | divide and store|
-|  %= | modulo and store|
-| <<= | shift left and store|
-|  \>>= | shift right and store|
-|  &= | bitwise and and store|
-|  ^= | bitwise exclusive or and store|
-|  \|= | bitwise or and store|
-|  , | separator as in   ( y=x,z=++x )|
+    int(str)
+    float(str)
+    str(int)
+    str(float)
+    'string'.encode()
 
-### Basic Data Structures
+### Comprehensions
 
-### List
+    [fn(i) for i in list]            # .map
+    map(fn, list)                    # .map, returns iterator
 
-- List is a collection which is ordered and changeable. Allows duplicate members.
+    filter(fn, list)                 # .filter, returns iterator
+    [fn(i) for i in list if i > 0]   # .filter.map
 
+### Regex
 
-- Lists are created using square brackets:
+    import re
 
-```py
-thislist = ["apple", "banana", "cherry"] 
-```
+    re.match(r'^[aeiou]', str)
+    re.sub(r'^[aeiou]', '?', str)
+    re.sub(r'(xyz)', r'\1', str)
 
-- List items are ordered, changeable, and allow duplicate values.
+    expr = re.compile(r'^...$')
+    expr.match(...)
+    expr.sub(...)
 
-- List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+## File manipulation
 
-- The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
-
-- To determine how many items a list has, use the `len()` function.
-
-- A list can contain different data types:
-```py
-list1 = ["abc", 34, True, 40, "male"]
-```
-- It is also possible to use the list() constructor when creating a new list
-```py
-thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
-```
-### Tuple
-- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
-- A tuple is a collection which is ordered and unchangeable.
-- Tuples are written with round brackets.
-```py
-thistuple = ("apple", "banana", "cherry")
-```
-- Tuple items are ordered, unchangeable, and allow duplicate values.
-- Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
-- When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
-
-- Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
-- Since tuple are indexed, tuples can have items with the same value:
-- Tuples allow duplicate values:
-```py
-thistuple = ("apple", "banana", "cherry", "apple", "cherry")
-```
-- To determine how many items a tuple has, use the  `len()`function:
-```py
-thistuple = ("apple", "banana", "cherry")
-print(len(thistuple))
-```
-- To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
-```py
-thistuple = ("apple",)
-print(type(thistuple))
-
-#NOT a tuple
-thistuple = ("apple")
-print(type(thistuple))
-```
-- It is also possible to use the tuple() constructor to make a tuple.
-```py
-
-thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
-print(thistuple)
-```
-
-### Set
-- Set is a collection which is unordered and unindexed. No duplicate members.
-- A set is a collection which is both unordered and unindexed.
-```py
-thisset = {"apple", "banana", "cherry"}
-```
-- Set items are unordered, unchangeable, and do not allow duplicate values.
-- Unordered means that the items in a set do not have a defined order.
-
-- Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
-
-- Sets are unchangeable, meaning that we cannot change the items after the set has been created.
-- Duplicate values will be ignored.
-- To determine how many items a set has, use the `len()` method.
-```py
-thisset = {"apple", "banana", "cherry"}
-
-print(len(thisset))
-```
-- Set items can be of any data type:
-```py
-set1 = {"apple", "banana", "cherry"}
-set2 = {1, 5, 7, 9, 3}
-set3 = {True, False, False}
-set4 = {"abc", 34, True, 40, "male"}
-```
-- It is also possible to use the `set()` constructor to make a set.
-```py
-thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
-```
-### Dictionary
-- Dictionary is a collection which is unordered and changeable. No duplicate members.
-- Dictionaries are used to store data values in key:value pairs.
-- Dictionaries are written with curly brackets, and have keys and values:
-```py
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-```
-- Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
-```py
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-print(thisdict["brand"])
-```
-- Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
-- Dictionaries cannot have two items with the same key.
-- Duplicate values will overwrite existing values.
-- To determine how many items a dictionary has, use the `len()` function.
-```py
-print(len(thisdict))
-```
-- The values in dictionary items can be of any data type
-```py
-thisdict = {
-  "brand": "Ford",
-  "electric": False,
-  "year": 1964,
-  "colors": ["red", "white", "blue"]
-}
-```
-
-### Conditional branching
+### Reading
 
 ```py
-    if condition:
-        pass
-    elif condition2:
-        pass
-    else:
-        pass
+file = open("hello.txt", "r") # open in read mode 'r'
+file.close()
 ```
-### Loops
-
- Python has two primitive loop commands:
-1. while loops
-2. for loops
-
-#### While loop
-- With the `while` loop we can execute a set of statements as long as a condition is true.
-- Example: Print i as long as i is less than 6
-```py
-i = 1
-while i < 6:
-  print(i)
-  i += 1
-```
-- The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
-- With the `break` statement we can stop the loop even if the while condition is true
-- With the continue statement we can stop the current iteration, and continue with the next.
-
-- With the else statement we can run a block of code once when the condition no longer is true.
-
-#### For loop
-- A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
-
-- This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
-
-- With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
-```py
-fruits = ["apple", "banana", "cherry"]
-for x in fruits:
-  print(x)
-```
-- The for loop does not require an indexing variable to set beforehand.
-- To loop through a set of code a specified number of times, we can use the range() function.
-- The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
-- The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).
-- The else keyword in a for loop specifies a block of code to be executed when the loop is finished.
-A nested loop is a loop inside a loop.
-
-- The "inner loop" will be executed one time for each iteration of the "outer loop":
 
 ```py
-adj = ["red", "big", "tasty"]
-fruits = ["apple", "banana", "cherry"]
-
-for x in adj:
-  for y in fruits:
-    print(x, y)
+print(file.read())  # read the entire file and set the cursor at the end of file
+print file.readline() # Reading one line
+file.seek(0, 0) # place the cursor at the beggining of the file
 ```
-- for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+
+### Writing (overwrite)
 
 ```py
-for x in [0, 1, 2]:
-  pass
+file = open("hello.txt", "w") # open in write mode 'w'
+file.write("Hello World")
+
+text_lines = ["First line", "Second line", "Last line"]
+file.writelines(text_lines)
+
+file.close()
 ```
 
-### Function definition
+### Writing (append)
+
 ```py
-def function_name():
-    return
-```
-### Function call
-
-```py 
-function_name()
+file = open("Hello.txt", "a") # open in append mode
+file.write("Hello World again")
+file.close()
 ```
 
-* We need not to specify the return type of the function.
-* Functions by default return `None` 
-* We can return any datatype.
+### Context manager
+
+```py
+with open("welcome.txt", "r") as file:
+    # 'file' refers directly to "welcome.txt"
+   data = file.read()
+
+# It closes the file automatically at the end of scope, no need for `file.close()`.
+```

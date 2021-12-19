@@ -9,7 +9,7 @@ intro: |
 ### Usage
 
 ```js
-Harvey.attach('(min-width: 600px)', {
+Harvey.attach("(min-width: 600px)", {
   setup: function () {
     // Called on first enter
   },
@@ -18,8 +18,8 @@ Harvey.attach('(min-width: 600px)', {
   },
   off: function () {
     // Called on every exit
-  }
-})
+  },
+});
 ```
 
 ### Deprecated
@@ -28,4 +28,4 @@ Harvey.js hasn't been updated in a while, as of time of writing. Consider [enqui
 
 ### References
 
-* <http://harvesthq.github.io/harvey>
+- <http://harvesthq.github.io/harvey>

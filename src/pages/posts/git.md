@@ -2,7 +2,7 @@
 title: Git
 subtitle: Git Cheat Sheet
 excerpt: >-
-date: '2021-11-21'
+date: "2021-11-21"
 thumb_img_path: images/3.jpg
 thumb_img_alt: nodejs
 content_img_path: images/3.jpg
@@ -11,26 +11,26 @@ seo:
   title: nodejs
   description:
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Git
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: Git Cheat Sheet
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/3.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Git
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: Nodejs Cheat Sheet
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/3.jpg
       relativeUrl: true
 template: post
@@ -50,24 +50,24 @@ Version control is a system that records changes to a file(s), over time.
 
 ### Centralized Versioning vs. Distributed Versioning
 
-* Centralized version control focuses on synchronizing, tracking, and backing
-up files.
-* Distributed version control focuses on sharing changes. Every change has a
-unique id.
-* Distributed systems have no defined structure. You could easily have a SVN
-style, centralized system, with git.
+- Centralized version control focuses on synchronizing, tracking, and backing
+  up files.
+- Distributed version control focuses on sharing changes. Every change has a
+  unique id.
+- Distributed systems have no defined structure. You could easily have a SVN
+  style, centralized system, with git.
 
 [Additional Information](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
 ### Why Use Git?
 
-* Can work offline.
-* Collaborating with others is easy!
-* Branching is easy!
-* Branching is fast!
-* Merging is easy!
-* Git is fast.
-* Git is flexible.
+- Can work offline.
+- Collaborating with others is easy!
+- Branching is easy!
+- Branching is fast!
+- Merging is easy!
+- Git is fast.
+- Git is flexible.
 
 ## Git Architecture
 
@@ -116,20 +116,21 @@ functionality to mark release points (v1.0, and so on)
 ### HEAD and head (component of .git dir)
 
 HEAD is a pointer that points to the current branch. A repository only has 1
-*active* HEAD.
+_active_ HEAD.
 head is a pointer that points to any commit. A repository can have any number
 of heads.
 
 ### Stages of Git
-* Modified - Changes have been made to a file but file has not been committed
-to Git Database yet
-* Staged - Marks a modified file to go into your next commit snapshot
-* Committed - Files have been committed to the Git Database
+
+- Modified - Changes have been made to a file but file has not been committed
+  to Git Database yet
+- Staged - Marks a modified file to go into your next commit snapshot
+- Committed - Files have been committed to the Git Database
 
 ### Conceptual Resources
 
-* [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
-* [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
+- [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
+- [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
 
 ## Commands
 
@@ -477,6 +478,7 @@ Now you can pull!
 ```bash
 git pull
 ```
+
 `...changes apply...`
 
 Now check that everything is OK
@@ -521,7 +523,7 @@ Now you're ready to get back to work on your stuff!
 
 Take all changes that were committed on one branch, and replay them onto
 another branch.
-*Do not rebase commits that you have pushed to a public repo*.
+_Do not rebase commits that you have pushed to a public repo_.
 
 ```bash
 # Rebase experimentBranch onto master
@@ -574,6 +576,7 @@ You can do this:
 ed8ddf2 HEAD@{4}: rebase -i (pick): pythonstatcomp spanish translation (#1748)
 2e6c386 HEAD@{5}: rebase -i (start): checkout 02fb96d
 ```
+
 2. Select where to reset to, in our case its `2e6c386`, or `HEAD@{5}`
 3. 'git reset --hard HEAD@{5}' this will reset your repo to that head
 4. You can start the rebase again or leave it alone.

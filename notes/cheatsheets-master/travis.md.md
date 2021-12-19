@@ -8,6 +8,7 @@ intro: |
 ---
 
 ## Reference
+
 {:.-three-column}
 
 ### Node.js
@@ -15,7 +16,7 @@ intro: |
 ```yaml
 language: node_js
 node_js:
-  - '4'
+  - "4"
 ```
 
 Defaults install to `npm install`, and defaults test to `npm test`.
@@ -53,16 +54,16 @@ Defaults install to `bundle install`, defaults test to `rake`.
 
 ```yaml
 branches:
-  except: ['..']
-  only: ['master']
+  except: [".."]
+  only: ["master"]
 ```
 
 ### Environment vars
 
 ```yaml
 env:
-  - 'rack=master'
-  - 'rack=1.3.4'
+  - "rack=master"
+  - "rack=1.3.4"
 ```
 
 ### Custom test command

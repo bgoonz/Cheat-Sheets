@@ -99,7 +99,6 @@ tags:
 type: home # home | article | error
 og_type: website # opengraph type
 ---
-
 ```
 
 ## Prism languages
@@ -119,7 +118,6 @@ title: ES2015
 category: Hidden
 redirect_to: /es6
 ---
-
 ```
 
 ## Localizations

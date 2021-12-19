@@ -9,6 +9,7 @@ description: |
 ---
 
 ### Introduction
+
 {: .-intro}
 
 [HTTPie](https://httpie.org/) is a command-line HTTP client.
@@ -98,4 +99,4 @@ $ echo '{"hello": "world"}' | http POST example.com/post
 
 ### References
 
-* <https://github.com/jakubroztocil/httpie>
+- <https://github.com/jakubroztocil/httpie>

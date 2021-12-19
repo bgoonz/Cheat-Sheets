@@ -49,8 +49,8 @@ aws configure --profile project2
 
 ### Configuration
 
-* .elasticbeanstalk/config.yml - application config
-* .elasticbeanstalk/dev-env.env.yml - environment config
+- .elasticbeanstalk/config.yml - application config
+- .elasticbeanstalk/dev-env.env.yml - environment config
 
 ```
 eb config
@@ -60,11 +60,11 @@ See: <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html
 
 ## ebextensions
 
-* <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers.html>
-* <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html>
+- <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers.html>
+- <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html>
 
 ## Also see
 
-* [AWS CLI](https://aws.amazon.com/cli/)
-* [Documentation](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
-* [All commands](http://docs.aws.amazon.com/cli/latest/reference/#available-services)
+- [AWS CLI](https://aws.amazon.com/cli/)
+- [Documentation](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+- [All commands](http://docs.aws.amazon.com/cli/latest/reference/#available-services)

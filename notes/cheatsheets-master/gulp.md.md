@@ -3,27 +3,26 @@ title: Gulp
 category: JavaScript libraries
 ---
 
- * gulp-ruby-sass
- * gulp-autoprefixer
- * gulp-minify-css
- * gulp-jshint
- * gulp-concat
- * gulp-uglify
- * gulp-imagemin
- * gulp-livereload (requires tiny-lr)
- * gulp-clean
- * gulp-cache
- * gulp-notify
+- gulp-ruby-sass
+- gulp-autoprefixer
+- gulp-minify-css
+- gulp-jshint
+- gulp-concat
+- gulp-uglify
+- gulp-imagemin
+- gulp-livereload (requires tiny-lr)
+- gulp-clean
+- gulp-cache
+- gulp-notify
 
- * gulp-header (headers in files)
- * gulp-mocha
- * gulp-stylus
- * gulp-compass
- * gulp-nodemon
- * gulp-size (displays size)
+- gulp-header (headers in files)
+- gulp-mocha
+- gulp-stylus
+- gulp-compass
+- gulp-nodemon
+- gulp-size (displays size)
 
 ### Example
-
 
     // gulpfile.js
     // Load plugins

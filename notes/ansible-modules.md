@@ -17,7 +17,7 @@ updated: 2017-10-03
 - hosts: production
   remote_user: root
   tasks:
-  - ···
+    - ···
 ```
 
 Place your modules inside `tasks`.
@@ -130,7 +130,7 @@ See: [user module](http://devdocs.io/ansible/user_module)
 - service:
     name: nginx
     state: started
-    enabled: yes     # optional
+    enabled: yes # optional
 ```
 
 See: [service module](http://devdocs.io/ansible/service_module)
@@ -148,9 +148,9 @@ See: [service module](http://devdocs.io/ansible/service_module)
 ```yaml
 - shell: echo hello
   args:
-    creates: /path/file  # skip if this exists
-    removes: /path/file  # skip if this is missing
-    chdir: /path         # cd here before running
+    creates: /path/file # skip if this exists
+    removes: /path/file # skip if this is missing
+    chdir: /path # cd here before running
 ```
 
 #### Multiline example
@@ -168,9 +168,9 @@ See: [shell module](http://devdocs.io/ansible/shell_module)
 ```yaml
 - script: /x/y/script.sh
   args:
-    creates: /path/file  # skip if this exists
-    removes: /path/file  # skip if this is missing
-    chdir: /path         # cd here before running
+    creates: /path/file # skip if this exists
+    removes: /path/file # skip if this is missing
+    chdir: /path # cd here before running
 ```
 
 See: [script module](http://devdocs.io/ansible/script_module)
@@ -188,8 +188,8 @@ See: [script module](http://devdocs.io/ansible/script_module)
     owner: bin
     group: wheel
     mode: 0644
-    recurse: yes  # mkdir -p
-    force: yes    # ln -nfs
+    recurse: yes # mkdir -p
+    force: yes # ln -nfs
 ```
 
 See: [file module](http://devdocs.io/ansible/file_module)
@@ -244,4 +244,3 @@ See: [template module](http://devdocs.io/ansible/template_module)
 
 See: [debug module](http://devdocs.io/ansible/debug_module)
 {% endraw %}
-

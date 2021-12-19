@@ -18,8 +18,8 @@ a {
   border-bottom: 2px solid _palette(accent);
   color: _palette(secondary);
   text-decoration: none;
-  -webkit-transition: border .3s ease, color .3s ease;
-  transition: border .3s ease, color .3s ease;
+  -webkit-transition: border 0.3s ease, color 0.3s ease;
+  transition: border 0.3s ease, color 0.3s ease;
 
   &:hover {
     border-color: currentColor;
@@ -105,7 +105,7 @@ pre {
   white-space: pre;
 
   &:first-child {
-    margin-top: 0
+    margin-top: 0;
   }
 }
 
@@ -119,7 +119,7 @@ blockquote {
   padding-top: 1.33333rem;
 
   &:first-child {
-    margin-top: 0
+    margin-top: 0;
   }
 
   p {
@@ -272,23 +272,23 @@ textarea {
   &:before,
   &:after {
     border: solid transparent;
-    border-width: .3125em;
+    border-width: 0.3125em;
     box-sizing: border-box;
     content: "";
     position: absolute;
     right: 10px;
     top: 50%;
     z-index: 1;
-  } 
+  }
 
   &:before {
     border-top-color: _palette(meta);
-    margin-top: .125em;
+    margin-top: 0.125em;
   }
 
   &:after {
     border-bottom-color: _palette(meta);
-    margin-top: -.75em;
+    margin-top: -0.75em;
   }
 }
 
@@ -296,7 +296,7 @@ textarea {
   padding-left: 24px;
   position: relative;
 
-  input[type=checkbox] {
+  input[type="checkbox"] {
     height: 1.5em;
     left: 0;
     position: absolute;
@@ -344,21 +344,21 @@ input[type="reset"],
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 
   &:hover,
   &:focus,
   &:active {
     background: transparent;
     border-color: _palette(accent);
-    box-shadow: 0 0 1px 0.5em rgba(_palette(accent),.2);
+    box-shadow: 0 0 1px 0.5em rgba(_palette(accent), 0.2);
     color: _palette(secondary);
     outline: 0;
   }
 }
 
-.button-icon  {
+.button-icon {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

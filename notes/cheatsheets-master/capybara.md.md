@@ -63,10 +63,11 @@ page.has_css?('.button')
 expect(page).to have_css('.button')
 page.should have_css('.button')
 ```
+
 {: .-setup}
 
 | Positive                          | Negative               |
-| ---                               | ---                    |
+| --------------------------------- | ---------------------- |
 | `has_content?`                    | `has_no_content?`      |
 | ---                               | ---                    |
 | `has_css?` _(selector)_           | `has_no_css?`          |
@@ -84,6 +85,7 @@ page.should have_css('.button')
 | `has_table?` _(selector)_         | `has_no_table?`        |
 | ---                               | ---                    |
 | `has_select?` _(selector)_        | `has_no_select?`       |
+
 {: .-headers.-left-align}
 
 In Rspec, these also map to matchers like `page.should have_content`.
@@ -121,6 +123,7 @@ In RSpec, you can use `page.should` assertions.
 ```ruby
 expect(page).to have_no_button('Save')   # OK
 ```
+
 ```ruby
 expect(page).not_to have_button('Save')  # Bad
 ```
@@ -135,6 +138,7 @@ Use `should have_no_*` versions with RSpec matchers because
 ```ruby
 expect(page).to \
 ```
+
 {: .-setup}
 
 ```ruby
@@ -331,6 +335,7 @@ page.set_rack_session(foo: 'bar')
 ```
 
 ## See also
+
 {: .-one-column}
 
 - <http://rubydoc.info/github/jnicklas/capybara/Capybara/RSpecMatchers>

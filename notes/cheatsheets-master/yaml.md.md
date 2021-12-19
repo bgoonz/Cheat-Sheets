@@ -31,7 +31,7 @@ child:
 values: &ref
   - These values
   - will be reused below
-  
+
 other_values:
   <<: *ref
 ```

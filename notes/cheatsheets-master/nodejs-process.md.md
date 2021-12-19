@@ -31,7 +31,7 @@ category: Node.js
     process.exit(1);
 
 ### Directories
-    
+
     process.cwd(); //=> "/tmp"
     process.chdir('dir');
 
