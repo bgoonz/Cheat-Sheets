@@ -6,6 +6,7 @@ updated: 2018-06-14
 ---
 
 ## Shortcuts
+
 {: .-three-column}
 
 ### Tree
@@ -14,6 +15,7 @@ updated: 2018-06-14
 | -------- | ------------------- |
 | `⌘\`     | Toggle tree         |
 | `⌘⇧\`    | Reveal current file |
+
 {: .-shortcuts}
 
 ### Comments
@@ -21,6 +23,7 @@ updated: 2018-06-14
 | Shortcut | Description     |
 | -------- | --------------- |
 | `⌘/`     | Toggle comments |
+
 {: .-shortcuts}
 
 ### View
@@ -33,6 +36,7 @@ updated: 2018-06-14
 | `⌘⌥-`    | Shrink pane            |
 | ---      | ---                    |
 | `^⇧←`    | Move tab to left       |
+
 {: .-shortcuts}
 
 ### Bracket matcher
@@ -43,6 +47,7 @@ updated: 2018-06-14
 | `^]`     | Remove brackets from selection |
 | `^⌘m`    | Select inside brackets         |
 | `⌥⌘.`    | Close tag                      |
+
 {: .-shortcuts}
 
 ### Symbols view
@@ -51,6 +56,7 @@ updated: 2018-06-14
 | -------- | -------------------------------- |
 | `^⌥↓`    | Jump to declaration under cursor |
 | `^⇧r`    | Show tags                        |
+
 {: .-shortcuts}
 
 Symbols view enables Ctags support for Atom.
@@ -78,6 +84,7 @@ See: [Symbols view](https://atom.io/packages/symbols-view)
 | ---      | ---            |
 | `⌘⇧k`    | Delete line    |
 | `⌘⇧d`    | Duplicate line |
+
 {: .-shortcuts}
 
 ### Project
@@ -93,6 +100,7 @@ See: [Symbols view](https://atom.io/packages/symbols-view)
 | `⌘f`     | Find in file            |
 | `⌘⇧f`    | Find in project         |
 | `⌘t`     | Search files in project |
+
 {: .-shortcuts}
 
 ## Notes

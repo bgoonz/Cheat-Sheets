@@ -1,161 +1,151 @@
----
-title: Python
-category: Python
----
+# Python
 
-### Lists
+{% file src=".gitbook/assets/learn-python-src.zip" %}
 
-    list = []
-    list[i:j]  # returns list subset
-    list[-1]   # returns last element
-    list[:-1]  # returns all but the last element
-    
-    list[i] = val
-    list[i:j] = otherlist  # replace ith to jth-1 elements with otherlist
-    del list[i:j]
+### Table of Contents
 
-    list.append(item)
-    list.extend(another_list)
-    list.insert(index, item)
-    list.pop()        # returns and removes last element from the list
-    list.pop(i)       # returns and removes i-th element from the list
-    list.remove(i)    # removes the first item from the list whose value is i
-    list1 + list2     # combine two list    
-    set(list)         # remove duplicate elements from a list
+1. **Getting Started**
+   * What is Python
+   * Python Syntax
+   * Variables
+2. **Operators**
+   * Arithmetic Operators (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
+   * Bitwise Operators (`&`, `|`, `^`, `>>`, `<<`, `~`)
+   * Assignment Operators (`=`, `+=`, `-=`, `/=`, `//=` etc.)
+   * Comparison Operator (`==`, `!=`, `>`, `<`, `>=`, `<=`)
+   * Logical Operators (`and`, `or`, `not`)
+   * Identity Operators (`is`, `is not`)
+   * Membership Operators (`in`, `not in`)
+3. **Data Types**
+   * Numbers (including booleans)
+   * Strings and their methods
+   * Lists and their methods (including list comprehensions)
+   * Tuples
+   * Sets and their methods
+   * Dictionaries
+   * Type Casting
+4. **Control Flow**
+   * The `if` statement
+   * The `for` statement (and `range()` function)
+   * The `while` statement
+   * The `try` statements
+   * The `break` statement
+   * The `continue` statement
+5. **Functions**
+   * Function Definition (`def` and `return` statements)
+   * Scopes of Variables Inside Functions (`global` and `nonlocal` statements)
+   * Default Argument Values
+   * Keyword Arguments
+   * Arbitrary Argument Lists
+   * Unpacking Argument Lists (`*` and `**` statements)
+   * Lambda Expressions (`lambda` statement)
+   * Documentation Strings
+   * Function Annotations
+   * Function Decorators
+6. **Classes**
+   * Class Definition (`class` statement)
+   * Class Objects
+   * Instance Objects
+   * Method Objects
+   * Class and Instance Variables
+   * Inheritance
+   * Multiple Inheritance
+7. **Modules**
+   * Modules (`import` statement)
+   * Packages
+8. **Errors and Exceptions**
+   * Handling Exceptions (`try` statement)
+   * Raising Exceptions (`raise` statement)
+9. **Files**
+   * Reading and Writing (`with` statement)
+   * Methods of File Objects
+10. **Additions**
+    * The `pass` statement
+    * Generators (`yield` statement)
+11. **Brief Tour of the Standard Libraries**
+    * Serialization (`json` library)
+    * File Wildcards (`glob` library)
+    * String Pattern Matching (`re` library)
+    * Mathematics (`math`, `random`, `statistics` libraries)
+    * Dates and Times (`datetime` library)
+    * Data Compression (`zlib` library)
+12. **User input**
+    * Terminal input (`input` statement)
 
-    list.reverse()    # reverses the elements of the list in-place
-    list.count(item)
-    sum(list)
+### Prerequisites
 
-    zip(list1, list2)  # returns list of tuples with n-th element of both list1 and list2
-    list.sort()        # sorts in-place, returns None
-    sorted(list)       # returns sorted copy of list
-    ",".join(list)     # returns a string with list elements seperated by comma
+**Installing Python**
 
-### Dict
+Make sure that you have [Python3 installed](https://realpython.com/installing-python/) on your machine.
 
-    dict.keys()
-    dict.values()
-    "key" in dict    # let's say this returns False, then...
-    dict["key"]      # ...this raises KeyError
-    dict.get("key")  # ...this returns None
-    dict.setdefault("key", 1)
+You might want to use [venv](https://docs.python.org/3/library/venv.html) standard Python library to create virtual environments and have Python, pip and all dependent packages to be installed and served from the local project directory to avoid messing with system wide packages and their versions.
 
-### Iteration
+Depending on your installation you might have access to Python3 interpreter either by running `python` or `python3`. The same goes for pip package manager - it may be accessible either by running `pip` or `pip3`.
 
-    for item in ["a", "b", "c"]:
-    for i in range(4):        # 0 to 3
-    for i in range(4, 8):     # 4 to 7
-    for i in range(1, 9, 2):  # 1, 3, 5, 7
-    for key, val in dict.items():
-    for index, item in enumerate(list):
+You may check your Python version by running:
 
-### [String](https://docs.python.org/2/library/stdtypes.html#string-methods)
-
-    str[0:4]
-    len(str)
-
-    string.replace("-", " ")
-    ",".join(list)
-    "hi {0}".format('j')
-    f"hi {name}" # same as "hi {}".format('name')
-    str.find(",")
-    str.index(",")   # same, but raises IndexError
-    str.count(",")
-    str.split(",")
-
-    str.lower()
-    str.upper()
-    str.title()
-
-    str.lstrip()
-    str.rstrip()
-    str.strip()
-
-    str.islower()
-    
-    /* escape characters */
-    >>> 'doesn\'t'  # use \' to escape the single quote...
-        "doesn't"
-    >>> "doesn't"  # ...or use double quotes instead
-        "doesn't"
-    >>> '"Yes," they said.'
-        '"Yes," they said.'
-    >>> "\"Yes,\" they said."
-        '"Yes," they said.'
-    >>> '"Isn\'t," they said.'
-        '"Isn\'t," they said.'
-
-### Casting
-
-    int(str)
-    float(str)
-    str(int)
-    str(float)
-    'string'.encode()
-
-### Comprehensions
-
-    [fn(i) for i in list]            # .map
-    map(fn, list)                    # .map, returns iterator
-    
-    filter(fn, list)                 # .filter, returns iterator
-    [fn(i) for i in list if i > 0]   # .filter.map
-
-### Regex
-
-    import re
-
-    re.match(r'^[aeiou]', str)
-    re.sub(r'^[aeiou]', '?', str)
-    re.sub(r'(xyz)', r'\1', str)
-
-    expr = re.compile(r'^...$')
-    expr.match(...)
-    expr.sub(...)
-
-## File manipulation
-    
-### Reading
-
-```py
-file = open("hello.txt", "r") # open in read mode 'r'
-file.close() 
+```bash
+python --version
 ```
 
-```py
-print(file.read())  # read the entire file and set the cursor at the end of file
-print file.readline() # Reading one line
-file.seek(0, 0) # place the cursor at the beggining of the file
+Note that in this repository whenever you see `python` it will be assumed that it is Python **3**.
+
+**Installing dependencies**
+
+Install all dependencies that are required for the project by running:
+
+```bash
+pip install -r requirements.txt
 ```
 
-### Writing (overwrite)
+### Testing the Code
 
-```py
-file = open("hello.txt", "w") # open in write mode 'w'
-file.write("Hello World") 
+Tests are made using [pytest](https://docs.pytest.org/en/latest/) framework.
 
-text_lines = ["First line", "Second line", "Last line"] 
-file.writelines(text_lines)
+You may add new tests for yourself by adding files and functions with `test_` prefix (i.e. `test_topic.py` with `def test_sub_topic()` function inside).
 
-file.close()
+To run all the tests please execute the following command from the project root folder:
+
+```bash
+pytest
 ```
 
-### Writing (append)
+To run specific tests please execute:
 
-```py
-file = open("Hello.txt", "a") # open in append mode
-file.write("Hello World again")  
-file.close()
+```bash
+pytest ./path/to/the/test_file.py
 ```
 
-### Context manager
+### Linting the Code
 
-```py
-with open("welcome.txt", "r") as file:
-    # 'file' refers directly to "welcome.txt"
-   data = file.read()
+Linting is done using [pylint](http://pylint.pycqa.org) and [flake8](http://flake8.pycqa.org/en/latest/) libraries.
 
-# It closes the file automatically at the end of scope, no need for `file.close()`.
+#### PyLint
+
+To check if the code is written with respect to [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide please run:
+
+```bash
+pylint ./src/
 ```
 
+In case if linter will detect error (i.e. `missing-docstring`) you may want to read more about specific error by running:
+
+```bash
+pylint --help-msg=missing-docstring
+```
+
+[More about PyLint](http://pylint.pycqa.org)
+
+#### Flake8
+
+To check if the code is written with respect to [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide please run:
+
+```bash
+flake8 ./src
+```
+
+Or if you want to have more detailed output you may run:
+
+```bash
+flake8 ./src --statistics --show-source --count
+```

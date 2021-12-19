@@ -6,6 +6,7 @@ category: JavaScript libraries
 ```
 npm i -g browser-sync
 ```
+
 {:.terminal}
 
 ### Start a server
@@ -23,4 +24,4 @@ browser-sync start --server <path> --files='**/*.html, **/*.css'
 
 ### Reference
 
-* [browsersync.io](http://browsersync.io)
+- [browsersync.io](http://browsersync.io)

@@ -6,7 +6,7 @@ layout: 2017/sheet
 
 ### Usage
 
-``` vim
+```vim
 :Unite file
 :Unite file_rec/async:!
 :Unite tag
@@ -15,16 +15,16 @@ layout: 2017/sheet
 
 ### Sources
 
-* `file/new`
-* `file/async`
-* `file_rec/async`
-* `file_rec/git`
-* `buffer`
-* `buffer_tab` (current tab only)
-* `tab`
-* `register`
-* `bookmark`
-* `source`
+- `file/new`
+- `file/async`
+- `file_rec/async`
+- `file_rec/git`
+- `buffer`
+- `buffer_tab` (current tab only)
+- `tab`
+- `register`
+- `bookmark`
+- `source`
 
 ### Options
 

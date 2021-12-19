@@ -67,6 +67,7 @@ set_meta_tags follow: true
 set_meta_tags og: { image: ['...'] }
 set_meta_tags twitter: { description: '...' }
 ```
+
 ```ruby
 set_meta_tags separator: '·'   # Site · Page title
 set_meta_tags prefix: ' '      # Around the separator

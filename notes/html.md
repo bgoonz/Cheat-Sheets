@@ -54,11 +54,11 @@ layout: 2017/sheet
 
 ### Touch icons
 
- * apple-touch-icon-precomposed.png
- * apple-touch-icon-57x57-precomposed.png
- * apple-touch-icon-72x72-precomposed.png
- * apple-touch-icon-114x114-precomposed.png
- * apple-touch-icon-144x144-precomposed.png
+- apple-touch-icon-precomposed.png
+- apple-touch-icon-57x57-precomposed.png
+- apple-touch-icon-72x72-precomposed.png
+- apple-touch-icon-114x114-precomposed.png
+- apple-touch-icon-144x144-precomposed.png
 
 ### Icons
 
@@ -94,7 +94,7 @@ Only do this if you're not placing the site in the root!
         Please <a class="upgrade-browser"
         href="http://browsehappy.com/">
         upgrade your browser</a> or <a  class="chrome-frame"
-        href="http://www.google.com/chromeframe/?redirect=true">activate Google 
+        href="http://www.google.com/chromeframe/?redirect=true">activate Google
         Chrome Frame</a> to improve your experience.
       </span>
     </div>

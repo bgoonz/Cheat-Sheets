@@ -9,15 +9,16 @@ intro: |
 ---
 
 ## Getting started
+
 {: .-three-column}
 
 ### Connect
 
 ```js
-require('knex')({
-  client: 'pg',
-  connection: 'postgres://user:pass@localhost:5432/dbname'
-})
+require("knex")({
+  client: "pg",
+  connection: "postgres://user:pass@localhost:5432/dbname",
+});
 ```
 
 See: [Connect](#connect-1)
@@ -42,6 +43,7 @@ knex('users')
   .where({ email: 'hi@example.com' })
   .then(rows => ···)
 ```
+
 {: data-line="2"}
 
 See: [Select](#select-1)
@@ -49,9 +51,9 @@ See: [Select](#select-1)
 ### Insert
 
 ```js
-knex('users')
-  .insert({ email: 'hi@example.com' })
+knex("users").insert({ email: "hi@example.com" });
 ```
+
 {: data-line="2"}
 
 See: [Insert](#insert-1)
@@ -59,10 +61,9 @@ See: [Insert](#insert-1)
 ### Update
 
 ```js
-knex('users')
-  .where({ id: 135 })
-  .update({ email: 'hi@example.com' })
+knex("users").where({ id: 135 }).update({ email: "hi@example.com" });
 ```
+
 {: data-line="2,3"}
 
 See: [Update](#update-1)
@@ -91,6 +92,7 @@ knex seed:run --specific=seed-filename.js # Runs a specific seed file
 See: [Seeds](http://knexjs.org/#Seeds)
 
 ## Connect
+
 {: .-three-column}
 
 ### Libraries
@@ -107,17 +109,18 @@ See: [Node.js installation](http://knexjs.org/#Installation-node)
 ### Connect via host
 
 ```js
-var knex = require('knex')({
-  client: 'mysql',
+var knex = require("knex")({
+  client: "mysql",
   connection: {
-    host: '127.0.0.1',
-    user: 'your_database_user',
-    password: 'your_database_password',
-    database: 'myapp_test'
+    host: "127.0.0.1",
+    user: "your_database_user",
+    password: "your_database_password",
+    database: "myapp_test",
   },
-  pool: { min: 0, max: 7 }
-})
+  pool: { min: 0, max: 7 },
+});
 ```
+
 {: data-line="2,3"}
 
 See: [Initializing the library](http://knexjs.org/#Installation-client)
@@ -125,23 +128,25 @@ See: [Initializing the library](http://knexjs.org/#Installation-client)
 ### Connect via URL
 
 ```js
-var pg = require('knex')({
-  client: 'pg',
+var pg = require("knex")({
+  client: "pg",
   connection: process.env.DATABASE_URL,
-  searchPath: 'knex,public',
-  pool: { min: 0, max: 7 }
-})
+  searchPath: "knex,public",
+  pool: { min: 0, max: 7 },
+});
 ```
+
 {: data-line="2,3"}
 
 ### Connect via Sqlite
 
 ```js
-var knex = require('knex')({
-  client: 'sqlite3',
-  connection: { filename: './mydb.sqlite' }
-})
+var knex = require("knex")({
+  client: "sqlite3",
+  connection: { filename: "./mydb.sqlite" },
+});
 ```
+
 {: data-line="2,3"}
 
 ## Select
@@ -149,9 +154,7 @@ var knex = require('knex')({
 ### Where
 
 ```js
-knex
-  .from('books')
-  .select('title', 'author', 'year')
+knex.from("books").select("title", "author", "year");
 ```
 
 #### Where
@@ -200,7 +203,7 @@ See: [Where clauses](http://knexjs.org/#Builder-wheres)
 ### Join
 
 ```js
-knex('users')
+knex("users");
 ```
 
 #### Basic join
@@ -260,8 +263,7 @@ See: [Join methods](http://knexjs.org/#Builder-join)
 ### Others
 
 ```js
-knex('users')
-  .distinct()
+knex("users").distinct();
 ```
 
 #### Group
@@ -272,6 +274,7 @@ knex('users')
 ```
 
 #### Order
+
 ```js
   .orderBy('name', 'desc')
   .orderByRaw('name DESC')
@@ -309,6 +312,7 @@ knex('users')
   .pluck('id')
   .then(ids => { ··· })
 ```
+
 ```js
 knex('users')
   .first()
@@ -345,18 +349,18 @@ knex.schema.createTable('accounts', table => {
 #### Columns
 
 ```js
-  table.increments('id')
-  table.string('account_name')
-  table.integer('age')
-  table.float('age')
-  table.decimal('balance', 8, 2)
-  table.boolean('is_admin')
-  table.date('birthday')
-  table.time('created_at')
-  table.timestamp('created_at').defaultTo(knex.fn.now())
-  table.json('profile')
-  table.jsonb('profile')
-  table.uuid('id').primary()
+table.increments("id");
+table.string("account_name");
+table.integer("age");
+table.float("age");
+table.decimal("balance", 8, 2);
+table.boolean("is_admin");
+table.date("birthday");
+table.time("created_at");
+table.timestamp("created_at").defaultTo(knex.fn.now());
+table.json("profile");
+table.jsonb("profile");
+table.uuid("id").primary();
 ```
 
 #### Constraints
@@ -378,15 +382,14 @@ knex.schema.createTable('accounts', table => {
 #### Variations
 
 ```js
-  table.integer('user_id')
-    .unsigned()
-    .references('users.id')
+table.integer("user_id").unsigned().references("users.id");
 ```
 
 ```js
 })
 .then(() => ···)
 ```
+
 {: .-setup}
 
 See: [Schema builder](http://knexjs.org/#Schema)
@@ -400,26 +403,27 @@ knex.schema.table('accounts', table => {
 #### Create
 
 ```js
-  table.string('first_name')
+table.string("first_name");
 ```
 
 #### Alter
 
 ```js
-  table.string('first_name').alter()
-  table.renameColumn('admin', 'is_admin')
+table.string("first_name").alter();
+table.renameColumn("admin", "is_admin");
 ```
 
 #### Drop
 
 ```js
-  table.dropColumn('admin')
-  table.dropTimestamps('created_at')
+table.dropColumn("admin");
+table.dropTimestamps("created_at");
 ```
 
 ```js
 })
 ```
+
 {: .-setup}
 
 See: [Schema builder](http://knexjs.org/#Schema)
@@ -427,9 +431,7 @@ See: [Schema builder](http://knexjs.org/#Schema)
 ### Other methods
 
 ```js
-knex.schema
-  .renameTable('persons', 'people')
-  .dropTable('persons')
+knex.schema.renameTable("persons", "people").dropTable("persons");
 ```
 
 ```js
@@ -440,12 +442,13 @@ knex.schema
 See: [Schema builder](http://knexjs.org/#Schema)
 
 ## Modifying
+
 {: .-three-column}
 
 ### Insert
 
 ```js
-knex('users')
+knex("users");
 ```
 
 #### Insert one
@@ -468,9 +471,7 @@ See: [Insert](http://knexjs.org/#Builder-insert)
 ### Update
 
 ```js
-knex('users')
-  .where({ id: 2 })
-  .update({ name: 'Homer' })
+knex("users").where({ id: 2 }).update({ name: "Homer" });
 ```
 
 See: [Update](http://knexjs.org/#Builder-update)
@@ -478,9 +479,7 @@ See: [Update](http://knexjs.org/#Builder-update)
 ### Delete
 
 ```js
-knex('users')
-  .where({ id: 2 })
-  .del()
+knex("users").where({ id: 2 }).del();
 ```
 
 See: [Delete](http://knexjs.org/#Builder-del)

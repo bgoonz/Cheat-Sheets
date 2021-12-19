@@ -31,5 +31,3 @@ category: JavaScript libraries
 ### Other useful things
 
     process.exit(0);
-
-

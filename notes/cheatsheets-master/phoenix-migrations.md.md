@@ -34,7 +34,7 @@ This is only for Phoenix 1.2 or older; models aren't available in Phoenix 1.3+.
 ```bash
 $ mix phx.gen.context Images Album albums title:string subtitle:string privacy:string
 ```
- 
+
 ## Migration functions
 
 ### Creating tables

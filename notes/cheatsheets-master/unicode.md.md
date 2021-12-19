@@ -34,7 +34,6 @@ title: Unicode symbols
     ❏   \u274f checkbox
     ×   times
 
-
 ### Spinners
 
       ◜◠◝◞◡◟

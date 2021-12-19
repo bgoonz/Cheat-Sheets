@@ -35,15 +35,15 @@ export default { render, onCreate, onRemove }
 ### Rendering
 
 ```js
-import { createStore } from 'redux'
-import { dom, element } from 'deku'
+import { createStore } from "redux";
+import { dom, element } from "deku";
 
 // Create a Redux store to handle all UI actions and side-effects
-let store = createStore(reducer)
+let store = createStore(reducer);
 
 // Create a renderer that can turn vnodes into real DOM elements
-let render = createRenderer(document.body, store.dispatch)
+let render = createRenderer(document.body, store.dispatch);
 
 // Update the page and add redux state to the context
-render(<MyButton>Hello World!</MyButton>, store.getState())
+render(<MyButton>Hello World!</MyButton>, store.getState());
 ```

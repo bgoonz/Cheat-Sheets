@@ -14,4 +14,4 @@ This creates a virtual file with the contents of the output of `ls ./old`.
 
 ### References
 
-* [Named pipe](https://en.wikipedia.org/wiki/Named_pipe) _(wikipedia.org)_
+- [Named pipe](https://en.wikipedia.org/wiki/Named_pipe) _(wikipedia.org)_

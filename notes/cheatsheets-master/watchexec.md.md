@@ -45,17 +45,17 @@ Runs `npm test` when `lib/` and `test/` files change.
 
 #### Flags
 
-| `-c` `--clear`   | Clear screen                         |
+| `-c` `--clear` | Clear screen |
 | `-r` `--restart` | Restart process if its still running |
 
 #### Options
 
-| `-s` `--signal SIGKILL` | Kill signal to use            |
-| `-d` `--debounce MS`    | Debounce by `MS` milliseconds |
-| `-e` `--exts EXTS`      | Extensions                    |
-| `-i` `--ignore PATTERN` | Ignore these files            |
-| `-w` `--watch PATH`     | Watch these directories       |
+| `-s` `--signal SIGKILL` | Kill signal to use |
+| `-d` `--debounce MS` | Debounce by `MS` milliseconds |
+| `-e` `--exts EXTS` | Extensions |
+| `-i` `--ignore PATTERN` | Ignore these files |
+| `-w` `--watch PATH` | Watch these directories |
 
 ## Also see
 
-* [mattgreen/watchexec](https://github.com/mattgreen/watchexec) _(github.com)_
+- [mattgreen/watchexec](https://github.com/mattgreen/watchexec) _(github.com)_

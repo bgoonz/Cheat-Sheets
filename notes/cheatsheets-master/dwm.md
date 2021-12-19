@@ -1,79 +1,99 @@
-Basic
-=====
+# Basic
+
 # launch terminal.
+
 [Shift]+[Mod]+[Enter]
-   
+
 # show/hide bar.
-[Mod]+[b]               
+
+[Mod]+[b]
 
 # dmenu for running programs like the x#www#browser.
-[Mod]+[p]               
 
- # push acive window from stack to master, or pulls last used window from stack onto master.
-[Mod]+[Enter]          
+[Mod]+[p]
 
- # focus on next/previous window in current tag.
-[Mod] + [j / k]        
+# push acive window from stack to master, or pulls last used window from stack onto master.
 
- # increases / decreases master size.
-[Mod] + [h / l]        
+[Mod]+[Enter]
 
+# focus on next/previous window in current tag.
 
-Navigation
-==========
+[Mod] + [j / k]
+
+# increases / decreases master size.
+
+[Mod] + [h / l]
+
+# Navigation
+
 # moves your focus to tag 2.
-[Mod]+[2]      
+
+[Mod]+[2]
 
 # move active window to the 2 tag.
-[Shift]+[Mod]+[2]      
 
- # increases / decreases number of windows on master
-[Mod] + [i / d]        
+[Shift]+[Mod]+[2]
+
+# increases / decreases number of windows on master
+
+[Mod] + [i / d]
 
 # move focus between screens (multi monitor setup)
-[Mod] + [, / .]        
+
+[Mod] + [, / .]
 
 # move active window to different screen.
-[Shift]+[Mod]+[, / .]   
+
+[Shift]+[Mod]+[, / .]
 
 # view all windows on screen.
-[Mod]+[0]               
+
+[Mod]+[0]
 
 # make focused window appear on all tags.
-[Shift]+[Mod]+[0]       
+
+[Shift]+[Mod]+[0]
 
 # kill active window.
-[Shift]+[Mod]+[c]      
+
+[Shift]+[Mod]+[c]
 
 # quit dwm cleanly.
-[Shift]+[Mod]+[q]       
 
+[Shift]+[Mod]+[q]
 
-Layout
-======
+# Layout
+
 # tiled mode. []=
-[Mod]+[t]               
+
+[Mod]+[t]
 
 # floating mode. ><>
-[Mod]+[f]               
+
+[Mod]+[f]
 
 # monocle mode. [M] (single window fullscreen)
-[Mod]+[m]              
 
+[Mod]+[m]
 
-Floating
-========
+# Floating
+
 # to resize the floating window.
-[Mod]+[R M B]           
+
+[Mod]+[R M B]
 
 # to move the floating window around.
-[Mod]+[L M B]           
+
+[Mod]+[L M B]
 
 # toggles to the previous layout mode.
-[Mod]+[Space]           
+
+[Mod]+[Space]
 
 # to make an individual window float.
-[Mod]+[Shift]+[Space]  
+
+[Mod]+[Shift]+[Space]
 
 # to make an individual window un#float.
-[Mod]+[M M B]           
+
+[Mod]+[M M B]

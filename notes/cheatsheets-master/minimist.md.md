@@ -7,20 +7,21 @@ layout: 2017/sheet
 ### Usage
 
 ```js
-var minimist = require('minimist')
+var minimist = require("minimist");
 ```
+
 {: .-setup}
 
 ```js
 var args = minimist(process.argv.slice(2), {
-  string: 'lang',           // --lang xml
-  boolean: ['version'],     // --version
-  alias: { v: 'version' }
-})
+  string: "lang", // --lang xml
+  boolean: ["version"], // --version
+  alias: { v: "version" },
+});
 ```
 
 ```js
-console.log(args)
+console.log(args);
 ```
 
 All options are optional, but it's recommended you set `string` and `boolean` at least.
@@ -64,20 +65,23 @@ Use [meow](https://www.npmjs.com/package/meow) to automatically add support for 
 {: .-setup}
 
 ```js
-meow(`
+meow(
+  `
     Usage:
         $0 FILES [options]
 
     Options:
         -h, --help         print usage information
         -v, --version      show version info and exit
-`, {
-  alias: { h: 'help', v: 'version' }
-  /* minimist options */
-})
+`,
+  {
+    alias: { h: "help", v: "version" },
+    /* minimist options */
+  }
+);
 ```
 
 ### Reference
 
- * <https://www.npmjs.org/package/minimist>
- * <https://github.com/substack/minimist>
+- <https://www.npmjs.org/package/minimist>
+- <https://github.com/substack/minimist>
