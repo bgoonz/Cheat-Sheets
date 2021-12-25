@@ -5,8 +5,8 @@ coverY: -124.27004768097096
 
 # 📋 Cheat Sheets
 
-{% content-ref url="react-patterns-1.md" %}
-[react-patterns-1.md](react-patterns-1.md)
+{% content-ref url="react-patterns.md" %}
+[react-patterns.md](react-patterns.md)
 {% endcontent-ref %}
 
 {% content-ref url="bash_cheatsheet.md" %}
