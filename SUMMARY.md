@@ -39,7 +39,6 @@
 * [sequelize\_cheatsheet](sequelize\_cheatsheet.md)
 * [bash\_cheatsheet](bash\_cheatsheet-1.md)
 * [Javascript-Python-cheatsheet](javascript-python-cheatsheet-1.md)
-* [react cheatsheet](react-cheatsheet.md)
 * [graphs\_cheatsheet](graphs\_cheatsheet.md)
 * [Cheatsheet Compilation](cheatsheet-compilation-1.md)
 * [MARKDOWN](markdown.md)
