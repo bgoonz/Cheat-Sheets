@@ -18,7 +18,7 @@
 * [Function Context Cheatsheet](function-context-cheatsheet.md)
 * [🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](cheatsheets.md)
 * [ES6 EXPORTS](es6-exports.md)
-* [JavaScript \\| MDN](javascript-or-mdn.md)
+* [JavaScript](javascript-or-mdn.md)
 * [Regex In Python](regex-in-python.md)
 * [Google dork cheatsheet](google-dork-cheatsheet.md)
 * [Binary Tree](binary-tree.md)
