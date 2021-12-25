@@ -57,3 +57,4 @@
 * [Curl](curl.md)
 * [cleancode](cleancode.md)
 * [JavaScript Promise API Cheat Sheet](javascript-promise-api-cheat-sheet.md)
+* [VSCODE Cheat Sheet](vscode-cheat-sheet.md)
