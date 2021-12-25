@@ -12,6 +12,7 @@ seo:
   extra: []
 template: post
 thumb_img_path: images/docker.png
+content_img_path: images/docker-07280015.png
 ---
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.
         
