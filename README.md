@@ -24,7 +24,13 @@ description: https://cheatsheets-42.netlify.app/blog/
 [binary-tree.md](binary-tree.md)
 {% endcontent-ref %}
 
+<details>
 
+<summary>Big Resource List (general)</summary>
+
+resources.md
+
+</details>
 
 <details>
 
