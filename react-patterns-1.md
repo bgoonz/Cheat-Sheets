@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/react.png
+coverY: 163.56687898089172
+---
+
 # React Patterns:
 
 ## React Cheat Sheet

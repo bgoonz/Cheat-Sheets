@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/express-original-wordmark.png
+coverY: 0
+---
+
 # NPM Cheat Sheet
 
 ```javascript

@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/chrome_oKIMcC3StQ.png
+coverY: 0
+---
+
 # Github Cheat Sheet
 
 

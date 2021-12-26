@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/js.png
+coverY: 0
+---
+
 # JavaScript Promise API Cheat Sheet
 
 ## 🚀 \[GIF] Cheatsheet for Javascript Promise API methods - Promise.all, Promise.allSettled, Promise.race, Promise.any

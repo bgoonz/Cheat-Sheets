@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/react.jpg
+coverY: -0.9904458598726115
+---
+
 # React Cheat Sheet
 
 ## **Hello World**
