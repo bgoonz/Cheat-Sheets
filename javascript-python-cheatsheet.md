@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/cow-say.png
+coverY: 204.14331210191082
+---
+
 # Javascript Python cheatsheet
 
 ### Contents

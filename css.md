@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/css.jpg
+coverY: 0
+---
+
 # CSS
 
 ### Basics

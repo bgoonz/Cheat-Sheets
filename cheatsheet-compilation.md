@@ -1,4 +1,9 @@
-# Cheatsheet Compilation
+---
+cover: .gitbook/assets/heroku.gif
+coverY: 0
+---
+
+# 🛐 Heroku Cheat Sheet
 
 Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a…
 
@@ -8,7 +13,9 @@ Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Ja
 
 #### Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a collection of _source code_ written in one of these languages, perhaps a framework, and some _dependency description_ that instructs a build system as to which additional dependencies are needed in order to build and run the application.
 
-![](https://cdn-images-1.medium.com/max/800/0\*gAOfoFENBTwE5mqJ.gif)#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
+\#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
+
+![](https://cdn-images-1.medium.com/max/800/0\*gAOfoFENBTwE5mqJ.gif)
 
 > Heroku hosts apps on the internet, not static websites. To get it to run your static portfolio, personal blog, etc., you need to trick Heroku into thinking your website is a PHP app.
 
@@ -34,7 +41,9 @@ Once this library is installed, we can create a new file for our project, named 
 
 We can start the application by running `node app.js`. Then we can try it out at the following URL `http://localhost:3000`. At this point you should see the message `Hello World` in the browser.
 
-![](https://cdn-images-1.medium.com/max/800/0\*3FuViRnU9-PB5uqf.PNG)### 2.) Version Control
+\### 2.) Version Control
+
+![](https://cdn-images-1.medium.com/max/800/0\*3FuViRnU9-PB5uqf.PNG)
 
 The next step is to choose a version control system and to place our code in a development platform in a repository.
 
@@ -42,31 +51,51 @@ The most popular version control system is [Git](https://git-scm.com) along with
 
 On GitHub, go ahead and create a new repository for your application, like this:
 
-![](https://cdn-images-1.medium.com/max/800/0\*pyHPJP0kjAV9sij1.PNG)To upload your local code into a repository, you need to run the commands that are listed on GitHub after you click \`Create repository\` button:![](https://cdn-images-1.medium.com/max/800/0\*C7nOWV7ygqTRdqcu.PNG)\*\*!\*\* Before we do this, we must ignore some files. We want to upload to the repository only the code that we write, without the dependencies (the installed modules).
+To upload your local code into a repository, you need to run the commands that are listed on GitHub after you click \`Create repository\` button:\*\*!\*\* Before we do this, we must ignore some files. We want to upload to the repository only the code that we write, without the dependencies (the installed modules).
+
+![](https://cdn-images-1.medium.com/max/800/0\*pyHPJP0kjAV9sij1.PNG)
+
+![](https://cdn-images-1.medium.com/max/800/0\*C7nOWV7ygqTRdqcu.PNG)
 
 For that, we need to create a new file `.gitignore` and inside it write the file that we want to ignore.
 
-![](https://cdn-images-1.medium.com/max/800/0\*T-9QyGzUdWvFuA-D.PNG)Now, we can write the commands listed in the picture above (the one from GitHub).
+Now, we can write the commands listed in the picture above (the one from GitHub).
+
+![](https://cdn-images-1.medium.com/max/800/0\*T-9QyGzUdWvFuA-D.PNG)
 
 If you ran the commands correctly, then it'll be on your repository's page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*\_WzaY9T9A0FsvPgb.PNG)### Step 3 — Link the repository with Heroku
+\### Step 3 — Link the repository with Heroku
+
+![](https://cdn-images-1.medium.com/max/800/0\*\_WzaY9T9A0FsvPgb.PNG)
 
 At this step, we can link the repository from Github to our Heroku application.
 
 First, create a new application on Heroku and follow the steps listed on the platform.
 
-![](https://cdn-images-1.medium.com/max/800/0\*J9tMV455odrM00UJ.PNG)Once the application has been created, a window similar to this should appear:![](https://cdn-images-1.medium.com/max/800/0\*cowa0t6DgTqjUdjR.PNG)Now, if you look at the navigation at the top, you'll see \`Overview\`, \`Resources\`, \`Deploy\`, \`Metrics\` and so on. Be sure that \`Deploy\` is selected. Then on the second row, click on the GitHub icon.![](https://cdn-images-1.medium.com/max/800/0\*kAZI5kiisUiZ2Z9D.PNG)Search for the desired application, which is \`demo-deploy-app-09\` in our case. Then click \`Connect\`.![](https://cdn-images-1.medium.com/max/800/0\*T89joca8hXRO8UsL.PNG)Once the application is successfully connected with your Heroku account, you can click \`Deploy Branch\` to deploy your application.
+Once the application has been created, a window similar to this should appear:Now, if you look at the navigation at the top, you'll see \`Overview\`, \`Resources\`, \`Deploy\`, \`Metrics\` and so on. Be sure that \`Deploy\` is selected. Then on the second row, click on the GitHub icon.Search for the desired application, which is \`demo-deploy-app-09\` in our case. Then click \`Connect\`.Once the application is successfully connected with your Heroku account, you can click \`Deploy Branch\` to deploy your application.
+
+![](https://cdn-images-1.medium.com/max/800/0\*kAZI5kiisUiZ2Z9D.PNG)
+
+![](https://cdn-images-1.medium.com/max/800/0\*T89joca8hXRO8UsL.PNG)
+
+![](https://cdn-images-1.medium.com/max/800/0\*cowa0t6DgTqjUdjR.PNG)
+
+![](https://cdn-images-1.medium.com/max/800/0\*J9tMV455odrM00UJ.PNG)
 
 If you want, you can also select the option `Enable Automatic Deploys` which will automatically pull the code from your Github repository every time you make a push to that repository.
 
 Once the application has been deployed, you can click on View to open your application.
 
-![](https://cdn-images-1.medium.com/max/800/0\*9dBdxScA9\_dIEz1Q.PNG)### Step 4 — Configure Heroku to properly run the application
+\### Step 4 — Configure Heroku to properly run the application
+
+![](https://cdn-images-1.medium.com/max/800/0\*9dBdxScA9\_dIEz1Q.PNG)
 
 If you open the application at this point, you should see something like this:
 
-![](https://cdn-images-1.medium.com/max/800/0\*rMZ8aneIjG3nx211.PNG)That's right, an error. That's because Heroku doesn't know how to start our application.
+That's right, an error. That's because Heroku doesn't know how to start our application.
+
+![](https://cdn-images-1.medium.com/max/800/0\*rMZ8aneIjG3nx211.PNG)
 
 If you remember, we ran the command `node app.js` to start the application locally.\
 Heroku has no way of knowing what commands it needs to run to start the application, and that's why it threw an error.
@@ -76,30 +105,3 @@ To solve this problem, we must create a new file named `Procfile` with the follo
 To update our application, all we need to do is push a new commit to GitHub. If we have enabled the `Automatic Deploys` option, then the code will be automatically pulled to Heroku. Otherwise we need to click on `Deploy Branch` again.
 
 ***
-
-### Cheat Sheet:
-
-***
-
-### Git-Heroku Workflow:
-
-***
-
-### Full Stack Deploy:
-
-### Alternative Approach:
-
-***
-
-### This one was created by Nick G and originally posted on medium Aug 29 2020.
-
-### Find More On My Blog:
-
-[**Web-Dev-Hub**\
-_Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…_bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app)
-
-By [Bryan Guner](https://medium.com/@bryanguner) on [July 29, 2021](https://medium.com/p/b2897b69ce02).
-
-[Canonical link](https://medium.com/@bryanguner/heroku-deploy-guides-cheatsheet-compilation-b2897b69ce02)
-
-Exported from [Medium](https://medium.com) on August 6, 2021.
