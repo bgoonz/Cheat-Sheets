@@ -1,7 +1,7 @@
 ---
-title: css-next
+title: lorem-ipsum
 subtitle: lorem-ipsum
-date: '2021-12-25'
+date: '2021-12-28'
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
@@ -11,7 +11,6 @@ seo:
   robots: []
   extra: []
 template: post
-thumb_img_path: images/css-72a655a7.jpg
 ---
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.
         
