@@ -23,7 +23,7 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
-      
+      <iframe frameborder="0" width="100%" height="500px" src="  ?lite=true"></iframe>
     actions: []
     type: section_content
   - section_id: recent-posts
