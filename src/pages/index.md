@@ -11,7 +11,7 @@ sections:
     type: section_content
     title: About
     content: |
-      > my bookmarks
+      > My Cheat Sheets
       >
       >
       >
