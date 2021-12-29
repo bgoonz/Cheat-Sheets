@@ -35,14 +35,14 @@ sections:
         url: blog/index.html
         style: button
 seo:
-  title: Stackbit Fresh Theme
+  title: My Cheat Sheets
   description: The preview of the Fresh theme
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Fresh Theme
+      value: My Cheat Sheets
       keyName: property
     - name: 'og:description'
       value: The preview of the Fresh theme
@@ -54,7 +54,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Fresh Theme
+      value: My Cheat Sheets
     - name: 'twitter:description'
       value: The preview of the Fresh theme
     - name: 'twitter:image'
