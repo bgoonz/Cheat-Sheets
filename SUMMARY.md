@@ -16,7 +16,7 @@
 * [bash\_cheatsheet](bash\_cheatsheet.md)
 * [Sequelize Cheatsheet](sequelize-cheatsheet.md)
 * [Function Context Cheatsheet](function-context-cheatsheet.md)
-* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](cheatsheets.md)
+* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](cheatsheets.md)
 * [ES6 EXPORTS](es6-exports.md)
 * [JavaScript](javascript-or-mdn.md)
 * [Regex In Python](regex-in-python.md)
@@ -61,15 +61,43 @@
 * [cleancode](cleancode.md)
 * [JavaScript Promise API Cheat Sheet](javascript-promise-api-cheat-sheet.md)
 * [VSCODE Cheat Sheet](vscode-cheat-sheet.md)
-* [React Cheat Sheet](react-cheat-sheet/README.md)
-  * [React Component Guide](react-cheat-sheet/react-component-guide.md)
-* [LOADASH Cheat Sheet](loadash-cheat-sheet.md)
-* [ExpressJS Cheat Sheet](expressjs-cheat-sheet.md)
 * [Github Cheat Sheet](github-cheat-sheet.md)
-* [Data Structures](data-structures/README.md)
-  * [The Queue data structure](data-structures/the-queue-data-structure.md)
-  * [Cheat Sheet for Beginners: JavaScript Data Structures Methods](data-structures/cheat-sheet-for-beginners-javascript-data-structures-methods.md)
-  * [MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN](data-structures/mdn-web-docs-glossary-definitions-of-web-related-terms-or-mdn.md)
-  * [Data Structures Cheat Sheet](data-structures/data-structures-cheat-sheet.md)
-  * [The Tree data structure](data-structures/the-tree-data-structure.md)
-  * [An Executable Data Structures Cheat Sheet for Interviews](data-structures/an-executable-data-structures-cheat-sheet-for-interviews.md)
+
+## 👨💻 Javascript
+
+* [JavaScript](javascript/javascript/README.md)
+  * [General](javascript/javascript/general.md)
+  * [React](javascript/javascript/react/README.md)
+    * [React Cheat Sheet](javascript/javascript/react/react-cheat-sheet/README.md)
+      * [React Component Guide](javascript/javascript/react/react-cheat-sheet/react-component-guide.md)
+  * [⚖ Libraries & Frameworks](javascript/javascript/libraries-and-frameworks/README.md)
+    * [LOADASH Cheat Sheet](javascript/javascript/libraries-and-frameworks/loadash-cheat-sheet.md)
+  * [Node & Express](javascript/javascript/node-and-express/README.md)
+    * [ExpressJS Cheat Sheet](javascript/javascript/node-and-express/expressjs-cheat-sheet.md)
+
+## 💻 CS-Concepts
+
+* [Computer Science Concepts](cs-concepts/computer-science-concepts/README.md)
+  * [Data Structures](cs-concepts/computer-science-concepts/data-structures/README.md)
+    * [The Queue data structure](cs-concepts/computer-science-concepts/data-structures/the-queue-data-structure.md)
+    * [Cheat Sheet for Beginners: JavaScript Data Structures Methods](cs-concepts/computer-science-concepts/data-structures/cheat-sheet-for-beginners-javascript-data-structures-methods.md)
+    * [MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN](cs-concepts/computer-science-concepts/data-structures/mdn-web-docs-glossary-definitions-of-web-related-terms-or-mdn.md)
+    * [Data Structures Cheat Sheet](cs-concepts/computer-science-concepts/data-structures/data-structures-cheat-sheet.md)
+    * [The Tree data structure](cs-concepts/computer-science-concepts/data-structures/the-tree-data-structure.md)
+    * [An Executable Data Structures Cheat Sheet for Interviews](cs-concepts/computer-science-concepts/data-structures/an-executable-data-structures-cheat-sheet-for-interviews.md)
+
+## Tools
+
+* [🛠 Tools](tools/tools.md)
+
+## 📼 Guides-Tutorials
+
+* [Tutorials](guides-tutorials/tutorials.md)
+
+## Group 5
+
+* [Page 5](group-5/page-5.md)
+
+## Group 6
+
+* [Page 6](group-6/page-6.md)
