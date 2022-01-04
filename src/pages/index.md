@@ -18,6 +18,7 @@ sections:
         url: /contact
         style: button
     image: images/cheatsheets-52c26e0a.png
+    image_alt: cheat sheets
   - title: lorem-ipsum
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
