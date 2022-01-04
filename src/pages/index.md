@@ -23,6 +23,7 @@ sections:
       - label: Contact Me
         url: /contact
         style: button
+    image: images/cheatsheets-52c26e0a.png
   - title: lorem-ipsum
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
