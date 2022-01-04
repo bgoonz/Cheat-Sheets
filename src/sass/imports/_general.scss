@@ -17,9 +17,9 @@ body {
 a {
   border-bottom: 2px solid _palette(accent);
   color: _palette(secondary);
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: border 0.3s ease, color 0.3s ease;
-  transition: border 0.3s ease, color 0.3s ease;
+  transition: border 0.5s ease, color 0.3s ease;
 
   &:hover {
     border-color: currentColor;
