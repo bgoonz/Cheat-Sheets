@@ -75,24 +75,24 @@ thumb_img_path: images/css3-original-wordmark.png
 
 ### Attribute selectors
 
-| `[role="dialog"]` | `=` Exact |
-| `[class~="box"]` | `~=` Has word |
-| `[class|="box"]` | `|=` Exact or prefix (eg, `value-`) |
-| `[href$=".doc"]` | `$=` Ends in |
-| `[href^="/index"]` | `^=` Begins with |
-| `[class*="-is-"]` | `*=` Contains |
+| `[role="dialog"]` | `=`  Exact |
+| `[class~="box"]` | `~=`  Has word |
+| `[class|="box"]` | `|=`  Exact or prefix (eg,  `value-`) |
+| `[href$=".doc"]` | `$=`  Ends in |
+| `[href^="/index"]` | `^=`  Begins with |
+| `[class*="-is-"]` | `*=`  Contains |
 
 ### Pseudo-classes
 
-| `:target` | eg, `h2#foo:target` |
-| `:disabled` |   |
-| `:focus` |   |
-| `:active` |   |
+| `:target` | eg,  `h2#foo:target` |
+| `:disabled` |  |
+| `:focus` |  |
+| `:active` |  |
 | `:nth-child(3)` | 3rd child |
 | `:nth-child(3n+2)` | 2nd child in groups of 3 |
-| `:nth-child(-n+4)` |   |
-| `:nth-last-child(2)` |   |
-| `:nth-of-type(2)` |   |
+| `:nth-child(-n+4)` |  |
+| `:nth-last-child(2)` |  |
+| `:nth-of-type(2)` |  |
 | `:checked` | Checked inputs |
 | `:disabled` | Disabled elements |
 | `:default` | Default element in a group |
@@ -127,7 +127,7 @@ thumb_img_path: images/css3-original-wordmark.png
 ### Shorthand
 
 | `font:` | `italic` | `400` | `14px` | `/` | `1.5` | `sans-serif` |
-|   | style | weight | size (required) |   | line-height | family (required) |
+|  | style | weight | size (required) |  | line-height | family (required) |
 
 ### Example
 
@@ -165,9 +165,9 @@ text-transform: lowercase; /* hello */
 
 ### Shorthand
 
-| `background:` | `#ff0` | `url(bg.jpg)` | `left` | `top` | `/` | `100px` `auto` | `no-repeat` | `fixed;` |
+| `background:` | `#ff0` | `url(bg.jpg)` | `left` | `top` | `/` | `100px`  `auto` | `no-repeat` | `fixed;` |
 | `background:` | `#abc` | `url(bg.png)` | `center` | `center` | `/` | `cover` | `repeat-x` | `local;` |
-|   | color | image | positionX | positionY |   | size | repeat | attachment |
+|  | color | image | positionX | positionY |  | size | repeat | attachment |
 
 ### Multiple backgrounds
 
@@ -195,7 +195,7 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 ### Shorthand
 
 | `animation:` | `bounce` | `300ms` | `linear` | `100ms` | `infinite` | `alternate-reverse` | `both` | `reverse` |
-|   | name | duration | timing-function | delay | count | direction | fill-mode | play-state |
+|  | name | duration | timing-function | delay | count | direction | fill-mode | play-state |
 
 ### Example
 
@@ -627,7 +627,7 @@ Attribute Dynamic Value
 `content: attr(name-of-attribute)`
 
 
-### 5.1. Terms Index[](https://www.w3.org/TR/css-2020/#terms)
+### 5.1.  Terms Index[](https://www.w3.org/TR/css-2020/#terms)
 
 -   [100...900 weight values](https://drafts.csswg.org/css-fonts-3/#font-weight-numeric-values)
 -   [1st <length>](https://drafts.csswg.org/css-backgrounds-3/#shadow-offset-x)
@@ -2060,7 +2060,7 @@ Attribute Dynamic Value
     -   [in css-color-3](https://drafts.csswg.org/css-color-3/#yellow0)
 -   [yellowgreen](https://drafts.csswg.org/css-color-3/#yellowgreen)
 
-### 5.2. Selector Index[](https://www.w3.org/TR/css-2020/#selectors)
+### 5.2.  Selector Index[](https://www.w3.org/TR/css-2020/#selectors)
 
 -   [*](https://drafts.csswg.org/selectors-3/#x)
 -   :active
@@ -2114,7 +2114,7 @@ Attribute Dynamic Value
     -   [in css2](https://drafts.csswg.org/css2/#selectordef-visited)
     -   [in selectors-3](https://drafts.csswg.org/selectors-3/#sel-visited)
 
-### 5.3. At-Rule Index[](https://www.w3.org/TR/css-2020/#at-rules)
+### 5.3.  At-Rule Index[](https://www.w3.org/TR/css-2020/#at-rules)
 
 -   [@charset](https://drafts.csswg.org/css-syntax-3/#at-ruledef-charset)
 -   [@counter-style](https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style)
@@ -2128,7 +2128,7 @@ Attribute Dynamic Value
 -   [@page](https://drafts.csswg.org/css2/#at-ruledef-page)
 -   [@supports](https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports)
 
-### 5.4. Property Index[](https://www.w3.org/TR/css-2020/#properties)
+### 5.4.  Property Index[](https://www.w3.org/TR/css-2020/#properties)
 
 -   [--*](https://drafts.csswg.org/css-variables-1/#propdef-)
 -   align-content
@@ -2469,7 +2469,7 @@ Attribute Dynamic Value
 -   [writing-mode](https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode)
 -   [z-index](https://drafts.csswg.org/css2/#propdef-z-index)
 
-### 5.5. Values Index[](https://www.w3.org/TR/css-2020/#values)
+### 5.5.  Values Index[](https://www.w3.org/TR/css-2020/#values)
 
 -   [](https://drafts.csswg.org/css-images-3/#valdef-image-orientation-angle)
 -   absolute
@@ -3598,10 +3598,10 @@ Attribute Dynamic Value
 -   [zoom-in](https://drafts.csswg.org/css-ui-3/#valdef-cursor-zoom-in)
 -   [zoom-out](https://drafts.csswg.org/css-ui-3/#valdef-cursor-zoom-out)
 
-6\. Acknowledgements[](https://www.w3.org/TR/css-2020/#acks)
+6\.  Acknowledgements[](https://www.w3.org/TR/css-2020/#acks)
 ------------------------------------------------------------
 
-Special thanks to Florian Rivoal for creating the initial draft of the [§ 3.2.1 Experimentation and Unstable Features](https://www.w3.org/TR/css-2020/#experimental) recommendations.
+Special thanks to Florian Rivoal for creating the initial draft of the  [§ 3.2.1 Experimentation and Unstable Features](https://www.w3.org/TR/css-2020/#experimental)  recommendations.
 
 References[](https://www.w3.org/TR/css-2020/#references)
 --------------------------------------------------------
@@ -3610,198 +3610,198 @@ References[](https://www.w3.org/TR/css-2020/#references)
 
 [COMPOSITING]
 
-Rik Cabanier; Nikos Andronikos. [Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1/). 13 January 2015. CR. URL: <https://www.w3.org/TR/compositing-1/>
+Rik Cabanier; Nikos Andronikos.  [Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1/). 13 January 2015. CR. URL:  <https://www.w3.org/TR/compositing-1/>
 
 [CSS-BACKGROUNDS-3]
 
-Bert Bos; Elika Etemad; Brad Kemper. [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/). 17 October 2017. CR. URL: <https://www.w3.org/TR/css-backgrounds-3/>
+Bert Bos; Elika Etemad; Brad Kemper.  [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/). 17 October 2017. CR. URL:  <https://www.w3.org/TR/css-backgrounds-3/>
 
 [CSS-BOX-3]
 
-Elika Etemad. [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/). 28 October 2020. WD. URL: <https://www.w3.org/TR/css-box-3/>
+Elika Etemad.  [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/). 28 October 2020. WD. URL:  <https://www.w3.org/TR/css-box-3/>
 
 [CSS-CASCADE-4]
 
-Elika Etemad; Tab Atkins Jr.. [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/). 18 August 2020. WD. URL: <https://www.w3.org/TR/css-cascade-4/>
+Elika Etemad; Tab Atkins Jr..  [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/). 18 August 2020. WD. URL:  <https://www.w3.org/TR/css-cascade-4/>
 
 [CSS-COLOR-3]
 
-Tantek Çelik; Chris Lilley; David Baron. [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/). 19 June 2018. REC. URL: <https://www.w3.org/TR/css-color-3/>
+Tantek Çelik; Chris Lilley; David Baron.  [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/). 19 June 2018. REC. URL:  <https://www.w3.org/TR/css-color-3/>
 
 [CSS-COLOR-4]
 
-Tab Atkins Jr.; Chris Lilley. [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/). 5 November 2019. WD. URL: <https://www.w3.org/TR/css-color-4/>
+Tab Atkins Jr.; Chris Lilley.  [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/). 5 November 2019. WD. URL:  <https://www.w3.org/TR/css-color-4/>
 
 [CSS-CONDITIONAL-3]
 
-L. David Baron; Elika J. Etemad / fantasai; Chris Lilley. [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/). 8 December 2020. CR. URL: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css3-conditional/)
+L. David Baron; Elika J. Etemad / fantasai; Chris Lilley.  [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/). 8 December 2020. CR. URL:  [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css3-conditional/)
 
 [CSS-CONTAIN-1]
 
-Tab Atkins Jr.; Florian Rivoal. [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/). 21 November 2019. REC. URL: <https://www.w3.org/TR/css-contain-1/>
+Tab Atkins Jr.; Florian Rivoal.  [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/). 21 November 2019. REC. URL:  <https://www.w3.org/TR/css-contain-1/>
 
 [CSS-COUNTER-STYLES-3]
 
-Tab Atkins Jr.. [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/). 14 December 2017. CR. URL: <https://www.w3.org/TR/css-counter-styles-3/>
+Tab Atkins Jr..  [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/). 14 December 2017. CR. URL:  <https://www.w3.org/TR/css-counter-styles-3/>
 
 [CSS-DISPLAY-3]
 
-Tab Atkins Jr.; Elika Etemad. [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/). 19 May 2020. CR. URL: <https://www.w3.org/TR/css-display-3/>
+Tab Atkins Jr.; Elika Etemad.  [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/). 19 May 2020. CR. URL:  <https://www.w3.org/TR/css-display-3/>
 
 [CSS-EASING-1]
 
-Brian Birtles; Dean Jackson; Matt Rakow. [CSS Easing Functions Level 1](https://www.w3.org/TR/css-easing-1/). 30 April 2019. CR. URL: <https://www.w3.org/TR/css-easing-1/>
+Brian Birtles; Dean Jackson; Matt Rakow.  [CSS Easing Functions Level 1](https://www.w3.org/TR/css-easing-1/). 30 April 2019. CR. URL:  <https://www.w3.org/TR/css-easing-1/>
 
 [CSS-FLEXBOX-1]
 
-Tab Atkins Jr.; et al. [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/). 19 November 2018. CR. URL: <https://www.w3.org/TR/css-flexbox-1/>
+Tab Atkins Jr.; et al.  [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/). 19 November 2018. CR. URL:  <https://www.w3.org/TR/css-flexbox-1/>
 
 [CSS-FONTS-3]
 
-John Daggett; Myles Maxfield; Chris Lilley. [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/). 20 September 2018. REC. URL: <https://www.w3.org/TR/css-fonts-3/>
+John Daggett; Myles Maxfield; Chris Lilley.  [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/). 20 September 2018. REC. URL:  <https://www.w3.org/TR/css-fonts-3/>
 
 [CSS-GRID-1]
 
-Tab Atkins Jr.; et al. [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/). 21 October 2020. CR. URL: <https://www.w3.org/TR/css-grid-1/>
+Tab Atkins Jr.; et al.  [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/). 21 October 2020. CR. URL:  <https://www.w3.org/TR/css-grid-1/>
 
 [CSS-GRID-2]
 
-Tab Atkins Jr.; Elika Etemad; Rossen Atanassov. [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/). 21 October 2020. CR. URL: <https://www.w3.org/TR/css-grid-2/>
+Tab Atkins Jr.; Elika Etemad; Rossen Atanassov.  [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/). 21 October 2020. CR. URL:  <https://www.w3.org/TR/css-grid-2/>
 
 [CSS-IMAGES-3]
 
-Tab Atkins Jr.; Elika Etemad; Lea Verou. [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/). 10 October 2019. CR. URL: <https://www.w3.org/TR/css-images-3/>
+Tab Atkins Jr.; Elika Etemad; Lea Verou.  [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/). 10 October 2019. CR. URL:  <https://www.w3.org/TR/css-images-3/>
 
 [CSS-IMAGES-4]
 
-Tab Atkins Jr.; Elika Etemad; Lea Verou. [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/). 13 April 2017. WD. URL: <https://www.w3.org/TR/css-images-4/>
+Tab Atkins Jr.; Elika Etemad; Lea Verou.  [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/). 13 April 2017. WD. URL:  <https://www.w3.org/TR/css-images-4/>
 
 [CSS-MULTICOL-1]
 
-Håkon Wium Lie; Florian Rivoal; Rachel Andrew. [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/). 15 October 2019. WD. URL: <https://www.w3.org/TR/css-multicol-1/>
+Håkon Wium Lie; Florian Rivoal; Rachel Andrew.  [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/). 15 October 2019. WD. URL:  <https://www.w3.org/TR/css-multicol-1/>
 
 [CSS-SIZING-3]
 
-Tab Atkins Jr.; Elika Etemad. [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/). 23 October 2020. WD. URL: <https://www.w3.org/TR/css-sizing-3/>
+Tab Atkins Jr.; Elika Etemad.  [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/). 23 October 2020. WD. URL:  <https://www.w3.org/TR/css-sizing-3/>
 
 [CSS-SIZING-4]
 
-Tab Atkins Jr.; Elika Etemad. [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/). 20 October 2020. WD. URL: <https://www.w3.org/TR/css-sizing-4/>
+Tab Atkins Jr.; Elika Etemad.  [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/). 20 October 2020. WD. URL:  <https://www.w3.org/TR/css-sizing-4/>
 
 [CSS-STYLE-ATTR]
 
-Tantek Çelik; Elika Etemad. [CSS Style Attributes](https://www.w3.org/TR/css-style-attr/). 7 November 2013. REC. URL: <https://www.w3.org/TR/css-style-attr/>
+Tantek Çelik; Elika Etemad.  [CSS Style Attributes](https://www.w3.org/TR/css-style-attr/). 7 November 2013. REC. URL:  <https://www.w3.org/TR/css-style-attr/>
 
 [CSS-SYNTAX-3]
 
-Tab Atkins Jr.; Simon Sapin. [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/). 16 July 2019. CR. URL: <https://www.w3.org/TR/css-syntax-3/>
+Tab Atkins Jr.; Simon Sapin.  [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/). 16 July 2019. CR. URL:  <https://www.w3.org/TR/css-syntax-3/>
 
 [CSS-TRANSFORMS-1]
 
-Simon Fraser; et al. [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/). 14 February 2019. CR. URL: <https://www.w3.org/TR/css-transforms-1/>
+Simon Fraser; et al.  [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/). 14 February 2019. CR. URL:  <https://www.w3.org/TR/css-transforms-1/>
 
 [CSS-UI-3]
 
-Tantek Çelik; Florian Rivoal. [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/). 21 June 2018. REC. URL: <https://www.w3.org/TR/css-ui-3/>
+Tantek Çelik; Florian Rivoal.  [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/). 21 June 2018. REC. URL:  <https://www.w3.org/TR/css-ui-3/>
 
 [CSS-VALUES-3]
 
-Tab Atkins Jr.; Elika Etemad. [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/). 6 June 2019. CR. URL: <https://www.w3.org/TR/css-values-3/>
+Tab Atkins Jr.; Elika Etemad.  [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/). 6 June 2019. CR. URL:  <https://www.w3.org/TR/css-values-3/>
 
 [CSS-VARIABLES-1]
 
-Tab Atkins Jr.. [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1/). 3 December 2015. CR. URL: <https://www.w3.org/TR/css-variables-1/>
+Tab Atkins Jr..  [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1/). 3 December 2015. CR. URL:  <https://www.w3.org/TR/css-variables-1/>
 
 [CSS-WILL-CHANGE-1]
 
-Tab Atkins Jr.. [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1/). 3 December 2015. CR. URL: <https://www.w3.org/TR/css-will-change-1/>
+Tab Atkins Jr..  [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1/). 3 December 2015. CR. URL:  <https://www.w3.org/TR/css-will-change-1/>
 
 [CSS-WRITING-MODES-3]
 
-Elika Etemad; Koji Ishii. [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/). 10 December 2019. REC. URL: <https://www.w3.org/TR/css-writing-modes-3/>
+Elika Etemad; Koji Ishii.  [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/). 10 December 2019. REC. URL:  <https://www.w3.org/TR/css-writing-modes-3/>
 
 [CSS2]
 
-Bert Bos; et al. [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](https://www.w3.org/TR/CSS21/). 7 June 2011. REC. URL: <https://www.w3.org/TR/CSS21/>
+Bert Bos; et al.  [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](https://www.w3.org/TR/CSS21/). 7 June 2011. REC. URL:  <https://www.w3.org/TR/CSS21/>
 
 [CSS3-MEDIAQUERIES]
 
-Florian Rivoal; et al. [Media Queries](https://www.w3.org/TR/css3-mediaqueries/). 19 June 2012. REC. URL: <https://www.w3.org/TR/css3-mediaqueries/>
+Florian Rivoal; et al.  [Media Queries](https://www.w3.org/TR/css3-mediaqueries/). 19 June 2012. REC. URL:  <https://www.w3.org/TR/css3-mediaqueries/>
 
 [CSS3-NAMESPACE]
 
-Elika Etemad. [CSS Namespaces Module Level 3](https://www.w3.org/TR/css-namespaces-3/). 20 March 2014. REC. URL: <https://www.w3.org/TR/css-namespaces-3/>
+Elika Etemad.  [CSS Namespaces Module Level 3](https://www.w3.org/TR/css-namespaces-3/). 20 March 2014. REC. URL:  <https://www.w3.org/TR/css-namespaces-3/>
 
 [MEDIAQUERIES-5]
 
-Dean Jackson; Florian Rivoal; Tab Atkins Jr.. [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/). 31 July 2020. WD. URL: <https://www.w3.org/TR/mediaqueries-5/>
+Dean Jackson; Florian Rivoal; Tab Atkins Jr..  [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/). 31 July 2020. WD. URL:  <https://www.w3.org/TR/mediaqueries-5/>
 
 [SELECTORS-3]
 
-Tantek Çelik; et al. [Selectors Level 3](https://www.w3.org/TR/selectors-3/). 6 November 2018. REC. URL: <https://www.w3.org/TR/selectors-3/>
+Tantek Çelik; et al.  [Selectors Level 3](https://www.w3.org/TR/selectors-3/). 6 November 2018. REC. URL:  <https://www.w3.org/TR/selectors-3/>
 
 [SELECTORS-4]
 
-Elika Etemad; Tab Atkins Jr.. [Selectors Level 4](https://www.w3.org/TR/selectors-4/). 21 November 2018. WD. URL: <https://www.w3.org/TR/selectors-4/>
+Elika Etemad; Tab Atkins Jr..  [Selectors Level 4](https://www.w3.org/TR/selectors-4/). 21 November 2018. WD. URL:  <https://www.w3.org/TR/selectors-4/>
 
 ### Informative References[](https://www.w3.org/TR/css-2020/#informative)
 
 [CSS-ALIGN-3]
 
-Elika Etemad; Tab Atkins Jr.. [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/). 21 April 2020. WD. URL: <https://www.w3.org/TR/css-align-3/>
+Elika Etemad; Tab Atkins Jr..  [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/). 21 April 2020. WD. URL:  <https://www.w3.org/TR/css-align-3/>
 
 [CSS-ANIMATIONS-1]
 
-Dean Jackson; et al. [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/). 11 October 2018. WD. URL: <https://www.w3.org/TR/css-animations-1/>
+Dean Jackson; et al.  [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/). 11 October 2018. WD. URL:  <https://www.w3.org/TR/css-animations-1/>
 
 [CSS-BREAK-3]
 
-Rossen Atanassov; Elika Etemad. [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/). 4 December 2018. CR. URL: <https://www.w3.org/TR/css-break-3/>
+Rossen Atanassov; Elika Etemad.  [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/). 4 December 2018. CR. URL:  <https://www.w3.org/TR/css-break-3/>
 
 [CSS-CASCADE-3]
 
-Elika Etemad; Tab Atkins Jr.. [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/). 17 August 2020. CR. URL: <https://www.w3.org/TR/css-cascade-3/>
+Elika Etemad; Tab Atkins Jr..  [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/). 17 August 2020. CR. URL:  <https://www.w3.org/TR/css-cascade-3/>
 
 [CSS-FONT-LOADING-3]
 
-Tab Atkins Jr.. [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/). 22 May 2014. WD. URL: <https://www.w3.org/TR/css-font-loading-3/>
+Tab Atkins Jr..  [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/). 22 May 2014. WD. URL:  <https://www.w3.org/TR/css-font-loading-3/>
 
 [CSS-MASKING-1]
 
-Dirk Schulze; Brian Birtles; Tab Atkins Jr.. [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/). 26 August 2014. CR. URL: <https://www.w3.org/TR/css-masking-1/>
+Dirk Schulze; Brian Birtles; Tab Atkins Jr..  [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/). 26 August 2014. CR. URL:  <https://www.w3.org/TR/css-masking-1/>
 
 [CSS-SCROLL-SNAP-1]
 
-Matt Rakow; et al. [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/). 19 March 2019. CR. URL: <https://www.w3.org/TR/css-scroll-snap-1/>
+Matt Rakow; et al.  [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/). 19 March 2019. CR. URL:  <https://www.w3.org/TR/css-scroll-snap-1/>
 
 [CSS-SHAPES-1]
 
-Vincent Hardy; Rossen Atanassov; Alan Stearns. [CSS Shapes Module Level 1](https://www.w3.org/TR/css-shapes-1/). 20 March 2014. CR. URL: <https://www.w3.org/TR/css-shapes-1/>
+Vincent Hardy; Rossen Atanassov; Alan Stearns.  [CSS Shapes Module Level 1](https://www.w3.org/TR/css-shapes-1/). 20 March 2014. CR. URL:  <https://www.w3.org/TR/css-shapes-1/>
 
 [CSS-SPEECH-1]
 
-Daniel Weck. [CSS Speech Module](https://www.w3.org/TR/css-speech-1/). 10 March 2020. CR. URL: <https://www.w3.org/TR/css-speech-1/>
+Daniel Weck.  [CSS Speech Module](https://www.w3.org/TR/css-speech-1/). 10 March 2020. CR. URL:  <https://www.w3.org/TR/css-speech-1/>
 
 [CSS-TEXT-3]
 
-Elika Etemad; Koji Ishii; Florian Rivoal. [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/). 29 April 2020. WD. URL: <https://www.w3.org/TR/css-text-3/>
+Elika Etemad; Koji Ishii; Florian Rivoal.  [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/). 29 April 2020. WD. URL:  <https://www.w3.org/TR/css-text-3/>
 
 [CSS-TEXT-DECOR-3]
 
-Elika Etemad; Koji Ishii. [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3/). 13 August 2019. CR. URL: <https://www.w3.org/TR/css-text-decor-3/>
+Elika Etemad; Koji Ishii.  [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3/). 13 August 2019. CR. URL:  <https://www.w3.org/TR/css-text-decor-3/>
 
 [CSS-TRANSITIONS-1]
 
-David Baron; et al. [CSS Transitions](https://www.w3.org/TR/css-transitions-1/). 11 October 2018. WD. URL: <https://www.w3.org/TR/css-transitions-1/>
+David Baron; et al.  [CSS Transitions](https://www.w3.org/TR/css-transitions-1/). 11 October 2018. WD. URL:  <https://www.w3.org/TR/css-transitions-1/>
 
 [CSS-WRITING-MODES-4]
 
-Elika Etemad; Koji Ishii. [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/). 30 July 2019. CR. URL: <https://www.w3.org/TR/css-writing-modes-4/>
+Elika Etemad; Koji Ishii.  [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/). 30 July 2019. CR. URL:  <https://www.w3.org/TR/css-writing-modes-4/>
 
 [FILTER-EFFECTS-1]
 
-Dirk Schulze; Dean Jackson. [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/). 18 December 2018. WD. URL: <https://www.w3.org/TR/filter-effects-1/>
+Dirk Schulze; Dean Jackson.  [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/). 18 December 2018. WD. URL:  <https://www.w3.org/TR/filter-effects-1/>
 
 [MEDIAQUERIES-4]
 
-Florian Rivoal; Tab Atkins Jr.. [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/). 21 July 2020. CR. URL: <https://www.w3.org/TR/mediaqueries-4/>
+Florian Rivoal; Tab Atkins Jr..  [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/). 21 July 2020. CR. URL:  <https://www.w3.org/TR/mediaqueries-4/>

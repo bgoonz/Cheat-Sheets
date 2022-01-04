@@ -1,27 +1,94 @@
 ---
-title: Emacs
-category: CLI
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
 ---
+---
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
+---
+# Running emacs
 
-### Movements
+GUI mode $ emacs
+Terminal mode $ emacs -nw
 
-^n ^p # up/down
-^f ^b # left/right
+# Basic usage
 
-^v Mv # up/down page
+Indent Select text then press TAB
+Cut C-w
+Copy M-w
+Paste ("yank") C-y
+Begin selection C-SPACE
+Search/Find C-s
+Replace M-% (M-SHIFT-5)
+Save C-x C-s
+Save as C-x C-w
+Load/Open C-x C-f
+Undo C-x u
+Highlight all text C-x h
+Directory listing C-x d
+Cancel a command C-g
+Font size bigger C-x C-+
+Font size smaller C-x C--
 
-^a ^e # begin/end of line
-Ma Me # begin/end of sentence
+# Buffers
 
-### Basic
+Split screen vertically C-x 2
+Split screen vertically with 5 row height C-u 5 C-x 2
+Split screen horizontally C-x 3
+Split screen horizontally with 24 column width C-u 24 C-x 3
+Revert to single screen C-x 1
+Hide the current screen C-x 0
+Move to the next screen C-x o
+Kill the current buffer C-x k
+Select a buffer C-x b
+Run command in the scratch buffer C-x C-e
 
-^x ^f # find file
-^x ^s # save file
+# Navigation ( backward / forward )
 
-### Command line
+Character-wise C-b , C-f
+Word-wise M-b , M-f
+Line-wise C-p , C-n
+Sentence-wise M-a , M-e
+Paragraph-wise M-{ , M-}
+Function-wise C-M-a , C-M-e
+Line beginning / end C-a , C-e
 
-Mx
+# Other stuff
 
-### Packages
+Open a shell M-x eshell
+Goto a line number M-x goto-line
+Word wrap M-x toggle-word-wrap
+Spell checking M-x flyspell-mode
+Line numbers M-x linum-mode
+Toggle line wrap M-x visual-line-mode
+Compile some code M-x compile
+List packages M-x package-list-packages
 
-Mx package-install RET evil RET
+# Line numbers
+
+To add line numbers and enable moving to a line with C-l:
+
+    (global-set-key "\C-l" 'goto-line)
+    (add-hook 'find-file-hook (lambda () (linum-mode 1)))

@@ -1,181 +1,81 @@
 ---
-title: Docker CLI
-category: Devops
-layout: 2017/sheet
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
 ---
+---
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
+---
+# To start the docker daemon:
 
-## Manage images
+docker -d
 
-### `docker build`
+# To start a container with an interactive shell:
 
-```yml
-docker build [options] .
-  -t "app/container_name"    # name
-  --build-arg APP_HOME=$APP_HOME    # Set build-time variables
-```
+docker run -ti <image-name> /bin/bash
 
-Create an `image` from a Dockerfile.
+# To "shell" into a running container (docker-1.3+):
 
-### `docker run`
+docker exec -ti <container-name> bash
 
-```yml
-docker run [options] IMAGE
-# see `docker create` for options
-```
+# To inspect a running container:
 
-#### Example
+docker inspect <container-name> (or <container-id>)
 
-```
-$ docker run -it debian:buster /bin/bash
-```
+# To get the process ID for a container:
 
-Run a command in an `image`.
+docker inspect --format {{.State.Pid}} <container-name-or-id>
 
-## Manage containers
+# To list (and pretty-print) the current mounted volumes for a container:
 
-### `docker create`
+docker inspect --format='{{json .Volumes}}' <container-id> | python -mjson.tool
 
-```yml
-docker create [options] IMAGE
-  -a, --attach               # attach stdout/err
-  -i, --interactive          # attach stdin (interactive)
-  -t, --tty                  # pseudo-tty
-      --name NAME            # name your image
-  -p, --publish 5000:5000    # port map (host:container)
-      --expose 5432          # expose a port to linked containers
-  -P, --publish-all          # publish all ports
-      --link container:alias # linking
-  -v, --volume `pwd`:/app    # mount (absolute paths needed)
-  -e, --env NAME=hello       # env vars
-```
+# To copy files/folders between a container and your host:
 
-#### Example
+docker cp foo.txt mycontainer:/foo.txt
 
-```
-$ docker create --name app_redis_1 \
-  --expose 6379 \
-  redis:3.0.2
-```
+# To list currently running containers:
 
-Create a `container` from an `image`.
+docker ps
 
-### `docker exec`
+# To list all containers:
 
-```yml
-docker exec [options] CONTAINER COMMAND
-  -d, --detach        # run in background
-  -i, --interactive   # stdin
-  -t, --tty           # interactive
-```
+docker ps -a
 
-#### Example
+# To remove all stopped containers:
 
-```
-$ docker exec app_web_1 tail logs/development.log
-$ docker exec -t -i app_web_1 rails c
-```
+docker rm $(docker ps -qa)
 
-Run commands in a `container`.
+# To list all images:
 
-### `docker start`
+docker images
 
-```yml
-docker start [options] CONTAINER
-  -a, --attach        # attach stdout/err
-  -i, --interactive   # attach stdin
+# To remove all untagged images:
 
-docker stop [options] CONTAINER
-```
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 
-Start/stop a `container`.
+# To remove all volumes not used by at least one container:
 
-### `docker ps`
-
-```
-$ docker ps
-$ docker ps -a
-$ docker kill $ID
-```
-
-Manage `container`s using ps/kill.
-
-### `docker logs`
-
-```
-$ docker logs $ID
-$ docker logs $ID 2>&1 | less
-$ docker logs -f $ID # Follow log output
-```
-
-See what's being logged in an `container`.
-
-## Images
-
-### `docker images`
-
-```sh
-$ docker images
-  REPOSITORY   TAG        ID
-  ubuntu       12.10      b750fe78269d
-  me/myapp     latest     7b2431a8d968
-```
-
-```sh
-$ docker images -a   # also show intermediate
-```
-
-Manages `image`s.
-
-### `docker rmi`
-
-```yml
-docker rmi b750fe78269d
-```
-
-Deletes `image`s.
-
-## Clean up
-
-### Clean all
-
-```sh
-docker system prune
-```
-
-Cleans up dangling images, containers, volumes, and networks (ie, not associated with a container)
-
-```sh
-docker system prune -a
-```
-
-Additionally remove any stopped containers and all unused images (not just dangling images)
-
-### Containers
-
-```sh
-# Stop all running containers
-docker stop $(docker ps -a -q)
-
-# Delete stopped containers
-docker container prune
-```
-
-### Images
-
-```sh
-docker image prune [-a]
-```
-
-Delete all the images
-
-### Volumes
-
-```sh
 docker volume prune
-```
-
-Delete all the volumes
-
-## Also see
-
-- [Getting Started](http://www.docker.io/gettingstarted/) _(docker.io)_

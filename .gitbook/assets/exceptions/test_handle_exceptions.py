@@ -76,13 +76,9 @@ def test_handle_exceptions():
         result = 10 * (1 / 0)  # division by zero
         # We should not get here at all.
         assert result
-    except NameError:
+    except (NameError, ZeroDivisionError):
         # We should get here because of division by zero.
         exception_has_been_handled = True
-    except ZeroDivisionError:
-        # We should get here because of division by zero.
-        exception_has_been_handled = True
-
     assert exception_has_been_handled
 
     # The try … except statement has an optional else clause, which, when present, must follow all

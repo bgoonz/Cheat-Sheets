@@ -1,132 +1,73 @@
----
-title: tmux
-category: CLI
----
+# To start tmux:
 
-### Commands
+tmux
 
-    $ tmux
-      -u        # UTF8 mode
-      -S ~/.tmux.socket
+# To detach from tmux:
 
-#### Sessions
+Ctrl-b d
 
-    $ tmux new
-    $ tmux new -s session_name
+# To restore tmux session:
 
-    $ tmux attach # Default session
-    $ tmux attach -t session_name
+tmux attach
 
-    $ tmux switch -t session_name
+# To detach an already attached session (great if you are moving devices with different screen resolutions):
 
-    $ tmux ls     # List sessions
+tmux attach -d
 
-    $ tmux detach
+# To display session:
 
-#### Windows
+tmux ls
 
-    $ tmux new-window
+# To rename session:
 
-### Help
+Ctrl-b $
 
-    C-b ?
+# To switch session:
 
-### Scrolling
+Ctrl-b s
 
-    C-b [       # Enter scroll mode then press up and down
+# To start a shared session:
 
-### Copy/paste
+tmux -S /tmp/your_shared_session
+chmod 777 /tmp/your_shared_session
 
-    C-b [       # 1. Enter scroll mode first.
-    Space       # 2. Start selecting and move around.
-    Enter       # 3. Press enter to copy.
-    C-b ]       # Paste
+# To help screen (Q to quit):
 
-### Panes
+Ctrl-b ?
 
-    C-b %       # vert
-    C-b "       # horiz
-    C-b hkjl    # navigation
-    C-b HJKL    # resize
-    C-b o       # next window
-    C-b q       # show pane numbers
-    C-b x       # close pane
+# To scroll in window:
 
-    C-b { or }  # move windows around
+Ctrl-b PageUp/PageDown
 
-### Windows
+# To reload configuration file
 
-    C-b c       # New window
-    C-b 1       # Go to window 1
-    C-b n       # Go to next window
-    C-b p       # Go to previous window
-    C-b w       # List all window
+Ctrl-b : source-file /path/to/file
 
-### Detach/attach
+# To create a window:
 
-    C-b d       # Detach
-    C-b ( )     # Switch through sessions
-    $ tmux attach
+Ctrl-b c
 
-### Niceties
+# To go next window:
 
-    C-b t    # Time
+Ctrl-b n
 
-## Status formats
+# To destroy a window:
 
-```
-setw -g window-status-format `#[fg=8,bg=default]#I`
-```
+Ctrl-b x
 
-See `message-command-style` in the man page.
+# To switch between windows:
 
-### Attribute/colors
+Ctrl-b [0-9]
+Ctrl-b Arrows
 
-| `#[fg=1]` | standard color |
-| `#[fg=yellow]` | yellow |
-| `#[bold]` | bold |
-| `#[fg=colour240]` | 256 color |
-| `#[fg=default]` | default |
-| `#[fg=1,bg=2]` | combinations |
-| `#[default]` | reset |
+# To split windows horizontally:
 
-### Colors
+Ctrl-b %
 
-- `black` `red` `green` `yellow` `blue` `magenta` `cyan` `white`
-- `brightred` (and so on)
-- `colour0` ... `colour255`
-- `#333` (rgb hex)
+# To split windows vertically:
 
-### Attributes
+Ctrl-b "
 
-- `bold` `underscore` `blink` `noreverse` `hidden` `dim` `italics`
+# To swap windows:
 
-### Variables
-
-| `#(date)` | shell command |
-| `#I` | window index |
-| `#S` | session name |
-| `#W` | window name |
-| `#F` | window flags |
-| `#H` | Hostname |
-| `#h` | Hostname, short |
-| `#D` | pane id |
-| `#P` | pane index |
-| `#T` | pane title |
-
-## Options
-
-    set -g status-justify [left|centre|right]
-    set -g status-left '...'
-
-    setw -g window-status-style
-    setw -g window-status-activity-style
-    setw -g window-status-bell-style
-    setw -g window-status-content-style
-    setw -g window-status-current-style
-    setw -g window-status-last-style
-
-    setw -g window-status-format
-    setw -g window-status-current-format
-
-    setw -g window-status-separator
+Ctrl-b :swap-window -s [0-9] -t [0-9]
