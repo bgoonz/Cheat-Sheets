@@ -1,5 +1,5 @@
 ---
-title: nodejs Cheat Sheet
+title: Nodejs Cheat Sheet
 subtitle: Nodejs Cheat Sheet
 excerpt: >-
   A Node.js app runs in a single process, without creating a new thread for
