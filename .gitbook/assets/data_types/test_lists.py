@@ -78,12 +78,18 @@ def test_list_type():
 def test_list_methods():
     """Test list methods."""
 
-    fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+    fruits = [
+        'orange',
+        'apple',
+        'pear',
+        'banana',
+        'kiwi',
+        'apple',
+        'banana',
+        'grape',
+    ]
 
-    # list.append(x)
-    # Add an item to the end of the list.
-    # Equivalent to a[len(a):] = [x].
-    fruits.append('grape')
+
     assert fruits == ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana', 'grape']
 
     # list.remove(x)
@@ -212,10 +218,7 @@ def test_list_comprehensions():
     """
 
     # For example, assume we want to create a list of squares, like:
-    squares = []
-    for number in range(10):
-        squares.append(number ** 2)
-
+    squares = [number ** 2 for number in range(10)]
     assert squares == [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
     # Note that this creates (or overwrites) a variable named "number" that still exists after
@@ -301,10 +304,7 @@ def test_nested_list_comprehensions():
 
     # As we saw in the previous section, the nested listcomp is evaluated in the context of the
     # for that follows it, so this example is equivalent to:
-    transposed = []
-    for i in range(4):
-        transposed.append([row[i] for row in matrix])
-
+    transposed = [[row[i] for row in matrix] for i in range(4)]
     assert transposed == [
         [1, 5, 9],
         [2, 6, 10],
@@ -316,9 +316,7 @@ def test_nested_list_comprehensions():
     transposed = []
     for i in range(4):
         # the following 3 lines implement the nested listcomp
-        transposed_row = []
-        for row in matrix:
-            transposed_row.append(row[i])
+        transposed_row = [row[i] for row in matrix]
         transposed.append(transposed_row)
 
     assert transposed == [
