@@ -1,95 +1,93 @@
 ---
-title: Find
-category: CLI
-layout: 2017/sheet
-updated: 2019-11-17
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
 ---
+---
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
+---
+# To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG):
 
-### Usage
+find . -iname "\*.jpg"
 
-{: .-prime}
+# To find directories:
 
-```bash
-find <path> <conditions> <actions>
-```
+find . -type d
 
-### Conditions
+# To find files:
 
-```bash
--name "*.c"
-```
+find . -type f
 
-```bash
--user jonathan
--nouser
-```
+# To find files by octal permission:
 
-```bash
--type f            # File
--type d            # Directory
--type l            # Symlink
-```
+find . -type f -perm 777
 
-```bash
--depth 2           # At least 3 levels deep
--regex PATTERN
-```
+# To find files with setuid bit set:
 
-```bash
--size 8            # Exactly 8 512-bit blocks
--size -128c        # Smaller than 128 bytes
--size 1440k        # Exactly 1440KiB
--size +10M         # Larger than 10MiB
--size +2G          # Larger than 2GiB
-```
+find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 
-```bash
--newer   file.txt
--newerm  file.txt        # modified newer than file.txt
--newerX  file.txt        # [c]hange, [m]odified, [B]create
--newerXt "1 hour ago"    # [t]imestamp
-```
+# To find files with extension '.txt' and remove them:
 
-### Access time conditions
+find ./path/ -name '\*.txt' -exec rm '{}' \;
 
-```bash
--atime 0           # Last accessed between now and 24 hours ago
--atime +0          # Accessed more than 24 hours ago
--atime 1           # Accessed between 24 and 48 hours ago
--atime +1          # Accessed more than 48 hours ago
--atime -1          # Accessed less than 24 hours ago (same a 0)
--ctime -6h30m      # File status changed within the last 6 hours and 30 minutes
--mtime +1w         # Last modified more than 1 week ago
-```
+# To find files with extension '.txt' and look for a string into them:
 
-These conditions only work in MacOS and BSD-like systems (no GNU/Linux support).
+find ./path/ -name '\*.txt' | xargs grep 'string'
 
-### Condition flow
+# To find files with size bigger than 5 Mebibyte and sort them by size:
 
-```bash
-\! -name "*.c"
-\( x -or y \)
-```
+find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
 
-### Actions
+# To find files bigger than 2 Megabyte and list them:
 
-```bash
--exec rm {} \;
--print
--delete
-```
+find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 
-### Examples
+# To find files modified more than 7 days ago and list file information:
 
-```bash
-find . -name '*.jpg'
-find . -name '*.jpg' -exec rm {} \;
-```
+find . -type f -mtime +7d -ls
 
-```bash
-find . -newerBt "24 hours ago"
-```
+# To find symlinks owned by a user and list file information:
 
-```bash
-find . -type f -mtime +29 # find files modified more than 30 days ago
-```
+find . -type l -user <username-or-userid> -ls
+
+# To search for and delete empty directories:
+
+find . -type d -empty -exec rmdir {} \;
+
+# To search for directories named build at a max depth of 2 directories:
+
+find . -maxdepth 2 -name build -type d
+
+# To search all files who are not in .git directory:
+
+find . ! -iwholename '_.git_' -type f
+
+# To find all files that have the same node (hard link) as MY_FILE_HERE:
+
+find . -type f -samefile MY_FILE_HERE 2>/dev/null
+
+# To find all files in the current directory and modify their permissions:
+
+find . -type f -exec chmod 644 {} \;

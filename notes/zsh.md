@@ -1,44 +1,132 @@
----
-title: zsh
-category: CLI
-layout: 2017/sheet
----
+# A plain old glob
 
-### Expressions
+print -l _.txt
+print -l \*\*/_.txt
 
-| Expression        | Example             | Description                             |
-| ----------------- | ------------------- | --------------------------------------- |
-| `!!`              | `sudo !!`           | Last command (`sudo !!`)                |
-| ---               | ---                 | ---                                     |
-| `!*`              | `vim !*`            | Last command's parameters (`vim !*`)    |
-| `!^`              |                     | Last command's first parameter          |
-| `!$`              |                     | Last command's last parameter           |
-| ---               | ---                 | ---                                     |
-| `!?ls` `<tab>`    | `sudo !?mv` `<tab>` | Command and params of last `ls` command |
-| `!?ls?:*` `<tab>` |                     | Params of last `ls` command             |
-| ---               | ---                 | ---                                     |
-| `*(m0)`           | `rm *(m0)`          | Last modified today                     |
-| `*(m-4)`          |                     | Last modified <4 days ago               |
+# Show text files that end in a number from 1 to 10
 
-{: .-headers}
+print -l \*_/_<1-10>.txt
 
-### Change default shell
+# Show text files that start with the letter a
 
-```bash
-chsh -s `which zsh`
-```
+print -l \*_/[a]_.txt
 
-### Process Substitution
+# Show text files that start with either ab or bc
 
-| Expression   | Example                                       | Description                                                             |
-| ------------ | --------------------------------------------- | ----------------------------------------------------------------------- |
-| `<(COMMAND)` | `grep "needle" <(curl "https://haystack.io")` | Replace argument with _named pipe/FIFO_ (read-only) with command output |
-| `=(COMMAND)` | `vim =(curl "https://haystack.io")`           | Replace argument with _file_ (writable) containing command output       |
+print -l \*_/(ab|bc)_.txt
 
-{: .-headers}
+# Show text files that don't start with a lower or uppercase c
 
-### Also see
+print -l \*_/[^cc]_.txt
 
-- [Bash cheatsheet](./bash)
+# Show only directories
 
-Zsh is mostly compatible with Bash, so most everything in Bash's cheatsheet also applies.
+print -l \*_/_(/)
+
+# Show only regular files
+
+print -l \*_/_(.)
+
+# Show empty files
+
+print -l \*_/_(L0)
+
+# Show files greater than 3 KB
+
+print -l \*_/_(Lk+3)
+
+# Show files modified in the last hour
+
+print -l \*_/_(mh-1)
+
+# Sort files from most to least recently modified and show the last 3
+
+print -l \*_/_(om[1,3])
+
+# `.` show files, `Lm-2` smaller than 2MB, `mh-1` modified in last hour,
+
+# `om` sort by modification date, `[1,3]` only first 3 files
+
+print -l \*_/_(.Lm-2mh-1om[1,3])
+
+# Show every directory that contain directory `.git`
+
+print -l \*_/_(e:'[[-d $REPLY/.git]]':)
+
+# Return the file name (t stands for tail)
+
+print -l \*.txt(:t)
+
+# Return the file name without the extension (r stands for remove_extension)
+
+print -l \*.txt(:t:r)
+
+# Return the extension
+
+print -l \*.txt(:e)
+
+# Return the parent folder of the file (h stands for head)
+
+print -l \*.txt(:h)
+
+# Return the parent folder of the parent
+
+print -l \*.txt(:h:h)
+
+# Return the parent folder of the first file
+
+print -l \*.txt([1]:h)
+
+# Parameter expansion
+
+files=(\*.txt) # store a glob in a variable
+print -l $files
+print -l $files(:h) # this is the syntax we saw before
+print -l ${files:h}
+print -l ${files(:h)} # don't mix the two, or you'll get an error
+print -l ${files:u} # the :u modifier makes the text uppercase
+
+# :s modifier
+
+variable="path/aaabcd"
+echo ${variable:s/bc/BC/} # path/aaaBCd
+echo ${variable:s*bc_BC*} # path/aaaBCd
+echo ${variable:s/\//./} # path.aaabcd (escaping the slash \/)
+echo ${variable:s*/*.\_} # path.aaabcd (slightly more readable)
+echo ${variable:s/a/A/} # pAth/aaabcd (only first A is replaced)
+echo ${variable:gs/a/A/} # pAth/AAAbcd (all A is replaced)
+
+# Split the file name at each underscore
+
+echo ${(s.\_.)file}
+
+# Join expansion flag, opposite of the split flag.
+
+array=(a b c d)
+echo ${(j.-.)array} # a-b-c-d
+
+# Short if
+
+if [[...]] command
+if [[...]] { command ... }
+
+# Short for
+
+for i ( word ... ) command
+for i ( word ... ) { command ... }
+for i in word ... ; command
+
+# Short while/until
+
+while [[...]] { command ... }
+until [[...]] { command ... }
+
+# Use output of command, when using pipe is not possible
+
+<( command )
+
+# Similar to <( ), but creates temporary file (instead of FD or FIFO), when
+
+# program needs to seek in output.
+
+=( command )

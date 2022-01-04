@@ -1,10 +1,39 @@
 ---
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
+---
+---
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
+---
+---
 title: Angular.js
 category: JavaScript libraries
 ---
 
 ```html
-   
 <html ng-app="nameApp"></html>
 ```
 
@@ -13,7 +42,6 @@ category: JavaScript libraries
 ```html
 <ul ng-controller="MyListCtrl">
   <li ng-repeat="phone in phones">{{phone.name}}</li>
-     
 </ul>
 ```
 
@@ -23,24 +51,23 @@ category: JavaScript libraries
 <select ng-model="orderProp">
   <option value="name">Alphabetical</option>
   <option value="age">Newest</option>
-     
 </select>
 ```
 
 ### Defining a module
 
 ```js
-    App = angular.module('myApp', []);
+    App = angular.module('myApp', []);
 
     App.controller('MyListCtrl', function ($scope) {
       $scope.phones = [ ... ];
-    });
+    });
 ```
 
 ### Controller with protection from minification
 
 ```js
-    App.controller('Name', [
+    App.controller('Name', [
       '$scope',
       '$http',
       function ($scope, $http) {
@@ -51,7 +78,7 @@ category: JavaScript libraries
       '$scope'
       '$http'
       ($scope, $http) ->
-    ]
+    ]
 ```
 
 ### Service

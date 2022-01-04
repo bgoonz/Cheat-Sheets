@@ -1,93 +1,85 @@
 ---
-title: Curl
-category: CLI
-layout: 2017/sheet
-updated: 2020-03-09
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
 ---
+---
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
+---
+# To download a file:
 
-## Options
+curl <url>
 
-### Options
+# To download and rename a file:
 
-```bash
--o <file>    # --output: write to file
--u user:pass # --user: Authentication
-```
+curl <url> -o <outfile>
 
-```bash
--v           # --verbose
--vv          # Even more verbose
--s           # --silent
-```
+# To download multiple files:
 
-```bash
--i           # --include: Include the HTTP-header in the output
--I           # --head: headers only
-```
+curl -O <url> -O <url>
 
-### Request
+# To download all sequentially numbered files (1-24):
 
-```bash
--X POST          # --request
--L               # follow link if page redirects
--F 	             # --form: HTTP POST data for multipart/form-data
-```
+curl http://example.com/pic[1-24].jpg
 
-### Data
+# To download a file and pass HTTP authentication:
 
-```bash
--d 'data'    # --data: HTTP post data, URL encoded (eg, status="Hello")
--d @file     # --data via file
--G           # --get: send -d data via get
-```
+curl -u <username>:<password> <url>
 
-### Headers
+# To download a file with a proxy:
 
-```bash
--A <str>         # --user-agent
--b name=val      # --cookie
--b FILE          # --cookie
--H "X-Foo: y"    # --header
---compressed     # use deflate/gzip
-```
+curl -x <proxy-host>:<port> <url>
 
-### SSL
+# To download a file over FTP:
 
-```bash
-    --cacert <file>
-    --capath <dir>
-```
+curl -u <username>:<password> -O ftp://example.com/pub/file.zip
 
-```bash
--E, --cert <cert>     # --cert: Client cert file
-    --cert-type       # der/pem/eng
--k, --insecure        # for self-signed certs
-```
+# To get an FTP directory listing:
 
-## Examples
+curl ftp://username:password@example.com
 
-{: .-one-column}
+# To resume a previously failed download:
 
-```bash
-# Post data:
-curl -d password=x http://x.com/y
-```
+curl -C - -o <partial-file> <url>
 
-```bash
-# Auth/data:
-curl -u user:pass -d status="Hello" http://twitter.com/statuses/update.xml
-```
+# To fetch only the HTTP headers from a response:
 
-```bash
-# multipart file upload
-curl -v -include --form key1=value1 --form upload=@localfilename URL
+curl -I <url>
 
-# multipart form: send data from text field and upload file
-curl -F person=anonymous -F secret=@file.txt http://example.com/submit.cgi
-```
+# To fetch your external IP and network info as JSON:
 
-```bash
-# Use Curl to Check if a remote resource is available
-# details: https://matthewsetter.com/check-if-file-is-available-with-curl/
-curl -o /dev/null --silent -Iw "%{http_code}" https://example.com/my.remote.tarball.gz
-```
+curl http://ifconfig.me/all.json
+
+# To limit the rate of a download:
+
+curl --limit-rate 1000B -O <outfile>
+
+# To get your global IP:
+
+curl httpbin.org/ip
+
+# To get only the HTTP status code:
+
+curl -o /dev/null -w '%{http_code}\n' -s -I URL

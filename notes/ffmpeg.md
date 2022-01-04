@@ -1,71 +1,79 @@
 ---
-title: ffmpeg
-category: CLI
-layout: 2017/sheet
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
 ---
+---
+title: title
+subtitle: subtitle
+date: '2021-12-25'
+thumb_img_alt: lorem-ipsum
+content_img_alt: lorem-ipsum
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_img_path: images/css-72a655a7.jpg
+---
+# To print file metadata:
 
-### Common switches
+ffmpeg -i <file>
 
-```bash
--codecs          # list codecs
--c:v             # video codec (-vcodec) - 'copy' to copy stream
--c:a             # audio codec (-acodec)
-```
+# To convert all m4a files to mp3
 
-```bash
--fs SIZE         # limit file size (bytes)
-```
+for f in \*.m4a; do ffmpeg -i "$f" -acodec libmp3lame -vn -b:a 320k "${f%.m4a}.mp3"; done
 
-### Bitrate
+# To convert video from .foo to .bar
 
-```bash
--b:v 1M          # video bitrate (1M = 1Mbit/s)
--b:a 1M          # audio bitrate
-```
+# -g : GOP, for searchability
 
-### Video
+ffmpeg -i input.foo -vcodec bar -acodec baz -b:v 21000k -b:a 320k -g 150 -threads 4 output.bar
 
-```bash
--aspect RATIO    # aspect ratio (4:3, 16:9, or 1.25)
--r RATE          # frame rate per sec
--s WIDTHxHEIGHT  # frame size
--vn              # no video
-```
+# To convert image sequence to video:
 
-### Audio
+ffmpeg -r 18 -pattern_type glob -i '\*.png' -b:v 21000k -s hd1080 -vcodec vp9 -an -pix_fmt yuv420p -deinterlace output.ext
 
-```bash
--aq QUALITY      # audio quality (codec-specific)
--ar 44100        # audio sample rate (hz)
--ac 1            # audio channels (1=mono, 2=stereo)
--an              # no audio
--vol N           # volume (256=normal)
-```
+# To combine video and audio into one file
 
-## Example
+ffmpeg -i video.ext -i audio.ext -c:v copy -c:a copy output.ext
 
-### Ringtone conversion using ffmpeg
+# To add ass subtitle to the video
 
-```bash
-ffmpeg -i foo.mp3 -ac 1 -ab 128000 -f mp4 -acodec libfaac -y target.m4r
-```
+ffmpeg -i input_video.mp4 -vf ass=sub.ass output_video_subtitles.mp4
 
-### To web
+# To convert webm to mp4
 
-```bash
-# no audio
-ffmpeg -i input.mov -vcodec h264   -an -strict -2 output.mp4
-ffmpeg -i input.mov -vcodec libvpx -an output.webm
-```
+ffmpeg -i input_video.webm output_video.mp4
 
-```bash
-ffmpeg -i input.mov -vcodec h264 -acodec aac -strict -2 output.mp4
-ffmpeg -i input.mov -vcodec libvpx -acodec libvorbis output.webm
-```
+# To convert mp4 to mov
 
-```html
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type='video/mp4'></source>
-  <source src="movie.webm" type='video/ogg'></source>
-</video>
-```
+ffmpeg -i input_video.mp4 -acodec copy -vcodec copy -f mov output_video.mov
+
+# To convert mov to mp4
+
+ffmpeg -i input_video.mov -vcodec copy -acodec copy output_video.mp4
+
+# Listen to 10 seconds of audio from a video file
+
+#
+
+# -ss : start time
+
+# -t : seconds to cut
+
+# -autoexit : closes ffplay as soon as the audio finishes
+
+ffmpeg -ss 00:34:24.85 -t 10 -i path/to/file.mp4 -f mp3 pipe:play | ffplay -i pipe:play -autoexit
