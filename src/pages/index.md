@@ -9,7 +9,7 @@ sections:
       <https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/>
     actions:
       - label: Gitbook Version
-        url: '#'
+        url: 'https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/'
         style: link
         icon_class: dev
         new_window: false
