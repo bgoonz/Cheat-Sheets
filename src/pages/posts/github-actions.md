@@ -1,22 +1,20 @@
 ---
 title: Github Actions
-subtitle: lorem-ipsum
+subtitle: Github Actions
 date: '2021-12-25'
 thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
+content_img_alt: Github
+excerpt: GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production. GitHub Actions goes beyond just DevOps and lets you run workflows when other events happen in your repository. For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository. GitHub provides Linux, Windows, and macOS virtual machines to run your workflows, or you can host your own self-hosted runners in your own data center or cloud infrastructure.
 seo:
   title: ''
-  description: ''
+  description: 'GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline.'
   robots: []
   extra: []
 template: post
 thumb_img_path: images/github-b304136f.png
 ---
 
-
-# Github Actions:
-
+# Github Actions
 
 ## Introduction
 
@@ -702,4 +700,4 @@ The solution is to [use outputs instead of environment variables](https://github
   - Push the change to GitHub with `git push`
   - Click on the "raw" button next to the image
   - Copy the URL
-  - Add the URL to an image tag in the Markdown file. 
+  - Add the URL to an image tag in the Markdown file.

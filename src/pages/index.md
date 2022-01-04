@@ -7,33 +7,42 @@ sections:
     title: Bryan Guner Cheat Sheet Collection
     content: |
       <https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/>
-  - section_id: about
+    actions:
+      - label: Gitbook Version
+        url: 'https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/'
+        style: button
+        icon_class: dev
+        new_window: false
+        no_follow: false
+  - section_id: home
     type: section_content
-    title: About
-    content: |
-      > My Cheat Sheets
-      >
-      >
-      >
+    title: Cheat Sheets Home
+    content: >
+      > [***MY CHEAT
+      SHEETS***](https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/)
     actions:
       - label: Contact Me
         url: /contact
         style: button
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    content: >-
-      <iframe frameborder="0" width="100%" height="800px" src="https://bgoonz-bookmarks.netlify.app/"></iframe>
+    image: images/cheatsheets-52c26e0a.png
+    image_alt: cheat sheets
+  - title: Bookmarks
+    section_id: bookmarks
+    image_alt: bookmark
+    content: >
+      <iframe frameborder="0" width="1000px" height="1000px"
+      src="https://bgoonz-bookmarks.netlify.app/"></iframe>
     actions: []
     type: section_content
+    image: images/cheatsheets-a0492b45.png
   - section_id: recent-posts
     type: section_posts
     title: Recent Posts
-    posts_number: 4
+    posts_number: 20
     actions:
       - label: View Blog
         url: blog/index.html
-        style: button
+        style: link
 seo:
   title: My Cheat Sheets
   description: The preview of the Fresh theme
