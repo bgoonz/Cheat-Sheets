@@ -1,6 +1,6 @@
 ---
 title: Resources
-subtitle: ReactJS Cheat Sheet
+subtitle: Resources
 excerpt: >-
   A Node.js app runs in a single process, without creating a new thread for
   every request. Node.js provides a set of asynchronous I/O primitives in its
