@@ -7,7 +7,7 @@ excerpt: >-
 date: '2022-01-04'
 thumb_img_path: images/jquery-be370939.png
 thumb_img_alt: expressjs
-content_img_path: images/5.jpg
+content_img_path: images/node-express-a1f4367f.png
 content_img_alt: A red fox in a rocky forest
 seo:
   title: ExpressJS Cheat Sheet
