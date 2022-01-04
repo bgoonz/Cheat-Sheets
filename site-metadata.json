@@ -12,16 +12,7 @@
             {
                 "label": "Home",
                 "url": "/",
-                "style": "link",
-                "icon_class": "github"
-            },
-            {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false
+                "style": "link"
             },
             {
                 "label": "Content",
@@ -87,6 +78,5 @@
         "content": "@bgoonz on most social media"
     },
     "title": "My Cheat Sheets",
-    "domain": "https://purple-oak-171aa.netlify.app",
-    "favicon": "images/2 (655).jpg"
+    "domain": "https://purple-oak-171aa.netlify.app"
 }
