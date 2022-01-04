@@ -86,5 +86,6 @@
         "content": "@bgoonz on most social media"
     },
     "title": "My Cheat Sheets",
-    "domain": "https://cheatsheets-42.netlify.app/"
+    "domain": "https://cheatsheets-42.netlify.app/",
+    "favicon": "images/diligent-tiger.PNG"
 }
