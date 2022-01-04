@@ -1,6 +1,6 @@
 {
     "layout_style": "overflow",
-    "palette": "blue",
+    "palette": "violet",
     "header": {
         "title": "Cheatsheets",
         "tagline": "Web Development Cheat Sheets",
@@ -25,7 +25,7 @@
                 "style": "link"
             },
             {
-                "label": "About",
+                "label": "Resources",
                 "url": "/about/",
                 "style": "link"
             },
