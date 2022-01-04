@@ -27,7 +27,7 @@ sections:
     image: images/cheatsheets-52c26e0a.png
     image_alt: cheat sheets
   - title: Bookmarks
-    section_id: lorem-ipsum
+    section_id: bookmarks
     image_alt: lorem-ipsum
     content: >-
       <iframe frameborder="0" width="100%" height="800px"
