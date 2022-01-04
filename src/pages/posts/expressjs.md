@@ -20,8 +20,7 @@ In general, one or more programs that are designed to carry out operations for a
       keyName: property
     - name: 'og:description'
       value: >-
-        Apparently, Japan is covered in magical and irresistibly cute animal
-        sanctuaries.
+        In general, one or more programs that are designed to carry out operations for a specific purpose. In the context of Express, a program that uses the Express API running on the Node.js platform. Might also refer to an app object.
       keyName: property
     - name: 'og:image'
       value: images/5.jpg
