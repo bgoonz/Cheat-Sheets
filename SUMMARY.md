@@ -8,17 +8,16 @@
 * [Common HTTP status codes Cheat Sheet](common-http-status-codes-cheat-sheet.md)
 * [networking\_cheatsheet](networking\_cheatsheet.md)
 * [Regular Expressions Cheat Sheet](regular-expressions-cheat-sheet.md)
-* [React Patterns:](react-patterns.md)
 * [postgreSQL\_cheatsheet](postgresql\_cheatsheet.md)
-* [Flexbox Cheat Sheet](flexbox-cheat-sheet.md)
+* [React Patterns:](react-patterns.md)
 * [REGEX units Cheat Sheet](regex-units-cheat-sheet.md)
 * [Asynchronous JavaScript Cheat Sheet](asynchronous-javascript-cheat-sheet.md)
 * [bash\_cheatsheet](bash\_cheatsheet.md)
 * [Sequelize Cheatsheet](sequelize-cheatsheet.md)
 * [Function Context Cheatsheet](function-context-cheatsheet.md)
-* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](cheatsheets.md)
 * [Linux](linux.md)
-* [ES6 EXPORTS](es6-exports.md)
+* [ES6 EXPORTS](es6-exports/README.md)
+  * [Flexbox Cheat Sheet](es6-exports/flexbox-cheat-sheet.md)
 * [JavaScript](javascript-or-mdn.md)
 * [Regex In Python](regex-in-python.md)
 * [Google dork cheatsheet](google-dork-cheatsheet.md)
@@ -26,7 +25,6 @@
 * [Regular Expressions Cheat Sheet](regular-expressions-cheat-sheet-1.md)
 * [SSH Cheatsheet](ssh-cheatsheet.md)
 * [Python](python.md)
-* [ES6 EXPORTS](es6-exports-1.md)
 * [Js-Array-Cheatsheet](cheatsheet.md)
 * [🛐 Heroku Cheat Sheet](cheatsheet-compilation.md)
 * [CHEATSHEET (3)](cheatsheet-3.md)
@@ -39,15 +37,16 @@
 ## 👨💻 👨💻 Javascript
 
 * [JavaScript](javascript/javascript/README.md)
-  * [Javascript Python cheatsheet](javascript/javascript/javascript-python-cheatsheet.md)
+  * [Javascript Python cheatsheet](javascript-python-cheatsheet.md)
   * [General](javascript/javascript/general/README.md)
     * [JavaScript Promise API Cheat Sheet](javascript/javascript/general/javascript-promise-api-cheat-sheet.md)
     * [Chai.js](javascript/javascript/general/chai.js.md)
     * [Canvas](javascript/javascript/general/canvas.md)
+    * [ES6 EXPORTS](javascript/javascript/general/es6-exports-1.md)
   * [React](javascript/javascript/react/README.md)
     * [React Cheat Sheet](react-cheat-sheet/README.md)
       * [React Component Guide](react-cheat-sheet/react-component-guide.md)
-    * [React Patterns:](javascript/javascript/react/react-patterns-2.md)
+    * [React Patterns:](react-patterns-2.md)
   * [⚖ Libraries & Frameworks](javascript/javascript/libraries-and-frameworks/README.md)
     * [LOADASH Cheat Sheet](loadash-cheat-sheet.md)
     * [sequelize\_cheatsheet](javascript/javascript/libraries-and-frameworks/sequelize\_cheatsheet.md)
@@ -81,12 +80,11 @@
 * [React-router](tools/react-router.md)
 * [React.js (v0.14)](tools/react.js-v0.14.md)
 * [React.js](tools/react.js-1.md)
-* [reactjs (1)](tools/reactjs-1.md)
-* [React.js](tools/react.js-2.md)
 
 ## 📼 Guides-Tutorials
 
 * [Tutorials](guides-tutorials/tutorials/README.md)
+  * [React.js](guides-tutorials/tutorials/react.js.md)
 
 ***
 
@@ -99,7 +97,7 @@
 * [EC2 API tools](ec2-api-tools.md)
 * [git log](git-log.md)
 * [AWS CLI](aws-cli.md)
-* [ES6 EXPORTS](es6-exports-2.md)
+* [ES6 EXPORTS](es6-exports-1.md)
 * [Firebase](firebase.md)
 * [POSTGRES](postgres.md)
 * [Flynn](flynn.md)
@@ -118,10 +116,13 @@
     * [Bash Cheat Sheet](languages/languages/bash/bash-cheat-sheet.md)
     * [Learn Bash Scripting: Bash Scripting Cheatsheet](languages/languages/bash/learn-bash-scripting-bash-scripting-cheatsheet.md)
     * [Curl](languages/languages/bash/curl.md)
+* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](languages/cheatsheets.md)
 
 ***
 
 * [Emmet](emmet.md)
+* [Page 2](page-2.md)
+* [🐍 Python:](python-1.md)
 
 ## General
 
