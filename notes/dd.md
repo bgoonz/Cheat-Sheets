@@ -13,21 +13,6 @@ seo:
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
 # Read from {/dev/urandom} 2\*512 Bytes and put it into {/tmp/test.txt}
 
 # Note: At the first iteration, we read 512 Bytes.
