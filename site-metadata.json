@@ -19,7 +19,7 @@
                 "url": "https://bgoonz-blog.netlify.app/",
                 "style": "button",
                 "icon_class": "dev",
-                "new_window": false,
+                "new_window": true,
                 "no_follow": false
             },
             {
