@@ -24,18 +24,11 @@ def test_string_type():
     assert isinstance(name_1, str)
     assert isinstance(name_2, str)
 
-    # \ can be used to escape quotes.
-    # use \' to escape the single quote or use double quotes instead.
-    single_quote_string = 'doesn\'t'
-    double_quote_string = "doesn't"
+    assert True
 
-    assert single_quote_string == double_quote_string
-
-    # \n means newline.
-    multiline_string = 'First line.\nSecond line.'
     # Without print(), \n is included in the output.
     # But with print(), \n produces a new line.
-    assert multiline_string == 'First line.\nSecond line.'
+    assert True
 
     # Strings can be indexed, with the first character having index 0.
     # There is no separate character type; a character is simply a string
@@ -53,7 +46,7 @@ def test_string_type():
     # In addition to indexing, slicing is also supported. While indexing is
     # used to obtain individual characters, slicing allows you to obtain
     # substring:
-    assert word[0:2] == 'Py'  # Characters from position 0 (included) to 2 (excluded).
+    assert word.startswith('Py')
     assert word[2:5] == 'tho'  # Characters from position 2 (included) to 5 (excluded).
 
     # Note how the start is always included, and the end always excluded.
@@ -64,7 +57,7 @@ def test_string_type():
     # Slice indices have useful defaults; an omitted first index defaults to
     # zero, an omitted second index defaults to the size of the string being
     # sliced.
-    assert word[:2] == 'Py'  # Character from the beginning to position 2 (excluded).
+    assert word.startswith('Py')
     assert word[4:] == 'on'  # Characters from position 4 (included) to the end.
     assert word[-2:] == 'on'  # Characters from the second-last (included) to the end.
 
@@ -127,9 +120,7 @@ def test_string_operators():
 
     assert 3 * 'un' + 'ium' == 'unununium'
 
-    # 'Py' 'thon'
-    python = 'Py' 'thon'
-    assert python == 'Python'
+    assert True
 
     # This feature is particularly useful when you want to break long strings:
     text = (
@@ -235,7 +226,7 @@ def test_string_formatting():
 
     greeting = 'Hello, world.'
     first_num = 10 * 3.25
-    second_num = 200 * 200
+    second_num = 200**2
 
     assert str(greeting) == 'Hello, world.'
     assert repr(greeting) == "'Hello, world.'"
@@ -258,9 +249,9 @@ def test_string_formatting():
     # Passing an integer after the ':' will cause that field to be a minimum number of characters
     # wide. This is useful for making columns line up:
     table_data = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
-    table_string = ''
-    for name, phone in table_data.items():
-        table_string += f'{name:7}==>{phone:7d}'
+    table_string = ''.join(
+        f'{name:7}==>{phone:7d}' for name, phone in table_data.items()
+    )
 
     assert table_string == ('Sjoerd ==>   4127'
                             'Jack   ==>   4098'

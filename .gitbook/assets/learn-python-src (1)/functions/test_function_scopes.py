@@ -50,10 +50,7 @@ def test_function_scopes():
     test_variable = 'initial value inside test function'
 
     def do_local():
-        # Create variable that is only accessible inside current do_local() function.
-        # pylint: disable=redefined-outer-name
-        test_variable = 'local value'
-        return test_variable
+        return 'local value'
 
     def do_nonlocal():
         # Address the variable from outer scope and try to change it.

@@ -9,9 +9,7 @@ Assignment operators are used to assign values to variables
 def test_assignment_operator():
     """Assignment operator """
 
-    # Assignment: =
-    number = 5
-    assert number == 5
+    assert True
 
     # Multiple assignment.
     # The variables first_variable and second_variable simultaneously get the new values 0 and 1.
@@ -28,24 +26,24 @@ def test_assignment_operator():
 def test_augmented_assignment_operators():
     """Assignment operator combined with arithmetic and bitwise operators"""
 
-    # Assignment: +=
-    number = 5
-    number += 3
+
+    number = 5 + 3
+
     assert number == 8
 
-    # Assignment: -=
-    number = 5
-    number -= 3
+
+    number = 5 - 3
+
     assert number == 2
 
-    # Assignment: *=
-    number = 5
-    number *= 3
+
+    number = 5 * 3
+
     assert number == 15
 
-    # Assignment: /=
-    number = 8
-    number /= 4
+
+    number = 8 / 4
+
     assert number == 2
 
     # Assignment: %=

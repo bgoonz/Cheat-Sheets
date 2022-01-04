@@ -41,20 +41,16 @@ def test_files_open():
     some point. Using with is also much shorter than writing equivalent try-finally blocks:
     """
 
-    # Open files without using 'with' statement.
-    file = open('src/files/multi_line_file.txt', 'r')
+    with open('src/files/multi_line_file.txt', 'r') as file:
+        assert not file.closed
 
-    assert not file.closed
+        read_data = file.read()
 
-    read_data = file.read()
-
-    assert read_data == (
-        'first line\n'
-        'second line\n'
-        'third line'
-    )
-
-    file.close()
+        assert read_data == (
+            'first line\n'
+            'second line\n'
+            'third line'
+        )
 
     assert file.closed
 
