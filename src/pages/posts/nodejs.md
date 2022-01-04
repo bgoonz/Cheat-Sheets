@@ -9,7 +9,7 @@ excerpt: >-
   behavior the exception rather than the norm.
 date: '2021-11-21'
 thumb_img_path: images/github.png
-thumb_img_alt: git
+thumb_img_alt: node
 content_img_path: images/3.jpg
 content_img_alt: nodejs
 seo:
