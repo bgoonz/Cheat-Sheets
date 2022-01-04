@@ -1,8 +1,5 @@
 ---
 title: ExpressJS Cheat Sheet
-subtitle: >-
-  Apparently, Japan is covered in magical and irresistibly cute animal
-  sanctuaries.
 excerpt: >-
   Miyagi Zao Fox Village, aka Kitsune Mura, is a popular tourist attraction
   situated in Shiroishi, Miyagi it based in the Miyagi Zao mountains. Visitors
