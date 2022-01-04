@@ -10,7 +10,7 @@ sections:
     actions:
       - label: Gitbook Version
         url: 'https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/'
-        style: link
+        style: button
         icon_class: dev
         new_window: false
         no_follow: false
