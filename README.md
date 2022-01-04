@@ -12,8 +12,8 @@ description: https://cheatsheets-42.netlify.app/blog/
 
 
 
-{% content-ref url="react-patterns-2.md" %}
-[react-patterns-2.md](react-patterns-2.md)
+{% content-ref url="react-patterns.md" %}
+[react-patterns.md](react-patterns.md)
 {% endcontent-ref %}
 
 {% content-ref url="bash_cheatsheet.md" %}
