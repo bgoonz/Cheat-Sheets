@@ -34,7 +34,6 @@ sections:
       src="https://bgoonz-bookmarks.netlify.app/"></iframe>
     actions: []
     type: section_content
-    image: images/bookmarks.png
   - section_id: recent-posts
     type: section_posts
     title: Recent Posts
