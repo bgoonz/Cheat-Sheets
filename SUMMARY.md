@@ -87,8 +87,25 @@
 
 ## 📼 Guides-Tutorials
 
-* [Tutorials](guides-tutorials/tutorials/README.md)
-  * [cleancode](guides-tutorials/tutorials/cleancode.md)
+* [Tutorials](guides-tutorials/tutorials.md)
+
+***
+
+* [js-model](js-model.md)
+* [JavaScript Arrays](javascript-arrays.md)
+* [Share links](share-links.md)
+* [networking\_cheatsheet](networking\_cheatsheet-2.md)
+* [expect.js](expect.js.md)
+* [editorconfig](editorconfig.md)
+* [EC2 API tools](ec2-api-tools.md)
+* [git log](git-log.md)
+* [AWS CLI](aws-cli.md)
+* [ES6 EXPORTS](es6-exports-2.md)
+* [Firebase](firebase.md)
+* [POSTGRES](postgres.md)
+* [Flynn](flynn.md)
+* [ES6 IMPORTS](es6-imports/README.md)
+  * [cleancode](es6-imports/cleancode.md)
 
 ## Github
 
