@@ -1,9 +1,7 @@
 ---
 title: ExpressJS Cheat Sheet
 excerpt: >-
-  Miyagi Zao Fox Village, aka Kitsune Mura, is a popular tourist attraction
-  situated in Shiroishi, Miyagi it based in the Miyagi Zao mountains. Visitors
-  can visit a village where there is a vast population of foxes.
+In general, one or more programs that are designed to carry out operations for a specific purpose. In the context of Express, a program that uses the Express API running on the Node.js platform. Might also refer to an app object.
 date: '2022-01-04'
 thumb_img_path: images/jquery-be370939.png
 thumb_img_alt: expressjs
