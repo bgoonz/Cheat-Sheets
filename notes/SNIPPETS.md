@@ -13,21 +13,6 @@ seo:
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
----
-title: title
-subtitle: subtitle
-date: '2021-12-25'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
 Mounting a Docker Socket:
 
 ```
