@@ -16,7 +16,8 @@
 * [bash\_cheatsheet](bash\_cheatsheet.md)
 * [Sequelize Cheatsheet](sequelize-cheatsheet.md)
 * [Function Context Cheatsheet](function-context-cheatsheet.md)
-* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](cheatsheets.md)
+* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](cheatsheets.md)
+* [Linux](linux.md)
 * [ES6 EXPORTS](es6-exports.md)
 * [JavaScript](javascript-or-mdn.md)
 * [Regex In Python](regex-in-python.md)
@@ -63,7 +64,7 @@
 * [VSCODE Cheat Sheet](vscode-cheat-sheet.md)
 * [Github Cheat Sheet](github-cheat-sheet.md)
 
-## 👨💻 Javascript
+## 👨💻 👨💻 Javascript
 
 * [JavaScript](javascript/javascript/README.md)
   * [General](javascript/javascript/general.md)
