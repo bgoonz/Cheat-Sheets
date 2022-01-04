@@ -11,14 +11,8 @@ sections:
     type: section_content
     title: About
     content: >
-      ****[**My Cheat
-      Sheets**](https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/)
-
-
-      ![](images/cheatsheets.png)
-
-
-      #
+      > [***MY CHEAT
+      SHEETS***](https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/)
     actions:
       - label: Contact Me
         url: /contact
