@@ -1,9 +1,15 @@
 ---
 title: React
 excerpt: >-
-  Iceland is a Nordic country between the North Atlantic and the Arctic Ocean.
-  It has a population of 325,671 and an area of 103,000 km2 (40,000 sq mi),
-  making it the most sparsely populated country in Europe.
+  The key abstraction that React provides is that of a component. To reiterate,
+  a component is some thing that is being rendered in the browser. It could be a
+  button, a form with a bunch of fields in it, a navigation bar at the top of
+  the page, a single input field, etc. Any of these could be its own component.
+  React doesn't place any restrictions on how large or small a component can be.
+  You could have an entire static site encapsulated in a single React component,
+  but that at that point you may as well not be using React. So the first thing
+  to remember about a component is that a component must render something. If
+  nothing is being rendered from a component, then React will throw an error.
 date: '2022-01-03'
 thumb_img_path: images/react-c7f40163.png
 thumb_img_alt: react cheat sheet
