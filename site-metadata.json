@@ -10,17 +10,17 @@
         "has_nav": true,
         "nav_links": [
             {
-                "label": "Home",
-                "url": "/",
-                "style": "link"
-            },
-            {
                 "label": "📝BLOG📝",
                 "url": "https://bgoonz-blog.netlify.app/",
                 "style": "button",
                 "icon_class": "dev",
                 "new_window": true,
                 "no_follow": false
+            },
+            {
+                "label": "Home",
+                "url": "/",
+                "style": "link"
             },
             {
                 "label": "Content",
