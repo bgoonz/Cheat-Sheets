@@ -12,7 +12,8 @@
             {
                 "label": "Home",
                 "url": "/",
-                "style": "link"
+                "style": "link",
+                "icon_class": "github"
             },
             {
                 "label": "lorem-ipsum",
