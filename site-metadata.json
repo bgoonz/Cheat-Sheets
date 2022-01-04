@@ -10,17 +10,17 @@
         "has_nav": true,
         "nav_links": [
             {
-                "label": "Home",
-                "url": "/",
-                "style": "link"
-            },
-            {
                 "label": "📝BLOG📝",
                 "url": "https://bgoonz-blog.netlify.app/",
                 "style": "button",
                 "icon_class": "dev",
                 "new_window": true,
                 "no_follow": false
+            },
+            {
+                "label": "Home",
+                "url": "/",
+                "style": "link"
             },
             {
                 "label": "Content",
@@ -86,5 +86,6 @@
         "content": "@bgoonz on most social media"
     },
     "title": "My Cheat Sheets",
-    "domain": "https://cheatsheets-42.netlify.app/"
+    "domain": "https://cheatsheets-42.netlify.app/",
+    "favicon": "images/diligent-tiger.PNG"
 }
