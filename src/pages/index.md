@@ -7,6 +7,13 @@ sections:
     title: Bryan Guner Cheat Sheet Collection
     content: |
       <https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/>
+    actions:
+      - label: lorem-ipsum
+        url: '#'
+        style: link
+        icon_class: dev
+        new_window: false
+        no_follow: false
   - section_id: home
     type: section_content
     title: Cheat Sheets Home
