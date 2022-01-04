@@ -7,7 +7,7 @@ excerpt: >-
   standard library that prevent JavaScript code from blocking and generally,
   libraries in Node.js are written using non-blocking paradigms, making blocking
   behavior the exception rather than the norm.
-date: '2021-11-21'
+date: '2022-01-03'
 thumb_img_path: images/github.png
 thumb_img_alt: node
 content_img_path: images/3.jpg
