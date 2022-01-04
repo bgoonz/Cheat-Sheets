@@ -12,7 +12,7 @@
             {
                 "label": "Home",
                 "url": "/",
-                "style": "link"
+                "style": "icon"
             },
             {
                 "label": "Content",
