@@ -28,7 +28,7 @@ sections:
     image_alt: cheat sheets
   - title: Bookmarks
     section_id: bookmarks
-    image_alt: lorem-ipsum
+    image_alt: bookmark
     content: >-
       <iframe frameborder="0" width="100%" height="800px"
       src="https://bgoonz-bookmarks.netlify.app/"></iframe>
