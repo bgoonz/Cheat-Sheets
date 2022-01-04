@@ -6,7 +6,7 @@ date: '2021-11-21'
 thumb_img_path: images/HhoQbKtsoC.png
 thumb_img_alt: github
 content_img_path: images/github-72b8734c.png
-content_img_alt: nodejs
+content_img_alt: git universe
 seo:
   title: nodejs
   description: null
