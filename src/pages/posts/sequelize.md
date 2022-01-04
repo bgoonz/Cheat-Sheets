@@ -7,7 +7,7 @@ excerpt: >-
 date: '2022-01-03'
 thumb_img_path: images/react-c7f40163.png
 thumb_img_alt: react cheat sheet
-content_img_path: images/7.jpg
+content_img_path: images/react.jpg
 content_img_alt: Icelandic horses
 seo:
   title: Fragments of Iceland
