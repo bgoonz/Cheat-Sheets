@@ -1,15 +1,26 @@
 ---
 title: Sequelize
 excerpt: >-
- Models are the essence of Sequelize. A model is an abstraction that represents a table in your database. In Sequelize, it is a class that extends Model. The model tells Sequelize several things about the entity it represents, such as the name of the table in the database and which columns it has (and their data types). A model in Sequelize has a name. This name does not have to be the same name of the table it represents in the database. Usually, models have singular names (such as User) while tables have pluralized names (such as Users), although this is fully configurable.
+  Models are the essence of Sequelize. A model is an abstraction that represents
+  a table in your database. In Sequelize, it is a class that extends Model. The
+  model tells Sequelize several things about the entity it represents, such as
+  the name of the table in the database and which columns it has (and their data
+  types). A model in Sequelize has a name. This name does not have to be the
+  same name of the table it represents in the database. Usually, models have
+  singular names (such as User) while tables have pluralized names (such as
+  Users), although this is fully configurable.
 date: '2022-01-03'
-thumb_img_path: images/Sequelize-c7f40163.png
+thumb_img_path: images/sequelize-77de8eb1.png
 thumb_img_alt: Sequelize cheat sheet
-content_img_path: images/
+content_img_path: images/sequelize-05bcc5c4.png
 content_img_alt: Sequelize
 seo:
   title: Sequelize Cheat Sheet
-  description: Observe that, in the examples above, Sequelize refers to the library itself while sequelize refers to an instance of Sequelize, which represents a connection to one database. This is the recommended convention and it will be followed throughout the documentation.
+  description: >-
+    Observe that, in the examples above, Sequelize refers to the library itself
+    while sequelize refers to an instance of Sequelize, which represents a
+    connection to one database. This is the recommended convention and it will
+    be followed throughout the documentation.
   extra:
     - name: 'og:type'
       value: article
@@ -19,7 +30,10 @@ seo:
       keyName: property
     - name: 'og:description'
       value: >-
-        Sequelize is a promise-based Node.js ORM tool for Postgres, MySQL, MariaDB, SQLite, Microsoft SQL Server, Amazon Redshift and Snowflake's Data Cloud. It features solid transaction support, relations, eager and lazy loading, read replication and more.
+        Sequelize is a promise-based Node.js ORM tool for Postgres, MySQL,
+        MariaDB, SQLite, Microsoft SQL Server, Amazon Redshift and Snowflake's
+        Data Cloud. It features solid transaction support, relations, eager and
+        lazy loading, read replication and more.
       keyName: property
     - name: 'og:image'
       value: images/7.jpg
