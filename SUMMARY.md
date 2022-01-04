@@ -24,9 +24,6 @@
 * [Google dork cheatsheet](google-dork-cheatsheet.md)
 * [Binary Tree](binary-tree.md)
 * [Regular Expressions Cheat Sheet](regular-expressions-cheat-sheet-1.md)
-* [React Patterns:](react-patterns-1.md)
-* [Javascript Python cheatsheet](javascript-python-cheatsheet.md)
-* [React Patterns:](react-patterns-2.md)
 * [SSH Cheatsheet](ssh-cheatsheet.md)
 * [Python](python.md)
 * [ES6 EXPORTS](es6-exports-1.md)
@@ -42,6 +39,7 @@
 ## 👨💻 👨💻 Javascript
 
 * [JavaScript](javascript/javascript/README.md)
+  * [Javascript Python cheatsheet](javascript/javascript/javascript-python-cheatsheet.md)
   * [General](javascript/javascript/general/README.md)
     * [JavaScript Promise API Cheat Sheet](javascript/javascript/general/javascript-promise-api-cheat-sheet.md)
     * [Chai.js](javascript/javascript/general/chai.js.md)
@@ -49,6 +47,7 @@
   * [React](javascript/javascript/react/README.md)
     * [React Cheat Sheet](react-cheat-sheet/README.md)
       * [React Component Guide](react-cheat-sheet/react-component-guide.md)
+    * [React Patterns:](javascript/javascript/react/react-patterns-2.md)
   * [⚖ Libraries & Frameworks](javascript/javascript/libraries-and-frameworks/README.md)
     * [LOADASH Cheat Sheet](loadash-cheat-sheet.md)
     * [sequelize\_cheatsheet](javascript/javascript/libraries-and-frameworks/sequelize\_cheatsheet.md)
@@ -68,8 +67,8 @@
 ***
 
 * [GITHUB Cheat Sheet](github-cheat-sheet/README.md)
-  * [An Executable Data Structures Cheat Sheet for Interviews](github-cheat-sheet/an-executable-data-structures-cheat-sheet-for-interviews.md)
-  * [graphs\_cheatsheet](github-cheat-sheet/graphs\_cheatsheet.md)
+  * [An Executable Data Structures Cheat Sheet for Interviews](data-structures/an-executable-data-structures-cheat-sheet-for-interviews.md)
+  * [graphs\_cheatsheet](cs-concepts/computer-science-concepts/data-structures/graphs\_cheatsheet.md)
 
 ## Tools
 
@@ -87,7 +86,7 @@
 
 ## 📼 Guides-Tutorials
 
-* [Tutorials](guides-tutorials/tutorials.md)
+* [Tutorials](guides-tutorials/tutorials/README.md)
 
 ***
 
@@ -105,7 +104,7 @@
 * [POSTGRES](postgres.md)
 * [Flynn](flynn.md)
 * [ES6 IMPORTS](es6-imports/README.md)
-  * [cleancode](es6-imports/cleancode.md)
+  * [cleancode](guides-tutorials/tutorials/cleancode.md)
 
 ## Github
 
