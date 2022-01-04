@@ -7,7 +7,7 @@ sections:
     title: Bryan Guner Cheat Sheet Collection
     content: |
       <https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/>
-  - section_id: about
+  - section_id: home
     type: section_content
     title: About
     content: >
