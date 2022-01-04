@@ -14,7 +14,7 @@ template: post
 thumb_img_path: images/github-b304136f.png
 ---
 
-
+# Github Actions
 
 ## Introduction
 
