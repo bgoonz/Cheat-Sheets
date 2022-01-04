@@ -1,6 +1,6 @@
 ---
 title: Github Actions
-subtitle: lorem-ipsum
+subtitle: Github Actions
 date: '2021-12-25'
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
