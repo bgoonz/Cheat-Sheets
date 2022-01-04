@@ -10,11 +10,15 @@ sections:
   - section_id: about
     type: section_content
     title: About
-    content: |
-      > My Cheat Sheets
-      >
-      >
-      >
+    content: >
+      ****[**My Cheat
+      Sheets**](https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/)
+
+
+      ![](images/cheatsheets.png)
+
+
+      #
     actions:
       - label: Contact Me
         url: /contact
@@ -23,7 +27,8 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
-      <iframe frameborder="0" width="100%" height="800px" src="https://bgoonz-bookmarks.netlify.app/"></iframe>
+      <iframe frameborder="0" width="100%" height="800px"
+      src="https://bgoonz-bookmarks.netlify.app/"></iframe>
     actions: []
     type: section_content
   - section_id: recent-posts
