@@ -34,7 +34,7 @@
 * [networking\_cheatsheet](networking\_cheatsheet-1.md)
 * [An Executable Data Structures Cheat Sheet for Interviews](an-executable-data-structures-cheat-sheet-for-interviews.md)
 
-## 👨💻 👨💻 Javascript
+## 👨💻 👨💻 👨💻 Javascript
 
 * [JavaScript](javascript/javascript/README.md)
   * [Javascript Python cheatsheet](javascript-python-cheatsheet.md)
@@ -116,7 +116,7 @@
     * [Bash Cheat Sheet](languages/languages/bash/bash-cheat-sheet.md)
     * [Learn Bash Scripting: Bash Scripting Cheatsheet](languages/languages/bash/learn-bash-scripting-bash-scripting-cheatsheet.md)
     * [Curl](languages/languages/bash/curl.md)
-* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](languages/cheatsheets.md)
+* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](languages/cheatsheets.md)
 
 ***
 
