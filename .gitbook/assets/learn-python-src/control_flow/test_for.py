@@ -16,10 +16,7 @@ def test_for_statement():
 
     # Measure some strings:
     words = ['cat', 'window', 'defenestrate']
-    words_length = 0
-
-    for word in words:
-        words_length += len(word)
+    words_length = sum(len(word) for word in words)
 
     # "cat" length is 3
     # "window" length is 6
@@ -41,27 +38,20 @@ def test_for_statement():
 
     # If you do need to iterate over a sequence of numbers, the built-in function range() comes in
     # handy. It generates arithmetic progressions:
-    iterated_numbers = []
-
-    for number in range(5):
-        iterated_numbers.append(number)
+    iterated_numbers = list(range(5))
 
     assert iterated_numbers == [0, 1, 2, 3, 4]
 
     # To iterate over the indices of a sequence, you can combine range() and len() as follows:
     words = ['Mary', 'had', 'a', 'little', 'lamb']
-    concatenated_string = ''
-
-    # pylint: disable=consider-using-enumerate
-    for word_index in range(len(words)):
-        concatenated_string += words[word_index] + ' '
+    concatenated_string = ''.join(word_ + ' ' for word_ in words)
 
     assert concatenated_string == 'Mary had a little lamb '
 
     # Or simply use enumerate().
     concatenated_string = ''
 
-    for word_index, word in enumerate(words):
+    for word in words:
         concatenated_string += word + ' '
 
     assert concatenated_string == 'Mary had a little lamb '
@@ -94,10 +84,11 @@ def test_for_statement():
     # the zip() function.
     questions = ['name', 'quest', 'favorite color']
     answers = ['lancelot', 'the holy grail', 'blue']
-    combinations = []
+    combinations = [
+        'What is your {0}?  It is {1}.'.format(question, answer)
+        for question, answer in zip(questions, answers)
+    ]
 
-    for question, answer in zip(questions, answers):
-        combinations.append('What is your {0}?  It is {1}.'.format(question, answer))
 
     assert combinations == [
         'What is your name?  It is lancelot.',

@@ -56,7 +56,7 @@ def test_tuples():
     # not sufficient to enclose a single value in parentheses). Ugly, but effective. For example:
     empty_tuple = ()
     # pylint: disable=len-as-condition
-    assert len(empty_tuple) == 0
+    assert not empty_tuple
 
     # pylint: disable=trailing-comma-tuple
     singleton_tuple = 'hello',  # <-- note trailing comma
