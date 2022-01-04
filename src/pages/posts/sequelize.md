@@ -12,7 +12,7 @@ excerpt: >-
 date: '2022-01-03'
 thumb_img_path: images/sequelize-77de8eb1.png
 thumb_img_alt: Sequelize cheat sheet
-content_img_path: images/
+content_img_path: images/sequelize-05bcc5c4.png
 content_img_alt: Sequelize
 seo:
   title: Sequelize Cheat Sheet
