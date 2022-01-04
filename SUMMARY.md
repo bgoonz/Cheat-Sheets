@@ -64,8 +64,12 @@
     * [MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN](data-structures/mdn-web-docs-glossary-definitions-of-web-related-terms-or-mdn.md)
     * [Data Structures Cheat Sheet](data-structures/data-structures-cheat-sheet.md)
     * [The Tree data structure](data-structures/the-tree-data-structure.md)
-    * [An Executable Data Structures Cheat Sheet for Interviews](data-structures/an-executable-data-structures-cheat-sheet-for-interviews.md)
-    * [graphs\_cheatsheet](cs-concepts/computer-science-concepts/data-structures/graphs\_cheatsheet.md)
+
+***
+
+* [GITHUB Cheat Sheet](github-cheat-sheet/README.md)
+  * [An Executable Data Structures Cheat Sheet for Interviews](github-cheat-sheet/an-executable-data-structures-cheat-sheet-for-interviews.md)
+  * [graphs\_cheatsheet](github-cheat-sheet/graphs\_cheatsheet.md)
 
 ## Tools
 
