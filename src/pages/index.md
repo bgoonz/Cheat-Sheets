@@ -9,7 +9,7 @@ sections:
       <https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/>
   - section_id: home
     type: section_content
-    title: About
+    title: Cheat Sheets Home
     content: >
       > [***MY CHEAT
       SHEETS***](https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/)
