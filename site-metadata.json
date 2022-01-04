@@ -67,7 +67,7 @@
             },
             {
                 "label": "DEV",
-                "url": "https://dev.to/",
+                "url": "https://dev.to/bgoonz",
                 "style": "icon",
                 "icon_class": "dev",
                 "new_window": true
