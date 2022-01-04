@@ -3,7 +3,7 @@ title: Git
 subtitle: Git Cheat Sheet
 excerpt: ''
 date: '2021-11-21'
-thumb_img_path: images/3.jpg
+thumb_img_path: images/HhoQbKtsoC.png
 thumb_img_alt: nodejs
 content_img_path: >-
   images/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667.png
