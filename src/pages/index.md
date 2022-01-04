@@ -8,7 +8,7 @@ sections:
     content: |
       <https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/>
     actions:
-      - label: lorem-ipsum
+      - label: Gitbook Version
         url: '#'
         style: link
         icon_class: dev
