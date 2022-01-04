@@ -29,8 +29,8 @@ sections:
   - title: Bookmarks
     section_id: bookmarks
     image_alt: bookmark
-    content: >-
-      <iframe frameborder="0" width="100%" height="800px"
+    content: >
+      <iframe frameborder="0" width="1000px" height="1000px"
       src="https://bgoonz-bookmarks.netlify.app/"></iframe>
     actions: []
     type: section_content
