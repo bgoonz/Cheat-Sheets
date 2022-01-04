@@ -19,13 +19,9 @@ def test_while_statement():
 
     # Let's raise the number to certain power using while loop.
     number = 2
-    power = 5
-
     result = 1
 
-    while power > 0:
+    for _ in range(5, 0, -1):
         result *= number
-        power -= 1
-
     # 2^5 = 32
     assert result == 32

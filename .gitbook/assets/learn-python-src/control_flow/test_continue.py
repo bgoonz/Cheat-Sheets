@@ -16,7 +16,7 @@ def test_continue_statement():
     # This list will contain every other numbers (in this case - ods).
     rest_of_the_numbers = []
 
-    for number in range(0, 10):
+    for number in range(10):
         # Check if remainder after division is zero (which would mean that number is even).
         if number % 2 == 0:
             even_numbers.append(number)
