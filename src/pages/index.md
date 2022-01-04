@@ -41,7 +41,7 @@ sections:
     actions:
       - label: View Blog
         url: blog/index.html
-        style: button
+        style: link
 seo:
   title: My Cheat Sheets
   description: The preview of the Fresh theme
