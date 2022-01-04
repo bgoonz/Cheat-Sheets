@@ -12,7 +12,7 @@
             {
                 "label": "Home",
                 "url": "/",
-                "style": "icon"
+                "style": "link"
             },
             {
                 "label": "lorem-ipsum",
