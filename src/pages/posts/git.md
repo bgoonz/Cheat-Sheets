@@ -1,36 +1,36 @@
 ---
 title: Git
 subtitle: Git Cheat Sheet
-excerpt: >-
-date: "2021-11-21"
-thumb_img_path: images/3.jpg
-thumb_img_alt: nodejs
-content_img_path: images/3.jpg
-content_img_alt: nodejs
+excerpt: ''
+date: '2021-11-21'
+thumb_img_path: images/HhoQbKtsoC.png
+thumb_img_alt: github
+content_img_path: images/github-72b8734c.png
+content_img_alt: git universe
 seo:
   title: nodejs
-  description:
+  description: null
   extra:
-    - name: "og:type"
+    - name: 'og:type'
       value: article
       keyName: property
-    - name: "og:title"
+    - name: 'og:title'
       value: Git
       keyName: property
-    - name: "og:description"
+    - name: 'og:description'
       value: Git Cheat Sheet
       keyName: property
-    - name: "og:image"
+    - name: 'og:image'
       value: images/3.jpg
       keyName: property
       relativeUrl: true
-    - name: "twitter:card"
+    - name: 'twitter:card'
       value: summary_large_image
-    - name: "twitter:title"
+    - name: 'twitter:title'
       value: Git
-    - name: "twitter:description"
+    - name: 'twitter:description'
       value: Nodejs Cheat Sheet
-    - name: "twitter:image"
+    - name: 'twitter:image'
       value: images/3.jpg
       relativeUrl: true
 template: post

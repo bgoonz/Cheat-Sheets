@@ -1,6 +1,6 @@
 {
     "layout_style": "overflow",
-    "palette": "violet",
+    "palette": "blue",
     "header": {
         "title": "Cheatsheets",
         "tagline": "Web Development Cheat Sheets",
@@ -13,6 +13,14 @@
                 "label": "Home",
                 "url": "/",
                 "style": "link"
+            },
+            {
+                "label": "📝BLOG📝",
+                "url": "https://bgoonz-blog.netlify.app/",
+                "style": "button",
+                "icon_class": "dev",
+                "new_window": true,
+                "no_follow": false
             },
             {
                 "label": "Content",
@@ -67,7 +75,7 @@
             },
             {
                 "label": "DEV",
-                "url": "https://dev.to/",
+                "url": "https://dev.to/bgoonz",
                 "style": "icon",
                 "icon_class": "dev",
                 "new_window": true
@@ -78,5 +86,5 @@
         "content": "@bgoonz on most social media"
     },
     "title": "My Cheat Sheets",
-    "domain": "https://purple-oak-171aa.netlify.app"
+    "domain": "https://cheatsheets-42.netlify.app/"
 }
