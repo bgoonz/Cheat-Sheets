@@ -89,7 +89,7 @@ Nothing too ground breaking here, but pay close attention to the exact way we wr
 
 ### Syntax
 
-We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to “understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
+We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to "understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
 
 As you write your first lines of code in this new language, you may make many syntax errors. Don’t get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.
 
@@ -143,17 +143,17 @@ The **string** data type is a primitive data type that used to represent textual
 
 - <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 - <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
-   “That’s a great string”; (valid)
-  ‘Shakespeare wrote, “To be or not to be”’; (valid)
+   "That’s a great string”; (valid)
+  ‘Shakespeare wrote, "To be or not to be”’; (valid)
   ‘That’s a bad string’; (invalid)</span>
 - <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
    \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
 - <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
 - <span id="f633">empty strings have a length of zero.</span>
 - <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
-   console.log(“bootcamp”\[0\]); // =&gt; “b”  
-   console.log(“bootcamp”\[10\]); // =&gt; “undefined”  
-   console.log(“boots”\[1 \* 2\]); // =&gt; “o”  
+   console.log("bootcamp”\[0\]); // =&gt; "b”  
+   console.log("bootcamp”\[10\]); // =&gt; "undefined”  
+   console.log("boots”\[1 \* 2\]); // =&gt; "o”  
    console.log(“boots”\[“boot”.length-1\]); // =&gt; “t”</span>
 - <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
 - <span id="e2f5">The index of the last character of a string is always one less than it’s length.</span>

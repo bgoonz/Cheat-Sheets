@@ -407,7 +407,7 @@ function FriendStatus(props) {
 
 {: data-line="11,12,13,14"}
 
-Effects may also optionally specify how to “clean up” after them by returning a function.
+Effects may also optionally specify how to "clean up” after them by returning a function.
 
 **Use FriendStatus**
 
