@@ -6,11 +6,7 @@ description: https://cheatsheets-42.netlify.app/blog/
 
 # 📋 Cheat Sheets
 
-## <mark style="color:blue;background-color:blue;"></mark>[<mark style="color:blue;background-color:blue;">MAIN CHEAT SHEET SITE:</mark>](https://cheatsheets-42.netlify.app/blog/)<mark style="color:blue;background-color:blue;"></mark>
-
-
-
-
+## [<mark style="color:blue;background-color:blue;">MAIN CHEAT SHEET SITE:</mark>](https://cheatsheets-42.netlify.app/blog/)
 
 {% content-ref url="react-patterns-2.md" %}
 [react-patterns-2.md](react-patterns-2.md)
@@ -20,8 +16,8 @@ description: https://cheatsheets-42.netlify.app/blog/
 [bash\_cheatsheet.md](bash\_cheatsheet.md)
 {% endcontent-ref %}
 
-{% content-ref url="binary-tree.md" %}
-[binary-tree.md](binary-tree.md)
+{% content-ref url="computer-science-concepts/binary-tree.md" %}
+[binary-tree.md](computer-science-concepts/binary-tree.md)
 {% endcontent-ref %}
 
 <details>
@@ -35,8 +31,6 @@ resources.md
 <details>
 
 <summary>Resource Links</summary>
-
-
 
 * [**sindresorhus/awesome-nodejs**](https://github.com/sindresorhus/awesome-nodejs)
 * [**bcoe/awesome-cross-platform-nodejs**](https://github.com/bcoe/awesome-cross-platform-nodejs)
@@ -1442,8 +1436,3 @@ resources.md
 | https://github.com/mbiesiad/awesome-translations                                 | https://github.com/dersvenhesse/awesome-scriptable                     | https://github.com/topics/awesome                                       | https://awesome-indexed.mathew-davies.co.uk                                      | https://awesomelists.top                                               | https://github.com/mbiesiad/awesome-translations                                 | https://github.com/dersvenhesse/awesome-scriptable                     | https://github.com/topics/awesome                                       | https://awesome-indexed.mathew-davies.co.uk                                      | https://awesomelists.top                                               | https://github.com/mbiesiad/awesome-translations                                 | https://github.com/dersvenhesse/awesome-scriptable                     |
 | https://awesome-indexed.mathew-davies.co.uk                                      | https://awesomelists.top                                               | https://github.com/basharovV/StumbleUponAwesome                         | https://github.com/umutphp/awesome-cli                                           | http://awesome.digitalbunker.dev                                       | https://awesome-indexed.mathew-davies.co.uk                                      | https://awesomelists.top                                               | https://github.com/basharovV/StumbleUponAwesome                         | https://github.com/umutphp/awesome-cli                                           | http://awesome.digitalbunker.dev                                       | https://awesome-indexed.mathew-davies.co.uk                                      | https://awesomelists.top                                               |
 | https://github.com/blade-ui-kit/awesome-tall-stack                               |                                                                        |                                                                         |                                                                                  |                                                                        |                                                                                  |                                                                        |                                                                         |                                                                                  |                                                                        |                                                                                  |                                                                        |
-
-
-
-
-
