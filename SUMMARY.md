@@ -28,11 +28,8 @@
 * [Js-Array-Cheatsheet](cheatsheet.md)
 * [🛐 Heroku Cheat Sheet](cheatsheet-compilation.md)
 * [CHEATSHEET (3)](cheatsheet-3.md)
-* [JavaScript \\| MDN](javascript-or-mdn-1.md)
 * [Cheatsheet-v2](cheatsheet-v2.md)
 * [bash\_cheatsheet](bash\_cheatsheet-1.md)
-* [networking\_cheatsheet](networking\_cheatsheet-1.md)
-* [An Executable Data Structures Cheat Sheet for Interviews](an-executable-data-structures-cheat-sheet-for-interviews.md)
 
 ## 👨💻 👨💻 👨💻 Javascript
 
@@ -47,6 +44,13 @@
     * [React Cheat Sheet](react-cheat-sheet/README.md)
       * [React Component Guide](react-cheat-sheet/react-component-guide.md)
     * [React Patterns:](react-patterns-2.md)
+    * [react-examples](javascript/javascript/react/react-examples.md)
+    * [React.js](javascript/javascript/react/react.js/README.md)
+      * [Bootstrap](javascript/javascript/react/react.js/bootstrap.md)
+    * [React.js cheatsheet 2](javascript/javascript/react/react.js-cheatsheet-2.md)
+    * [React-router](javascript/javascript/react/react-router.md)
+    * [React.js (v0.14)](javascript/javascript/react/react.js-v0.14.md)
+    * [React.js](javascript/javascript/react/react.js-1.md)
   * [⚖ Libraries & Frameworks](javascript/javascript/libraries-and-frameworks/README.md)
     * [LOADASH Cheat Sheet](loadash-cheat-sheet.md)
     * [sequelize\_cheatsheet](javascript/javascript/libraries-and-frameworks/sequelize\_cheatsheet.md)
@@ -62,6 +66,8 @@
     * [MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN](data-structures/mdn-web-docs-glossary-definitions-of-web-related-terms-or-mdn.md)
     * [Data Structures Cheat Sheet](data-structures/data-structures-cheat-sheet.md)
     * [The Tree data structure](data-structures/the-tree-data-structure.md)
+    * [An Executable Data Structures Cheat Sheet for Interviews](cs-concepts/computer-science-concepts/data-structures/an-executable-data-structures-cheat-sheet-for-interviews.md)
+  * [networking\_cheatsheet](cs-concepts/computer-science-concepts/networking\_cheatsheet-1.md)
 
 ***
 
@@ -73,13 +79,6 @@
 
 * [🛠 Tools](tools/tools/README.md)
   * [VSCODE Cheat Sheet](tools/tools/vscode-cheat-sheet.md)
-* [react-examples](tools/react-examples.md)
-* [React.js](tools/react.js/README.md)
-  * [Bootstrap](tools/react.js/bootstrap.md)
-* [React.js cheatsheet 2](tools/react.js-cheatsheet-2.md)
-* [React-router](tools/react-router.md)
-* [React.js (v0.14)](tools/react.js-v0.14.md)
-* [React.js](tools/react.js-1.md)
 
 ## 📼 Guides-Tutorials
 
@@ -94,12 +93,12 @@
 * [networking\_cheatsheet](networking\_cheatsheet-2.md)
 * [expect.js](expect.js.md)
 * [editorconfig](editorconfig.md)
+* [Page 1](page-1.md)
 * [EC2 API tools](ec2-api-tools.md)
 * [git log](git-log.md)
 * [AWS CLI](aws-cli.md)
 * [ES6 EXPORTS](es6-exports-1.md)
 * [Firebase](firebase.md)
-* [POSTGRES](postgres.md)
 * [Flynn](flynn.md)
 * [ES6 IMPORTS](es6-imports/README.md)
   * [cleancode](guides-tutorials/tutorials/cleancode.md)
@@ -111,35 +110,36 @@
 
 ## Languages
 
-* [Languages](languages/languages/README.md)
-  * [Bash](languages/languages/bash/README.md)
-    * [Bash Cheat Sheet](languages/languages/bash/bash-cheat-sheet.md)
-    * [Learn Bash Scripting: Bash Scripting Cheatsheet](languages/languages/bash/learn-bash-scripting-bash-scripting-cheatsheet.md)
-    * [Curl](languages/languages/bash/curl.md)
-* [🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ 🧘♂ PSQL Cheatsheet](languages/cheatsheets.md)
-
 ***
 
 * [Emmet](emmet.md)
 * [Page 2](page-2.md)
-* [🐍 Python:](python-1.md)
 
 ## General
 
-* [Page 1](general/page-1/README.md)
-  * [Bash Shortcuts Cheat Sheet](general/page-1/bash-shortcuts-cheat-sheet.md)
-  * [CSS](general/page-1/css/README.md)
-    * [CSS](general/page-1/css/css/README.md)
-      * [CSS Grid](general/page-1/css/css/css-grid.md)
-      * [cssnext](general/page-1/css/css/cssnext-1.md)
-      * [CSS Cheat Sheet](general/page-1/css/css/css-selectors.md)
-      * [CSS Flex Box](general/page-1/css/css/css-flex-box.md)
-      * [CSS tricks](general/page-1/css/css/css-tricks.md)
-      * [CSS selectors](general/page-1/css/css/css-selectors-1.md)
-      * [cssnext](general/page-1/css/css/cssnext.md)
-      * [CSS background](general/page-1/css/css/css-background.md)
-      * [CSS animations](general/page-1/css/css/css-animations.md)
-  * [HTML](general/page-1/html.md)
-  * [🐍 Python](general/page-1/python/README.md)
-    * [Javascript-Python-cheatsheet](general/page-1/python/javascript-python-cheatsheet-1.md)
-  * [MARKDOWN](general/page-1/markdown.md)
+* [General](general/page-1.md)
+
+## 👨💻 Programming Languages
+
+* [👩💻 Languages](programming-languages/languages/README.md)
+  * [🔨 Bash](programming-languages/languages/bash/README.md)
+    * [Bash Cheat Sheet](programming-languages/languages/bash/bash-cheat-sheet.md)
+    * [Learn Bash Scripting: Bash Scripting Cheatsheet](programming-languages/languages/bash/learn-bash-scripting-bash-scripting-cheatsheet.md)
+    * [Curl](programming-languages/languages/bash/curl.md)
+    * [Bash Shortcuts Cheat Sheet](programming-languages/languages/bash/bash-shortcuts-cheat-sheet.md)
+  * [🐍 Python:](programming-languages/languages/python-1.md)
+  * [CSS](programming-languages/languages/css/README.md)
+    * [CSS](programming-languages/languages/css/css/README.md)
+      * [CSS Grid](programming-languages/languages/css/css/css-grid.md)
+      * [cssnext](programming-languages/languages/css/css/cssnext-1.md)
+      * [CSS Cheat Sheet](programming-languages/languages/css/css/css-selectors.md)
+      * [CSS Flex Box](programming-languages/languages/css/css/css-flex-box.md)
+      * [CSS tricks](programming-languages/languages/css/css/css-tricks.md)
+      * [CSS selectors](programming-languages/languages/css/css/css-selectors-1.md)
+      * [cssnext](programming-languages/languages/css/css/cssnext.md)
+      * [CSS background](programming-languages/languages/css/css/css-background.md)
+      * [CSS animations](programming-languages/languages/css/css/css-animations.md)
+  * [HTML](programming-languages/languages/html.md)
+  * [MARKDOWN](programming-languages/languages/markdown.md)
+* [🧘♂ PSQL Cheatsheet](programming-languages/cheatsheets/README.md)
+  * [POSTGRES](programming-languages/cheatsheets/postgres.md)
