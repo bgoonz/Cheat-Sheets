@@ -63,7 +63,7 @@ Vue.config.warnHandler = function (msg, vm, trace) {
 
 Vue.version                        // Provides the installed version of Vue as a string.
 
-Vue.extend(options)                // Create a “subclass" of the base Vue constructor.
+Vue.extend(options)                // Create a “subclass” of the base Vue constructor.
 Vue.mixin( mixin )                 // Apply a mixin globally, which affects every Vue instance created afterwards.
 Vue.nextTick([callback, context])  // Defer the callback to be executed after the next DOM update cycle.
 Vue.use(plugin)                    // Install a Vue.js plugin. If the plugin is an Object, it must expose an install method.
@@ -134,7 +134,7 @@ new Vue({
   },
 
   // The data object for the Vue instance.
-  // Vue will recursively convert its properties into getter/setters to make it “reactive". 
+  // Vue will recursively convert its properties into getter/setters to make it “reactive”. 
   // Note: you should not use an arrow function with the data property
   data () {
     return {
@@ -357,7 +357,7 @@ new Vue({
     console.log(`The error (${error}) has been captured for ${vm}: ${info}`)
 
     // An errorCaptured hook can return false to prevent the error from propagating further.
-    // This is essentially saying “this error has been handled and should be ignored."
+    // This is essentially saying “this error has been handled and should be ignored.”
     // It will prevent any additional errorCaptured hooks or the global config.errorHandler
     // from being invoked for this error.
     return false
@@ -467,7 +467,7 @@ new Vue({
   functional: true,
 
   // By default, parent scope attribute bindings that are not recognized as props will
-  // “fallthrough" and be applied to the root element of the child component as normal HTML
+  // “fallthrough” and be applied to the root element of the child component as normal HTML
   // attributes. When authoring a component that wraps a target element or another component,
   // this may not always be the desired behavior. By setting inheritAttrs to false, this default
   // behavior can be disabled. The attributes are available via the $attrs instance property
@@ -608,7 +608,7 @@ vm.$emit(event, […args])
  * ******************************************************************************************* */
 
 
-// If a Vue instance didn’t receive the el option at instantiation, it will be in “unmounted"
+// If a Vue instance didn’t receive the el option at instantiation, it will be in “unmounted”
 // state, without an associated DOM element. vm.$mount() can be used to manually start the mounting
 // of an unmounted Vue instance.
 vm.$mount([elementOrSelector])

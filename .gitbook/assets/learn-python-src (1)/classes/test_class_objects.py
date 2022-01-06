@@ -56,7 +56,7 @@ def test_class_objects():
     ComplexNumber.real = 10
     assert ComplexNumber.real == 10
 
-    # The instantiation operation ("calling" a class object) creates an empty object. Many classes
+    # The instantiation operation ("calling” a class object) creates an empty object. Many classes
     # like to create objects with instances customized to a specific initial state. Therefore a
     # class may define a special method named __init__(), like this:
 

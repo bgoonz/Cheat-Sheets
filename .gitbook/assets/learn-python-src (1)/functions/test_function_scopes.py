@@ -18,7 +18,7 @@ is an attribute of it. In this case there happens to be a straightforward mappin
 module’s attributes and the global names defined in the module: they share the same namespace!
 
 A SCOPE is a textual region of a Python program where a namespace is directly accessible.
-"Directly accessible" here means that an unqualified reference to a name attempts to find the name
+"Directly accessible” here means that an unqualified reference to a name attempts to find the name
 in the namespace.
 
 Although scopes are determined statically, they are used dynamically. At any time during execution,

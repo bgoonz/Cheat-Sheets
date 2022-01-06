@@ -21,7 +21,7 @@ Networking
 * NAT allows router a single IP address
 * router can direct traffic to the appropriate address
 * contains the MAC (media access control) address of all - connected devices
-* flood - send to ALL connected devices "
+* flood - send to ALL connected devices ”
 * forward - send to a particular device
 * filter - drop data entirely
 * no network management ,,,

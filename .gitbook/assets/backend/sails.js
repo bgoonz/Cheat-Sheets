@@ -207,7 +207,7 @@ sails.config.port
 // Declare the host name of your Sails app (By default, Sails will assume localhost).
 sails.config.explicitHost
 
-// The runtime "environment" of your Sails app (usually either development or production).
+// The runtime "environment” of your Sails app (usually either development or production).
 sails.config.environment
 
 // A time limit, in milliseconds, imposed on all hooks in your app (default to 20000)
@@ -618,7 +618,7 @@ query.usingConnection(connection)
 
 // --> RESOURCEFUL PUBSUB (HIGHER LEVEL ABSTRACTION WHICH ARE USED BY SAILS BLUEPRINT API) <--
 
-// Retrieve the name of the PubSub "room" for a given record.
+// Retrieve the name of the PubSub "room” for a given record.
 MyModel.getRoomName(id)
 
 // Broadcast an arbitrary message to socket clients subscribed to one or more of this model's records.

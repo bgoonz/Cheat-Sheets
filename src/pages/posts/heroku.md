@@ -5668,7 +5668,7 @@ The current set of dynos running across all of a Heroku app’s [process types](
 
 The Free [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) type enables you to host a basic Heroku app for free. Free dynos have several limitations, including:
 
--   Free web dynos “sleep" if they receive no web traffic for thirty minutes. A sleeping Free dyno will “wake up" upon receiving an HTTP request, but there is a brief delay before the app becomes active.
+-   Free web dynos “sleep” if they receive no web traffic for thirty minutes. A sleeping Free dyno will “wake up” upon receiving an HTTP request, but there is a brief delay before the app becomes active.
 -   Each Heroku customer is allotted a monthly quota of Free dyno hours that is consumed across all of the customer’s Heroku apps that use Free dynos. When this quota is reached for a given month, all of the customer’s Free dynos sleep for the remainder of the month.
 
 [Learn more about Free dynos](https://devcenter.heroku.com/articles/free-dyno-hours)
@@ -5820,7 +5820,7 @@ The Heroku CLI requires **Git**, the popular version control system. If you don�
 -   [Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 -   [First-time Git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-Currently, the Windows installers may display a warning titled “Windows protected your PC". To run the installation when this warning is shown, click “More info", verify the publisher as “salesforce.com, inc", then click the “Run anyway" button.
+Currently, the Windows installers may display a warning titled “Windows protected your PC”. To run the installation when this warning is shown, click “More info”, verify the publisher as “salesforce.com, inc”, then click the “Run anyway” button.
 
 ![apple logo](https://devcenter.heroku.com/images/cli-apple-logo.svg)macOS
 
