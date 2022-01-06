@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/heroku.gif
+cover: .gitbook/assets/heroku.gif
 coverY: 0
 ---
 

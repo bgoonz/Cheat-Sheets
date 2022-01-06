@@ -1,4 +1,4 @@
-# Cheatsheets
+# 🧘♂ PSQL
 
 > source
 
