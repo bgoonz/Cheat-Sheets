@@ -454,7 +454,7 @@ Terminate a process under a **specific name**:
 pkill [proc_name]
 ```
 
-Terminate all processes **labelled** **“proc”**:
+Terminate all processes **labelled** **“proc"**:
 
 ```
 killall [proc_name]

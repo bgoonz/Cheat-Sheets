@@ -421,7 +421,7 @@ class MyClass extends MySuperClass implements YourInterface {
 ```
 #### 2. Run Time Polymorphism
 * Run-time polymorphism is achieved by method overriding.
-* Runtime polymorphism is implemented when we have an **“IS-A”** relationship between objects.
+* Runtime polymorphism is implemented when we have an **“IS-A"** relationship between objects.
 * method overriding is the subclass has to override the superclass method.
 ```java
     public interface Shape {

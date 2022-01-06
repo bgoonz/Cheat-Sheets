@@ -1,7 +1,3 @@
----
-cover: .gitbook/assets/heroku.gif
-coverY: 0
----
 
 # 🛐 Heroku Cheat Sheet
 
