@@ -1,6 +1,6 @@
 ---
-cover: .gitbook/assets/md-cheat-sheet.PNG
-coverY: -124.27004768097096
+cover: .gitbook/assets/chrome_Vd4Bh9fKCk.png
+coverY: 238.34828496042215
 description: https://cheatsheets-42.netlify.app/blog/
 ---
 
