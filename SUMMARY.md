@@ -1,6 +1,7 @@
 # Table of contents
 
 * [📋 Cheat Sheets](README.md)
+  * [Files](readme/files.md)
 * [Terminal Cheat Sheet](terminal-cheat-sheet.md)
 * [NPM Cheat Sheet](npm-cheat-sheet/README.md)
   * [NPM Command Line Cheat Sheet](npm-cheat-sheet/npm-command-line-cheat-sheet.md)
@@ -31,7 +32,7 @@
 * [Cheatsheet-v2](cheatsheet-v2.md)
 * [bash\_cheatsheet](bash\_cheatsheet-1.md)
 
-## 👨💻 👨💻 👨💻 Javascript
+## 👨💻 👨💻 👨💻 👨💻 Javascript
 
 * [JavaScript](javascript/javascript/README.md)
   * [Javascript Python cheatsheet](javascript-python-cheatsheet.md)
@@ -110,18 +111,15 @@
 
 ## Languages
 
-***
-
 * [Emmet](emmet.md)
-* [Page 2](page-2.md)
 
 ## General
 
 * [General](general/page-1.md)
 
-## 👨💻 Programming Languages
+## 👨💻 👨💻 Programming Languages
 
-* [👩💻 Languages](programming-languages/languages/README.md)
+* [👩💻 👩💻 Languages](programming-languages/languages/README.md)
   * [🔨 Bash](programming-languages/languages/bash/README.md)
     * [Bash Cheat Sheet](programming-languages/languages/bash/bash-cheat-sheet.md)
     * [Learn Bash Scripting: Bash Scripting Cheatsheet](programming-languages/languages/bash/learn-bash-scripting-bash-scripting-cheatsheet.md)
@@ -141,5 +139,43 @@
       * [CSS animations](programming-languages/languages/css/css/css-animations.md)
   * [HTML](programming-languages/languages/html.md)
   * [MARKDOWN](programming-languages/languages/markdown.md)
-* [🧘♂ PSQL Cheatsheet](programming-languages/cheatsheets/README.md)
+* [🧘♂ 🧘♂ PSQL Cheatsheet](programming-languages/cheatsheets/README.md)
   * [POSTGRES](programming-languages/cheatsheets/postgres.md)
+
+## 📚 Docs
+
+* [Docs](docs/docs/README.md)
+  * [editorconfig](docs/docs/editorconfig.md)
+  * [EC2 API tools](docs/docs/ec2-api-tools.md)
+  * [Asynchronous JavaScript Cheat Sheet](docs/docs/asynchronous-javascript-cheat-sheet.md)
+  * [CHEATSHEET (3)](docs/docs/cheatsheet-3.md)
+  * [js-model](docs/docs/js-model.md)
+  * [Emmet](docs/docs/emmet.md)
+  * [Binary Tree](docs/docs/binary-tree.md)
+  * [Python](docs/docs/python.md)
+  * [Contributor Covenant Code of Conduct](docs/docs/contributor-covenant-code-of-conduct.md)
+  * [networking\_cheatsheet](docs/docs/networking\_cheatsheet.md)
+  * [Common HTTP status codes Cheat Sheet](docs/docs/common-http-status-codes-cheat-sheet.md)
+  * [AWS CLI](docs/docs/aws-cli.md)
+  * [Linux](docs/docs/linux.md)
+  * [networking\_cheatsheet](docs/docs/networking\_cheatsheet-1.md)
+  * [React Patterns:](docs/docs/react-patterns.md)
+  * [MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN](docs/docs/mdn-web-docs-glossary-definitions-of-web-related-terms-or-mdn.md)
+  * [JavaScript Arrays](docs/docs/javascript-arrays.md)
+  * [Linux](docs/docs/linux-1.md)
+  * [Javascript Python cheatsheet](docs/docs/javascript-python-cheatsheet.md)
+  * [Cheatsheet-v2](docs/docs/cheatsheet-v2.md)
+  * [Binary Tree](docs/docs/binary-tree-1.md)
+  * [Heroku Cheat Sheet](docs/docs/heroku-cheat-sheet.md)
+  * [Asynchronous JavaScript Cheat Sheet](docs/docs/asynchronous-javascript-cheat-sheet-1.md)
+  * [Cheatsheet Compilation](docs/docs/cheatsheet-compilation.md)
+  * [AWS CLI](docs/docs/aws-cli-1.md)
+  * [EC2 API tools](docs/docs/ec2-api-tools-1.md)
+  * [Common HTTP status codes Cheat Sheet](docs/docs/common-http-status-codes-cheat-sheet-1.md)
+  * [Firebase](docs/docs/firebase.md)
+  * [The Queue data structure](docs/docs/the-queue-data-structure.md)
+  * [Cheat Sheet for Beginners: JavaScript Data Structures Methods](docs/docs/cheat-sheet-for-beginners-javascript-data-structures-methods.md)
+* [Computer Science Concepts](docs/computer-science-concepts.md)
+* [graphs\_cheatsheet](docs/graphs\_cheatsheet.md)
+* [An Executable Data Structures Cheat Sheet for Interviews](docs/an-executable-data-structures-cheat-sheet-for-interviews.md)
+* [networking\_cheatsheet](docs/networking\_cheatsheet.md)
