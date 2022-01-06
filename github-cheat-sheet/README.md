@@ -1,10 +1,8 @@
 # GITHUB Cheat Sheet
 
-
-
 ## Git - Tutorial
 
-> ### Excerpt
+> #### Excerpt
 >
 > A version control system (VCS) allows you to manage a collection of files and gives access to different versions of these files.
 
@@ -357,7 +355,6 @@ Files that are tracked by Git are not automatically removed if you add them to a
 The following command demonstrates how to remove the `.metadata` directory and the `doNotTrackFile.txt` file from being tracked. This is example code, as you did not commit the corresponding files in your example, the command will not work in your Git repository.
 
 ```
-
 # remove directory .metadata from git repo
 git rm -r --cached .metadata
 # remove file test.txt from repo
@@ -371,7 +368,6 @@ Adding a file to the `.gitignore` file does not remove the file from the reposit
 You can also setup a global `.gitignore` file valid for all Git repositories via the `core.excludesfile` setting. The setup of this setting is demonstrated in the following code snippet.
 
 ```
-
 # Create a ~/.gitignore in your user directory
 cd ~/
 touch .gitignore
@@ -459,7 +455,6 @@ mkdir datafiles
 You now create a new local repository. Use the `git init` command to create a Git repository in the current directory. Git does not care whether you start with an empty directory or if it contains already files.
 
 ```
-
 # initialize the Git repository for the current directory
 # should be repo01
 git init
@@ -811,7 +806,6 @@ You can push changes to this repository via `git push` as Git uses `origin` as d
 You can add more _remotes_ via the `git remote add [name] [URL_to_Git_repo]` command. For example, if you cloned the repository from above via the Git protocol, you could add a new remote with the name _github\_http_ for the http protocol via the following command.
 
 ```
-
 # add the HTTPS protocol
 git remote add github_http https://vogella@github.com/vogella/gitbook.git
 ```
@@ -859,7 +853,6 @@ git clone http://git.eclipse.org/gitroot/platform/eclipse.platform.ui.git
 The following listing configures the proxy via Git config settings.
 
 ```
-
 # set proxy for git globally
 git config --global http.proxy http://proxy:8080
 # to check the proxy settings
@@ -958,7 +951,6 @@ ls ~/remote-repository.git
 Clone your bare repository and checkout a working tree in a new directory via the following commands.
 
 ```
-
 # switch to home
 cd ~
 # make new directory
@@ -975,7 +967,6 @@ git clone ../remote-repository.git .
 Make some changes in one of your non-bare local repositories and push them to your bare repository via the following commands.
 
 ```
-
 # make some changes in the first repository
 cd ~/repo01
 
@@ -1293,7 +1284,6 @@ git tag -d 1.7.0
 # delete tag in remote repository
 # called origin
 git push origin :refs/tags/1.7.0
-
 ```
 
 #### [13.6. Using tags for software releases](https://www.vogella.com/tutorials/Git/article.html#tagging\_releases)
@@ -1441,7 +1431,6 @@ shows the history of commits starting from the COMMIT\_REF commit
 The following gives an overview of useful parameters for the `git log` command.
 
 ```
-
 git log --oneline  (1)
 git log --abbrev-commit (2)
 git log --graph --oneline (3)
@@ -2481,7 +2470,6 @@ It is safe to use interactive rebase as long as the commits have not been pushed
 The following commands create several commits which will be used for the interactive rebase.
 
 ```
-
 # create a new file
 touch rebase.txt
 

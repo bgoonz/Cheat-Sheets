@@ -1,11 +1,6 @@
 # JavaScript
 
-
-
-
-
 ```js
-
 customArrayProp: PropTypes.arrayOf(function(propValue, key, componentName, location, propFullName) {
   if (!/matchme/.test(propValue[key])) {
     return new Error(
@@ -32,7 +27,6 @@ customArrayProp: PropTypes.arrayOf(function(propValue, key, componentName, locat
 ***
 
 ```js
-
 customProp: function(props, propName, componentName) {
   if (!/matchme/.test(props[propName])) {
     return new Error(
@@ -41,7 +35,6 @@ customProp: function(props, propName, componentName) {
     );
   }
 },
-
 ```
 
 ***
@@ -58,7 +51,6 @@ customProp: function(props, propName, componentName) {
 ***
 
 ```js
-
 optionalEnum: PropTypes.oneOf(['News', 'Photos']),  An object that could be one of many types
 optionalUnion: PropTypes.oneOfType([
   PropTypes.string,
@@ -71,7 +63,6 @@ optionalObjectWithShape: PropTypes.shape({
   color: PropTypes.string,
   fontSize: PropTypes.number
 }),  You can chain any of the above with `isRequired` to make sure a warning
-
 ```
 
 ***
@@ -93,7 +84,6 @@ optionalNode: PropTypes.node, A React element.
 ***
 
 ```js
-
 optionalArray: PropTypes.array,
 optionalBool: PropTypes.bool,
 optionalFunc: PropTypes.func,
@@ -108,7 +98,6 @@ optionalSymbol: PropTypes.symbol,  Anything that can be rendered: numbers, strin
 ***
 
 ```js
-
 ReactDOMServer.renderToStaticNodeStream(element)
 
 import PropTypes from 'prop-types';
@@ -228,7 +217,6 @@ ReactDOM.unmountComponentAtNode(container);
 ***
 
 ```js
-
 ReactDOM.hydrate(element, container[, callback]);
 ```
 
@@ -241,7 +229,6 @@ ReactDOM.hydrate(element, container[, callback]);
 ***
 
 ```js
-
 ReactDOM.render(element, container[, callback]);
 ```
 
@@ -295,7 +282,6 @@ component = new Component();
 ***
 
 ```js
-
   console.log(this.state);
   return (
     <div>
@@ -332,7 +318,6 @@ console.log(this.props);
 > Contains the props that were defined by the caller of this component.
 
 ```js
-
 render() {
 ```
 
@@ -347,7 +332,6 @@ render() {
 > This method is required.
 
 ```js
-
 componentDidCatch() { }
 ```
 
@@ -358,7 +342,6 @@ componentDidCatch() { }
 > Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.
 
 ```js
-
 componentWillUnmount() { }
 ```
 
@@ -369,7 +352,6 @@ componentWillUnmount() { }
 > Invoked immediately before a component is unmounted and destroyed.
 
 ```js
-
 componentDidUpdate(prevProps, prevState) { }
 ```
 
@@ -398,7 +380,6 @@ componentWillUpdate(nextProps, nextState) { }
 > Invoked just before rendering when new props or state are being received.
 
 ```js
-
 shouldComponentUpdate(nextProps, nextState) { }
 ```
 
@@ -419,7 +400,6 @@ shouldComponentUpdate(nextProps, nextState) { }
 ***
 
 ```js
-
 componentWillReceiveProps(nextProps) { }
 ```
 
@@ -430,7 +410,6 @@ componentWillReceiveProps(nextProps) { }
 > Invoked before a mounted component receives new props.
 
 ```js
-
 componentDidMount() { }
 ```
 
@@ -445,7 +424,6 @@ componentDidMount() { }
 > Invoked immediately after a component is mounted.
 
 ```js
-
 componentWillMount() { }
 ```
 
@@ -456,7 +434,6 @@ componentWillMount() { }
 > Invoked just before mounting occurs (before render())
 
 ```jsx
-
 setState(updater[, callback]) { }
 ```
 
@@ -473,7 +450,6 @@ setState(updater[, callback]) { }
 > Enqueues changes to the component state and tells React that this component and its children need to be re-rendered with the updated state.
 
 ```js
-
     color: props.initialColor
   };
 }
@@ -490,7 +466,6 @@ setState(updater[, callback]) { }
 ***
 
 ```js
-
   this.state = {
     active: true,
 ```
@@ -510,7 +485,6 @@ this.method = this.method.bind(this);
 > Will be called before it is mounted constructor(props) { Call this method before any other statement or this.props will be undefined in the constructor super(props);
 
 ```js
-
 
 
 
@@ -558,7 +532,6 @@ React.Children.count(children);
 ***
 
 ```js
-
 React.Children.forEach(children, function[(thisArg)]);
 ```
 
@@ -567,7 +540,6 @@ React.Children.forEach(children, function[(thisArg)]);
 ***
 
 ```js
-
 React.Children.map(children, function[(thisArg)]);
 ```
 
@@ -614,7 +586,6 @@ React.createElement(type, [props], [...children]);
 ### notes: don't forget the command lines
 
 ```bash
-
 npm install --save react
 #// declarative and flexible JavaScript library for building UI
 npm install --save react-dom
@@ -1548,7 +1519,6 @@ path.relative(from, to);
 ***
 
 ```js
-
 path.resolve([from ...], to);
 ```
 
@@ -1557,7 +1527,6 @@ path.resolve([from ...], to);
 ***
 
 ```js
-
 path.join([path1], [path2], [...]);
 ```
 
@@ -1594,7 +1563,6 @@ fs.createWriteStream(path, [options]);
 ***
 
 ```js
-
 stats.isFile();
 stats.isDirectory()
 stats.isBlockDevice()
@@ -2358,7 +2326,6 @@ EventEmitter.listenerCount(emitter, event);
 ***
 
 ```js
-
 emitter.emit(event, [arg1], [arg2], [...]);
 ```
 
@@ -2501,7 +2468,6 @@ util.inspect(object, [opts]);
 ***
 
 ```js
-
 util.print([...]);
 ```
 
@@ -2510,7 +2476,6 @@ util.print([...]);
 ***
 
 ```js
-
 util.puts([...]);
 ```
 
@@ -2519,7 +2484,6 @@ util.puts([...]);
 ***
 
 ```js
-
 util.error([...]);
 ```
 
@@ -2536,7 +2500,6 @@ util.error([...]);
 ***
 
 ```js
-
 util.format(format, [...]);
 ```
 
@@ -2604,7 +2567,6 @@ child.disconnect();
 
 ```
 
-
 ---
 
 ###   If .connected is false, it is no longer possible to send messages
@@ -2626,7 +2588,6 @@ child.pid;
 ***
 
 ```
-
 
 ---
 
@@ -2804,7 +2765,6 @@ process.chdir(dir);
 ***
 
 ```js
-
 > process.abort();
 ```
 
@@ -3059,7 +3019,6 @@ clearImmediate(immediateObject);
 ***
 
 ```js
-
 setImmediate(callback, [arg], [...]);
 ```
 
@@ -3078,7 +3037,6 @@ clearInterval(t);
 ***
 
 ```js
-
 setInterval(callback, delay, [arg], [...]);
 ```
 
@@ -3095,7 +3053,6 @@ clearTimeout(t);
 ***
 
 ```js
-
 setTimeout(callback, delay, [arg], [...]);
 ```
 
@@ -3152,7 +3109,6 @@ console.dir(obj);
 ***
 
 ```js
-
 console.warn([data], [...]);
 ```
 
@@ -3163,7 +3119,6 @@ console.warn([data], [...]);
 ***
 
 ```js
-
 console.error([data], [...]);
 ```
 
@@ -3172,7 +3127,6 @@ console.error([data], [...]);
 > Same as console.log.
 
 ```js
-
 console.info([data], [...]);
 ```
 
@@ -3183,7 +3137,6 @@ console.info([data], [...]);
 ***
 
 ```js
-
 console.log([data], [...]);
 ```
 
@@ -3224,7 +3177,6 @@ exports;
 ***
 
 ```
-
 
 ---
 
@@ -3305,7 +3257,6 @@ arr.values();
 ***
 
 ```js
-
 arr.some(callback[, initialValue]);
 ```
 
@@ -3314,7 +3265,6 @@ arr.some(callback[, initialValue]);
 ***
 
 ```js
-
 arr.reduceRight(callback[, initialValue]);
 ```
 
@@ -3323,7 +3273,6 @@ arr.reduceRight(callback[, initialValue]);
 ***
 
 ```js
-
 arr.reduce(callback[, initialValue]);
 ```
 
@@ -3332,7 +3281,6 @@ arr.reduce(callback[, initialValue]);
 ***
 
 ```js
-
 arr.map(callback[, initialValue]);
 ```
 
@@ -3349,7 +3297,6 @@ arr.keys();
 ***
 
 ```js
-
 arr.forEach(callback[, thisArg]);
 ```
 
@@ -3358,7 +3305,6 @@ arr.forEach(callback[, thisArg]);
 ***
 
 ```js
-
 arr.findIndex(callback[, thisArg]);
 ```
 
@@ -3367,7 +3313,6 @@ arr.findIndex(callback[, thisArg]);
 ***
 
 ```js
-
 arr.find(callback[, thisArg]);
 ```
 
@@ -3376,7 +3321,6 @@ arr.find(callback[, thisArg]);
 ***
 
 ```js
-
 arr.filter(callback[, thisArg]);
 ```
 
@@ -3385,7 +3329,6 @@ arr.filter(callback[, thisArg]);
 ***
 
 ```js
-
 arr.every(callback[, thisArg]);
 ```
 
@@ -3444,7 +3387,6 @@ arr.join(separator);
 ***
 
 ```js
-
 arr.indexOf(searchElement[, fromIndex]);
 ```
 
@@ -3461,7 +3403,6 @@ arr.includes(searchElement, fromIndex);
 ***
 
 ```js
-
 arr.concat(value1[, value2[, ...[, valueN]]]);
 ```
 
@@ -3472,7 +3413,6 @@ arr.concat(value1[, value2[, ...[, valueN]]]);
 ***
 
 ```js
-
 arr.unshift([element1[, ...[, elementN]]]);
 ```
 
@@ -3481,7 +3421,6 @@ arr.unshift([element1[, ...[, elementN]]]);
 > Adds and/or removes elements from an array.
 
 ```js
-
 array.splice(start, deleteCount, item1, item2, ...)
 ```
 
@@ -3514,7 +3453,6 @@ arr.reverse();
 ***
 
 ```js
-
 arr.push([element1[, ...[, elementN]]]);
 ```
 
@@ -3559,7 +3497,6 @@ arr.length;
 ***
 
 ```js
-
 Array.of(element0[, element1[, ...[, elementN]]]);
 ```
 
@@ -3849,8 +3786,7 @@ Object.length(obj);
 
 ## Vanilla JS
 
-\
-
+\\
 
 ## JavaScript
 
