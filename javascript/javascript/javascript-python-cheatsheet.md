@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/cow-say.png
+cover: ../../.gitbook/assets/cow-say.png
 coverY: 204.14331210191082
 ---
 
@@ -7,26 +7,26 @@ coverY: 204.14331210191082
 
 ### Contents
 
-* [Versions](broken-reference)
-* [Development Environments](broken-reference)
-* [Running Programs](broken-reference)
-* [Comments](broken-reference)
-* [Semicolons](broken-reference)
-* [Whitespace, Blocks](broken-reference)
-* [Functions](broken-reference)
-* [Arithmetic Operators](broken-reference)
-* [Variables](broken-reference)
-* [Data Types](broken-reference)
-* [Arrays/Lists](broken-reference)
-* [Slices](broken-reference)
-* [Objects/Dicts](broken-reference)
-* [String Formatting](broken-reference)
-* [Booleans and Conditionals](broken-reference)
-* [`for` Loops](broken-reference)
-* [`while` Loops](broken-reference)
-* [`switch` Statement](broken-reference)
-* [`if` Conditionals](broken-reference)
-* [Classes](broken-reference)
+* [Versions](../../broken-reference/)
+* [Development Environments](../../broken-reference/)
+* [Running Programs](../../broken-reference/)
+* [Comments](../../broken-reference/)
+* [Semicolons](../../broken-reference/)
+* [Whitespace, Blocks](../../broken-reference/)
+* [Functions](../../broken-reference/)
+* [Arithmetic Operators](../../broken-reference/)
+* [Variables](../../broken-reference/)
+* [Data Types](../../broken-reference/)
+* [Arrays/Lists](../../broken-reference/)
+* [Slices](../../broken-reference/)
+* [Objects/Dicts](../../broken-reference/)
+* [String Formatting](../../broken-reference/)
+* [Booleans and Conditionals](../../broken-reference/)
+* [`for` Loops](../../broken-reference/)
+* [`while` Loops](../../broken-reference/)
+* [`switch` Statement](../../broken-reference/)
+* [`if` Conditionals](../../broken-reference/)
+* [Classes](../../broken-reference/)
 
 ### Versions
 
@@ -51,7 +51,7 @@ $ python3 --version
 Python 3.6.5
 ```
 
-Using `virtualenv` or `pipenv` can really ease development painpoints surrounding the version. See [Development Environments](broken-reference), below.
+Using `virtualenv` or `pipenv` can really ease development painpoints surrounding the version. See [Development Environments](../../broken-reference/), below.
 
 ### Development Environments
 
