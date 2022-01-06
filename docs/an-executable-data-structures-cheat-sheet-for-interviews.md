@@ -1,6 +1,6 @@
 # An Executable Data Structures Cheat Sheet for Interviews
 
-> #### Data Structures Cheat Sheet
+> **Data Structures Cheat Sheet**
 
 This cheat sheet uses the Big O notation to express time complexity.
 
