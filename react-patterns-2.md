@@ -85,7 +85,6 @@ class Link extends React.Component {
 
 
 
-
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
 npm install --save prop-types  // runtime type checking for React props and similar objects
@@ -94,7 +93,6 @@ npm install --save prop-types  // runtime type checking for React props and simi
 // notes: don't forget the command lines
 
 ```js
-
 /* *******************************************************************************************
  * REACT
  * https://reactjs.org/docs/react-api.html
@@ -419,7 +417,6 @@ MyComponent.propTypes = {
   })
 };
 
-
 ```
 
 ***
@@ -511,7 +508,7 @@ Link.defaultProps = { initialCount: 0 };
 
 ## Lifecycle Events
 
-Modern React lifecycle methods (v16+)&#x20;
+Modern React lifecycle methods (v16+)
 
 Legacy Lifecycle Events:
 

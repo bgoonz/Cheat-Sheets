@@ -2492,7 +2492,6 @@ React.Children.toArray(children)
 ```js
 
 
-
 class Component extends React.Component {
 ```
 

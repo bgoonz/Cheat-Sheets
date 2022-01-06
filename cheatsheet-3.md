@@ -475,7 +475,6 @@ console.log([data], [...]);
 
 ```js
 console.info([data], [...]);
-
 ```
 
 > Same as console.log.
@@ -583,7 +582,6 @@ ref();
 ```
 >  If you had previously unref()d a timer you can call ref() to explicitly request the timer hold the program open.
 let module = require('./module.js');
-
 ```
 
 > Loads the module module.js in the same directory.
@@ -830,7 +828,6 @@ process.initgroups(user, extra_grp);
 
 ```js
 process.kill(pid, [signal]);
-
 ```
 
 > Send a signal to a process. pid is the process id and signal is the string describing the signal to send.
@@ -862,14 +859,12 @@ process.umask([mask]);
 
 ```js
 process.uptime();
-
 ```
 
 > Number of seconds Node has been running.
 
 ```js
 process.hrtime();
-
 ```
 
 > Returns the current high-resolution real time in a \[seconds, nanoseconds] tuple Array.
@@ -928,7 +923,6 @@ child.disconnect();
 
 ```js
 child_process.spawn(command, [args], [options]);
-
 ```
 
 > Launches a new process with the given command, with command line arguments in args. If omitted, args defaults to an empty Array.
@@ -969,7 +963,6 @@ child_process.fork(modulePath, [args], [options]);
 ```js
 
 util.format(format, [...]);
-
 ````
 
 > Returns a formatted string using the first argument as a printf-like format. (%s, %d, %j) util.debug(string);
@@ -989,7 +982,6 @@ util.error([...]);
 
 ```js
 util.puts([...]);
-
 ```
 
 > A synchronous output function. Will block the process and output all arguments to stdout with newlines after each argument.
@@ -1079,7 +1071,6 @@ emitter.on(event, listener);
 ```js
 
 emitter.once(event, listener);
-
 ````
 
 > Adds a one time listener for the event. This listener is invoked only the next time the event is fired, after which it is removed.
@@ -1179,21 +1170,18 @@ readable.resume();
 
 ```js
 readable.pause();
-
 ```
 
 > This method will cause a stream in flowing-mode to stop emitting data events.
 
 ```js
 readable.pipe(destination, [options]);
-
 ```
 
 > This method pulls all the data out of a readable stream, and writes it to the supplied destination, automatically managing the flow so that the destination is not overwhelmed by a fast readable stream.
 
 ```js
 readable.unpipe([destination]);
-
 ```
 
 > This method will remove the hooks set up for a previous pipe() call. If the destination is not specified, then all pipes are removed.
@@ -1342,7 +1330,6 @@ fs.fchownSync(fd, uid, gid);
 
 ```js
 fs.lchown(path, uid, gid, callback);
-
 ```
 
 > Asynchronous lchown. No arguments other than a possible exception are given to the completion callback.
@@ -1361,7 +1348,6 @@ fs.chmod(path, mode, callback);
 
 ```js
 fs.chmodSync(path, mode);
-
 ```
 
 > Synchronous chmod.
@@ -1404,14 +1390,12 @@ fs.statSync(path);
 
 ```js
 fs.lstat(path, callback);
-
 ```
 
 > Asynchronous lstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. lstat() is identical to stat(), except that if path is a symbolic link, then the link itself is stat-ed, not the file that it refers to.
 
 ```js
 fs.lstatSync(path);
-
 ```
 
 > Synchronous lstat. Returns an instance of fs.Stats.
@@ -1460,7 +1444,6 @@ fs.symlinkSync(srcpath, dstpath, [type]);
 
 ```js
 fs.readlink(path, callback);
-
 ```
 
 > Asynchronous readlink. The callback gets two arguments (err, linkString).
@@ -1497,7 +1480,6 @@ fs.realpath(path, [cache], callback);
 ```js
 
 fs.realpathSync(path, [cache]);
-
 ````
 
 > Synchronous realpath. Returns the resolved path.
@@ -1531,14 +1513,12 @@ fs.mkdirSync(path, [mode]);
 
 ```js
 fs.readdir(path, callback);
-
 ```
 
 > Asynchronous readdir. Reads the contents of a directory. The callback gets two arguments (err, files) where files is an array of the names of the files in the directory excluding '.' and '..'.
 
 ```js
 fs.readdirSync(path);
-
 ```
 
 > Synchronous readdir. Returns an array of filenames excluding '.' and '..'.
@@ -1551,7 +1531,6 @@ fs.close(fd, callback);
 
 ```js
 fs.closeSync(fd);
-
 ```
 
 > Synchronous close.
@@ -1602,7 +1581,6 @@ fs.fsync(fd, callback);
 
 ```js
 fs.fsyncSync(fd);
-
 ```
 
 > Synchronous fsync.
@@ -1673,7 +1651,6 @@ fs.appendFileSync(filename, data, [options]);
 
 ```js
 fs.watch(filename, [options], [listener]);
-
 ```
 
 > Watch for changes on filename, where filename is either a file or a directory. The returned object is a fs.FSWatcher. The listener callback gets two arguments (event, filename). event is either 'rename' or 'change', and filename is the name of the file which triggered the event.
@@ -1749,7 +1726,6 @@ path.dirname(p);
 ```js
 
 path.basename(p, [ext]);
-
 ````
 
 > Return the last portion of a path. Similar to the Unix basename command.
@@ -1817,14 +1793,12 @@ server.listen(port, [hostname], [backlog], [callback]);
 
 ```js
 server.listen(path, [callback]);
-
 ```
 
 > Start a UNIX socket server listening for connections on the given path.
 
 ```js
 server.listen(handle, [callback]);
-
 ```
 
 > The handle object can be set to either a server or socket (anything with an underlying \_handle member), or a {fd: } object.
@@ -1886,21 +1860,18 @@ server.on('checkContinue', function (request, response) { });
 
 ```js
 server.on('connect', function (request, socket, head) { });
-
 ```
 
 > Emitted each time a client requests a http CONNECT method.
 
 ```js
 server.on('upgrade', function (request, socket, head) { });
-
 ```
 
 > Emitted each time a client requests a http upgrade.
 
 ```js
 server.on('clientError', function (exception, socket) { });
-
 ```
 
 > If a client connection emits an 'error' event - it will forwarded here.
@@ -1939,7 +1910,6 @@ request.setNoDelay([noDelay]);
 
 ```js
 request.setSocketKeepAlive([enable], [initialDelay]);
-
 ```
 
 > Once a socket is assigned to this request and is connected socket.setKeepAlive() will be called.
@@ -1977,7 +1947,6 @@ request.on('continue', function() { });
 
 ```js
 response.write(chunk, [encoding]);
-
 ```
 
 > This sends a chunk of the response body. If this merthod is called and response.writeHead() has not been called, it will switch to implicit header mode and flush the implicit headers.
@@ -2093,7 +2062,6 @@ message.trailers;
 
 ```js
 message.method;
-
 ```
 
 > The request method as a string. Read only. Example: 'GET', 'DELETE'.
@@ -2107,21 +2075,18 @@ message.url;
 ```js
 
 message.statusCode;
-
 ````
 
 > The 3-digit HTTP response status code. E.G. 404.
 
 ```js
 message.socket;
-
 ```
 
 > The net.Socket object associated with the connection.
 
 ```js
 message.setTimeout(msecs, callback);
-
 ```
 
 > Calls message.connection.setTimeout(msecs, callback). This module has utilities for URL resolution and parsing. Call require('url') to use it.
@@ -2136,7 +2101,6 @@ url.parse(urlStr, [parseQueryString], [slashesDenoteHost]);
 
 ```js
 url.format(urlObj);
-
 ```
 
 > Take a parsed URL object, and return a formatted URL string.
@@ -2264,7 +2228,6 @@ os.hostname();
 
 ```js
 os.type();
-
 ```
 
 > Returns the operating system name.
@@ -2277,7 +2240,6 @@ os.platform();
 
 ```js
 os.arch();
-
 ```
 
 > Returns the operating system CPU architecture.
@@ -2321,7 +2283,6 @@ os.freemem();
 
 ```js
 os.cpus();
-
 ```
 
 > Returns an array of objects containing information about each CPU/core installed: model, speed (in MHz), and times (an object containing the number of milliseconds the CPU/core spent in: user, nice, sys, idle, and irq).
@@ -2529,7 +2490,6 @@ React.Children.toArray(children)
 > You can also use it with the shorthand <>\</> syntax.
 
 ```js
-
 
 
 class Component extends React.Component {

@@ -2158,7 +2158,6 @@ void monad(Integer... args);
 void dyad(String name, Integer... args);
 void triad(String name, int count, Integer... args);
 
-
 ```
 
 ***

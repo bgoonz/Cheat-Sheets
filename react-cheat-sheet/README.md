@@ -5,7 +5,7 @@ coverY: -0.9904458598726115
 
 # React Cheat Sheet
 
-****
+***
 
 <details>
 
@@ -132,7 +132,7 @@ class Component extends React.Component {
   // Invoked before a mounted component receives new props.
   // If you need to update the state in response to prop changes (for example, to reset it),
   // you may compare this.props and nextProps and perform state transitions using this.setState() in this method.
-  componentWillReceiveProps(nextProps) { }
+  componentWillReceiveProps(nextProps) { }
 
   // Let React know if a component’s output is not affected by the current change in state or props.
   // The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
@@ -146,7 +146,7 @@ class Component extends React.Component {
   // Note that you cannot call this.setState() here; nor should you do anything else
   // (e.g. dispatch a Redux action) that would trigger an update to a React component before componentWillUpdate() returns.
   // If you need to update state in response to props changes, use componentWillReceiveProps() instead.
-  componentWillUpdate(nextProps, nextState) { }
+  componentWillUpdate(nextProps, nextState) { }
 
   // Invoked immediately after updating occurs. This method is not called for the initial render.
   // Use this as an opportunity to operate on the DOM when the component has been updated.
@@ -356,7 +356,7 @@ rea
 
 </details>
 
-## ****
+## \*\*\*\*
 
 ## **Hello World**
 
@@ -374,10 +374,6 @@ It displays a heading saying "Hello, world!" on the page.
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/hello-world)
 
 {% embed url="https://codepen.io/bgoonz/pen/wveBJBM" %}
-
-
-
-
 
 Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
 
@@ -2513,8 +2509,6 @@ Hopefully, this gives you an idea of how to think about building components and 
 
 <summary>Resources</summary>
 
-
-
 * React
   * React General Resources
   * React Community
@@ -2581,7 +2575,7 @@ Hopefully, this gives you an idea of how to think about building components and 
 * Real React Apps
 * Contribution
 
-## React
+### React
 
 JavaScript Library for building User Interfaces
 
@@ -2986,7 +2980,7 @@ JavaScript Library for building User Interfaces
 * [react-apexcharts](https://github.com/apexcharts/react-apexcharts) - React Component for ApexCharts
 * [chartify](https://github.com/kis/chartify) - React plugin for building charts using CSS
 
-## React Native
+### React Native
 
 Framework for building native apps using React
 
@@ -3059,7 +3053,7 @@ Framework for building native apps using React
 * [react-native-react-bridge](https://github.com/inokawa/react-native-react-bridge) - A toolset to run React web app in React Native and handle communication between them.
 * [uncompress-react-native](https://github.com/didisouzacosta/uncompress-react-native) - Simple library to decompress files .zip, .rar, .cbz, .cbr in React Native.
 
-## Redux
+### Redux
 
 Predictable State Container for JavaScript Apps
 
@@ -3091,7 +3085,7 @@ Predictable State Container for JavaScript Apps
 * [Fundamentals of Redux Course from Dan Abramov](https://app.egghead.io/playlists/fundamentals-of-redux-course-from-dan-abramov-bd5cc867)
 * [Building React Applications with Idiomatic Redux](https://app.egghead.io/courses/building-react-applications-with-idiomatic-redux)
 
-## GraphQL
+### GraphQL
 
 A query language for your API
 
@@ -3132,7 +3126,7 @@ A query language for your API
     for Node.js and TypeScript
 * [graphql-sequelize](https://github.com/mickhansen/graphql-sequelize) - GraphQL & Relay for MySQL & Postgres via Sequelize
 
-## Relay
+### Relay
 
 Data-Driven React Applications
 
@@ -3155,7 +3149,7 @@ Data-Driven React Applications
 * [relay-local-schema](https://github.com/relay-tools/relay-local-schema) - Use Relay without a GraphQL server
 * [relay-codemod](https://github.com/facebook/jscodeshift) - Codemod scripts based for on jsodeshift to update Relay APIs
 
-## Videos
+### Videos
 
 **reactjsvideos.com**
 
@@ -3210,14 +3204,14 @@ Data-Driven React Applications
 
 * [Trying React Hooks for the first time with Dan Abramov](https://www.youtube.com/watch?v=G-aO5hzo1aw)
 
-## Demo React Apps
+### Demo React Apps
 
 * [hackernews-react-graphql](https://github.com/clintonwoo/hackernews-react-graphql) - Hacker News clone rewritten with universal JavaScript, using React and GraphQL
 * [react-reduction](https://github.com/reduction-admin/react-reduction) - Free Admin Template Built with React and Bootstrap4
 * [reactjs-tmdb-app](https://github.com/SKempin/reactjs-tmdb-app) - Responsive React The Movie Database App
 * [react-shopping-cart](https://github.com/jeffersonRibeiro/react-shopping-cart) - Simple ecommerce cart application built with React Redux
 
-## Real React Apps
+### Real React Apps
 
 * [kibana](https://github.com/elastic/kibana) - Your window into the Elastic Stack
 * [firefox debugger](https://github.com/firefox-devtools/debugger) - The Firefox debugger that works anywhere
@@ -3295,7 +3289,7 @@ Data-Driven React Applications
 * Real React Apps
 * Contribution
 
-## React
+### React
 
 JavaScript Library for building User Interfaces
 
@@ -3700,7 +3694,7 @@ JavaScript Library for building User Interfaces
 * [react-apexcharts](https://github.com/apexcharts/react-apexcharts) - React Component for ApexCharts
 * [chartify](https://github.com/kis/chartify) - React plugin for building charts using CSS
 
-## React Native
+### React Native
 
 Framework for building native apps using React
 
@@ -3773,7 +3767,7 @@ Framework for building native apps using React
 * [react-native-react-bridge](https://github.com/inokawa/react-native-react-bridge) - A toolset to run React web app in React Native and handle communication between them.
 * [uncompress-react-native](https://github.com/didisouzacosta/uncompress-react-native) - Simple library to decompress files .zip, .rar, .cbz, .cbr in React Native.
 
-## Redux
+### Redux
 
 Predictable State Container for JavaScript Apps
 
@@ -3805,7 +3799,7 @@ Predictable State Container for JavaScript Apps
 * [Fundamentals of Redux Course from Dan Abramov](https://app.egghead.io/playlists/fundamentals-of-redux-course-from-dan-abramov-bd5cc867)
 * [Building React Applications with Idiomatic Redux](https://app.egghead.io/courses/building-react-applications-with-idiomatic-redux)
 
-## GraphQL
+### GraphQL
 
 A query language for your API
 
@@ -3846,7 +3840,7 @@ A query language for your API
     for Node.js and TypeScript
 * [graphql-sequelize](https://github.com/mickhansen/graphql-sequelize) - GraphQL & Relay for MySQL & Postgres via Sequelize
 
-## Relay
+### Relay
 
 Data-Driven React Applications
 
@@ -3869,7 +3863,7 @@ Data-Driven React Applications
 * [relay-local-schema](https://github.com/relay-tools/relay-local-schema) - Use Relay without a GraphQL server
 * [relay-codemod](https://github.com/facebook/jscodeshift) - Codemod scripts based for on jsodeshift to update Relay APIs
 
-## Videos
+### Videos
 
 **reactjsvideos.com**
 
@@ -3924,14 +3918,14 @@ Data-Driven React Applications
 
 * [Trying React Hooks for the first time with Dan Abramov](https://www.youtube.com/watch?v=G-aO5hzo1aw)
 
-## Demo React Apps
+### Demo React Apps
 
 * [hackernews-react-graphql](https://github.com/clintonwoo/hackernews-react-graphql) - Hacker News clone rewritten with universal JavaScript, using React and GraphQL
 * [react-reduction](https://github.com/reduction-admin/react-reduction) - Free Admin Template Built with React and Bootstrap4
 * [reactjs-tmdb-app](https://github.com/SKempin/reactjs-tmdb-app) - Responsive React The Movie Database App
 * [react-shopping-cart](https://github.com/jeffersonRibeiro/react-shopping-cart) - Simple ecommerce cart application built with React Redux
 
-## Real React Apps
+### Real React Apps
 
 * [kibana](https://github.com/elastic/kibana) - Your window into the Elastic Stack
 * [firefox debugger](https://github.com/firefox-devtools/debugger) - The Firefox debugger that works anywhere

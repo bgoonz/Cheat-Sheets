@@ -1,10 +1,8 @@
 # LOADASH Cheat Sheet
 
-
-
 ## Lodash cheatsheet
 
-> ### Excerpt
+> #### Excerpt
 >
 > This is not a complete list. · One-page guide to Lodash
 
