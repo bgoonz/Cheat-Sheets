@@ -696,7 +696,7 @@ models:
         label: html content
         description: content in html syntax
       - name: ''
-        type: string
+        type: markdown
     labelField: template
     description: test-model
     singleInstance: true
