@@ -691,7 +691,7 @@ models:
     label: test
     layout: test
     fields:
-      - name: ''
+      - name: html
         type: html
     labelField: template
     description: test-model
