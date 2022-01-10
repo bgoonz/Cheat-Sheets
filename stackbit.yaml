@@ -140,16 +140,11 @@ models:
         label: Color Palette
         description: The color palette used for the site.
         options:
-          - label: blue
-            value: blue
-          - label: green
-            value: green
-          - label: orange
-            value: orange
-          - label: violet
-            value: violet
-          - label: ''
-            value: ''
+          - blue
+          - green
+          - orange
+          - violet
+          - black
         default: green
         required: true
       - type: model
