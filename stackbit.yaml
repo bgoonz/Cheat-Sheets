@@ -152,6 +152,7 @@ models:
         label: Header Configuration
         models:
           - header
+          - footer
       - type: model
         name: footer
         label: Footer Configuration
