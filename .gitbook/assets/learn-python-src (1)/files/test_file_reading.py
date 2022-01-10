@@ -22,13 +22,13 @@ def test_files_open():
     - 'a' opens the file for appending; any data written to the file is automatically added to end.
     - 'r+' opens the file for both reading and writing.
 
-    The mode argument is optional; 'r' will be assumed if it’s omitted.
+    The mode argument is optional; 'r' will be assumed if it's omitted.
 
     Normally, files are opened in text mode, that means, you read and write strings from and to the
     file, which are encoded in a specific encoding. If encoding is not specified, the default is
     platform dependent (see open()). 'b' appended to the mode opens the file in binary mode: now
     the data is read and written in the form of bytes objects. This mode should be used for all
-    files that don’t contain text.
+    files that don't contain text.
 
     In text mode, the default when reading is to convert platform-specific line endings (\n on
     Unix, \r\n on Windows) to just \n. When writing in text mode, the default is to convert
@@ -66,8 +66,8 @@ def test_files_open():
 
     assert file.closed
 
-    # If you’re not using the with keyword, then you should call f.close() to close the file and
-    # immediately free up any system resources used by it. If you don’t explicitly close a file,
-    # Python’s garbage collector will eventually destroy the object and close the open file for you,
+    # If you're not using the with keyword, then you should call f.close() to close the file and
+    # immediately free up any system resources used by it. If you don't explicitly close a file,
+    # Python's garbage collector will eventually destroy the object and close the open file for you,
     # but the file may stay open for a while. Another risk is that different Python implementations
     # will do this clean-up at different times.

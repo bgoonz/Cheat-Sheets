@@ -477,7 +477,7 @@ template: page
 ##### ▪️ Network
 
 
-- [✅] [**Wireshark**](https://www.wireshark.org/) - is the world’s foremost and widely-used network protocol analyzer.
+- [✅] [**Wireshark**](https://www.wireshark.org/) - is the world's foremost and widely-used network protocol analyzer.
 
 - [✅] [**Ettercap**](https://www.ettercap-project.org/) - is a comprehensive network monitor tool.
 
@@ -738,15 +738,15 @@ template: page
 ##### ▪️ Performance
 
 
-- [✅] [**GTmetrix**](https://gtmetrix.com/) - analyze your site’s speed and make it faster.
+- [✅] [**GTmetrix**](https://gtmetrix.com/) - analyze your site's speed and make it faster.
 
 - [✅] [**Sucuri loadtimetester**](https://performance.sucuri.net/) - test here the performance of any of your sites from across the globe.
 
-- [✅] [**Pingdom Tools**](https://tools.pingdom.com/) - analyze your site’s speed around the world.
+- [✅] [**Pingdom Tools**](https://tools.pingdom.com/) - analyze your site's speed around the world.
 
 - [✅] [**PingMe.io**](https://pingme.io/) - run website latency tests across multiple geographic regions.
 
-- [✅] [**PageSpeed Insights**](https://developers.google.com/speed/pagespeed/insights/) - analyze your site’s speed and make it faster.
+- [✅] [**PageSpeed Insights**](https://developers.google.com/speed/pagespeed/insights/) - analyze your site's speed and make it faster.
 
 - [✅] [**web.dev**](https://web.dev/) - helps developers like you learn and apply the web's modern capabilities to your own sites and apps.
 
@@ -1113,7 +1113,7 @@ template: page
 ##### ▪️ Sed & Awk & Other
 
 
-- [✅] [**F’Awk Yeah!**](https://posts.specterops.io/fawk-yeah-advanced-sed-and-awk-usage-parsing-for-pentesters-3-e5727e11a8ad?gi=c8f9506b26b6) - advanced sed and awk usage (Parsing for Pentesters 3).
+- [✅] [**F'Awk Yeah!**](https://posts.specterops.io/fawk-yeah-advanced-sed-and-awk-usage-parsing-for-pentesters-3-e5727e11a8ad?gi=c8f9506b26b6) - advanced sed and awk usage (Parsing for Pentesters 3).
 
 ##### ▪️ \*nix & Network
 
@@ -1258,7 +1258,7 @@ template: page
 
 - [✅] [**LZone Cheat Sheets**](https://lzone.de/cheat-sheet/) - all cheat sheets.
 
-- [✅] [**Dan’s Cheat Sheets’s**](https://github.com/rstacruz/cheatsheets) - massive cheat sheets documentation.
+- [✅] [**Dan's Cheat Sheets's**](https://github.com/rstacruz/cheatsheets) - massive cheat sheets documentation.
 
 - [✅] [**Rico's cheatsheets**](https://devhints.io/) - this is a modest collection of cheatsheets.
 
@@ -1637,7 +1637,7 @@ template: page
 
 - [✅] [**@sansforensics**](https://twitter.com/sansforensics) - the world's leading Digital Forensics and Incident Response provider.
 
-- [✅] [**@attcyber**](https://twitter.com/attcyber) - AT\&T Cybersecurity’s Edge-to-Edge technologies provide threat intelligence, and more.
+- [✅] [**@attcyber**](https://twitter.com/attcyber) - AT\&T Cybersecurity's Edge-to-Edge technologies provide threat intelligence, and more.
 
 - [✅] [**@TheManyHatsClub**](https://twitter.com/TheManyHatsClub) - an information security focused podcast and group of individuals from all walks of life.
 

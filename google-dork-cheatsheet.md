@@ -41,7 +41,7 @@ ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (inte
 
 **Search Term**
 
-This operator searches for the exact phrase within speech marks only. This is ideal when the phrase you are using to search is ambiguous and could be easily confused with something else, or when you’re not quite getting relevant enough results back. For example:
+This operator searches for the exact phrase within speech marks only. This is ideal when the phrase you are using to search is ambiguous and could be easily confused with something else, or when you're not quite getting relevant enough results back. For example:
 
 ```
 "Tinned Sandwiches"
@@ -92,7 +92,7 @@ Adding a tilde to a search word tells Google that you want it to bring back syno
 
 **Glob pattern (\*)**
 
-Putting an asterisk in a search tells Google ‘I don’t know what goes here’. Basically, it’s really good for finding half remembered song lyrics or names of things.
+Putting an asterisk in a search tells Google ‘I don't know what goes here'. Basically, it's really good for finding half remembered song lyrics or names of things.
 
 ```
 site:*.com
