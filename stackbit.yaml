@@ -700,5 +700,3 @@ models:
         label: markdown
     labelField: template
     description: test-model
-    singleInstance: true
-    file: /test/
