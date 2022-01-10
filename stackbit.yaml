@@ -125,6 +125,7 @@ models:
         name: favicon
         label: Favicon
         description: A square icon that represents your website.
+        required: true
       - type: enum
         name: layout_style
         label: Layout Style
