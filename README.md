@@ -6,6 +6,8 @@ description: https://cheatsheets-42.netlify.app/blog/
 
 # 📋 Cheat Sheets
 
+[![pages-build-deployment](https://github.com/bgoonz/Cheat-Sheets/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/bgoonz/Cheat-Sheets/actions/workflows/pages/pages-build-deployment)
+
 ## [<mark style="color:blue;background-color:blue;">MAIN CHEAT SHEET SITE:</mark>](https://cheatsheets-42.netlify.app/blog/)
 
 {% content-ref url="react-patterns-2.md" %}
