@@ -692,7 +692,7 @@ models:
     layout: test
     fields:
       - name: ''
-        type: string
+        type: html
     labelField: template
     description: test-model
     singleInstance: true
