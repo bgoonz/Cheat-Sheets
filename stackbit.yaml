@@ -690,7 +690,9 @@ models:
     type: page
     label: test
     layout: test
-    fields: []
+    fields:
+      - name: ''
+        type: string
     labelField: template
     description: test-model
     singleInstance: true
