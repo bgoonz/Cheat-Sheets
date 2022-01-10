@@ -83,7 +83,17 @@
         ]
     },
     "footer": {
-        "content": "@bgoonz on most social media"
+        "content": "@bgoonz on most social media",
+        "links": [
+            {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false
+            }
+        ]
     },
     "title": "My Cheat Sheets",
     "domain": "https://cheatsheets-42.netlify.app/",
