@@ -27,7 +27,7 @@ def test_method_objects():
     # The other kind of instance attribute reference is a method. A method is a function that
     # “belongs to” an object. (In Python, the term method is not unique to class instances: other
     # object types can have methods as well. For example, list objects have methods called append,
-    # insert, remove, sort, and so on. However, in the following discussion, we’ll use the term
+    # insert, remove, sort, and so on. However, in the following discussion, we'll use the term
     # method exclusively to mean methods of class instance objects, unless explicitly stated
     # otherwise.)
 
@@ -47,13 +47,13 @@ def test_method_objects():
     # was called without an argument above, even though the function definition for get_counter()
     # specified an argument (self). What happened to the argument? Surely Python raises an
     # exception when a function that requires an argument is called without any — even if the
-    # argument isn’t actually used…
+    # argument isn't actually used…
 
     # Actually, you may have guessed the answer: the special thing about methods is that the
     # instance object is passed as the first argument of the function. In our example, the call
     # counter.get_counter() is exactly equivalent to MyCounter.get_counter(counter). In general,
     # calling a method with a list of n arguments is equivalent to calling the corresponding
-    # function with an argument list that is created by inserting the method’s instance object
+    # function with an argument list that is created by inserting the method's instance object
     # before the first argument.
 
     assert counter.get_counter() == 10

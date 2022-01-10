@@ -245,7 +245,7 @@ sails.config.log
 // Your default project-wide model settings.
 sails.config.models
 
-// Dictionary that maps policies to an app’s actions.
+// Dictionary that maps policies to an app's actions.
 sails.config.policies
 
 // Configuration for custom (aka "explicit") routes.
@@ -308,7 +308,7 @@ req.method
 req.options
 
 // Retains the original request URL allowing you to rewrite req.url freely for internal routing purposes.
-// In almost all cases, you’ll want to use req.url instead.
+// In almost all cases, you'll want to use req.url instead.
 req.originalUrl
 
 // An object containing parameter values parsed from the URL path.

@@ -13,9 +13,9 @@ def fibonacci_function_example(number_limit):
     """Generate a Fibonacci series up to number_limit.
 
     The first statement of the function body can optionally be a string literal; this string
-    literal is the function’s documentation string, or docstring. There are tools which use
+    literal is the function's documentation string, or docstring. There are tools which use
     docstrings to automatically produce online or printed documentation, or to let the user
-    interactively browse through code; it’s good practice to include docstrings in code that you
+    interactively browse through code; it's good practice to include docstrings in code that you
     write, so make a habit of it.
     """
 
@@ -29,9 +29,9 @@ def fibonacci_function_example(number_limit):
     previous_number, current_number = 0, 1
     while previous_number < number_limit:
         # The statement result.append(a) calls a method of the list object result. A method is a
-        # function that ‘belongs’ to an object and is named obj.methodname, where obj is some
+        # function that ‘belongs' to an object and is named obj.methodname, where obj is some
         # object (this may be an expression), and methodname is the name of a method that is
-        # defined by the object’s type. Different types define different methods. Methods of
+        # defined by the object's type. Different types define different methods. Methods of
         # different types may have the same name without causing ambiguity. (It is possible to
         # define your own object types and methods, using classes, see Classes) The method
         # append() shown in the example is defined for list objects; it adds a new element at

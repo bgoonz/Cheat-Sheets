@@ -63,7 +63,7 @@
 
 
 django-admin check                       # Checks the entire django project for potential problems
-django-admin changepassword <username>   # Allows changing a user’s password. It prompts you to enter a new password twice for the given user.
+django-admin changepassword <username>   # Allows changing a user's password. It prompts you to enter a new password twice for the given user.
 django-admin clearsessions               # Can be run as a cron job or directly to clean out expired sessions.
 django-admin collectstatic               # Helps to collect all the static files in the one mentioned directory
 django-admin createsuperuser             # Creates a superuser account (a user who has all permissions).

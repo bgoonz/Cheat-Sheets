@@ -88,7 +88,7 @@ def test_function_keyword_arguments():
     # arguments passed must match one of the arguments accepted by the function (e.g. actor is not
     # a valid argument for the parrot function), and their order is not important. This also
     # includes non-optional arguments (e.g. parrot(voltage=1000) is valid too). No argument may
-    # receive a value more than once. Here’s an example that fails due to this restriction:
+    # receive a value more than once. Here's an example that fails due to this restriction:
     def function_with_one_argument(number):
         return number
 
