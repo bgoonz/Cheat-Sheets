@@ -700,3 +700,4 @@ models:
         label: markdown
     labelField: template
     description: test-model
+    match: '*.md'
