@@ -693,6 +693,7 @@ models:
     fields:
       - name: html
         type: html
+        label: html content
     labelField: template
     description: test-model
     singleInstance: true
