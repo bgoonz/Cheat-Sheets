@@ -690,3 +690,8 @@ models:
     type: page
     label: test
     layout: test
+    fields: []
+    labelField: template
+    description: test-model
+    singleInstance: true
+    file: ''
