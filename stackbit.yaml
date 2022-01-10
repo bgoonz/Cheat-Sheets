@@ -216,6 +216,12 @@ models:
           type: model
           models:
             - action
+      - type: string
+        name: type
+        label: Object Type
+        description: The type of the object
+        const: header
+        hidden: true
   footer:
     type: object
     label: Footer Configuration
@@ -233,6 +239,12 @@ models:
           type: model
           models:
             - action
+      - type: string
+        name: type
+        label: Object Type
+        description: The type of the object
+        const: footer
+        hidden: true
   advanced:
     type: page
     label: Advanced Page
@@ -674,3 +686,7 @@ models:
               name: relativeUrl
               label: Relative Url
     labelField: title
+  test:
+    type: page
+    label: test
+    layout: test
