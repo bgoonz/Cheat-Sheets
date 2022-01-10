@@ -273,7 +273,7 @@ If you want Git to automatically save your uncommited changes before a rebase yo
 git config --global rebase.autoStash true
 ```
 
-Before Git v2.6 `git pull --rebase` didn’t respected this setting.
+Before Git v2.6 `git pull --rebase` didn't respected this setting.
 
 #### [5.6. Color Highlighting](https://www.vogella.com/tutorials/Git/article.html#setup\_highlighting)
 
@@ -426,7 +426,7 @@ git config --global branch.autosetuprebase always
 git config --global pull.rebase true
 ```
 
-If you don’t know at this point what the rebase operation or pull operation is, it is fine to leave out these settings, you can still later change these. This description assumes that you set them.
+If you don't know at this point what the rebase operation or pull operation is, it is fine to leave out these settings, you can still later change these. This description assumes that you set them.
 
 ### [8. Performing a local Git workflow via the command line](https://www.vogella.com/tutorials/Git/article.html#performing-a-local-git-workflow-via-the-command-line)
 
@@ -1213,7 +1213,7 @@ git show-ref --tags --abbrev
 
 Creating lightweight tags
 
-To create a lightweight tag don’t use the `-m`, `-a` or `-s` option.
+To create a lightweight tag don't use the `-m`, `-a` or `-s` option.
 
 Lightweight tags in Git are sometimes used to identify the input for a build.
 
@@ -1509,7 +1509,7 @@ git log --oneline --grep="workspace" (1)
 
 Greps in commit message for "workspace", oneline parameter included for better readability of the output
 
-There is also the `--invert-grep=<pattern>` option. When this option is used, git log lists the commits that don’t match the specified pattern.
+There is also the `--invert-grep=<pattern>` option. When this option is used, git log lists the commits that don't match the specified pattern.
 
 #### [15.6. Filtering the log output based on author or committer](https://www.vogella.com/tutorials/Git/article.html#analyzechanges\_user)
 
@@ -2054,7 +2054,7 @@ There are multiple reflogs: one per branch and one for HEAD. For branches use th
 
 #### [30.3. Example](https://www.vogella.com/tutorials/Git/article.html#gitreflog\_example)
 
-The following example shows how you can use git reflog to reset the current local branch to a commit which isn’t reachable from the current branch anymore.
+The following example shows how you can use git reflog to reset the current local branch to a commit which isn't reachable from the current branch anymore.
 
 ```
 # assume the  ID for the second commit is
@@ -2455,7 +2455,7 @@ combines the changes of the commit with the previous commit and combines their c
 
 fixup
 
-squashes the changes of a commit into the previous commit discarding the squashed commit’s message
+squashes the changes of a commit into the previous commit discarding the squashed commit's message
 
 reword
 
@@ -3046,7 +3046,7 @@ sudo apt-get install git-svn ruby rubygems
 sudo gem install svn2git
 ```
 
-Let’s say you have a repository called
+Let's say you have a repository called
 
 http://svn.example.com/repo
 
@@ -3094,7 +3094,7 @@ A commit object is depicted in the following picture.
 
 ![Commit object](https://www.vogella.com/tutorials/Git/img/commit\_object.png)
 
-The above picture is simplified. Tree objects point to other tree objects and file blobs. Objects which didn’t change between commits are reused by multiple commits.
+The above picture is simplified. Tree objects point to other tree objects and file blobs. Objects which didn't change between commits are reused by multiple commits.
 
 #### [54.3. Hash and abbreviated commit hash](https://www.vogella.com/tutorials/Git/article.html#commits\_sha\_checksum)
 
@@ -3130,7 +3130,7 @@ For example, you can use the _HEAD\~1_ or _HEAD\~_ reference to access the first
 
 For example HEAD^ is the same as HEAD\~ and is the same as HEAD\~3.
 
-The difference is that \[reference]^2 describes the second parent of a commit. A merge commit typically has two predecessors. HEAD^3 means ‘the third parent of a merge’ and in most cases this won’t exist (merges are generally between two commits, though more is possible).
+The difference is that \[reference]^2 describes the second parent of a commit. A merge commit typically has two predecessors. HEAD^3 means ‘the third parent of a merge' and in most cases this won't exist (merges are generally between two commits, though more is possible).
 
 ![Commit reference pointer example](https://www.vogella.com/tutorials/Git/img/commitreference20.png)
 

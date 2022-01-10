@@ -16,7 +16,7 @@ def test_class_objects():
     """
 
     # ATTRIBUTE REFERENCES use the standard syntax used for all attribute references in
-    # Python: obj.name. Valid attribute names are all the names that were in the class’s namespace
+    # Python: obj.name. Valid attribute names are all the names that were in the class's namespace
     # when the class object was created. For class MyCounter the following references are valid
     # attribute references:
 

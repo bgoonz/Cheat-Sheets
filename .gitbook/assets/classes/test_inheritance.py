@@ -51,7 +51,7 @@ class Employee(Person):
 def test_inheritance():
     """Inheritance."""
 
-    # There’s nothing special about instantiation of derived classes: DerivedClassName() creates a
+    # There's nothing special about instantiation of derived classes: DerivedClassName() creates a
     # new instance of the class. Method references are resolved as follows: the corresponding class
     # attribute is searched, descending down the chain of base classes if necessary, and the method
     # reference is valid if this yields a function object.
@@ -64,7 +64,7 @@ def test_inheritance():
 
     # Python has two built-in functions that work with inheritance:
     #
-    # - Use isinstance() to check an instance’s type: isinstance(obj, int) will be True only if
+    # - Use isinstance() to check an instance's type: isinstance(obj, int) will be True only if
     # obj.__class__ is int or some class derived from int.
     #
     # - Use issubclass() to check class inheritance: issubclass(bool, int) is True since bool is

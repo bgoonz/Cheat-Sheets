@@ -98,7 +98,7 @@ def test_string_type():
     assert len(characters) == 34
 
     # String literals can span multiple lines. One way is using triple-quotes: """..."""
-    # or '''...'''. End of lines are automatically included in the string, but it’s possible
+    # or '''...'''. End of lines are automatically included in the string, but it's possible
     # to prevent this by adding a \ at the end of the line. The following example:
     multi_line_string = '''\
         First line
@@ -193,7 +193,7 @@ def test_string_methods():
 def test_string_formatting():
     """String formatting.
 
-    Often you’ll want more control over the formatting of your output than simply printing
+    Often you'll want more control over the formatting of your output than simply printing
     space-separated values. There are several ways to format output
     """
 
@@ -205,20 +205,20 @@ def test_string_formatting():
 
     assert f'Results of the {year} {event}' == 'Results of the 2018 conference'
 
-    # The str.format() method of strings requires more manual effort. You’ll still use { and } to
+    # The str.format() method of strings requires more manual effort. You'll still use { and } to
     # mark where a variable will be substituted and can provide detailed formatting directives,
-    # but you’ll also need to provide the information to be formatted.
+    # but you'll also need to provide the information to be formatted.
     yes_votes = 42_572_654  # equivalent of 42572654
     no_votes = 43_132_495   # equivalent of 43132495
     percentage = yes_votes / (yes_votes + no_votes)
 
     assert '{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage) == ' 42572654 YES votes  49.67%'
 
-    # When you don’t need fancy output but just want a quick display of some variables for debugging
+    # When you don't need fancy output but just want a quick display of some variables for debugging
     # purposes, you can convert any value to a string with the repr() or str() functions. The str()
     # function is meant to return representations of values which are fairly human-readable, while
     # repr() is meant to generate representations which can be read by the interpreter (or will
-    # force a SyntaxError if there is no equivalent syntax). For objects which don’t have a
+    # force a SyntaxError if there is no equivalent syntax). For objects which don't have a
     # particular representation for human consumption, str() will return the same value as repr().
     # Many values, such as numbers or structures like lists and dictionaries, have the same
     # representation using either function. Strings, in particular, have two distinct
@@ -286,7 +286,7 @@ def test_string_formatting():
 
     assert formatted_string == 'The story of Bill, Manfred, and Georg.'
 
-    # If you have a really long format string that you don’t want to split up, it would be nice if
+    # If you have a really long format string that you don't want to split up, it would be nice if
     # you could reference the variables to be formatted by name instead of by position. This can be
     # done by simply passing the dict and using square brackets '[]' to access the keys
 
@@ -295,7 +295,7 @@ def test_string_formatting():
 
     assert formatted_string == 'Jack: 4098; Sjoerd: 4127; Dcab: 8637678'
 
-    # This could also be done by passing the table as keyword arguments with the ‘**’ notation.
+    # This could also be done by passing the table as keyword arguments with the ‘**' notation.
     formatted_string = 'Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table)
 
     assert formatted_string == 'Jack: 4098; Sjoerd: 4127; Dcab: 8637678'

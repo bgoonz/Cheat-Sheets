@@ -2,11 +2,11 @@
 
 @see: https://docs.python.org/3/tutorial/modules.html#packages
 
-Packages are a way of structuring Python’s module namespace by using “dotted module names”. For
+Packages are a way of structuring Python's module namespace by using “dotted module names”. For
 example, the module name A.B designates a submodule named B in a package named A. Just like the
-use of modules saves the authors of different modules from having to worry about each other’s
+use of modules saves the authors of different modules from having to worry about each other's
 global variable names, the use of dotted module names saves the authors of multi-module packages
-like NumPy or Pillow from having to worry about each other’s module names.
+like NumPy or Pillow from having to worry about each other's module names.
 
 The __init__.py files are required to make Python treat the directories as containing packages;
 this is done to prevent directories with a common name, such as string, from unintentionally hiding
@@ -50,7 +50,7 @@ from sound_package.effects.echo import echo_function
 # raised.
 
 # Contrarily, when using syntax like import item.subitem.subsubitem, each item except for the last
-# must be a package; the last item can be a module or a package but can’t be a class or function or
+# must be a package; the last item can be a module or a package but can't be a class or function or
 # variable defined in the previous item.
 
 

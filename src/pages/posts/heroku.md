@@ -299,7 +299,7 @@ OPTIONS
 
 ### [heroku addons:docs ADDON](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-docs-addon)
 
-open an add-on’s Dev Center documentation in your browser
+open an add-on's Dev Center documentation in your browser
 
 ```
 USAGE
@@ -354,7 +354,7 @@ OPTIONS
 
 ### [heroku addons:open ADDON](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-open-addon)
 
-open an add-on’s dashboard in your browser
+open an add-on's dashboard in your browser
 
 ```
 USAGE
@@ -1775,7 +1775,7 @@ OPTIONS
 
 ### [heroku container:pull](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-container-pull)
 
-pulls an image from an app’s process type
+pulls an image from an app's process type
 
 ```
 USAGE
@@ -3727,7 +3727,7 @@ EXAMPLES
 
 ### [heroku pipelines:update](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pipelines-update)
 
-update the app’s stage in a pipeline
+update the app's stage in a pipeline
 
 ```
 USAGE
@@ -5317,7 +5317,7 @@ USAGE
 
 Last updated June 09, 2020
 
-This is a high-level, technical description of how Heroku works. It ties together many of the concepts you’ll encounter while writing, configuring, deploying and running applications on the Heroku platform.
+This is a high-level, technical description of how Heroku works. It ties together many of the concepts you'll encounter while writing, configuring, deploying and running applications on the Heroku platform.
 
 Performing one of the [Getting Started](https://devcenter.heroku.com/start) tutorials will make the concepts in this documentation more concrete.
 
@@ -5339,9 +5339,9 @@ The source code for your application, together with the dependency file, should 
 
 ## [Knowing what to execute](https://devcenter.heroku.com/articles/how-heroku-works#knowing-what-to-execute)
 
-You don’t need to make many changes to an application in order to run it on Heroku. One requirement is informing the platform as to which parts of your application are runnable.
+You don't need to make many changes to an application in order to run it on Heroku. One requirement is informing the platform as to which parts of your application are runnable.
 
-If you’re using some established framework, Heroku can figure it out. For example, in Ruby on Rails, it’s typically `rails server`, in Django it’s `python <app>/manage.py runserver` and in Node.js it’s the `main` field in `package.json`.
+If you're using some established framework, Heroku can figure it out. For example, in Ruby on Rails, it's typically `rails server`, in Django it's `python <app>/manage.py runserver` and in Node.js it's the `main` field in `package.json`.
 
 **Terminology**: [Procfiles](https://devcenter.heroku.com/articles/procfile) list process types - named commands that you may want executed.
 
@@ -5382,7 +5382,7 @@ Deployment then, is about moving your application from your local system to Hero
 
 When the Heroku platform receives the application source, it initiates a build of the source application. The build mechanism is typically language specific, but follows the same pattern, typically retrieving the specified dependencies, and creating any necessary assets (whether as simple as processing style sheets or as complex as compiling code).
 
-**Advanced**: [Buildpacks](https://devcenter.heroku.com/articles/buildpacks) lie behind the slug compilation process. Buildpacks take your application, its dependencies, and the language runtime, and produce slugs. They’re open source - enabling you to extend Heroku to other languages and frameworks.
+**Advanced**: [Buildpacks](https://devcenter.heroku.com/articles/buildpacks) lie behind the slug compilation process. Buildpacks take your application, its dependencies, and the language runtime, and produce slugs. They're open source - enabling you to extend Heroku to other languages and frameworks.
 
 For example, when the build system receives a Rails application, it may fetch all the dependencies specified in the Gemfile, as well as generate files based on the asset pipeline. A Java application may fetch binary library dependencies using Maven, compile the source code together with those libraries, and produce a JAR file to execute.
 
@@ -5394,13 +5394,13 @@ These slugs are a fundamental aspect of what happens during application executio
 
 ## [Running applications on dynos](https://devcenter.heroku.com/articles/how-heroku-works#running-applications-on-dynos)
 
-Heroku executes applications by running a command you specified in the Procfile, on a [dyno](https://devcenter.heroku.com/articles/dynos) that’s been preloaded with your prepared slug (in fact, with your release, which extends your slug and a few items not yet defined: config vars and add-ons).
+Heroku executes applications by running a command you specified in the Procfile, on a [dyno](https://devcenter.heroku.com/articles/dynos) that's been preloaded with your prepared slug (in fact, with your release, which extends your slug and a few items not yet defined: config vars and add-ons).
 
 Think of a running dyno as a lightweight, secure, virtualized Unix container that contains your application slug in its file system.
 
 **Terminology**: [Dynos](https://devcenter.heroku.com/articles/dynos) are isolated, virtualized Unix containers, that provide the environment required to run an application.
 
-Generally, if you deploy an application for the first time, Heroku will run 1 web dyno automatically. In other words, it will boot a dyno, load it with your slug, and execute the command you’ve associated with the web process type in your Procfile.
+Generally, if you deploy an application for the first time, Heroku will run 1 web dyno automatically. In other words, it will boot a dyno, load it with your slug, and execute the command you've associated with the web process type in your Procfile.
 
 You have control over how many dynos are running at any given time. Given the Procfile example earlier, you can start 5 dynos, 3 for the web and 2 for the queue process types, as follows:
 
@@ -5410,9 +5410,9 @@ $ heroku ps:scale web=3 queue=2
 
 When you deploy a new version of an application, all of the currently executing dynos are killed, and new ones (with the new release) are started to replace them - preserving the existing dyno formation.
 
-**Terminology**: Your application’s [dyno formation](https://devcenter.heroku.com/articles/scaling#dyno-formation) is the total number of currently-executing dynos, divided between the various process types you have scaled.
+**Terminology**: Your application's [dyno formation](https://devcenter.heroku.com/articles/scaling#dyno-formation) is the total number of currently-executing dynos, divided between the various process types you have scaled.
 
-To understand what’s executing, you just need to know what dynos are running which process types:
+To understand what's executing, you just need to know what dynos are running which process types:
 
 ```
 $ heroku ps
@@ -5430,11 +5430,11 @@ Dynos then, are an important means of scaling your application. In this example,
 
 ## [Config vars](https://devcenter.heroku.com/articles/how-heroku-works#config-vars)
 
-An application’s configuration is everything that is likely to vary between environments (staging, production, developer environments, etc.). This includes backing services such as databases, credentials, or environment variables that provide some specific information to your application.
+An application's configuration is everything that is likely to vary between environments (staging, production, developer environments, etc.). This includes backing services such as databases, credentials, or environment variables that provide some specific information to your application.
 
 Heroku lets you run your application with a customizable configuration - the configuration sits outside of your application code and can be changed independently of it.
 
-The configuration for an application is stored in [config vars](https://devcenter.heroku.com/articles/config-vars). For example, here’s how to configure an encryption key for an application:
+The configuration for an application is stored in [config vars](https://devcenter.heroku.com/articles/config-vars). For example, here's how to configure an encryption key for an application:
 
 ```
 $ heroku config:set ENCRYPTION_KEY=my_secret_launch_codes
@@ -5467,7 +5467,7 @@ The number next to the deploy message, for example `582fc95`, corresponds to the
 
 Every time you deploy a new version of an application, a new slug is created and release is generated.
 
-As Heroku contains a store of the previous releases of your application, it’s very easy to rollback and deploy a previous release:
+As Heroku contains a store of the previous releases of your application, it's very easy to rollback and deploy a previous release:
 
 ```
 $ heroku releases:rollback v102
@@ -5479,7 +5479,7 @@ v103 Deploy 582fc95   jon@heroku.com   2013/01/31 12:15:35
 v102 Deploy 990d916   jon@heroku.com   2013/01/31 12:01:12
 ```
 
-Making a material change to your application, whether it’s changing the source or configuration, results in a new release being created.
+Making a material change to your application, whether it's changing the source or configuration, results in a new release being created.
 
 A release then, is the mechanism behind how Heroku lets you modify the configuration of your application (the config vars) independently of the application source (stored in the slug) - the release binds them together. Whenever you change a set of config vars associated with your application, a new release will be generated.
 
@@ -5493,11 +5493,11 @@ This dyno cycling happens transparently and automatically on a regular basis, an
 
 **Terminology**: Applications that use the free dyno type will [sleep](https://devcenter.heroku.com/articles/free-dyno-hours). When a sleeping application receives HTTP traffic, it will be awakened - causing a delay of a few seconds. Using one of the other [dyno types](https://devcenter.heroku.com/articles/dyno-types) will avoid sleeping.
 
-Because Heroku manages and runs applications, there’s no need to manage operating systems or other internal system configuration. [One-off dynos](https://devcenter.heroku.com/articles/one-off-dynos) can be run with their input/output attached to your local terminal. These can also be used to carry out admin tasks that modify the state of shared resources, for example database configuration - perhaps periodically through a [scheduler](https://devcenter.heroku.com/articles/scheduler).
+Because Heroku manages and runs applications, there's no need to manage operating systems or other internal system configuration. [One-off dynos](https://devcenter.heroku.com/articles/one-off-dynos) can be run with their input/output attached to your local terminal. These can also be used to carry out admin tasks that modify the state of shared resources, for example database configuration - perhaps periodically through a [scheduler](https://devcenter.heroku.com/articles/scheduler).
 
-**Terminology**: [One-off Dynos](https://devcenter.heroku.com/articles/one-off-dynos) are temporary dynos that can run with their input/output attached to your local terminal. They’re loaded with your latest release.
+**Terminology**: [One-off Dynos](https://devcenter.heroku.com/articles/one-off-dynos) are temporary dynos that can run with their input/output attached to your local terminal. They're loaded with your latest release.
 
-Here’s the simplest way to create and attach to a one-off dyno:
+Here's the simplest way to create and attach to a one-off dyno:
 
 ```
 $ heroku run bash
@@ -5505,7 +5505,7 @@ Running `bash` attached to terminal... up, run.8963
 ~ $ ls
 ```
 
-This will spin up a new dyno, loaded with your release, and then run the `bash` command - which will provide you with a Unix shell (remember that dynos are effectively isolated virtualized Unix containers). Once you’ve terminated your session, or after a period of inactivity, the dyno will be removed.
+This will spin up a new dyno, loaded with your release, and then run the `bash` command - which will provide you with a Unix shell (remember that dynos are effectively isolated virtualized Unix containers). Once you've terminated your session, or after a period of inactivity, the dyno will be removed.
 
 Changes to the filesystem on one dyno are not propagated to other dynos and are not persisted across deploys and dyno restarts. A better and more scalable approach is to use a shared resource such as a database or queue.
 
@@ -5515,7 +5515,7 @@ The ephemeral nature of the file system in a dyno can be demonstrated with the a
 
 ## [Add-ons](https://devcenter.heroku.com/articles/how-heroku-works#add-ons)
 
-Applications typically make use of [add-ons](https://devcenter.heroku.com/articles/add-ons) to provide backing services such as databases, queueing & caching systems, storage, email services and more. Add-ons are provided as services by Heroku and third parties - there’s a large [marketplace](https://elements.heroku.com/addons) of add-ons you can choose from.
+Applications typically make use of [add-ons](https://devcenter.heroku.com/articles/add-ons) to provide backing services such as databases, queueing & caching systems, storage, email services and more. Add-ons are provided as services by Heroku and third parties - there's a large [marketplace](https://elements.heroku.com/addons) of add-ons you can choose from.
 
 Heroku treats these add-ons as attached resources: provisioning an add-on is a matter of choosing one from the add-on marketplace, and attaching it to your application.
 
@@ -5536,7 +5536,7 @@ REDIS = Redis.new(:host => uri.host, :port => uri.port, :password => uri.passwor
 
 **Terminology**: [Add-ons](https://elements.heroku.com/addons/) are third party, specialized, value-added cloud services that can be easily attached to an application, extending its functionality.
 
-Add-ons are associated with an application, much like config vars - and so the earlier definition of a release needs to be refined. A _release_ of your applications is not just your slug and config vars; it’s your slug, config vars as well as the set of provisioned add-ons.
+Add-ons are associated with an application, much like config vars - and so the earlier definition of a release needs to be refined. A _release_ of your applications is not just your slug and config vars; it's your slug, config vars as well as the set of provisioned add-ons.
 
 **Terminology**: [Releases](https://devcenter.heroku.com/articles/releases) are an append-only ledger of slugs, config vars and add-ons. Heroku maintains an append-only ledger of releases you make.
 
@@ -5546,7 +5546,7 @@ Much like config vars, whenever you add, remove or change an add-on, a new relea
 
 Heroku treats logs as streams of time-stamped events, and collates the stream of logs produced from all of the processes running in all dynos, and the Heroku platform components, into the [Logplex](https://devcenter.heroku.com/articles/logplex) - a high-performance, real-time system for log delivery.
 
-It’s easy to examine the logs across all the platform components and dynos:
+It's easy to examine the logs across all the platform components and dynos:
 
 ```
 $ heroku logs
@@ -5555,7 +5555,7 @@ $ heroku logs
 2013-02-11T15:19:10+00:00 app[web.1]: Started GET "/" for 2.161.132.15 at 2013-02-11 15:20:10 +0000
 ```
 
-Here you see 3 timestamped log entries, the first from Heroku’s router, the last two from two dynos running the web process type.
+Here you see 3 timestamped log entries, the first from Heroku's router, the last two from two dynos running the web process type.
 
 **Terminology**: [Logplex](https://devcenter.heroku.com/articles/logplex) automatically collates log entries from all the running dynos of your app, as well as other components such as the routers, providing a single source of activity.
 
@@ -5572,9 +5572,9 @@ Logplex keeps a limited buffer of log entries solely for performance reasons. To
 
 Depending on your dyno formation, some of your dynos will be running the command associated with the `web` process type, and some will be running other commands associated with other process types.
 
-The dynos that run process types named `web` are different in one way from all other dynos - they will receive HTTP traffic. Heroku’s [HTTP routers](https://devcenter.heroku.com/articles/http-routing) distribute incoming requests for your application across your running web dynos.
+The dynos that run process types named `web` are different in one way from all other dynos - they will receive HTTP traffic. Heroku's [HTTP routers](https://devcenter.heroku.com/articles/http-routing) distribute incoming requests for your application across your running web dynos.
 
-So scaling an app’s capacity to handle web traffic involves scaling the number of web dynos:
+So scaling an app's capacity to handle web traffic involves scaling the number of web dynos:
 
 ```
 $ heroku ps:scale web+5
@@ -5584,7 +5584,7 @@ A random selection algorithm is used for HTTP request load balancing across web 
 
 ## [Tying it all together](https://devcenter.heroku.com/articles/how-heroku-works#tying-it-all-together)
 
-The concepts explained here can be divided into two buckets: those that involve the development and deployment of an application, and those that involve the runtime operation of the Heroku platform and the application after it’s deployed.
+The concepts explained here can be divided into two buckets: those that involve the development and deployment of an application, and those that involve the runtime operation of the Heroku platform and the application after it's deployed.
 
 The following two sections recapitulate the main components of the platform, separating them into these two buckets.
 
@@ -5602,10 +5602,10 @@ The following two sections recapitulate the main components of the platform, sep
 ### [Runtime](https://devcenter.heroku.com/articles/how-heroku-works#runtime)
 
 -   [Dynos](https://devcenter.heroku.com/articles/dynos) are isolated, virtualized Unix containers, that provide the environment required to run an application.
--   Your application’s [dyno formation](https://devcenter.heroku.com/articles/scaling#dyno-formation) is the total number of currently-executing dynos, divided between the various process types you have scaled.
+-   Your application's [dyno formation](https://devcenter.heroku.com/articles/scaling#dyno-formation) is the total number of currently-executing dynos, divided between the various process types you have scaled.
 -   The [dyno manager](https://devcenter.heroku.com/articles/dynos) is responsible for managing dynos across all applications running on Heroku.
 -   Applications that use the free dyno type will [sleep](https://devcenter.heroku.com/articles/free-dyno-hours) after 30 minutes of inactivity. Scaling to multiple web dynos, or a different dyno type, will avoid this.
--   [One-off Dynos](https://devcenter.heroku.com/articles/one-off-dynos) are temporary dynos that run with their input/output attached to your local terminal. They’re loaded with your latest release.
+-   [One-off Dynos](https://devcenter.heroku.com/articles/one-off-dynos) are temporary dynos that run with their input/output attached to your local terminal. They're loaded with your latest release.
 -   Each dyno gets its own [ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem) - with a fresh copy of the most recent release. It can be used as temporary scratchpad, but changes to the filesystem are not reflected to other dynos.
 -   [Logplex](https://devcenter.heroku.com/articles/logplex) automatically collates log entries from all the running dynos of your app, as well as other components such as the routers, providing a single source of activity.
 -   [Scaling](https://devcenter.heroku.com/articles/scaling) an application involves varying the number of dynos of each process type.
@@ -5634,13 +5634,13 @@ A component you can attach to a Heroku app that provides a supporting service, s
 
 ## [App](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#app)
 
-A web application on Heroku. Has a set of [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) that run the application’s source code. Has a unique `.herokuapp.com` URL and [release](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#release) history.
+A web application on Heroku. Has a set of [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) that run the application's source code. Has a unique `.herokuapp.com` URL and [release](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#release) history.
 
 [Learn more about apps](https://devcenter.heroku.com/articles/how-heroku-works#defining-an-application)
 
 ## [Buildpack](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#buildpack)
 
-A collection of scripts that transforms a Heroku app’s code into the executable bundle (called a [slug](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#slug)) that is run by the app’s [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno).
+A collection of scripts that transforms a Heroku app's code into the executable bundle (called a [slug](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#slug)) that is run by the app's [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno).
 
 Heroku provides [official buildpacks](https://devcenter.heroku.com/articles/buildpacks#officially-supported-buildpacks) for a variety of programming languages. Third-party buildpacks for other languages and frameworks are avilable in the [Elements Marketplace](https://elements.heroku.com/).
 
@@ -5648,28 +5648,28 @@ Heroku provides [official buildpacks](https://devcenter.heroku.com/articles/buil
 
 ## [Config var](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#config-var)
 
-An environment variable that is available across all of a Heroku app’s [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno). Its value persists across [releases](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#release) and dyno restarts.
+An environment variable that is available across all of a Heroku app's [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno). Its value persists across [releases](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#release) and dyno restarts.
 
 [Learn more about config vars](https://devcenter.heroku.com/articles/config-vars)
 
 ## [Dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno)
 
-A container that runs a Heroku app’s code. When a dyno starts up, it runs a single command that is usually specified in the app’s [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile). For example, dynos for basic Node.js web apps often run the command `node app.js` to start up a web server.
+A container that runs a Heroku app's code. When a dyno starts up, it runs a single command that is usually specified in the app's [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile). For example, dynos for basic Node.js web apps often run the command `node app.js` to start up a web server.
 
 [Learn more about dynos](https://devcenter.heroku.com/articles/dynos)
 
 ## [Dyno formation](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno-formation)
 
-The current set of dynos running across all of a Heroku app’s [process types](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#process-type). The number of dynos running for each process type can be scaled up and down independently.
+The current set of dynos running across all of a Heroku app's [process types](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#process-type). The number of dynos running for each process type can be scaled up and down independently.
 
-[Learn more about scaling an app’s dyno formation](https://devcenter.heroku.com/articles/scaling)
+[Learn more about scaling an app's dyno formation](https://devcenter.heroku.com/articles/scaling)
 
 ## [Free dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#free-dyno)
 
 The Free [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) type enables you to host a basic Heroku app for free. Free dynos have several limitations, including:
 
 -   Free web dynos “sleep” if they receive no web traffic for thirty minutes. A sleeping Free dyno will “wake up” upon receiving an HTTP request, but there is a brief delay before the app becomes active.
--   Each Heroku customer is allotted a monthly quota of Free dyno hours that is consumed across all of the customer’s Heroku apps that use Free dynos. When this quota is reached for a given month, all of the customer’s Free dynos sleep for the remainder of the month.
+-   Each Heroku customer is allotted a monthly quota of Free dyno hours that is consumed across all of the customer's Heroku apps that use Free dynos. When this quota is reached for a given month, all of the customer's Free dynos sleep for the remainder of the month.
 
 [Learn more about Free dynos](https://devcenter.heroku.com/articles/free-dyno-hours)
 
@@ -5687,7 +5687,7 @@ The web interface for interacting with Heroku apps. Available at [dashboard.hero
 
 ## [Log drain](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#log-drain)
 
-A destination (i.e., a URL) that the [Logplex](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#logplex) service routes all of a Heroku app’s logs to. An app can specify multiple log drains to route its logs to multiple destinations.
+A destination (i.e., a URL) that the [Logplex](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#logplex) service routes all of a Heroku app's logs to. An app can specify multiple log drains to route its logs to multiple destinations.
 
 [Learn more about log drains](https://devcenter.heroku.com/articles/log-drains)
 
@@ -5711,13 +5711,13 @@ A [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dy
 
 ## [Pipeline](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#pipeline)
 
-A collection of Heroku apps that share the same codebase, typically to represent an app’s development, staging, and production versions.
+A collection of Heroku apps that share the same codebase, typically to represent an app's development, staging, and production versions.
 
 [Learn more about pipelines](https://devcenter.heroku.com/articles/pipelines)
 
 ## [Preboot](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#preboot)
 
-If a Heroku app enables preboot, on every [release](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#release), Heroku ensures that the new release’s [web dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#web-dyno) are started and receiving traffic _before_ the previous release’s dynos are terminated.
+If a Heroku app enables preboot, on every [release](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#release), Heroku ensures that the new release's [web dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#web-dyno) are started and receiving traffic _before_ the previous release's dynos are terminated.
 
 Preboot can help reduce app latency during a release, but there are important [caveats](https://devcenter.heroku.com/articles/preboot#caveats) to enabling it.
 
@@ -5729,13 +5729,13 @@ A Heroku app declares one or more process types to indicate which command its [d
 
 The `web` process type is special, because it is the only process type that enables dynos to receive traffic from the internet.
 
-Process types are declared in an app’s [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile).
+Process types are declared in an app's [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile).
 
 [Learn more about process types](https://devcenter.heroku.com/articles/procfile)
 
 ## [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile)
 
-A plaintext file that declares the commands that an app’s [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) run when they start up. The Procfile is always named `Procfile` _without_ a file extension and lives in an application’s root directory.
+A plaintext file that declares the commands that an app's [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) run when they start up. The Procfile is always named `Procfile` _without_ a file extension and lives in an application's root directory.
 
 A basic Procfile looks like this:
 
@@ -5751,7 +5751,7 @@ See also: [Web dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-te
 
 ## [Region](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#region)
 
-The approximate location of the data center that a Heroku app’s [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) run in. Heroku provides two regions to non-enterprise customers: `us` and `eu`.
+The approximate location of the data center that a Heroku app's [dynos](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) run in. Heroku provides two regions to non-enterprise customers: `us` and `eu`.
 
 [Learn more about regions](https://devcenter.heroku.com/articles/regions)
 
@@ -5782,7 +5782,7 @@ The process of reverting a Heroku app to the state of a previous [release](https
 
 ## [Slug](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#slug)
 
-The executable bundle created from a Heroku app’s source code by a [buildpack](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#buildpack).
+The executable bundle created from a Heroku app's source code by a [buildpack](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#buildpack).
 
 [Learn more about slugs](https://devcenter.heroku.com/articles/slug-compiler)
 
@@ -5800,22 +5800,22 @@ A design methodology for the architecture of modern web applications. The conven
 
 ## [Web dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#web-dyno)
 
-A [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) that can receive HTTP traffic. These dynos run the command associated with the `web` process type in an app’s [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile).
+A [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) that can receive HTTP traffic. These dynos run the command associated with the `web` process type in an app's [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile).
 
 ## [Worker dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#worker-dyno)
 
-A [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) that _cannot_ receive HTTP traffic. These dynos run the command associated with any process type in an app’s [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile) _except_ the `web` process type.
+A [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) that _cannot_ receive HTTP traffic. These dynos run the command associated with any process type in an app's [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile) _except_ the `web` process type.
 
 
 
 ### Heroku CLI:
 
 
-The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
+The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It's an essential part of using Heroku.
 
 ## [Download and install](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 
-The Heroku CLI requires **Git**, the popular version control system. If you don’t already have Git installed, complete the following before installing the CLI:
+The Heroku CLI requires **Git**, the popular version control system. If you don't already have Git installed, complete the following before installing the CLI:
 
 -   [Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 -   [First-time Git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
@@ -5872,13 +5872,13 @@ $ yay -S heroku-cli
 
 The CLI is built with Node.js and is installable via `npm`. This is a manual install method that can be used in environments where autoupdating is not ideal or where Heroku does not offer a prebuilt Node.js binary.
 
-It’s strongly recommended to use one of the other installation methods if possible.
+It's strongly recommended to use one of the other installation methods if possible.
 
-This installation method does not autoupdate and requires you to use your system’s version of Node.js, which may be older than the version Heroku develops the CLI against. Heroku uses very current releases of Node.js and does not back-support older versions.
+This installation method does not autoupdate and requires you to use your system's version of Node.js, which may be older than the version Heroku develops the CLI against. Heroku uses very current releases of Node.js and does not back-support older versions.
 
-If you use any of the other installation methods the proper version of Node.js is already included, and it doesn’t conflict with any other version on your system.
+If you use any of the other installation methods the proper version of Node.js is already included, and it doesn't conflict with any other version on your system.
 
-Also, this method won’t use the yarn lockfile for dependencies like the others do (even if you install with yarn). This may cause issues if the CLI’s dependencies become incompatible in minor or patch releases.
+Also, this method won't use the yarn lockfile for dependencies like the others do (even if you install with yarn). This may cause issues if the CLI's dependencies become incompatible in minor or patch releases.
 
 This method is useful if you want fine-grained control over CLI updates such as in a tested script.
 
@@ -5897,11 +5897,11 @@ $ heroku --version
 heroku/7.0.0 (darwin-x64) node-v8.0.0
 ```
 
-You should see `heroku/x.y.z` in the output. If you don’t, but you have installed the Heroku CLI, it’s possible you have an old `heroku` gem on your system. Uninstall it with [these instructions](https://devcenter.heroku.com/articles/heroku-cli#uninstalling-the-legacy-heroku-gem).
+You should see `heroku/x.y.z` in the output. If you don't, but you have installed the Heroku CLI, it's possible you have an old `heroku` gem on your system. Uninstall it with [these instructions](https://devcenter.heroku.com/articles/heroku-cli#uninstalling-the-legacy-heroku-gem).
 
 ## [Getting started](https://devcenter.heroku.com/articles/heroku-cli#getting-started)
 
-After you install the CLI, run the `heroku login` command. You’ll be prompted to enter any key to go to your web browser to complete login. The CLI will then log you in automatically.
+After you install the CLI, run the `heroku login` command. You'll be prompted to enter any key to go to your web browser to complete login. The CLI will then log you in automatically.
 
 ```
 $ heroku login
@@ -5913,7 +5913,7 @@ Logging in... done
 Logged in as me@example.com
 ```
 
-If you’d prefer to stay in the CLI to enter your credentials, you may run `heroku login -i`
+If you'd prefer to stay in the CLI to enter your credentials, you may run `heroku login -i`
 
 ```
 $ heroku login -i
@@ -5926,7 +5926,7 @@ Logged in as me@heroku.com
 
 The CLI saves your email address and an API token to `~/.netrc` for future use. For more information, see [Heroku CLI Authentication](https://devcenter.heroku.com/articles/authentication).
 
-Now you’re ready to create your first Heroku app:
+Now you're ready to create your first Heroku app:
 
 ```
 $ cd ~/myapp
@@ -5935,13 +5935,13 @@ Creating app... done, ⬢ sleepy-meadow-81798
 https://sleepy-meadow-81798.herokuapp.com/ | https://git.heroku.com/sleepy-meadow-81798.git
 ```
 
-Check out your preferred language’s [getting started guide](https://devcenter.heroku.com/start) for a comprehensive introduction to deploying your first app.
+Check out your preferred language's [getting started guide](https://devcenter.heroku.com/start) for a comprehensive introduction to deploying your first app.
 
 ## [Staying up to date](https://devcenter.heroku.com/articles/heroku-cli#staying-up-to-date)
 
 The Heroku CLI keeps itself and its plugins (except linked plugins) up to date automatically, _unless_ you installed the Debian/Ubuntu package or used `npm install`.
 
-When you run a `heroku` command, a background process checks for the latest available version of the CLI. If a new version is found, it’s downloaded and stored in `~/.local/share/heroku/client`. This background check happens at most once every 4 hours.
+When you run a `heroku` command, a background process checks for the latest available version of the CLI. If a new version is found, it's downloaded and stored in `~/.local/share/heroku/client`. This background check happens at most once every 4 hours.
 
 The `heroku` binary checks for an up-to-date client in `~/.local/share/heroku/client` before using the originally installed client.
 
@@ -5968,7 +5968,7 @@ CLI plugins allow you to extend your CLI installation. Install a CLI plugin with
 Here are some useful plugins you might want to try:
 
 -   [heroku-builds](https://github.com/heroku/heroku-builds) — View builds, purge the build cache, and create builds from tarballs
--   [heroku-repo](https://github.com/heroku/heroku-repo) — Commands to manipulate an app’s Heroku git repository
+-   [heroku-repo](https://github.com/heroku/heroku-repo) — Commands to manipulate an app's Heroku git repository
 -   [api](https://github.com/heroku/heroku-api-plugin) — Make ad-hoc API requests (such as `heroku api GET /account`)
 -   [heroku-pg-extras](https://github.com/heroku/heroku-pg-extras) — Add extra `heroku pg:*` commands
 -   [heroku-slugs](https://github.com/heroku/heroku-slugs) — Downloads app slugs
@@ -5984,16 +5984,16 @@ The code for the Heroku CLI is also [open source](https://github.com/heroku/cli)
 
 ## [Troubleshooting](https://devcenter.heroku.com/articles/heroku-cli#troubleshooting)
 
-If you’re having issues with the CLI, first ensure that you’re using the [latest version](http://cli-assets.heroku.com/version). If you’re not, try updating with `heroku update`.
+If you're having issues with the CLI, first ensure that you're using the [latest version](http://cli-assets.heroku.com/version). If you're not, try updating with `heroku update`.
 
 Not all methods of installation support `heroku update`.
 
 -   If you installed the CLI with `apt`, you need to use `sudo apt-get update && sudo apt-get upgrade heroku` instead.
 -   If you installed the CLI with `npm` or `yarn`, you need to use `npm upgrade -g heroku` or `yarn global upgrade heroku` instead.
 
-If the CLI fails to update, try uninstalling it with the [instructions below](https://devcenter.heroku.com/articles/heroku-cli#uninstalling-the-heroku-cli), then reinstalling it. Ensure that you don’t have the legacy Heroku Toolbelt or Heroku Ruby gem installed by using `which heroku` or `where heroku` (on Windows) to confirm what the `heroku` command points to. You might need to modify your `PATH` to include `/usr/local/bin/heroku` (for most installations).
+If the CLI fails to update, try uninstalling it with the [instructions below](https://devcenter.heroku.com/articles/heroku-cli#uninstalling-the-heroku-cli), then reinstalling it. Ensure that you don't have the legacy Heroku Toolbelt or Heroku Ruby gem installed by using `which heroku` or `where heroku` (on Windows) to confirm what the `heroku` command points to. You might need to modify your `PATH` to include `/usr/local/bin/heroku` (for most installations).
 
-If you’re still encountering an issue, you can set the following debugging environment variables to help diagnose it:
+If you're still encountering an issue, you can set the following debugging environment variables to help diagnose it:
 
 Environment Variable
 
@@ -6011,7 +6011,7 @@ Alongside `HEROKU_DEBUG=1`, shows HTTP headers
 
 Shows very verbose debugging information
 
-You can also check the CLI’s error logfile, which is stored at one of the following locations depending on your operating system:
+You can also check the CLI's error logfile, which is stored at one of the following locations depending on your operating system:
 
 OS
 
@@ -6071,7 +6071,7 @@ If you are getting the following error on a machine with an Apple M1 chip, this 
 
 Installing [Rosetta 2](https://support.apple.com/en-us/HT211861) will resolve this issue.
 
-If you don’t want to install Rosetta 2 on your machine, you can [install the Heroku npm package](https://devcenter.heroku.com/articles/heroku-cli#npm) globally and use your own Node binary locally (currently only v16 of Node has M1 ARM support), though this is not the recommend install method.
+If you don't want to install Rosetta 2 on your machine, you can [install the Heroku npm package](https://devcenter.heroku.com/articles/heroku-cli#npm) globally and use your own Node binary locally (currently only v16 of Node has M1 ARM support), though this is not the recommend install method.
 
 ## [Uninstalling the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#uninstalling-the-heroku-cli)
 
@@ -6131,7 +6131,7 @@ On Windows, to uninstall the Heroku CLI:
 1.  Click **`Start > Control Panel > Programs > Programs and Features`**.
 2.  Select **`Heroku CLI`**, and then click **`Uninstall`**. (Note that the uninstaller is unsigned)
 
-The Windows uninstaller is _not_ automatically updated alongside the CLI. If it’s been a while since you first installed the CLI and you’re attempting to uninstall it to fix an issue, you might first need to manually install the latest version of the CLI to obtain an up-to-date uninstaller.
+The Windows uninstaller is _not_ automatically updated alongside the CLI. If it's been a while since you first installed the CLI and you're attempting to uninstall it to fix an issue, you might first need to manually install the latest version of the CLI to obtain an up-to-date uninstaller.
 
 If this is unsuccessful, manually delete `%LOCALAPPDATA%\heroku` along with the directory in Program Files.
 
@@ -6214,7 +6214,7 @@ collabapp                 owner@example.org
 
 ### [App commands](https://devcenter.heroku.com/articles/using-the-cli#app-commands)
 
-App commands are typically executed from within an app’s local git clone. The app name is automatically detected by scanning the git remotes for the current working copy, so you don’t have to specify which app to operate on explicitly. For example, the `heroku apps:info` command can either be called with `--app` or be executed without any arguments inside the working copy:
+App commands are typically executed from within an app's local git clone. The app name is automatically detected by scanning the git remotes for the current working copy, so you don't have to specify which app to operate on explicitly. For example, the `heroku apps:info` command can either be called with `--app` or be executed without any arguments inside the working copy:
 
 ```
 $ cd example
@@ -6242,7 +6242,7 @@ Alternatively, the app name can be specified by setting the `HEROKU_APP` environ
 
 ### [Using an HTTP proxy](https://devcenter.heroku.com/articles/using-the-cli#using-an-http-proxy)
 
-If you’re behind a firewall that requires use of a proxy to connect with external HTTP/HTTPS services, you can set the `HTTP_PROXY` or `HTTPS_PROXY` environment variables in your local developer environment, before running the `heroku` command.
+If you're behind a firewall that requires use of a proxy to connect with external HTTP/HTTPS services, you can set the `HTTP_PROXY` or `HTTPS_PROXY` environment variables in your local developer environment, before running the `heroku` command.
 
 If you get the error `UNABLE_TO_GET_ISSUER_CERT_LOCALLY` or `ECONNREFUSED` this is likely the reason.
 
@@ -6266,7 +6266,7 @@ or
 
 This can go in your `~/.bashrc` (or equivalent) to prevent running this every time you open a new shell session.
 
-If your company’s internet requires the use of a MITM proxy, you might get a `SELF_SIGNED_CERT_IN_CHAIN` error . You’ll need to set `NODE_EXTRA_CA_CERTS` to the file location of the proxy’s Certificate Authority (CA) certificate in pem format. Or if issued the self-signed certificate directly, set `SSL_CERT_FILE` or `SSL_CERT_DIR` to a file/directory containing the MITM certificate.
+If your company's internet requires the use of a MITM proxy, you might get a `SELF_SIGNED_CERT_IN_CHAIN` error . You'll need to set `NODE_EXTRA_CA_CERTS` to the file location of the proxy's Certificate Authority (CA) certificate in pem format. Or if issued the self-signed certificate directly, set `SSL_CERT_FILE` or `SSL_CERT_DIR` to a file/directory containing the MITM certificate.
 
 ```
 $ export NODE_EXTRA_CA_CERTS=/path/to/ca_cert.pem

@@ -721,7 +721,7 @@ this.broker             // Broker instance
 this.Promise            // Class of Promise (Bluebird)
 this.logger             // Logger instance
 this.actions            // Actions of service.
-this.waitForServices    // Pointer to ‘broker.waitForServices’ method
+this.waitForServices    // Pointer to ‘broker.waitForServices' method
 
 
 /* *******************************************************************************************

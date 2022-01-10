@@ -2435,7 +2435,7 @@ type,
 
 > Clone and return a new React element using element as the starting point.
 
-> The resulting element will have the original element’s props with the new props merged in shallowly.
+> The resulting element will have the original element's props with the new props merged in shallowly.
 
 ```js
 React.cloneElement(
@@ -2511,7 +2511,7 @@ class Component extends React.Component {
     active: true,
 ```
 
-> In rare cases, it’s okay to initialize state based on props.
+> In rare cases, it's okay to initialize state based on props.
 
 > This effectively "forks” the props and sets the state with the initial props.
 
@@ -2551,7 +2551,7 @@ componentWillMount() { }
 
 > If you need to load data from a remote endpoint, this is a good place to instantiate the network request.
 
-> This method is a good place to set up any subscriptions. If you do that, don’t forget to unsubscribe in componentWillUnmount().
+> This method is a good place to set up any subscriptions. If you do that, don't forget to unsubscribe in componentWillUnmount().
 
 ```js
 componentDidMount() { }
@@ -2565,7 +2565,7 @@ componentDidMount() { }
 componentWillReceiveProps(nextProps) { }
 ```
 
-> Let React know if a component’s output is not affected by the current change in state or props.
+> Let React know if a component's output is not affected by the current change in state or props.
 
 > The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
 
@@ -2629,7 +2629,7 @@ componentDidCatch() { }
 
 > This method is required.
 
-> It should be pure, meaning that it does not modify component state, it returns the same result each time it’s invoked, and
+> It should be pure, meaning that it does not modify component state, it returns the same result each time it's invoked, and
 
 ```
 > it does not directly interact with the browser (use lifecycle methods for this)
@@ -2656,7 +2656,7 @@ render() {
 
 ```js
 
-> If you don’t use it in render(), it shouldn’t be in the state.
+> If you don't use it in render(), it shouldn't be in the state.
 
 
 
@@ -2702,7 +2702,7 @@ color: 'blue'
 component = new Component();
 ```
 
-> By default, when your component’s state or props change, your component will re-render.
+> By default, when your component's state or props change, your component will re-render.
 
 > If your render() method depends on some other data, you can tell React that the component needs re-rendering by calling forceUpdate().
 
@@ -2821,7 +2821,7 @@ ReactDOM.createPortal(child, container)
 ReactDOMServer.renderToString(element)
 ````
 
-> Similar to renderToString, except this doesn’t create extra DOM attributes that React uses
+> Similar to renderToString, except this doesn't create extra DOM attributes that React uses
 
 ```
 > internally, such as data-reactroot. This is useful if you want to use React as a simple static
@@ -2849,7 +2849,7 @@ ReactDOMServer.renderToStaticMarkup(element)
 ReactDOMServer.renderToNodeStream(element)
 ````
 
-> Similar to renderToNodeStream, except this doesn’t create extra DOM attributes that React uses
+> Similar to renderToNodeStream, except this doesn't create extra DOM attributes that React uses
 
 ```
 > internally, such as data-reactroot. This is useful if you want to use React as a simple static

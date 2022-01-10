@@ -171,7 +171,7 @@ _**Note**_
 | splice                                     | slice                                                              |
 | ------------------------------------------ | ------------------------------------------------------------------ |
 | Returns the removed item(s) in an array    | Returns the selected element(s) in an array, as a new array object |
-| Changes the original array                 | Doesn’t change the original array                                  |
+| Changes the original array                 | Doesn't change the original array                                  |
 | Can take n number of arguments(1 required) | Can take 2 arguments(1 required)                                   |
 
 ### [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/concat)
