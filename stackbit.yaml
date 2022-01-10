@@ -694,4 +694,4 @@ models:
     labelField: template
     description: test-model
     singleInstance: true
-    file: ''
+    file: /test/
