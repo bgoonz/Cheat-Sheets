@@ -695,7 +695,7 @@ models:
         type: html
         label: html content
         description: content in html syntax
-      - name: ''
+      - name: md
         type: markdown
         label: markdown
     labelField: template
