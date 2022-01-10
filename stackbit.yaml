@@ -694,6 +694,7 @@ models:
       - name: html
         type: html
         label: html content
+        description: content in html syntax
     labelField: template
     description: test-model
     singleInstance: true
