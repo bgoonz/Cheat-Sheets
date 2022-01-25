@@ -9,6 +9,7 @@ export default class SectionContent extends React.Component {
     let section = _.get(this.props, "section", null);
     return (
       <section
+      
         id={_.get(section, "section_id", null)}
         className="block block-text"
       >
