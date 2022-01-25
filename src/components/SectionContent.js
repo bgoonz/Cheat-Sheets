@@ -9,7 +9,7 @@ export default class SectionContent extends React.Component {
     let section = _.get(this.props, "section", null);
     return (
       <section
-      <div id="sb-search-example"><div class="sb-search-icon" id="myCustomSearchButtonID"><i class="sb-icon"></i><p>Search</p></div></div></se
+      <div id="sb-search-example"><div class="sb-search-icon" id="myCustomSearchButtonID"><i class="sb-icon"></i><p>Search</p></div></div></section>
         id={_.get(section, "section_id", null)}
         className="block block-text"
       >
