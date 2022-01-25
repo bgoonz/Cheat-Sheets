@@ -1,6 +1,5 @@
 ---
 title: Best Waves - Surfing In Spain
-subtitle: A intresting tale about Surfing
 excerpt: >-
   Surfing is a surface water sport in which the wave rider, referred to as a
   surfer, rides on the forward or deep face of a moving wave, which is usually
