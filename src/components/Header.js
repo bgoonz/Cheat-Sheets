@@ -48,6 +48,7 @@ export default class Header extends React.Component {
               )}
               <div className="site-identity">
                 <p className="site-title">
+                    <div id="sb-search-example"><div class="sb-search-icon" id="myCustomSearchButtonID"><i class="sb-icon"></i><p>Search</p></div></div>
                   <Link to={withPrefix("/")}>
                     {_.get(
                       this.props,
