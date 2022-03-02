@@ -1,4 +1,4 @@
-<script>"use strict";
+"use strict";
 
 !function() {
     var t = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWYxODMxZDcyMWU3MjA3M2Q2YTAxZCIsInRva2VuVHlwZSI6InB1YmxpYyIsImlhdCI6MTY0NjIwNDk3OCwiZXhwIjoxNDI2MDYwNDk3OH0.kd6Yf-w3kBWHvEWEUb8m_EIONkyH1k8uBULO8OllME0";
