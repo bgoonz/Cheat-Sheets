@@ -90,7 +90,7 @@
 
 * [General](general/general.md)
 
-## 👨💻 👨💻 💻 Programming Languages
+## 👨💻 👨💻 👨💻 💻 Programming Languages
 
 * [🐍 Python:](programming-languages/python/README.md)
   * [Python](programming-languages/python/python/README.md)
