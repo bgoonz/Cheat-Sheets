@@ -15,7 +15,6 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
       <script src={withPrefix("js/init.js")} />
       <script src={withPrefix("js/page-load.js")} />
       <script src={withPrefix("js/page-unload.js")} />
-        <script src={withPrefix("js/searchbar.js")} />
     </React.Fragment>,
   ]);
 };
