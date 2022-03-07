@@ -1,101 +1,101 @@
 {
-    "layout_style": "simple",
-    "palette": "blue",
-    "header": {
-        "title": "Cheatsheets",
-        "tagline": "Web Development Cheat Sheets",
-        "profile_img": "images/b8c19739-f97b-4ef1-8943-feeaaf186bf3-cb2f5dadbd2b-small.jpg",
-        "profile_img_alt": "Author avatar",
-        "background": "dark",
-        "has_nav": true,
-        "nav_links": [
-            {
-                "label": "📝BLOG📝",
-                "url": "https://bgoonz-blog.netlify.app/",
-                "style": "button",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false
-            },
-            {
-                "label": "Home",
-                "url": "/",
-                "style": "link"
-            },
-            {
-                "label": "Cheat Sheets",
-                "url": "/blog/",
-                "style": "link"
-            },
-            {
-                "label": "Resources",
-                "url": "/react/",
-                "style": "link"
-            },
-            {
-                "label": "Resources",
-                "url": "/about/",
-                "style": "link"
-            },
-            {
-                "label": "Contact",
-                "url": "/contact/",
-                "style": "link"
-            }
-        ],
-        "has_social": true,
-        "social_links": [
-            {
-                "label": "Twitter",
-                "url": "https://twitter.com/",
-                "style": "icon",
-                "icon_class": "twitter",
-                "new_window": true
-            },
-            {
-                "label": "Instagram",
-                "url": "https://www.instagram.com/",
-                "style": "icon",
-                "icon_class": "instagram",
-                "new_window": true
-            },
-            {
-                "label": "GitHub",
-                "url": "https://github.com/",
-                "style": "icon",
-                "icon_class": "github",
-                "new_window": true
-            },
-            {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/",
-                "style": "icon",
-                "icon_class": "linkedin",
-                "new_window": true
-            },
-            {
-                "label": "DEV",
-                "url": "https://dev.to/bgoonz",
-                "style": "icon",
-                "icon_class": "dev",
-                "new_window": true
-            }
-        ]
-    },
-    "footer": {
-        "content": "@bgoonz on most social media",
-        "links": [
-            {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false
-            }
-        ]
-    },
-    "title": "My Cheat Sheets",
-    "domain": "https://cheatsheets-42.netlify.app/",
-    "favicon": "images/diligent-tiger.PNG"
+  "layout_style": "simple",
+  "palette": "blue",
+  "header": {
+    "title": "Cheatsheets",
+    "tagline": "Web Development Cheat Sheets",
+    "profile_img": "images/b8c19739-f97b-4ef1-8943-feeaaf186bf3-cb2f5dadbd2b-small.jpg",
+    "profile_img_alt": "Author avatar",
+    "background": "dark",
+    "has_nav": true,
+    "nav_links": [
+      {
+        "label": "📝BLOG📝",
+        "url": "https://bgoonz-blog.netlify.app/",
+        "style": "button",
+        "icon_class": "dev",
+        "new_window": true,
+        "no_follow": false
+      },
+      {
+        "label": "Home",
+        "url": "/",
+        "style": "link"
+      },
+      {
+        "label": "Cheat Sheets",
+        "url": "/blog/",
+        "style": "link"
+      },
+      {
+        "label": "Resources",
+        "url": "/react/",
+        "style": "link"
+      },
+      {
+        "label": "Resources",
+        "url": "/about/",
+        "style": "link"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact/",
+        "style": "link"
+      }
+    ],
+    "has_social": true,
+    "social_links": [
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/",
+        "style": "icon",
+        "icon_class": "twitter",
+        "new_window": true
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/",
+        "style": "icon",
+        "icon_class": "instagram",
+        "new_window": true
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/",
+        "style": "icon",
+        "icon_class": "github",
+        "new_window": true
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/",
+        "style": "icon",
+        "icon_class": "linkedin",
+        "new_window": true
+      },
+      {
+        "label": "DEV",
+        "url": "https://dev.to/bgoonz",
+        "style": "icon",
+        "icon_class": "dev",
+        "new_window": true
+      }
+    ]
+  },
+  "footer": {
+    "content": "@bgoonz on most social media",
+    "links": [
+      {
+        "label": "lorem-ipsum",
+        "url": "#",
+        "style": "link",
+        "icon_class": "dev",
+        "new_window": false,
+        "no_follow": false
+      }
+    ]
+  },
+  "title": "My Cheat Sheets",
+  "domain": "https://cheatsheets-42.netlify.app/",
+  "favicon": "images/diligent-tiger.PNG"
 }

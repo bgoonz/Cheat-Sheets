@@ -67,7 +67,6 @@ template: page
 
 ##### ▪️ Shells
 
-
 - [✅] [**GNU Bash**](https://www.gnu.org/software/bash/) - is an sh-compatible shell that incorporates useful features from the Korn shell and C shell.
 
 - [✅] [**Zsh**](https://www.zsh.org/) - is a shell designed for interactive use, although it is also a powerful scripting language.
@@ -86,7 +85,6 @@ template: page
 
 ##### ▪️ Shell plugins
 
-
 - [✅] [**z**](https://github.com/rupa/z) - tracks the folder you use the most and allow you to jump, without having to type the whole path.
 
 - [✅] [**fzf**](https://github.com/junegunn/fzf) - is a general-purpose command-line fuzzy finder.
@@ -98,7 +96,6 @@ template: page
 - [✅] [**Awesome ZSH Plugins**](https://github.com/unixorn/awesome-zsh-plugins) - A list of frameworks, plugins, themes and tutorials for ZSH.
 
 ##### ▪️ Managers
-
 
 - [✅] [**Midnight Commander**](https://midnight-commander.org/) - is a visual file manager, licensed under GNU General Public License.
 
@@ -113,7 +110,6 @@ template: page
 - [✅] [**tmux-cssh**](https://github.com/peikk0/tmux-cssh) - is a tool to set comfortable and easy to use functionality, clustering and synchronizing tmux-sessions.
 
 ##### ▪️ Text editors
-
 
 - [✅] [**vi**](http://ex-vi.sourceforge.net/) - is one of the most common text editors on Unix.
 
@@ -131,13 +127,11 @@ template: page
 
 ##### ▪️ Files and directories
 
-
 - [✅] [**fd**](https://github.com/sharkdp/fd) - is a simple, fast and user-friendly alternative to find.
 
 - [✅] [**ncdu**](https://dev.yorhel.nl/ncdu) - is an easy to use, fast disk usage analyzer.
 
 ##### ▪️ Network
-
 
 - [✅] [**PuTTY**](https://www.putty.org/) - is an SSH and telnet client, developed originally by Simon Tatham.
 
@@ -213,7 +207,6 @@ template: page
 
 ##### ▪️ Network (DNS)
 
-
 - [✅] [**dnsdiag**](https://github.com/farrokhi/dnsdiag) - is a DNS diagnostics and performance measurement tools.
 
 - [✅] [**fierce**](https://github.com/mschwager/fierce) - is a DNS reconnaissance tool for locating non-contiguous IP space.
@@ -239,7 +232,6 @@ template: page
 - [✅] [**grimd**](https://github.com/looterz/grimd) - fast dns proxy, built to black-hole internet advertisements and malware servers.
 
 ##### ▪️ Network (HTTP)
-
 
 - [✅] [**curl**](https://curl.haxx.se/) - is a command line tool and library for transferring data with URLs.
 
@@ -293,7 +285,6 @@ template: page
 
 ##### ▪️ SSL
 
-
 - [✅] [**openssl**](https://www.openssl.org/) - is a robust, commercial-grade, and full-featured toolkit for the TLS and SSL protocols.
 
 - [✅] [**gnutls-cli**](https://gnutls.org/manual/html_node/gnutls_002dcli-Invocation.html) - client program to set up a TLS connection to some other computer.
@@ -320,7 +311,6 @@ template: page
 
 ##### ▪️ Security
 
-
 - [✅] [**SELinux**](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-selinux) - provides a flexible Mandatory Access Control (MAC) system built into the Linux kernel.
 
 - [✅] [**AppArmor**](https://wiki.ubuntu.com/AppArmor) - proactively protects the operating system and applications from external or internal threats.
@@ -330,7 +320,6 @@ template: page
 - [✅] [**DevSec Hardening Framework**](https://github.com/dev-sec/) - Security + DevOps: Automatic Server Hardening.
 
 ##### ▪️ Auditing Tools
-
 
 - [✅] [**ossec**](https://www.ossec.net/) - actively monitoring all aspects of system activity with file integrity monitoring.
 
@@ -347,7 +336,6 @@ template: page
 - [✅] [**PE-sieve**](https://github.com/hasherezade/pe-sieve) - is a light-weight tool that helps to detect malware running on the system.
 
 ##### ▪️ System Diagnostics/Debuggers
-
 
 - [✅] [**strace**](https://github.com/strace/strace) - diagnostic, debugging and instructional userspace utility for Linux.
 
@@ -391,7 +379,6 @@ template: page
 
 ##### ▪️ Log Analyzers
 
-
 - [✅] [**angle-grinder**](https://github.com/rcoh/angle-grinder) - slice and dice log files on the command line.
 
 - [✅] [**lnav**](https://lnav.org/) - log file navigator with search and automatic refresh.
@@ -401,7 +388,6 @@ template: page
 - [✅] [**ngxtop**](https://github.com/lebinh/ngxtop) - real-time metrics for nginx server.
 
 ##### ▪️ Databases
-
 
 - [✅] [**usql**](https://github.com/xo/usql) - universal command-line interface for SQL databases.
 
@@ -421,13 +407,11 @@ template: page
 
 ##### ▪️ TOR
 
-
 - [✅] [**Nipe**](https://github.com/GouveaHeitor/nipe) - script to make Tor Network your default gateway.
 
 - [✅] [**multitor**](https://github.com/trimstray/multitor) - a tool that lets you create multiple TOR instances with a load-balancing.
 
 ##### ▪️ Messengers/IRC Clients
-
 
 - [✅] [**Irssi**](https://irssi.org/) - is a free open source terminal based IRC client.
 
@@ -435,11 +419,9 @@ template: page
 
 ##### ▪️ Productivity
 
-
 - [✅] [**taskwarrior**](https://taskwarrior.org/) - task management system, todo list
 
 ##### ▪️ Other
-
 
 - [✅] [**sysadmin-util**](https://github.com/skx/sysadmin-util) - tools for Linux/Unix sysadmins.
 
@@ -465,7 +447,6 @@ template: page
 
 ##### ▪️ Terminal emulators
 
-
 - [✅] [**Guake**](https://github.com/Guake/guake) - is a dropdown terminal made for the GNOME desktop environment.
 
 - [✅] [**Terminator**](https://gnometerminator.blogspot.com/p/introduction.html) - is based on GNOME Terminal, useful features for sysadmins and other users.
@@ -475,7 +456,6 @@ template: page
 - [✅] [**Alacritty**](https://github.com/alacritty/alacritty) - is a fast, cross-platform, OpenGL terminal emulator.
 
 ##### ▪️ Network
-
 
 - [✅] [**Wireshark**](https://www.wireshark.org/) - is the world's foremost and widely-used network protocol analyzer.
 
@@ -493,11 +473,9 @@ template: page
 
 ##### ▪️ Browsers
 
-
 - [✅] [**TOR Browser**](https://www.torproject.org/) - protect your privacy and defend yourself against network surveillance and traffic analysis.
 
 ##### ▪️ Password Managers
-
 
 - [✅] [**KeePassXC**](https://keepassxc.org/) - store your passwords safely and auto-type them into your everyday websites and apps.
 
@@ -505,13 +483,11 @@ template: page
 
 ##### ▪️ Messengers/IRC Clients
 
-
 - [✅] [**HexChat**](https://hexchat.github.io/index.html) - is an IRC client based on XChat.
 
 - [✅] [**Pidgin**](https://pidgin.im/) - is an easy to use and free chat client used by millions.
 
 ##### ▪️ Messengers (end-to-end encryption)
-
 
 - [✅] [**Signal**](https://www.signal.org/) - is an encrypted communications app.
 
@@ -523,7 +499,6 @@ template: page
 
 ##### ▪️ Text editors
 
-
 - [✅] [**Sublime Text**](https://www.sublimetext.com/3) - is a lightweight, cross-platform code editor known for its speed, ease of use.
 
 - [✅] [**Visual Studio Code**](https://code.visualstudio.com/) - an open-source and free source code editor developed by Microsoft.
@@ -533,7 +508,6 @@ template: page
 #### Web Tools [\[TOC\]](https://gist.github.com/bgoonz/be5c5be77169ef333b431bc37d331176#anger-table-of-contents)
 
 ##### ▪️ Browsers
-
 
 - [✅] [**SSL/TLS Capabilities of Your Browser**](https://www.ssllabs.com/ssltest/viewMyClient.html) - test your browser's SSL implementation.
 
@@ -550,7 +524,6 @@ template: page
 - [✅] [**sslClientInfo**](https://suche.org/sslClientInfo) - client test (incl TLSv1.3 information).
 
 ##### ▪️ SSL/Security
-
 
 - [✅] [**SSLLabs Server Test**](https://www.ssllabs.com/ssltest/) - performs a deep analysis of the configuration of any SSL web server.
 
@@ -604,7 +577,6 @@ template: page
 
 ##### ▪️ HTTP Headers & Web Linters
 
-
 - [✅] [**Security Headers**](https://securityheaders.com/) - analyse the HTTP response headers (with rating system to the results).
 
 - [✅] [**Observatory by Mozilla**](https://observatory.mozilla.org/) - set of tools to analyze your website.
@@ -612,7 +584,6 @@ template: page
 - [✅] [**webhint**](https://webhint.io/) - is a linting tool that will help you with your site's accessibility, speed, security, and more.
 
 ##### ▪️ DNS
-
 
 - [✅] [**ViewDNS**](http://viewdns.info/) - one source for free DNS related tools and information.
 
@@ -654,7 +625,6 @@ template: page
 
 ##### ▪️ Mail
 
-
 - [✅] [**smtp-tls-checker**](https://luxsci.com/smtp-tls-checker) - check an email domain for SMTP TLS support.
 
 - [✅] [**MX Toolbox**](https://mxtoolbox.com/SuperTool.aspx) - all of your MX record, DNS, blacklist and SMTP diagnostics in one integrated tool.
@@ -668,7 +638,6 @@ template: page
 - [✅] [**DKIM SPF & Spam Assassin Validator**](https://dkimvalidator.com/) - checks mail authentication and scores messages with Spam Assassin.
 
 ##### ▪️ Encoders/Decoders and Regex testing
-
 
 - [✅] [**URL Encode/Decode**](https://www.url-encode-decode.com/) - tool from above to either encode or decode a string of text.
 
@@ -685,7 +654,6 @@ template: page
 - [✅] [**The Cyber Swiss Army Knife**](https://gchq.github.io/CyberChef/) - a web app for encryption, encoding, compression and data analysis.
 
 ##### ▪️ Net-tools
-
 
 - [✅] [**Netcraft**](https://toolbar.netcraft.com/site_report) - detailed report about the site, helping you to make informed choices about their integrity.**\***
 
@@ -713,13 +681,11 @@ template: page
 
 ##### ▪️ Privacy
 
-
 - [✅] [**privacytools.io**](https://www.privacytools.io/) - provides knowledge and tools to protect your privacy against global mass surveillance.
 
 - [✅] [**DNS Privacy Test Servers**](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers) - DNS privacy recursive servers list (with a 'no logging' policy).
 
 ##### ▪️ Code parsers/playgrounds
-
 
 - [✅] [**ShellCheck**](https://www.shellcheck.net/) - finds bugs in your shell scripts.
 
@@ -737,7 +703,6 @@ template: page
 
 ##### ▪️ Performance
 
-
 - [✅] [**GTmetrix**](https://gtmetrix.com/) - analyze your site's speed and make it faster.
 
 - [✅] [**Sucuri loadtimetester**](https://performance.sucuri.net/) - test here the performance of any of your sites from across the globe.
@@ -753,7 +718,6 @@ template: page
 - [✅] [**Lighthouse**](https://github.com/GoogleChrome/lighthouse) - automated auditing, performance metrics, and best practices for the web.
 
 ##### ▪️ Mass scanners (search engines)
-
 
 - [✅] [**Censys**](https://censys.io/) - platform that helps information security practitioners discover, monitor, and analyze devices.
 
@@ -835,7 +799,6 @@ template: page
 
 ##### ▪️ Generators
 
-
 - [✅] [**thispersondoesnotexist**](https://thispersondoesnotexist.com/) - generate fake faces in one click - endless possibilities.
 
 - [✅] [**AI Generated Photos**](https://generated.photos/) - 100.000 AI generated faces.
@@ -846,7 +809,6 @@ template: page
 
 ##### ▪️ Passwords
 
-
 - [✅] [**have i been pwned?**](https://haveibeenpwned.com/) - check if you have an account that has been compromised in a data breach.
 
 - [✅] [**dehashed**](https://www.dehashed.com/) - is a hacked database search engine.
@@ -854,7 +816,6 @@ template: page
 - [✅] [**Leaked Source**](https://leakedsource.ru/) - is a collaboration of data found online in the form of a lookup.
 
 ##### ▪️ CVE/Exploits databases
-
 
 - [✅] [**CVE Mitre**](https://cve.mitre.org/) - list of publicly known cybersecurity vulnerabilities.
 
@@ -874,7 +835,6 @@ template: page
 
 ##### ▪️ Mobile apps scanners
 
-
 - [✅] [**ImmuniWeb® Mobile App Scanner**](https://www.immuniweb.com/mobile/) - test security and privacy of mobile apps (iOS & Android).
 
 - [✅] [**Quixxi**](https://vulnerabilitytest.quixxi.com/) - free Mobile App Vulnerability Scanner for Android & iOS.
@@ -882,7 +842,6 @@ template: page
 - [✅] [**Ostorlab**](https://www.ostorlab.co/scan/mobile/) - analyzes mobile application to identify vulnerabilities and potential weaknesses.
 
 ##### ▪️ Private Search Engines
-
 
 - [✅] [**Startpage**](https://www.startpage.com/) - the world's most private search engine.
 
@@ -902,7 +861,6 @@ template: page
 
 ##### ▪️ Secure Webmail Providers
 
-
 - [✅] [**CounterMail**](https://countermail.com/) - online email service, designed to provide maximum security and privacy.
 
 - [✅] [**Mail2Tor**](http://mail2tor.com/) - is a Tor Hidden Service that allows anyone to send and receive emails anonymously.
@@ -915,18 +873,15 @@ template: page
 
 ##### ▪️ Crypto
 
-
 - [✅] [**Keybase**](https://keybase.io/) - it's open source and powered by public-key cryptography.
 
 ##### ▪️ PGP Keyservers
-
 
 - [✅] [**SKS OpenPGP Key server**](https://keyserver.ubuntu.com/) - services for the SKS keyservers used by OpenPGP.
 
 #### Systems/Services [\[TOC\]](https://gist.github.com/bgoonz/be5c5be77169ef333b431bc37d331176#anger-table-of-contents)
 
 ##### ▪️ Operating Systems
-
 
 - [✅] [**Slackware**](http://www.slackware.com/) - the most "Unix-like" Linux distribution.
 
@@ -954,7 +909,6 @@ template: page
 
 ##### ▪️ HTTP(s) Services
 
-
 - [✅] [**Varnish Cache**](https://varnish-cache.org/) - HTTP accelerator designed for content-heavy dynamic web sites.
 
 - [✅] [**Nginx**](https://nginx.org/) - open source web and reverse proxy server that is similar to Apache, but very light weight.
@@ -969,7 +923,6 @@ template: page
 
 ##### ▪️ DNS Services
 
-
 - [✅] [**Unbound**](https://nlnetlabs.nl/projects/unbound/about/) - validating, recursive, and caching DNS resolver (with TLS).
 
 - [✅] [**Knot Resolver**](https://www.knot-resolver.cz/) - caching full resolver implementation, including both a resolver library and a daemon.
@@ -978,11 +931,9 @@ template: page
 
 ##### ▪️ Other Services
 
-
 - [✅] [**3proxy**](https://github.com/z3APA3A/3proxy) - tiny free proxy server.
 
 ##### ▪️ Security/hardening
-
 
 - [✅] [**Emerald Onion**](https://twitter.com/EmeraldOnion) - is a 501(c)(3) nonprofit organization and transit internet service provider (ISP).
 
@@ -1000,18 +951,15 @@ template: page
 
 ##### ▪️ Tools
 
-
 - [✅] [**CapAnalysis**](https://www.capanalysis.net/ca/) - web visual tool to analyze large amounts of captured network traffic (PCAP analyzer).
 
 - [✅] [**netbox**](https://github.com/digitalocean/netbox) - IP address management (IPAM) and data center infrastructure management (DCIM) tool.
 
 ##### ▪️ Labs
 
-
 - [✅] [**NRE Labs**](https://labs.networkreliability.engineering/) - learn automation by doing it. Right now, right here, in your browser.
 
 ##### ▪️ Other
-
 
 - [✅] [**LBNL's Network Research Group**](https://ee.lbl.gov/) - home page of the Network Research Group (NRG).
 
@@ -1019,13 +967,11 @@ template: page
 
 ##### ▪️ CLI Tools
 
-
 - [✅] [**gvisor**](https://github.com/google/gvisor) - container runtime sandbox.
 
 - [✅] [**ctop**](https://github.com/bcicen/ctop) - top-like interface for container metrics.
 
 ##### ▪️ Web Tools
-
 
 - [✅] [**Moby**](https://github.com/moby/moby) - a collaborative project for the container ecosystem to assemble container-based system.
 
@@ -1041,7 +987,6 @@ template: page
 
 ##### ▪️ Security
 
-
 - [✅] [**docker-bench-security**](https://github.com/docker/docker-bench-security) - checks for dozens of common best-practices around deploying Docker.
 
 - [✅] [**trivy**](https://github.com/aquasecurity/trivy) - vulnerability scanner for containers, suitable for CI.
@@ -1049,7 +994,6 @@ template: page
 - [✅] [**Harbor**](https://goharbor.io/) - cloud native registry project that stores, signs, and scans content.
 
 ##### ▪️ Manuals/Tutorials/Best Practices
-
 
 - [✅] [**docker-cheat-sheet**](https://github.com/wsargent/docker-cheat-sheet) - a quick reference cheat sheet on Docker.
 
@@ -1079,7 +1023,6 @@ template: page
 
 ##### ▪️ Shell/Command line
 
-
 - [✅] [**pure-bash-bible**](https://github.com/dylanaraps/pure-bash-bible) - is a collection of pure bash alternatives to external processes.
 
 - [✅] [**pure-sh-bible**](https://github.com/dylanaraps/pure-sh-bible) - is a collection of pure POSIX sh alternatives to external processes.
@@ -1098,11 +1041,9 @@ template: page
 
 ##### ▪️ Text Editors
 
-
 - [✅] [**Vim Cheat Sheet**](https://vim.rtorr.com/) - great multi language vim guide.
 
 ##### ▪️ Python
-
 
 - [✅] [**Awesome Python**](https://awesome-python.com/) - a curated list of awesome Python frameworks, libraries, software and resources.
 
@@ -1112,11 +1053,9 @@ template: page
 
 ##### ▪️ Sed & Awk & Other
 
-
 - [✅] [**F'Awk Yeah!**](https://posts.specterops.io/fawk-yeah-advanced-sed-and-awk-usage-parsing-for-pentesters-3-e5727e11a8ad?gi=c8f9506b26b6) - advanced sed and awk usage (Parsing for Pentesters 3).
 
 ##### ▪️ \*nix & Network
-
 
 - [✅] [**nixCraft**](https://www.cyberciti.biz/) - linux and unix tutorials for new and seasoned sysadmin.
 
@@ -1162,11 +1101,9 @@ template: page
 
 ##### ▪️ Microsoft
 
-
 - [✅] [**AD-Attack-Defense**](https://github.com/infosecn1nja/AD-Attack-Defense) - attack and defend active directory using modern post exploitation activity.
 
 ##### ▪️ Large-scale systems
-
 
 - [✅] [**The System Design Primer**](https://github.com/donnemartin/system-design-primer) - learn how to design large-scale systems.
 
@@ -1175,7 +1112,6 @@ template: page
 - [✅] [**Web Architecture 101**](https://engineering.videoblocks.com/web-architecture-101-a3224e126947?gi=a896808d22a) - the basic architecture concepts.
 
 ##### ▪️ System hardening
-
 
 - [✅] [**CIS Benchmarks**](https://www.cisecurity.org/cis-benchmarks/) - secure configuration settings for over 100 technologies, available as a free PDF.
 
@@ -1190,7 +1126,6 @@ template: page
 - [✅] [**Linux Hardening Guide**](https://madaidans-insecurities.github.io/guides/linux-hardening.html) - how to harden Linux as much as possible for security and privacy.
 
 ##### ▪️ Security & Privacy
-
 
 - [✅] [**Hacking Articles**](https://www.hackingarticles.in/) - LRaj Chandel's Security & Hacking Blog.
 
@@ -1211,7 +1146,6 @@ template: page
 - [✅] [**Quitting Google**](https://lifehacker.com/the-comprehensive-guide-to-quitting-google-1830001964) - the comprehensive guide to quitting Google.
 
 ##### ▪️ Web Apps
-
 
 - [✅] [**OWASP**](https://www.owasp.org/index.php/Main_Page) - worldwide not-for-profit charitable organization focused on improving the security of software.
 
@@ -1255,7 +1189,6 @@ template: page
 
 ##### ▪️ All-in-one
 
-
 - [✅] [**LZone Cheat Sheets**](https://lzone.de/cheat-sheet/) - all cheat sheets.
 
 - [✅] [**Dan's Cheat Sheets's**](https://github.com/rstacruz/cheatsheets) - massive cheat sheets documentation.
@@ -1270,11 +1203,9 @@ template: page
 
 ##### ▪️ Ebooks
 
-
 - [✅] [**free-programming-books**](https://github.com/EbookFoundation/free-programming-books) - list of free learning resources in many languages.
 
 ##### ▪️ Other
-
 
 - [✅] [**CTF Series : Vulnerable Machines**](https://bitvijays.github.io/LFC-VulnerableMachines.html) - the steps below could be followed to find vulnerabilities and exploits.
 
@@ -1346,7 +1277,6 @@ template: page
 
 ##### ▪️ SysOps/DevOps
 
-
 - [✅] [**Awesome Sysadmin**](https://github.com/kahun/awesome-sysadmin) - amazingly awesome open source sysadmin resources.
 
 - [✅] [**Awesome Shell**](https://github.com/alebcay/awesome-shell) - awesome command-line frameworks, toolkits, guides and gizmos.
@@ -1377,7 +1307,6 @@ template: page
 
 ##### ▪️ Developers
 
-
 - [✅] [**Web Developer Roadmap**](https://github.com/kamranahmedse/developer-roadmap) - roadmaps, articles and resources to help you choose your path, learn and improve.
 
 - [✅] [**Front-End-Checklist**](https://github.com/thedaviddias/Front-End-Checklist) - the perfect Front-End Checklist for modern websites and meticulous developers.
@@ -1393,7 +1322,6 @@ template: page
 - [✅] [**Commit messages guide**](https://github.com/RomuloOliveira/commit-messages-guide) - a guide to understand the importance of commit messages.
 
 ##### ▪️ Security/Pentesting
-
 
 - [✅] [**Awesome Web Security**](https://github.com/qazbnm456/awesome-web-security) - a curated list of Web Security materials and resources.
 
@@ -1451,7 +1379,6 @@ template: page
 
 ##### ▪️ Other
 
-
 - [✅] [**Cheatography**](https://www.cheatography.com/) - over 3,000 free cheat sheets, revision aids and quick references.
 
 - [✅] [**awesome-static-analysis**](https://github.com/mre/awesome-static-analysis) - static analysis tools for all programming languages.
@@ -1476,18 +1403,15 @@ template: page
 
 ##### ▪️ SysOps/DevOps
 
-
 - [✅] [**Varnish for PHP developers**](https://www.youtube.com/watch?v=nAFpkV5-vuI) - very interesting presentation of Varnish by Mattias Geniar.
 
 - [✅] [**A Netflix Guide to Microservices**](https://www.youtube.com/watch?v=CZ3wIuvmHeM) - talks about the chaotic and vibrant world of microservices at Netflix.
 
 ##### ▪️ Developers
 
-
 - [✅] [**Comparing C to machine lang**](https://www.youtube.com/watch?v=yOyaJXpAYZQ) - compare a simple C app with the compiled machine code of that program.
 
 ##### ▪️ Geeky Persons
-
 
 - [✅] [**Brendan Gregg's Blog**](http://www.brendangregg.com/) - is an industry expert in computing performance and cloud computing.
 
@@ -1527,7 +1451,6 @@ template: page
 
 ##### ▪️ Geeky Blogs
 
-
 - [✅] [**Linux Audit**](https://linux-audit.com/) - the Linux security blog about auditing, hardening and compliance by Michael Boelen.
 
 - [✅] [**Linux Security Expert**](https://linuxsecurity.expert/) - trainings, howtos, checklists, security tools, and more.
@@ -1539,7 +1462,6 @@ template: page
 - [✅] [**Decipher**](https://duo.com/decipher) - security news that informs and inspires.
 
 ##### ▪️ Geeky Vendor Blogs
-
 
 - [✅] [**Tenable Podcast**](https://www.tenable.com/podcast) - conversations and interviews related to Cyber Exposure, and more.
 
@@ -1559,7 +1481,6 @@ template: page
 
 ##### ▪️ Geeky Cybersecurity Podcasts
 
-
 - [✅] [**Risky Business**](https://risky.biz/netcasts/risky-business/) - is a weekly information security podcast featuring news and in-depth interviews.
 
 - [✅] [**Cyber, by Motherboard**](https://www.vice.com/en_us/topic/cyber) - stories, and focus on the ideas about cybersecurity.
@@ -1578,7 +1499,6 @@ template: page
 
 ##### ▪️ Geeky Cybersecurity Video Blogs
 
-
 - [✅] [**rev3rse security**](https://www.youtube.com/channel/UCzvJStjySZVvOBsPl-Vgj0g) - offensive, binary exploitation, web app security, hardening, red team, blue team.
 
 - [✅] [**LiveOverflow**](https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w) - a lot more advanced topics than what is typically offered in paid online courses - but for free.
@@ -1588,7 +1508,6 @@ template: page
 - [✅] [**CyberTalks**](https://cybertalks.co.uk/) - talks, interviews, and article about cybersecurity.
 
 ##### ▪️ Best Personal Twitter Accounts
-
 
 - [✅] [**@blackroomsec**](https://twitter.com/blackroomsec) - a white-hat hacker/pentester. Intergalactic Minesweeper Champion 1990.
 
@@ -1628,7 +1547,6 @@ template: page
 
 ##### ▪️ Best Commercial Twitter Accounts
 
-
 - [✅] [**@haveibeenpwned**](https://twitter.com/haveibeenpwned) - check if you have an account that has been compromised in a data breach.
 
 - [✅] [**@bugcrowd**](https://twitter.com/bugcrowd) - trusted by more of the Fortune 500 than any other crowdsourced security platform.
@@ -1649,18 +1567,15 @@ template: page
 
 ##### ▪️ A piece of history
 
-
 - [✅] [**How to Do Things at ARL**](http://ftp.arl.army.mil/~mike/howto/) - how to configure modems, scan images, record CD-ROMs, and other.**\***
 
 ##### ▪️ Other
-
 
 - [✅] [**Diffie-Hellman Key Exchange (short version)**](https://www.youtube.com/watch?v=3QnD2c4Xovk) - how Diffie-Hellman Key Exchange worked.
 
 #### Hacking/Penetration Testing [\[TOC\]](https://gist.github.com/bgoonz/be5c5be77169ef333b431bc37d331176#anger-table-of-contents)
 
 ##### ▪️ Pentesters arsenal tools
-
 
 - [✅] [**Sandcat Browser**](http://www.syhunt.com/sandcat/) - a penetration-oriented browser with plenty of advanced functionality already built in.
 
@@ -1776,7 +1691,6 @@ template: page
 
 ##### ▪️ Pentests bookmarks collection
 
-
 - [✅] [**PTES**](http://www.pentest-standard.org/index.php/Main_Page) - the penetration testing execution standard.
 
 - [✅] [**Pentests MindMap**](https://www.amanhardikar.com/mindmaps/Practice.html) - amazing mind map with vulnerable apps and systems.
@@ -1889,11 +1803,9 @@ template: page
 
 ##### ▪️ Backdoors/exploits
 
-
 - [✅] [**PHP-backdoors**](https://github.com/bartblaze/PHP-backdoors) - a collection of PHP backdoors. For educational or testing purposes only.
 
 ##### ▪️ Wordlists and Weak passwords
-
 
 - [✅] [**Weakpass**](https://weakpass.com/) - for any kind of bruteforce find wordlists or unleash the power of them all at once!
 
@@ -1906,10 +1818,9 @@ template: page
 - [✅] [**skullsecurity passwords**](https://wiki.skullsecurity.org/index.php?title=Passwords) - password dictionaries and leaked passwords repository.
 
 - [✅] [**Polish PREMIUM Dictionary**](https://bezpieka.org/polski-slownik-premium-polish-wordlist) - official dictionary created by the team on the forum bezpieka.org.**\*** [1](https://sourceforge.net/projects/kali-linux/files/Wordlist/)[
-✅ ](https://sourceforge.net/projects/kali-linux/files/Wordlist/)[**statistically-likely-usernames**](https://github.com/insidetrust/statistically-likely-usernames) - wordlists for creating statistically likely username lists.
+  ✅ ](https://sourceforge.net/projects/kali-linux/files/Wordlist/)[**statistically-likely-usernames**](https://github.com/insidetrust/statistically-likely-usernames) - wordlists for creating statistically likely username lists.
 
 ##### ▪️ Bounty platforms
-
 
 - [✅] [**YesWeHack**](https://www.yeswehack.com/) - bug bounty platform with infosec jobs.
 
@@ -1926,7 +1837,6 @@ template: page
 - [✅] [**Hacktrophy**](https://hacktrophy.com/en/) - bug bounty platform.
 
 ##### ▪️ Web Training Apps (local installation)
-
 
 - [✅] [**OWASP-VWAD**](https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project) - comprehensive and well maintained registry of all known vulnerable web applications.
 
@@ -1975,7 +1885,6 @@ template: page
 - [✅] [**KONTRA**](https://application.security/) - application security training (OWASP Top Web & Api).
 
 ##### ▪️ Labs (ethical hacking platforms/trainings/CTFs)
-
 
 - [✅] [**Offensive Security**](https://www.offensive-security.com/) - true performance-based penetration testing training for over a decade.
 
@@ -2071,13 +1980,11 @@ template: page
 
 ##### ▪️ CTF platforms
 
-
 - [✅] [**fbctf**](https://github.com/facebook/fbctf) - platform to host Capture the Flag competitions.
 
 - [✅] [**ctfscoreboard**](https://github.com/google/ctfscoreboard) - scoreboard for Capture The Flag competitions.
 
 ##### ▪️ Other resources
-
 
 - [✅] [**Bugcrowd University**](https://github.com/bugcrowd/bugcrowd_university) - open source education content for the researcher community.
 
@@ -2093,18 +2000,15 @@ template: page
 
 ##### ▪️ RSS Readers
 
-
 - [✅] [**Feedly**](https://feedly.com/) - organize, read and share what matters to you.
 
 - [✅] [**Inoreader**](https://www.inoreader.com/) - similar to feedly with a support for filtering what you fetch from rss.
 
 ##### ▪️ IRC Channels
 
-
 - [✅] [**#hackerspaces**](https://wiki.hackerspaces.org/IRC_Channel) - hackerspace IRC channels.
 
 ##### ▪️ Security
-
 
 - [✅] [**The Hacker News**](https://thehackernews.com/) - leading news source dedicated to promoting awareness for security experts and hackers.
 
@@ -2132,13 +2036,11 @@ template: page
 
 ##### ▪️ Other/All-in-one
 
-
 - [✅] [**Changelog**](https://changelog.com/) - is a community of hackers; news & podcasts for developers and hackers.
 
 #### Other Cheat Sheets [\[TOC\]](https://gist.github.com/bgoonz/be5c5be77169ef333b431bc37d331176#anger-table-of-contents)
 
 ###### Build your own DNS Servers
-
 
 - [✅] [**Unbound DNS Tutorial**](https://calomel.org/unbound_dns.html) - a validating, recursive, and caching DNS server.
 
@@ -2154,13 +2056,11 @@ template: page
 
 ###### Build your own Certificate Authority
 
-
 - [✅] [**OpenSSL Certificate Authority**](https://jamielinux.com/docs/openssl-certificate-authority/) - build your own certificate authority (CA) using the OpenSSL tools.
 
 - [✅] [**step-ca Certificate Authority**](https://github.com/smallstep/certificates) - build your own certificate authority (CA) using open source step-ca.
 
 ###### Build your own System/Virtual Machine
-
 
 - [✅] [**os-tutorial**](https://github.com/cfenollosa/os-tutorial) - how to create an OS from scratch.
 

@@ -12,25 +12,21 @@ One of the most interesting features is that once you’ve learned the syntax, y
 
 Let’s start by looking at some examples and explanations.
 
-**Anchors — ^ and $**
----------------------
+## **Anchors — ^ and $**
 
-**^The**        matches any string that **starts with** **The** \-> [**Try it!**](https://regex101.com/r/cO8lqs/2)**end$** matches a string that **ends with** **end****^The end$   exact string match** (starts and ends with **The end**)**roar** matches any string that **has the text roar in it**
+**^The** matches any string that **starts with** **The** \-> [**Try it!**](https://regex101.com/r/cO8lqs/2)**end$** matches a string that **ends with** **end\*\***^The end$ exact string match** (starts and ends with **The end**)**roar** matches any string that **has the text roar in it\*\*
 
-**Quantifiers — \* + ? and {}**
--------------------------------
+## **Quantifiers — \* + ? and {}**
 
-abc**\***        matches a string that has **ab followed by zero or more c** \-> [**Try it!**](https://regex101.com/r/cO8lqs/1)abc**+**        matches a string that has **ab followed by one or more c**abc**?**        matches a string that has **ab followed by zero or one c**abc**{2}**      matches a string that has **ab followed by 2 c**abc**{2,}**     matches a string that has **ab followed by 2 or more c**abc**{2,5}**    matches a string that has **ab followed by 2 up to 5 c**a**(bc)\*** matches a string that has **a followed by zero or more copies of the sequence bc**a**(bc){2,5}** matches a string that has **a followed by 2 up to 5 copies of the sequence bc**
+abc**\*** matches a string that has **ab followed by zero or more c** \-> [**Try it!**](https://regex101.com/r/cO8lqs/1)abc**+** matches a string that has **ab followed by one or more c**abc**?** matches a string that has **ab followed by zero or one c**abc**{2}** matches a string that has **ab followed by 2 c**abc**{2,}** matches a string that has **ab followed by 2 or more c**abc**{2,5}** matches a string that has **ab followed by 2 up to 5 c**a**(bc)\*** matches a string that has **a followed by zero or more copies of the sequence bc**a**(bc){2,5}** matches a string that has **a followed by 2 up to 5 copies of the sequence bc**
 
-OR operator — | or \[\]
------------------------
+## OR operator — | or \[\]
 
-**a(b|c)**     matches a string that has **a followed by b or c** _(and captures_ **_b or c_**_)_ **->** [**Try it!**](https://regex101.com/r/cO8lqs/3)**a\[bc\]**      same as previous, _but without capturing b or c_
+**a(b|c)** matches a string that has **a followed by b or c** _(and captures_ **_b or c_**_)_ **->** [**Try it!**](https://regex101.com/r/cO8lqs/3)**a\[bc\]** same as previous, _but without capturing b or c_
 
-Character classes — \\d \\w \\s and .
--------------------------------------
+## Character classes — \\d \\w \\s and .
 
-**\\d**         matches a **single character** that is a **digit** \-> [**Try it!**](https://regex101.com/r/cO8lqs/4)**\\w**         matches a **word character** (alphanumeric character plus underscore) -> [**Try it!**](https://regex101.com/r/cO8lqs/4)**\\s**         matches a **whitespace character** (includes tabs and line breaks)**.** matches **any character** \-> [**Try it!**](https://regex101.com/r/cO8lqs/5)
+**\\d** matches a **single character** that is a **digit** \-> [**Try it!**](https://regex101.com/r/cO8lqs/4)**\\w** matches a **word character** (alphanumeric character plus underscore) -> [**Try it!**](https://regex101.com/r/cO8lqs/4)**\\s** matches a **whitespace character** (includes tabs and line breaks)**.** matches **any character** \-> [**Try it!**](https://regex101.com/r/cO8lqs/5)
 
 Use the `.` operator carefully since often class or negated character class (which we’ll cover next) are faster and more precise.
 
@@ -38,7 +34,7 @@ Use the `.` operator carefully since often class or negated character class (whi
 
 For example, `\D` will perform the inverse match with respect to that obtained with `\d`.
 
-**\\D**         matches a **single non-digit character** \-> [**Try it!**](https://regex101.com/r/cO8lqs/6)
+**\\D** matches a **single non-digit character** \-> [**Try it!**](https://regex101.com/r/cO8lqs/6)
 
 In order to be taken literally, you must escape the characters `^.[$()|*+?{\`with a backslash `\` as they have special meaning.
 
@@ -46,16 +42,14 @@ In order to be taken literally, you must escape the characters `^.[$()|*+?{\`wit
 
 Notice that you can match also **non-printable characters** like tabs `\t`, new-lines `\n`, carriage returns `\r`.
 
-Flags
------
+## Flags
 
 We are learning how to construct a regex but forgetting a fundamental concept: **flags**.
 
 A regex usually comes within this form `**/**abc**/**`, where the search pattern is delimited by two slash characters `/`. At the end we can specify a flag with these values (we can also combine them each other):
 
-*   **g** (global) does not return after the first match, restarting the subsequent searches from the end of the previous match
-*   **m** (multi-line) when enabled `^` and `$` will match the start and end of a line, instead of the whole string
-*   **i** (insensitive) makes the whole expression case-insensitive (for instance `**/aBc/i**` would match `**AbC**`)
-
+- **g** (global) does not return after the first match, restarting the subsequent searches from the end of the previous match
+- **m** (multi-line) when enabled `^` and `$` will match the start and end of a line, instead of the whole string
+- **i** (insensitive) makes the whole expression case-insensitive (for instance `**/aBc/i**` would match `**AbC**`)
 
 [Source](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)

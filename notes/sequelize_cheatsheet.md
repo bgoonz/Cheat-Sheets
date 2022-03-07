@@ -2,13 +2,14 @@
 
 ## Command Line
 
-Sequelize provides utilities for generating migrations, models, and seed files.  They are exposed through the `sequelize-cli` command.
+Sequelize provides utilities for generating migrations, models, and seed files. They are exposed through the `sequelize-cli` command.
 
 ### Init Project
 
 ```bash
 $ npx sequelize-cli init
 ```
+
 You must create a database user, and update the `config/config.json` file to match your database settings to complete the initialization process.
 
 ### Create Database
@@ -85,13 +86,13 @@ $ npx sequelize-cli db:seed:undo:all
 `student.js`
 
 ```js
-    Student.hasOne(models.Scholarship, { foreignKey: 'studentId' });
+Student.hasOne(models.Scholarship, { foreignKey: "studentId" });
 ```
 
 `scholarship.js`
 
 ```js
-    Scholarship.belongsTo(models.Student, { foreignKey: 'studentId' });
+Scholarship.belongsTo(models.Student, { foreignKey: "studentId" });
 ```
 
 ### One to Many between Student and Class
@@ -99,13 +100,13 @@ $ npx sequelize-cli db:seed:undo:all
 `student.js`
 
 ```js
-    Student.belongsTo(models.Class, { foreignKey: 'classId' });
+Student.belongsTo(models.Class, { foreignKey: "classId" });
 ```
 
 `class.js`
 
 ```js
-    Class.hasMany(models.Student, { foreignKey: 'classId' });
+Class.hasMany(models.Student, { foreignKey: "classId" });
 ```
 
 ### Many to Many between Student and Lesson through StudentLessons table
@@ -113,25 +114,25 @@ $ npx sequelize-cli db:seed:undo:all
 `student.js`
 
 ```js
-    const columnMapping = {
-        through: 'StudentLesson', // This is the model name referencing the join table.
-        otherKey: 'lessonId',
-        foreignKey: 'studentId'
-    }
+const columnMapping = {
+  through: "StudentLesson", // This is the model name referencing the join table.
+  otherKey: "lessonId",
+  foreignKey: "studentId",
+};
 
-    Student.belongsToMany(models.Lesson, columnMapping);
+Student.belongsToMany(models.Lesson, columnMapping);
 ```
 
 `lesson.js`
 
 ```js
-    const columnMapping = {
-        through: 'StudentLesson', // This is the model name referencing the join table.
-        otherKey: 'studentId',
-        foreignKey: 'lessonId'
-    }
+const columnMapping = {
+  through: "StudentLesson", // This is the model name referencing the join table.
+  otherKey: "studentId",
+  foreignKey: "lessonId",
+};
 
-    Lesson.belongsToMany(models.Student, columnMapping);
+Lesson.belongsToMany(models.Student, columnMapping);
 ```
 
 ## Query Format
@@ -163,9 +164,7 @@ $ npx sequelize-cli db:seed:undo:all
 });
 ```
 
-
 ### findByPk
-
 
 ```js
 <Model>.findByPk(<primary_key>, {
@@ -205,4 +204,3 @@ const Op = Sequelize.Op
 [Op.notIRegexp]: '^[h|a|t]' // !~* '^[h|a|t]' (PG only)
 [Op.like]: { [Op.any]: ['cat', 'hat']}
 ```
-

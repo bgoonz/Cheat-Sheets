@@ -49,5 +49,6 @@ filesTopCopy.forEach(({ src, dest, hideHeader }) => {
   } else {
     copyFile(src, dest);
   }
-});x
+});
+x;
 ```

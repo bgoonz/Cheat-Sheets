@@ -1,24 +1,27 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Ansible modules
 category: Ansible
 layout: 2017/sheet
 prism_languages: [yaml]
 updated: 2017-10-03
+
 ---
 
 {% raw %}

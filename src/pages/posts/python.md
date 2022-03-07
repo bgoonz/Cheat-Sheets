@@ -3,7 +3,7 @@ title: Python Cheat Sheet
 excerpt: >-
   Python is an interpreted, high-level and general-purpose, dynamically typed
   programming language
-date: '2018-01-09'
+date: "2018-01-09"
 thumb_img_path: images/enthusiastic-oregano.png
 thumb_img_alt: Hikers on the trail
 content_img_path: images/6.jpg
@@ -14,30 +14,30 @@ seo:
     Python is an interpreted, high-level and general-purpose, dynamically typed
     programming language
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Python Cheat Sheet
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         Python is an interpreted, high-level and general-purpose, dynamically
         typed programming language
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/6.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Python Cheat Sheet
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: >-
         Python is an interpreted, high-level and general-purpose, dynamically
         typed programming language
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/6.jpg
       relativeUrl: true
 template: post

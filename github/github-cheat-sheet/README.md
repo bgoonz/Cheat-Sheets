@@ -6,7 +6,7 @@
 >
 > A version control system (VCS) allows you to manage a collection of files and gives access to different versions of these files.
 
-***
+---
 
 > This tutorial explains the usage of the distributed version control system Git via the command line. The examples were done on Linux (Ubuntu), but should also work on other operating systems like Microsoft Windows.
 
@@ -18,7 +18,7 @@ A version control system (VCS) allows you to manage a collection of files and gi
 
 The VCS allows you to capture the content and structure of your files at a certain point in time. You can use the VGS to switching between these versions and you can work on different versions of these files in parallel. The different versions are stored in storage system which is typically called a _repository_. The process of creating different versions (snapshots) in the repository is depicted in the following graphic.
 
-![Creating snapshots](https://www.vogella.com/tutorials/Git/img/vcs\_state10.png)
+![Creating snapshots](https://www.vogella.com/tutorials/Git/img/vcs_state10.png)
 
 In this example, your repository contains two versions, one with three files and another version with four files, two one them in the same state as in the first version, one modified one and another new one.
 
@@ -30,7 +30,7 @@ A centralized version control system provides a server software component which 
 
 Both approaches have the drawback that they have one single point of failure. In a localized version control systems it is the individual computer and in a centralized version control systems it is the server machine. Both system makes it also harder to work in parallel on different features. To remove the limitations of local and centralized version control systems, distributed version control system have been created.
 
-#### [1.2. Distributed version control systems](https://www.vogella.com/tutorials/Git/article.html#dvcs\_definition)
+#### [1.2. Distributed version control systems](https://www.vogella.com/tutorials/Git/article.html#dvcs_definition)
 
 In a distributed version control system each user has a complete local copy of a repository on his individual computer. The user can copy an existing repository. This copying process is typically called _cloning_ and the resulting repository can be referred to as a _clone_.
 
@@ -52,14 +52,14 @@ Git originates from the Linux kernel development and was founded in 2005 by Linu
 
 The core of Git was originally written in the programming language _C_, but Git has also been re-implemented in other languages, e.g., Java, Ruby and Python.
 
-#### [2.2. Git repositories and working trees](https://www.vogella.com/tutorials/Git/article.html#gitdefintion\_localrepositories)
+#### [2.2. Git repositories and working trees](https://www.vogella.com/tutorials/Git/article.html#gitdefintion_localrepositories)
 
 A Git repository manages a collection of files in a certain directory. A Git repository is file based, i.e., all versions of the managed files are stored on the file system.
 
 A Git repository can be designed to be used on a server or for an user:
 
-* _bare repositories_ are supposed to be used on a server for sharing changes coming from different developers. Such repositories do not allow the user to modify locally files and to create new versions for the repository based on these modifications.
-* _non-bare repositories_ target the user. They allow you to create new changes through modification of files and to create new versions in the repository. This is the default type which is created if you do not specify any parameter during the clone operation.
+- _bare repositories_ are supposed to be used on a server for sharing changes coming from different developers. Such repositories do not allow the user to modify locally files and to create new versions for the repository based on these modifications.
+- _non-bare repositories_ target the user. They allow you to create new changes through modification of files and to create new versions in the repository. This is the default type which is created if you do not specify any parameter during the clone operation.
 
 A _local non-bare Git repository_ is typically called _local repository_.
 
@@ -75,8 +75,8 @@ After doing changes in the working tree, the user can capture new versions of th
 
 After modifying files in your _working tree_ you need to perform two steps to add them to your local repository.
 
-* mark the desired file changes as relevant for the next commit; this operation is called `staging`
-* instruct Git to create a new version of the managed files via the commit operation, the new created version is called _commit_.
+- mark the desired file changes as relevant for the next commit; this operation is called `staging`
+- instruct Git to create a new version of the managed files via the commit operation, the new created version is called _commit_.
 
 This process is depicted in the following graphic.
 
@@ -86,7 +86,7 @@ During the stage operation, copies of the specified files are added to a persist
 
 The _commit_ operation creates a new persistent snapshot called _commit object_ (short form: _commit_) of the managed files in the Git repository. A commit object, like all objects in Git, is immutable.
 
-#### [2.4. Alternative versions of files with branches](https://www.vogella.com/tutorials/Git/article.html#gitdefinition\_branching)
+#### [2.4. Alternative versions of files with branches](https://www.vogella.com/tutorials/Git/article.html#gitdefinition_branching)
 
 Git allows you to on different versions of your files in parallel. For this, Git uses _branches_. A branch allows the user to switch between these versions so that he can work on different changes independently from each other.
 
@@ -162,7 +162,7 @@ The _working tree_ contains the set of working files for the repository. You can
 
 Performing Git operations can be done via the command line or via multiple user interface tools.
 
-#### [3.1. The Git command line tooling](https://www.vogella.com/tutorials/Git/article.html#git\_tools\_commmandline)
+#### [3.1. The Git command line tooling](https://www.vogella.com/tutorials/Git/article.html#git_tools_commmandline)
 
 The most common tooling for Git is provided as command line tooling via the `git` command. The examples in this tutorial use the Git command line tooling.
 
@@ -206,19 +206,19 @@ See [GUI Clients](http://git-scm.com/downloads/guis) for an overview of other av
 
 ### [5. Git configuration](https://www.vogella.com/tutorials/Git/article.html#setup)
 
-#### [5.1. Git configuration levels](https://www.vogella.com/tutorials/Git/article.html#setup\_configurationlevels)
+#### [5.1. Git configuration levels](https://www.vogella.com/tutorials/Git/article.html#setup_configurationlevels)
 
 The `git config` command allows you to configure your Git settings. These settings can be system wide, user or repository specific.
 
 A more specific setting overwrites values in the previous level. A setting for the repository overrides the user setting and a user setting overrides a system wide setting.
 
-[**5.1.1. Git system-wide configuration**](https://www.vogella.com/tutorials/Git/article.html#setup\_systemwideconfiguration)
+[**5.1.1. Git system-wide configuration**](https://www.vogella.com/tutorials/Git/article.html#setup_systemwideconfiguration)
 
 You can provide a system wide configuration for your Git settings. A system wide configuration is not very common. Most settings are user specific or repository specific as described in the next chapters.
 
 On a Unix based system, Git uses the `/etc/gitconfig` file for this system-wide configuration. To set this up, ensure you have sufficient rights, i.e. root rights, in your OS and use the `--system` option for the `git config` command.
 
-[**5.1.2. Git user configuration**](https://www.vogella.com/tutorials/Git/article.html#setup\_userconfiguration)
+[**5.1.2. Git user configuration**](https://www.vogella.com/tutorials/Git/article.html#setup_userconfiguration)
 
 Git allows you to store user settings in the `.gitconfig` file located in the user home directory. This is also called the _global_ Git configuration.
 
@@ -226,11 +226,11 @@ For example Git stores the committer and author of a change in each commit. This
 
 In each Git repository you can also configure the settings for this repository. User configuration is done if you include the `--global` option in the `git config` command.
 
-[**5.1.3. Repository specific configuration**](https://www.vogella.com/tutorials/Git/article.html#setup\_configuration)
+[**5.1.3. Repository specific configuration**](https://www.vogella.com/tutorials/Git/article.html#setup_configuration)
 
 You can also store repository specific settings in the `.git/config` file of a repository. Use the `--local` or use no flag at all. If neither the `--system` not the `--global` parameter is used, the setting is specific for the current Git repository.
 
-#### [5.2. User credential configuration](https://www.vogella.com/tutorials/Git/article.html#gitsetup\_user)
+#### [5.2. User credential configuration](https://www.vogella.com/tutorials/Git/article.html#gitsetup_user)
 
 You have to configure at least your user and email address to be able to commit to a Git repository because this information is stored in each commit.
 
@@ -243,7 +243,7 @@ git config --global user.name "Firstname Lastname"
 git config --global user.email "your.email@example.org"
 ```
 
-#### [5.3. Push configuration](https://www.vogella.com/tutorials/Git/article.html#gitsetup\_pushconfiguration)
+#### [5.3. Push configuration](https://www.vogella.com/tutorials/Git/article.html#gitsetup_pushconfiguration)
 
 If your are using Git in a version below 2.0 you should also execute the following command.
 
@@ -267,7 +267,7 @@ This setting helps avoiding merge commits during the pull operation which synchr
 
 #### [5.5. Allow rebasing with uncommited changes](https://www.vogella.com/tutorials/Git/article.html#allow-rebasing-with-uncommited-changes)
 
-If you want Git to automatically save your uncommited changes before a rebase you can activate autoStash. After the rebase is done your changes will get reapplied. For an explanation of `git stash` please see [Stashing changes in Git](https://www.vogella.com/tutorials/Git/article.html#stash\_usage).
+If you want Git to automatically save your uncommited changes before a rebase you can activate autoStash. After the rebase is done your changes will get reapplied. For an explanation of `git stash` please see [Stashing changes in Git](https://www.vogella.com/tutorials/Git/article.html#stash_usage).
 
 ```
 git config --global rebase.autoStash true
@@ -275,7 +275,7 @@ git config --global rebase.autoStash true
 
 Before Git v2.6 `git pull --rebase` didn't respected this setting.
 
-#### [5.6. Color Highlighting](https://www.vogella.com/tutorials/Git/article.html#setup\_highlighting)
+#### [5.6. Color Highlighting](https://www.vogella.com/tutorials/Git/article.html#setup_highlighting)
 
 The following commands enables color highlighting for Git in the console.
 
@@ -283,7 +283,7 @@ The following commands enables color highlighting for Git in the console.
 git config --global color.ui auto
 ```
 
-#### [5.7. Setting the default editor](https://www.vogella.com/tutorials/Git/article.html#setup\_editor)
+#### [5.7. Setting the default editor](https://www.vogella.com/tutorials/Git/article.html#setup_editor)
 
 By default Git uses the system default editor which is taken from the _VISUAL_ or _EDITOR_ environment variables if set. You can configure a different one via the following setting.
 
@@ -292,7 +292,7 @@ By default Git uses the system default editor which is taken from the _VISUAL_ o
 git config --global core.editor vim
 ```
 
-#### [5.8. Setting the default merge tool](https://www.vogella.com/tutorials/Git/article.html#setup\_mergetool)
+#### [5.8. Setting the default merge tool](https://www.vogella.com/tutorials/Git/article.html#setup_mergetool)
 
 File conflicts might occur in Git during an operation which combines different versions of the same files. In this case the user can directly edit the file to resolve the conflict.
 
@@ -308,7 +308,7 @@ git config --global merge.tool kdiff3
 sudo apt-get install kdiff3
 ```
 
-#### [5.10. Query Git settings](https://www.vogella.com/tutorials/Git/article.html#setup\_seesettings)
+#### [5.10. Query Git settings](https://www.vogella.com/tutorials/Git/article.html#setup_seesettings)
 
 To query your Git settings, execute the following command:
 
@@ -348,7 +348,7 @@ This is useful if you want to add, for example, auto-generated binaries, but you
 
 It is good practice to commit the local `.gitignore` file into the Git repository so that everyone who clones this repository have it.
 
-#### [6.2. Stop tracking files based on the .gitignore file](https://www.vogella.com/tutorials/Git/article.html#gitignore\_untrack)
+#### [6.2. Stop tracking files based on the .gitignore file](https://www.vogella.com/tutorials/Git/article.html#gitignore_untrack)
 
 Files that are tracked by Git are not automatically removed if you add them to a `.gitignore` file. Git never ignores files which are already tracked, so changes in the `.gitignore` file only affect new files. If you want to ignore files which are already tracked you need to explicitly remove them.
 
@@ -361,7 +361,7 @@ git rm -r --cached .metadata
 git rm --cached doNotTrackFile.txt
 ```
 
-Adding a file to the `.gitignore` file does not remove the file from the repository history. If the file should also be removed from the history, have a look at the `git filter-branch` command which allows you to rewrite the commit history. See [Using the git filter branch command (filter-branch)](https://www.vogella.com/tutorials/Git/article.html#filterbranch\_definition) for details.
+Adding a file to the `.gitignore` file does not remove the file from the repository history. If the file should also be removed from the history, have a look at the `git filter-branch` command which allows you to rewrite the commit history. See [Using the git filter branch command (filter-branch)](https://www.vogella.com/tutorials/Git/article.html#filterbranch_definition) for details.
 
 #### [6.3. Global (cross-repository) .gitignore settings](https://www.vogella.com/tutorials/Git/article.html#global-cross-repository-gitignore-settings)
 
@@ -395,13 +395,13 @@ You can also create local per-repository rules by editing the `.git/info/exclude
 
 This allows you to exclude, for example, locally generated files.
 
-#### [6.5. Tracking empty directories with Git](https://www.vogella.com/tutorials/Git/article.html#tracking\_empty\_directories)
+#### [6.5. Tracking empty directories with Git](https://www.vogella.com/tutorials/Git/article.html#tracking_empty_directories)
 
 Git ignores empty directories, i.e., it does not put them under version control. If you want to track an empty directory in your Git repository, it is a good practice to put a file called `.gitignore` in the directory. As the directory now contains a file, Git includes it into its version control mechanism.
 
 The file could be called anything. Some people suggest to call the file `.gitkeep`. One problem with this approach is that `.gitkeep` is unlikely to be ignored by build systems. This may result in the `.gitkeep` file being copied to the output repository, which is typically not desired.
 
-### [7. Configuration for Git usage via the command line](https://www.vogella.com/tutorials/Git/article.html#exercise\_gitsetup)
+### [7. Configuration for Git usage via the command line](https://www.vogella.com/tutorials/Git/article.html#exercise_gitsetup)
 
 To use Git you can to configure your user name and the email for Git usage.
 
@@ -434,7 +434,7 @@ In this exercise, you learn how to use the Git command line to work with Git. To
 
 Open a command shell for the operations. Some commands are Linux specific, e.g., appending to a file or creating a directory. Substitute these commands with the commands of your operating system. The comments (marked with #) before the commands explain the specific actions.
 
-#### [8.1. Create a directory](https://www.vogella.com/tutorials/Git/article.html#firstgit\_directory)
+#### [8.1. Create a directory](https://www.vogella.com/tutorials/Git/article.html#firstgit_directory)
 
 The following commands create an empty directory which is used later in this exercise to contain the working tree and the Git repository.
 
@@ -450,7 +450,7 @@ cd repo01
 mkdir datafiles
 ```
 
-#### [8.2. Create a new Git repository](https://www.vogella.com/tutorials/Git/article.html#firstgit\_repository\_creation)
+#### [8.2. Create a new Git repository](https://www.vogella.com/tutorials/Git/article.html#firstgit_repository_creation)
 
 You now create a new local repository. Use the `git init` command to create a Git repository in the current directory. Git does not care whether you start with an empty directory or if it contains already files.
 
@@ -462,7 +462,7 @@ git init
 
 All files inside the repository folder, excluding the `.git` folder, are the _working tree_.
 
-#### [8.3. Create new content](https://www.vogella.com/tutorials/Git/article.html#firstgit\_content)
+#### [8.3. Create new content](https://www.vogella.com/tutorials/Git/article.html#firstgit_content)
 
 Create a few new files in your directory. For example, the following commands create a few files in a bash shell.
 
@@ -478,7 +478,7 @@ echo "bar" > test02
 echo "foo" > test03
 ```
 
-#### [8.4. See the current status of your repository](https://www.vogella.com/tutorials/Git/article.html#firstgit\_repostatus)
+#### [8.4. See the current status of your repository](https://www.vogella.com/tutorials/Git/article.html#firstgit_repostatus)
 
 View the status of your repository via the following command.
 
@@ -500,7 +500,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-#### [8.5. Add changes to the staging area](https://www.vogella.com/tutorials/Git/article.html#firstgit\_repoadd)
+#### [8.5. Add changes to the staging area](https://www.vogella.com/tutorials/Git/article.html#firstgit_repoadd)
 
 Inform git that all new files should be added to the Git repository with the `git stage` command.
 
@@ -525,7 +525,7 @@ Changes to be committed:
     new file:   test03
 ```
 
-#### [8.6. Change files that are staged](https://www.vogella.com/tutorials/Git/article.html#firstgit\_changefiles)
+#### [8.6. Change files that are staged](https://www.vogella.com/tutorials/Git/article.html#firstgit_changefiles)
 
 Adjust an existing file.
 
@@ -579,7 +579,7 @@ Changes to be committed:
     new file:   test03
 ```
 
-#### [8.7. Commit staged changes to the repository](https://www.vogella.com/tutorials/Git/article.html#firstgit\_repocommit)
+#### [8.7. Commit staged changes to the repository](https://www.vogella.com/tutorials/Git/article.html#firstgit_repocommit)
 
 Commit the staged changes to your Git repository.
 
@@ -613,7 +613,7 @@ Date:   Mon Feb 8 21:53:12 2021 +0100
 
 Use the `git show` command to see the changes of a commit. If you specify a commit reference as third parameter, this is used to determine the changes, otherwise the _HEAD_ reference is used.
 
-#### [8.11. Remove files](https://www.vogella.com/tutorials/Git/article.html#firstgit\_deletefile)
+#### [8.11. Remove files](https://www.vogella.com/tutorials/Git/article.html#firstgit_deletefile)
 
 Delete a file. Stage the deletion for the next commit with the `git stage .` command.
 
@@ -627,7 +627,7 @@ git commit -m "Removes the test03 file"
 
 Alternatively you can use the `git rm` command to delete the file from your working tree and record the deletion of the file in the staging area.
 
-#### [8.12. Revert changes in files in the working tree](https://www.vogella.com/tutorials/Git/article.html#firstgit\_checkout)
+#### [8.12. Revert changes in files in the working tree](https://www.vogella.com/tutorials/Git/article.html#firstgit_checkout)
 
 Use the `git reset` command (or `git checkout` in older Git command line tools) to reset a tracked file (a file that was once staged or committed) to its latest staged or commit state.
 
@@ -673,7 +673,7 @@ nothing to commit, working directory clean
 
 Use this command carefully. The `git reset` command deletes the changes of tracked files (file known to Git) in the working tree and it is not possible to restore this deletion via Git.
 
-#### [8.13. Correct the changes of the commit with git amend](https://www.vogella.com/tutorials/Git/article.html#firstgit\_amend)
+#### [8.13. Correct the changes of the commit with git amend](https://www.vogella.com/tutorials/Git/article.html#firstgit_amend)
 
 The `git commit --amend` command makes it possible to rework the changes of the last commit. It creates a new commit with the adjusted changes.
 
@@ -726,7 +726,7 @@ git commit -m "Adds .gitignore file"
 
 ### [9. Remote repositories](https://www.vogella.com/tutorials/Git/article.html#remotes)
 
-#### [9.1. What are remotes?](https://www.vogella.com/tutorials/Git/article.html#remotes\_definition)
+#### [9.1. What are remotes?](https://www.vogella.com/tutorials/Git/article.html#remotes_definition)
 
 Git allows that you can synchronize your repository with more than one remote repository.
 
@@ -738,11 +738,11 @@ Think of _remotes_ as shorter bookmarks for repositories. You can always connect
 
 It is possible that users connect their individual repositories directly, but a typically Git workflow involves one or more remote repositories which are used to synchronize the individual repository. Typically the remote repository which is used for synchronization is located on a server which is always available.
 
-![Remote Git repositories](https://www.vogella.com/tutorials/Git/img/git\_remoterepo10.png)
+![Remote Git repositories](https://www.vogella.com/tutorials/Git/img/git_remoterepo10.png)
 
 A remote repository can also be hosted in the local file system.
 
-#### [9.2. Bare repositories](https://www.vogella.com/tutorials/Git/article.html#bareremotes\_definition)
+#### [9.2. Bare repositories](https://www.vogella.com/tutorials/Git/article.html#bareremotes_definition)
 
 A remote repository on a server typically does not require a _working tree_. A Git repository without a _working tree_ is called a _bare repository_. You can create such a repository with the `--bare` option. The command to create a new empty bare remote repository is displayed below.
 
@@ -755,7 +755,7 @@ By convention the name of a bare repository should end with the `.git` extension
 
 To create a bare Git repository in the Internet you would, for example, connect to your server via the SSH protocol or you use some Git hosting platform, e.g., GitHub.com.
 
-#### [9.3. Convert a Git repository to a bare repository](https://www.vogella.com/tutorials/Git/article.html#bareremotes\_convert)
+#### [9.3. Convert a Git repository to a bare repository](https://www.vogella.com/tutorials/Git/article.html#bareremotes_convert)
 
 Converting a normal Git repository to a bare repository is not directly support by Git.
 
@@ -763,7 +763,7 @@ You can convert it manually by moving the content of the `.git` folder into the 
 
 As this is officially not supported, you should prefer cloning a repository with the `--bare` option.
 
-#### [9.4. Cloning a repository](https://www.vogella.com/tutorials/Git/article.html#remotes\_cloneoperation)
+#### [9.4. Cloning a repository](https://www.vogella.com/tutorials/Git/article.html#remotes_cloneoperation)
 
 The `git clone` command copies an existing Git repository. This copy is a working Git repository with the complete history of the cloned repository. It can be used completely isolated from the original repository.
 
@@ -797,20 +797,20 @@ Alternatively you could clone the same repository via the `http` protocol.
 git clone http://github.com/vogella/gitbook.git
 ```
 
-#### [9.5. Adding remote repositories](https://www.vogella.com/tutorials/Git/article.html#remote\_add)
+#### [9.5. Adding remote repositories](https://www.vogella.com/tutorials/Git/article.html#remote_add)
 
 If you clone a repository, Git implicitly creates a _remote_ named _origin_ by default. The _origin_ _remote_ links back to the cloned repository.
 
 You can push changes to this repository via `git push` as Git uses `origin` as default. Of course, pushing to a remote repository requires write access to this repository.
 
-You can add more _remotes_ via the `git remote add [name] [URL_to_Git_repo]` command. For example, if you cloned the repository from above via the Git protocol, you could add a new remote with the name _github\_http_ for the http protocol via the following command.
+You can add more _remotes_ via the `git remote add [name] [URL_to_Git_repo]` command. For example, if you cloned the repository from above via the Git protocol, you could add a new remote with the name _github_http_ for the http protocol via the following command.
 
 ```
 # add the HTTPS protocol
 git remote add github_http https://vogella@github.com/vogella/gitbook.git
 ```
 
-#### [9.6. Rename remote repositories](https://www.vogella.com/tutorials/Git/article.html#remote\_rename)
+#### [9.6. Rename remote repositories](https://www.vogella.com/tutorials/Git/article.html#remote_rename)
 
 To rename an existing remote repository use the `git remote rename` command. This is demonstrated by the following listing.
 
@@ -822,7 +822,7 @@ git remote rename github_http github_testing
 
 If you create a Git repository from scratch with the `git init` command, the _origin_ remote is not created automatically.
 
-#### [9.7. Remote operations via HTTP](https://www.vogella.com/tutorials/Git/article.html#remote\_httpprotocol)
+#### [9.7. Remote operations via HTTP](https://www.vogella.com/tutorials/Git/article.html#remote_httpprotocol)
 
 HTTP as Git protocol proxy support in Git It is possible to use the HTTP protocol to clone Git repositories. This is especially helpful if your firewall blocks everything except HTTP or HTTPS.
 
@@ -832,7 +832,7 @@ git clone http://git.eclipse.org/gitroot/platform/eclipse.platform.ui.git
 
 For secured SSL encrypted communication you should use the SSH or HTTPS protocol in order to guarantee security.
 
-#### [9.8. Using a proxy](https://www.vogella.com/tutorials/Git/article.html#remote\_httpproxy)
+#### [9.8. Using a proxy](https://www.vogella.com/tutorials/Git/article.html#remote_httpproxy)
 
 Git also provides support for HTTP access via a proxy server. The following Git command could, for example, clone a repository via HTTP and a proxy. You can either set the proxy variable in general for all applications or set it only for Git.
 
@@ -874,7 +874,7 @@ You created a new Git repository from scratch earlier. Use the following command
 git remote add origin ../remote-repository.git
 ```
 
-#### [9.10. Synchronizing with remote repositories](https://www.vogella.com/tutorials/Git/article.html#remotes\_remote\_synchronize)
+#### [9.10. Synchronizing with remote repositories](https://www.vogella.com/tutorials/Git/article.html#remotes_remote_synchronize)
 
 You can synchronize your local Git repository with remote repositories. These commands are covered in detail in later sections but the following command demonstrates how you can send changes to your remote repository.
 
@@ -891,7 +891,7 @@ git commit -a -m "This is a test for the new remote origin"
 git push origin
 ```
 
-#### [9.11. Show the existing remotes](https://www.vogella.com/tutorials/Git/article.html#remotes\_showremote)
+#### [9.11. Show the existing remotes](https://www.vogella.com/tutorials/Git/article.html#remotes_showremote)
 
 To see the existing definitions of the remote repositories, use the following command.
 
@@ -910,25 +910,25 @@ git remote
 git remote -v
 ```
 
-#### [9.12. Push changes to another repository](https://www.vogella.com/tutorials/Git/article.html#cloneremotes\_push)
+#### [9.12. Push changes to another repository](https://www.vogella.com/tutorials/Git/article.html#cloneremotes_push)
 
 The `git push` command allows you to send data to other repositories. By default it sends data from your current branch to the same branch of the remote repository.
 
 By default you can only push to bare repositories (repositories without working tree). You can aslo only push a change to a remote repository which results in a fast-forward merge.
 
-#### [9.13. Pull changes from a remote repository](https://www.vogella.com/tutorials/Git/article.html#cloneremotes\_pull)
+#### [9.13. Pull changes from a remote repository](https://www.vogella.com/tutorials/Git/article.html#cloneremotes_pull)
 
 The `git pull` command allows you to get the latest changes from another repository for the current branch.
 
 The `git pull` command is actually a shortcut for `git fetch` followed by the `git merge` or the `git rebase` command depending on your configuration. You configured your Git repository so that `git pull` is a fetch followed by a rebase.
 
-### [10. Exercise: Working with a (local) remote repository](https://www.vogella.com/tutorials/Git/article.html#exercise\_workingwithremotes)
+### [10. Exercise: Working with a (local) remote repository](https://www.vogella.com/tutorials/Git/article.html#exercise_workingwithremotes)
 
 You now create a local bare repository based on your existing Git repository. In order to simplify the examples, the Git repository is hosted locally in the filesystem and not on a server in the Internet.
 
 Afterwards you pull from and push to your bare repository to synchronize changes between your repositories.
 
-#### [10.1. Create a bare Git repository via the clone operation](https://www.vogella.com/tutorials/Git/article.html#remotes\_setupexercise)
+#### [10.1. Create a bare Git repository via the clone operation](https://www.vogella.com/tutorials/Git/article.html#remotes_setupexercise)
 
 Execute the following commands to create a bare repository based on your existing Git repository.
 
@@ -946,7 +946,7 @@ git clone --bare . ../remote-repository.git
 ls ~/remote-repository.git
 ```
 
-#### [10.2. Exercise: Clone your bare repository](https://www.vogella.com/tutorials/Git/article.html#remotes\_remoteadd)
+#### [10.2. Exercise: Clone your bare repository](https://www.vogella.com/tutorials/Git/article.html#remotes_remoteadd)
 
 Clone your bare repository and checkout a working tree in a new directory via the following commands.
 
@@ -962,7 +962,7 @@ cd ~/repo02
 git clone ../remote-repository.git .
 ```
 
-#### [10.3. Exercise: Using the push command](https://www.vogella.com/tutorials/Git/article.html#exercise\_cloneremotes\_push)
+#### [10.3. Exercise: Using the push command](https://www.vogella.com/tutorials/Git/article.html#exercise_cloneremotes_push)
 
 Make some changes in one of your non-bare local repositories and push them to your bare repository via the following commands.
 
@@ -982,7 +982,7 @@ git commit -a -m "Some changes"
 git push ../remote-repository.git
 ```
 
-#### [10.4. Exercise: Using the pull command](https://www.vogella.com/tutorials/Git/article.html#exercise\_cloneremotes\_pull)
+#### [10.4. Exercise: Using the pull command](https://www.vogella.com/tutorials/Git/article.html#exercise_cloneremotes_pull)
 
 To test the `git pull` in your example Git repositories, switch to other non-bare local repository. Pull in the recent changes from the remote repository. Afterwards make some changes and push them again to your remote repository.
 
@@ -1018,7 +1018,7 @@ git status
 
 ### [11. Using Branches](https://www.vogella.com/tutorials/Git/article.html#using-branches)
 
-#### [11.1. What are branches?](https://www.vogella.com/tutorials/Git/article.html#gitbranch\_def)
+#### [11.1. What are branches?](https://www.vogella.com/tutorials/Git/article.html#gitbranch_def)
 
 Git allows you to create _branches_, i.e. named pointers to commits. You can work on different branches independently from each other. The default branch is most often called _master_.
 
@@ -1028,7 +1028,7 @@ If you decide to work on a branch, you _checkout_ this branch. This means that G
 
 _HEAD_ is a symbolic reference usually pointing to the branch which is currently checked out.
 
-#### [11.2. List available branches](https://www.vogella.com/tutorials/Git/article.html#gitbranch\_listbranches)
+#### [11.2. List available branches](https://www.vogella.com/tutorials/Git/article.html#gitbranch_listbranches)
 
 The `git branch` command lists all local branches. The currently active branch is marked with `*`.
 
@@ -1053,7 +1053,7 @@ In order to list branches in a remote repository use the `git branch -r` command
 git branch -r
 ```
 
-#### [11.3. Create new branch](https://www.vogella.com/tutorials/Git/article.html#gitbranch\_createnewbranch)
+#### [11.3. Create new branch](https://www.vogella.com/tutorials/Git/article.html#gitbranch_createnewbranch)
 
 You can create a new branch via the `git branch [newname]` command. This command allows to specify the commit (commit id, tag, remote or local branch) to which the branch pointer original points. If not specified, the commit to which the HEAD reference points is used to create the new branch.
 
@@ -1063,7 +1063,7 @@ You can create a new branch via the `git branch [newname]` command. This command
 git branch testing
 ```
 
-#### [11.4. Checkout branch](https://www.vogella.com/tutorials/Git/article.html#gitbranch\_checkout)
+#### [11.4. Checkout branch](https://www.vogella.com/tutorials/Git/article.html#gitbranch_checkout)
 
 To start working in a branch you have to _checkout_ the branch. If you _checkout_ a branch, the HEAD pointer moves to the last commit in this branch and the files in the working tree are set to the state of this commit.
 
@@ -1096,7 +1096,7 @@ git checkout -b bugreport12
 git checkout -b mybranch master~1
 ```
 
-#### [11.5. Rename a branch](https://www.vogella.com/tutorials/Git/article.html#git\_rename\_branch)
+#### [11.5. Rename a branch](https://www.vogella.com/tutorials/Git/article.html#git_rename_branch)
 
 Renaming a branch can be done with the following command.
 
@@ -1153,11 +1153,11 @@ git pull
 
 This way you can decide which branches you want to push to other repositories and which should be local branches.
 
-#### [11.8. Switching branches with untracked files](https://www.vogella.com/tutorials/Git/article.html#gitbranch\_untrackedfiles)
+#### [11.8. Switching branches with untracked files](https://www.vogella.com/tutorials/Git/article.html#gitbranch_untrackedfiles)
 
 Untracked files (never added to the staging area) are unrelated to any branch. They exist only in the working tree and are ignored by Git until they are committed to the Git repository. This allows you to create a branch for unstaged and uncommitted changes at any point in time.
 
-#### [11.9. Switching branches with uncommitted changes](https://www.vogella.com/tutorials/Git/article.html#gitbranch\_dirtyfiles)
+#### [11.9. Switching branches with uncommitted changes](https://www.vogella.com/tutorials/Git/article.html#gitbranch_dirtyfiles)
 
 Similar to untracked files you can switch branches with unstaged or staged modifications which are not yet committed.
 
@@ -1178,7 +1178,7 @@ To see the difference between two branches you can use the following command.
 git diff master your_branch
 ```
 
-You can use commit ranges. For example, if you compare a branch called _your\_branch_ with the _master_ branch the following command shows the changes in _your\_branch_ and _master_ since these branches diverged.
+You can use commit ranges. For example, if you compare a branch called _your_branch_ with the _master_ branch the following command shows the changes in _your_branch_ and _master_ since these branches diverged.
 
 ```
 # shows the differences in your
@@ -1196,9 +1196,9 @@ Git supports two different types of tags, lightweight and annotated tags.
 
 A _lightweight tag_ is a named pointer to a commit, without any additional information about the tag. An _annotated tag_ contains additional meta data:
 
-* the name and email of the person who created the tag
-* tagging message similar to a commit message
-* the date of the tagging
+- the name and email of the person who created the tag
+- tagging message similar to a commit message
+- the date of the tagging
 
 Annotated tags can also be signed and verified with _GNU Privacy Guard (GPG)_.
 
@@ -1246,17 +1246,17 @@ You can also create tags for a certain commit id.
 git tag 1.5.1 -m 'version 1.5' [commit id]
 ```
 
-#### [13.1. Creating signed tags](https://www.vogella.com/tutorials/Git/article.html#tagging\_signedtags)
+#### [13.1. Creating signed tags](https://www.vogella.com/tutorials/Git/article.html#tagging_signedtags)
 
 You can use the option `-s` to create a signed tag. These tags are signed with _GNU Privacy Guard (GPG)_ and can also be verified with GPG. For details on this please see the following URL: [Git tag manpage](https://www.kernel.org/pub/software/scm/git/docs/git-tag.html).
 
-#### [13.2. Checkout tags](https://www.vogella.com/tutorials/Git/article.html#tagging\_checkout)
+#### [13.2. Checkout tags](https://www.vogella.com/tutorials/Git/article.html#tagging_checkout)
 
 If you want to use the code associated with the tag, use:
 
 If you checkout a tag, you are in the _detached head mode_ and commits created in this mode are harder to find after you checkout a branch again.
 
-#### [13.3. Push tags](https://www.vogella.com/tutorials/Git/article.html#tagging\_pushtags)
+#### [13.3. Push tags](https://www.vogella.com/tutorials/Git/article.html#tagging_pushtags)
 
 By default the `git push` command does not transfer tags to remote repositories. You explicitly have to push the tag with the following command.
 
@@ -1271,7 +1271,7 @@ git push origin tag <tagname>
 git push --tags
 ```
 
-#### [13.4. Delete tags](https://www.vogella.com/tutorials/Git/article.html#tagging\_delete)
+#### [13.4. Delete tags](https://www.vogella.com/tutorials/Git/article.html#tagging_delete)
 
 You can delete tags with the `-d` parameter. This deletes the tag from your local repository. By default Git does not push tag deletions to a remote repository, you have to trigger that explicitly.
 
@@ -1286,15 +1286,15 @@ git tag -d 1.7.0
 git push origin :refs/tags/1.7.0
 ```
 
-#### [13.6. Using tags for software releases](https://www.vogella.com/tutorials/Git/article.html#tagging\_releases)
+#### [13.6. Using tags for software releases](https://www.vogella.com/tutorials/Git/article.html#tagging_releases)
 
 Tags are frequently used to tag a software release. In this case, they are called _release tags_.
 
 Convention is that release tags are labeled based on the \[major].\[minor].\[patch] naming scheme. These release tags follow the semantic versioning of the software release.
 
-* the _patch_ version is incremented if (only) backwards compatible bug fixes are introduced
-* the _minor_ version is incremented if backwards compatible functionality of the user of the public API are introduced
-* the _major_ version is incremented if incompatible changes are introduced in the public API
+- the _patch_ version is incremented if (only) backwards compatible bug fixes are introduced
+- the _minor_ version is incremented if backwards compatible functionality of the user of the public API are introduced
+- the _major_ version is incremented if incompatible changes are introduced in the public API
 
 For example "1.0.0" or "v1.0.0".
 
@@ -1324,7 +1324,7 @@ It shows which files have changed, which are staged and which are not part of th
 
 `git status -u` shows all untracked files. Otherwise, if you have a new directory with severals files, only the directory is shown.
 
-#### [14.2. Example: Using git status](https://www.vogella.com/tutorials/Git/article.html#gitstatus\_example)
+#### [14.2. Example: Using git status](https://www.vogella.com/tutorials/Git/article.html#gitstatus_example)
 
 The following commands create some changes in your Git repository.
 
@@ -1363,7 +1363,7 @@ The output of the command looks like the following listing.
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-#### [14.3. Using git diff](https://www.vogella.com/tutorials/Git/article.html#gitdiff\_using)
+#### [14.3. Using git diff](https://www.vogella.com/tutorials/Git/article.html#gitdiff_using)
 
 The `git diff` command allows you to compare changes between commits, the staging area and working tree, etc. Via an optional third parameter you can specify a path to filter the displayed changes path can be a file or directory `git diff [path]`.
 
@@ -1402,11 +1402,11 @@ shows the differences introduced between two commits references
 
 **4**
 
-shows the differences introduced in the working tree compared with the staging area for \[file\_reference]
+shows the differences introduced in the working tree compared with the staging area for \[file_reference]
 
-### [15. Analyzing the commit history with git log](https://www.vogella.com/tutorials/Git/article.html#analyzechanges\_in\_githistory)
+### [15. Analyzing the commit history with git log](https://www.vogella.com/tutorials/Git/article.html#analyzechanges_in_githistory)
 
-#### [15.1. Using git log](https://www.vogella.com/tutorials/Git/article.html#analyzechanges\_log\_git)
+#### [15.1. Using git log](https://www.vogella.com/tutorials/Git/article.html#analyzechanges_log_git)
 
 The `git log` command shows the history of the Git repository. If no commit reference is specified it starts from the commit referred to by the HEAD pointer.
 
@@ -1424,9 +1424,9 @@ shows the history of commits starting from the HEAD\~10 commit
 
 **2**
 
-shows the history of commits starting from the COMMIT\_REF commit
+shows the history of commits starting from the COMMIT_REF commit
 
-#### [15.2. Helpful parameters for git log](https://www.vogella.com/tutorials/Git/article.html#git\_log\_options)
+#### [15.2. Helpful parameters for git log](https://www.vogella.com/tutorials/Git/article.html#git_log_options)
 
 The following gives an overview of useful parameters for the `git log` command.
 
@@ -1455,7 +1455,7 @@ decorate - adds symbolic pointers to the log output
 
 For more options on the `git log` command see the [Git log manpage](https://www.kernel.org/pub/software/scm/git/docs/git-log.html).
 
-#### [15.3. View the change history of a file](https://www.vogella.com/tutorials/Git/article.html#analyzechangesg\_changesinafile)
+#### [15.3. View the change history of a file](https://www.vogella.com/tutorials/Git/article.html#analyzechangesg_changesinafile)
 
 To see changes in a file you can use the `-p` option in the `git log` command.
 
@@ -1479,7 +1479,7 @@ git log --follow -p -- [file_reference] (3)
 
 \- `--follow` allow include renames in the log output
 
-#### [15.4. Configuring output format](https://www.vogella.com/tutorials/Git/article.html#analyzechanges\_output)
+#### [15.4. Configuring output format](https://www.vogella.com/tutorials/Git/article.html#analyzechanges_output)
 
 You can use the `--pretty` parameter to configure the output.
 
@@ -1495,7 +1495,7 @@ This command creates the output.
 
 Git allows you to create a short form of one or several existing Git commands. You can define an alias for such long commands.
 
-#### [15.5. Filtering based on the commit message via regular expressions](https://www.vogella.com/tutorials/Git/article.html#analyzechanges\_grep)
+#### [15.5. Filtering based on the commit message via regular expressions](https://www.vogella.com/tutorials/Git/article.html#analyzechanges_grep)
 
 You can filter the output of the `git log` command to commits whose commit message, or reflog entry, respectively, matches the specified regular expression pattern with the `--grep=<pattern>` and `--grep-reflog=<pattern>` option.
 
@@ -1511,7 +1511,7 @@ Greps in commit message for "workspace", oneline parameter included for better r
 
 There is also the `--invert-grep=<pattern>` option. When this option is used, git log lists the commits that don't match the specified pattern.
 
-#### [15.6. Filtering the log output based on author or committer](https://www.vogella.com/tutorials/Git/article.html#analyzechanges\_user)
+#### [15.6. Filtering the log output based on author or committer](https://www.vogella.com/tutorials/Git/article.html#analyzechanges_user)
 
 You can use the `--author=<pattern>` or `--committer=<pattern>` to filter the log output by author or committer. You do not need to use the full name, if a substring matches, the commit is included in the log output.
 
@@ -1519,13 +1519,13 @@ The following command lists all commits with an author name containing the word 
 
 ### [17. Using the Git blame command](https://www.vogella.com/tutorials/Git/article.html#using-the-git-blame-command)
 
-#### [17.1. Analyzing line changes with git blame](https://www.vogella.com/tutorials/Git/article.html#git\_blame\_def)
+#### [17.1. Analyzing line changes with git blame](https://www.vogella.com/tutorials/Git/article.html#git_blame_def)
 
 Using the Git log command and filtering the history is a useful tool for inspecting the project history. However, if you look at a particular file and find a bug in a particular line of code you would like to instantly know who was the last person who changed this line of code. Additionally, you would like to know why the developer did that i.e. locate the commit in which the change was done.
 
 In Git, this feature is called _git blame_ or _git annotate_. The `git blame` command allows you to see which commit and author modified a file on a per line base. That is very useful to identify the person or the commit which introduced a change.
 
-#### [17.2. Example: git blame](https://www.vogella.com/tutorials/Git/article.html#git\_blame\_example)
+#### [17.2. Example: git blame](https://www.vogella.com/tutorials/Git/article.html#git_blame_example)
 
 The following code snippet demonstrates the usage of the `git blame` command.
 
@@ -1551,7 +1551,7 @@ In some cases simply using `git blame` is not sufficient in order to see all det
 
 In this screenshot we can see all commits of the `ShowViewHandler.java` by using the `gitk ShowViewHandler.java` command:
 
-![gitk command for the ShowViewHandler](https://www.vogella.com/tutorials/Git/img/gitk\_showviewhandler.png)
+![gitk command for the ShowViewHandler](https://www.vogella.com/tutorials/Git/img/gitk_showviewhandler.png)
 
 On Linux you can easily install gitk by using the `sudo apt-get install gitk` command in a terminal.
 
@@ -1585,7 +1585,7 @@ git shortlog --author="Lars Vogel" --since=2years
 git shortlog -s --author="Lars Vogel" --since=2years
 ```
 
-### [20. Stashing changes in Git](https://www.vogella.com/tutorials/Git/article.html#stash\_usage)
+### [20. Stashing changes in Git](https://www.vogella.com/tutorials/Git/article.html#stash_usage)
 
 #### [20.1. The git stash command](https://www.vogella.com/tutorials/Git/article.html#the-git-stash-command)
 
@@ -1593,13 +1593,13 @@ Git provides the `git stash` command which allows you to record the current stat
 
 This allows you to pull in the latest changes or to develop an urgent fix. Afterwards you can restore the stashed changes, which will reapply the changes to the current version of the source code.
 
-#### [20.2. When to use git stash](https://www.vogella.com/tutorials/Git/article.html#stash\_usage2)
+#### [20.2. When to use git stash](https://www.vogella.com/tutorials/Git/article.html#stash_usage2)
 
 In general using the stash command should be the exception in using Git. Typically, you would create new branches for new features and switch between branches. You can also commit frequently in your local Git repository and use interactive rebase to combine these commits later before pushing them to another Git repository.
 
 Even if you prefer not to use branches, you can avoid using the `git stash` command. In this case you commit the changes you want to put aside and amend the commit with the next commit. If you use the approach of creating a commit, you typically put a marker in the commit message to mark it as a draft, e.g., "\[DRAFT] implement feature x".
 
-#### [20.3. Example: Using the git stash command](https://www.vogella.com/tutorials/Git/article.html#stash\_example)
+#### [20.3. Example: Using the git stash command](https://www.vogella.com/tutorials/Git/article.html#stash_example)
 
 The following commands will save a stash and reapply them after some changes.
 
@@ -1642,7 +1642,7 @@ git stash drop stash@{0}
 git stash clear
 ```
 
-#### [20.4. Create a branch from a stash](https://www.vogella.com/tutorials/Git/article.html#stash\_branchexample)
+#### [20.4. Create a branch from a stash](https://www.vogella.com/tutorials/Git/article.html#stash_branchexample)
 
 You can also create a branch for your stash if you want to continue to work on the stashed changes in a branch. This can be done with the following command.
 
@@ -1654,13 +1654,13 @@ git stash branch newbranchforstash
 
 ### [21. Remove untracked files with git clean](https://www.vogella.com/tutorials/Git/article.html#remove-untracked-files-with-git-clean)
 
-#### [21.1. Removing untracked files](https://www.vogella.com/tutorials/Git/article.html#gitclean\_command)
+#### [21.1. Removing untracked files](https://www.vogella.com/tutorials/Git/article.html#gitclean_command)
 
 If you have untracked files in your working tree which you want to remove, you can use the `git clean` command.
 
 Be careful with this command. All untracked files are removed if you run this command. You will not be able to restore them, as they are not part of your Git repository.
 
-#### [21.2. Example: Using git clean](https://www.vogella.com/tutorials/Git/article.html#gitclean\_example)
+#### [21.2. Example: Using git clean](https://www.vogella.com/tutorials/Git/article.html#gitclean_example)
 
 The following commands demonstrate the usage of the `git clean` command.
 
@@ -1683,11 +1683,11 @@ git clean -fdx
 
 ### [22. Revert uncommitted changes in tracked files](https://www.vogella.com/tutorials/Git/article.html#undochanges)
 
-#### [22.1. Use cases](https://www.vogella.com/tutorials/Git/article.html#undochanges\_usecase)
+#### [22.1. Use cases](https://www.vogella.com/tutorials/Git/article.html#undochanges_usecase)
 
 If you have a tracked file in Git, you can always recreate the file content based on the staging area or based on a previous commit. You can also remove staged changes from the staging area to avoid that these changes are included in the next commit. This chapter explains you how you can do this.
 
-#### [22.2. Remove staged changes from the staging area](https://www.vogella.com/tutorials/Git/article.html#undochanges\_reset)
+#### [22.2. Remove staged changes from the staging area](https://www.vogella.com/tutorials/Git/article.html#undochanges_reset)
 
 Staging area, remove staged changes You can use the `git reset [paths]` command to remove staged changes from the staging area. This means that `git reset [paths]` is the opposite of `git add [paths]`. It avoids that the changes are included in the next commit. The changes are still available in the working tree, e.g., you will not lose your changes and can stage and commit them at a later point.
 
@@ -1747,7 +1747,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 The `git reset` behaves differently depending on the options you provide.
 
-#### [22.3. Remove changes in the working tree](https://www.vogella.com/tutorials/Git/article.html#undochanges\_checkout)
+#### [22.3. Remove changes in the working tree](https://www.vogella.com/tutorials/Git/article.html#undochanges_checkout)
 
 Be careful with the following command. It allows you to override the changes in files in your working tree. You will not be able to restore these changes.
 
@@ -1773,7 +1773,7 @@ git checkout -- test01
 
 For example, you can restore the content of a directory called `data` with the following command.
 
-#### [22.4. Remove changes in the working tree and the staging area](https://www.vogella.com/tutorials/Git/article.html#undochanges\_directorydeletion)
+#### [22.4. Remove changes in the working tree and the staging area](https://www.vogella.com/tutorials/Git/article.html#undochanges_directorydeletion)
 
 If you want to undo a staged but uncommitted change, you use the `git checkout [commit-pointer] [paths]` command. This version of the command resets the working tree and the staged area.
 
@@ -1798,7 +1798,7 @@ git checkout HEAD -- your_dir_to_restore
 
 The additional commit pointer parameter instructs the `git checkout` command to reset the working tree and to also remove the staged changes.
 
-#### [22.5. Remove staging area based on last commit change](https://www.vogella.com/tutorials/Git/article.html#undochanges\_indexexisting)
+#### [22.5. Remove staging area based on last commit change](https://www.vogella.com/tutorials/Git/article.html#undochanges_indexexisting)
 
 When you have added the changes of a file to the staging area, you can also revert the changes in the staging area base on the last commit.
 
@@ -1896,7 +1896,7 @@ The interactive rebase adds more flexibility to squashing commits and allows to 
 
 ### [26. Retrieving files from the history](https://www.vogella.com/tutorials/Git/article.html#retrievefiles)
 
-#### [26.1. View file in different revision](https://www.vogella.com/tutorials/Git/article.html#retrievefiles\_show)
+#### [26.1. View file in different revision](https://www.vogella.com/tutorials/Git/article.html#retrievefiles_show)
 
 The `git show` command allows to see and retrieve files from branches, commits and tags. It allows seeing the status of these files in the selected branch, commit or tag without checking them out into your working tree.
 
@@ -1924,7 +1924,7 @@ git show HEAD:pom.xml
 git show HEAD:./pom.xml
 ```
 
-#### [26.2. Restore a deleted file in a Git repo](https://www.vogella.com/tutorials/Git/article.html#retrievefiles\_fromcommit)
+#### [26.2. Restore a deleted file in a Git repo](https://www.vogella.com/tutorials/Git/article.html#retrievefiles_fromcommit)
 
 You can checkout a file from the commit. To find the commit which deleted the file you can use the `git log` or the `git ref-list` command as demonstrated by the following command.
 
@@ -1943,7 +1943,7 @@ git rev-list -n 1 HEAD -- <file_path>
 git checkout [commit] ^ -- <file_path>
 ```
 
-### [27. See which commit deleted a file](https://www.vogella.com/tutorials/Git/article.html#retrievefiles\_finddeletedfile)
+### [27. See which commit deleted a file](https://www.vogella.com/tutorials/Git/article.html#retrievefiles_finddeletedfile)
 
 The `git log` command allows you to determine which commit deleted a file. You can use the `--` option in `git log` to see the commit history for a file, even if you have deleted the file.
 
@@ -1966,15 +1966,15 @@ git log --full-history -1 --stat -- [file_path]
 
 ### [28. Revert commits](https://www.vogella.com/tutorials/Git/article.html#revertcommit)
 
-#### [28.1. Reverting a commit](https://www.vogella.com/tutorials/Git/article.html#undochanges\_revertcommit1)
+#### [28.1. Reverting a commit](https://www.vogella.com/tutorials/Git/article.html#undochanges_revertcommit1)
 
 git revert You can revert commits via the `git revert` command. This command reverts the changes of a commit.
 
 Such commits are useful to document that a change was withdrawn.
 
-### [29. Resetting the working tree based on a commit](https://www.vogella.com/tutorials/Git/article.html#undochanges\_checkoutcommits)
+### [29. Resetting the working tree based on a commit](https://www.vogella.com/tutorials/Git/article.html#undochanges_checkoutcommits)
 
-#### [29.1. Checkout based on commits and working tree](https://www.vogella.com/tutorials/Git/article.html#undochanges\_checkoutcommits1)
+#### [29.1. Checkout based on commits and working tree](https://www.vogella.com/tutorials/Git/article.html#undochanges_checkoutcommits1)
 
 git checkout, based on commit ID
 
@@ -2008,7 +2008,7 @@ Date:   Wed Jun 5 12:00:53 2013 +0200
     Bug 409373 - Updates version number of e4 CSS spy features
 ```
 
-#### [29.2. Example: Checkout a commit](https://www.vogella.com/tutorials/Git/article.html#undochanges\_checkoutcommits2)
+#### [29.2. Example: Checkout a commit](https://www.vogella.com/tutorials/Git/article.html#undochanges_checkoutcommits2)
 
 To checkout a specific commit you can use the following command.
 
@@ -2052,7 +2052,7 @@ The `git reflog` command also list commits which you have removed.
 
 There are multiple reflogs: one per branch and one for HEAD. For branches use the `git reflog [branch]` command and for HEAD use the `git reflog` or the `git reflog HEAD` command.
 
-#### [30.3. Example](https://www.vogella.com/tutorials/Git/article.html#gitreflog\_example)
+#### [30.3. Example](https://www.vogella.com/tutorials/Git/article.html#gitreflog_example)
 
 The following example shows how you can use git reflog to reset the current local branch to a commit which isn't reachable from the current branch anymore.
 
@@ -2104,7 +2104,7 @@ It is safe to delete a remote branch in your local Git repository, this does not
 git branch -d -r origin/[remote_branch]
 ```
 
-#### [31.2. Delete a remote branch](https://www.vogella.com/tutorials/Git/article.html#gitremotebranch\_deleteremote)
+#### [31.2. Delete a remote branch](https://www.vogella.com/tutorials/Git/article.html#gitremotebranch_deleteremote)
 
 To delete the branch in a remote repository use the following command.
 
@@ -2114,7 +2114,7 @@ To delete the branch in a remote repository use the following command.
 git push [remote] --delete [branch]
 ```
 
-#### [31.3. Tracking branches](https://www.vogella.com/tutorials/Git/article.html#git\_trackingbranches)
+#### [31.3. Tracking branches](https://www.vogella.com/tutorials/Git/article.html#git_trackingbranches)
 
 Branches can track another branch. This is called _to have an upstream branch_ and such branches can be referred to as _tracking branches_.
 
@@ -2194,7 +2194,7 @@ After reviewing the changes in the remote tracking branchm you can merge the cha
 
 Alternatively you can also use the `git cherry-pick commit_id` command to take over only selected commits.
 
-#### [32.2. Fetch from all remote repositories](https://www.vogella.com/tutorials/Git/article.html#gitfetch\_updateremotes)
+#### [32.2. Fetch from all remote repositories](https://www.vogella.com/tutorials/Git/article.html#gitfetch_updateremotes)
 
 The `git fetch` command updates only the remote-tracking branches for one remote repository. In case you want to update the remote-tracking branches of all your remote repositories you can use the following command.
 
@@ -2208,7 +2208,7 @@ git remote update
 git remote update --prune
 ```
 
-#### [32.3. Compare remote-tracking branch with local branch](https://www.vogella.com/tutorials/Git/article.html#gitfetch\_compare)
+#### [32.3. Compare remote-tracking branch with local branch](https://www.vogella.com/tutorials/Git/article.html#gitfetch_compare)
 
 The following code shows a few options how you can compare your branches.
 
@@ -2230,7 +2230,7 @@ git diff master origin/master
 
 The above commands show the changes introduced in HEAD compared to origin. If you want to see the changes in origin compared to HEAD, you can switch the arguments or use the `-R` parameter.
 
-#### [32.4. Rebase your local branch onto the remote-tracking branch](https://www.vogella.com/tutorials/Git/article.html#gitfetch\_rebase)
+#### [32.4. Rebase your local branch onto the remote-tracking branch](https://www.vogella.com/tutorials/Git/article.html#gitfetch_rebase)
 
 You can rebase your current local branch onto a remote-tracking branch. The following commands demonstrate that.
 
@@ -2246,15 +2246,15 @@ git fetch
 git rebase origin/master
 ```
 
-#### [32.5. Fetch compared with pull](https://www.vogella.com/tutorials/Git/article.html#gitremotebranch\_fetchpull)
+#### [32.5. Fetch compared with pull](https://www.vogella.com/tutorials/Git/article.html#gitremotebranch_fetchpull)
 
 The `git pull` command performs a `git fetch` and `git merge` (or `git rebase` based on your Git settings). The `git fetch` does not perform any operations on your local branches. You can always run the fetch command and review the incoming changes.
 
-### [33. Merging](https://www.vogella.com/tutorials/Git/article.html#gitmerge\_definition)
+### [33. Merging](https://www.vogella.com/tutorials/Git/article.html#gitmerge_definition)
 
 Git allows you to combine the changes which were created on two different branches. One way to achieve this is _merging_, which is described in this chapter. You can merge based on branches, tags or commits. Other ways are using rebase or cherry-pick.
 
-This part explains how to merge changes between two different branches under the assumption that no merging conflicts happen. Solving conflicts is covered in [What is a conflict during a merge operation?](https://www.vogella.com/tutorials/Git/article.html#mergeconflict\_definition).
+This part explains how to merge changes between two different branches under the assumption that no merging conflicts happen. Solving conflicts is covered in [What is a conflict during a merge operation?](https://www.vogella.com/tutorials/Git/article.html#mergeconflict_definition).
 
 #### [33.1. Fast-forward merge](https://www.vogella.com/tutorials/Git/article.html#fast-forward-merge)
 
@@ -2262,27 +2262,27 @@ If the commits which are merged are direct successors of the _HEAD_ pointer of t
 
 This process is depicted in the following diagram. The first picture assumes that master is checked out and that you want to merge the changes of the branch labeled "branch 1" into your "master" branch. Each commit points to its predecessor (parent).
 
-![Fast forward merge starting](https://www.vogella.com/tutorials/Git/img/merge\_fastforward10.png)
+![Fast forward merge starting](https://www.vogella.com/tutorials/Git/img/merge_fastforward10.png)
 
 After the fast-forward merge the _HEAD_ points to the master branch pointing to "Commit 3". The "branch 1" branch points to the same commit.
 
-![Fast forward merge result](https://www.vogella.com/tutorials/Git/img/merge\_fastforward20.png)
+![Fast forward merge result](https://www.vogella.com/tutorials/Git/img/merge_fastforward20.png)
 
-#### [33.2. Merge commit](https://www.vogella.com/tutorials/Git/article.html#gitmerge\_mergecommit)
+#### [33.2. Merge commit](https://www.vogella.com/tutorials/Git/article.html#gitmerge_mergecommit)
 
 If commits are merged which are not direct predecessors of the current branch, Git performs a so-called _three-way-merge_ between the latest commits of the two branches, based on the most recent common predecessor of both.
 
-![Original state before the merge commit](https://www.vogella.com/tutorials/Git/img/merge\_commit10.png)
+![Original state before the merge commit](https://www.vogella.com/tutorials/Git/img/merge_commit10.png)
 
 As a result a so-called _merge commit_ is created on the current branch. It combines the respective changes from the two branches being merged. This commit points to both of its predecessors.
 
-![Merge commit](https://www.vogella.com/tutorials/Git/img/merge\_commit20.png)
+![Merge commit](https://www.vogella.com/tutorials/Git/img/merge_commit20.png)
 
 If multiple common predecessors exist, Git uses recursion to create a virtual common predecessor. For this Git creates a merged tree of the common ancestors and uses that as the reference for the 3-way merge. This is called the _recursive merge_ strategy and is the default merge strategy.
 
-#### [33.3. Merge strategies - Octopus, Subtree, Ours](https://www.vogella.com/tutorials/Git/article.html#gitmerge\_octopus)
+#### [33.3. Merge strategies - Octopus, Subtree, Ours](https://www.vogella.com/tutorials/Git/article.html#gitmerge_octopus)
 
-If a fast-forward merge is not possible, Git uses a merge strategy. The default strategy called _recursive merge_ strategy was described in [Merge commit](https://www.vogella.com/tutorials/Git/article.html#gitmerge\_mergecommit).
+If a fast-forward merge is not possible, Git uses a merge strategy. The default strategy called _recursive merge_ strategy was described in [Merge commit](https://www.vogella.com/tutorials/Git/article.html#gitmerge_mergecommit).
 
 The Git command line tooling also supports the _octopus merge_ strategy for merges of multiple references. With this operation it can merge multiple branches at once.
 
@@ -2292,7 +2292,7 @@ The `ours` strategy merges a branch without looking at the changes introduced in
 
 You can use the _ours_ merge strategy to document that you have integrated a branch and decided to ignore all changes from this branch.
 
-#### [33.4. Using the git merge command](https://www.vogella.com/tutorials/Git/article.html#gitmergecommand\_branches)
+#### [33.4. Using the git merge command](https://www.vogella.com/tutorials/Git/article.html#gitmergecommand_branches)
 
 The `git merge` command performs a merge. You can merge changes from one branch to the current active one via the following command.
 
@@ -2302,7 +2302,7 @@ The `git merge` command performs a merge. You can merge changes from one branch 
 git merge testing
 ```
 
-#### [33.5. Specifying merge strategies](https://www.vogella.com/tutorials/Git/article.html#gitmerge\_mergeoptionsstrategies)
+#### [33.5. Specifying merge strategies](https://www.vogella.com/tutorials/Git/article.html#gitmerge_mergeoptionsstrategies)
 
 The `-s` parameter allows you to specify other merge strategies. This is demonstrated with the following command.
 
@@ -2324,7 +2324,7 @@ The usage of the octopus merge strategy is triggered if you specify more than on
 git merge branch1 branch2`
 ```
 
-#### [33.6. Specifying parameters for the default merge strategy](https://www.vogella.com/tutorials/Git/article.html#gitmerge\_mergeoptions)
+#### [33.6. Specifying parameters for the default merge strategy](https://www.vogella.com/tutorials/Git/article.html#gitmerge_mergeoptions)
 
 The recursive merge strategy (default) allows you to specify flags with the `-X` parameter. For example you can specify here the `ours` option. This option forces conflicting changes to be auto-resolved by favoring the local version. Changes from the other branch that do not conflict with our local version are reflected to the merge result. For a binary file, the entire contents are taken from the local version.
 
@@ -2347,7 +2347,7 @@ Another useful option is the `ignore-space-change` parameter which ignores white
 
 For more information about the merge strategies and options see [Git merge manpage](https://www.kernel.org/pub/software/scm/git/docs/git-merge.html).
 
-#### [33.7. Enforcing the creation of a merge commit](https://www.vogella.com/tutorials/Git/article.html#gitmerge\_forcemergecommit)
+#### [33.7. Enforcing the creation of a merge commit](https://www.vogella.com/tutorials/Git/article.html#gitmerge_forcemergecommit)
 
 If you prefer to have merge commits even for situations in which Git could perform a fast-forward merge you can use the `git merge --no-ff` command.
 
@@ -2357,7 +2357,7 @@ When pulling from a remote repository, prefer doing a rebase to a merge. This wi
 
 ### [34. Rebasing branches](https://www.vogella.com/tutorials/Git/article.html#rebase)
 
-#### [34.1. Rebasing branches](https://www.vogella.com/tutorials/Git/article.html#rebase\_branches)
+#### [34.1. Rebasing branches](https://www.vogella.com/tutorials/Git/article.html#rebase_branches)
 
 You can use Git to rebase one branch on another one. As described, the `merge` command combines the changes of two branches. If you rebase a branch called A onto another, the `git` command takes the changes introduced by the commits of branch A and applies them based on the HEAD of the other branch. After this operation the changes in the other branch are also available in branch A.
 
@@ -2379,7 +2379,7 @@ Also, if your policy requires that all commits result in correct software you ha
 
 You can use the rebase command to change your Git repository history commits. This is called _interactive_ rebase, see ? for information about this feature.
 
-#### [34.2. Good practice for rebase](https://www.vogella.com/tutorials/Git/article.html#rebase\_bestpractice)
+#### [34.2. Good practice for rebase](https://www.vogella.com/tutorials/Git/article.html#rebase_bestpractice)
 
 You should avoid using the Git rebase operation for changes which have been published in other Git repositories. The Git rebase operation creates new commit objects, this may confuse other developers using the existing commit objects.
 
@@ -2394,7 +2394,7 @@ In case you want to rewrite history for changes you have shared with others you 
 git push -f
 ```
 
-#### [34.3. Example for a rebase](https://www.vogella.com/tutorials/Git/article.html#rebase\_example)
+#### [34.3. Example for a rebase](https://www.vogella.com/tutorials/Git/article.html#rebase_example)
 
 The following demonstrates how to perform a rebase operation.
 
@@ -2465,7 +2465,7 @@ The setup for the rebase is called the _rebase plan_. Based on this plan, the ac
 
 It is safe to use interactive rebase as long as the commits have not been pushed to another repository. As the interactive rebase creates new commit objects, other developers might be confused if you rebase already published changes.
 
-#### [35.1. Example: Interactive rebase](https://www.vogella.com/tutorials/Git/article.html#interactiverebase\_example)
+#### [35.1. Example: Interactive rebase](https://www.vogella.com/tutorials/Git/article.html#interactiverebase_example)
 
 The following commands create several commits which will be used for the interactive rebase.
 
@@ -2527,7 +2527,7 @@ squash e08d5c3 creation of important configuration file
 
 ### [36. Using the Git cherry-pick command](https://www.vogella.com/tutorials/Git/article.html#using-the-git-cherry-pick-command)
 
-#### [36.1. Applying a single commit with cherry-pick](https://www.vogella.com/tutorials/Git/article.html#cherrypick\_definition)
+#### [36.1. Applying a single commit with cherry-pick](https://www.vogella.com/tutorials/Git/article.html#cherrypick_definition)
 
 The `git cherry-pick` command allows you to select the patch which was introduced with an individual commit and apply this patch on another branch. The patch is captured as a new commit on the other branch.
 
@@ -2535,7 +2535,7 @@ This way you can select individual changes from one branch and transfer them to 
 
 The new commit does not point back to its original commit so do not use cherry-pick blindly since you may end up with several copies of the same change. Most often cherry-pick is either used locally (to emulate an interactive rebase) or to port individual bug fixes done on a development branch into maintenance branches.
 
-#### [36.2. Example: Using cherry-pick](https://www.vogella.com/tutorials/Git/article.html#cherrypick\_example)
+#### [36.2. Example: Using cherry-pick](https://www.vogella.com/tutorials/Git/article.html#cherrypick_example)
 
 In the following example you create a new branch and commit two changes.
 
@@ -2589,7 +2589,7 @@ If things go wrong or you change your mind, you can always reset to the previous
 
 ### [37. Solving merge conflicts](https://www.vogella.com/tutorials/Git/article.html#mergeconflict)
 
-#### [37.1. What is a conflict during a merge operation?](https://www.vogella.com/tutorials/Git/article.html#mergeconflict\_definition)
+#### [37.1. What is a conflict during a merge operation?](https://www.vogella.com/tutorials/Git/article.html#mergeconflict_definition)
 
 Merge conflict A conflict during a merge operation occurs if two commits from different branches have modified the same content and Git cannot automatically determine how both changes should be combined when merging these branches.
 
@@ -2599,7 +2599,7 @@ If a conflict occurs, Git marks the conflict in the file and the programmer has 
 
 After resolving it, he adds the file to the staging area and commits the change. These steps are required to finish the merge operation.
 
-### [38. Keep a version of a file during a merge conflict](https://www.vogella.com/tutorials/Git/article.html#mergeconflict\_theirs)
+### [38. Keep a version of a file during a merge conflict](https://www.vogella.com/tutorials/Git/article.html#mergeconflict_theirs)
 
 Merge conflict LARSSECONDARY"theirs parameter"LARSSECONDARY Merge conflict
 
@@ -2619,7 +2619,7 @@ git add foo/bar.java
 
 ### [39. Example: Solving a conflict during a merge operation](https://www.vogella.com/tutorials/Git/article.html#example-solving-a-conflict-during-a-merge-operation)
 
-#### [39.1. Create a conflict](https://www.vogella.com/tutorials/Git/article.html#mergeconflict\_examplecreate)
+#### [39.1. Create a conflict](https://www.vogella.com/tutorials/Git/article.html#mergeconflict_examplecreate)
 
 In the following example you create a conflict during a merge operation.
 
@@ -2692,7 +2692,7 @@ The resulting conflict is displayed in ? and solved in ?
 
 If you use the `git pull` command it performs the "fetch and merge" or the "fetch and rebase" command together in one step. Whether merge or rebase is used depends on your Git configuration for the branch. See ? for the global configuration.
 
-#### [39.2. Review the conflict in the file](https://www.vogella.com/tutorials/Git/article.html#mergeconflict\_examplesee)
+#### [39.2. Review the conflict in the file](https://www.vogella.com/tutorials/Git/article.html#mergeconflict_examplesee)
 
 Git marks the conflicts in the affected files. In the example from ? one file has a conflict and the file looks like the following listing.
 
@@ -2706,7 +2706,7 @@ Change in the second repository
 
 The text above the ======= signs is the conflicting change from your current branch and the text below is the conflicting change from the branch that you are merging in.
 
-#### [39.3. Solve a conflict in a file](https://www.vogella.com/tutorials/Git/article.html#mergeconflict\_examplesolve)
+#### [39.3. Solve a conflict in a file](https://www.vogella.com/tutorials/Git/article.html#mergeconflict_examplesolve)
 
 In this example you resolve the conflict which was created in ? and apply the change to the Git repository.
 
@@ -2733,7 +2733,7 @@ Instead of using the `-m` option in the above example you can also use the `git 
 
 Alternatively, you could use the `git mergetool` command. `git mergetool` starts a configurable merge tool that displays the changes in a split screen. Some operating systems may come with a suitable merge tool already installed or configured for Git.
 
-### [41. Handling a conflict during a rebase operation](https://www.vogella.com/tutorials/Git/article.html#rebaseconflict\_solving)
+### [41. Handling a conflict during a rebase operation](https://www.vogella.com/tutorials/Git/article.html#rebaseconflict_solving)
 
 If a conflict occurs during a rebase operation, the rebase operation stops and the developer needs to resolve the conflict. After he has solved the conflicts, the developer instructs Git to continue with the rebase operation.
 
@@ -2760,7 +2760,7 @@ You can also skip the commit which creates the conflict.
 git rebase --skip
 ```
 
-### [42. Aborting a rebase operation](https://www.vogella.com/tutorials/Git/article.html#rebaseconflict\_abort)
+### [42. Aborting a rebase operation](https://www.vogella.com/tutorials/Git/article.html#rebaseconflict_abort)
 
 You can also abort a rebase operation with the following command.
 
@@ -2769,7 +2769,7 @@ You can also abort a rebase operation with the following command.
 git rebase --abort
 ```
 
-### [43. Picking theirs or ours for conflicting file](https://www.vogella.com/tutorials/Git/article.html#rebaseconflict\_theirs)
+### [43. Picking theirs or ours for conflicting file](https://www.vogella.com/tutorials/Git/article.html#rebaseconflict_theirs)
 
 If a file is in conflict, you can instruct Git to take the version from the new commit of the version of commit onto which the new changes are applied. This is sometimes easier than to solve all conflicts manually. For this you can use the `git checkout` with the `--theirs` or `--ours` flag. During the conflict `--ours` points to the file in the commit onto which the new commit is placed, i.g., using this skips the new changes for this file.
 
@@ -2793,7 +2793,7 @@ git add foo/bar.java
 
 An _alias_ in Git allows you to create a short form of one or several existing Git commands. For example, you can define an alias which is a short form of your own favorite commands or you can combine several commands with an alias.
 
-#### [44.2. Alias examples](https://www.vogella.com/tutorials/Git/article.html#alias\_example)
+#### [44.2. Alias examples](https://www.vogella.com/tutorials/Git/article.html#alias_example)
 
 The following defines an _alias_ to see the staged changes with the new `git staged` command.
 
@@ -2839,13 +2839,13 @@ Using it:
 
 ### [46. Error search with git bisect](https://www.vogella.com/tutorials/Git/article.html#bisect)
 
-#### [46.1. Using git bisect](https://www.vogella.com/tutorials/Git/article.html#bisect\_definition)
+#### [46.1. Using git bisect](https://www.vogella.com/tutorials/Git/article.html#bisect_definition)
 
 git bisect The `git bisect` command allows you to run a binary search through the commit history to identify the commit which introduced an issue. You specify a range of commits and a script that the `bisect` command uses to identify whether a commit is good or bad.
 
 This script must return 0 if the condition is fulfilled and non-zero if the condition is not fulfilled.
 
-#### [46.2. git bisect example](https://www.vogella.com/tutorials/Git/article.html#bisect\_cloning)
+#### [46.2. git bisect example](https://www.vogella.com/tutorials/Git/article.html#bisect_cloning)
 
 Create a new Git repository, create the `text1.txt` file and commit it to the repository. Do a few more changes, remove the file and again do a few more changes.
 
@@ -2883,7 +2883,7 @@ The above commands serve as an example. The existence of a file can be easier ve
 
 ### [47. Rewriting commit history with git filter-branch](https://www.vogella.com/tutorials/Git/article.html#filterbranch)
 
-#### [47.1. Using the git filter branch command (filter-branch)](https://www.vogella.com/tutorials/Git/article.html#filterbranch\_definition)
+#### [47.1. Using the git filter branch command (filter-branch)](https://www.vogella.com/tutorials/Git/article.html#filterbranch_definition)
 
 The `git filter-branch` command allows you to rewrite the Git commit history. This can be done for selected branches and you can apply custom filters on each revision. This creates different hashes for all modified commits. This implies that you get new IDs for all commits based on any rewritten commit.
 
@@ -2893,7 +2893,7 @@ Using the `filter-branch` command is dangerous as it changes the Git repository.
 
 For example, you can use `git filter-branch` if you want to remove a file which contains a password from the Git history. Or you want to remove huge binary files from the history. To completely remove such files, you need to run the `filter-branch` command on all branches.
 
-#### [47.2. filter-branch examples](https://www.vogella.com/tutorials/Git/article.html#filterbranch\_example)
+#### [47.2. filter-branch examples](https://www.vogella.com/tutorials/Git/article.html#filterbranch_example)
 
 The following command extracts a directory from a Git repository and retains all commits for this subfolder.
 
@@ -2919,7 +2919,7 @@ This file can be sent to someone else and the receiver can use it to apply the c
 
 Alternatively you could create a diff file with the `git diff` command, but this diff file does not contain the metadata information.
 
-#### [48.2. Create and apply patches](https://www.vogella.com/tutorials/Git/article.html#gitpatch\_createandapply)
+#### [48.2. Create and apply patches](https://www.vogella.com/tutorials/Git/article.html#gitpatch_createandapply)
 
 The following example creates a branch, changes several files and creates a commit recording these changes.
 
@@ -2971,7 +2971,7 @@ rm 0001-First-commit-in-the-branch.patch
 
 Use the `git am` command to apply and commit the changes in a single step. To apply and commit all patch files in the directory use, for example, the `git am *.patch` command. You specify the order in which the patches are applied by specifying them on the command line.
 
-#### [48.3. Create a patch for a selected commit](https://www.vogella.com/tutorials/Git/article.html#gitpatch\_createforcommit)
+#### [48.3. Create a patch for a selected commit](https://www.vogella.com/tutorials/Git/article.html#gitpatch_createforcommit)
 
 You can specify the commit ID and the number of patches which should be created. For example, to create a patch for selected commits based on the HEAD pointer you can use the following commands.
 
@@ -2986,25 +2986,25 @@ git format-patch -3 HEAD
 
 ### [49. Git commit and other hooks](https://www.vogella.com/tutorials/Git/article.html#gitcommithooks)
 
-#### [49.1. Usage of Git hooks](https://www.vogella.com/tutorials/Git/article.html#gitcommithooks\_intro)
+#### [49.1. Usage of Git hooks](https://www.vogella.com/tutorials/Git/article.html#gitcommithooks_intro)
 
 Git provides commit hooks, e.g., programs which can be executed at a pre-defined point during the work with the repository. For example, you can ensure that the commit message has a certain format or trigger an action after a push to the server.
 
 These programs are usually scripts and can be written in any language, e.g., as shell scripts or in Perl, Python etc. You can also implement a hook, for example, in C and use the resulting executables. Git calls the scripts based on a naming convention.
 
-#### [49.2. Client and server side commit hooks](https://www.vogella.com/tutorials/Git/article.html#gitcommithooks\_clientserver)
+#### [49.2. Client and server side commit hooks](https://www.vogella.com/tutorials/Git/article.html#gitcommithooks_clientserver)
 
 Git provides hooks for the client and for the server side. On the server side you can use the `pre-receive` and `post-receive` script to check the input or to trigger actions after the commit. The usage of a server commit hook requires that you have access to the server. Hosting providers like GitHub or Bitbucket do not offer this access.
 
 If you create a new Git repository, Git creates example scripts in the `.git/hooks` directory. The example scripts end with `.sample`. To activate them make them executable and remove the `.sample` from the filename.
 
-#### [49.3. Restrictions](https://www.vogella.com/tutorials/Git/article.html#gitcommithooks\_restrictions)
+#### [49.3. Restrictions](https://www.vogella.com/tutorials/Git/article.html#gitcommithooks_restrictions)
 
 Not all Git server implementations support server side commit hooks. Local hooks in the local repository can be removed by the developer.
 
-### [50. Handling line endings on different platforms](https://www.vogella.com/tutorials/Git/article.html#line\_feedendings)
+### [50. Handling line endings on different platforms](https://www.vogella.com/tutorials/Git/article.html#line_feedendings)
 
-#### [50.1. Line endings of the different platforms](https://www.vogella.com/tutorials/Git/article.html#line\_feedendings\_platform)
+#### [50.1. Line endings of the different platforms](https://www.vogella.com/tutorials/Git/article.html#line_feedendings_platform)
 
 Every time a developer presses return on the keyboard an invisible character called a line ending is inserted. Unfortunately, different operating systems handle line endings differently.
 
@@ -3012,7 +3012,7 @@ Linux and Mac use different line endings than Windows. Windows uses a carriage-r
 
 To avoid commits because of line ending differences in your Git repository you should configure all clients to write the same line ending to the Git repository.
 
-#### [50.2. Configuring line ending settings as developer](https://www.vogella.com/tutorials/Git/article.html#line\_feedendings\_convert)
+#### [50.2. Configuring line ending settings as developer](https://www.vogella.com/tutorials/Git/article.html#line_feedendings_convert)
 
 On Windows systems you can tell Git to convert line endings during a checkout to CRLF and to convert them back to LF during commit. Use the following setting for this.
 
@@ -3028,13 +3028,13 @@ On Linux and Mac you can tell Git to convert CRLF to LF with the following setti
 git config --global core.autocrlf input
 ```
 
-#### [50.3. Configuring line ending settings per repository](https://www.vogella.com/tutorials/Git/article.html#line\_feedendings\_gitattributes)
+#### [50.3. Configuring line ending settings per repository](https://www.vogella.com/tutorials/Git/article.html#line_feedendings_gitattributes)
 
 You can also configure the line ending handling per repository by adding a special `.gitattributes` file to the root folder of your Git repository. If this file is committed to the repository, it overrides the `core.autocrlf` setting of the individual developer.
 
 In this file you can configure Git to auto detect the line endings.
 
-### [51. Migrating from SVN](https://www.vogella.com/tutorials/Git/article.html#svn\_migration)
+### [51. Migrating from SVN](https://www.vogella.com/tutorials/Git/article.html#svn_migration)
 
 To convert Subversion projects to Git you can use a RubyGem called _svn2git_. This tool relies on `git svn` internally and handles most of the trouble.
 
@@ -3062,7 +3062,7 @@ The parameter `--verbose` adds detailed output to the commandline so you can see
 
 ### [52. Frequently asked questions](https://www.vogella.com/tutorials/Git/article.html#gitfaq)
 
-#### [52.1. Can Git handle symlinks?](https://www.vogella.com/tutorials/Git/article.html#gitfaq\_symlinks)
+#### [52.1. Can Git handle symlinks?](https://www.vogella.com/tutorials/Git/article.html#gitfaq_symlinks)
 
 The usage of symlinks requires that the operating system used by the developers supports them.
 
@@ -3076,11 +3076,11 @@ This tutorial is part of a series about the Git version control system. See the 
 
 ### [54. Appendix: The details of the commit objects](https://www.vogella.com/tutorials/Git/article.html#git)
 
-#### [54.1. Commit object (commit)](https://www.vogella.com/tutorials/Git/article.html#commit\_object)
+#### [54.1. Commit object (commit)](https://www.vogella.com/tutorials/Git/article.html#commit_object)
 
 Conceptually a commit object (short:commit) represents a version of all files tracked in the repository at the time the commit was created. Commits know their parent(s) and this way capture the version history of the repository.
 
-#### [54.2. Technical details of a commit object](https://www.vogella.com/tutorials/Git/article.html#commit\_objects)
+#### [54.2. Technical details of a commit object](https://www.vogella.com/tutorials/Git/article.html#commit_objects)
 
 This commit object is addressable via a hash ( _SHA-1 checksum_ ). This hash is calculated based on the content of the files, the content of the directories, the complete history of up to the new commit, the committer, the commit message, and several other factors.
 
@@ -3092,11 +3092,11 @@ Packing involves storing changes as deltas, compression and storage of many obje
 
 A commit object is depicted in the following picture.
 
-![Commit object](https://www.vogella.com/tutorials/Git/img/commit\_object.png)
+![Commit object](https://www.vogella.com/tutorials/Git/img/commit_object.png)
 
 The above picture is simplified. Tree objects point to other tree objects and file blobs. Objects which didn't change between commits are reused by multiple commits.
 
-#### [54.3. Hash and abbreviated commit hash](https://www.vogella.com/tutorials/Git/article.html#commits\_sha\_checksum)
+#### [54.3. Hash and abbreviated commit hash](https://www.vogella.com/tutorials/Git/article.html#commits_sha_checksum)
 
 A Git commit object is identified by its hash (SHA-1 checksum). SHA-1 produces a 160-bit (20-byte) hash value. A SHA-1 hash value is typically rendered as a hexadecimal number, 40 digits long.
 
@@ -3106,7 +3106,7 @@ Several commands, e.g., the `git log` command can be instructed to use the short
 
 ### [55. Commit references](https://www.vogella.com/tutorials/Git/article.html#commitreference)
 
-#### [55.1. Predecessor commits, parents and commit references](https://www.vogella.com/tutorials/Git/article.html#commitreference\_whatis)
+#### [55.1. Predecessor commits, parents and commit references](https://www.vogella.com/tutorials/Git/article.html#commitreference_whatis)
 
 Each commit has zero or more direct predecessor commits. The first commit has zero parents, merge commits have two or more parents, most commits have one parent.
 
@@ -3118,7 +3118,7 @@ Git allows addressing commits via _commit reference_ for this purpose.
 
 A commit reference can be a _simple reference_ (simple ref), in this case it points directly to a commit. This is the case for a commit hash or a tag. A commit reference can also be _symbolic reference_ (symbolic ref, symref). In this case it points to another reference (either simple or symbolic). For example HEAD is a symbolic ref for a branch, if it points to a branch. HEAD points to the branch pointer and the branch pointer points to a commit.
 
-#### [55.4. Using caret and tilde for commit references](https://www.vogella.com/tutorials/Git/article.html#commitreference\_carettilde)
+#### [55.4. Using caret and tilde for commit references](https://www.vogella.com/tutorials/Git/article.html#commitreference_carettilde)
 
 \[reference]\~1 describes the first predecessor of the commit object accessed via \[reference]. \[reference]\~2 is the first predecessor of the first predecessor of the \[reference] commit. \[reference]\~3 is the first predecessor of the first predecessor of the first predecessor of the \[reference] commit, etc.
 

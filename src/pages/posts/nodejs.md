@@ -7,7 +7,7 @@ excerpt: >-
   standard library that prevent JavaScript code from blocking and generally,
   libraries in Node.js are written using non-blocking paradigms, making blocking
   behavior the exception rather than the norm.
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_path: images/github.png
 thumb_img_alt: node
 content_img_path: images/3.jpg
@@ -21,26 +21,26 @@ seo:
     libraries in Node.js are written using non-blocking paradigms, making
     blocking behavior the exception rather than the norm.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: nodejs
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: Nodejs Cheat Sheet
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/3.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: nodejs
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: Nodejs Cheat Sheet
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/3.jpg
       relativeUrl: true
 template: post

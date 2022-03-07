@@ -5,7 +5,7 @@
 
 
 /* *******************************************************************************************
- * 
+ *
 ````
 
 ```js
@@ -28,8 +28,8 @@ npm install --save prop-types  // runtime type checking for React props and simi
 
 /\* \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-* REACT
-* https://reactjs.org/docs/react-api.html //------------------------------------------------------------------------------\\
+- REACT
+- https://reactjs.org/docs/react-api.html //------------------------------------------------------------------------------\\
 
 \*/
 
@@ -41,7 +41,7 @@ npm install --save prop-types  // runtime type checking for React props and simi
 
 
 React.createElement().
-// You will not typically invoke 
+// You will not typically invoke
 ````
 
 ```js
@@ -50,36 +50,24 @@ React.createElement() directly if you are using JSX.
 ```
 
 ```js
-
-React.createElement(
-  type,
-  [props],
-  [...children]
-)
+React.createElement(type, [props], [...children]);
 
 // Clone and return a new React element using element as the starting point.
 // The resulting element will have the original element's props with the new props merged in shallowly.
 ```
 
 ```js
-
-React.cloneElement(
-  element,
-  [props],
-  [...children]
-)
+React.cloneElement(element, [props], [...children]);
 
 // Verifies the object is a React element. Returns true or false.
 ```
 
 ```js
-
-React.isValidElement(object)
+React.isValidElement(object);
 ```
 
 ```js
-
-React.Children  // provides utilities for dealing with the this.props.children opaque data structure.
+React.Children; // provides utilities for dealing with the this.props.children opaque data structure.
 
 // Invokes a function on every immediate child contained within children with this set to thisArg.
 ```
@@ -88,7 +76,7 @@ React.Children  // provides utilities for dealing with the this.props.children o
 
 React.Children.map(children, function[(thisArg)])
 
-// Like 
+// Like
 ```
 
 ```js
@@ -105,16 +93,14 @@ React.Children.forEach(children, function[(thisArg)])
 ```
 
 ```js
-
-React.Children.count(children)
+React.Children.count(children);
 
 // Verifies that children has only one child (a React element) and returns it.
 // Otherwise this method throws an error.
 ```
 
 ```js
-
-React.Children.only(children)
+React.Children.only(children);
 
 // Returns the children opaque data structure as a flat array with keys assigned to each child.
 // Useful if you want to manipulate collections of children in your render methods,
@@ -122,10 +108,9 @@ React.Children.only(children)
 ```
 
 ```js
+React.Children.toArray(children);
 
-React.Children.toArray(children)
-
-// The 
+// The
 ```
 
 ```js
@@ -135,18 +120,17 @@ React.Fragment component lets you return multiple elements in a render() method 
 ```
 
 ```js
-
-React.Fragment
+React.Fragment;
 ```
 
 ```js
-
-React.COMPONENT
+React.COMPONENT;
 ```
 
 //React.Component is an abstract base class, so it rarely makes sense to refer to React.Component directly. ////Instead, you will typically subclass it, and define at least a render() method. https://reactjs.org/docs/react-component.html
 
 ```
+
 ```
 
 ```js
@@ -266,7 +250,7 @@ component.forceUpdate(callback)
 
 
 /* *******************************************************************************************
- * 
+ *
 ```
 
 ```js
@@ -428,4 +412,5 @@ MyComponent.propTypes = {
 ```
 
 ```js
+
 ```

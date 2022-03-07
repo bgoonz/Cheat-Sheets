@@ -1,44 +1,39 @@
 ---
 title: Heroku Cheat Sheet
 subtitle: HEROKU TOOLBELT COMPLETE GUIDE
-date: '2022-01-04'
+date: "2022-01-04"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 ---
 
-
-
-
 # Heroku Cheat Sheet:
-
-
-
 
 # Installing Heroku toolbelt using command line
 
 # For MacOS...
+
 brew tap heroku/brew && brew install heroku
 
 # For Ubuntu...
+
 sudo snap install --classic heroku
 
 # Other installation methods are
 
-curl https://cli-assets.heroku.com/install.sh | sh     # only for unix based systems, windows incompatible as it needs sudo
+curl https://cli-assets.heroku.com/install.sh | sh # only for unix based systems, windows incompatible as it needs sudo
 
-curl https://cli-assets.heroku.com/install-ubuntu.sh | sh    # Ubuntu/Debian apt-get
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh # Ubuntu/Debian apt-get
 
-yay -S heroku-cli     # Arch linux, Note: This package is community maintained not by heroku
+yay -S heroku-cli # Arch linux, Note: This package is community maintained not by heroku
 
-npm install -g heroku     # This installation method is required for users on ARM and BSD...
-
+npm install -g heroku # This installation method is required for users on ARM and BSD...
 
 ############
 
@@ -46,100 +41,90 @@ npm install -g heroku     # This installation method is required for users on AR
 
 heroku --version
 
-
 # Let's get started with heroku
 
-heroku login      # To login into the heroku toolbelt with your heroku account, this will open browser for you.
+heroku login # To login into the heroku toolbelt with your heroku account, this will open browser for you.
 
-heroku login -i   # If you prefer to stay in the command line environment, then you can execute this command
-
+heroku login -i # If you prefer to stay in the command line environment, then you can execute this command
 
 # Now navigate to your desired directory and create a blank heroku application
 
 cd ~/myapp
 heorku create
 
-
 # If you are facing login issues, try to execute the following command
 
 mv ~/.netrc ~/.netrc.backup
 heroku login
 
-
 # Uninstalling the heroku CLI
 
 # For macOS
+
 rm -rf /usr/local/heroku /usr/local/lib/heroku /usr/local/bin/heroku ~/.local/share/heroku ~/Library/Caches/heroku
 
 # or you can try the below command also on macOS
+
 brew uninstall heroku
 rm -rf ~/.local/share/heroku ~/Library/Caches/heroku
 
 # For Linux (Standalone installs)
+
 rm /usr/local/bin/heroku
 rm -rf /usr/local/lib/heroku /usr/local/heroku
 rm -rf ~/.local/share/heroku ~/.cache/heroku
 
 # For Linux (Debian and Ubuntu installs)
+
 sudo apt-get remove heroku heroku-toolbelt
 sudo rm /etc/apt/sources.list.d/heroku.list
 
-
 ---
 
+### Managing and deploying applications on Heroku (Using Git)
 
+cd myapp # Changing into the project directory
+git init # Initializing the project into a git repository
+git add . # Adding all the contents of the project into the repository excluding .gitignore content
+git commit -m "My first commit" # Commiting the content to the repository
 
-### Managing and deploying applications on Heroku (Using Git)     
+heroku create # Creating a new empty application on Heroku
+git remote -v # verifying that the remote is set to the heroku
 
-cd myapp                           # Changing into the project directory
-git init 						   # Initializing the project into a git repository
-git add .                          # Adding all the contents of the project into the repository excluding .gitignore content
-git commit -m "My first commit"    # Commiting the content to the repository
+heroku git:remote -a thawing-inlet-61413 # For an existing heroku app, you can add remote to the application
+git remote rename heroku heroku-staging # renaming remotes
 
-heroku create                      # Creating a new empty application on Heroku
-git remote -v                      # verifying that the remote is set to the heroku
+git push heroku master # Deploying code to the heroku application
+git push heroku testbranch:master # Deploying code from a non-master branch to the heroku application
 
-heroku git:remote -a thawing-inlet-61413      # For an existing heroku app, you can add remote to the application
-git remote rename heroku heroku-staging       # renaming remotes
+heroku create --ssh-git # ssh git transport for the application instead of https
+git config --global url.ssh://git@heroku.com/.insteadOf https://git.heroku.com/ # For using ssh always
+git config --global --remove-section url.ssh://git@heroku.com/ # To remove this rewrite setting run the command
 
-git push heroku master             # Deploying code to the heroku application
-git push heroku testbranch:master  # Deploying code from a non-master branch to the heroku application
-
-heroku create --ssh-git            # ssh git transport for the application instead of https
-git config --global url.ssh://git@heroku.com/.insteadOf https://git.heroku.com/     # For using ssh always
-git config --global --remove-section url.ssh://git@heroku.com/       # To remove this rewrite setting run the command
-
-
-
-
-
-### Managing and deploying applications on Heroku (Using Docker)     ###################################
-
+### Managing and deploying applications on Heroku (Using Docker)
 
 # Setting stack of your app to a Container
+
 heroku stack:set container
 
-heroku container:login            # Login to the container resistry
-git clone https://github.com/heroku/alpinehelloworld.git       # Get sample code by cloning into the following repository
-heroku create                     # Creating a blank heroku application
+heroku container:login # Login to the container resistry
+git clone https://github.com/heroku/alpinehelloworld.git # Get sample code by cloning into the following repository
+heroku create # Creating a blank heroku application
 
-heroku container:push web         # Build the image and push to Container Registry
-heroku container:push --recursive     # Pushing from the root directory of the project in recursive manner
-heroku container:push web worker --recursive     # Building the image and pushing to container resistry in recursive manner
-heroku container:release web      # Releasing the image to your application
+heroku container:push web # Build the image and push to Container Registry
+heroku container:push --recursive # Pushing from the root directory of the project in recursive manner
+heroku container:push web worker --recursive # Building the image and pushing to container resistry in recursive manner
+heroku container:release web # Releasing the image to your application
 
-heroku open                       # Open the application in the browser
-
+heroku open # Open the application in the browser
 
 ---
----
 
+---
 
 # Docs:
 
 ## Commands:
-
-
 
 ```
 USAGE
@@ -232,7 +217,7 @@ EXAMPLES
   $ heroku addons --app acme-inc-www
 ```
 
-### [heroku addons:attach ADDON\_NAME](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-attach-addon_name)
+### [heroku addons:attach ADDON_NAME](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-attach-addon_name)
 
 attach an existing add-on resource to an app
 
@@ -284,7 +269,7 @@ OPTIONS
   -r, --remote=remote    git remote of app to use
 ```
 
-### [heroku addons:detach ATTACHMENT\_NAME](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-detach-attachment_name)
+### [heroku addons:detach ATTACHMENT_NAME](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-detach-attachment_name)
 
 detach an existing add-on resource from an app
 
@@ -378,7 +363,7 @@ OPTIONS
   --json  output in json format
 ```
 
-### [heroku addons:rename ADDON NEW\_NAME](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-rename-addon-new_name)
+### [heroku addons:rename ADDON NEW_NAME](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-addons-rename-addon-new_name)
 
 rename an add-on
 
@@ -1537,7 +1522,7 @@ OPTIONS
   -j, --json  output in json format
 ```
 
-### [heroku clients:create NAME REDIRECT\_URI](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-clients-create-name-redirect_uri)
+### [heroku clients:create NAME REDIRECT_URI](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-clients-create-name-redirect_uri)
 
 create a new OAuth client
 
@@ -2709,7 +2694,7 @@ OPTIONS
   -r, --remote=remote  git remote of app to use
 ```
 
-### [heroku pg:backups:cancel \[BACKUP\_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-cancel-backup_id)
+### [heroku pg:backups:cancel \[BACKUP_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-cancel-backup_id)
 
 cancel an in-progress backup or restore (default newest)
 
@@ -2737,7 +2722,7 @@ OPTIONS
   --wait-interval=wait-interval
 ```
 
-### [heroku pg:backups:delete BACKUP\_ID](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-delete-backup_id)
+### [heroku pg:backups:delete BACKUP_ID](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-delete-backup_id)
 
 delete a backup
 
@@ -2751,7 +2736,7 @@ OPTIONS
   -r, --remote=remote    git remote of app to use
 ```
 
-### [heroku pg:backups:download \[BACKUP\_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-download-backup_id)
+### [heroku pg:backups:download \[BACKUP_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-download-backup_id)
 
 downloads database backup
 
@@ -2765,7 +2750,7 @@ OPTIONS
   -r, --remote=remote  git remote of app to use
 ```
 
-### [heroku pg:backups:info \[BACKUP\_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-info-backup_id)
+### [heroku pg:backups:info \[BACKUP_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-info-backup_id)
 
 get information about a specific backup
 
@@ -2839,7 +2824,7 @@ OPTIONS
   -r, --remote=remote  git remote of app to use
 ```
 
-### [heroku pg:backups:url \[BACKUP\_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-url-backup_id)
+### [heroku pg:backups:url \[BACKUP_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-backups-url-backup_id)
 
 get secret but publicly accessible URL of a backup
 
@@ -3029,7 +3014,7 @@ OPTIONS
   -r, --remote=remote  git remote of app to use
 ```
 
-### [heroku pg:diagnose \[DATABASE|REPORT\_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-diagnose-database-report_id)
+### [heroku pg:diagnose \[DATABASE|REPORT_ID\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-diagnose-database-report_id)
 
 run or view diagnostics report
 
@@ -3217,7 +3202,7 @@ OPTIONS
 
 ### [heroku pg:promote DATABASE](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-promote-database)
 
-sets DATABASE as your DATABASE\_URL
+sets DATABASE as your DATABASE_URL
 
 ```
 USAGE
@@ -3365,7 +3350,7 @@ OPTIONS
 
 ### [heroku pg:settings:log-lock-waits \[VALUE\] \[DATABASE\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-settings-log-lock-waits-value-database)
 
-Controls whether a log message is produced when a session waits longer than the deadlock\_timeout to acquire a lock. deadlock\_timeout is set to 1 second
+Controls whether a log message is produced when a session waits longer than the deadlock_timeout to acquire a lock. deadlock_timeout is set to 1 second
 
 ```
 USAGE
@@ -3402,7 +3387,7 @@ DESCRIPTION
 
 ### [heroku pg:settings:log-statement \[VALUE\] \[DATABASE\]](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-pg-settings-log-statement-value-database)
 
-log\_statement controls which SQL statements are logged.
+log_statement controls which SQL statements are logged.
 
 ```
 USAGE
@@ -4320,7 +4305,7 @@ DESCRIPTION
 
 ### [heroku redis:promote DATABASE](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-redis-promote-database)
 
-sets DATABASE as your REDIS\_URL
+sets DATABASE as your REDIS_URL
 
 ```
 USAGE
@@ -5298,22 +5283,22 @@ USAGE
   $ heroku which COMMAND
 ```
 
-
 ### Explination:
 
 <details>
 
 <summary></summary>
 
-
-# How Heroku Works 
+# How Heroku Works
 
 > ## Excerpt
+>
 > This is a high-level, technical description of how Heroku works. It ties together many of the concepts you'll encounter while writing, configuring, deploying and running applications on the Heroku platform.
 
 ---
--   [Heroku Architecture](https://devcenter.heroku.com/categories/heroku-architecture)
--   [How Heroku Works](https://devcenter.heroku.com/articles/how-heroku-works)
+
+- [Heroku Architecture](https://devcenter.heroku.com/categories/heroku-architecture)
+- [How Heroku Works](https://devcenter.heroku.com/articles/how-heroku-works)
 
 Last updated June 09, 2020
 
@@ -5590,37 +5575,36 @@ The following two sections recapitulate the main components of the platform, sep
 
 ### [Deploy](https://devcenter.heroku.com/articles/how-heroku-works#deploy)
 
--   Applications consist of your source code, a description of any dependencies, and a Procfile.
--   [Procfiles](https://devcenter.heroku.com/articles/procfile) list process types - named commands that you may want executed.
--   Deploying applications involves sending the application to Heroku using either Git, GitHub, or via an API.
--   [Buildpacks](https://devcenter.heroku.com/articles/buildpacks) lie behind the slug compilation process. Buildpacks take your application, its dependencies, and the language runtime, and produce slugs.
--   A [slug](https://devcenter.heroku.com/articles/slug-compiler) is a bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system - ready for execution.
--   [Config vars](https://devcenter.heroku.com/articles/config-vars) contain customizable configuration data that can be changed independently of your source code. The configuration is exposed to a running application via environment variables.
--   [Add-ons](https://elements.heroku.com/addons/) are third party, specialized, value-added cloud services that can be easily attached to an application, extending its functionality.
--   A [release](https://devcenter.heroku.com/articles/releases) is a combination of a slug (your application), config vars and add-ons. Heroku maintains an append-only ledger of releases you make.
+- Applications consist of your source code, a description of any dependencies, and a Procfile.
+- [Procfiles](https://devcenter.heroku.com/articles/procfile) list process types - named commands that you may want executed.
+- Deploying applications involves sending the application to Heroku using either Git, GitHub, or via an API.
+- [Buildpacks](https://devcenter.heroku.com/articles/buildpacks) lie behind the slug compilation process. Buildpacks take your application, its dependencies, and the language runtime, and produce slugs.
+- A [slug](https://devcenter.heroku.com/articles/slug-compiler) is a bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system - ready for execution.
+- [Config vars](https://devcenter.heroku.com/articles/config-vars) contain customizable configuration data that can be changed independently of your source code. The configuration is exposed to a running application via environment variables.
+- [Add-ons](https://elements.heroku.com/addons/) are third party, specialized, value-added cloud services that can be easily attached to an application, extending its functionality.
+- A [release](https://devcenter.heroku.com/articles/releases) is a combination of a slug (your application), config vars and add-ons. Heroku maintains an append-only ledger of releases you make.
 
 ### [Runtime](https://devcenter.heroku.com/articles/how-heroku-works#runtime)
 
--   [Dynos](https://devcenter.heroku.com/articles/dynos) are isolated, virtualized Unix containers, that provide the environment required to run an application.
--   Your application's [dyno formation](https://devcenter.heroku.com/articles/scaling#dyno-formation) is the total number of currently-executing dynos, divided between the various process types you have scaled.
--   The [dyno manager](https://devcenter.heroku.com/articles/dynos) is responsible for managing dynos across all applications running on Heroku.
--   Applications that use the free dyno type will [sleep](https://devcenter.heroku.com/articles/free-dyno-hours) after 30 minutes of inactivity. Scaling to multiple web dynos, or a different dyno type, will avoid this.
--   [One-off Dynos](https://devcenter.heroku.com/articles/one-off-dynos) are temporary dynos that run with their input/output attached to your local terminal. They're loaded with your latest release.
--   Each dyno gets its own [ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem) - with a fresh copy of the most recent release. It can be used as temporary scratchpad, but changes to the filesystem are not reflected to other dynos.
--   [Logplex](https://devcenter.heroku.com/articles/logplex) automatically collates log entries from all the running dynos of your app, as well as other components such as the routers, providing a single source of activity.
--   [Scaling](https://devcenter.heroku.com/articles/scaling) an application involves varying the number of dynos of each process type.
+- [Dynos](https://devcenter.heroku.com/articles/dynos) are isolated, virtualized Unix containers, that provide the environment required to run an application.
+- Your application's [dyno formation](https://devcenter.heroku.com/articles/scaling#dyno-formation) is the total number of currently-executing dynos, divided between the various process types you have scaled.
+- The [dyno manager](https://devcenter.heroku.com/articles/dynos) is responsible for managing dynos across all applications running on Heroku.
+- Applications that use the free dyno type will [sleep](https://devcenter.heroku.com/articles/free-dyno-hours) after 30 minutes of inactivity. Scaling to multiple web dynos, or a different dyno type, will avoid this.
+- [One-off Dynos](https://devcenter.heroku.com/articles/one-off-dynos) are temporary dynos that run with their input/output attached to your local terminal. They're loaded with your latest release.
+- Each dyno gets its own [ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem) - with a fresh copy of the most recent release. It can be used as temporary scratchpad, but changes to the filesystem are not reflected to other dynos.
+- [Logplex](https://devcenter.heroku.com/articles/logplex) automatically collates log entries from all the running dynos of your app, as well as other components such as the routers, providing a single source of activity.
+- [Scaling](https://devcenter.heroku.com/articles/scaling) an application involves varying the number of dynos of each process type.
 
-
-
-
-# Glossary of Heroku Terminology 
+# Glossary of Heroku Terminology
 
 > ## Excerpt
+>
 > This article provides definitions for terms that are either specific to the Heroku platform or have a specific meaning on the Heroku platform. This is not an exhaustive list of Heroku products and features.
 
 ---
--   [Heroku Architecture](https://devcenter.heroku.com/categories/heroku-architecture)
--   [Glossary of Heroku Terminology](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology)
+
+- [Heroku Architecture](https://devcenter.heroku.com/categories/heroku-architecture)
+- [Glossary of Heroku Terminology](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology)
 
 Last updated July 23, 2019
 
@@ -5668,8 +5652,8 @@ The current set of dynos running across all of a Heroku app's [process types](ht
 
 The Free [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) type enables you to host a basic Heroku app for free. Free dynos have several limitations, including:
 
--   Free web dynos “sleep” if they receive no web traffic for thirty minutes. A sleeping Free dyno will “wake up” upon receiving an HTTP request, but there is a brief delay before the app becomes active.
--   Each Heroku customer is allotted a monthly quota of Free dyno hours that is consumed across all of the customer's Heroku apps that use Free dynos. When this quota is reached for a given month, all of the customer's Free dynos sleep for the remainder of the month.
+- Free web dynos “sleep” if they receive no web traffic for thirty minutes. A sleeping Free dyno will “wake up” upon receiving an HTTP request, but there is a brief delay before the app becomes active.
+- Each Heroku customer is allotted a monthly quota of Free dyno hours that is consumed across all of the customer's Heroku apps that use Free dynos. When this quota is reached for a given month, all of the customer's Free dynos sleep for the remainder of the month.
 
 [Learn more about Free dynos](https://devcenter.heroku.com/articles/free-dyno-hours)
 
@@ -5759,12 +5743,12 @@ The approximate location of the data center that a Heroku app's [dynos](https://
 
 A distinct deployed version of a Heroku app. All of the following events create a new release for an app:
 
--   A successful app build
--   A change to the value of a [config var](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#config-var) (unless the config var is managed by an [add-on](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#add-on))
--   A [pipeline](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#pipeline) promotion
--   A [rollback](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#rollback)
--   A release via the Platform API
--   Provisioning a new add-on
+- A successful app build
+- A change to the value of a [config var](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#config-var) (unless the config var is managed by an [add-on](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#add-on))
+- A [pipeline](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#pipeline) promotion
+- A [rollback](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#rollback)
+- A release via the Platform API
+- Provisioning a new add-on
 
 [Learn more about releases](https://devcenter.heroku.com/articles/releases)
 
@@ -5806,10 +5790,7 @@ A [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dy
 
 A [dyno](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#dyno) that _cannot_ receive HTTP traffic. These dynos run the command associated with any process type in an app's [Procfile](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology#procfile) _except_ the `web` process type.
 
-
-
 ### Heroku CLI:
-
 
 The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It's an essential part of using Heroku.
 
@@ -5817,8 +5798,8 @@ The Heroku Command Line Interface (CLI) makes it easy to create and manage your 
 
 The Heroku CLI requires **Git**, the popular version control system. If you don't already have Git installed, complete the following before installing the CLI:
 
--   [Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
--   [First-time Git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+- [Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [First-time Git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
 Currently, the Windows installers may display a warning titled “Windows protected your PC”. To run the installation when this warning is shown, click “More info”, verify the publisher as “salesforce.com, inc”, then click the “Run anyway” button.
 
@@ -5846,11 +5827,11 @@ Otherwise, download one of the tarballs below and extract it yourself.
 
 These are available in `gz` or `xz` compression. `xz` is much smaller but `gz` is more compatible.
 
--   [macOS](https://cli-assets.heroku.com/heroku-darwin-x64.tar.gz)
--   [Linux (x64)](https://cli-assets.heroku.com/heroku-linux-x64.tar.gz)
--   [Linux (arm)](https://cli-assets.heroku.com/heroku-linux-arm.tar.gz)
--   [Windows (x64)](https://cli-assets.heroku.com/heroku-win32-x64.tar.gz)
--   [Windows (x86)](https://cli-assets.heroku.com/heroku-win32-x86.tar.gz)
+- [macOS](https://cli-assets.heroku.com/heroku-darwin-x64.tar.gz)
+- [Linux (x64)](https://cli-assets.heroku.com/heroku-linux-x64.tar.gz)
+- [Linux (arm)](https://cli-assets.heroku.com/heroku-linux-arm.tar.gz)
+- [Windows (x64)](https://cli-assets.heroku.com/heroku-win32-x64.tar.gz)
+- [Windows (x86)](https://cli-assets.heroku.com/heroku-win32-x86.tar.gz)
 
 ### [Ubuntu / Debian apt-get](https://devcenter.heroku.com/articles/heroku-cli#ubuntu-debian-apt-get)
 
@@ -5949,17 +5930,17 @@ The `heroku` binary checks for an up-to-date client in `~/.local/share/heroku/cl
 
 #### [Darwin](https://devcenter.heroku.com/articles/heroku-cli#darwin)
 
--   [x64](https://cli-assets.heroku.com/darwin-x64)
+- [x64](https://cli-assets.heroku.com/darwin-x64)
 
 #### [Linux](https://devcenter.heroku.com/articles/heroku-cli#latest-release-shas-linux)
 
--   [arm](https://cli-assets.heroku.com/linux-arm)
--   [x64](https://cli-assets.heroku.com/linux-x64)
+- [arm](https://cli-assets.heroku.com/linux-arm)
+- [x64](https://cli-assets.heroku.com/linux-x64)
 
 #### [Windows](https://devcenter.heroku.com/articles/heroku-cli#latest-release-shas-windows)
 
--   [x64](https://cli-assets.heroku.com/win32-x64)
--   [x86](https://cli-assets.heroku.com/win32-x86)
+- [x64](https://cli-assets.heroku.com/win32-x64)
+- [x86](https://cli-assets.heroku.com/win32-x86)
 
 ## [Useful CLI plugins](https://devcenter.heroku.com/articles/heroku-cli#useful-cli-plugins)
 
@@ -5967,14 +5948,14 @@ CLI plugins allow you to extend your CLI installation. Install a CLI plugin with
 
 Here are some useful plugins you might want to try:
 
--   [heroku-builds](https://github.com/heroku/heroku-builds) — View builds, purge the build cache, and create builds from tarballs
--   [heroku-repo](https://github.com/heroku/heroku-repo) — Commands to manipulate an app's Heroku git repository
--   [api](https://github.com/heroku/heroku-api-plugin) — Make ad-hoc API requests (such as `heroku api GET /account`)
--   [heroku-pg-extras](https://github.com/heroku/heroku-pg-extras) — Add extra `heroku pg:*` commands
--   [heroku-slugs](https://github.com/heroku/heroku-slugs) — Downloads app slugs
--   [heroku-kafka](https://github.com/heroku/heroku-kafka-jsplugin) — Manage Heroku Kafka
--   [heroku-papertrail](https://github.com/papertrail/papertrail-heroku-plugin) — Display, tail, and search for logs with [Papertrail](https://elements.heroku.com/addons/papertrail).
--   [advanced-scheduler](https://github.com/oavanruiten/advanced-scheduler) — Create and manage your [Advanced Scheduler](https://elements.heroku.com/addons/advanced-scheduler) triggers.
+- [heroku-builds](https://github.com/heroku/heroku-builds) — View builds, purge the build cache, and create builds from tarballs
+- [heroku-repo](https://github.com/heroku/heroku-repo) — Commands to manipulate an app's Heroku git repository
+- [api](https://github.com/heroku/heroku-api-plugin) — Make ad-hoc API requests (such as `heroku api GET /account`)
+- [heroku-pg-extras](https://github.com/heroku/heroku-pg-extras) — Add extra `heroku pg:*` commands
+- [heroku-slugs](https://github.com/heroku/heroku-slugs) — Downloads app slugs
+- [heroku-kafka](https://github.com/heroku/heroku-kafka-jsplugin) — Manage Heroku Kafka
+- [heroku-papertrail](https://github.com/papertrail/papertrail-heroku-plugin) — Display, tail, and search for logs with [Papertrail](https://elements.heroku.com/addons/papertrail).
+- [advanced-scheduler](https://github.com/oavanruiten/advanced-scheduler) — Create and manage your [Advanced Scheduler](https://elements.heroku.com/addons/advanced-scheduler) triggers.
 
 ## [CLI architecture](https://devcenter.heroku.com/articles/heroku-cli#cli-architecture)
 
@@ -5988,8 +5969,8 @@ If you're having issues with the CLI, first ensure that you're using the [latest
 
 Not all methods of installation support `heroku update`.
 
--   If you installed the CLI with `apt`, you need to use `sudo apt-get update && sudo apt-get upgrade heroku` instead.
--   If you installed the CLI with `npm` or `yarn`, you need to use `npm upgrade -g heroku` or `yarn global upgrade heroku` instead.
+- If you installed the CLI with `apt`, you need to use `sudo apt-get update && sudo apt-get upgrade heroku` instead.
+- If you installed the CLI with `npm` or `yarn`, you need to use `npm upgrade -g heroku` or `yarn global upgrade heroku` instead.
 
 If the CLI fails to update, try uninstalling it with the [instructions below](https://devcenter.heroku.com/articles/heroku-cli#uninstalling-the-heroku-cli), then reinstalling it. Ensure that you don't have the legacy Heroku Toolbelt or Heroku Ruby gem installed by using `which heroku` or `where heroku` (on Windows) to confirm what the `heroku` command points to. You might need to modify your `PATH` to include `/usr/local/bin/heroku` (for most installations).
 
@@ -6037,12 +6018,12 @@ Then, delete the following directories:
 
 Windows:
 
--   `%LOCALAPPDATA%\heroku`
+- `%LOCALAPPDATA%\heroku`
 
 macOS/Linux/Other:
 
--   `~/.local/share/heroku` (or `XDG_DATA_HOME` if set)
--   Either `~/Library/Caches/heroku` on macOS, or `~/.cache/heroku` on Linux/Other (or `XDG_CACHE_HOME` if set)
+- `~/.local/share/heroku` (or `XDG_DATA_HOME` if set)
+- Either `~/Library/Caches/heroku` on macOS, or `~/.cache/heroku` on Linux/Other (or `XDG_CACHE_HOME` if set)
 
 ### [Login issues](https://devcenter.heroku.com/articles/heroku-cli#login-issues)
 
@@ -6152,9 +6133,7 @@ If it is, uninstall it and any other `heroku` gems:
 $ gem uninstall heroku --all
 ```
 
-
 #### CLI USAGE:
-
 
 ```
 Usage: heroku COMMAND
@@ -6272,6 +6251,5 @@ If your company's internet requires the use of a MITM proxy, you might get a `SE
 $ export NODE_EXTRA_CA_CERTS=/path/to/ca_cert.pem
 $ heroku whoami
 ```
-
 
 </details>

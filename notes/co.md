@@ -1,26 +1,29 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: co
 category: JavaScript libraries
 layout: 2017/sheet
 updated: 2017-10-27
 weight: -1
 intro: |
-  [co](https://github.com/tj/co) allows you to use generators to manage async flow.
+[co](https://github.com/tj/co) allows you to use generators to manage async flow.
+
 ---
 
 [co]: https://github.com/tj/co

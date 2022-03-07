@@ -5,7 +5,7 @@ excerpt: >-
   variable is nothing more than a label, a name assigned to a location or set of
   locations in computer memory holding an item of data.Variables appear in
   arithmetic operations and manipulation of quantities, and in string parsing.
-date: '2021-12-17'
+date: "2021-12-17"
 thumb_img_alt: Hikers on the trail
 content_img_path: images/8.jpg
 content_img_alt: Hikers on the trail
@@ -15,38 +15,36 @@ seo:
     The Grand Canyon is a steep-sided canyon carved by the Colorado River in
     Arizona
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Hiking The Grand Canyon
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         The Grand Canyon is a steep-sided canyon carved by the Colorado River in
         Arizona
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/8.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Hiking The Grand Canyon
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: >-
         The Grand Canyon is a steep-sided canyon carved by the Colorado River in
         Arizona
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/8.jpg
       relativeUrl: true
 template: post
 subtitle: Cheat Sheet
 thumb_img_path: images/data-structure.jpg
 ---
-
-
 
 ## My Commands:
 
@@ -3725,7 +3723,6 @@ fi
 
 ---
 
-
 Simple:
 
 ---
@@ -4641,4 +4638,3 @@ fi
 ```
 
 ---
-

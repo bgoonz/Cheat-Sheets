@@ -9,7 +9,7 @@ sections:
       <https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/>
     actions:
       - label: Gitbook Version
-        url: 'https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/'
+        url: "https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/"
         style: button
         icon_class: dev
         new_window: false
@@ -47,26 +47,26 @@ seo:
   title: My Cheat Sheets
   description: The preview of the Fresh theme
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: My Cheat Sheets
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: The preview of the Fresh theme
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/4.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: My Cheat Sheets
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: The preview of the Fresh theme
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/4.jpg
       relativeUrl: true
 template: advanced

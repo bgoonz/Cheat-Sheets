@@ -16,8 +16,8 @@ Normally, installation for Emmet should be a straight-forward process from the p
 
 You can use Emmet in two ways:
 
-* Tab Expand Way: Type your emmet code and press `Tab` key
-* Interactive Method: Press `alt + ctrl + Enter` and start typing your expressions. This should automatically generate HTML snippets on the fly.
+- Tab Expand Way: Type your emmet code and press `Tab` key
+- Interactive Method: Press `alt + ctrl + Enter` and start typing your expressions. This should automatically generate HTML snippets on the fly.
 
 **This cheatsheet will assume that you press `Tab` after each expressions.**
 
@@ -64,10 +64,8 @@ Sibling items are created using `+`
 
 ```html
 <html>
-<head></head>
-<body>
-
-</body>
+  <head></head>
+  <body></body>
 </html>
 ```
 
@@ -200,7 +198,7 @@ To start the numbering from specific number, use this way
 
 ### Tips
 
-* Use `:` to expand known abbreviations
+- Use `:` to expand known abbreviations
 
 `input:date`
 
@@ -217,10 +215,10 @@ To start the numbering from specific number, use this way
 `link:css`
 
 ```html
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 ```
 
-* Building Navbar
+- Building Navbar
 
 `.navbar>ul>li*3>a[href=#]{Item $@-}`
 
@@ -238,7 +236,7 @@ To start the numbering from specific number, use this way
 
 Emmet works surprisingly well with css as well.
 
-* `f:l`
+- `f:l`
 
 ```css
 float: left;
@@ -246,7 +244,7 @@ float: left;
 
 You can also use any options n/r/l
 
-* `pos:a­`
+- `pos:a­`
 
 ```css
 position: absolute;
@@ -254,7 +252,7 @@ position: absolute;
 
 Also use any options, pos:a/r/f
 
-* `d:n/b­/f/­i/ib`
+- `d:n/b­/f/­i/ib`
 
 `d:ib`
 
@@ -262,18 +260,18 @@ Also use any options, pos:a/r/f
 display: inline-block;
 ```
 
-* You can use `m` for margin and `p` for padding followed by direction
+- You can use `m` for margin and `p` for padding followed by direction
 
 `mr` -> `margin-right`
 
 `pr` -> `padding-right`
 
-* `@f` will result in
+- `@f` will result in
 
 ```css
 @font-face {
-  font-family:;
-  src:url();
+  font-family: ;
+  src: url();
 }
 ```
 

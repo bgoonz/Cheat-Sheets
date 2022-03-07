@@ -1,27 +1,30 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Heroku
 category: Devops
 layout: 2017/sheet
 updated: 2017-10-11
 description: |
-  A one-page reference to common Heroku-CLI commands.
+A one-page reference to common Heroku-CLI commands.
 intro: |
-  [Heroku](http://heroku.com/) is a web hosting platform supporting many languages, and this guide is a reference to Heroku's [command-line interface](http://heroku.com/).
+[Heroku](http://heroku.com/) is a web hosting platform supporting many languages, and this guide is a reference to Heroku's [command-line interface](http://heroku.com/).
+
 ---
 
 ### `create` - Create an app

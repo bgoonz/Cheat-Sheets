@@ -47,14 +47,12 @@ subtitle: >-
 
 ## Background:
 
-
-
 # Express glossary
-
 
 > In general, one or more programs that are designed to carry out operations for a specific purpose. In the context of Express, a program that uses the Express API running on the Node.js platform. Might also refer to an app object.
 
 ---
+
 ### application
 
 In general, one or more programs that are designed to carry out operations for a specific purpose. In the context of Express, a program that uses the Express API running on the Node.js platform. Might also refer to an [app object](https://expressjs.com/en/api.html#express).
@@ -75,9 +73,9 @@ A multi-platform support library which focuses on asynchronous I/O, primarily de
 
 A function that is invoked by the Express routing layer before the final request handler, and thus sits in the middle between a raw request and the final intended route. A few fine points of terminology around middleware:
 
--   `var foo = require('middleware')` is called _requiring_ or _using_ a Node.js module. Then the statement `var mw = foo()` typically returns the middleware.
--   `app.use(mw)` is called _adding the middleware to the global processing stack_.
--   `app.get('/foo', mw, function (req, res) { ... })` is called _adding the middleware to the “GET /foo” processing stack_.
+- `var foo = require('middleware')` is called _requiring_ or _using_ a Node.js module. Then the statement `var mw = foo()` typically returns the middleware.
+- `app.use(mw)` is called _adding the middleware to the global processing stack_.
+- `app.get('/foo', mw, function (req, res) { ... })` is called _adding the middleware to the “GET /foo” processing stack_.
 
 ### Node.js
 

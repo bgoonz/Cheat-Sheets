@@ -1,24 +1,27 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Git extras
 category: Git
 layout: 2017/sheet
 intro: |
-  Quick reference to some utilities in the [git-extras](https://github.com/tj/git-extras) utilities.
+Quick reference to some utilities in the [git-extras](https://github.com/tj/git-extras) utilities.
+
 ---
 
 ## References

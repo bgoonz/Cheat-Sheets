@@ -1,26 +1,29 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Git revisions
 category: Git
 layout: 2017/sheet
 updated: 2017-10-11
 description: ""
 intro: |
-  A list of revision specifications you can use with `git log` and many other Git commands. Summarized from `gitrevisions(7)` man page.
+A list of revision specifications you can use with `git log` and many other Git commands. Summarized from `gitrevisions(7)` man page.
+
 ---
 
 ### Example usages

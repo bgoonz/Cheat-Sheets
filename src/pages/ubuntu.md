@@ -4,8 +4,8 @@ hide_title: true
 excerpt: lorem-ipsum
 sections: []
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: advanced

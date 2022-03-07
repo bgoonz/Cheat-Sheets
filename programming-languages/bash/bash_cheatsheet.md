@@ -1,23 +1,23 @@
-# bash\_cheatsheet
+# bash_cheatsheet
 
 ## Bash CheatSheet
 
 ```bash
-	pushd 
+	pushd
 	# goes to a directory from directory
-	popd 
+	popd
 	# returns to the original directory
 	file
 	# gives info about the file
-	locate <name> 
+	locate <name>
 	# locates find
 	sudo updatedb
 	# updates database
-	which <name> 
+	which <name>
 	# tells if install
-	history 
+	history
 	# shows command history
-	whatis 
+	whatis
 	# tells info about command
 	apropos <search term>
 	# displays commands with that search term

@@ -9,7 +9,7 @@ import React from 'react'
 ```
 
 ```jsx
-import ReactDOM from 'react-dom'
+import ReactDOM from "react-dom";
 ```
 
 ```
@@ -26,19 +26,17 @@ class Hello extends React.Component {
 ```
 
 ```jsx
-const el = document.body
-ReactDOM.render(<Hello name='John' />, el)
+const el = document.body;
+ReactDOM.render(<Hello name="John" />, el);
 ```
 
 Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hacking. (or the unofficial [jsbin](http://jsbin.com/yafixat/edit?js,output))
 
 #### Import multiple exports
 
-
-
 ```jsx
-import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 ```
 
 ```
@@ -53,7 +51,7 @@ class Hello extends Component {
 #### Properties
 
 ```html
-<Video fullscreen={true} autoplay={false} />
+<video fullscreen="{true}" autoplay="{false}" />
 ```
 
 {: .-setup}
@@ -80,7 +78,7 @@ constructor(props) {
 ```
 
 ```jsx
-this.setState({ username: 'rstacruz' })
+this.setState({ username: "rstacruz" });
 ```
 
 ```jsx
@@ -108,13 +106,15 @@ See: [States](https://reactjs.org/docs/tutorial.html#reactive-state)
 
 ```jsx
 class Info extends Component {
-  render () {
-    const { avatar, username } = this.props
+  render() {
+    const { avatar, username } = this.props;
 
-    return <div>
-      <UserAvatar src={avatar} />
-      <UserProfile username={username} />
-    </div>
+    return (
+      <div>
+        <UserAvatar src={avatar} />
+        <UserProfile username={username} />
+      </div>
+    );
   }
 }
 ```
@@ -122,26 +122,21 @@ class Info extends Component {
 As of React v16.2.0, fragments can be used to return multiple children without adding extra wrapping nodes to the DOM.
 
 ```jsx
-import React, {
-  Component,
-  Fragment
-} from 'react'
+import React, { Component, Fragment } from "react";
 
 class Info extends Component {
-  render () {
-    const { avatar, username } = this.props
+  render() {
+    const { avatar, username } = this.props;
 
     return (
       <Fragment>
         <UserAvatar src={avatar} />
         <UserProfile username={username} />
       </Fragment>
-    )
+    );
   }
 }
 ```
-
-
 
 Nest components to separate concerns.
 
@@ -159,10 +154,8 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
 
 ```jsx
 class AlertBox extends Component {
-  render () {
-    return <div className='alert-box'>
-      {this.props.children}
-    </div>
+  render() {
+    return <div className="alert-box">{this.props.children}</div>;
   }
 }
 ```
@@ -175,8 +168,8 @@ Children are passed as the `children` property.
 
 ```jsx
 Hello.defaultProps = {
-  color: 'blue'
-}
+  color: "blue",
+};
 ```
 
 See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
@@ -185,9 +178,9 @@ See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
 
 ```jsx
 class Hello extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { visible: true }
+  constructor(props) {
+    super(props);
+    this.state = { visible: true };
   }
 }
 ```
@@ -214,10 +207,8 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
 #### Functional components
 
 ```jsx
-function MyComponent ({ name }) {
-  return <div className='message-box'>
-    Hello {name}
-  </div>
+function MyComponent({ name }) {
+  return <div className="message-box">Hello {name}</div>;
 }
 ```
 
@@ -242,7 +233,7 @@ See: [Pure components](https://reactjs.org/docs/react-api.html#react.purecompone
 #### Component API
 
 ```jsx
-this.forceUpdate()
+this.forceUpdate();
 ```
 
 ```jsx
@@ -251,8 +242,8 @@ this.setState(state => { ... })
 ```
 
 ```jsx
-this.state
-this.props
+this.state;
+this.props;
 ```
 
 These methods and properties are available for `Component` instances.
@@ -296,7 +287,7 @@ See: [Component specs](http://facebook.github.io/react/docs/component-specs.html
 #### State Hook
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Example() {
   // Declare a new state variable, which we'll call "count"
@@ -305,9 +296,7 @@ function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
@@ -323,8 +312,8 @@ See: [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
 function ExampleWithManyStates() {
   // Declare multiple state variables!
   const [age, setAge] = useState(42);
-  const [fruit, setFruit] = useState('banana');
-  const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+  const [fruit, setFruit] = useState("banana");
+  const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
   // ...
 }
 ```
@@ -332,7 +321,7 @@ function ExampleWithManyStates() {
 #### Effect hook
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Example() {
   const [count, setCount] = useState(0);
@@ -346,9 +335,7 @@ function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
@@ -363,7 +350,7 @@ By default, React runs the effects after every render — including the first re
 **Define FriendStatus**
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function FriendStatus(props) {
   const [isOnline, setIsOnline] = useState(null);
@@ -380,9 +367,9 @@ function FriendStatus(props) {
   }, [props.friend.id]);
 
   if (isOnline === null) {
-    return 'Loading...';
+    return "Loading...";
   }
-  return isOnline ? 'Online' : 'Offline';
+  return isOnline ? "Online" : "Offline";
 }
 ```
 
@@ -395,9 +382,9 @@ function FriendStatus(props) {
   const isOnline = useFriendStatus(props.friend.id);
 
   if (isOnline === null) {
-    return 'Loading...';
+    return "Loading...";
   }
-  return isOnline ? 'Online' : 'Offline';
+  return isOnline ? "Online" : "Offline";
 }
 ```
 
@@ -437,14 +424,16 @@ Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#a
 
 ```jsx
 class MyComponent extends Component {
-  render () {
-    return <div>
-      <input ref={el => this.input = el} />
-    </div>
+  render() {
+    return (
+      <div>
+        <input ref={(el) => (this.input = el)} />
+      </div>
+    );
   }
 
-  componentDidMount () {
-    this.input.focus()
+  componentDidMount() {
+    this.input.focus();
   }
 }
 ```
@@ -457,19 +446,19 @@ See: [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 ```jsx
 class MyComponent extends Component {
-  render () {
-    <input type="text"
-        value={this.state.value}
-        onChange={event => this.onChange(event)} />
+  render() {
+    <input
+      type="text"
+      value={this.state.value}
+      onChange={(event) => this.onChange(event)}
+    />;
   }
 
-  onChange (event) {
-    this.setState({ value: event.target.value })
+  onChange(event) {
+    this.setState({ value: event.target.value });
   }
 }
 ```
-
-
 
 Pass functions to attributes like `onChange`.
 
@@ -487,8 +476,8 @@ See: [Events](https://reactjs.org/docs/events.html)
 
 ```jsx
 class VideoPlayer extends Component {
-  render () {
-    return <VideoEmbed {...this.props} />
+  render() {
+    return <VideoEmbed {...this.props} />;
   }
 }
 ```
@@ -505,13 +494,13 @@ React.isValidElement(c)
 ```
 
 ```jsx
-ReactDOM.render(<Component />, domnode, [callback])
-ReactDOM.unmountComponentAtNode(domnode)
+ReactDOM.render(<Component />, domnode, [callback]);
+ReactDOM.unmountComponentAtNode(domnode);
 ```
 
 ```jsx
-ReactDOMServer.renderToString(<Component />)
-ReactDOMServer.renderToStaticMarkup(<Component />)
+ReactDOMServer.renderToString(<Component />);
+ReactDOMServer.renderToStaticMarkup(<Component />);
 ```
 
 There are more, but these are most common.
@@ -523,12 +512,12 @@ See: [React top-level API](https://reactjs.org/docs/react-api.html)
 #### Style shorthand
 
 ```jsx
-const style = { height: 10 }
-return <div style={style}></div>
+const style = { height: 10 };
+return <div style={style}></div>;
 ```
 
 ```jsx
-return <div style={{ margin: 0, padding: 0 }}></div>
+return <div style={{ margin: 0, padding: 0 }}></div>;
 ```
 
 See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
@@ -536,8 +525,10 @@ See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
 #### Inner HTML
 
 ```jsx
-function markdownify() { return "<p>...</p>"; }
-<div dangerouslySetInnerHTML={{__html: markdownify()}} />
+function markdownify() {
+  return "<p>...</p>";
+}
+<div dangerouslySetInnerHTML={{ __html: markdownify() }} />;
 ```
 
 See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-html.html)
@@ -546,13 +537,16 @@ See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-
 
 ```jsx
 class TodoList extends Component {
-  render () {
-    const { items } = this.props
+  render() {
+    const { items } = this.props;
 
-    return <ul>
-      {items.map(item =>
-        <TodoItem item={item} key={item.key} />)}
-    </ul>
+    return (
+      <ul>
+        {items.map((item) => (
+          <TodoItem item={item} key={item.key} />
+        ))}
+      </ul>
+    );
   }
 }
 ```
@@ -562,11 +556,7 @@ Always supply a `key` property.
 #### Conditionals
 
 ```jsx
-<Fragment>
-  {showMyComponent
-    ? <MyComponent />
-    : <OtherComponent />}
-</Fragment>
+<Fragment>{showMyComponent ? <MyComponent /> : <OtherComponent />}</Fragment>
 ```
 
 #### Short-circuit evaluation
@@ -659,8 +649,8 @@ See: [Portals](https://reactjs.org/docs/portals.html)
 #### Hydration
 
 ```js
-const el = document.getElementById('app')
-ReactDOM.hydrate(<App />, el)
+const el = document.getElementById("app");
+ReactDOM.hydrate(<App />, el);
 ```
 
 Use `ReactDOM.hydrate` instead of using `ReactDOM.render` if you're rendering over the output of [ReactDOMServer](https://reactjs.org/docs/react-dom-server.html).
@@ -672,7 +662,7 @@ See: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 #### PropTypes
 
 ```js
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 ```
 
 See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
@@ -707,20 +697,20 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 
 ```jsx
 MyComponent.propTypes = {
-  email:      PropTypes.string,
-  seats:      PropTypes.number,
-  callback:   PropTypes.func,
-  isClosed:   PropTypes.bool,
-  any:        PropTypes.any
-}
+  email: PropTypes.string,
+  seats: PropTypes.number,
+  callback: PropTypes.func,
+  isClosed: PropTypes.bool,
+  any: PropTypes.any,
+};
 ```
 
 #### Required types
 
 ```jsx
 MyCo.propTypes = {
-  name:  PropTypes.string.isRequired
-}
+  name: PropTypes.string.isRequired,
+};
 ```
 
 #### Elements
@@ -731,18 +721,16 @@ MyCo.propTypes = {
   element: PropTypes.element,
 
   // num, string, element, or an array of those
-  node: PropTypes.node
-}
+  node: PropTypes.node,
+};
 ```
 
 #### Enumerables (oneOf)
 
 ```jsx
 MyCo.propTypes = {
-  direction: PropTypes.oneOf([
-    'left', 'right'
-  ])
-}
+  direction: PropTypes.oneOf(["left", "right"]),
+};
 ```
 
 #### Arrays and objects
@@ -753,17 +741,17 @@ MyCo.propTypes = {
   ages: PropTypes.arrayOf(PropTypes.number),
   user: PropTypes.object,
   user: PropTypes.objectOf(PropTypes.number),
-  message: PropTypes.instanceOf(Message)
-}
+  message: PropTypes.instanceOf(Message),
+};
 ```
 
 ```jsx
 MyCo.propTypes = {
   user: PropTypes.shape({
     name: PropTypes.string,
-    age:  PropTypes.number
-  })
-}
+    age: PropTypes.number,
+  }),
+};
 ```
 
 Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
@@ -774,15 +762,15 @@ Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
 MyCo.propTypes = {
   customProp: (props, key, componentName) => {
     if (!/matchme/.test(props[key])) {
-      return new Error('Validation failed!')
+      return new Error("Validation failed!");
     }
-  }
-}
+  },
+};
 ```
 
 ### Also see
 
-* [React website](https://reactjs.org) _(reactjs.org)_
-* [React cheatsheet](https://reactcheatsheet.com) _(reactcheatsheet.com)_
-* [Awesome React](https://github.com/enaqx/awesome-react) _(github.com)_
-* React v0.14 cheatsheet _Legacy version_
+- [React website](https://reactjs.org) _(reactjs.org)_
+- [React cheatsheet](https://reactcheatsheet.com) _(reactcheatsheet.com)_
+- [Awesome React](https://github.com/enaqx/awesome-react) _(github.com)_
+- React v0.14 cheatsheet _Legacy version_

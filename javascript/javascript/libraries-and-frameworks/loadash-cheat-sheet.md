@@ -6,16 +6,16 @@
 >
 > This is not a complete list. · One-page guide to Lodash
 
-***
+---
 
 ### #Collections
 
 #### Finding
 
 ```
-_.filter(list, (n) => n % 2)    
-_.find(list, (n) => n % 2)      
-_.findLast(list, ...)           
+_.filter(list, (n) => n % 2)
+_.find(list, (n) => n % 2)
+_.findLast(list, ...)
 ```
 
 Works for both arrays and objects.
@@ -23,8 +23,8 @@ Works for both arrays and objects.
 #### Accessing
 
 ```
-_.at([ abcd ], 0)               
-_.at([ abcd ], [ 0, 1 ])        
+_.at([ abcd ], 0)
+_.at([ abcd ], [ 0, 1 ])
 ```
 
 #### Set/get
@@ -45,8 +45,8 @@ _.map(list, ...)
 ```
 
 ```
-_.every(users, (u) => u.active)  
-_.any(users, ...)                
+_.every(users, (u) => u.active)
+_.any(users, ...)
 ```
 
 ### #Array
@@ -54,10 +54,10 @@ _.any(users, ...)
 #### Arrays
 
 ```
-_.chunk([ abcd ], 2)           
+_.chunk([ abcd ], 2)
 _.compact(list)
 
-_.fill(Array(4), 'x')          
+_.fill(Array(4), 'x')
 _.flatten
 _.flattenDeep
 ```
@@ -65,20 +65,20 @@ _.flattenDeep
 #### Filtering
 
 ```
-_.drop([ abcdef ], 2)          
-_.dropRight([ abcdef ], 2)     
-_.take([ abcdef ], 2)          
-_.takeRight([ abcdef ], 2)     
-_.slice([ abcdef ], 2, 4)      
+_.drop([ abcdef ], 2)
+_.dropRight([ abcdef ], 2)
+_.take([ abcdef ], 2)
+_.takeRight([ abcdef ], 2)
+_.slice([ abcdef ], 2, 4)
 ```
 
 ```
-_.initial([ abcdef ])          
-_.rest([ abcdef ])             
+_.initial([ abcdef ])
+_.rest([ abcdef ])
 ```
 
 ```
-_.dropWhile(list, 'active')            
+_.dropWhile(list, 'active')
 _.dropWhile(list, 'active', true)
 _.dropWhile(list, { active: true })
 _.dropWhile(list, (n) => ...)
@@ -86,7 +86,7 @@ _.dropRightWhile(list, ...)
 ```
 
 ```
-_.without([ abcde ], b)        
+_.without([ abcde ], b)
 ```
 
 ```
@@ -96,17 +96,17 @@ _.remove(list, (n) => n % 2)
 #### Accessing
 
 ```
-_.first([ abcdef ])            
-_.last([ abcdef ])             
+_.first([ abcdef ])
+_.last([ abcdef ])
 ```
 
 #### Sets
 
 ```
 _.uniq()
-_.difference([ abc ], [ bc ])       
-_.intersection([ abc ], [ bcd ])    
-_.union([ abc ], [ bcd ])           
+_.difference([ abc ], [ bc ])
+_.intersection([ abc ], [ bcd ])
+_.union([ abc ], [ bcd ])
 ```
 
 ```
@@ -139,15 +139,15 @@ greet = (greeting, name) => `${greeting}, ${name}!`
 
 ```
 fn = _.partial(fn, 'hi')
-fn('joe')    
+fn('joe')
 
 fn = _.partial(fn, 'joe')
-fn('yo')     
+fn('yo')
 ```
 
 ```
-_.curry(greet)('hi')         
-_.curryRight(greet)('joe')   
+_.curry(greet)('hi')
+_.curryRight(greet)('joe')
 ```
 
 ### #Decorating functions
@@ -162,9 +162,9 @@ _.debounce(fn)
 #### Limiting
 
 ```
-_.before(5, fn)         
-_.after(5, fn)          
-_.once(fn)              
+_.before(5, fn)
+_.after(5, fn)
+_.once(fn)
 ```
 
 #### Etc
@@ -186,46 +186,46 @@ _.memoize(fn, ...)
 #### Capitalization
 
 ```
-_.capitalize('hello world')   
-_.startCase('hello_world')    
-_.snakeCase('hello world')    
-_.kebabCase('hello world')    
-_.camelCase('hello world')    
+_.capitalize('hello world')
+_.startCase('hello_world')
+_.snakeCase('hello world')
+_.kebabCase('hello world')
+_.camelCase('hello world')
 ```
 
 #### Padding
 
 ```
-_.pad('abc', 3)           
-_.pad('abc', 8)           
-_.pad('abc', 8, '_-')     
-_.padStart('abc', 3)      
-_.padStart('abc', 6)      
+_.pad('abc', 3)
+_.pad('abc', 8)
+_.pad('abc', 8, '_-')
+_.padStart('abc', 3)
+_.padStart('abc', 6)
 _.padStart('abc', 6, '_-')
-_.padEnd('abc', 3)        
-_.padEnd('abc', 6)        
-_.padEnd('abc', 6, '_-')  
+_.padEnd('abc', 3)
+_.padEnd('abc', 6)
+_.padEnd('abc', 6, '_-')
 ```
 
 #### Trim
 
 ```
-_.trim('  str  ')         
-_.trimLeft('  str  ')     
-_.trimRight('  str  ')    
+_.trim('  str  ')
+_.trimLeft('  str  ')
+_.trimRight('  str  ')
 ```
 
 #### Etc
 
 ```
-_.repeat('-', 2)              
-_.deburr('déjà vu')           
-_.trunc('hello world', 5)     
+_.repeat('-', 2)
+_.deburr('déjà vu')
+_.trunc('hello world', 5)
 ```
 
 ```
-_.startsWith('abc', 'a')   
-_.endsWith('abc', 'c')     
+_.startsWith('abc', 'a')
+_.endsWith('abc', 'c')
 ```
 
 ### #Objects

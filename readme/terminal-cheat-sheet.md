@@ -104,7 +104,7 @@ vmstat 1
 
 iostat 1
 
-## Display the last 100 syslog messages  (Use /var/log/syslog for Debian based systems.)
+## Display the last 100 syslog messages (Use /var/log/syslog for Debian based systems.)
 
 tail -100 /var/log/messages
 
@@ -196,9 +196,9 @@ rm -rf directory
 
 cp file1 file2
 
-## Copy source\_directory recursively to destination. If destination exists, copy source\_directory into destination, otherwise create destination with the contents of source\_directory.
+## Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, otherwise create destination with the contents of source_directory.
 
-cp -r source\_directory destination
+cp -r source_directory destination
 
 ## Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2
 
@@ -278,15 +278,15 @@ fg n
 
 ### 7 – FILE PERMISSIONS
 
-![Linux chmod example](https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart.png)         PERMISSION      EXAMPLE
+![Linux chmod example](https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart.png) PERMISSION EXAMPLE
 
-&#x20;        U   G   W         rwx rwx rwx     chmod 777 filename         rwx rwx r-x     chmod 775 filename         rwx r-x r-x     chmod 755 filename         rw- rw- r--     chmod 664 filename         rw- r-- r--     chmod 644 filename
+&#x20; U G W rwx rwx rwx chmod 777 filename rwx rwx r-x chmod 775 filename rwx r-x r-x chmod 755 filename rw- rw- r-- chmod 664 filename rw- r-- r-- chmod 644 filename
 
 ## NOTE: Use 777 sparingly!
 
-&#x20;       LEGEND         U = User         G = Group         W = World
+&#x20; LEGEND U = User G = Group W = World
 
-&#x20;       r = Read         w = write         x = execute         - = no access
+&#x20; r = Read w = write x = execute - = no access
 
 ### 8 – NETWORKING
 
@@ -312,9 +312,9 @@ whois domain
 
 dig domain
 
-## Reverse lookup of IP\_ADDRESS
+## Reverse lookup of IP_ADDRESS
 
-dig -x IP\_ADDRESS
+dig -x IP_ADDRESS
 
 ## Display DNS IP address for domain
 
@@ -458,7 +458,7 @@ du -sh
 
 ### 15 – DIRECTORY NAVIGATION
 
-\# To go up one level of the directory tree.  (Change into the parent directory.) cd ..
+\# To go up one level of the directory tree. (Change into the parent directory.) cd ..
 
 ## Go to the $HOME directory
 
@@ -467,8 +467,6 @@ cd
 ## Change to the /etc directory
 
 cd /etc
-
-
 
 | Command                               | Description                                                                                     |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -484,7 +482,7 @@ cd /etc
 | cat filename                          | Displays the file content                                                                       |
 | cat file1 file2 > file3               | Joins two files (file1, file2) and stores the output in a new file (file3)                      |
 | mv file "new file path"               | Moves the files to the new location                                                             |
-| mv filename new\_file\_name           | Renames the file to a new filename                                                              |
+| mv filename new_file_name             | Renames the file to a new filename                                                              |
 | sudo                                  | Allows regular users to run programs with the security privileges of the superuser or root      |
 | rm filename                           | Deletes a file                                                                                  |
 | man                                   | Gives help information on a command                                                             |
@@ -497,7 +495,7 @@ cd /etc
 | pr -h                                 | Assigns a header to the file                                                                    |
 | pr -n                                 | Denotes the file with Line Numbers                                                              |
 | lp -nc , lpr c                        | Prints "c” copies of the File                                                                   |
-|  lp-d lp-P                            | Specifies name of the printer                                                                   |
+| lp-d lp-P                             | Specifies name of the printer                                                                   |
 | apt-get                               | Command used to install and update packages                                                     |
 | mail -s 'subject'                     | Command to send email                                                                           |
 | -c 'cc-address'                       |                                                                                                 |
@@ -520,7 +518,7 @@ cd /etc
 | Command                               | Description                                                                                     |
 | echo $VARIABLE                        | To display value of a variable                                                                  |
 | env                                   | Displays all environment variables                                                              |
-| VARIABLE\_NAME= variable\_value       | Create a new variable                                                                           |
+| VARIABLE_NAME= variable_value         | Create a new variable                                                                           |
 | Unset                                 | Remove a variable                                                                               |
 | export Variable=value                 | To set value of an environment variable                                                         |
 | User management commands of linux     |                                                                                                 |

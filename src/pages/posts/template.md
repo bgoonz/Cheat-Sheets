@@ -1,19 +1,20 @@
 ---
 title: lorem-ipsum
 subtitle: lorem-ipsum
-date: '2021-12-28'
+date: "2021-12-28"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 ---
+
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.
-        
+
 > Vestibulum ullamcorper risus auctor eleifend consequat.
 
 ![Placeholder Image](https://assets.stackbit.com/components/images/default/post-4.jpeg)

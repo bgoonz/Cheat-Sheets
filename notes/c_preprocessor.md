@@ -1,24 +1,27 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: C Preprocessor
 category: C-like
 layout: 2017/sheet
 intro: |
-  Quick reference for the [C macro preprocessor](https://en.m.wikipedia.org/wiki/C_preprocessor), which can be used independent of C/C++.
+Quick reference for the [C macro preprocessor](https://en.m.wikipedia.org/wiki/C_preprocessor), which can be used independent of C/C++.
+
 ---
 
 ## Reference

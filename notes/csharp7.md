@@ -1,26 +1,29 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: C# 7
 category: C-like
 updated: 2018-12-06
 layout: 2017/sheet
 prism_languages: [csharp]
 description: |
-  A quick overview of C# 7
+A quick overview of C# 7
+
 ---
 
 ### Out Variables

@@ -1,12 +1,10 @@
 ---
 cover: ../.gitbook/assets/react.jpg
 coverY: -0.9904458598726115
----  
-  
-  
-#  React Cheat Sheet
-  
-  
+---
+
+# React Cheat Sheet
+
 <details>
   
 <summary>Table Of Contents</summary>
@@ -3570,4 +3568,3 @@ Hopefully, this gives you an idea of how to think about building components and 
 ---
   
 ---
-  

@@ -2,23 +2,23 @@
 
 1. **There are 2 types of exports:** a. Named Exports b. Default Exports
 2. **You can have as many `named exports` as you want in a file/module.**\
-   **But you can only have **_**ONE**_**  `default export`.**
+   **But you can only have **_**ONE**_** `default export`.**
 3. **You can export any data structure you choose.**
 4. **If you do not export a variable or function from the file it will not be accessible to other files/modules**
 
 ## Named Export Examples
 
 ```js
-export const str = 'Hello World';
+export const str = "Hello World";
 
 export const num1 = 100;
 export const num2 = 200;
 
-export const array = ['apple', 'pear', 'banana'];
+export const array = ["apple", "pear", "banana"];
 
 export const obj = {
-  firstName: 'Foo',
-  lastName: 'Bar'
+  firstName: "Foo",
+  lastName: "Bar",
 };
 
 export function add(number1, number2) {

@@ -1,19 +1,21 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Goby
 layout: 2017/sheet
 prism_languages: [ruby]
@@ -21,7 +23,8 @@ weight: -3
 updated: 2018-12-06
 category: Ruby
 intro: |
-  Goby's language design is based on Ruby language's, slim and shaped up. Differences in syntax between them is very small.
+Goby's language design is based on Ruby language's, slim and shaped up. Differences in syntax between them is very small.
+
 ---
 
 ## Getting started

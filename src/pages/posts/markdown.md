@@ -1,6 +1,6 @@
 ---
 title: Best Waves - Surfing In Spain
-date: '2018-01-15'
+date: "2018-01-15"
 thumb_img_alt: Three person about to surf
 content_img_path: images/4.jpg
 content_img_alt: Three person about to surf
@@ -8,26 +8,26 @@ seo:
   title: Best Waves - Surfing In Spain
   description: A intresting tale about Surfing
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Best Waves - Surfing In Spain
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: A intresting tale about Surfing
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/4.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Best Waves - Surfing In Spain
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: A intresting tale about Surfing
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/4.jpg
       relativeUrl: true
 template: post

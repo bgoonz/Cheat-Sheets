@@ -371,8 +371,8 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source:
 
-* [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
-* [PostgreSQL Exercises](https://pgexercises.com)
-* [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+- [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+- [PostgreSQL Exercises](https://pgexercises.com)
+- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
 
 [Source](https://karloespiritu.github.io/cheatsheets/postgresql/)

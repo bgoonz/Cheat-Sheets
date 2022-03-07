@@ -11,8 +11,8 @@ sections:
     actions: []
     type: section_content
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: advanced

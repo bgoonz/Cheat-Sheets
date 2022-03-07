@@ -1,21 +1,22 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
-title: Firefox
----
+
+## title: Firefox
 
 ### [Firefox 31](https://www.mozilla.org/en-US/firefox/31.0/releasenotes/) (July 2014)
 

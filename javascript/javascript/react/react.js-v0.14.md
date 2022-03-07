@@ -6,7 +6,7 @@
 var Component = React.createClass({
   render: function () {
     return <div>Hello {this.props.name}</div>;
-  }
+  },
 });
 ```
 
@@ -30,11 +30,13 @@ var UserProfile = React.createClass({...});
 ```js
 var Info = React.createClass({
   render() {
-    return <div>
-      <UserAvatar src={this.props.avatar} />
-      <UserProfile username={this.props.username} />
-    </div>;
-  }
+    return (
+      <div>
+        <UserAvatar src={this.props.avatar} />
+        <UserProfile username={this.props.username} />
+      </div>
+    );
+  },
 });
 ```
 
@@ -47,7 +49,7 @@ Nest components to separate concerns. See [multiple components](http://facebook.
 #### States and props
 
 ```html
-<MyComponent fullscreen={true} />
+<MyComponent fullscreen="{true}" />
 ```
 
 {:.light}
@@ -93,9 +95,9 @@ Pre-populates `this.state.comments` and `this.props.name`.
 #### Component API
 
 ```js
-ReactDOM.findDOMNode(c)  // 0.14+
-React.findDOMNode(c)  // 0.13
-c.getDOMNode()        // 0.12 below
+ReactDOM.findDOMNode(c); // 0.14+
+React.findDOMNode(c); // 0.13
+c.getDOMNode(); // 0.12 below
 ```
 
 {:.light}
@@ -162,14 +164,17 @@ Clear your DOM stuff here (probably done on didMount). See [reference](http://fa
 ```js
 React.createClass({
   componentDidMount: function () {
-    $.get(this.props.url, function (data) {
-      this.setState(data);
-    }.bind(this));
+    $.get(
+      this.props.url,
+      function (data) {
+        this.setState(data);
+      }.bind(this)
+    );
   },
 
   render: function () {
-    return <CommentList data={this.state.data} />
-  }
+    return <CommentList data={this.state.data} />;
+  },
 });
 ```
 
@@ -180,15 +185,15 @@ See [initial AJAX data](http://facebook.github.io/react/tips/initial-ajax.html).
 #### References
 
 ```html
-<input ref="myInput">
+<input ref="myInput" />
 ```
 
 {:.light}
 
 ```js
-this.refs.myInput
-ReactDOM.findDOMNode(this.refs.myInput).focus()
-ReactDOM.findDOMNode(this.refs.myInput).value
+this.refs.myInput;
+ReactDOM.findDOMNode(this.refs.myInput).focus();
+ReactDOM.findDOMNode(this.refs.myInput).value;
 ```
 
 #### DOM Events
@@ -196,9 +201,7 @@ ReactDOM.findDOMNode(this.refs.myInput).value
 Add attributes like `onChange`. See [events](https://facebook.github.io/react/docs/events.html).
 
 ```html
-<input type="text"
-    value={this.state.value}
-    onChange={this.handleChange} />
+<input type="text" value="{this.state.value}" onChange="{this.handleChange}" />
 ```
 
 {:.light}
@@ -221,12 +224,12 @@ Email: <input type="text" valueLink={this.linkState('email')} />
 
 ```js
 React.createClass({
-  mixins: [React.addons.LinkedStateMixin]
+  mixins: [React.addons.LinkedStateMixin],
 });
 ```
 
 ```js
-this.state.email
+this.state.email;
 ```
 
 Use [LinkedStateMixin](http://facebook.github.io/react/docs/two-way-binding-helpers.html) for easier two-way binding.
@@ -238,13 +241,13 @@ Use [LinkedStateMixin](http://facebook.github.io/react/docs/two-way-binding-help
 ```js
 React.createClass({
   propTypes: {
-    email:      React.PropTypes.string,
-    seats:      React.PropTypes.number,
-    settings:   React.PropTypes.object,
-    callback:   React.PropTypes.func,
-    isClosed:   React.PropTypes.bool,
-    any:        React.PropTypes.any,
-  }
+    email: React.PropTypes.string,
+    seats: React.PropTypes.number,
+    settings: React.PropTypes.object,
+    callback: React.PropTypes.func,
+    isClosed: React.PropTypes.bool,
+    any: React.PropTypes.any,
+  },
 });
 ```
 
@@ -346,10 +349,10 @@ Manipulate DOM classes with [classnames](https://www.npmjs.org/package/classname
 
 ```js
 var VideoPlayer = React.createClass({
-  render: function() {
+  render: function () {
     /* propagates src="..." down to this sub component */
-    return <VideoEmbed {...this.props} controls='false' />;
-  }
+    return <VideoEmbed {...this.props} controls="false" />;
+  },
 });
 ```
 
@@ -393,7 +396,7 @@ ReactDOMServer.renderToStaticMarkup(<Component />) // 0.14+
 #### Style shorthand
 
 ```js
-var style = { backgroundImage: 'url(x.jpg)', height: 10 };
+var style = { backgroundImage: "url(x.jpg)", height: 10 };
 return <div style={style}></div>;
 ```
 
@@ -402,8 +405,10 @@ See [inline styles](https://facebook.github.io/react/tips/inline-styles.html).
 #### InnerHTML
 
 ```js
-function markdownify() { return "<p>...</p>"; }
-<div dangerouslySetInnerHTML={{__html: markdownify()}} />
+function markdownify() {
+  return "<p>...</p>";
+}
+<div dangerouslySetInnerHTML={{ __html: markdownify() }} />;
 ```
 
 See [dangerously set innerHTML](https://facebook.github.io/react/tips/dangerously-set-inner-html.html).
@@ -412,15 +417,15 @@ See [dangerously set innerHTML](https://facebook.github.io/react/tips/dangerousl
 
 ```js
 var TodoList = React.createClass({
-  render: function() {
+  render: function () {
     function item(itemText) {
       return <li>{itemText}</li>;
-    };
+    }
     return <ul>{this.props.items.map(item)}</ul>;
-  }
+  },
 });
 ```
 
 ### See also
 
-* [Animations](http://facebook.github.io/react/docs/animation.html)
+- [Animations](http://facebook.github.io/react/docs/animation.html)

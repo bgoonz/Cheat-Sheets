@@ -1,31 +1,35 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Bolt Quickstart
 category: Bolt
 layout: 2017/sheet
 updated: 2018-12-25
 authors:
-  - github: lucywyman
-keywords:
-  - Puppet
-  - tasks
-  - modules
-description: |
+
+- github: lucywyman
+  keywords:
+- Puppet
+- tasks
+- modules
+  description: |
   A quick guide to getting started writing Bolt tasks
+
 ---
 
 ### Install Bolt

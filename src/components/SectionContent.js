@@ -9,11 +9,15 @@ export default class SectionContent extends React.Component {
     let section = _.get(this.props, "section", null);
     return (
       <section
-      
         id={_.get(section, "section_id", null)}
         className="block block-text"
       >
-          <div id="sb-search-example"><div class="sb-search-icon" id="myCustomSearchButtonID"><i class="sb-icon"></i><p>Search</p></div></div>
+        <div id="sb-search-example">
+          <div class="sb-search-icon" id="myCustomSearchButtonID">
+            <i class="sb-icon"></i>
+            <p>Search</p>
+          </div>
+        </div>
         {_.get(section, "title", null) && (
           <h2 className="block-title underline inner-sm">
             {_.get(section, "title", null)}

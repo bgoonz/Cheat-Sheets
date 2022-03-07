@@ -1,4 +1,4 @@
-# sequelize\_cheatsheet
+# sequelize_cheatsheet
 
 ### Command Line <a href="#command-line" id="command-line"></a>
 
@@ -62,7 +62,7 @@ $ npx sequelize-cli db:seed:undo:all
     type: Sequelize.<type>,
     allowNull: <true|false>,
     unique: <true|false>,
-    references: { model: <TableName> }, 
+    references: { model: <TableName> },
 }
 ```
 
@@ -100,7 +100,7 @@ $ npx sequelize-cli db:seed:undo:all
 
 ```
     const columnMapping = {
-        through: 'StudentLesson', 
+        through: 'StudentLesson',
         otherKey: 'lessonId',
         foreignKey: 'studentId'
     }
@@ -112,7 +112,7 @@ $ npx sequelize-cli db:seed:undo:all
 
 ```
     const columnMapping = {
-        through: 'StudentLesson', 
+        through: 'StudentLesson',
         otherKey: 'studentId',
         foreignKey: 'lessonId'
     }
@@ -152,30 +152,30 @@ $ npx sequelize-cli db:seed:undo:all
 ```
 const Op = Sequelize.Op
 
-[Op.and]: [{a: 5}, {b: 6}] 
-[Op.or]: [{a: 5}, {a: 6}]  
-[Op.gt]: 6,                
-[Op.gte]: 6,               
-[Op.lt]: 10,               
-[Op.lte]: 10,              
-[Op.ne]: 20,               
-[Op.eq]: 3,                
-[Op.is]: null              
-[Op.not]: true,            
-[Op.between]: [6, 10],     
-[Op.notBetween]: [11, 15], 
-[Op.in]: [1, 2],           
-[Op.notIn]: [1, 2],        
-[Op.like]: '%hat',         
-[Op.notLike]: '%hat'       
-[Op.iLike]: '%hat'         
-[Op.notILike]: '%hat'      
-[Op.startsWith]: 'hat'     
-[Op.endsWith]: 'hat'       
-[Op.substring]: 'hat'      
-[Op.regexp]: '^[h|a|t]'    
-[Op.notRegexp]: '^[h|a|t]' 
-[Op.iRegexp]: '^[h|a|t]'    
-[Op.notIRegexp]: '^[h|a|t]' 
+[Op.and]: [{a: 5}, {b: 6}]
+[Op.or]: [{a: 5}, {a: 6}]
+[Op.gt]: 6,
+[Op.gte]: 6,
+[Op.lt]: 10,
+[Op.lte]: 10,
+[Op.ne]: 20,
+[Op.eq]: 3,
+[Op.is]: null
+[Op.not]: true,
+[Op.between]: [6, 10],
+[Op.notBetween]: [11, 15],
+[Op.in]: [1, 2],
+[Op.notIn]: [1, 2],
+[Op.like]: '%hat',
+[Op.notLike]: '%hat'
+[Op.iLike]: '%hat'
+[Op.notILike]: '%hat'
+[Op.startsWith]: 'hat'
+[Op.endsWith]: 'hat'
+[Op.substring]: 'hat'
+[Op.regexp]: '^[h|a|t]'
+[Op.notRegexp]: '^[h|a|t]'
+[Op.iRegexp]: '^[h|a|t]'
+[Op.notIRegexp]: '^[h|a|t]'
 [Op.like]: { [Op.any]: ['cat', 'hat']}
 ```

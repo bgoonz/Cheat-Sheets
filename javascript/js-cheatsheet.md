@@ -1,8 +1,8 @@
 # Cheatsheet
 
-## Commonly used functions on [Array](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First\_steps/Arrays)
+## Commonly used functions on [Array](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
 
-### [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map)
+### [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 #### Description
 
@@ -22,7 +22,7 @@ array.map(function(currentValue)
 
 An Array containing the results of calling the provided function for each element in the original array.
 
-### [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/filter)
+### [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 #### Description
 
@@ -45,8 +45,9 @@ Array containing all elements that pass the test else an empty array.
 #### Example
 
 ```javascript
-let filtered = [112, 52, 0, -1, 944].filter(function(value){
-  return value > 0;})
+let filtered = [112, 52, 0, -1, 944].filter(function (value) {
+  return value > 0;
+});
 ```
 
 _Output:_
@@ -55,7 +56,7 @@ _Output:_
 [112,52,944]
 ```
 
-### [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/reduce)
+### [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 #### Description
 
@@ -79,10 +80,9 @@ returns accumulated result fron the last call of the callback function.
 
 ```javascript
 const array1 = [1, 2, 3, 4];
-const reducer = function(accumulator, currentValue)
-{
+const reducer = function (accumulator, currentValue) {
   return accumulator + currentValue;
-}
+};
 console.log(array1.reduce(reducer));
 console.log(array1.reduce(reducer, 5));
 ```
@@ -94,7 +94,7 @@ _Output:_
 15
 ```
 
-### [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/slice)
+### [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
 #### Description
 
@@ -103,7 +103,7 @@ Returns the selected elements in an array, as a new array object and selects the
 #### Syntax
 
 ```javascript
-array.slice(start, end)
+array.slice(start, end);
 ```
 
 | Parameter | Description                                         |
@@ -118,7 +118,7 @@ New array containing the selected elements.
 #### Example
 
 ```javascript
-let arr = [1,2,3,4,5,6];
+let arr = [1, 2, 3, 4, 5, 6];
 let new_arr = arr.slice(3);
 ```
 
@@ -129,7 +129,7 @@ _Output:_
 [4,5,6]
 ```
 
-### [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/splice)
+### [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
 #### Description
 
@@ -154,9 +154,9 @@ Array without the removed items.
 #### Example
 
 ```javascript
-const languages = ['C++', 'Java', 'Html', 'Python', 'C']; 
-// Add 'Julia' and 'Php' after removing 'Html'. 
-const removed = languages.splice(2, 1, 'Julia', 'Php') 
+const languages = ["C++", "Java", "Html", "Python", "C"];
+// Add 'Julia' and 'Php' after removing 'Html'.
+const removed = languages.splice(2, 1, "Julia", "Php");
 ```
 
 _Output:_
@@ -174,7 +174,7 @@ _**Note**_
 | Changes the original array                 | Doesn't change the original array                                  |
 | Can take n number of arguments(1 required) | Can take 2 arguments(1 required)                                   |
 
-### [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/concat)
+### [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
 #### Description
 
@@ -183,7 +183,7 @@ Used to add a single item to an array(or to add two or more arrays).
 #### Syntax
 
 ```javascript
-array1.concat(item)
+array1.concat(item);
 ```
 
 _or_
@@ -203,10 +203,10 @@ Joined array
 #### Example
 
 ```javascript
-const num1 = [1,2,3],
-num2 = [4,5,6],
-num3 = 7;
-console.log(num1.concat(num2,num3));
+const num1 = [1, 2, 3],
+  num2 = [4, 5, 6],
+  num3 = 7;
+console.log(num1.concat(num2, num3));
 ```
 
 _Output:_
@@ -222,7 +222,7 @@ _Note_
 | Adds elements to the end of an array | Adds element or merges arrays |
 | Returns the new length of the array  | Returns a new array           |
 
-### [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/join)
+### [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 #### Description
 
@@ -231,7 +231,7 @@ Returns the array as a string. The elementsare separated by a specified separato
 #### Syntax
 
 ```javascript
-array.join(separator)
+array.join(separator);
 ```
 
 | Parameter | Description |
@@ -245,10 +245,10 @@ String, representing the array values, separated by the specified separator.
 #### Example
 
 ```javascript
-const languages = ['C++', 'Java', 'Html', 'Python', 'C']; 
-languages.join(); 
-languages.join('.'); 
-languages.join('-'); 
+const languages = ["C++", "Java", "Html", "Python", "C"];
+languages.join();
+languages.join(".");
+languages.join("-");
 ```
 
 _Output:_
@@ -259,7 +259,7 @@ C++.Java.Html.Python.C
 C++-Java-Html-Python-C
 ```
 
-### [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Array/push)
+### [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
 #### Description
 
@@ -282,8 +282,8 @@ New length of the array.
 #### Example
 
 ```javascript
-let arr = [1,2,3,4,5];
-console.log(arr.push(6,7,8));
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.push(6, 7, 8));
 ```
 
 _Output:_
@@ -293,7 +293,7 @@ _Output:_
 [1,2,3,4,5,6,7,8]
 ```
 
-### [find](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Array/find)
+### [find](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
 #### Description
 
@@ -316,11 +316,11 @@ The array element value if any of the elements in the array pass the test, other
 #### Example
 
 ```javascript
- let array = [1,3,5,7,9]; 
- const found = array.find(function(element){
-   return element > 4;
- })
-// Printing desired value. 
+let array = [1, 3, 5, 7, 9];
+const found = array.find(function (element) {
+  return element > 4;
+});
+// Printing desired value.
 ```
 
 _Output:_
@@ -329,7 +329,7 @@ _Output:_
 5
 ```
 
-### [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/indexOf)
+### [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 
 #### Description
 
@@ -338,7 +338,7 @@ returns the position of the first occurrence of a specified value in a string.
 #### Syntax
 
 ```javascript
-string.indexOf(searchvalue, start)
+string.indexOf(searchvalue, start);
 ```
 
 | Parameter   | Description                                                           |
@@ -353,7 +353,7 @@ Number, representing the position where the specified searchvalue occurs for the
 #### Example
 
 ```javascript
-console.log('Departed Train'.indexOf('Train'));
+console.log("Departed Train".indexOf("Train"));
 ```
 
 _Output:_
@@ -364,9 +364,9 @@ _Output:_
 
 ## Common String Functions
 
-[Full Mozilla MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
+[Full Mozilla MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-### [substring](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/String/substring)
+### [substring](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 
 #### Description
 
@@ -375,7 +375,7 @@ Extracts the characters in a string between "start" and "end", not including "en
 #### Syntax
 
 ```javascript
-string.substring(start, end)
+string.substring(start, end);
 ```
 
 | Parameter | Description                                                                                                                   |
@@ -390,14 +390,14 @@ New string containing the extracted characters.
 #### Example
 
 ```javascript
-// Taking a string as variable 
-const string = "JavaScriptCheatsheet"; 
-a = string.substring(0, 4) 
-b = string.substring(1, 6) 
-c = string.substring(5) 
-d = string.substring(0) 
-// Printing new string which are 
-// the part of the given string 
+// Taking a string as variable
+const string = "JavaScriptCheatsheet";
+a = string.substring(0, 4);
+b = string.substring(1, 6);
+c = string.substring(5);
+d = string.substring(0);
+// Printing new string which are
+// the part of the given string
 ```
 
 _Output:_
@@ -416,7 +416,7 @@ _Note_
 | Displays selected array elements | Displays selected part of string |
 | Returns new array                | Returns new string               |
 
-### [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/split)
+### [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 #### Description
 
@@ -425,7 +425,7 @@ Used to split a string into an array of substrings, and returns the new array.
 #### Syntax
 
 ```javascript
-string.split(separator, limit)
+string.split(separator, limit);
 ```
 
 | Parameter | Description                                                                                                                                                                 |
@@ -440,7 +440,7 @@ Array containing splitted values.
 #### Example
 
 ```javascript
-let str = 'It iS a great Day.'
+let str = "It iS a great Day.";
 let array = str.split(" ");
 ```
 
@@ -450,7 +450,7 @@ _Output:_
 ["It","iS","a","great","Day."]
 ```
 
-### [toLowerCase](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/String/toLowerCase)
+### [toLowerCase](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
 #### Description
 
@@ -469,7 +469,7 @@ A string, representing the value of a string converted to lowercase.
 #### Example
 
 ```javascript
-const str = 'It iS a Great Day.';
+const str = "It iS a Great Day.";
 const string = str.toLowerCase();
 ```
 
@@ -479,7 +479,7 @@ _Output:_
 it is a great day.
 ```
 
-### [trim](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/String/trim)
+### [trim](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
 
 #### Description
 
@@ -488,7 +488,7 @@ Removes whitespace from both sides of a string.
 #### Syntax
 
 ```javascript
-string.trim()
+string.trim();
 ```
 
 #### Return value
@@ -498,7 +498,7 @@ String, representing the string with removed whitespace from both ends
 #### Example
 
 ```javascript
-const str = "     \"JavaScript\"      ";
+const str = '     "JavaScript"      ';
 const st = str.trim();
 ```
 
@@ -508,7 +508,7 @@ _Output:_
 "Javascript"
 ```
 
-### [charAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/charAt)
+### [charAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
 
 #### Description
 
@@ -517,7 +517,7 @@ Returns the character at the specified index in a string.
 #### Syntax:
 
 ```javascript
-string.charAt(index)
+string.charAt(index);
 ```
 
 #### Return value
@@ -527,7 +527,7 @@ String, representing the character at the specified index, or an empty string if
 #### Example:
 
 ```javascript
-const str = 'JavaScript is object oriented language';
+const str = "JavaScript is object oriented language";
 console.log(str.charAt(9));
 ```
 
@@ -553,7 +553,7 @@ for (var in object)
 #### Example
 
 ```javascript
-const array1 = ['a', 'b', 'c'];
+const array1 = ["a", "b", "c"];
 for (const element in array1) {
   console.log(element);
 }
@@ -576,25 +576,27 @@ Loops through the values of an object.
 #### Syntax
 
 ```javascript
-for (variable of object) 
-{
-   // code block to be executed
+for (variable of object) {
+  // code block to be executed
 }
 ```
 
 #### Example
 
 ```javascript
-const languages = { first : "C", second : "Java", 
-    third : "Python", fourth : "PHP", 
-       	    fifth : "JavaScript" }; 
-// iterate through every property of the 
-// object languages and print all of them 
-// using for..in loops 
-for (itr in languages) 
- { 
-  console.log(languages[itr]); 
- } 
+const languages = {
+  first: "C",
+  second: "Java",
+  third: "Python",
+  fourth: "PHP",
+  fifth: "JavaScript",
+};
+// iterate through every property of the
+// object languages and print all of them
+// using for..in loops
+for (itr in languages) {
+  console.log(languages[itr]);
+}
 ```
 
 _Output:_
@@ -607,7 +609,7 @@ PHP
 JavaScript
 ```
 
-### [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops\_and\_iteration#for\_statement)
+### [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement)
 
 #### Description
 
@@ -616,7 +618,7 @@ Traditional index-based loop as found in many languages.
 #### Syntax
 
 ```javascript
-for (statement 1; statement 2; statement 3) 
+for (statement 1; statement 2; statement 3)
 {
  	// code block to be executed
 }
@@ -625,16 +627,16 @@ for (statement 1; statement 2; statement 3)
 #### Example
 
 ```javascript
-const i; 
-for (i = 0; i < 10; i++) 
-{ 
-	console.log("Hello World!\n"); 
+const i;
+for (i = 0; i < 10; i++)
+{
+	console.log("Hello World!\n");
 }
 ```
 
 This will print _Hello World_ on the screen 10 times.
 
-### [.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/forEach)
+### [.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 #### Description
 
@@ -655,8 +657,8 @@ array.forEach(function(currentValue)
 ```javascript
 const items = [1, 29, 47];
 const copy = [];
-items.forEach(function(item){
- copy.push(item*item);
+items.forEach(function (item) {
+  copy.push(item * item);
 });
 ```
 

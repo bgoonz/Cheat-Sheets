@@ -1,30 +1,34 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Factory Bot
 category: Ruby libraries
 layout: 2017/sheet
 weight: -3
 updated: 2020-07-06
 keywords:
-  - "FactoryBot.define do"
-  - "factory :user"
-  - "first_name 'John'"
-  - 'sequence(:username) { |n| "user#{n}" }'
-tags: [Featurable]
+
+- "FactoryBot.define do"
+- "factory :user"
+- "first_name 'John'"
+- 'sequence(:username) { |n| "user#{n}" }'
+  tags: [Featurable]
+
 ---
 
 ## Factories

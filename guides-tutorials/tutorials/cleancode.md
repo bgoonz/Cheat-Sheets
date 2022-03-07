@@ -4,191 +4,191 @@
 
 **Robert C. Martin Series**
 
-* Chapter 1: Clean Code On the Cover --- xxix
-  * There Will Be Code .
-  * Bad Code
+- Chapter 1: Clean Code On the Cover --- xxix
+  - There Will Be Code .
+  - Bad Code
 
-***
+---
 
-* The Total Cost of Owning a Mess
-  * The Grand Redesign in the Sky
-  * Attitude
+- The Total Cost of Owning a Mess
+  - The Grand Redesign in the Sky
+  - Attitude
 
-***
+---
 
 ```
-  - The Primal Conundrum 
+  - The Primal Conundrum
   - The Art of Clean Code?
   - What Is Clean Code?
 ```
 
-* Schools of Thought
-* We Are Authors
+- Schools of Thought
+- We Are Authors
 
-***
+---
 
-* The Boy Scout Rule .
-* Prequel and Principles
-* Conclusion
+- The Boy Scout Rule .
+- Prequel and Principles
+- Conclusion
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Chapter 2: Meaningful Names
-  * Introduction
+- Chapter 2: Meaningful Names
+  - Introduction
 
-***
+---
 
-* Use Intention-Revealing Names
-* Avoid Disinformation
-* Make Meaningful Distinctions
-* Use Pronounceable Names ..
-* Use Searchable Names
-* Avoid Encodings --- viii Contents
-  * Hungarian Notation
-  * Member Prefixes.
-  * Interfaces and Implementations
-* Avoid Mental Mapping
-* Class Names
+- Use Intention-Revealing Names
+- Avoid Disinformation
+- Make Meaningful Distinctions
+- Use Pronounceable Names ..
+- Use Searchable Names
+- Avoid Encodings --- viii Contents
+  - Hungarian Notation
+  - Member Prefixes.
+  - Interfaces and Implementations
+- Avoid Mental Mapping
+- Class Names
 
-***
+---
 
-* Method Names
+- Method Names
 
-***
+---
 
-* Don't Be Cute
+- Don't Be Cute
 
-***
+---
 
-* Pick One Word per Concept .
-* Don't Pun
+- Pick One Word per Concept .
+- Don't Pun
 
-***
+---
 
-* Use Solution Domain Names
-* Use Problem Domain Names
-* Add Meaningful Context
-* Don't Add Gratuitous Context
-* Final Words
+- Use Solution Domain Names
+- Use Problem Domain Names
+- Add Meaningful Context
+- Don't Add Gratuitous Context
+- Final Words
 
-***
+---
 
-* Chapter 3: Functions
-  * Small!
+- Chapter 3: Functions
+  - Small!
 
-***
+---
 
 ```
   - Blocks and Indenting
 ```
 
-* Do One Thing
+- Do One Thing
 
-***
+---
 
 ```
-  - Sections within Functions 
+  - Sections within Functions
 ```
 
-* One Level of Abstraction per Function .
-  * Reading Code from Top to Bottom: The Stepdown Rule ..
-* Switch Statements .
-* Use Descriptive Names
-* Function Arguments
-  * Common Monadic Forms.
-  * Flag Arguments
+- One Level of Abstraction per Function .
+  - Reading Code from Top to Bottom: The Stepdown Rule ..
+- Switch Statements .
+- Use Descriptive Names
+- Function Arguments
+  - Common Monadic Forms.
+  - Flag Arguments
 
-***
+---
 
 ```
   - Dyadic Functions
-  - Triads 
+  - Triads
 ```
 
-***
+---
 
 ```
   - Argument Objects.
-  - Argument Lists 
+  - Argument Lists
 ```
 
-***
+---
 
 ```
-  - Verbs and Keywords 
+  - Verbs and Keywords
 ```
 
-* Have No Side Effects
-  * Output Arguments
-* Command Query Separation .
-* Prefer Exceptions to Returning Error Codes ... Contents ix
-  * Extract Try/Catch Blocks .
-  * Error Handling Is One Thing
-  * TheError.java Dependency Magnet .
-* Don't Repeat Yourself
-* Structured Programming ...
-* How Do You Write Functions Like This?
-* Conclusion
+- Have No Side Effects
+  - Output Arguments
+- Command Query Separation .
+- Prefer Exceptions to Returning Error Codes ... Contents ix
+  - Extract Try/Catch Blocks .
+  - Error Handling Is One Thing
+  - TheError.java Dependency Magnet .
+- Don't Repeat Yourself
+- Structured Programming ...
+- How Do You Write Functions Like This?
+- Conclusion
 
-***
+---
 
-* SetupTeardownIncluder
-* Bibliography
+- SetupTeardownIncluder
+- Bibliography
 
-***
+---
 
-* Chapter 4: Comments
-  * Comments Do Not Make Up for Bad Code
-  * Explain Yourself in Code
-  * Good Comments
+- Chapter 4: Comments
+  - Comments Do Not Make Up for Bad Code
+  - Explain Yourself in Code
+  - Good Comments
 
-***
+---
 
 ```
   - Legal Comments.
   - Informative Comments
-  - Explanation of Intent 
-  - Clarification 
+  - Explanation of Intent
+  - Clarification
 ```
 
-***
+---
 
 ```
-  - Warning of Consequences 
+  - Warning of Consequences
   - TODO Comments.
   - Amplification
 ```
 
-***
+---
 
 ```
   - Javadocs in Public APIs
 ```
 
-* Bad Comments
+- Bad Comments
 
-***
-
-```
-  - Mumbling 
-```
-
-***
+---
 
 ```
-  - Redundant Comments 
+  - Mumbling
+```
+
+---
+
+```
+  - Redundant Comments
   - Misleading Comments
   - Mandated Comments
   - Journal Comments
-  - Noise Comments 
-  - Scary Noise 
+  - Noise Comments
+  - Scary Noise
 ```
 
-***
+---
 
 ```
   - Function or a Variable Don't Use a Comment When You Can Use a
@@ -196,466 +196,466 @@
   - Closing Brace Comments.
   - Attributions and Bylines...
   - Commented-Out Code x Contents
-  - HTML Comments 
-  - Nonlocal Information 
-  - Too Much Information 
+  - HTML Comments
+  - Nonlocal Information
+  - Too Much Information
   - Inobvious Connection
   - Function Headers
-  - Javadocs in Nonpublic Code 
+  - Javadocs in Nonpublic Code
   - Example
 ```
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Chapter 5: Formatting
-  * The Purpose of Formatting
-  * Vertical Formatting .
-    * The Newspaper Metaphor
-    * Vertical Openness Between Concepts
-    * Vertical Density
+- Chapter 5: Formatting
+  - The Purpose of Formatting
+  - Vertical Formatting .
+    - The Newspaper Metaphor
+    - Vertical Openness Between Concepts
+    - Vertical Density
 
-***
+---
 
 ```
-  - Vertical Distance 
-  - Vertical Ordering 
+  - Vertical Distance
+  - Vertical Ordering
 ```
 
-* Horizontal Formatting
-  * Horizontal Openness and Density
-  * Horizontal Alignment
-  * Indentation
+- Horizontal Formatting
+  - Horizontal Openness and Density
+  - Horizontal Alignment
+  - Indentation
 
-***
+---
 
 ```
   - Dummy Scopes
 ```
 
-***
+---
 
-* Team Rules
+- Team Rules
 
-***
+---
 
-* Uncle Bob's Formatting Rules
-* Chapter 6: Objects and Data Structures
-  * Data Abstraction
+- Uncle Bob's Formatting Rules
+- Chapter 6: Objects and Data Structures
+  - Data Abstraction
 
-***
+---
 
-* Data/Object Anti-Symmetry
-* The Law of Demeter
-  * Train Wrecks
+- Data/Object Anti-Symmetry
+- The Law of Demeter
+  - Train Wrecks
 
-***
+---
 
 ```
-  - Hybrids 
+  - Hybrids
 ```
 
-***
+---
 
 ```
   - Hiding Structure .
 ```
 
-* Data Transfer Objects
-  * Active Record
+- Data Transfer Objects
+  - Active Record
 
-***
+---
 
-* Conclusion
+- Conclusion
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Chapter 7: Error Handling Contents xi
-  * Use Exceptions Rather Than Return Codes ...
-  * Write Your Try-Catch-Finally Statement First
-  * Use Unchecked Exceptions .
-  * Provide Context with Exceptions
-  * Define Exception Classes in Terms of a Caller's Needs ..
-  * Define the Normal Flow
-  * Don't Return Null
-  * Don't Pass Null
+- Chapter 7: Error Handling Contents xi
+  - Use Exceptions Rather Than Return Codes ...
+  - Write Your Try-Catch-Finally Statement First
+  - Use Unchecked Exceptions .
+  - Provide Context with Exceptions
+  - Define Exception Classes in Terms of a Caller's Needs ..
+  - Define the Normal Flow
+  - Don't Return Null
+  - Don't Pass Null
 
-***
+---
 
-* Conclusion
+- Conclusion
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Chapter 8: Boundaries
-  * Using Third-Party Code
-  * Exploring and Learning Boundaries .
-  * Learning log4j
+- Chapter 8: Boundaries
+  - Using Third-Party Code
+  - Exploring and Learning Boundaries .
+  - Learning log4j
 
-***
+---
 
-* Learning Tests Are Better Than Free .
-* Using Code That Does Not Yet Exist
-* Clean Boundaries
-* Bibliography
+- Learning Tests Are Better Than Free .
+- Using Code That Does Not Yet Exist
+- Clean Boundaries
+- Bibliography
 
-***
+---
 
-* Chapter 9: Unit Tests
-  * The Three Laws of TDD ...
-  * Keeping Tests Clean
-    * Tests Enable the -ilities...
-  * Clean Tests
+- Chapter 9: Unit Tests
+  - The Three Laws of TDD ...
+  - Keeping Tests Clean
+    - Tests Enable the -ilities...
+  - Clean Tests
 
-***
+---
 
 ```
   - Domain-Specific Testing Language
   - A Dual Standard .
 ```
 
-* One Assert per Test
-  * Single Concept per Test ..
-* F.I.R.S.T.
+- One Assert per Test
+  - Single Concept per Test ..
+- F.I.R.S.T.
 
-***
+---
 
-* Conclusion
+- Conclusion
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Chapter 10: Classes
-  * Class Organization
-    * Encapsulation
+- Chapter 10: Classes
+  - Class Organization
+    - Encapsulation
 
-***
+---
 
-* Classes Should Be Small! .. xii Contents
-  * The Single Responsibility Principle .
-  * Cohesion
+- Classes Should Be Small! .. xii Contents
+  - The Single Responsibility Principle .
+  - Cohesion
 
-***
+---
 
 ```
   - Maintaining Cohesion Results in Many Small Classes..
 ```
 
-* Organizing for Change
-  * Isolating from Change
-* Bibliography
+- Organizing for Change
+  - Isolating from Change
+- Bibliography
 
-***
+---
 
-* Chapter 11: Systems
-  * How Would You Build a City?
-  * Separate Constructing a System from Using It
-    * Separation of Main
-    * Factories
+- Chapter 11: Systems
+  - How Would You Build a City?
+  - Separate Constructing a System from Using It
+    - Separation of Main
+    - Factories
 
-***
+---
 
 ```
   - Dependency Injection
 ```
 
-* Scaling Up
+- Scaling Up
 
-***
+---
 
 ```
   - Cross-Cutting Concerns .
 ```
 
-* Java Proxies
+- Java Proxies
 
-***
+---
 
-* Pure Java AOP Frameworks .
-* AspectJ Aspects
+- Pure Java AOP Frameworks .
+- AspectJ Aspects
 
-***
+---
 
-* Test Drive the System Architecture ..
-* Optimize Decision Making .
-* Use Standards Wisely, When They Add Demonstrable Value
-* Systems Need Domain-Specific Languages
-* Conclusion
+- Test Drive the System Architecture ..
+- Optimize Decision Making .
+- Use Standards Wisely, When They Add Demonstrable Value
+- Systems Need Domain-Specific Languages
+- Conclusion
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Chapter 12: Emergence ..
-  * Getting Clean via Emergent Design
-  * Simple Design Rule 1: Runs All the Tests
-  * Simple Design Rules 2–4: Refactoring
-  * No Duplication
+- Chapter 12: Emergence ..
+  - Getting Clean via Emergent Design
+  - Simple Design Rule 1: Runs All the Tests
+  - Simple Design Rules 2–4: Refactoring
+  - No Duplication
 
-***
+---
 
-* Expressive
+- Expressive
 
-***
+---
 
-* Minimal Classes and Methods
-* Conclusion
+- Minimal Classes and Methods
+- Conclusion
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Chapter 13: Concurrency
-  * Why Concurrency?
-    * Myths and Misconceptions.
-  * Challenges --- Contents xiii
-  * Concurrency Defense Principles
-    * Single Responsibility Principle
-    * Corollary: Limit the Scope of Data
-    * Corollary: Use Copies of Data
-    * Corollary: Threads Should Be as Independent as Possible
-  * Know Your Library
-    * Thread-Safe Collections .
-  * Know Your Execution Models
-    * Producer-Consumer
-    * Readers-Writers
-    * Dining Philosophers
-  * Beware Dependencies Between Synchronized Methods
-  * Keep Synchronized Sections Small ..
-  * Writing Correct Shut-Down Code Is Hard
-  * Testing Threaded Code
-    * Treat Spurious Failures as Candidate Threading Issues .
-    * Get Your Nonthreaded Code Working First
-    * Make Your Threaded Code Pluggable
-    * Make Your Threaded Code Tunable
-    * Run with More Threads Than Processors
-    * Run on Different Platforms
-    * Instrument Your Code to Try and Force Failures
-    * Hand-Coded
+- Chapter 13: Concurrency
+  - Why Concurrency?
+    - Myths and Misconceptions.
+  - Challenges --- Contents xiii
+  - Concurrency Defense Principles
+    - Single Responsibility Principle
+    - Corollary: Limit the Scope of Data
+    - Corollary: Use Copies of Data
+    - Corollary: Threads Should Be as Independent as Possible
+  - Know Your Library
+    - Thread-Safe Collections .
+  - Know Your Execution Models
+    - Producer-Consumer
+    - Readers-Writers
+    - Dining Philosophers
+  - Beware Dependencies Between Synchronized Methods
+  - Keep Synchronized Sections Small ..
+  - Writing Correct Shut-Down Code Is Hard
+  - Testing Threaded Code
+    - Treat Spurious Failures as Candidate Threading Issues .
+    - Get Your Nonthreaded Code Working First
+    - Make Your Threaded Code Pluggable
+    - Make Your Threaded Code Tunable
+    - Run with More Threads Than Processors
+    - Run on Different Platforms
+    - Instrument Your Code to Try and Force Failures
+    - Hand-Coded
 
-***
-
-```
-  - Automated 
-```
-
-***
-
-* Conclusion
-
-***
-
-* Bibliography
-
-***
-
-* Chapter 14: Successive Refinement
-  * Args Implementation
-    * How Did I Do This?
-  * Args: The Rough Draft
-    * So I Stopped
-
-***
+---
 
 ```
-  - On Incrementalism 
+  - Automated
 ```
 
-* String Arguments
-* Conclusion
+---
 
-***
+- Conclusion
 
-* Chapter 15: JUnit Internals xiv Contents
-  * The JUnit Framework
-  * Conclusion
+---
 
-***
+- Bibliography
 
-* Chapter 16: Refactoring SerialDate
-  * First, Make It Work
-  * Then Make It Right
-  * Conclusion
+---
 
-***
+- Chapter 14: Successive Refinement
+  - Args Implementation
+    - How Did I Do This?
+  - Args: The Rough Draft
+    - So I Stopped
 
-* Bibliography
-
-***
-
-* Chapter 17: Smells and Heuristics .
-  * Comments
-
-***
+---
 
 ```
-  - C1: Inappropriate Information 
+  - On Incrementalism
+```
+
+- String Arguments
+- Conclusion
+
+---
+
+- Chapter 15: JUnit Internals xiv Contents
+  - The JUnit Framework
+  - Conclusion
+
+---
+
+- Chapter 16: Refactoring SerialDate
+  - First, Make It Work
+  - Then Make It Right
+  - Conclusion
+
+---
+
+- Bibliography
+
+---
+
+- Chapter 17: Smells and Heuristics .
+  - Comments
+
+---
+
+```
+  - C1: Inappropriate Information
   - C2: Obsolete Comment ...
   - C3: Redundant Comment .
-  - C4: Poorly Written Comment 
+  - C4: Poorly Written Comment
   - C5: Commented-Out Code .
 ```
 
-* Environment
+- Environment
 
-***
-
-```
-  - E1: Build Requires More Than One Step 
-  - E2: Tests Require More Than One Step 
-```
-
-* Functions
-
-***
+---
 
 ```
-  - F1: Too Many Arguments 
-  - F2: Output Arguments 
-  - F3: Flag Arguments 
-  - F4: Dead Function 
+  - E1: Build Requires More Than One Step
+  - E2: Tests Require More Than One Step
 ```
 
-* General
+- Functions
 
-***
+---
+
+```
+  - F1: Too Many Arguments
+  - F2: Output Arguments
+  - F3: Flag Arguments
+  - F4: Dead Function
+```
+
+- General
+
+---
 
 ```
   - G1: Multiple Languages in One Source File ..
-  - G2: Obvious Behavior Is Unimplemented 
-  - G3: Incorrect Behavior at the Boundaries 
+  - G2: Obvious Behavior Is Unimplemented
+  - G3: Incorrect Behavior at the Boundaries
   - G4: Overridden Safeties .
-  - G5: Duplication 
-  - G6: Code at Wrong Level of Abstraction 
-  - G7: Base Classes Depending on Their Derivatives 
+  - G5: Duplication
+  - G6: Code at Wrong Level of Abstraction
+  - G7: Base Classes Depending on Their Derivatives
   - G8: Too Much Information .
   - G9: Dead Code .
-  - G10: Vertical Separation 
-  - G11: Inconsistency 
-  - G12: Clutter 
+  - G10: Vertical Separation
+  - G11: Inconsistency
+  - G12: Clutter
 ```
 
-***
+---
 
-* G13: Artificial Coupling . Contents xv
-* G14: Feature Envy
-* G15: Selector Arguments
-* G16: Obscured Intent
-* G17: Misplaced Responsibility
-* G18: Inappropriate Static .
-* G19: Use Explanatory Variables
-* G20: Function Names Should Say What They Do
-* G21: Understand the Algorithm
-* G22: Make Logical Dependencies Physical ...
-* G23: Prefer Polymorphism to If/Else or Switch/Case
-* G24: Follow Standard Conventions
-* G25: Replace Magic Numbers with Named Constants ..
-* G26: Be Precise
-* G27: Structure over Convention
-* G28: Encapsulate Conditionals
-* G29: Avoid Negative Conditionals .
-* G30: Functions Should Do One Thing
-* G31: Hidden Temporal Couplings ..
-* G32: Don't Be Arbitrary .
-* G33: Encapsulate Boundary Conditions
-* One Level of Abstraction G34: Functions Should Descend Only
-* G35: Keep Configurable Data at High Levels
-* G36: Avoid Transitive Navigation ...
-* Java
+- G13: Artificial Coupling . Contents xv
+- G14: Feature Envy
+- G15: Selector Arguments
+- G16: Obscured Intent
+- G17: Misplaced Responsibility
+- G18: Inappropriate Static .
+- G19: Use Explanatory Variables
+- G20: Function Names Should Say What They Do
+- G21: Understand the Algorithm
+- G22: Make Logical Dependencies Physical ...
+- G23: Prefer Polymorphism to If/Else or Switch/Case
+- G24: Follow Standard Conventions
+- G25: Replace Magic Numbers with Named Constants ..
+- G26: Be Precise
+- G27: Structure over Convention
+- G28: Encapsulate Conditionals
+- G29: Avoid Negative Conditionals .
+- G30: Functions Should Do One Thing
+- G31: Hidden Temporal Couplings ..
+- G32: Don't Be Arbitrary .
+- G33: Encapsulate Boundary Conditions
+- One Level of Abstraction G34: Functions Should Descend Only
+- G35: Keep Configurable Data at High Levels
+- G36: Avoid Transitive Navigation ...
+- Java
 
-***
+---
 
-* J1: Avoid Long Import Lists by Using Wildcards
-* J2: Don't Inherit Constants
-* J3: Constants versus Enums
-* Names
+- J1: Avoid Long Import Lists by Using Wildcards
+- J2: Don't Inherit Constants
+- J3: Constants versus Enums
+- Names
 
-***
+---
 
-* N1: Choose Descriptive Names
-* N2: Choose Names at the Appropriate Level of Abstraction
-* N3: Use Standard Nomenclature Where Possible
-* N4: Unambiguous Names .
-* N5: Use Long Names for Long Scopes
-* N6: Avoid Encodings
-* N7: Names Should Describe Side-Effects.
-* Tests --- xvi Contents
-  * T1: Insufficient Tests
-  * T2: Use a Coverage Tool! .
-  * T3: Don't Skip Trivial Tests
-  * T4: An Ignored Test Is a Question about an Ambiguity ..
-  * T5: Test Boundary Conditions
-  * T6: Exhaustively Test Near Bugs
-  * T7: Patterns of Failure Are Revealing
-  * T8: Test Coverage Patterns Can Be Revealing .
-  * T9: Tests Should Be Fast .
-* Conclusion
+- N1: Choose Descriptive Names
+- N2: Choose Names at the Appropriate Level of Abstraction
+- N3: Use Standard Nomenclature Where Possible
+- N4: Unambiguous Names .
+- N5: Use Long Names for Long Scopes
+- N6: Avoid Encodings
+- N7: Names Should Describe Side-Effects.
+- Tests --- xvi Contents
+  - T1: Insufficient Tests
+  - T2: Use a Coverage Tool! .
+  - T3: Don't Skip Trivial Tests
+  - T4: An Ignored Test Is a Question about an Ambiguity ..
+  - T5: Test Boundary Conditions
+  - T6: Exhaustively Test Near Bugs
+  - T7: Patterns of Failure Are Revealing
+  - T8: Test Coverage Patterns Can Be Revealing .
+  - T9: Tests Should Be Fast .
+- Conclusion
 
-***
+---
 
-* Bibliography
+- Bibliography
 
-***
+---
 
-* Appendix A: Concurrency II
-  * Client/Server Example
-    * The Server
+- Appendix A: Concurrency II
+  - Client/Server Example
+    - The Server
 
-***
+---
 
 ```
   - Adding Threading
-  - Server Observations 
+  - Server Observations
   - Conclusion
 ```
 
-***
+---
 
-* Possible Paths of Execution
-  * Number of Paths .
-  * Digging Deeper
-  * Conclusion
+- Possible Paths of Execution
+  - Number of Paths .
+  - Digging Deeper
+  - Conclusion
 
-***
+---
 
-* Knowing Your Library
-  * Executor Framework
-  * Nonblocking Solutions ...
-  * Nonthread-Safe Classes..
-* Can Break Concurrent Code Dependencies Between Methods
-  * Tolerate the Failure
-  * Client-Based Locking
-  * Server-Based Locking
-* Increasing Throughput
-  * Single-Thread Calculation of Throughput
-  * Multithread Calculation of Throughput
-* Deadlock
+- Knowing Your Library
+  - Executor Framework
+  - Nonblocking Solutions ...
+  - Nonthread-Safe Classes..
+- Can Break Concurrent Code Dependencies Between Methods
+  - Tolerate the Failure
+  - Client-Based Locking
+  - Server-Based Locking
+- Increasing Throughput
+  - Single-Thread Calculation of Throughput
+  - Multithread Calculation of Throughput
+- Deadlock
 
-***
+---
 
 ```
-  - Mutual Exclusion 
-  - Lock & Wait 
+  - Mutual Exclusion
+  - Lock & Wait
 ```
 
-***
+---
 
 ```
   - No Preemption
@@ -670,28 +670,28 @@
   - Breaking Circular Wait...
 ```
 
-* Testing Multithreaded Code .
-* Tool Support for Testing Thread-Based Code
-* Conclusion
+- Testing Multithreaded Code .
+- Tool Support for Testing Thread-Based Code
+- Conclusion
 
-***
+---
 
-* Tutorial: Full Code Examples
-  * Client/Server Nonthreaded .
-  * Client/Server Using Threads
-* Appendix B: org.jfree.date.SerialDate
-* Appendix C: Cross References of Heuristics
-* Epilogue
+- Tutorial: Full Code Examples
+  - Client/Server Nonthreaded .
+  - Client/Server Using Threads
+- Appendix B: org.jfree.date.SerialDate
+- Appendix C: Cross References of Heuristics
+- Epilogue
 
-***
+---
 
-* Index
+- Index
 
-***
+---
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
@@ -755,9 +755,9 @@ Having completed this exercise in lofty insights, I am off to clean my desk.
 
 **James O. Coplien** Mørdrup, Denmark
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
@@ -810,9 +810,9 @@ If you read the first and third sections and skip over the case studies, then yo
 
 #### Acknowledgments
 
-***
+---
 
-***
+---
 
 **Artwork**
 
@@ -820,9 +820,9 @@ Thank you to my two artists, Jeniffer Kohnke and Angela Brooks. Jennifer is resp
 
 Angela is responsible for the clever pictures that adorn the innards of each chapter. She has done quite a few pictures for me over the years, including many of the inside pic- tures in _Agile Software Develpment: Principles, Patterns, and Practices_. She is also my firstborn in whom I am well pleased.
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
@@ -848,15 +848,15 @@ But in the infrared, the hot particles in the ring shine through the central bul
 Cover image: &copy; Spitzer Space Telescope
 ```
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
-***
+---
 
-***
+---
 
 **# 1**
 
@@ -888,7 +888,7 @@ Remember that code is really the language in which we ultimately express the req
 
 #### Bad Code
 
-***
+---
 
 I was recently reading the preface to Kent Beck's book _Implementation Patterns._^1 He says, "... this book is based on a rather fragile premise: that good code matters... ." A _fragile_ premise? I dis- agree! I think that premise is one of the most robust, supported, and overloaded of all the pre- mises in our craft (and I think Kent knows it). We know good code matters because we've had to deal for so long with its lack.
 
@@ -921,9 +921,9 @@ Productivity vs. time
 
 **The Total Cost of Owning a Mess** 5
 
-***
+---
 
-***
+---
 
 **The Grand Redesign in the Sky**
 
@@ -937,13 +937,13 @@ This race can go on for a very long time. I've seen it take 10 years. And by the
 
 If you have experienced even one small part of the story I just told, then you already know that spending time keeping your code clean is not just cost effective; it's a matter of professional survival.
 
-***
+---
 
-***
+---
 
 **Attitude**
 
-***
+---
 
 Have you ever waded through a mess so grave that it took weeks to do what should have taken hours? Have you seen what should have been a one-line change, made instead in hundreds of different modules? These symptoms are all too common.
 
@@ -963,9 +963,9 @@ To drive this point home, what if you were a doctor and had a patient who demand
 
 So too it is unprofessional for programmers to bend to the will of managers who don't understand the risks of making messes.
 
-***
+---
 
-***
+---
 
 **The Primal Conundrum**
 
@@ -973,9 +973,9 @@ Programmers face a conundrum of basic values. All developers with more than a fe
 
 True professionals know that the second part of the conundrum is wrong. You will _not_ make the deadline by making the mess. Indeed, the mess will slow you down instantly, and will force you to miss the deadline. The _only_ way to make the deadline—the only way to go fast—is to keep the code as clean as possible at all times.
 
-***
+---
 
-***
+---
 
 **The Art of Clean Code?**
 
@@ -993,9 +993,9 @@ A programmer without "code-sense" can look at a messy module and recognize the m
 
 In short, a programmer who writes clean code is an artist who can take a blank screen through a series of transformations until it is an elegantly coded system.
 
-***
+---
 
-***
+---
 
 **What Is Clean Code?**
 
@@ -1109,9 +1109,9 @@ rules of simple code. In priority order, simple code:
 
 \_- Runs all the tests;
 
-* Contains no duplication;
-* Expresses all the design ideas that are in the\_ \_system;
-* Minimizes the number of entities such as classes,\_ _methods, functions, and the like._ _Of these, I focus mostly on duplication. When the same thing is done over and over, it's a sign that there is an idea in our mind that is not well represented in the code. I try to figure out what it is. Then I try to express that idea more clearly._ _Expressiveness to me includes meaningful names, and I am likely to change the names of things several times before I settle in. With modern coding tools such as Eclipse, renaming is quite inexpensive, so it doesn't trouble me to change. Expressiveness goes_
+- Contains no duplication;
+- Expresses all the design ideas that are in the\_ \_system;
+- Minimizes the number of entities such as classes,\_ _methods, functions, and the like._ _Of these, I focus mostly on duplication. When the same thing is done over and over, it's a sign that there is an idea in our mind that is not well represented in the code. I try to figure out what it is. Then I try to express that idea more clearly._ _Expressiveness to me includes meaningful names, and I am likely to change the names of things several times before I settle in. With modern coding tools such as Eclipse, renaming is quite inexpensive, so it doesn't trouble me to change. Expressiveness goes_
 
 **The Total Cost of Owning a Mess** 11
 
@@ -1181,7 +1181,7 @@ Indeed, many of the recommendations in this book are controversial. You will pro
 
 #### We Are Authors
 
-***
+---
 
 The@authorfield of a Javadoc tells us who we are. We are authors. And one thing about authors is that they have readers. Indeed, authors are _responsible_ for communicating well with their readers. The next time you write a line of code, remember you are an author, writing for readers who will judge your effort.
 
@@ -1250,7 +1250,7 @@ In this book you will find sporadic references to various principles of design. 
 
 #### Conclusion
 
-***
+---
 
 Books on art don't promise to make you an artist. All they can do is give you some of the tools, techniques, and thought processes that other artists have used. So too this book can- not promise to make you a good programmer. It cannot promise to give you "code-sense." All it can do is show you the thought processes of good programmers and the tricks, tech- niques, and tools that they use.
 
@@ -1260,21 +1260,21 @@ Remember the old joke about the concert violinist who got lost on his way to a p
 
 #### Bibliography
 
-***
+---
 
 **\[Beck07]:** _Implementation Patterns_ , Kent Beck, Addison-Wesley, 2007.
 
 **\[Knuth92]:** _Literate Programming_ , Donald E. Knuth, Center for the Study of Language and Information, Leland Stanford Junior University, 1992.
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
-***
+---
 
-***
+---
 
 **# 17**
 
@@ -1288,7 +1288,7 @@ by Tim Ottinger
 
 #### Introduction
 
-***
+---
 
 Names are everywhere in software. We name our variables, our functions, our arguments, classes, and packages. We name our source files and the directories that contain them. We name our jar files and war files and ear files. We name and name and name. Because we do
 
@@ -1446,7 +1446,7 @@ Intelligent conversation is now possible: "Hey, Mikey, take a look at this recor
 
 Single-letter names and numeric constants have a particular problem in that they are not easy to locate across a body of text.
 
-One might easily grep for MAX\_CLASSES\_PER\_STUDENT, but the number 7 could be more troublesome. Searches may turn up the digit as part of file names, other constant defini- tions, and in various expressions where the value is used with different intent. It is even worse when a constant is a long number and someone might have transposed digits, thereby creating a bug while simultaneously evading the programmer's search.
+One might easily grep for MAX_CLASSES_PER_STUDENT, but the number 7 could be more troublesome. Searches may turn up the digit as part of file names, other constant defini- tions, and in various expressions where the value is used with different intent. It is even worse when a constant is a long number and someone might have transposed digits, thereby creating a bug while simultaneously evading the programmer's search.
 
 Likewise, the name eis a poor choice for any variable for which a programmer might need to search. It is the most common letter in the English language and likely to show up in every passage of text in every program. In this regard, longer names trump shorter names, and any searchable name trumps a constant in code.
 
@@ -1464,15 +1464,15 @@ s += (t[j]*4)/5;
 
 to
 
-int realDaysPerIdealDay = 4; const int WORK\_DAYS\_PER\_WEEK = 5; int sum = 0; for (int j=0; j < NUMBER\_OF\_TASKS; j++) { int realTaskDays = taskEstimate\[j] \* realDaysPerIdealDay; int realTaskWeeks = (realdays / WORK\_DAYS\_PER\_WEEK); sum += realTaskWeeks; } Note that sum, above, is not a particularly useful name but at least is searchable. The intentionally named code makes for a longer function, but consider how much easier it will be to find WORK\_DAYS\_PER\_WEEKthan to find all the places where 5 was used and filter the list down to just the instances with the intended meaning.
+int realDaysPerIdealDay = 4; const int WORK_DAYS_PER_WEEK = 5; int sum = 0; for (int j=0; j < NUMBER_OF_TASKS; j++) { int realTaskDays = taskEstimate\[j] \* realDaysPerIdealDay; int realTaskWeeks = (realdays / WORK_DAYS_PER_WEEK); sum += realTaskWeeks; } Note that sum, above, is not a particularly useful name but at least is searchable. The intentionally named code makes for a longer function, but consider how much easier it will be to find WORK_DAYS_PER_WEEKthan to find all the places where 5 was used and filter the list down to just the instances with the intended meaning.
 
 #### Avoid Encodings
 
 We have enough encodings to deal with without adding more to our burden. Encoding type or scope information into names simply adds an extra burden of deciphering. It hardly seems reasonable to require each new employee to learn yet another encoding "lan- guage" in addition to learning the (usually considerable) body of code that they'll be work- ing in. It is an unnecessary mental burden when trying to solve a problem. Encoded names are seldom pronounceable and are easy to mis-type.
 
-***
+---
 
-***
+---
 
 **Hungarian Notation**
 
@@ -1491,23 +1491,23 @@ PhoneNumber phoneString;
 // name not changed when type changed!
 ```
 
-***
+---
 
-***
+---
 
 **Member Prefixes.**
 
-You also don't need to prefix member variables with m\_anymore. Your classes and func- tions should be small enough that you don't need them. And you should be using an edit- ing environment that highlights or colorizes members to make them distinct.
+You also don't need to prefix member variables with m_anymore. Your classes and func- tions should be small enough that you don't need them. And you should be using an edit- ing environment that highlights or colorizes members to make them distinct.
 
-public class Part { private String m\_dsc; // The textual description void setName(String name) { m\_dsc = name; } }
+public class Part { private String m_dsc; // The textual description void setName(String name) { m_dsc = name; } }
 
-***
+---
 
 public class Part { String description; void setDescription(String description) { this.description = description; } } Besides, people quickly learn to ignore the prefix (or suffix) to see the meaningful part of the name. The more we read the code, the less we see the prefixes. Eventually the prefixes become unseen clutter and a marker of older code.
 
-***
+---
 
-***
+---
 
 **Interfaces and Implementations**
 
@@ -1527,13 +1527,13 @@ One difference between a smart programmer and a professional programmer is that 
 
 #### Class Names
 
-***
+---
 
 Classes and objects should have noun or noun phrase names like Customer,WikiPage, Account, and AddressParser. Avoid words like Manager,Processor,Data, or Infoin the name of a class. A class name should not be a verb.
 
 #### Method Names
 
-***
+---
 
 Methods should have verb or verb phrase names like postPayment,deletePage, or save. Accessors, mutators, and predicates should be named for their value and prefixed with get, set, and is according to the javabean standard.^4
 
@@ -1557,7 +1557,7 @@ Consider enforcing their use by making the corresponding constructors private.
 
 #### Don't Be Cute
 
-***
+---
 
 If names are too clever, they will be memorable only to people who share the author's sense of humor, and only as long as these people remember the joke. Will they know what the function named HolyHandGrenadeis supposed to do? Sure, it's cute, but maybe in this case DeleteItems might be a better name. Choose clarity over entertainment value.
 
@@ -1581,7 +1581,7 @@ A consistent lexicon is a great boon to the programmers who must use your code.
 
 #### Don't Pun
 
-***
+---
 
 Avoid using the same word for two purposes. Using the same term for two different ideas is essentially a pun.
 
@@ -1702,7 +1702,7 @@ The names accountAddressandcustomerAddressare fine names for instances of the cl
 
 #### Final Words
 
-***
+---
 
 The hardest thing about choosing good names is that it requires good descriptive skills and a shared cultural background. This is a teaching issue rather than a technical, business, or management issue. As a result many people in this field don't learn to do it very well.
 
@@ -1710,9 +1710,9 @@ People are also afraid of renaming things for fear that some other developers wi
 
 Follow some of these rules and see whether you don't improve the readability of your code. If you are maintaining someone else's code, use refactoring tools to help resolve these problems. It will pay off in the short term and continue to pay in the long run.
 
-***
+---
 
-***
+---
 
 **# 31**
 
@@ -1838,7 +1838,7 @@ So what is it that makes a function like Listing 3-2 easy to read and understand
 
 #### Small!
 
-***
+---
 
 The first rule of functions is that they should be small. The second rule of functions is that _they should be smaller than that_. This is not an assertion that I can justify. I can't provide any references to research that shows that very small functions are better. What I can tell you is that for nearly four decades I have written functions of all different sizes. I've writ- ten several nasty 3,000-line abominations. I've written scads of functions in the 100 to 300 line range. And I've written functions that were 20 to 30 lines long. What this experience has taught me, through long trial and error, is that functions should be very small.
 
@@ -1853,9 +1853,9 @@ How short should a function be? In 1999 I went to visit Kent Beck at his home in
 
 How short should your functions be? They should usually be shorter than Listing 3-2! Indeed, Listing 3-2 should really be shortened to Listing 3-3.
 
-***
+---
 
-***
+---
 
 **Blocks and Indenting**
 
@@ -1865,7 +1865,7 @@ This also implies that functions should not be large enough to hold nested struc
 
 #### Do One Thing
 
-***
+---
 
 It should be very clear that Listing 3-1 is doing lots more than one thing. It's creating buffers, fetching pages, searching for inherited pages, rendering paths, appending arcane strings, and generating HTML, among other things. Listing 3-1 is very busy doing lots of different things. On the other hand, Listing 3-3 is doing one simple thing. It's including setups and teardowns into test pages.
 
@@ -1902,9 +1902,9 @@ It should be very clear that Listing 3-1 contains steps at many different levels
 
 So, another way to know that a function is doing more than "one thing" is if you can extract another function from it with a name that is not merely a restatement of its imple- mentation \[G34].
 
-***
+---
 
-***
+---
 
 **Sections within Functions**
 
@@ -1922,9 +1922,9 @@ Mixing levels of abstraction within a function is always confusing. Readers may 
 
 like broken windows, once details are mixed with essential concepts, more and more details tend to accrete within the function.
 
-***
+---
 
-***
+---
 
 **Reading Code from Top to Bottom: The Stepdown Rule ..**
 
@@ -1993,8 +1993,8 @@ throw new InvalidEmployeeType(e.type);
 }
 ```
 
-1. a. [http://en.wikipedia.org/wiki/Single\_responsibility\_principle](http://en.wikipedia.org/wiki/Single\_responsibility\_principle) b. [http://www.objectmentor.com/resources/articles/srp.pdf](http://www.objectmentor.com/resources/articles/srp.pdf)
-2. a. [http://en.wikipedia.org/wiki/Open/closed\_principle](http://en.wikipedia.org/wiki/Open/closed\_principle) b. [http://www.objectmentor.com/resources/articles/ocp.pdf](http://www.objectmentor.com/resources/articles/ocp.pdf)
+1. a. [http://en.wikipedia.org/wiki/Single_responsibility_principle](http://en.wikipedia.org/wiki/Single_responsibility_principle) b. [http://www.objectmentor.com/resources/articles/srp.pdf](http://www.objectmentor.com/resources/articles/srp.pdf)
+2. a. [http://en.wikipedia.org/wiki/Open/closed_principle](http://en.wikipedia.org/wiki/Open/closed_principle) b. [http://www.objectmentor.com/resources/articles/ocp.pdf](http://www.objectmentor.com/resources/articles/ocp.pdf)
 3. \[GOF].
 
 **Use Descriptive Names** 39
@@ -2058,9 +2058,9 @@ Output arguments are harder to understand than input arguments. When we read a f
 
 One input argument is the next best thing to no arguments. SetupTeardown- Includer.render(pageData)is pretty easy to understand. Clearly we are going to _render_ the data in the pageData object.
 
-***
+---
 
-***
+---
 
 **Common Monadic Forms.**
 
@@ -2070,13 +2070,13 @@ A somewhat less common, but still very useful form for a single argument functio
 
 Try to avoid any monadic functions that don't follow these forms, for example, void includeSetupPageInto(StringBuffer pageText). Using an output argument instead of a return value for a transformation is confusing. If a function is going to transform its input argument, the transformation should appear as the return value. Indeed, StringBuffer transform(StringBuffer in)is better than void transform-(StringBuffer out), even if the implementation in the first case simply returns the input argument. At least it still follows the form of a transformation.
 
-***
+---
 
-***
+---
 
 **Flag Arguments**
 
-***
+---
 
 Flag arguments are ugly. Passing a boolean into a function is a truly terrible practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing. It does one thing if the flag is true and another if the flag is false!
 
@@ -2084,9 +2084,9 @@ In Listing 3-7 we had no choice because the callers were already passing that fl
 
 42 **Chapter 3: Functions**
 
-***
+---
 
-***
+---
 
 **Dyadic Functions**
 
@@ -2098,13 +2098,13 @@ Even obvious dyadic functions like assertEquals(expected, actual)are problematic
 
 Dyads aren't evil, and you will certainly have to write them. However, you should be aware that they come at a cost and should take advantage of what mechanims may be available to you to convert them into monads. For example, you might make the writeField method a member of outputStream so that you can say outputStream. writeField(name). Or you might make the outputStreama member variable of the current class so that you don't have to pass it. Or you might extract a new class like FieldWriter that takes the outputStream in its constructor and has a write method.
 
-***
+---
 
-***
+---
 
 **Triads**
 
-***
+---
 
 Functions that take three arguments are significantly harder to understand than dyads. The issues of ordering, pausing, and ignoring are more than doubled. I suggest you think very carefully before creating a triad.
 
@@ -2116,9 +2116,9 @@ On the other hand, here is a triad that is not quite so insidious: assertEquals(
 
 **Function Arguments** 43
 
-***
+---
 
-***
+---
 
 **Argument Objects.**
 
@@ -2131,13 +2131,13 @@ Circle makeCircle(Point center, double radius);
 
 Reducing the number of arguments by creating objects out of them may seem like cheating, but it's not. When groups of variables are passed together, the way xand y are in the example above, they are likely part of a concept that deserves a name of its own.
 
-***
+---
 
-***
+---
 
 **Argument Lists**
 
-***
+---
 
 Sometimes we want to pass a variable number of arguments into a function. Consider, for example, the String.format method:
 
@@ -2160,9 +2160,9 @@ void triad(String name, int count, Integer... args);
 
 ```
 
-***
+---
 
-***
+---
 
 **Verbs and Keywords**
 
@@ -2207,9 +2207,9 @@ return false;
 
 **Command Query Separation** 45
 
-***
+---
 
-***
+---
 
 **Output Arguments**
 
@@ -2269,7 +2269,7 @@ if (deletePage(page) == E_OK)
 
 This does not suffer from verb/adjective confusion but does lead to deeply nested struc- tures. When you return an error code, you create the problem that the caller must deal with the error immediately.
 
-if (deletePage(page) == E\_OK) { if (registry.deleteReference(page.name) == E\_OK) { if (configKeys.deleteKey(page.name.makeKey()) == E\_OK){ logger.log("page deleted"); } else { logger.log("configKey not deleted"); } } else { logger.log("deleteReference from registry failed"); } } else { logger.log("delete failed"); return E\_ERROR; } On the other hand, if you use exceptions instead of returned error codes, then the error processing code can be separated from the happy path code and can be simplified:
+if (deletePage(page) == E_OK) { if (registry.deleteReference(page.name) == E_OK) { if (configKeys.deleteKey(page.name.makeKey()) == E_OK){ logger.log("page deleted"); } else { logger.log("configKey not deleted"); } } else { logger.log("deleteReference from registry failed"); } } else { logger.log("delete failed"); return E_ERROR; } On the other hand, if you use exceptions instead of returned error codes, then the error processing code can be separated from the happy path code and can be simplified:
 
 ```
 try {
@@ -2282,9 +2282,9 @@ logger.log(e.getMessage());
 }
 ```
 
-***
+---
 
-***
+---
 
 **Extract Try/Catch Blocks .**
 
@@ -2294,23 +2294,23 @@ Try/catchblocks are ugly in their own right. They confuse the structure of the c
 
 public void delete(Page page) { try { deletePageAndAllReferences(page); } catch (Exception e) { logError(e); } } private void deletePageAndAllReferences(Page page) throws Exception { deletePage(page); registry.deleteReference(page.name); configKeys.deleteKey(page.name.makeKey()); } private void logError(Exception e) { logger.log(e.getMessage()); } In the above, the delete function is all about error processing. It is easy to understand and then ignore. The deletePageAndAllReferencesfunction is all about the processes of fully deleting a page. Error handling can be ignored. This provides a nice separation that makes the code easier to understand and modify.
 
-***
+---
 
-***
+---
 
 **Error Handling Is One Thing**
 
 Functions should do one thing. Error handing is one thing. Thus, a function that handles errors should do nothing else. This implies (as in the example above) that if the keyword tryexists in a function, it should be the very first word in the function and that there should be nothing after the catch/finally blocks.
 
-***
+---
 
-***
+---
 
 **TheError.java Dependency Magnet .**
 
 Returning error codes usually implies that there is some class or enum in which all the error codes are defined.
 
-public enum Error { OK, INVALID, NO\_SUCH, LOCKED, OUT\_OF\_RESOURCES, WAITING\_FOR\_EVENT; } Classes like this are a _dependency magnet;_ many other classes must import and use them. Thus, when the Error enumchanges, all those other classes need to be recompiled and redeployed.^11 This puts a negative pressure on the Errorclass. Programmers don't want
+public enum Error { OK, INVALID, NO_SUCH, LOCKED, OUT_OF_RESOURCES, WAITING_FOR_EVENT; } Classes like this are a _dependency magnet;_ many other classes must import and use them. Thus, when the Error enumchanges, all those other classes need to be recompiled and redeployed.^11 This puts a negative pressure on the Errorclass. Programmers don't want
 
 1. Those who felt that they could get away without recompiling and redeploying have been found—and dealt with.
 
@@ -2358,7 +2358,7 @@ In the end, I wind up with functions that follow the rules I've laid down in thi
 
 #### Conclusion
 
-***
+---
 
 Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns. This is not some throwback to the hideous old notion that the nouns and verbs in a require- ments document are the first guess of the classes and functions of a system. Rather, this is a much older truth. The art of programming is, and has always been, the art of language design.
 
@@ -2476,7 +2476,7 @@ SetupTeardownIncluder.java
 
 #### Bibliography
 
-***
+---
 
 **\[KP78]:** Kernighan and Plaugher, _The Elements of Programming Style_ , 2d. ed., McGraw- Hill, 1978.
 
@@ -2502,9 +2502,9 @@ Listing 3-7 (continued)
 SetupTeardownIncluder.java
 ```
 
-***
+---
 
-***
+---
 
 **# 53**
 
@@ -2547,7 +2547,7 @@ private Locale saveLocale;
 // Example: "Tue, 02 Apr 2003 22:18:49 GMT"
 ```
 
-Other instance variables that were probably added later were interposed between the HTTP\_DATE\_REGEXP constant and it's explanatory comment.
+Other instance variables that were probably added later were interposed between the HTTP_DATE_REGEXP constant and it's explanatory comment.
 
 It is possible to make the point that programmers should be disciplined enough to keep the comments in a high state of repair, relevance, and accuracy. I agree, they should. But I would rather that energy go toward making the code so clear and expressive that it does not need the comments in the first place.
 
@@ -2579,13 +2579,13 @@ if (employee.isEligibleForFullBenefits()) It takes only a few seconds of thought
 
 #### Good Comments
 
-***
+---
 
 Some comments are necessary or beneficial. We'll look at a few that I consider worthy of the bits they consume. Keep in mind, however, that the only truly good comment is the comment you found a way not to write.
 
-***
+---
 
-***
+---
 
 **Legal Comments.**
 
@@ -2602,9 +2602,9 @@ Here, for example, is the standard comment header that we put at the beginning o
 
 Comments like this should not be contracts or legal tomes. Where possible, refer to a stan- dard license or other external document rather than putting all the terms and conditions into the comment.
 
-***
+---
 
-***
+---
 
 **Informative Comments**
 
@@ -2626,9 +2626,9 @@ Pattern timeMatcher = Pattern.compile(
 
 In this case the comment lets us know that the regular expression is intended to match a time and date that were formatted with the SimpleDateFormat.formatfunction using the specified format string. Still, it might have been better, and clearer, if this code had been moved to a special class that converted the formats of dates and times. Then the comment would likely have been superfluous.
 
-***
+---
 
-***
+---
 
 **Explanation of Intent**
 
@@ -2662,13 +2662,13 @@ assertEquals(false, failFlag.get());
 }
 ```
 
-***
+---
 
-***
+---
 
 **Clarification**
 
-***
+---
 
 Sometimes it is just helpful to translate the meaning of some obscure argument or return value into something that's readable. In general it is better to find a way to make that argu- ment or return value clear in its own right; but when its part of the standard library, or in code that you cannot alter, then a helpful clarifying comment can be useful.
 
@@ -2676,9 +2676,9 @@ public void testCompareTo() throws Exception { WikiPagePath a = PathParser.parse
 
 58 **Chapter 4: Comments**
 
-***
+---
 
-***
+---
 
 **Warning of Consequences**
 
@@ -2700,9 +2700,9 @@ return df;
 
 You might complain that there are better ways to solve this problem. I might agree with you. But the comment, as given here, is perfectly reasonable. It will prevent some overly eager programmer from using a static initializer in the name of efficiency.
 
-***
+---
 
-***
+---
 
 **TODO Comments.**
 
@@ -2723,13 +2723,13 @@ TODOs are jobs that the programmer thinks should be done, but for some reason ca
 
 Nowadays, most good IDEs provide special gestures and features to locate all the TODOcomments, so it's not likely that they will get lost. Still, you don't want your code to be littered with TODOs. So scan through them regularly and eliminate the ones you can.
 
-***
+---
 
-***
+---
 
 **Amplification**
 
-***
+---
 
 A comment may be used to amplify the importance of something that may otherwise seem inconsequential.
 
@@ -2742,9 +2742,9 @@ new ListItemWidget(this, listItemContent, this.level + 1);
 return buildList(text.substring(match.end()));
 ```
 
-***
+---
 
-***
+---
 
 **Javadocs in Public APIs**
 
@@ -2754,17 +2754,17 @@ If you are writing a public API, then you should certainly write good javadocs f
 
 #### Bad Comments
 
-***
+---
 
 Most comments fall into this category. Usually they are crutches or excuses for poor code or justifications for insufficient decisions, amounting to little more than the programmer talking to himself.
 
-***
+---
 
-***
+---
 
 **Mumbling**
 
-***
+---
 
 Plopping in a comment just because you feel you should or because the process requires it, is a hack. If you decide to write a comment, then spend the time necessary to make sure it is the best comment you can write.
 
@@ -2772,13 +2772,13 @@ Plopping in a comment just because you feel you should or because the process re
 
 Here, for example, is a case I found in FitNesse, where a comment might indeed have been useful. But the author was in a hurry or just not paying much attention. His mum- bling left behind an enigma:
 
-public void loadProperties() { try { String propertiesPath = propertiesLocation + "/" + PROPERTIES\_FILE; FileInputStream propertiesStream = new FileInputStream(propertiesPath); loadedProperties.load(propertiesStream); } catch(IOException e) { **// No properties files means all defaults are loaded** } } What does that comment in the catchblock mean? Clearly it meant something to the author, but the meaning does not come through all that well. Apparently, if we get an IOException, it means that there was no properties file; and in that case all the defaults are loaded. But who loads all the defaults? Were they loaded before the call to loadProperties.load? Or did loadProperties.loadcatch the exception, load the defaults, and then pass the exception on for us to ignore? Or did loadProperties.loadload all the defaults before attempting to load the file? Was the author trying to comfort himself about the fact that he was leaving the catch block empty? Or—and this is the scary possibility— was the author trying to tell himself to come back here later and write the code that would load the defaults?
+public void loadProperties() { try { String propertiesPath = propertiesLocation + "/" + PROPERTIES_FILE; FileInputStream propertiesStream = new FileInputStream(propertiesPath); loadedProperties.load(propertiesStream); } catch(IOException e) { **// No properties files means all defaults are loaded** } } What does that comment in the catchblock mean? Clearly it meant something to the author, but the meaning does not come through all that well. Apparently, if we get an IOException, it means that there was no properties file; and in that case all the defaults are loaded. But who loads all the defaults? Were they loaded before the call to loadProperties.load? Or did loadProperties.loadcatch the exception, load the defaults, and then pass the exception on for us to ignore? Or did loadProperties.loadload all the defaults before attempting to load the file? Was the author trying to comfort himself about the fact that he was leaving the catch block empty? Or—and this is the scary possibility— was the author trying to tell himself to come back here later and write the code that would load the defaults?
 
 Our only recourse is to examine the code in other parts of the system to find out what's going on. Any comment that forces you to look in another module for the meaning of that comment has failed to communicate to you and is not worth the bits it consumes.
 
-***
+---
 
-***
+---
 
 **Redundant Comments**
 
@@ -2926,9 +2926,9 @@ ContainerBase.java (Tomcat)
 
 **Bad Comments** 63
 
-***
+---
 
-***
+---
 
 **Misleading Comments**
 
@@ -2938,9 +2938,9 @@ Did you discover how the comment was misleading? The method does not return _whe
 
 This subtle bit of misinformation, couched in a comment that is harder to read than the body of the code, could cause another programmer to blithely call this function in the expectation that it will return as soon as this.closedbecomestrue. That poor programmer would then find himself in a debugging session trying to figure out why his code executed so slowly.
 
-***
+---
 
-***
+---
 
 **Mandated Comments**
 
@@ -2948,9 +2948,9 @@ It is just plain silly to have a rule that says that every function must have a 
 
 For example, required javadocs for every function lead to abominations such as List- ing 4-3. This clutter adds nothing and serves only to obfuscate the code and create the potential for lies and misdirection.
 
-***
+---
 
-***
+---
 
 **Journal Comments**
 
@@ -2980,9 +2980,9 @@ cdList.add(cd);
 
 Long ago there was a good reason to create and maintain these log entries at the start of every module. We didn't have source code control systems that did it for us. Nowadays, however, these long journals are just more clutter to obfuscate the module. They should be completely removed.
 
-***
+---
 
-***
+---
 
 **Noise Comments**
 
@@ -3091,13 +3091,13 @@ doSending();
 
 Replace the temptation to create noise with the determination to clean your code. You'll find it makes you a better and happier programmer.
 
-***
+---
 
-***
+---
 
 **Scary Noise**
 
-***
+---
 
 Javadocs can also be noisy. What purpose do the following Javadocs (from a well-known open-source library) serve? Answer: nothing. They are just redundant noisy comments written out of some misplaced desire to provide documentation.
 
@@ -3133,9 +3133,9 @@ startSending (refactored)
 
 **Bad Comments** 67
 
-***
+---
 
-***
+---
 
 **Don't Use a Comment When You Can Use a Function or a Variable**
 
@@ -3157,9 +3157,9 @@ if (moduleDependees.contains(ourSubSystem))
 
 The author of the original code may have written the comment first (unlikely) and then written the code to fulfill the comment. However, the author should then have refactored the code, as I did, so that the comment could be removed.
 
-***
+---
 
-***
+---
 
 **Position Markers.**
 
@@ -3173,9 +3173,9 @@ There are rare times when it makes sense to gather certain functions together be
 
 Think of it this way. A banner is startling and obvious if you don't see banners very often. So use them very sparingly, and only when the benefit is significant. If you overuse banners, they'll fall into the background noise and be ignored.
 
-***
+---
 
-***
+---
 
 **Closing Brace Comments.**
 
@@ -3196,9 +3196,9 @@ try {
 
 68 **Chapter 4: Comments**
 
-***
+---
 
-***
+---
 
 **Attributions and Bylines...**
 
@@ -3208,9 +3208,9 @@ try {
 Again, the source code control system is a better place for this kind of information.
 ```
 
-***
+---
 
-***
+---
 
 **Commented-Out Code**
 
@@ -3275,9 +3275,9 @@ Why are those two lines of code commented? Are they important? Were they left as
 
 There was a time, back in the sixties, when commenting-out code might have been useful. But we've had good source code control systems for a very long time now. Those systems will remember the code for us. We don't have to comment it out any more. Just delete the code. We won't lose it. Promise.
 
-***
+---
 
-***
+---
 
 **HTML Comments**
 
@@ -3307,9 +3307,9 @@ HTML in source code comments is an abomination, as you can tell by reading the c
 */
 ```
 
-***
+---
 
-***
+---
 
 **Nonlocal Information**
 
@@ -3329,9 +3329,9 @@ this.fitnessePort = fitnessePort;
 }
 ```
 
-***
+---
 
-***
+---
 
 **Too Much Information**
 
@@ -3355,9 +3355,9 @@ the first 8-bit byte, and so on.
 */
 ```
 
-***
+---
 
-***
+---
 
 **Inobvious Connection**
 
@@ -3374,9 +3374,9 @@ this.pngBytes = new byte[((this.width + 1) * this.height * 3) + 200];
 
 What is a filter byte? Does it relate to the +1? Or to the \*3? Both? Is a pixel a byte? Why 200? The purpose of a comment is to explain code that does not explain itself. It is a pity when a comment needs its own explanation.
 
-***
+---
 
-***
+---
 
 **Function Headers**
 
@@ -3384,21 +3384,21 @@ Short functions don't need much description. A well-chosen name for a small func
 
 **Bad Comments** 71
 
-***
+---
 
-***
+---
 
 **Javadocs in Nonpublic Code**
 
 As useful as javadocs are for public APIs, they are anathema to code that is not intended for public consumption. Generating javadoc pages for the classes and functions inside a system is not generally useful, and the extra formality of the javadoc comments amounts to little more than cruft and distraction.
 
-***
+---
 
-***
+---
 
 **Example**
 
-***
+---
 
 I wrote the module in Listing 4-7 for the first _XP Immersion_. It was intended to be an example of bad coding and commenting style. Kent Beck then refactored this code into a much more pleasant form in front of several dozen enthusiastic students. Later I adapted the example for my book _Agile Software Development, Principles, Patterns, and Practices_ and the first of my _Craftsman_ articles published in _Software Development_ magazine.
 
@@ -3569,7 +3569,7 @@ It's worth thinking about. Using the square root as the iteration limit satisfie
 
 #### Bibliography
 
-***
+---
 
 **\[KP78]:** Kernighan and Plaugher, _The Elements of Programming Style_ , 2d. ed., McGraw- Hill, 1978.
 
@@ -3604,9 +3604,9 @@ Listing 4-8 (continued)
 PrimeGenerator.java (refactored)
 ```
 
-***
+---
 
-***
+---
 
 **# 75**
 
@@ -3646,9 +3646,9 @@ Junit, FitNesse, and Time and Money are composed of relatively small files. None
 
 What does that mean to us? It appears to be possible to build significant systems (FitNesse is close to 50,000 lines) out of files that are typically 200 lines long, with an upper limit of 500. Although this should not be a hard and fast rule, it should be considered very desirable. Small files are usually easier to understand than large files are.
 
-***
+---
 
-***
+---
 
 **The Newspaper Metaphor**
 
@@ -3667,9 +3667,9 @@ concepts and algorithms. Detail should increase as we move downward, until at th
 
 A newspaper is composed of many articles; most are very small. Some are a bit larger. Very few contain as much text as a page can hold. This makes the newspaper _usable_. If the newspaper were just one long story containing a disorganized agglomeration of facts, dates, and names, then we simply would not read it.
 
-***
+---
 
-***
+---
 
 **Vertical Openness Between Concepts**
 
@@ -3707,13 +3707,13 @@ return html.toString();
 
 This effect is even more pronounced when you unfocus your eyes. In the first example the different groupings of lines pop out at you, whereas the second example looks like a muddle. The difference between these two listings is a bit of vertical openness.
 
-***
+---
 
-***
+---
 
 **Vertical Density**
 
-***
+---
 
 If openness separates concepts, then vertical density implies close association. So lines of code that are tightly related should appear vertically dense. Notice how the useless comments in Listing 5-3 break the close association of the two instance variables.
 
@@ -3759,9 +3759,9 @@ m_properties.add(property);
 
 80 **Chapter 5: Formatting**
 
-***
+---
 
-***
+---
 
 **Vertical Distance**
 
@@ -3963,9 +3963,9 @@ assertFalse(null, condition);
 
 These functions have a strong conceptual affinity because they share a common naming scheme and perform variations of the same basic task. The fact that they call each other is secondary. Even if they didn't, they would still want to be close together.
 
-***
+---
 
-***
+---
 
 **Vertical Ordering**
 
@@ -3996,9 +3996,9 @@ Java line width distribution
 
 that they can get 200 characters across the screen. Don't do that. I personally set my limit at 120.
 
-***
+---
 
-***
+---
 
 **Horizontal Openness and Density**
 
@@ -4041,9 +4041,9 @@ Unfortunately, most tools for reformatting code are blind to the precedence of o
 
 **Horizontal Formatting** 87
 
-***
+---
 
-***
+---
 
 **Horizontal Alignment**
 
@@ -4107,13 +4107,13 @@ requestParsingTimeLimit = 10000;
 }
 ```
 
-***
+---
 
-***
+---
 
 **Indentation**
 
-***
+---
 
 A source file is a hierarchy rather like an outline. There is information that pertains to the file as a whole, to the individual classes within the file, to the methods within the classes, to the blocks within the methods, and recursively to the blocks within the blocks. Each level of this hierarchy is a scope into which names can be declared and in which declara- tions and executable statements are interpreted.
 
@@ -4189,13 +4189,13 @@ return "";
 
 90 **Chapter 5: Formatting**
 
-***
+---
 
-***
+---
 
 **Dummy Scopes**
 
-***
+---
 
 Sometimes the body of a whileorforstatement is a dummy, as shown below. I don't like these kinds of structures and try to avoid them. When I can't avoid them, I make sure that the dummy body is properly indented and surrounded by braces. I can't tell you how many times I've been fooled by a semicolon silently sitting at the end of a whileloop on the same line. Unless you make that semicolon _visible_ by indenting it on it's own line, it's just too hard to see.
 
@@ -4206,7 +4206,7 @@ while (dis.read(buf, 0, readBufferSize) != -1)
 
 #### Team Rules
 
-***
+---
 
 The title of this section is a play on words. Every programmer has his own favorite formatting rules, but if he works in a team, then the team rules.
 
@@ -4313,9 +4313,9 @@ Listing 5-6 (continued)
 CodeAnalyzer.java
 ```
 
-***
+---
 
-***
+---
 
 **# 93**
 
@@ -4327,7 +4327,7 @@ There is a reason that we keep our variables private. We don't want anyone else 
 
 #### Data Abstraction
 
-***
+---
 
 Consider the difference between Listing 6-1 and Listing 6-2. Both represent the data of a point on the Cartesian plane. And yet one exposes its implementation and the other com- pletely hides it.
 
@@ -4500,7 +4500,7 @@ More precisely, the Law of Demeter says that a method _f_ of a class _C_ should 
 *C
 ```
 
-* An object created by _f_
+- An object created by _f_
 
 ```
 public class Circle implements Shape {
@@ -4513,7 +4513,7 @@ return PI * radius * radius;
 }
 ```
 
-1. [http://en.wikipedia.org/wiki/Law\_of\_Demeter](http://en.wikipedia.org/wiki/Law\_of\_Demeter)
+1. [http://en.wikipedia.org/wiki/Law_of_Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter)
 
 ```
 Listing 6-6 (continued)
@@ -4522,8 +4522,8 @@ Polymorphic Shapes
 
 98 **Chapter 6: Objects and Data Structures**
 
-* An object passed as an argument to _f_
-* An object held in an instance variable of _C_
+- An object passed as an argument to _f_
+- An object held in an instance variable of _C_
 
 The method should _not_ invoke methods on objects that are returned by any of the allowed functions. In other words, talk to friends, not to strangers.
 
@@ -4533,13 +4533,13 @@ The following code^3 appears to violate the Law of Demeter (among other things) 
 final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
 ```
 
-***
+---
 
-***
+---
 
 **Train Wrecks**
 
-***
+---
 
 This kind of code is often called a _train wreck_ because it look like a bunch of coupled train cars. Chains of calls like this are generally considered to be sloppy style and should be avoided \[G36]. It is usually best to split them up as follows:
 
@@ -4557,21 +4557,21 @@ final String outputDir = ctxt.options.scratchDir.absolutePath; This issue would 
 
 there are frameworks and standards (e.g., "beans") that demand that even simple data structures have accessors and mutators.
 
-***
+---
 
-***
+---
 
 **Hybrids**
 
-***
+---
 
 This confusion sometimes leads to unfortunate hybrid structures that are half object and half data structure. They have functions that do significant things, and they also have either public variables or public accessors and mutators that, for all intents and purposes, make the private variables public, tempting other external functions to use those variables the way a procedural program would use a data structure.^4
 
 Such hybrids make it hard to add new functions but also make it hard to add new data structures. They are the worst of both worlds. Avoid creating them. They are indicative of a muddled design whose authors are unsure of—or worse, ignorant of—whether they need protection from functions or types.
 
-***
+---
 
-***
+---
 
 **Hiding Structure .**
 
@@ -4635,13 +4635,13 @@ return city;
 
 **Bibliography** 101
 
-***
+---
 
-***
+---
 
 **Active Record**
 
-***
+---
 
 Active Records are special forms of DTOs. They are data structures with public (or bean- accessed) variables; but they typically have navigational methods like save and find. Typi- cally these Active Records are direct translations from database tables, or other data sources.
 
@@ -4651,7 +4651,7 @@ The solution, of course, is to treat the Active Record as a data structure and t
 
 #### Conclusion
 
-***
+---
 
 Objects expose behavior and hide data. This makes it easy to add new kinds of objects without changing existing behaviors. It also makes it hard to add new behaviors to existing objects. Data structures expose data and have no significant behavior. This makes it easy to add new behaviors to existing data structures but makes it hard to add new data structures to existing functions.
 
@@ -4659,7 +4659,7 @@ In any given system we will sometimes want the flexibility to add new data types
 
 #### Bibliography
 
-***
+---
 
 **\[Refactoring]:** _Refactoring: Improving the Design of Existing Code_ , Martin Fowler et al., Addison-Wesley, 1999.
 
@@ -4678,15 +4678,15 @@ Listing 6-7 (continued)
 address.java
 ```
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
-***
+---
 
-***
+---
 
 **# 103**
 
@@ -4878,7 +4878,7 @@ If you follow the advice in the preceding sections, you'll end up with a good am
 
 Let's take a look at an example. Here is some awkward code that sums expenses in a billing application:
 
-try { MealExpenses expenses = expenseReportDAO.getMeals(employee.getID()); m\_total += expenses.getTotal(); } catch(MealExpensesNotFound e) { m\_total += getMealPerDiem(); } In this business, if meals are expensed, they become part of the total. If they aren't, the employee gets a meal _per diem_ amount for that day. The exception clutters the logic. Wouldn't it be better if we didn't have to deal with the special case? If we didn't, our code would look much simpler. It would look like this:
+try { MealExpenses expenses = expenseReportDAO.getMeals(employee.getID()); m_total += expenses.getTotal(); } catch(MealExpensesNotFound e) { m_total += getMealPerDiem(); } In this business, if meals are expensed, they become part of the total. If they aren't, the employee gets a meal _per diem_ amount for that day. The exception clutters the logic. Wouldn't it be better if we didn't have to deal with the special case? If we didn't, our code would look much simpler. It would look like this:
 
 ```
 MealExpenses expenses = expenseReportDAO.getMeals(employee.getID());
@@ -4958,7 +4958,7 @@ If you code this way, you will minimize the chance of NullPointerExceptionsand y
 
 #### Don't Pass Null
 
-***
+---
 
 Returning nullfrom methods is bad, but passing nullinto methods is worse. Unless you are working with an API which expects you to pass null, you should avoid passing null in your code whenever possible.
 
@@ -5013,19 +5013,19 @@ In most programming languages there is no good way to deal with a nullthat is pa
 
 #### Conclusion
 
-***
+---
 
 Clean code is readable, but it must also be robust. These are not conflicting goals. We can write robust clean code if we see error handling as a separate concern, something that is viewable independently of our main logic. To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
 
 #### Bibliography
 
-***
+---
 
 **\[Martin]:** _Agile Software Development: Principles, Patterns, and Practices,_ Robert C. Martin, Prentice Hall, 2002.
 
-***
+---
 
-***
+---
 
 **# 113**
 
@@ -5054,27 +5054,27 @@ If our application needs a Map of Sensors, you might find the sensors set up lik
 Map sensors = new HashMap();
 ```
 
-* clear() void – Map
-* containsKey(Object key) boolean – Map
-* containsValue(Object value) boolean – Map
-* entrySet() Set – Map
-* equals(Object o) boolean – Map
-* get(Object key) Object – Map
-* getClass() Class\<? extends Object> – Object
-* hashCode() int – Map
-* isEmpty() boolean – Map
-* keySet() Set – Map
-* notify() void – Object
-* notifyAll() void – Object
-* put(Object key, Object value) Object – Map
-* putAll(Map t) void – Map
-* remove(Object key) Object – Map
-* size() int – Map
-* toString() String – Object
-* values() Collection – Map
-* wait() void – Object
-* wait(long timeout) void – Object
-* wait(long timeout, int nanos) void – Object **Figure 8-1** The methods of Map
+- clear() void – Map
+- containsKey(Object key) boolean – Map
+- containsValue(Object value) boolean – Map
+- entrySet() Set – Map
+- equals(Object o) boolean – Map
+- get(Object key) Object – Map
+- getClass() Class\<? extends Object> – Object
+- hashCode() int – Map
+- isEmpty() boolean – Map
+- keySet() Set – Map
+- notify() void – Object
+- notifyAll() void – Object
+- put(Object key, Object value) Object – Map
+- putAll(Map t) void – Map
+- remove(Object key) Object – Map
+- size() int – Map
+- toString() String – Object
+- values() Collection – Map
+- wait() void – Object
+- wait(long timeout) void – Object
+- wait(long timeout, int nanos) void – Object **Figure 8-1** The methods of Map
 
 **Using Third-Party Code** 115
 
@@ -5128,7 +5128,7 @@ In learning tests we call the third-party API, as we expect to use it in our app
 
 #### Learning log4j
 
-***
+---
 
 Let's say we want to use the apache log4jpackage rather than our own custom-built log- ger. We download it and open the introductory documentation page. Without too much reading we write our first test case, expecting it to write "hello" to the console.
 
@@ -5277,7 +5277,7 @@ We manage third-party boundaries by having very few places in the code that refe
 
 #### Bibliography
 
-***
+---
 
 **\[BeckTDD]:** _Test Driven Development,_ Kent Beck, Addison-Wesley, 2003.
 
@@ -5285,9 +5285,9 @@ We manage third-party boundaries by having very few places in the code that refe
 
 **\[WELC]:** _Working Effectively with Legacy Code,_ Addison-Wesley, 2004.
 
-***
+---
 
-***
+---
 
 **# 121**
 
@@ -5351,9 +5351,9 @@ In a way they were right. Their testing effort _had_ failed them. But it was the
 
 The moral of the story is simple: _Test code is just as important as production code._ It is not a second-class citizen. It requires thought, design, and care. It must be kept as clean as production code.
 
-***
+---
 
-***
+---
 
 **Tests Enable the -ilities...**
 
@@ -5367,7 +5367,7 @@ So if your tests are dirty, then your ability to change your code is hampered, a
 
 #### Clean Tests
 
-***
+---
 
 What makes a clean test? Three things. Readability, readability, and readability. Read- ability is perhaps even more important in unit tests than it is in production code. What makes tests readable? The same thing that makes all code readable: clarity, simplicity, and density of expression. In a test you want to say a lot with as few expressions as possible.
 
@@ -5484,9 +5484,9 @@ The BUILD-OPERATE-CHECK^2 pattern is made obvious by the structure of these test
 
 Notice that the vast majority of annoying detail has been eliminated. The tests get right to the point and use only the data types and functions that they truly need. Anyone who reads these tests should be able to work out what they do very quickly, without being misled or overwhelmed by details.
 
-***
+---
 
-***
+---
 
 **Domain-Specific Testing Language**
 
@@ -5494,9 +5494,9 @@ The tests in Listing 9-2 demonstrate the technique of building a domain-specific
 
 This testing API is not designed up front; rather it evolves from the continued refac- toring of test code that has gotten too tainted by obfuscating detail. Just as you saw me refactor Listing 9-1 into Listing 9-2, so too will disciplined developers refactor their test code into more succinct and expressive forms.
 
-***
+---
 
-***
+---
 
 **A Dual Standard .**
 
@@ -5651,9 +5651,9 @@ thenResponseShouldContain(
 
 I think the single assert rule is a good guideline.^7 I usually try to create a domain- specific testing language that supports it, as in Listing 9-5. But I am not afraid to put more than one assert in a test. I think the best thing we can say is that the number of asserts in a test ought to be minimized.
 
-***
+---
 
-***
+---
 
 **Single Concept per Test ..**
 
@@ -5663,7 +5663,7 @@ Perhaps a better rule is that we want to test a single concept in each test func
 The three test functions probably ought to be like this:
 ```
 
-* _Given_ the last day of a month with 31 days (like May): **1.** _When_ you add one month, such that the last day of that month is the 30th (like June), _then_ the date should be the 30th of that month, not the 31st. **2.** _When_ you add two months to that date, such that the final month has 31 days, _then_ the date should be the 31st.
+- _Given_ the last day of a month with 31 days (like May): **1.** _When_ you add one month, such that the last day of that month is the 30th (like June), _then_ the date should be the 30th of that month, not the 31st. **2.** _When_ you add two months to that date, such that the final month has 31 days, _then_ the date should be the 31st.
 
 1. "Keep to the code!"
 
@@ -5694,13 +5694,13 @@ assertEquals(2004, d4.getYYYY());
 
 132 **Chapter 9: Unit Tests**
 
-* _Given_ the last day of a month with 30 days in it (like June): **1.** _When_ you add one month such that the last day of that month has 31 days, _then_ the date should be the 30th, not the 31st. Stated like this, you can see that there is a general rule hiding amidst the miscella- neous tests. When you increment the month, the date can be no greater than the last day of the month. This implies that incrementing the month on February 28th should yield March 28th. _That_ test is missing and would be a useful test to write.
+- _Given_ the last day of a month with 30 days in it (like June): **1.** _When_ you add one month such that the last day of that month has 31 days, _then_ the date should be the 30th, not the 31st. Stated like this, you can see that there is a general rule hiding amidst the miscella- neous tests. When you increment the month, the date can be no greater than the last day of the month. This implies that incrementing the month on February 28th should yield March 28th. _That_ test is missing and would be a useful test to write.
 
 So it's not the multiple asserts in each section of Listing 9-8 that causes the problem. Rather it is the fact that there is more than one concept being tested. So probably the best rule is that you should minimize the number of asserts per concept and test just one con- cept per test function.
 
 #### F.I.R.S.T.
 
-***
+---
 
 ```
 8
@@ -5724,7 +5724,7 @@ Clean tests follow five other rules that form the above acronym:
 
 #### Conclusion
 
-***
+---
 
 We have barely scratched the surface of this topic. Indeed, I think an entire book could be written about _clean tests_. Tests are as important to the health of a project as the production code is. Perhaps they are even more important, because tests preserve and enhance the flexibility, maintainability, and reusability of the production code. So keep your tests con- stantly clean. Work to make them expressive and succinct. Invent testing APIs that act as domain-specific language that helps you write the tests.
 
@@ -5734,21 +5734,21 @@ If you let the tests rot, then your code will rot too. Keep your tests clean.
 
 #### Bibliography
 
-***
+---
 
 **\[RSpec]:** _RSpec: Behavior Driven Development for Ruby Programmers_ , Aslak Hellesøy, David Chelimsky, Pragmatic Bookshelf, 2008.
 
 **\[GOF]:** _Design Patterns: Elements of Reusable Object Oriented Software_ , Gamma et al., Addison-Wesley, 1996.
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
-***
+---
 
-***
+---
 
 **# 135**
 
@@ -5770,13 +5770,13 @@ Following the standard Java convention, a class should begin with a list of vari
 
 Public functions should follow the list of variables. We like to put the private utilities called by a public function right after the public function itself. This follows the stepdown rule and helps the program read like a newspaper article.
 
-***
+---
 
-***
+---
 
 **Encapsulation**
 
-***
+---
 
 We like to keep our variables and utility functions private, but we're not fanatic about it. Sometimes we need to make a variable or utility function protected so that it can be accessed by a test. For us, tests rule. If a test in the same package needs to call a function or access a variable, we'll make it protected or package scope. However, we'll first look for a way to maintain privacy. Loosening encapsulation is always a last resort.
 
@@ -5882,9 +5882,9 @@ The name of a class should describe what responsibilities it fulfills. In fact, 
 
 We should also be able to write a brief description of the class in about 25 words, without using the words "if," "and," "or," or "but." How would we describe the SuperDashboard? "The SuperDashboardprovides access to the component that last held the focus, and it also allows us to track the version and build numbers." The first "and" is a hint that SuperDashboard has too many responsibilities.
 
-***
+---
 
-***
+---
 
 **The Single Responsibility Principle .**
 
@@ -5954,13 +5954,13 @@ to look to find things and need only understand the directly affected complexity
 
 To restate the former points for emphasis: We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsi- bility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors.
 
-***
+---
 
-***
+---
 
 **Cohesion**
 
-***
+---
 
 Classes should have a small number of instance variables. Each of the methods of a class should manipulate one or more of those variables. In general the more variables a method manipulates the more cohesive that method is to its class. A class in which each variable is used by each method is maximally cohesive.
 
@@ -5997,9 +5997,9 @@ return element;
 
 get out of the larger class. You should try to separate the variables and methods into two or more classes such that the new classes are more cohesive.
 
-***
+---
 
-***
+---
 
 **Maintaining Cohesion Results in Many Small Classes..**
 
@@ -6385,9 +6385,9 @@ Our restructured Sqllogic represents the best of all worlds. It supports the SRP
 
 We want to structure our systems so that we muck with as little as possible when we update them with new or changed features. In an ideal system, we incorporate new fea- tures by extending the system, not by making modifications to existing code.
 
-***
+---
 
-***
+---
 
 **Isolating from Change**
 
@@ -6435,7 +6435,7 @@ Instead of being dependent upon the implementation details of the TokyoStock- Ex
 
 #### Bibliography
 
-***
+---
 
 **\[RDD]:** _Object Design: Roles, Responsibilities, and Collaborations_ , Rebecca Wirfs- Brock et al., Addison-Wesley, 2002.
 
@@ -6443,15 +6443,15 @@ Instead of being dependent upon the implementation details of the TokyoStock- Ex
 
 **\[Knuth92]:** _Literate Programming,_ Donald E. Knuth, Center for the Study of language and Information, Leland Stanford Junior University, 1992.
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
-***
+---
 
-***
+---
 
 **# 153**
 
@@ -6501,9 +6501,9 @@ One occurrence of LAZY-INITIALIZATIONisn't a serious problem, of course. However
 
 If we are _diligent_ about building well-formed and robust systems, we should never let little, _convenient_ idioms lead to modularity breakdown. The startup process of object con- struction and wiring is no exception. We should modularize this process separately from the normal runtime logic and we should make sure that we have a global, consistent strat- egy for resolving our major dependencies.
 
-***
+---
 
-***
+---
 
 **Separation of Main**
 
@@ -6511,13 +6511,13 @@ One way to separate construction from use is simply to move all aspects of const
 
 The flow of control is easy to follow. The mainfunction builds the objects necessary for the system, then passes them to the application, which simply uses them. Notice the direction of the dependency arrows crossing the barrier between mainand the application. They all go one direction, pointing away from main. This means that the application has no knowledge of mainor of the construction process. It simply expects that everything has been built properly.
 
-***
+---
 
-***
+---
 
 **Factories**
 
-***
+---
 
 Sometimes, of course, we need to make the application responsible for _when_ an object gets created. For example, in an order processing system the application must create the
 
@@ -6543,9 +6543,9 @@ Separation construction with factory
 
 **Scaling Up** 157
 
-***
+---
 
-***
+---
 
 **Dependency Injection**
 
@@ -6563,7 +6563,7 @@ But what about the virtues of LAZY-INITIALIZATION? This idiom is still sometimes
 
 #### Scaling Up
 
-***
+---
 
 Cities grow from towns, which grow from settlements. At first the roads are narrow and practically nonexistent, then they are paved, then widened over time. Small buildings and
 
@@ -6686,9 +6686,9 @@ Because of this coupling to the heavyweight container, isolated unit testing is 
 
 Finally, even object-oriented programming is undermined. One bean cannot inherit from another bean. Notice the logic for adding a new account. It is common in EJB2 beans to define "data transfer objects" (DTOs) that are essentially "structs" with no behavior. This usually leads to redundant types holding essentially the same data, and it requires boilerplate code to copy data from one object to another.
 
-***
+---
 
-***
+---
 
 **Cross-Cutting Concerns .**
 
@@ -6711,7 +6711,7 @@ Using persistence as an example, you would declare which objects and attributes 
 
 #### Java Proxies
 
-***
+---
 
 Java proxies are suitable for simple situations, such as wrapping method calls in individual objects or classes. However, the dynamic proxies provided in the JDK only work with interfaces. To proxy classes, you have to use a byte-code manipulation library, such as CGLIB, ASM, or Javassist.^9
 
@@ -6930,7 +6930,7 @@ Some or all of the persistence information in the annotations can be moved to XM
 
 #### AspectJ Aspects
 
-***
+---
 
 Finally, the most full-featured tool for separating concerns through aspects is the AspectJ language,^17 an extension of Java that provides "first-class" support for aspects as modular- ity constructs. The pure Java approaches provided by Spring AOP and JBoss AOP are suf- ficient for 80–90 percent of the cases where aspects are most useful. However, AspectJ provides a very rich and powerful tool set for separating concerns. The drawback of AspectJ is the need to adopt several new tools and to learn new language constructs and usage idioms.
 
@@ -7032,7 +7032,7 @@ tion to be expressed as POJOs, from high-level policy to low-level details.
 
 #### Conclusion
 
-***
+---
 
 Systems must be clean too. An invasive architecture overwhelms the domain logic and impacts agility. When the domain logic is obscured, quality suffers because bugs find it easier to hide and stories become harder to implement. If agility is compromised, produc- tivity suffers and the benefits of TDD are lost.
 
@@ -7042,7 +7042,7 @@ Whether you are designing systems or individual modules, never forget to _use th
 
 #### Bibliography
 
-***
+---
 
 **\[Alexander]:** Christopher Alexander, _A Timeless Way of Building,_ Oxford University Press, New York, 1979.
 
@@ -7056,7 +7056,7 @@ Whether you are designing systems or individual modules, never forget to _use th
 
 **\[Colyer]:** Adrian Colyer, Andy Clement, George Hurley, Mathew Webster, _Eclipse AspectJ,_ Person Education, Inc., Upper Saddle River, NJ, 2005.
 
-**\[DSL]:** Domain-specific programming language, [http://en.wikipedia.org/wiki/Domain-](http://en.wikipedia.org/wiki/Domain-) specific\_programming\_language
+**\[DSL]:** Domain-specific programming language, [http://en.wikipedia.org/wiki/Domain-](http://en.wikipedia.org/wiki/Domain-) specific_programming_language
 
 **\[Fowler]:** Inversion of Control Containers and the Dependency Injection pattern, [http://martinfowler.com/articles/injection.html](http://martinfowler.com/articles/injection.html)
 
@@ -7064,7 +7064,7 @@ Whether you are designing systems or individual modules, never forget to _use th
 
 **\[Goetz]:** Brian Goetz, _Java Theory and Practice: Decorating with Dynamic Proxie_ s, [http://www.ibm.com/developerworks/java/library/j-jtp08305.html](http://www.ibm.com/developerworks/java/library/j-jtp08305.html)
 
-**\[Javassist]:** Javassist Home Page, [http://www.csg.is.titech.ac.jp/\~chiba/javassist/](http://www.csg.is.titech.ac.jp/\~chiba/javassist/)
+**\[Javassist]:** Javassist Home Page, [http://www.csg.is.titech.ac.jp/\~chiba/javassist/](http://www.csg.is.titech.ac.jp/~chiba/javassist/)
 
 **\[JBoss]:** JBoss Home Page, [http://jboss.org](http://jboss.org)
 
@@ -7078,9 +7078,9 @@ Whether you are designing systems or individual modules, never forget to _use th
 
 **\[GOF]:** _Design Patterns: Elements of Reusable Object Oriented Software_ , Gamma et al., Addison-Wesley, 1996.
 
-***
+---
 
-***
+---
 
 **# 171**
 
@@ -7106,10 +7106,10 @@ Many of us feel that Kent Beck's four rules of _Simple Design_^1 are of signific
 According to Kent, a design is "simple" if it follows these rules:
 ```
 
-* Runs all the tests
-* Contains no duplication
-* Expresses the intent of the programmer
-* Minimizes the number of classes and methods
+- Runs all the tests
+- Contains no duplication
+- Expresses the intent of the programmer
+- Minimizes the number of classes and methods
 
 ```
 The rules are given in order of importance.
@@ -7137,7 +7137,7 @@ During this refactoring step, we can apply anything from the entire body of know
 
 #### No Duplication
 
-***
+---
 
 Duplication is the primary enemy of a well-designed system. It represents additional work, additional risk, and additional unnecessary complexity. Duplication manifests itself in many forms. Lines of code that look exactly alike are, of course, duplication. Lines of code that are similar can often be massaged to look even more alike so that they can be more easily refactored. And duplication can exist in other forms such as duplication of implementation. For example, we might have two methods in a collection class:
 
@@ -7261,7 +7261,7 @@ The subclasses fill in the "hole" in the accrueVacationalgorithm, supplying the 
 
 #### Expressive
 
-***
+---
 
 Most of us have had the experience of working on convoluted code. Many of us have pro- duced some convoluted code ourselves. It's easy to write code that _we_ understand, because at the time we write it we're deep in an understanding of the problem we're trying to solve. Other maintainers of the code aren't going to have so deep an understanding.
 
@@ -7291,21 +7291,21 @@ Our goal is to keep our overall system small while we are also keeping our funct
 
 #### Conclusion
 
-***
+---
 
 Is there a set of simple practices that can replace experience? Clearly not. On the other hand, the practices described in this chapter and in this book are a crystallized form of the many decades of experience enjoyed by the authors. Following the practice of simple design can and does encourage and enable developers to adhere to good principles and patterns that otherwise take years to learn.
 
 #### Bibliography
 
-***
+---
 
 **\[XPE]:** _Extreme Programming Explained: Embrace Change,_ Kent Beck, Addison- Wesley, 1999.
 
 **\[GOF]:** _Design Patterns: Elements of Reusable Object Oriented Software,_ Gamma et al., Addison-Wesley, 1996.
 
-***
+---
 
-***
+---
 
 **# 177**
 
@@ -7352,29 +7352,29 @@ Or consider a system that handles one user at a time and requires only one secon
 
 Or consider a system that interprets large data sets but can only give a complete solu- tion after processing all of them. Perhaps each data set could be processed on a different computer, so that many data sets are being processed in parallel.
 
-***
+---
 
-***
+---
 
 **Myths and Misconceptions.**
 
 And so there are compelling reasons to adopt concurrency. However, as we said before, concurrency is _hard_. If you aren't very careful, you can create some very nasty situations. Consider these common myths and misconceptions:
 
-* _Concurrency always improves performance._ Concurrency can _sometimes_ improve performance, but only when there is a lot of wait time that can be shared between multiple threads or multiple processors. Neither situ- ation is trivial.
-* _Design does not change when writing concurrent programs._ In fact, the design of a concurrent algorithm can be remarkably different from the design of a single-threaded system. The decoupling of _what_ from _when_ usually has a huge effect on the structure of the system.
-* _Understanding concurrency issues is not important when working with a container_ _such as a Web or EJB container._ In fact, you'd better know just what your container is doing and how to guard against the issues of concurrent update and deadlock described later in this chapter.
+- _Concurrency always improves performance._ Concurrency can _sometimes_ improve performance, but only when there is a lot of wait time that can be shared between multiple threads or multiple processors. Neither situ- ation is trivial.
+- _Design does not change when writing concurrent programs._ In fact, the design of a concurrent algorithm can be remarkably different from the design of a single-threaded system. The decoupling of _what_ from _when_ usually has a huge effect on the structure of the system.
+- _Understanding concurrency issues is not important when working with a container_ _such as a Web or EJB container._ In fact, you'd better know just what your container is doing and how to guard against the issues of concurrent update and deadlock described later in this chapter.
 
 ```
 Here are a few more balanced sound bites regarding writing concurrent software:
 ```
 
-* _Concurrency incurs some overhead,_ both in performance as well as writing additional code.
-* _Correct concurrency is complex,_ even for simple problems.
+- _Concurrency incurs some overhead,_ both in performance as well as writing additional code.
+- _Correct concurrency is complex,_ even for simple problems.
 
 180 **Chapter 13: Concurrency**
 
-* _Concurrency bugs aren't usually repeatable,_ so they are often ignored as one-offs^2 instead of the true defects they are.
-* _Concurrency often requires a fundamental change in design strategy_.
+- _Concurrency bugs aren't usually repeatable,_ so they are often ignored as one-offs^2 instead of the true defects they are.
+- _Concurrency often requires a fundamental change in design strategy_.
 
 #### Challenges
 
@@ -7382,9 +7382,9 @@ What makes concurrent programming so difficult? Consider the following trivial c
 
 public class X { private int lastIdUsed; public int getNextId() { return ++lastIdUsed; } } Let's say we create an instance of X, set the lastIdUsedfield to 42, and then share the instance between two threads. Now suppose that both of those threads call the method getNextId(); there are three possible outcomes:
 
-* Thread one gets the value 43, thread two gets the value 44, lastIdUsed is 44.
-* Thread one gets the value 44, thread two gets the value 43, lastIdUsed is 44.
-* Thread one gets the value 43, thread two gets the value 43, lastIdUsed is 43.
+- Thread one gets the value 43, thread two gets the value 44, lastIdUsed is 44.
+- Thread one gets the value 44, thread two gets the value 43, lastIdUsed is 44.
+- Thread one gets the value 43, thread two gets the value 43, lastIdUsed is 43.
 
 The surprising third result^3 occurs when the two threads step on each other. This hap- pens because there are many possible paths that the two threads can take through that one line of Java code, and some of those paths generate incorrect results. How many different paths are there? To really answer that question, we need to understand what the Just-In- Time Compiler does with the generated byte-code, and understand what the Java memory model considers to be atomic.
 
@@ -7400,39 +7400,39 @@ What follows is a series of principles and techniques for defending your systems
 
 **Concurrency Defense Principles** 181
 
-***
+---
 
-***
+---
 
 **Single Responsibility Principle**
 
 The SRP^5 states that a given method/class/component should have a single reason to change. Concurrency design is complex enough to be a reason to change in it's own right and therefore deserves to be separated from the rest of the code. Unfortunately, it is all too common for concurrency implementation details to be embedded directly into other pro- duction code. Here are a few things to consider:
 
-* _Concurrency-related code has its own life cycle of development,_ change, and tuning.
-* _Concurrency-related code has its own challenges,_ which are different from and often more difficult than nonconcurrency-related code.
-* The number of ways in which miswritten concurrency-based code can fail makes it challenging enough without the added burden of surrounding application code.
+- _Concurrency-related code has its own life cycle of development,_ change, and tuning.
+- _Concurrency-related code has its own challenges,_ which are different from and often more difficult than nonconcurrency-related code.
+- The number of ways in which miswritten concurrency-based code can fail makes it challenging enough without the added burden of surrounding application code.
 
 ```
 Recommendation : Keep your concurrency-related code separate from other code.^6
 ```
 
-***
+---
 
-***
+---
 
 **Corollary: Limit the Scope of Data**
 
 As we saw, two threads modifying the same field of a shared object can interfere with each other, causing unexpected behavior. One solution is to use the synchronizedkeyword to protect a _critical section_ in the code that uses the shared object. It is important to restrict the number of such critical sections. The more places shared data can get updated, the more likely:
 
-* You will forget to protect one or more of those places—effectively breaking all code that modifies that shared data.
-* There will be duplication of effort required to make sure everything is effectively guarded (violation of DRY^7 ).
-* It will be difficult to determine the source of failures, which are already hard enough to find.
+- You will forget to protect one or more of those places—effectively breaking all code that modifies that shared data.
+- There will be duplication of effort required to make sure everything is effectively guarded (violation of DRY^7 ).
+- It will be difficult to determine the source of failures, which are already hard enough to find.
 
 **Recommendation** : _Take data encapsulation to heart; severely limit the access of any data that may be shared._
 
-***
+---
 
-***
+---
 
 **Corollary: Use Copies of Data**
 
@@ -7446,9 +7446,9 @@ A good way to avoid shared data is to avoid sharing the data in the first place.
 
 If there is an easy way to avoid sharing objects, the resulting code will be far less likely to cause problems. You might be concerned about the cost of all the extra object creation. It is worth experimenting to find out if this is in fact a problem. However, if using copies of objects allows the code to avoid synchronizing, the savings in avoiding the intrinsic lock will likely make up for the additional creation and garbage collection overhead.
 
-***
+---
 
-***
+---
 
 **Corollary: Threads Should Be as Independent as Possible**
 
@@ -7462,14 +7462,14 @@ For example, classes that subclass from HttpServletreceive all of their informat
 
 Java 5 offers many improvements for concurrent development over previous versions. There are several things to consider when writing threaded code in Java 5:
 
-* Use the provided thread-safe collections.
-* Use the executor framework for executing unrelated tasks.
-* Use nonblocking solutions when possible.
-* Several library classes are not thread safe.
+- Use the provided thread-safe collections.
+- Use the executor framework for executing unrelated tasks.
+- Use nonblocking solutions when possible.
+- Several library classes are not thread safe.
 
-***
+---
 
-***
+---
 
 **Thread-Safe Collections .**
 
@@ -7520,17 +7520,17 @@ or forever.
 
 184 **Chapter 13: Concurrency**
 
-***
+---
 
-***
+---
 
 **Producer-Consumer^9**
 
 One or more producer threads create some work and place it in a buffer or queue. One or more consumer threads acquire that work from the queue and complete it. The queue between the producers and consumers is a _bound resource_. This means producers must wait for free space in the queue before writing and consumers must wait until there is something in the queue to consume. Coordination between the producers and consumers via the queue involves producers and consumers signaling each other. The producers write to the queue and signal that the queue is no longer empty. Consumers read from the queue and signal that the queue is no longer full. Both potentially wait to be notified when they can continue.
 
-***
+---
 
-***
+---
 
 **Readers-Writers^10**
 
@@ -7538,9 +7538,9 @@ When you have a shared resource that primarily serves as a source of information
 
 The challenge is to balance the needs of both readers and writers to satisfy correct operation, provide reasonable throughput and avoiding starvation. A simple strategy makes writers wait until there are no readers before allowing the writer to perform an update. If there are continuous readers, however, the writers will be starved. On the other hand, if there are frequent writers and they are given priority, throughput will suffer. Find- ing that balance and avoiding concurrent update issues is what the problem addresses.
 
-***
+---
 
-***
+---
 
 **Dining Philosophers^11**
 
@@ -7549,8 +7549,8 @@ Imagine a number of philosophers sitting around a circular table. A fork is plac
 Replace philosophers with threads and forks with resources and this problem is simi- lar to many enterprise applications in which processes compete for resources. Unless care- fully designed, systems that compete in this way can experience deadlock, livelock, throughput, and efficiency degradation.
 
 1. [http://en.wikipedia.org/wiki/Producer-consumer](http://en.wikipedia.org/wiki/Producer-consumer)
-2. [http://en.wikipedia.org/wiki/Readers-writers\_problem](http://en.wikipedia.org/wiki/Readers-writers\_problem)
-3. [http://en.wikipedia.org/wiki/Dining\_philosophers\_problem](http://en.wikipedia.org/wiki/Dining\_philosophers\_problem)
+2. [http://en.wikipedia.org/wiki/Readers-writers_problem](http://en.wikipedia.org/wiki/Readers-writers_problem)
+3. [http://en.wikipedia.org/wiki/Dining_philosophers_problem](http://en.wikipedia.org/wiki/Dining_philosophers_problem)
 
 **Keep Synchronized Sections Small** 185
 
@@ -7566,9 +7566,9 @@ Dependencies between synchronized methods cause subtle bugs in concurrent code. 
 
 **Recommendation** : _Avoid using more than one method on a shared object._ There will be times when you must use more than one method on a shared object. When this is the case, there are three ways to make the code correct:
 
-* **Client-Based Locking** —Have the client lock the server before calling the first method and make sure the lock's extent includes code calling the last method.
-* **Server-Based Locking** —Within the server create a method that locks the server, calls all the methods, and then unlocks. Have the client call the new method.
-* **Adapted Server** —create an intermediary that performs the locking. This is an exam- ple of server-based locking, where the original server cannot be changed.
+- **Client-Based Locking** —Have the client lock the server before calling the first method and make sure the lock's extent includes code calling the last method.
+- **Server-Based Locking** —Within the server create a method that locks the server, calls all the methods, and then unlocks. Have the client call the new method.
+- **Adapted Server** —create an intermediary that performs the locking. This is an exam- ple of server-based locking, where the original server cannot be changed.
 
 #### Keep Synchronized Sections Small ..
 
@@ -7608,22 +7608,22 @@ Proving that code is correct is impractical. Testing does not guarantee correctn
 
 That is a whole lot to take into consideration. Here are a few more fine-grained recommendations:
 
-* Treat spurious failures as candidate threading issues.
-* Get your nonthreaded code working first.
+- Treat spurious failures as candidate threading issues.
+- Get your nonthreaded code working first.
 
 1. See "Deadlock" on page 335.
 
 **Testing Threaded Code** 187
 
-* Make your threaded code pluggable.
-* Make your threaded code tunable.
-* Run with more threads than processors.
-* Run on different platforms.
-* Instrument your code to try and force failures.
+- Make your threaded code pluggable.
+- Make your threaded code tunable.
+- Run with more threads than processors.
+- Run on different platforms.
+- Instrument your code to try and force failures.
 
-***
+---
 
-***
+---
 
 **Treat Spurious Failures as Candidate Threading Issues .**
 
@@ -7633,9 +7633,9 @@ Threaded code causes things to fail that "simply cannot fail." Most developers d
 Recommendation : Do not ignore system failures as one-offs.
 ```
 
-***
+---
 
-***
+---
 
 **Get Your Nonthreaded Code Working First**
 
@@ -7643,24 +7643,24 @@ This may seem obvious, but it doesn't hurt to reinforce it. Make sure code works
 
 **Recommendation** : _Do not try to chase down nonthreading bugs and threading bugs at the same time. Make sure your code works outside of threads_.
 
-***
+---
 
-***
+---
 
 **Make Your Threaded Code Pluggable**
 
 Write the concurrency-supporting code such that it can be run in several configurations:
 
-* One thread, several threads, varied as it executes
-* Threaded code interacts with something that can be both real or a test double.
-* Execute with test doubles that run quickly, slowly, variable.
-* Configure tests so they can run for a number of iterations.
+- One thread, several threads, varied as it executes
+- Threaded code interacts with something that can be both real or a test double.
+- Execute with test doubles that run quickly, slowly, variable.
+- Configure tests so they can run for a number of iterations.
 
 **Recommendation** : _Make your thread-based code especially pluggable so that you can run it in various configurations._
 
-***
+---
 
-***
+---
 
 **Make Your Threaded Code Tunable**
 
@@ -7670,17 +7670,17 @@ Getting the right balance of threads typically requires trial an error. Early on
 
 threads to be easily tuned. Consider allowing it to change while the system is running. Consider allowing self-tuning based on throughput and system utilization.
 
-***
+---
 
-***
+---
 
 **Run with More Threads Than Processors**
 
 Things happen when the system switches between tasks. To encourage task swapping, run with more threads than processors or cores. The more frequently your tasks swap, the more likely you'll encounter code that is missing a critical section or causes deadlock.
 
-***
+---
 
-***
+---
 
 **Run on Different Platforms**
 
@@ -7692,9 +7692,9 @@ In all cases the code under test was known to be incorrect. This just reinforced
 Recommendation : Run your threaded code on all target platforms early and often.
 ```
 
-***
+---
 
-***
+---
 
 **Instrument Your Code to Try and Force Failures**
 
@@ -7710,20 +7710,20 @@ Each of these methods can affect the order of execution, thereby increasing the 
 There are two options for code instrumentation:
 ```
 
-* Hand-coded
-* Automated
+- Hand-coded
+- Automated
 
 1. Did you know that the threading model in Java does not guarantee preemptive threading? Modern OS's support preemptive threading, so you get that "for free." Even so, it not guaranteed by the JVM.
 
 **Testing Threaded Code** 189
 
-***
+---
 
-***
+---
 
 **Hand-Coded**
 
-***
+---
 
 You can insert calls to wait(),sleep(),yield(), and priority()in your code by hand. It might be just the thing to do when you're testing a particularly thorny piece of code.
 
@@ -7733,22 +7733,22 @@ Here is an example of doing just that: public synchronized String nextUrlOrNull(
 There are many problems with this approach:
 ```
 
-* You have to manually find appropriate places to do this.
-* How do you know where to put the call and what kind of call to use?
-* Leaving such code in a production environment unnecessarily slows the code down.
-* It's a shotgun approach. You may or may not find flaws. Indeed, the odds aren't with you.
+- You have to manually find appropriate places to do this.
+- How do you know where to put the call and what kind of call to use?
+- Leaving such code in a production environment unnecessarily slows the code down.
+- It's a shotgun approach. You may or may not find flaws. Indeed, the odds aren't with you.
 
 What we need is a way to do this during testing but not in production. We also need to easily mix up configurations between different runs, which results in increased chances of finding errors in the aggregate.
 
 Clearly, if we divide our system up into POJOs that know nothing of threading and classes that control the threading, it will be easier to find appropriate places to instrument the code. Moreover, we could create many different test jigs that invoke the POJOs under different regimes of calls to sleep,yield, and so on.
 
-***
+---
 
-***
+---
 
 **Automated**
 
-***
+---
 
 You could use tools like an Aspect-Oriented Framework, CGLIB, or ASM to programmat- ically instrument your code. For example, you could use a class with a single method:
 
@@ -7777,7 +7777,7 @@ Recommendation : Use jiggling strategies to ferret out errors.
 
 #### Conclusion
 
-***
+---
 
 Concurrent code is difficult to get right. Code that is simple to follow can become night- marish when multiple threads and shared data get into the mix. If you are faced with writ- ing concurrent code, you need to write clean code with rigor or else face subtle and infrequent failures.
 
@@ -7803,7 +7803,7 @@ If you take a clean approach, your chances of getting it right increase drastica
 
 #### Bibliography
 
-***
+---
 
 **\[Lea99]:** _Concurrent Programming in Java: Design Principles and Patterns_ , 2d. ed., Doug Lea, Prentice Hall, 1999.
 
@@ -7811,15 +7811,15 @@ If you take a clean approach, your chances of getting it right increase drastica
 
 **\[PRAG]:** _The Pragmatic Programmer_ , Andrew Hunt, Dave Thomas, Addison-Wesley, 2000.
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
-***
+---
 
-***
+---
 
 **# 193**
 
@@ -8154,9 +8154,9 @@ Please read the code over one more time. Pay special attention to the way things
 
 For example, it should be obvious how you would add a new argument type, such as a date argument or a complex number argument, and that such an addition would require a trivial amount of effort. In short, it would simply require a new derivative of Argument- Marshaler, a new getXXXfunction, and a new case statement in the parseSchemaElement function. There would also probably be a new ArgsException.ErrorCodeand a new error message.
 
-***
+---
 
-***
+---
 
 **How Did I Do This?**
 
@@ -8785,13 +8785,13 @@ Args.java (Boolean and String)
 
 You can see that this is starting to get out of hand. It's still not horrible, but the mess is certainly starting to grow. It's a pile, but it's not festering quite yet. It took the addition of the integer argument type to get this pile really fermenting and festering.
 
-***
+---
 
-***
+---
 
 **So I Stopped**
 
-***
+---
 
 I had at least two more argument types to add, and I could tell that they would make things much worse. If I bulldozed my way forward, I could probably get them to work, but I'd leave behind a mess that was too large to fix. If the structure of this code was ever going to be maintainable, now was the time to fix it.
 
@@ -8799,9 +8799,9 @@ So I stopped adding features and started refactoring. Having just added the Stri
 
 Many different types, all with similar methods—that sounds like a class to me. And so theArgumentMarshaler concept was born.
 
-***
+---
 
-***
+---
 
 **On Incrementalism**
 
@@ -8922,7 +8922,7 @@ new HashMap<Character , ArgumentMarshaler >();
 
 **String Arguments** 215
 
-private void parseStringSchemaElement(char elementId) { stringArgs.put(elementId **, new StringArgumentMarshaler()** ); } ... private void setStringArg(char argChar) throws ArgsException { currentArgument++; try { stringArgs **.get** (argChar) **.setString** (args\[currentArgument]); } catch (ArrayIndexOutOfBoundsException e) { valid = false; errorArgumentId = argChar; errorCode = ErrorCode.MISSING\_STRING; throw new ArgsException(); } } ... public String getString(char arg) { **Args.ArgumentMarshaler am =** stringArgs.get(arg); return **am == null? ""** : am.getString(); } ... private class ArgumentMarshaler { private boolean booleanValue = false; **private String stringValue;** public void setBoolean(boolean value) { booleanValue = value; } public boolean getBoolean() { return booleanValue; } **public void setString(String s) { stringValue = s; } public String getString() { return stringValue == null? "" : stringValue; }** } Again, these changes were made one at a time and in such a way that the tests kept running, if not passing. When a test broke, I made sure to get it passing again before con- tinuing with the next change.
+private void parseStringSchemaElement(char elementId) { stringArgs.put(elementId **, new StringArgumentMarshaler()** ); } ... private void setStringArg(char argChar) throws ArgsException { currentArgument++; try { stringArgs **.get** (argChar) **.setString** (args\[currentArgument]); } catch (ArrayIndexOutOfBoundsException e) { valid = false; errorArgumentId = argChar; errorCode = ErrorCode.MISSING_STRING; throw new ArgsException(); } } ... public String getString(char arg) { **Args.ArgumentMarshaler am =** stringArgs.get(arg); return **am == null? ""** : am.getString(); } ... private class ArgumentMarshaler { private boolean booleanValue = false; **private String stringValue;** public void setBoolean(boolean value) { booleanValue = value; } public boolean getBoolean() { return booleanValue; } **public void setString(String s) { stringValue = s; } public String getString() { return stringValue == null? "" : stringValue; }** } Again, these changes were made one at a time and in such a way that the tests kept running, if not passing. When a test broke, I made sure to get it passing again before con- tinuing with the next change.
 
 By now you should be able to see my intent. Once I get all the current marshalling behavior into the ArgumentMarshalerbase class, I'm going to start pushing that behavior down into the derivatives. This will allow me to keep everything running while I gradually change the shape of this program.
 
@@ -9738,7 +9738,7 @@ After all that work, this is a bit disappointing. The structure is a bit better,
 
 I'd really like to get rid of that type-case up in setArgument\[G23]. What I'd like in setArgumentis a single call to ArgumentMarshaler.set. This means I need to push setIntArg,setStringArg, and setBooleanArgdown into the appropriate ArgumentMarshaler derivatives. But there is a problem.
 
-If you look closely at setIntArg, you'll notice that it uses two instance variables: args andcurrentArg. To move setIntArgdown into BooleanArgumentMarshaler, I'll have to pass bothargsandcurrentArgsas function arguments. That's dirty \[F1]. I'd rather pass one argument instead of two. Fortunately, there is a simple solution. We can convert the args array into a listand pass an Iteratordown to the setfunctions. The following took me ten steps, passing all the tests after each. But I'll just show you the result. You should be able to figure out what most of the tiny little steps were. public class Args { private String schema; **private String\[] args;** private boolean valid = true; private Set unexpectedArguments = new TreeSet(); private Map\<Character, ArgumentMarshaler> marshalers = new HashMap\<Character, ArgumentMarshaler>(); private Set argsFound = new HashSet(); private **Iterator** currentArgument; private char errorArgumentId = '\0'; private String errorParameter = "TILT"; private ErrorCode errorCode = ErrorCode.OK; **private List argsList;** private enum ErrorCode { OK, MISSING\_STRING, MISSING\_INTEGER, INVALID\_INTEGER, UNEXPECTED\_ARGUMENT} public Args(String schema, String\[] args) throws ParseException { this.schema = schema; **argsList = Arrays.asList(args);** valid = parse(); }
+If you look closely at setIntArg, you'll notice that it uses two instance variables: args andcurrentArg. To move setIntArgdown into BooleanArgumentMarshaler, I'll have to pass bothargsandcurrentArgsas function arguments. That's dirty \[F1]. I'd rather pass one argument instead of two. Fortunately, there is a simple solution. We can convert the args array into a listand pass an Iteratordown to the setfunctions. The following took me ten steps, passing all the tests after each. But I'll just show you the result. You should be able to figure out what most of the tiny little steps were. public class Args { private String schema; **private String\[] args;** private boolean valid = true; private Set unexpectedArguments = new TreeSet(); private Map\<Character, ArgumentMarshaler> marshalers = new HashMap\<Character, ArgumentMarshaler>(); private Set argsFound = new HashSet(); private **Iterator** currentArgument; private char errorArgumentId = '\0'; private String errorParameter = "TILT"; private ErrorCode errorCode = ErrorCode.OK; **private List argsList;** private enum ErrorCode { OK, MISSING_STRING, MISSING_INTEGER, INVALID_INTEGER, UNEXPECTED_ARGUMENT} public Args(String schema, String\[] args) throws ParseException { this.schema = schema; **argsList = Arrays.asList(args);** valid = parse(); }
 
 ```
 } catch (NumberFormatException e) {
@@ -10129,7 +10129,7 @@ assertEquals(0, args.getInt('x'));
 
 ### assertEquals("Argument -x expects a double but was 'Forty two'.", args.errorMessage()); }
 
-public String errorMessage() throws Exception { switch (errorCode) { case OK: throw new Exception("TILT: Should not get here."); case UNEXPECTED\_ARGUMENT: return unexpectedArgumentMessage(); case MISSING\_STRING: return String.format("Could not find string parameter for -%c.", errorArgumentId); case INVALID\_INTEGER: return String.format("Argument -%c expects an integer but was '%s'.", errorArgumentId, errorParameter); case MISSING\_INTEGER: return String.format("Could not find integer parameter for -%c.", errorArgumentId); **case INVALID\_DOUBLE: return String.format("Argument -%c expects a double but was '%s'.", errorArgumentId, errorParameter); case MISSING\_DOUBLE: return String.format("Could not find double parameter for -%c.", errorArgumentId);** } return ""; } And the tests pass. The next test makes sure we detect a missing doubleargument properly.
+public String errorMessage() throws Exception { switch (errorCode) { case OK: throw new Exception("TILT: Should not get here."); case UNEXPECTED_ARGUMENT: return unexpectedArgumentMessage(); case MISSING_STRING: return String.format("Could not find string parameter for -%c.", errorArgumentId); case INVALID_INTEGER: return String.format("Argument -%c expects an integer but was '%s'.", errorArgumentId, errorParameter); case MISSING_INTEGER: return String.format("Could not find integer parameter for -%c.", errorArgumentId); **case INVALID_DOUBLE: return String.format("Argument -%c expects a double but was '%s'.", errorArgumentId, errorParameter); case MISSING_DOUBLE: return String.format("Could not find double parameter for -%c.", errorArgumentId);** } return ""; } And the tests pass. The next test makes sure we detect a missing doubleargument properly.
 
 ```
 public void testMissingDouble() throws Exception {
@@ -10735,7 +10735,7 @@ By now it should be clear that we are within striking distance of the final solu
 
 #### Conclusion
 
-***
+---
 
 It is not enough for code to work. Code that works is often badly broken. Programmers who satisfy themselves with merely working code are behaving unprofessionally. They may fear that they don't have time to improve the structure and design of their code, but I disagree. Nothing has a more profound and long-term degrading effect upon a develop- ment project than bad code. Bad schedules can be redone, bad requirements can be rede- fined. Bad team dynamics can be repaired. But bad code rots and ferments, becoming an inexorable weight that drags the team down. Time and time again I have seen teams grind to a crawl because, in their haste, they created a malignant morass of code that forever thereafter dominated their destiny.
 
@@ -10743,9 +10743,9 @@ Of course bad code can be cleaned up. But it's very expensive. As code rots, the
 
 So the solution is to continuously keep your code as clean and simple as it can be. Never let the rot get started.
 
-***
+---
 
-***
+---
 
 **# 251**
 
@@ -11395,7 +11395,7 @@ If you look carefully, you will notice that I reversed several of the decisions 
 
 #### Conclusion
 
-***
+---
 
 And so we have satisfied the Boy Scout Rule. We have left this module a bit cleaner than we found it. Not that it wasn't clean already. The authors had done an excellent job with it. But no module is immune from improvement, and each of us has the responsibility to leave the code a little better than we found it.
 
@@ -11411,15 +11411,15 @@ Listing 15-5 (continued)
 ComparisonCompactor.java (final)
 ```
 
-***
+---
 
-***
+---
 
 **This page intentionally left blank**
 
-***
+---
 
-***
+---
 
 **# 267**
 
@@ -11513,8591 +11513,8591 @@ The import list starting at line 61 could be shortened by using java.text._and j
 
 I wince at the HTML formatting in the Javadoc (line 67). Having a source file with more than one language in it troubles me. This comment has _four_ languages in it: Java, English, Javadoc, and html \[G1]. With that many languages in use, it's hard to keep things straight. For example, the nice positioning of line 71 and line 72 are lost when the Javadoc is generated, and yet who wants to see
 
-* and
-*   in the source code? A better strategy might be to just surround the whole comment with
-
-    ```
-    so that the formatting that is
-    apparent in the source code is preserved within the Javadoc.^1
-    Line 86 is the class declaration. Why is this class named SerialDate? What is the sig-
-    nificance of the world "serial"? Is it because the class is derived from Serializable? That
-    doesn't seem likely.
-    int delta = targetDOW - base.getDayOfWeek();
-    int positiveDelta = delta + 7;
-    int adjust = positiveDelta % 7;
-    if (adjust > 3)
-    adjust -= 7;
-    return SerialDate.addDays(adjust, base);
-
-
-    An even better solution would have been for Javadoc to present all comments as preformatted, so that comments appear the
-    same in both code and document.
-
-    Then Make It Right 271
-    I won't keep you guessing. I know why (or at least I think I know why) the word
-    "serial" was used. The clue is in the constants SERIAL_LOWER_BOUND and
-    SERIAL_UPPER_BOUND on line 98 and line 101. An even better clue is in the comment
-    that begins on line 830. This class is named SerialDatebecause it is implemented using a
-    "serial number," which happens to be the number of days since December 30th, 1899.
-    I have two problems with this. First, the term "serial number" is not really correct.
-    This may be a quibble, but the representation is more of a relative offset than a serial num-
-    ber. The term "serial number" has more to do with product identification markers than
-    dates. So I don't find this name particularly descriptive [N1]. A more descriptive term
-    might be "ordinal."
-    The second problem is more significant. The name SerialDateimplies an implementa-
-    tion. This class is an abstract class. There is no need to imply anything at all about the
-    implementation. Indeed, there is good reason to hide the implementation! So I find this
-    name to be at the wrong level of abstraction [N2]. In my opinion, the name of this class
-    should simply be Date.
-    Unfortunately, there are already too many classes in the Java library named Date, so
-    this is probably not the best name to choose. Because this class is all about days, instead of
-    time, I considered naming it Day, but this name is also heavily used in other places. In the
-    end, I chose DayDate as the best compromise.
-    From now on in this discussion I will use the term DayDate. I leave it to you to remem-
-    ber that the listings you are looking at still use SerialDate.
-    I understand why DayDateinherits from ComparableandSerializable. But why does it
-    inherit from MonthConstants? The class MonthConstants(Listing B-3, page 372) is just a
-    bunch of static final constants that define the months. Inheriting from classes with con-
-    stants is an old trick that Java programmers used so that they could avoid using expres-
-    sions like MonthConstants.January, but it's a bad idea [J2]. MonthConstants should really be
-    an enum.
-    public abstract class DayDate implements Comparable,
-    Serializable {
-    public static enum Month {
-    JANUARY(1),
-    FEBRUARY(2),
-    MARCH(3),
-    APRIL(4),
-    MAY(5),
-    JUNE(6),
-    JULY(7),
-    AUGUST(8),
-    SEPTEMBER(9),
-    OCTOBER(10),
-    NOVEMBER(11),
-    DECEMBER(12);
-    Month(int index) {
-    this.index = index;
-    }
-
-    272 Chapter 16: Refactoring SerialDate
-    ChangingMonthConstantsto this enumforces quite a few changes to the DayDateclass
-    and all it's users. It took me an hour to make all the changes. However, any function that
-    used to take an intfor a month, now takes a Monthenumerator. This means we can get rid
-    of the isValidMonthCodemethod (line 326), and all the month code error checking such as
-    that in monthCodeToQuarter (line 356) [G5].
-    Next, we have line 91, serialVersionUID. This variable is used to control the serializer.
-    If we change it, then any DayDatewritten with an older version of the software won't be
-    readable anymore and will result in an InvalidClassException. If you don't declare the
-    serialVersionUIDvariable, then the compiler automatically generates one for you, and it
-    will be different every time you make a change to the module. I know that all the docu-
-    ments recommend manual control of this variable, but it seems to me that automatic con-
-    trol of serialization is a lot safer [G4]. After all, I'd much rather debug an
-    InvalidClassExceptionthan the odd behavior that would ensue if I forgot to change the
-    serialVersionUID. So I'm going to delete the variable—at least for the time being.^2
-    I find the comment on line 93 redundant. Redundant comments are just places to col-
-    lect lies and misinformation [C2]. So I'm going to get rid of it and its ilk.
-    The comments at line 97 and line 100 talk about serial numbers, which I discussed
-    earlier [C1]. The variables they describe are the earliest and latest possible dates that
-    DayDate can describe. This can be made a bit clearer [N1].
-    It's not clear to me why EARLIEST_DATE_ORDINALis 2 instead of 0. There is a hint in the
-    comment on line 829 that suggests that this has something to do with the way dates are
-    represented in Microsoft Excel. There is a much deeper insight provided in a derivative of
-    DayDatecalledSpreadsheetDate(Listing B-5, page 382). The comment on line 71 describes
-    the issue nicely.
-    The problem I have with this is that the issue seems to be related to the implementa-
-    tion of SpreadsheetDateand has nothing to do with DayDate. I conclude from this that
-    public static Month make(int monthIndex) {
-    for (Month m : Month.values()) {
-    if (m.index == monthIndex)
-    return m;
-    }
-    throw new IllegalArgumentException("Invalid month index " + monthIndex);
-    }
-    public final int index;
-    }
-
-
-    Several of the reviewers of this text have taken exception to this decision. They contend that in an open source framework itis
-    better to assert manual control over the serial ID so that minor changes to the software don't cause old serialized dates to be
-    invalid. This is a fair point. However, at least the failure, inconvenient though it might be, has a clear-cut cause. On the other
-    hand, if the author of the class forgets to update the ID, then the failure mode is undefined and might very well be silent. I
-    think the real moral of this story is that you should not expect to deserialize across versions.
-
-    public static final int EARLIEST_DATE_ORDINAL = 2; // 1/1/1900
-    public static final int LATEST_DATE_ORDINAL = 2958465; // 12/31/9999
-
-    Then Make It Right 273
-    EARLIEST_DATE_ORDINALand LATEST_DATE_ORDINALdo not really belong in DayDateand
-    should be moved to SpreadsheetDate[G6].
-    Indeed, a search of the code shows that these variables are used only within
-    SpreadsheetDate. Nothing in DayDate, nor in any other class in the JCommonframework, uses
-    them. Therefore, I'll move them down into SpreadsheetDate.
-    The next variables, MINIMUM_YEAR_SUPPORTED, and MAXIMUM_YEAR_SUPPORTED(line 104
-    and line 107), provide something of a dilemma. It seems clear that if DayDate is an abstract
-    class that provides no foreshadowing of implementation, then it should not inform us
-    about a minimum or maximum year. Again, I am tempted to move these variables down
-    intoSpreadsheetDate[G6]. However, a quick search of the users of these variables shows
-    that one other class uses them: RelativeDayOfWeekRule(Listing B-6, page 390). We see that
-    usage at line 177 and line 178 in the getDatefunction, where they are used to check that
-    the argument to getDateis a valid year. The dilemma is that a user of an abstract class
-    needs information about its implementation.
-    What we need to do is provide this information without polluting DayDateitself.
-    Usually, we would get implementation information from an instance of a derivative.
-    However, the getDatefunction is not passed an instance of a DayDate. It does, however,
-    return such an instance, which means that somewhere it must be creating it. Line 187
-    through line 205 provide the hint. The DayDateinstance is being created by one of the
-    three functions, getPreviousDayOfWeek,getNearestDayOfWeek, or getFollowingDayOfWeek.
-    Looking back at the DayDatelisting, we see that these functions (lines 638–724) all return
-    a date created by addDays(line 571), which calls createInstance(line 808), which creates
-    aSpreadsheetDate! [G7].
-    It's generally a bad idea for base classes to know about their derivatives. To fix this, we
-    should use the ABSTRACT FACTORY^3 pattern and create a DayDateFactory. This factory will
-    create the instances of DayDatethat we need and can also answer questions about the
-    implementation, such as the maximum and minimum dates.
-
-    [GOF].
-
-    public abstract class DayDateFactory {
-    private static DayDateFactory factory = new SpreadsheetDateFactory();
-    public static void setInstance(DayDateFactory factory) {
-    DayDateFactory.factory = factory;
-    }
-    protected abstract DayDate _makeDate(int ordinal);
-    protected abstract DayDate _makeDate(int day, DayDate.Month month, int year);
-    protected abstract DayDate _makeDate(int day, int month, int year);
-    protected abstract DayDate _makeDate(java.util.Date date);
-    protected abstract int _getMinimumYear();
-    protected abstract int _getMaximumYear();
-    public static DayDate makeDate(int ordinal) {
-    return factory._makeDate(ordinal);
-    }
-
-    274 Chapter 16: Refactoring SerialDate
-    This factory class replaces the createInstancemethods with makeDatemethods, which
-    improves the names quite a bit [N1]. It defaults to a SpreadsheetDateFactorybut can be
-    changed at any time to use a different factory. The static methods that delegate to abstract
-    methods use a combination of the SINGLETON,^4 DECORATOR,^5 and ABSTRACT FACTORY
-    patterns that I have found to be useful.
-    TheSpreadsheetDateFactory looks like this.
-
-    public static DayDate makeDate(int day, DayDate.Month month, int year) {
-    return factory._makeDate(day, month, year);
-    }
-    public static DayDate makeDate(int day, int month, int year) {
-    return factory._makeDate(day, month, year);
-    }
-    public static DayDate makeDate(java.util.Date date) {
-    return factory._makeDate(date);
-    }
-    public static int getMinimumYear() {
-    return factory._getMinimumYear();
-    }
-    public static int getMaximumYear() {
-    return factory._getMaximumYear();
-    }
-    }
-
-
-    Ibid.
-    Ibid.
-
-    public class SpreadsheetDateFactory extends DayDateFactory {
-    public DayDate _makeDate(int ordinal) {
-    return new SpreadsheetDate(ordinal);
-    }
-    public DayDate _makeDate(int day, DayDate.Month month, int year) {
-    return new SpreadsheetDate(day, month, year);
-    }
-    public DayDate _makeDate(int day, int month, int year) {
-    return new SpreadsheetDate(day, month, year);
-    }
-    public DayDate _makeDate(Date date) {
-    final GregorianCalendar calendar = new GregorianCalendar();
-    calendar.setTime(date);
-    return new SpreadsheetDate(
-    calendar.get(Calendar.DATE),
-    DayDate.Month.make(calendar.get(Calendar.MONTH) + 1),
-    calendar.get(Calendar.YEAR));
-    }
-
-    Then Make It Right 275
-    As you can see, I have already moved the MINIMUM_YEAR_SUPPORTED and
-    MAXIMUM_YEAR_SUPPORTED variables into SpreadsheetDate, where they belong [G6].
-    The next issue in DayDateare the day constants beginning at line 109. These should
-    really be another enum [J3]. We've seen this pattern before, so I won't repeat it here. You'll
-    see it in the final listings.
-    Next, we see a series of tables starting with LAST_DAY_OF_MONTHat line 140. My first
-    issue with these tables is that the comments that describe them are redundant [C3]. Their
-    names are sufficient. So I'm going to delete the comments.
-    There seems to be no good reason that this table isn't private [G8], because there is a
-    static function lastDayOfMonth that provides the same data.
-    The next table, AGGREGATE_DAYS_TO_END_OF_MONTH, is a bit more mysterious because it is
-    not used anywhere in the JCommon framework [G9]. So I deleted it.
-    The same goes for LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_MONTH.
-    The next table, AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH, is used only in Spread-
-    sheetDate(line 434 and line 473). This begs the question of whether it should be moved
-    toSpreadsheetDate. The argument for not moving it is that the table is not specific to any
-    particular implementation [G6]. On the other hand, no implementation other than
-    SpreadsheetDateactually exists, and so the table should be moved close to where it is
-    used [G10].
-    What settles the argument for me is that to be consistent [G11], we should make the
-    table private and expose it through a function like julianDateOfLastDayOfMonth. Nobody
-    seems to need a function like that. Moreover, the table can be moved back to DayDateeasily
-    if any new implementation of DayDate needs it. So I moved it.
-    The same goes for the table, LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_MONTH.
-    Next, we see three sets of constants that can be turned into enums (lines 162–205).
-    The first of the three selects a week within a month. I changed it into an enum named
-    WeekInMonth.
-    protected int _getMinimumYear() {
-    return SpreadsheetDate.MINIMUM_YEAR_SUPPORTED;
-    }
-    protected int _getMaximumYear() {
-    return SpreadsheetDate.MAXIMUM_YEAR_SUPPORTED;
-    }
-    }
-
-    public enum WeekInMonth {
-    FIRST(1), SECOND(2), THIRD(3), FOURTH(4), LAST(0);
-    public final int index;
-    WeekInMonth(int index) {
-    this.index = index;
-    }
-    }
-
-    276 Chapter 16: Refactoring SerialDate
-    The second set of constants (lines 177–187) is a bit more obscure. The INCLUDE_NONE,
-    INCLUDE_FIRST,INCLUDE_SECOND, and INCLUDE_BOTHconstants are used to describe whether
-    the defining end-point dates of a range should be included in that range. Mathematically,
-    this is described using the terms "open interval," "half-open interval," and "closed inter-
-    val." I think it is clearer using the mathematical nomenclature [N3], so I changed it to an
-    enum named DateInterval with CLOSED,CLOSED_LEFT,CLOSED_RIGHT, and OPEN enumerators.
-    The third set of constants (lines 18–205) describe whether a search for a particular
-    day of the week should result in the last, next, or nearest instance. Deciding what to call
-    this is difficult at best. In the end, I settled for WeekdayRangewithLAST,NEXT, and NEAREST
-    enumerators.
-    You might not agree with the names I've chosen. They make sense to me, but they
-    may not make sense to you. The point is that they are now in a form that makes them easy
-    to change [J3]. They aren't passed as integers anymore; they are passed as symbols. I can
-    use the "change name" function of my IDE to change the names, or the types, without
-    worrying that I missed some -1or 2 somewhere in the code or that some intargument dec-
-    laration is left poorly described.
-    The description field at line 208 does not seem to be used by anyone. I deleted it along
-    with its accessor and mutator [G9].
-    I also deleted the degenerate default constructor at line 213 [G12]. The compiler will
-    generate it for us.
-    We can skip over the isValidWeekdayCodemethod (lines 216–238) because we deleted
-    it when we created the Day enumeration.
-    This brings us to the stringToWeekdayCodemethod (lines 242–270). Javadocs that
-    don't add much to the method signature are just clutter [C3],[G12]. The only value this
-    Javadoc adds is the description of the -1return value. However, because we changed to the
-    Dayenumeration, the comment is actually wrong [C2]. The method now throws an
-    IllegalArgumentException. So I deleted the Javadoc.
-    I also deleted all the final keywords in arguments and variable declarations. As far as
-    I could tell, they added no real value but did add to the clutter [G12]. Eliminating final
-    flies in the face of some conventional wisdom. For example, Robert Simmons^6 strongly
-    recommends us to "... spread finalall over your code." Clearly I disagree. I think that
-    there are a few good uses for final, such as the occasional finalconstant, but otherwise
-    the keyword adds little value and creates a lot of clutter. Perhaps I feel this way because the
-    kinds of errors that final might catch are already caught by the unit tests I write.
-    I didn't care for the duplicate ifstatements [G5] inside the forloop (line 259 and
-    line 263), so I connected them into a single ifstatement using the ||operator. I also used
-    theDay enumeration to direct the for loop and made a few other cosmetic changes.
-    It occurred to me that this method does not really belong in DayDate. It's really the
-    parse function of Day. So I moved it into the Dayenumeration. However, that made the Day
-
-    [Simmons04], p. 73.
-
-    Then Make It Right 277
-    enumeration pretty large. Because the concept of Daydoes not depend on DayDate, I moved
-    theDay enumeration outside of the DayDate class into its own source file [G13].
-    I also moved the next function, weekdayCodeToString(lines 272–286) into the Day
-    enumeration and called it toString.
-    There are two getMonthsfunctions (lines 288–316). The first calls the second. The
-    second is never called by anyone but the first. Therefore, I collapsed the two into one and
-    vastly simplified them [G9],[G12],[F4]. Finally, I changed the name to be a bit more self-
-    descriptive [N1].
-    public enum Day {
-    MONDAY(Calendar.MONDAY),
-    TUESDAY(Calendar.TUESDAY),
-    WEDNESDAY(Calendar.WEDNESDAY),s
-    THURSDAY(Calendar.THURSDAY),
-    FRIDAY(Calendar.FRIDAY),
-    SATURDAY(Calendar.SATURDAY),
-    SUNDAY(Calendar.SUNDAY);
-    public final int index;
-    private static DateFormatSymbols dateSymbols = new DateFormatSymbols();
-    Day(int day) {
-    index = day;
-    }
-    public static Day make(int index) throws IllegalArgumentException {
-    for (Day d : Day.values())
-    if (d.index == index)
-    return d;
-    throw new IllegalArgumentException(
-    String.format("Illegal day index: %d.", index));
-    }
-    public static Day parse(String s) throws IllegalArgumentException {
-    String[] shortWeekdayNames =
-    dateSymbols.getShortWeekdays();
-    String[] weekDayNames =
-    dateSymbols.getWeekdays();
-    s = s.trim();
-    for (Day day : Day.values()) {
-    if (s.equalsIgnoreCase(shortWeekdayNames[day.index]) ||
-    s.equalsIgnoreCase(weekDayNames[day.index])) {
-    return day;
-    }
-    }
-    throw new IllegalArgumentException(
-    String.format("%s is not a valid weekday string", s));
-    }
-    public String toString() {
-    return dateSymbols.getWeekdays()[index];
-    }
-    }
-
-    278 Chapter 16: Refactoring SerialDate
-    TheisValidMonthCodefunction (lines 326–346) was made irrelevant by the Month
-    enum, so I deleted it [G9].
-    ThemonthCodeToQuarterfunction (lines 356–375) smells of FEATURE ENVY^7 [G14]
-    and probably belongs in the Month enum as a method named quarter. So I replaced it.
-    This made the Monthenum big enough to be in its own class. So I moved it out of
-    DayDate to be consistent with the Day enum [G11],[G13].
-    The next two methods are named monthCodeToString(lines 377–426). Again, we see
-    the pattern of one method calling its twin with a flag. It is usually a bad idea to pass a flag
-    as an argument to a function, especially when that flag simply selects the format of the out-
-    put[G15]. I renamed, simplified, and restructured these functions and moved them into the
-    Month enum [N1],[N3],[C3],[G14].
-    The next method is stringToMonthCode(lines 428–472). I renamed it, moved it into the
-    Month enum, and simplified it [N1],[N3],[C3],[G14],[G12].
-    public static String[] getMonthNames() {
-    return dateFormatSymbols.getMonths();
-    }
-
-
-    [Refactoring].
-
-    public int quarter() {
-    return 1 + (index-1)/3;
-    }
-
-    public String toString() {
-    return dateFormatSymbols.getMonths()[index - 1];
-    }
-    public String toShortString() {
-    return dateFormatSymbols.getShortMonths()[index - 1];
-    }
-
-    public static Month parse(String s) {
-    s = s.trim();
-    for (Month m : Month.values())
-    if (m.matches(s))
-    return m;
-    try {
-    return make(Integer.parseInt(s));
-    }
-    catch (NumberFormatException e) {}
-    throw new IllegalArgumentException("Invalid month " + s);
-    }
-
-    Then Make It Right 279
-    TheisLeapYear method (lines 495–517) can be made a bit more expressive [G16].
-
-    The next function, leapYearCount(lines 519–536) doesn't really belong in DayDate.
-    Nobody calls it except for two methods in SpreadsheetDate. So I pushed it down [G6].
-    ThelastDayOfMonthfunction (lines 538–560) makes use of the LAST_DAY_OF_MONTH
-    array. This array really belongs in the Month enum [G17], so I moved it there. I also simpli-
-    fied the function and made it a bit more expressive [G16].
-    Now things start to get a bit more interesting. The next function is addDays(lines 562–
-    576). First of all, because this function operates on the variables of DayDate, it should not
-    be static [G18]. So I changed it to an instance method. Second, it calls the function
-    toSerial. This function should be renamed toOrdinal[N1]. Finally, the method can be
-    simplified.
-    The same goes for addMonths(lines 578–602). It should be an instance method [G18].
-    The algorithm is a bit complicated, so I used EXPLAINING TEMPORARY VARIABLES^8 [G19]
-    to make it more transparent. I also renamed the method getYYY to getYear [N1].
-    private boolean matches(String s) {
-    return s.equalsIgnoreCase(toString()) ||
-    s.equalsIgnoreCase(toShortString());
-    }
-
-    public static boolean isLeapYear(int year) {
-    boolean fourth = year % 4 == 0;
-    boolean hundredth = year % 100 == 0;
-    boolean fourHundredth = year % 400 == 0;
-    return fourth && (!hundredth || fourHundredth);
-    }
-
-    public static int lastDayOfMonth(Month month, int year) {
-    if (month == Month.FEBRUARY && isLeapYear(year))
-    return month.lastDay() + 1;
-    else
-    return month.lastDay();
-    }
-
-    public DayDate addDays(int days) {
-    return DayDateFactory.makeDate(toOrdinal() + days);
-    }
-
-
-    [Beck97].
-
-    public DayDate addMonths(int months) {
-    int thisMonthAsOrdinal = 12 * getYear() + getMonth().index - 1;
-    int resultMonthAsOrdinal = thisMonthAsOrdinal + months;
-    int resultYear = resultMonthAsOrdinal / 12;
-    Month resultMonth = Month.make(resultMonthAsOrdinal % 12 + 1);
-
-    280 Chapter 16: Refactoring SerialDate
-    TheaddYears function (lines 604–626) provides no surprises over the others.
-
-    There is a little itch at the back of my mind that is bothering me about changing
-    these methods from static to instance. Does the expression date.addDays(5)make it
-    clear that the dateobject does not change and that a new instance of DayDateis returned?
-    Or does it erroneously imply that we are adding five days to the dateobject? You might
-    not think that is a big problem, but a bit of code that looks like the following can be very
-    deceiving [G20].
-    DayDate date = DateFactory.makeDate(5, Month.DECEMBER, 1952);
-    date.addDays(7); // bump date by one week.
-    Someone reading this code would very likely just accept that addDaysis changing the
-    dateobject. So we need a name that breaks this ambiguity [N4]. So I changed the names to
-    plusDays and plusMonths. It seems to me that the intent of the method is captured nicely by
-    DayDate date = oldDate.plusDays(5);
-
-    whereas the following doesn't read fluidly enough for a reader to simply accept that the
-    date object is changed:
-    date.plusDays(5);
-    The algorithms continue to get more interesting. getPreviousDayOfWeek(lines 628–
-    660) works but is a bit complicated. After some thought about what was really going on
-    [G21], I was able to simplify it and use EXPLAINING TEMPORARY VARIABLES[G19] to
-    make it clearer. I also changed it from a static method to an instance method [G18], and
-    got rid of the duplicate instance method [G5] (lines 997–1008).
-    The exact same analysis and result occurred for getFollowingDayOfWeek(lines 662–693).
-
-    int lastDayOfResultMonth = lastDayOfMonth(resultMonth, resultYear);
-    int resultDay = Math.min(getDayOfMonth(), lastDayOfResultMonth);
-    return DayDateFactory.makeDate(resultDay, resultMonth, resultYear);
-    }
-
-    public DayDate plusYears(int years) {
-    int resultYear = getYear() + years;
-    int lastDayOfMonthInResultYear = lastDayOfMonth(getMonth(), resultYear);
-    int resultDay = Math.min(getDayOfMonth(), lastDayOfMonthInResultYear);
-    return DayDateFactory.makeDate(resultDay, getMonth(), resultYear);
-    }
-
-    public DayDate getPreviousDayOfWeek(Day targetDayOfWeek) {
-    int offsetToTarget = targetDayOfWeek.index - getDayOfWeek().index;
-    if (offsetToTarget >= 0)
-    offsetToTarget -= 7;
-    return plusDays(offsetToTarget);
-    }
-
-    public DayDate getFollowingDayOfWeek(Day targetDayOfWeek) {
-    int offsetToTarget = targetDayOfWeek.index - getDayOfWeek().index;
-    if (offsetToTarget <= 0)
-
-    Then Make It Right 281
-    The next function is getNearestDayOfWeek(lines 695–726), which we corrected back
-    on page 270. But the changes I made back then aren't consistent with the current pattern in
-    the last two functions [G11]. So I made it consistent and used some EXPLAINING TEMPO-
-    RARY VARIABLES [G19] to clarify the algorithm.
-    ThegetEndOfCurrentMonthmethod (lines 728–740) is a little strange because it is an
-    instance method that envies [G14] its own class by taking a DayDateargument. I made it a
-    true instance method and clarified a few names.
-    Refactoring weekInMonthToString(lines 742–761) turned out to be very interesting
-    indeed. Using the refactoring tools of my IDE, I first moved the method to the WeekInMonth
-    enum that I created back on page 275. Then I renamed the method to toString. Next, I
-    changed it from a static method to an instance method. All the tests still passed. (Can you
-    guess where I am going?)
-    Next, I deleted the method entirely! Five asserts failed (lines 411–415, Listing B-4,
-    page 374). I changed these lines to use the names of the enumerators (FIRST,
-    SECOND,.. .). All the tests passed. Can you see why? Can you also see why each of these
-    steps was necessary? The refactoring tool made sure that all previous callers of
-    weekInMonthToStringnow called toStringon the weekInMonthenumerator because all enu-
-    merators implement toString to simply return their names
-    Unfortunately, I was a bit too clever. As elegant as that wonderful chain of refactor-
-    ings was, I finally realized that the only users of this function were the tests I had just mod-
-    ified, so I deleted the tests.
-    Fool me once, shame on you. Fool me twice, shame on me! So after determining that
-    nobody other than the tests called relativeToString(lines 765–781), I simply deleted the
-    function and its tests.
-    offsetToTarget += 7;
-    return plusDays(offsetToTarget);
-    }
-
-    public DayDate getNearestDayOfWeek(final Day targetDay) {
-    int offsetToThisWeeksTarget = targetDay.index - getDayOfWeek().index;
-    int offsetToFutureTarget = (offsetToThisWeeksTarget + 7) % 7;
-    int offsetToPreviousTarget = offsetToFutureTarget - 7;
-    if (offsetToFutureTarget > 3)
-    return plusDays(offsetToPreviousTarget);
-    else
-    return plusDays(offsetToFutureTarget);
-    }
-
-    public DayDate getEndOfMonth() {
-    Month month = getMonth();
-    int year = getYear();
-    int lastDay = lastDayOfMonth(month, year);
-    return DayDateFactory.makeDate(lastDay, month, year);
-    }
-
-    282 Chapter 16: Refactoring SerialDate
-    We have finally made it to the abstract methods of this abstract class. And the first one
-    is as appropriate as they come: toSerial(lines 838–844). Back on page 279 I had changed
-    the name to toOrdinal. Having looked at it in this context, I decided the name should be
-    changed to getOrdinalDay.
-    The next abstract method is toDate(lines 838–844). It converts a DayDate to a
-    java.util.Date. Why is this method abstract? If we look at its implementation in
-    SpreadsheetDate(lines 198–207, Listing B-5, page 382), we see that it doesn't depend on
-    anything in the implementation of that class [G6]. So I pushed it up.
-    ThegetYYYY,getMonth, and getDayOfMonthmethods are nicely abstract. However, the
-    getDayOfWeekmethod is another one that should be pulled up from SpreadSheetDate
-    because it doesn't depend on anything that can't be found in DayDate[G6]. Or does it?
-    If you look carefully (line 247, Listing B-5, page 382), you'll see that the algorithm
-    implicitly depends on the origin of the ordinal day (in other words, the day of the week of
-    day 0). So even though this function has no physical dependencies that couldn't be moved
-    toDayDate, it does have a logical dependency.
-    Logical dependencies like this bother me [G22]. If something logical depends on
-    the implementation, then something physical should too. Also, it seems to me that the
-    algorithm itself could be generic with a much smaller portion of it dependent on the
-    implementation[G6].
-    So I created an abstract method in DayDatenamedgetDayOfWeekForOrdinalZeroand
-    implemented it in SpreadsheetDateto return Day.SATURDAY. Then I moved the getDayOfWeek
-    method up to DayDateand changed it to call getOrdinalDayandgetDayOfWeekForOrdinal-
-    Zero.
-    As a side note, look carefully at the comment on line 895 through line 899. Was this
-    repetition really necessary? As usual, I deleted this comment along with all the others.
-    The next method is compare(lines 902–913). Again, this method is inappropriately
-    abstract [G6], so I pulled the implementation up into DayDate. Also, the name does not
-    communicate enough [N1]. This method actually returns the difference in days since the
-    argument. So I changed the name to daysSince. Also, I noted that there weren't any tests
-    for this method, so I wrote them.
-    The next six functions (lines 915–980) are all abstract methods that should be imple-
-    mented in DayDate. So I pulled them all up from SpreadsheetDate.
-    The last function, isInRange(lines 9 8 2–995) also needs to be pulled up and refac-
-    tored. The switchstatement is a bit ugly [G23]and can be replaced by moving the cases
-    into the DateInterval enum.
-    public Day getDayOfWeek() {
-    Day startingDay = getDayOfWeekForOrdinalZero();
-    int startingOffset = startingDay.index - Day.SUNDAY.index;
-    return Day.make((getOrdinalDay() + startingOffset) % 7 + 1);
-    }
-
-    Then Make It Right 283
-    That brings us to the end of DayDate. So now we'll make one more pass over the whole
-    class to see how well it flows.
-    First, the opening comment is long out of date, so I shortened and improved it [C2].
-    Next, I moved all the remaining enums out into their own files [G12].
-    Next, I moved the static variable (dateFormatSymbols) and three static methods
-    (getMonthNames , isLeapYear , lastDayOfMonth) into a new class named DateUtil[G6].
-    I moved the abstract methods up to the top where they belong[G24].
-    I changed Month.make to Month.fromInt[N1] and did the same for all the other enums.
-    I also created a toInt() accessor for all the enums and made the index field private.
-    There was some interesting duplication [G5] in plusYearsandplusMonthsthat I was
-    able to eliminate by extracting a new method named correctLastDayOfMonth, making the
-    all three methods much clearer.
-    I got rid of the magic number 1 [G25],replacing it with Month.JANUARY.toInt()or
-    Day.SUNDAY.toInt(), as appropriate. I spent a little time with SpreadsheetDate, cleaning up
-    the algorithms a bit. The end result is contained in Listing B-7, page 394, through
-    Listing B-16, page 405.
-    public enum DateInterval {
-    OPEN {
-    public boolean isIn(int d, int left, int right) {
-    return d > left && d < right;
-    }
-    },
-    CLOSED_LEFT {
-    public boolean isIn(int d, int left, int right) {
-    return d >= left && d < right;
-    }
-    },
-    CLOSED_RIGHT {
-    public boolean isIn(int d, int left, int right) {
-    return d > left && d <= right;
-    }
-    },
-    CLOSED {
-    public boolean isIn(int d, int left, int right) {
-    return d >= left && d <= right;
-    }
-    };
-    public abstract boolean isIn(int d, int left, int right);
-    }
-
-    public boolean isInRange(DayDate d1, DayDate d2, DateInterval interval) {
-    int left = Math.min(d1.getOrdinalDay(), d2.getOrdinalDay());
-    int right = Math.max(d1.getOrdinalDay(), d2.getOrdinalDay());
-    return interval.isIn(getOrdinalDay(), left, right);
-    }
-
-    284 Chapter 16: Refactoring SerialDate
-    Interestingly the code coverage in DayDatehas decreased to 84.9 percent! This is not
-    because less functionality is being tested; rather it is because the class has shrunk so much
-    that the few uncovered lines have a greater weight. DayDatenow has 45 out of 53 execut-
-    able statements covered by tests. The uncovered lines are so trivial that they weren't worth
-    testing.
-    Conclusion
-
-    So once again we've followed the Boy Scout Rule. We've checked the code in a bit cleaner
-    than when we checked it out. It took a little time, but it was worth it. Test coverage was
-    increased, some bugs were fixed, the code was clarified and shrunk. The next person to
-    look at this code will hopefully find it easier to deal with than we did. That person will also
-    probably be able to clean it up a bit more than we did.
-    Bibliography
-
-    [GOF]: Design Patterns: Elements of Reusable Object Oriented Software , Gamma et al.,
-    Addison-Wesley, 1996.
-    [Simmons04]: Hardcore Java , Robert Simmons, Jr., O'Reilly, 2004.
-    [Refactoring]: Refactoring: Improving the Design of Existing Code , Martin Fowler et al.,
-    Addison-Wesley, 1999.
-    [Beck97]: Smalltalk Best Practice Patterns , Kent Beck, Prentice Hall, 1997.
-
-
-    # 285
-    17
-    Smells and Heuristics
-    In his wonderful book Refactoring ,^1 Martin Fowler identified many different "Code
-    Smells." The list that follows includes many of Martin's smells and adds many more of my
-    own. It also includes other pearls and heuristics that I use to practice my trade.
-
-    [Refactoring].
-
-    286 Chapter 17: Smells and Heuristics
-    I compiled this list by walking through several different programs and refactoring
-    them. As I made each change, I asked myself why I made that change and then wrote the
-    reason down here. The result is a rather long list of things that smell bad to me when I read
-    code.
-    This list is meant to be read from top to bottom and also to be used as a reference.
-    There is a cross-reference for each heuristic that shows you where it is referenced in the
-    rest of the text in "Appendix C" on page 409.
-    Comments
-
-
-
-    C1: Inappropriate Information
-    It is inappropriate for a comment to hold information better held in a different kind of sys-
-    tem such as your source code control system, your issue tracking system, or any other
-    record-keeping system. Change histories, for example, just clutter up source files with
-    volumes of historical and uninteresting text. In general, meta-data such as authors, last-
-    modified-date, SPR number, and so on should not appear in comments. Comments should
-    be reserved for technical notes about the code and design.
-
-
-    C2: Obsolete Comment ...
-    A comment that has gotten old, irrelevant, and incorrect is obsolete. Comments get old
-    quickly. It is best not to write a comment that will become obsolete. If you find an obsolete
-    comment, it is best to update it or get rid of it as quickly as possible. Obsolete comments
-    tend to migrate away from the code they once described. They become floating islands of
-    irrelevance and misdirection in the code.
-
-
-    C3: Redundant Comment .
-    A comment is redundant if it describes something that adequately describes itself. For
-    example:
-    i++; // increment i
-
-    Another example is a Javadoc that says nothing more than (or even less than) the function
-    signature:
-    /**
-    * @param sellRequest
-    * @return
-    * @throws ManagedComponentException
-    */
-    public SellResponse beginSellItem(SellRequest sellRequest)
-    throws ManagedComponentException
-
-    Comments should say things that the code cannot say for itself.
-    Environment 287
-
-
-    C4: Poorly Written Comment
-    A comment worth writing is worth writing well. If you are going to write a comment,
-    take the time to make sure it is the best comment you can write. Choose your words
-    carefully. Use correct grammar and punctuation. Don't ramble. Don't state the obvious.
-    Be brief.
-
-
-    C5: Commented-Out Code .
-    It makes me crazy to see stretches of code that are commented out. Who knows how old it
-    is? Who knows whether or not it's meaningful? Yet no one will delete it because everyone
-    assumes someone else needs it or has plans for it.
-    That code sits there and rots, getting less and less relevant with every passing day. It
-    calls functions that no longer exist. It uses variables whose names have changed. It follows
-    conventions that are long obsolete. It pollutes the modules that contain it and distracts the
-    people who try to read it. Commented-out code is an abomination.
-    When you see commented-out code, delete it! Don't worry, the source code control
-    system still remembers it. If anyone really needs it, he or she can go back and check out a
-    previous version. Don't suffer commented-out code to survive.
-    Environment
-
-
-
-    E1: Build Requires More Than One Step
-    Building a project should be a single trivial operation. You should not have to check many
-    little pieces out from source code control. You should not need a sequence of arcane com-
-    mands or context dependent scripts in order to build the individual elements. You should
-    not have to search near and far for all the various little extra JARs, XML files, and other
-    artifacts that the system requires. You should be able to check out the system with one sim-
-    ple command and then issue one other simple command to build it.
-    svn get mySystem
-    cd mySystem
-    ant all
-
-
-
-    E2: Tests Require More Than One Step
-    You should be able to run all the unit tests with just one command. In the best case you
-    can run all the tests by clicking on one button in your IDE. In the worst case you should
-    be able to issue a single simple command in a shell. Being able to run all the tests is so
-    fundamental and so important that it should be quick, easy, and obvious to do.
-    288 Chapter 17: Smells and Heuristics
-    Functions
-
-
-
-    F1: Too Many Arguments
-    Functions should have a small number of arguments. No argument is best, followed by
-    one, two, and three. More than three is very questionable and should be avoided with prej-
-    udice. (See "Function Arguments" on page 40.)
-
-
-    F2: Output Arguments
-    Output arguments are counterintuitive. Readers expect arguments to be inputs, not out-
-    puts. If your function must change the state of something, have it change the state of the
-    object it is called on. (See "Output Arguments" on page 45.)
-
-
-    F3: Flag Arguments
-    Boolean arguments loudly declare that the function does more than one thing. They are
-    confusing and should be eliminated. (See "Flag Arguments" on page 41.)
-
-
-    F4: Dead Function
-    Methods that are never called should be discarded. Keeping dead code around is wasteful.
-    Don't be afraid to delete the function. Remember, your source code control system still
-    remembers it.
-    General
-
-
-
-    G1: Multiple Languages in One Source File ..
-    Today's modern programming environments make it possible to put many different languages
-    into a single source file. For example, a Java source file might contain snippets of XML,
-    HTML, YAML, JavaDoc, English, JavaScript, and so on. For another example, in addition to
-    HTML a JSP file might contain Java, a tag library syntax, English comments, Javadocs,
-    XML, JavaScript, and so forth. This is confusing at best and carelessly sloppy at worst.
-    The ideal is for a source file to contain one, and only one, language. Realistically, we
-    will probably have to use more than one. But we should take pains to minimize both the
-    number and extent of extra languages in our source files.
-
-
-    G2: Obvious Behavior Is Unimplemented
-    Following "The Principle of Least Surprise,"^2 any function or class should implement the
-    behaviors that another programmer could reasonably expect. For example, consider a
-    function that translates the name of a day to an enum that represents the day.
-
-    Or "The Principle of Least Astonishment": http://en.wikipedia.org/wiki/
-    Principle_of_least_astonishment
-
-    General 289
-    Day day = DayDate.StringToDay(String dayName);
-
-    We would expect the string "Monday"to be translated to Day.MONDAY. We would also expect
-    the common abbreviations to be translated, and we would expect the function to ignore
-    case.
-    When an obvious behavior is not implemented, readers and users of the code can no
-    longer depend on their intuition about function names. They lose their trust in the original
-    author and must fall back on reading the details of the code.
-
-
-    G3: Incorrect Behavior at the Boundaries
-    It seems obvious to say that code should behave correctly. The problem is that we seldom
-    realize just how complicated correct behavior is. Developers often write functions that
-    they think will work, and then trust their intuition rather than going to the effort to prove
-    that their code works in all the corner and boundary cases.
-    There is no replacement for due diligence. Every boundary condition, every corner
-    case, every quirk and exception represents something that can confound an elegant and
-    intuitive algorithm. Don't rely on your intuition. Look for every boundary condition and
-    write a test for it.
-
-
-    G4: Overridden Safeties .
-    Chernobyl melted down because the plant manager overrode each of the safety mecha-
-    nisms one by one. The safeties were making it inconvenient to run an experiment. The
-    result was that the experiment did not get run, and the world saw it's first major civilian
-    nuclear catastrophe.
-    It is risky to override safeties. Exerting manual control over serialVersionUIDmay be
-    necessary, but it is always risky. Turning off certain compiler warnings (or all warnings!)
-    may help you get the build to succeed, but at the risk of endless debugging sessions. Turn-
-    ing off failing tests and telling yourself you'll get them to pass later is as bad as pretending
-    your credit cards are free money.
-
-
-    G5: Duplication
-    This is one of the most important rules in this book, and you should take it very seriously.
-    Virtually every author who writes about software design mentions this rule. Dave Thomas
-    and Andy Hunt called it the DRY^3 principle (Don't Repeat Yourself). Kent Beck made it
-    one of the core principles of Extreme Programming and called it: "Once, and only once."
-    Ron Jeffries ranks this rule second, just below getting all the tests to pass.
-    Every time you see duplication in the code, it represents a missed opportunity for
-    abstraction. That duplication could probably become a subroutine or perhaps another
-    class outright. By folding the duplication into such an abstraction, you increase the vocab-
-    ulary of the language of your design. Other programmers can use the abstract facilities
-
-    [PRAG].
-
-    290 Chapter 17: Smells and Heuristics
-    you create. Coding becomes faster and less error prone because you have raised the
-    abstraction level.
-    The most obvious form of duplication is when you have clumps of identical code that
-    look like some programmers went wild with the mouse, pasting the same code over and
-    over again. These should be replaced with simple methods.
-    A more subtle form is the switch/caseorif/elsechain that appears again and again in
-    various modules, always testing for the same set of conditions. These should be replaced
-    with polymorphism.
-    Still more subtle are the modules that have similar algorithms, but that don't share
-    similar lines of code. This is still duplication and should be addressed by using the TEM-
-    PLATE METHOD,^4 or STRATEGY^5 pattern.
-    Indeed, most of the design patterns that have appeared in the last fifteen years are sim-
-    ply well-known ways to eliminate duplication. So too the Codd Normal Forms are a strat-
-    egy for eliminating duplication in database schemae. OO itself is a strategy for organizing
-    modules and eliminating duplication. Not surprisingly, so is structured programming.
-    I think the point has been made. Find and eliminate duplication wherever you can.
-
-
-
-    G6: Code at Wrong Level of Abstraction
-    It is important to create abstractions that separate higher level general concepts from lower
-    level detailed concepts. Sometimes we do this by creating abstract classes to hold the
-    higher level concepts and derivatives to hold the lower level concepts. When we do this,
-    we need to make sure that the separation is complete. We want all the lower level concepts
-    to be in the derivatives and all the higher level concepts to be in the base class.
-    For example, constants, variables, or utility functions that pertain only to the detailed
-    implementation should not be present in the base class. The base class should know noth-
-    ing about them.
-    This rule also pertains to source files, components, and modules. Good software
-    design requires that we separate concepts at different levels and place them in different
-    containers. Sometimes these containers are base classes or derivatives and sometimes they
-    are source files, modules, or components. Whatever the case may be, the separation needs
-    to be complete. We don't want lower and higher level concepts mixed together.
-    Consider the following code:
-    public interface Stack {
-    Object pop() throws EmptyException;
-    void push(Object o) throws FullException;
-    double percentFull();
-
-
-    [GOF].
-    [GOF].
-
-    General 291
-    class EmptyException extends Exception {}
-    class FullException extends Exception {}
-    }
-    ThepercentFullfunction is at the wrong level of abstraction. Although there are
-    many implementations of Stackwhere the concept of fullness is reasonable, there are other
-    implementations that simply could not know how full they are. So the function would be
-    better placed in a derivative interface such as BoundedStack.
-    Perhaps you are thinking that the implementation could just return zero if the stack
-    were boundless. The problem with that is that no stack is truly boundless. You cannot
-    really prevent an OutOfMemoryException by checking for
-    stack.percentFull() < 50.0.
-
-    Implementing the function to return 0 would be telling a lie.
-    The point is that you cannot lie or fake your way out of a misplaced abstraction. Iso-
-    lating abstractions is one of the hardest things that software developers do, and there is no
-    quick fix when you get it wrong.
-
-
-    G7: Base Classes Depending on Their Derivatives
-    The most common reason for partitioning concepts into base and derivative classes is so
-    that the higher level base class concepts can be independent of the lower level derivative
-    class concepts. Therefore, when we see base classes mentioning the names of their deriva-
-    tives, we suspect a problem. In general, base classes should know nothing about their
-    derivatives.
-    There are exceptions to this rule, of course. Sometimes the number of derivatives is
-    strictly fixed, and the base class has code that selects between the derivatives. We see this a
-    lot in finite state machine implementations. However, in that case the derivatives and base
-    class are strongly coupled and always deploy together in the same jar file. In the general
-    case we want to be able to deploy derivatives and bases in different jar files.
-    Deploying derivatives and bases in different jar files and making sure the base jar files
-    know nothing about the contents of the derivative jar files allow us to deploy our systems
-    in discrete and independent components. When such components are modified, they can
-    be redeployed without having to redeploy the base components. This means that the
-    impact of a change is greatly lessened, and maintaining systems in the field is made much
-    simpler.
-
-
-    G8: Too Much Information .
-    Well-defined modules have very small interfaces that allow you to do a lot with a little.
-    Poorly defined modules have wide and deep interfaces that force you to use many different
-    gestures to get simple things done. A well-defined interface does not offer very many func-
-    tions to depend upon, so coupling is low. A poorly defined interface provides lots of func-
-    tions that you must call, so coupling is high.
-    292 Chapter 17: Smells and Heuristics
-    Good software developers learn to limit what they expose at the interfaces of their
-    classes and modules. The fewer methods a class has, the better. The fewer variables a func-
-    tion knows about, the better. The fewer instance variables a class has, the better.
-    Hide your data. Hide your utility functions. Hide your constants and your temporaries.
-    Don't create classes with lots of methods or lots of instance variables. Don't create lots of
-    protected variables and functions for your subclasses. Concentrate on keeping interfaces
-    very tight and very small. Help keep coupling low by limiting information.
-
-
-    G9: Dead Code .
-    Dead code is code that isn't executed. You find it in the body of an ifstatement that checks
-    for a condition that can't happen. You find it in the catchblock of a trythat never throws.
-    You find it in little utility methods that are never called or switch/caseconditions that
-    never occur.
-    The problem with dead code is that after awhile it starts to smell. The older it is, the
-    stronger and sourer the odor becomes. This is because dead code is not completely
-    updated when designs change. It still compiles , but it does not follow newer conventions or
-    rules. It was written at a time when the system was different. When you find dead code, do
-    the right thing. Give it a decent burial. Delete it from the system.
-
-
-    G10: Vertical Separation
-    Variables and function should be defined close to where they are used. Local variables
-    should be declared just above their first usage and should have a small vertical scope. We
-    don't want local variables declared hundreds of lines distant from their usages.
-    Private functions should be defined just below their first usage. Private functions
-    belong to the scope of the whole class, but we'd still like to limit the vertical distance
-    between the invocations and definitions. Finding a private function should just be a matter
-    of scanning downward from the first usage.
-
-
-    G11: Inconsistency
-    If you do something a certain way, do all similar things in the same way. This goes back
-    to the principle of least surprise. Be careful with the conventions you choose, and once
-    chosen, be careful to continue to follow them.
-    If within a particular function you use a variable named responseto hold an
-    HttpServletResponse, then use the same variable name consistently in the other functions
-    that use HttpServletResponseobjects. If you name a method processVerificationRequest,
-    then use a similar name, such as processDeletionRequest, for the methods that process
-    other kinds of requests.
-    Simple consistency like this, when reliably applied, can make code much easier to
-    read and modify.
-    General 293
-
-
-    G12: Clutter
-
-    Of what use is a default constructor with no implementation? All it serves to do is clutter
-    up the code with meaningless artifacts. Variables that aren't used, functions that are never
-    called, comments that add no information, and so forth. All these things are clutter and
-    should be removed. Keep your source files clean, well organized, and free of clutter.
-
-
-    G13: Artificial Coupling
-    Things that don't depend upon each other should not be artificially coupled. For example,
-    generalenumsshould not be contained within more specific classes because this forces the
-    whole application to know about these more specific classes. The same goes for general
-    purpose static functions being declared in specific classes.
-    In general an artificial coupling is a coupling between two modules that serves no
-    direct purpose. It is a result of putting a variable, constant, or function in a temporarily
-    convenient, though inappropriate, location. This is lazy and careless.
-    Take the time to figure out where functions, constants, and variables ought to be
-    declared. Don't just toss them in the most convenient place at hand and then leave them
-    there.
-    G14: Feature Envy
-    This is one of Martin Fowler's code smells.^6 The methods of a class should be interested in
-    the variables and functions of the class they belong to, and not the variables and functions
-    of other classes. When a method uses accessors and mutators of some other object to
-    manipulate the data within that object, then it envies the scope of the class of that other
-    object. It wishes that it were inside that other class so that it could have direct access to the
-    variables it is manipulating. For example:
-    public class HourlyPayCalculator {
-    public Money calculateWeeklyPay(HourlyEmployee e) {
-    int tenthRate = e.getTenthRate().getPennies();
-    int tenthsWorked = e.getTenthsWorked();
-    int straightTime = Math.min(400, tenthsWorked);
-    int overTime = Math.max(0, tenthsWorked - straightTime);
-    int straightPay = straightTime * tenthRate;
-    int overtimePay = (int)Math.round(overTime*tenthRate*1.5);
-    return new Money(straightPay + overtimePay);
-    }
-    }
-
-    ThecalculateWeeklyPaymethod reaches into the HourlyEmployeeobject to get the data on
-    which it operates. The calculateWeeklyPaymethod envies the scope of HourlyEmployee. It
-    "wishes" that it could be inside HourlyEmployee.
-
-    [Refactoring].
-
-    294 Chapter 17: Smells and Heuristics
-    All else being equal, we want to eliminate Feature Envy because it exposes the internals
-    of one class to another. Sometimes, however, Feature Envy is a necessary evil. Consider the
-    following:
-    public class HourlyEmployeeReport {
-    private HourlyEmployee employee ;
-    public HourlyEmployeeReport(HourlyEmployee e) {
-    this.employee = e;
-    }
-    String reportHours() {
-    return String.format(
-    "Name: %s\tHours:%d.%1d\n",
-    employee.getName(),
-    employee.getTenthsWorked()/10,
-    employee.getTenthsWorked()%10);
-    }
-    }
-
-    Clearly, the reportHoursmethod envies the HourlyEmployeeclass. On the other hand, we
-    don't want HourlyEmployeeto have to know about the format of the report. Moving that for-
-    mat string into the HourlyEmployee class would violate several principles of object oriented
-    design.^7 It would couple HourlyEmployee to the format of the report, exposing it to changes
-    in that format.
-    G15: Selector Arguments
-    There is hardly anything more abominable than a dangling falseargument at the end of a
-    function call. What does it mean? What would it change if it were true? Not only is the
-    purpose of a selector argument difficult to remember, each selector argument combines
-    many functions into one. Selector arguments are just a lazy way to avoid splitting a large
-    function into several smaller functions. Consider:
-    public int calculateWeeklyPay(boolean overtime) {
-    int tenthRate = getTenthRate();
-    int tenthsWorked = getTenthsWorked();
-    int straightTime = Math.min(400, tenthsWorked);
-    int overTime = Math.max(0, tenthsWorked - straightTime);
-    int straightPay = straightTime * tenthRate;
-    double overtimeRate = overtime? 1.5 : 1.0 * tenthRate;
-    int overtimePay = (int)Math.round(overTime*overtimeRate);
-    return straightPay + overtimePay;
-    }
-    You call this function with a trueif overtime is paid as time and a half, and with a
-    falseif overtime is paid as straight time. It's bad enough that you must remember what
-    calculateWeeklyPay(false)means whenever you happen to stumble across it. But the
-
-    Specifically, the Single Responsibility Principle, the Open Closed Principle, and the Common Closure Principle. See [PPP].
-
-    General 295
-    real shame of a function like this is that the author missed the opportunity to write the
-    following:
-    public int straightPay() {
-    return getTenthsWorked() * getTenthRate();
-    }
-    public int overTimePay() {
-    int overTimeTenths = Math.max(0, getTenthsWorked() - 400);
-    int overTimePay = overTimeBonus(overTimeTenths);
-    return straightPay() + overTimePay;
-    }
-    private int overTimeBonus(int overTimeTenths) {
-    double bonus = 0.5 * getTenthRate() * overTimeTenths;
-    return (int) Math.round(bonus);
-    }
-    Of course, selectors need not be boolean. They can be enums, integers, or any other
-    type of argument that is used to select the behavior of the function. In general it is better to
-    have many functions than to pass some code into a function to select the behavior.
-    G16: Obscured Intent
-    We want code to be as expressive as possible. Run-on expressions, Hungarian notation,
-    and magic numbers all obscure the author's intent. For example, here is the overTimePay
-    function as it might have appeared:
-    public int m_otCalc() {
-    return iThsWkd * iThsRte +
-    (int) Math.round(0.5 * iThsRte *
-    Math.max(0, iThsWkd - 400)
-    );
-    }
-    Small and dense as this might appear, it's also virtually impenetrable. It is worth tak-
-    ing the time to make the intent of our code visible to our readers.
-    G17: Misplaced Responsibility
-    One of the most important decisions a software developer can make is where to put code.
-    For example, where should the PIconstant go? Should it be in the Mathclass? Perhaps it
-    belongs in the Trigonometry class? Or maybe in the Circle class?
-    The principle of least surprise comes into play here. Code should be placed where a
-    reader would naturally expect it to be. The PIconstant should go where the trig functions
-    are declared. The OVERTIME_RATE constant should be declared in the HourlyPay-
-    Calculator class.
-    Sometimes we get "clever" about where to put certain functionality. We'll put it in a
-    function that's convenient for us, but not necessarily intuitive to the reader. For example,
-    perhaps we need to print a report with the total of hours that an employee worked. We
-    296 Chapter 17: Smells and Heuristics
-    could sum up those hours in the code that prints the report, or we could try to keep a run-
-    ning total in the code that accepts time cards.
-    One way to make this decision is to look at the names of the functions. Let's say that
-    our report module has a function named getTotalHours. Let's also say that the module that
-    accepts time cards has a saveTimeCardfunction. Which of these two functions, by it's name,
-    implies that it calculates the total? The answer should be obvious.
-    Clearly, there are sometimes performance reasons why the total should be calculated
-    as time cards are accepted rather than when the report is printed. That's fine, but the names
-    of the functions ought to reflect this. For example, there should be a computeRunning-
-    TotalOfHours function in the timecard module.
-    G18: Inappropriate Static .
-    Math.max(double a, double b)is a good static method. It does not operate on a single
-    instance; indeed, it would be silly to have to say new Math().max(a,b)or even a.max(b).
-    All the data that maxuses comes from its two arguments, and not from any "owning"
-    object. More to the point, there is almost no chance that we'd want Math.maxto be
-    polymorphic.
-    Sometimes, however, we write static functions that should not be static. For example,
-    consider:
-    HourlyPayCalculator.calculatePay(employee, overtimeRate).
-
-    Again, this seems like a reasonable staticfunction. It doesn't operate on any particular
-    object and gets all it's data from it's arguments. However, there is a reasonable chance that
-    we'll want this function to be polymorphic. We may wish to implement several different
-    algorithms for calculating hourly pay, for example, OvertimeHourlyPayCalculatorand
-    StraightTimeHourlyPayCalculator. So in this case the function should not be static. It
-    should be a nonstatic member function of Employee.
-    In general you should prefer nonstatic methods to static methods. When in doubt,
-    make the function nonstatic. If you really want a function to be static, make sure that there
-    is no chance that you'll want it to behave polymorphically.
-    G19: Use Explanatory Variables
-    Kent Beck wrote about this in his great book Smalltalk Best Practice Patterns^8 and again
-    more recently in his equally great book Implementation Patterns.^9 One of the more power-
-    ful ways to make a program readable is to break the calculations up into intermediate val-
-    ues that are held in variables with meaningful names.
-
-    [Beck97], p. 108.
-    [Beck07].
-
-    General 297
-    Consider this example from FitNesse:
-    Matcher match = headerPattern.matcher(line);
-    if(match.find())
-    {
-    String key = match.group(1);
-    String value = match.group(2);
-    headers.put(key.toLowerCase(), value);
-    }
-    The simple use of explanatory variables makes it clear that the first matched group is
-    the key, and the second matched group is the value.
-    It is hard to overdo this. More explanatory variables are generally better than fewer. It
-    is remarkable how an opaque module can suddenly become transparent simply by break-
-    ing the calculations up into well-named intermediate values.
-    G20: Function Names Should Say What They Do
-    Look at this code:
-    Date newDate = date.add(5);
-
-    Would you expect this to add five days to the date? Or is it weeks, or hours? Is the date
-    instance changed or does the function just return a new Datewithout changing the old one?
-    You can't tell from the call what the function does.
-    If the function adds five days to the date and changes the date, then it should be called
-    addDaysToorincreaseByDays. If, on the other hand, the function returns a new date that is
-    five days later but does not change the date instance, it should be called daysLateror
-    daysSince.
-    If you have to look at the implementation (or documentation) of the function to know
-    what it does, then you should work to find a better name or rearrange the functionality so
-    that it can be placed in functions with better names.
-    G21: Understand the Algorithm
-    Lots of very funny code is written because people don't take the time to understand the
-    algorithm. They get something to work by plugging in enough ifstatements and flags,
-    without really stopping to consider what is really going on.
-    Programming is often an exploration. You think you know the right algorithm for
-    something, but then you wind up fiddling with it, prodding and poking at it, until you get it
-    to "work." How do you know it "works"? Because it passes the test cases you can think of.
-    There is nothing wrong with this approach. Indeed, often it is the only way to get a
-    function to do what you think it should. However, it is not sufficient to leave the quotation
-    marks around the word "work."
-    298 Chapter 17: Smells and Heuristics
-    Before you consider yourself to be done with a function, make sure you understand
-    how it works. It is not good enough that it passes all the tests. You must know^10 that the
-    solution is correct.
-    Often the best way to gain this knowledge and understanding is to refactor the func-
-    tion into something that is so clean and expressive that it is obvious how it works.
-    G22: Make Logical Dependencies Physical ...
-    If one module depends upon another, that dependency should be physical, not just logical.
-    The dependent module should not make assumptions (in other words, logical dependen-
-    cies) about the module it depends upon. Rather it should explicitly ask that module for all
-    the information it depends upon.
-    For example, imagine that you are writing a function that prints a plain text report of
-    hours worked by employees. One class named HourlyReportergathers all the data into a
-    convenient form and then passes it to HourlyReportFormatterto print it. (See Listing 17-1.)
-
-    There is a difference between knowing how the code works and knowing whether the algorithm will do the job required of it.
-    Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness.
-
-    Listing 17-1
-    HourlyReporter.java
-    public class HourlyReporter {
-    private HourlyReportFormatter formatter;
-    private List<LineItem> page;
-    private final int PAGE_SIZE = 55;
-    public HourlyReporter(HourlyReportFormatter formatter) {
-    this.formatter = formatter;
-    page = new ArrayList<LineItem>();
-    }
-    public void generateReport(List<HourlyEmployee> employees) {
-    for (HourlyEmployee e : employees) {
-    addLineItemToPage(e);
-    if (page.size() == PAGE_SIZE)
-    printAndClearItemList();
-    }
-    if (page.size() > 0)
-    printAndClearItemList();
-    }
-
-    private void printAndClearItemList() {
-    formatter.format(page);
-    page.clear();
-    }
-    private void addLineItemToPage(HourlyEmployee e) {
-    LineItem item = new LineItem();
-    item.name = e.getName();
-    item.hours = e.getTenthsWorked() / 10;
-
-    General 299
-    This code has a logical dependency that has not been physicalized. Can you spot it? It
-    is the constant PAGE_SIZE. Why should the HourlyReporter know the size of the page? Page
-    size should be the responsibility of the HourlyReportFormatter.
-    The fact that PAGE_SIZE is declared in HourlyReporterrepresents a misplaced
-    responsibility [G17] that causes HourlyReporterto assume that it knows what the page size
-    ought to be. Such an assumption is a logical dependency. HourlyReporterdepends on the
-    fact that HourlyReportFormatter can deal with page sizes of 55. If some implementation of
-    HourlyReportFormatter could not deal with such sizes, then there would be an error.
-    We can physicalize this dependency by creating a new method in HourlyReport-
-    FormatternamedgetMaxPageSize().HourlyReporterwill then call that function rather than
-    using the PAGE_SIZE constant.
-    G23: Prefer Polymorphism to If/Else or Switch/Case
-    This might seem a strange suggestion given the topic of Chapter 6. After all, in that chapter I
-    make the point that switch statements are probably appropriate in the parts of the system
-    where adding new functions is more likely than adding new types.
-    First, most people use switch statements because it's the obvious brute force solution,
-    not because it's the right solution for the situation. So this heuristic is here to remind us to
-    consider polymorphism before using a switch.
-    Second, the cases where functions are more volatile than types are relatively rare. So
-    every switch statement should be suspect.
-    I use the following "ONE SWITCH" rule: There may be no more than one switch state-
-    ment for a given type of selection. The cases in that switch statement must create polymor-
-    phic objects that take the place of other such switch statements in the rest of the system.
-    G24: Follow Standard Conventions
-    Every team should follow a coding standard based on common industry norms. This cod-
-    ing standard should specify things like where to declare instance variables; how to name
-    classes, methods, and variables; where to put braces; and so on. The team should not need
-    a document to describe these conventions because their code provides the examples.
-    item.tenths = e.getTenthsWorked() % 10;
-    page.add(item);
-    }
-
-    public class LineItem {
-    public String name;
-    public int hours;
-    public int tenths;
-    }
-    }
-
-    Listing 17-1 (continued)
-    HourlyReporter.java
-
-    300 Chapter 17: Smells and Heuristics
-    Everyone on the team should follow these conventions. This means that each team
-    member must be mature enough to realize that it doesn't matter a whit where you put your
-    braces so long as you all agree on where to put them.
-    If you would like to know what conventions I follow, you'll see them in the refactored
-    code in Listing B-7 on page 394, through Listing B-14.
-    G25: Replace Magic Numbers with Named Constants ..
-    This is probably one of the oldest rules in software development. I remember reading it in the
-    late sixties in introductory COBOL, FORTRAN, and PL/1 manuals. In general it is a bad
-    idea to have raw numbers in your code. You should hide them behind well-named constants.
-    For example, the number 86,400 should be hidden behind the constant
-    SECONDS_PER_DAY. If you are printing 55 lines per page, then the constant 55 should be hid-
-    den behind the constant LINES_PER_PAGE.
-    Some constants are so easy to recognize that they don't always need a named constant
-    to hide behind so long as they are used in conjunction with very self-explanatory code. For
-    example:
-    double milesWalked = feetWalked/5280.0;
-    int dailyPay = hourlyRate * 8;
-    double circumference = radius * Math.PI * 2;
-    Do we really need the constants FEET_PER_MILE,WORK_HOURS_PER_DAY, and TWOin the
-    above examples? Clearly, the last case is absurd. There are some formulae in which con-
-    stants are simply better written as raw numbers. You might quibble about the
-    WORK_HOURS_PER_DAYcase because the laws or conventions might change. On the other
-    hand, that formula reads so nicely with the 8 in it that I would be reluctant to add 17 extra
-    characters to the readers' burden. And in the FEET_PER_MILEcase, the number 5280 is so
-    very well known and so unique a constant that readers would recognize it even if it stood
-    alone on a page with no context surrounding it.
-    Constants like 3.141592653589793 are also very well known and easily recognizable.
-    However, the chance for error is too great to leave them raw. Every time someone sees
-    3.1415927535890793, they know that it is p, and so they fail to scrutinize it. (Did you
-    catch the single-digit error?) We also don't want people using 3.14, 3.14159, 3.142, and so
-    forth. Therefore, it is a good thing that Math.PI has already been defined for us.
-    The term "Magic Number" does not apply only to numbers. It applies to any token
-    that has a value that is not self-describing. For example:
-    assertEquals(7777, Employee.find("John Doe").employeeNumber());
-    There are two magic numbers in this assertion. The first is obviously 7777, though
-    what it might mean is not obvious. The second magic number is "John Doe," and again the
-    intent is not clear.
-    It turns out that "John Doe"is the name of employee #7777 in a well-known test data-
-    base created by our team. Everyone in the team knows that when you connect to this
-    General 301
-    database, it will have several employees already cooked into it with well-known values
-    and attributes. It also turns out that "John Doe"represents the sole hourly employee in
-    that test database. So this test should really read:
-    assertEquals(
-    HOURLY_EMPLOYEE_ID,
-    Employee.find(HOURLY_EMPLOYEE_NAME).employeeNumber());
-
-    G26: Be Precise
-    Expecting the first match to be the only match to a query is probably naive. Using floating
-    point numbers to represent currency is almost criminal. Avoiding locks and/or transaction
-    management because you don't think concurrent update is likely is lazy at best. Declaring
-    a variable to be an ArrayListwhen a Listwill due is overly constraining. Making all vari-
-    ables protected by default is not constraining enough.
-    When you make a decision in your code, make sure you make it precisely. Know why
-    you have made it and how you will deal with any exceptions. Don't be lazy about the pre-
-    cision of your decisions. If you decide to call a function that might return null, make sure
-    you check for null. If you query for what you think is the only record in the database,
-    make sure your code checks to be sure there aren't others. If you need to deal with cur-
-    rency, use integers^11 and deal with rounding appropriately. If there is the possibility of
-    concurrent update, make sure you implement some kind of locking mechanism.
-    Ambiguities and imprecision in code are either a result of disagreements or laziness.
-    In either case they should be eliminated.
-    G27: Structure over Convention
-    Enforce design decisions with structure over convention. Naming conventions are good,
-    but they are inferior to structures that force compliance. For example, switch/cases with
-    nicely named enumerations are inferior to base classes with abstract methods. No one is
-    forced to implement the switch/casestatement the same way each time; but the base
-    classes do enforce that concrete classes have all abstract methods implemented.
-    G28: Encapsulate Conditionals
-    Boolean logic is hard enough to understand without having to see it in the context of an if
-    orwhile statement. Extract functions that explain the intent of the conditional.
-    For example:
-    if (shouldBeDeleted(timer))
-
-    is preferable to
-    if (timer.hasExpired() && !timer.isRecurrent())
-
-
-    Or better yet, a Money class that uses integers.
-
-    302 Chapter 17: Smells and Heuristics
-    G29: Avoid Negative Conditionals .
-    Negatives are just a bit harder to understand than positives. So, when possible, condition-
-    als should be expressed as positives. For example:
-    if (buffer.shouldCompact())
-
-    is preferable to
-    if (!buffer.shouldNotCompact())
-
-    G30: Functions Should Do One Thing
-    It is often tempting to create functions that have multiple sections that perform a series of
-    operations. Functions of this kind do more than one thing , and should be converted into
-    many smaller functions, each of which does one thing.
-    For example:
-    public void pay() {
-    for (Employee e : employees) {
-    if (e.isPayday()) {
-    Money pay = e.calculatePay();
-    e.deliverPay(pay);
-    }
-    }
-    }
-
-    This bit of code does three things. It loops over all the employees, checks to see whether
-    each employee ought to be paid, and then pays the employee. This code would be better
-    written as:
-    public void pay() {
-    for (Employee e : employees)
-    payIfNecessary(e);
-    }
-    private void payIfNecessary(Employee e) {
-    if (e.isPayday())
-    calculateAndDeliverPay(e);
-    }
-    private void calculateAndDeliverPay(Employee e) {
-    Money pay = e.calculatePay();
-    e.deliverPay(pay);
-    }
-
-    Each of these functions does one thing. (See "Do One Thing" on page 35.)
-    G31: Hidden Temporal Couplings ..
-    Temporal couplings are often necessary, but you should not hide the coupling. Structure
-    the arguments of your functions such that the order in which they should be called is obvi-
-    ous. Consider the following:
-    General 303
-    public class MoogDiver {
-    Gradient gradient;
-    List<Spline> splines;
-    public void dive(String reason) {
-    saturateGradient();
-    reticulateSplines();
-    diveForMoog(reason);
-    }
-    }
-
-    The order of the three functions is important. You must saturate the gradient before you
-    can reticulate the splines, and only then can you dive for the moog. Unfortunately, the code
-    does not enforce this temporal coupling. Another programmer could call reticulate-
-    SplinesbeforesaturateGradientwas called, leading to an UnsaturatedGradientException.
-    A better solution is:
-    public class MoogDiver {
-    Gradient gradient;
-    List<Spline> splines;
-    public void dive(String reason) {
-    Gradient gradient = saturateGradient();
-    List<Spline> splines = reticulateSplines(gradient);
-    diveForMoog(splines, reason);
-    }
-    }
-
-    This exposes the temporal coupling by creating a bucket brigade. Each function produces a
-    result that the next function needs, so there is no reasonable way to call them out of order.
-    You might complain that this increases the complexity of the functions, and you'd be
-    right. But that extra syntactic complexity exposes the true temporal complexity of the situation.
-    Note that I left the instance variables in place. I presume that they are needed by pri-
-    vate methods in the class. Even so, I want the arguments in place to make the temporal
-    coupling explicit.
-    G32: Don't Be Arbitrary .
-    Have a reason for the way you structure your code, and make sure that reason is communi-
-    cated by the structure of the code. If a structure appears arbitrary, others will feel empowered
-    to change it. If a structure appears consistently throughout the system, others will use it
-    and preserve the convention. For example, I was recently merging changes to FitNesse and
-    discovered that one of our committers had done this:
-    public class AliasLinkWidget extends ParentWidget
-    {
-    public static class VariableExpandingWidgetRoot {
-    ...
-    ...
-    }
-
-    304 Chapter 17: Smells and Heuristics
-    The problem with this was that VariableExpandingWidgetRoothad no need to be
-    inside the scope of AliasLinkWidget. Moreover, other unrelated classes made use of
-    AliasLinkWidget.VariableExpandingWidgetRoot. These classes had no need to know
-    aboutAliasLinkWidget.
-    Perhaps the programmer had plopped the VariableExpandingWidgetRoot into
-    AliasWidgetas a matter of convenience, or perhaps he thought it really needed to be
-    scoped inside AliasWidget. Whatever the reason, the result wound up being arbitrary. Pub-
-    lic classes that are not utilities of some other class should not be scoped inside another
-    class. The convention is to make them public at the top level of their package.
-    G33: Encapsulate Boundary Conditions
-    Boundary conditions are hard to keep track of. Put the processing for them in one place.
-    Don't let them leak all over the code. We don't want swarms of +1s and -1s scattered hither
-    and yon. Consider this simple example from FIT:
-    if(level + 1 < tags.length)
-    {
-    parts = new Parse(body, tags, level + 1, offset + endTag);
-    body = null;
-    }
-
-    Notice that level+1appears twice. This is a boundary condition that should be encapsu-
-    lated within a variable named something like nextLevel.
-    int nextLevel = level + 1;
-    if(nextLevel < tags.length)
-    {
-    parts = new Parse(body, tags, nextLevel, offset + endTag);
-    body = null;
-    }
-
-
-
-    G34: Functions Should Descend Only One Level of Abstraction
-    The statements within a function should all be written at the same level of abstraction,
-    which should be one level below the operation described by the name of the function. This
-    may be the hardest of these heuristics to interpret and follow. Though the idea is plain
-    enough, humans are just far too good at seamlessly mixing levels of abstraction. Consider,
-    for example, the following code taken from FitNesse:
-    public String render() throws Exception
-    {
-    StringBuffer html = new StringBuffer("<hr");
-    if(size > 0)
-    html.append(" size=\"").append(size + 1).append("\"");
-    html.append(">");
-    return html.toString();
-    }
-
-    General 305
-    A moment's study and you can see what's going on. This function constructs the HTML
-    tag that draws a horizontal rule across the page. The height of that rule is specified in the
-    size variable.
-    Now look again. This method is mixing at least two levels of abstraction. The first is
-    the notion that a horizontal rule has a size. The second is the syntax of the HRtag itself.
-    This code comes from the HruleWidgetmodule in FitNesse. This module detects a row of
-    four or more dashes and converts it into the appropriate HR tag. The more dashes, the
-    larger the size.
-    I refactored this bit of code as follows. Note that I changed the name of the sizefield
-    to reflect its true purpose. It held the number of extra dashes.
-    public String render() throws Exception
-    {
-    HtmlTag hr = new HtmlTag("hr");
-    if (extraDashes > 0)
-    hr.addAttribute("size", hrSize(extraDashes));
-    return hr.html();
-    }
-    private String hrSize(int height)
-    {
-    int hrSize = height + 1;
-    return String.format("%d", hrSize);
-    }
-
-    This change separates the two levels of abstraction nicely. The renderfunction simply con-
-    structs an HR tag, without having to know anything about the HTML syntax of that tag.
-    TheHtmlTag module takes care of all the nasty syntax issues.
-    Indeed, by making this change I caught a subtle error. The original code did not put
-    the closing slash on the HR tag, as the XHTML standard would have it. (In other words, it
-    emittedinstead of .) The HtmlTagmodule had been changed to conform to
-    XHTML long ago.
-    Separating levels of abstraction is one of the most important functions of refactor-
-    ing, and it's one of the hardest to do well. As an example, look at the code below. This
-    was my first attempt at separating the abstraction levels in the HruleWidget.render
-    method.
-    public String render() throws Exception
-    {
-    HtmlTag hr = new HtmlTag("hr");
-    if (size > 0) {
-    hr.addAttribute("size", ""+(size+1));
-    }
-    return hr.html();
-    }
-
-    My goal, at this point, was to create the necessary separation and get the tests to pass.
-    I accomplished that goal easily, but the result was a function that still had mixed levels
-    of abstraction. In this case the mixed levels were the construction of the HR tag and the
-    306 Chapter 17: Smells and Heuristics
-    interpretation and formatting of the sizevariable. This points out that when you break a
-    function along lines of abstraction, you often uncover new lines of abstraction that were
-    obscured by the previous structure.
-    G35: Keep Configurable Data at High Levels
-    If you have a constant such as a default or configuration value that is known and expected
-    at a high level of abstraction, do not bury it in a low-level function. Expose it as an argu-
-    ment to that low-level function called from the high-level function. Consider the following
-    code from FitNesse:
-    public static void main(String[] args) throws Exception
-    {
-    Arguments arguments = parseCommandLine(args);
-    }
-    public class Arguments
-    {
-    public static final String DEFAULT_PATH = ".";
-    public static final String DEFAULT_ROOT = "FitNesseRoot";
-    public static final int DEFAULT_PORT = 80;
-    public static final int DEFAULT_VERSION_DAYS = 14;
-    }
-
-    The command-line arguments are parsed in the very first executable line of FitNesse. The
-    default values of those arguments are specified at the top of the Argumentclass. You don't
-    have to go looking in low levels of the system for statements like this one:
-    if (arguments.port == 0) // use 80 by default
-
-    The configuration constants reside at a very high level and are easy to change. They get
-    passed down to the rest of the application. The lower levels of the application do not own
-    the values of these constants.
-    G36: Avoid Transitive Navigation ...
-    In general we don't want a single module to know much about its collaborators. More spe-
-    cifically, if Acollaborates with B, and Bcollaborates with C, we don't want modules that use
-    A to know about C. (For example, we don't want a.getB().getC().doSomething();.)
-    This is sometimes called the Law of Demeter. The Pragmatic Programmers call it
-    "Writing Shy Code."^12 In either case it comes down to making sure that modules know
-    only about their immediate collaborators and do not know the navigation map of the whole
-    system.
-    If many modules used some form of the statement a.getB().getC(), then it would be
-    difficult to change the design and architecture to interpose a Qbetween BandC. You'd
-
-    [PRAG], p. 138.
-
-    Java 307
-    have to find every instance of a.getB().getC() and convert it to a.getB().getQ().getC().
-    This is how architectures become rigid. Too many modules know too much about the
-    architecture.
-    Rather we want our immediate collaborators to offer all the services we need. We
-    should not have to roam through the object graph of the system, hunting for the method we
-    want to call. Rather we should simply be able to say:
-    myCollaborator.doSomething().
-
-    Java
-
-    J1: Avoid Long Import Lists by Using Wildcards
-    If you use two or more classes from a package, then import the whole package with
-    import package.*;
-
-    Long lists of imports are daunting to the reader. We don't want to clutter up the tops of our
-    modules with 80 lines of imports. Rather we want the imports to be a concise statement
-    about which packages we collaborate with.
-    Specific imports are hard dependencies, whereas wildcard imports are not. If you spe-
-    cifically import a class, then that class must exist. But if you import a package with a wild-
-    card, no particular classes need to exist. The import statement simply adds the package to
-    the search path when hunting for names. So no true dependency is created by such
-    imports, and they therefore serve to keep our modules less coupled.
-    There are times when the long list of specific imports can be useful. For example, if
-    you are dealing with legacy code and you want to find out what classes you need to build
-    mocks and stubs for, you can walk down the list of specific imports to find out the true
-    qualified names of all those classes and then put the appropriate stubs in place. However,
-    this use for specific imports is very rare. Furthermore, most modern IDEs will allow you
-    to convert the wildcarded imports to a list of specific imports with a single command. So
-    even in the legacy case it's better to import wildcards.
-    Wildcard imports can sometimes cause name conflicts and ambiguities. Two classes
-    with the same name, but in different packages, will need to be specifically imported, or at
-    least specifically qualified when used. This can be a nuisance but is rare enough that using
-    wildcard imports is still generally better than specific imports.
-    J2: Don't Inherit Constants
-    I have seen this several times and it always makes me grimace. A programmer puts some
-    constants in an interface and then gains access to those constants by inheriting that inter-
-    face. Take a look at the following code:
-    public class HourlyEmployee extends Employee {
-    private int tenthsWorked;
-    private double hourlyRate;
-
-    308 Chapter 17: Smells and Heuristics
-    public Money calculatePay() {
-    int straightTime = Math.min(tenthsWorked, TENTHS_PER_WEEK);
-    int overTime = tenthsWorked - straightTime;
-    return new Money(
-    hourlyRate * (tenthsWorked + OVERTIME_RATE * overTime)
-    );
-    }
-    }
-
-    Where did the constants TENTHS_PER_WEEKandOVERTIME_RATEcome from? They might have
-    come from class Employee; so let's take a look at that:
-    public abstract class Employee implements PayrollConstants {
-    public abstract boolean isPayday();
-    public abstract Money calculatePay();
-    public abstract void deliverPay(Money pay);
-    }
-
-    Nope, not there. But then where? Look closely at class Employee. It implements
-    PayrollConstants.
-    public interface PayrollConstants {
-    public static final int TENTHS_PER_WEEK = 400;
-    public static final double OVERTIME_RATE = 1.5;
-    }
-
-    This is a hideous practice! The constants are hidden at the top of the inheritance hierarchy.
-    Ick! Don't use inheritance as a way to cheat the scoping rules of the language. Use a static
-    import instead.
-    import static PayrollConstants.*;
-    public class HourlyEmployee extends Employee {
-    private int tenthsWorked;
-    private double hourlyRate;
-    public Money calculatePay() {
-    int straightTime = Math.min(tenthsWorked, TENTHS_PER_WEEK);
-    int overTime = tenthsWorked - straightTime;
-    return new Money(
-    hourlyRate * (tenthsWorked + OVERTIME_RATE * overTime)
-    );
-    }
-    }
-
-    J3: Constants versus Enums
-    Now that enums have been added to the language (Java 5), use them! Don't keep using the
-    old trick of public static final ints. The meaning of ints can get lost. The meaning of
-    enums cannot, because they belong to an enumeration that is named.
-    What's more, study the syntax for enums carefully. They can have methods and fields.
-    This makes them very powerful tools that allow much more expression and flexibility than
-    ints. Consider this variation on the payroll code:
-    Names 309
-    public class HourlyEmployee extends Employee {
-    private int tenthsWorked;
-    HourlyPayGrade grade;
-    public Money calculatePay() {
-    int straightTime = Math.min(tenthsWorked, TENTHS_PER_WEEK);
-    int overTime = tenthsWorked - straightTime;
-    return new Money(
-    grade.rate() * (tenthsWorked + OVERTIME_RATE * overTime)
-    );
-    }
-    }
-    public enum HourlyPayGrade {
-    APPRENTICE {
-    public double rate() {
-    return 1.0;
-    }
-    },
-    LEUTENANT_JOURNEYMAN {
-    public double rate() {
-    return 1.2;
-    }
-    },
-    JOURNEYMAN {
-    public double rate() {
-    return 1.5;
-    }
-    },
-    MASTER {
-    public double rate() {
-    return 2.0;
-    }
-    };
-    public abstract double rate();
-    }
-
-    Names
-
-    N1: Choose Descriptive Names
-    Don't be too quick to choose a name. Make sure the name is descriptive. Remember that
-    meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of
-    the names you choose.
-    This is not just a "feel-good" recommendation. Names in software are 90 percent of
-    what make software readable. You need to take the time to choose them wisely and keep
-    them relevant. Names are too important to treat carelessly.
-    Consider the code below. What does it do? If I show you the code with well-chosen
-    names, it will make perfect sense to you, but like this it's just a hodge-podge of symbols
-    and magic numbers.
-    310 Chapter 17: Smells and Heuristics
-    public int x() {
-    int q = 0;
-    int z = 0;
-    for (int kk = 0; kk < 10; kk++) {
-    if (l[z] == 10)
-    {
-    q += 10 + (l[z + 1] + l[z + 2]);
-    z += 1;
-    }
-    else if (l[z] + l[z + 1] == 10)
-    {
-    q += 10 + l[z + 2];
-    z += 2;
-    } else {
-    q += l[z] + l[z + 1];
-    z += 2;
-    }
-    }
-    return q;
-    }
-    Here is the code the way it should be written. This snippet is actually less complete
-    than the one above. Yet you can infer immediately what it is trying to do, and you could
-    very likely write the missing functions based on that inferred meaning. The magic num-
-    bers are no longer magic, and the structure of the algorithm is compellingly descriptive.
-    public int score() {
-    int score = 0;
-    int frame = 0;
-    for (int frameNumber = 0; frameNumber < 10; frameNumber++) {
-    if (isStrike(frame)) {
-    score += 10 + nextTwoBallsForStrike(frame);
-    frame += 1;
-    } else if (isSpare(frame)) {
-    score += 10 + nextBallForSpare(frame);
-    frame += 2;
-    } else {
-    score += twoBallsInFrame(frame);
-    frame += 2;
-    }
-    }
-    return score;
-    }
-    The power of carefully chosen names is that they overload the structure of the code
-    with description. That overloading sets the readers' expectations about what the other
-    functions in the module do. You can infer the implementation of isStrike()by looking at
-    the code above. When you read the isStrikemethod, it will be "pretty much what you
-    expected."^13
-    private boolean isStrike(int frame) {
-    return rolls[frame] == 10;
-    }
-
-
-    See Ward Cunningham's quote on page 11.
-
-    Names 311
-    N2: Choose Names at the Appropriate Level of Abstraction
-    Don't pick names that communicate implementation; choose names the reflect the level of
-    abstraction of the class or function you are working in. This is hard to do. Again, people
-    are just too good at mixing levels of abstractions. Each time you make a pass over your
-    code, you will likely find some variable that is named at too low a level. You should take
-    the opportunity to change those names when you find them. Making code readable
-    requires a dedication to continuous improvement. Consider the Modem interface below:
-    public interface Modem {
-    boolean dial(String phoneNumber);
-    boolean disconnect();
-    boolean send(char c);
-    char recv();
-    String getConnectedPhoneNumber();
-    }
-
-    At first this looks fine. The functions all seem appropriate. Indeed, for many applications
-    they are. But now consider an application in which some modems aren't connected by
-    dialling. Rather they are connected permanently by hard wiring them together (think of the
-    cable modems that provide Internet access to most homes nowadays). Perhaps some are
-    connected by sending a port number to a switch over a USB connection. Clearly the notion
-    of phone numbers is at the wrong level of abstraction. A better naming strategy for this
-    scenario might be:
-    public interface Modem {
-    boolean connect(String connectionLocator);
-    boolean disconnect();
-    boolean send(char c);
-    char recv();
-    String getConnectedLocator();
-    }
-
-    Now the names don't make any commitments about phone numbers. They can still be used
-    for phone numbers, or they could be used for any other kind of connection strategy.
-    N3: Use Standard Nomenclature Where Possible
-    Names are easier to understand if they are based on existing convention or usage. For exam-
-    ple, if you are using the DECORATOR pattern, you should use the word Decorator in the names
-    of the decorating classes. For example, AutoHangupModemDecoratormight be the name of a
-    class that decorates a Modem with the ability to automatically hang up at the end of a session.
-    Patterns are just one kind of standard. In Java, for example, functions that convert
-    objects to string representations are often named toString. It is better to follow conven-
-    tions like these than to invent your own.
-    Teams will often invent their own standard system of names for a particular project.
-    Eric Evans refers to this as a ubiquitous language for the project.^14 Your code should use
-
-    [DDD].
-
-    312 Chapter 17: Smells and Heuristics
-    the terms from this language extensively. In short, the more you can use names that are
-    overloaded with special meanings that are relevant to your project, the easier it will be for
-    readers to know what your code is talking about.
-    N4: Unambiguous Names .
-    Choose names that make the workings of a function or variable unambiguous. Consider
-    this example from FitNesse:
-    private String doRename() throws Exception
-    {
-    if(refactorReferences)
-    renameReferences();
-    renamePage();
-    pathToRename.removeNameFromEnd();
-    pathToRename.addNameToEnd(newName);
-    return PathParser.render(pathToRename);
-    }
-
-    The name of this function does not say what the function does except in broad and vague
-    terms. This is emphasized by the fact that there is a function named renamePageinside the
-    function named doRename! What do the names tell you about the difference between the
-    two functions? Nothing.
-    A better name for that function is renamePageAndOptionallyAllReferences. This may
-    seem long, and it is, but it's only called from one place in the module, so it's explanatory
-    value outweighs the length.
-    N5: Use Long Names for Long Scopes
-    The length of a name should be related to the length of the scope. You can use very short
-    variable names for tiny scopes, but for big scopes you should use longer names.
-    Variable names like iandjare just fine if their scope is five lines long. Consider this
-    snippet from the old standard "Bowling Game":
-    private void rollMany(int n, int pins)
-    {
-    for (int i=0; i<n; i++)
-    g.roll(pins);
-    }
-
-    This is perfectly clear and would be obfuscated if the variable iwere replaced with some-
-    thing annoying like rollCount. On the other hand, variables and functions with short names
-    lose their meaning over long distances. So the longer the scope of the name, the longer and
-    more precise the name should be.
-    N6: Avoid Encodings
-    Names should not be encoded with type or scope information. Prefixes such as m_orf
-    are useless in today's environments. Also project and/or subsystem encodings such as
-    Tests 313
-    vis_(for visual imaging system) are distracting and redundant. Again, today's environ-
-    ments provide all that information without having to mangle the names. Keep your
-    names free of Hungarian pollution.
-    N7: Names Should Describe Side-Effects.
-    Names should describe everything that a function, variable, or class is or does. Don't hide
-    side effects with a name. Don't use a simple verb to describe a function that does more
-    than just that simple action. For example, consider this code from TestNG:
-    public ObjectOutputStream getOos() throws IOException {
-    if (m_oos == null) {
-    m_oos = new ObjectOutputStream(m_socket.getOutputStream());
-    }
-    return m_oos;
-    }
-
-    This function does a bit more than get an "oos"; it creates the "oos" if it hasn't been cre-
-    ated already. Thus, a better name might be createOrReturnOos.
-    Tests
-
-
-    T1: Insufficient Tests
-    How many tests should be in a test suite? Unfortunately, the metric many programmers use
-    is "That seems like enough." A test suite should test everything that could possibly break.
-    The tests are insufficient so long as there are conditions that have not been explored by the
-    tests or calculations that have not been validated.
-
-
-    T2: Use a Coverage Tool! .
-    Coverage tools reports gaps in your testing strategy. They make it easy to find modules,
-    classes, and functions that are insufficiently tested. Most IDEs give you a visual indication,
-    marking lines that are covered in green and those that are uncovered in red. This makes it
-    quick and easy to find if or catch statements whose bodies haven't been checked.
-
-
-    T3: Don't Skip Trivial Tests
-    They are easy to write and their documentary value is higher than the cost to produce
-    them.
-
-
-    T4: An Ignored Test Is a Question about an Ambiguity ..
-    Sometimes we are uncertain about a behavioral detail because the requirements are
-    unclear. We can express our question about the requirements as a test that is commented
-    out, or as a test that annotated with @Ignore. Which you choose depends upon whether the
-    ambiguity is about something that would compile or not.
-    314 Chapter 17: Smells and Heuristics
-
-
-    T5: Test Boundary Conditions
-    Take special care to test boundary conditions. We often get the middle of an algorithm
-    right but misjudge the boundaries.
-
-
-    T6: Exhaustively Test Near Bugs
-    Bugs tend to congregate. When you find a bug in a function, it is wise to do an exhaustive
-    test of that function. You'll probably find that the bug was not alone.
-
-
-    T7: Patterns of Failure Are Revealing
-    Sometimes you can diagnose a problem by finding patterns in the way the test cases fail.
-    This is another argument for making the test cases as complete as possible. Complete test
-    cases, ordered in a reasonable way, expose patterns.
-    As a simple example, suppose you noticed that all tests with an input larger than five
-    characters failed? Or what if any test that passed a negative number into the second argu-
-    ment of a function failed? Sometimes just seeing the pattern of red and green on the test
-    report is enough to spark the "Aha!" that leads to the solution. Look back at page 267 to
-    see an interesting example of this in the SerialDate example.
-
-
-    T8: Test Coverage Patterns Can Be Revealing .
-    Looking at the code that is or is not executed by the passing tests gives clues to why the
-    failing tests fail.
-
-
-    T9: Tests Should Be Fast .
-    A slow test is a test that won't get run. When things get tight, it's the slow tests that will be
-    dropped from the suite. So do what you must to keep your tests fast.
-    Conclusion
-
-    This list of heuristics and smells could hardly be said to be complete. Indeed, I'm not sure
-    that such a list can ever be complete. But perhaps completeness should not be the goal,
-    because what this list does do is imply a value system.
-    Indeed, that value system has been the goal, and the topic, of this book. Clean code is
-    not written by following a set of rules. You don't become a software craftsman by learn-
-    ing a list of heuristics. Professionalism and craftsmanship come from values that drive
-    disciplines.
-    Bibliography 315
-    Bibliography
-
-    [Refactoring]: Refactoring: Improving the Design of Existing Code , Martin Fowler et al.,
-    Addison-Wesley, 1999.
-    [PRAG]: The Pragmatic Programmer , Andrew Hunt, Dave Thomas, Addison-Wesley,
-    2000.
-    [GOF]: Design Patterns: Elements of Reusable Object Oriented Software , Gamma et al.,
-    Addison-Wesley, 1996.
-    [Beck97]: Smalltalk Best Practice Patterns , Kent Beck, Prentice Hall, 1997.
-    [Beck07]: Implementation Patterns , Kent Beck, Addison-Wesley, 2008.
-    [PPP]: Agile Software Development: Principles, Patterns, and Practices , Robert C. Martin,
-    Prentice Hall, 2002.
-    [DDD]: Domain Driven Design , Eric Evans, Addison-Wesley, 2003.
-
-
-    This page intentionally left blank
-
-
-    # 317
-    Appendix A
-    Concurrency II
-    by Brett L. Schuchert
-
-    This appendix supports and amplifies the Concurrency chapter on page 177. It is written
-    as a series of independent topics and you can generally read them in any order. There is
-    some duplication between sections to allow for such reading.
-    Client/Server Example
-    Imagine a simple client/server application. A server sits and waits listening on a socket for
-    a client to connect. A client connects and sends a request.
-
-
-    The Server
-
-    Here is a simplified version of a server application. Full source for this example is avail-
-    able starting on page 343, Client/Server Nonthreaded.
-    ServerSocket serverSocket = new ServerSocket(8009);
-    while (keepProcessing) {
-    try {
-    Socket socket = serverSocket.accept();
-    process(socket);
-    } catch (Exception e) {
-    handle(e);
-    }
-    }
-
-    318 Appendix A: Concurrency II
-    This simple application waits for a connection, processes an incoming message, and then
-    again waits for the next client request to come in. Here's client code that connects to this
-    server:
-    private void connectSendReceive(int i) {
-    try {
-    Socket socket = new Socket("localhost", PORT);
-    MessageUtils.sendMessage(socket, Integer.toString(i));
-    MessageUtils.getMessage(socket);
-    socket.close();
-    } catch (Exception e) {
-    e.printStackTrace();
-    }
-    }
-
-    How well does this client/server pair perform? How can we formally describe that perfor-
-    mance? Here's a test that asserts that the performance is "acceptable":
-    @Test(timeout = 10000)
-    public void shouldRunInUnder10Seconds() throws Exception {
-    Thread[] threads = createThreads();
-    startAllThreadsw(threads);
-    waitForAllThreadsToFinish(threads);
-    }
-
-    The setup is left out to keep the example simple (see "ClientTest.java" on page 344). This
-    test asserts that it should complete within 10,000 milliseconds.
-    This is a classic example of validating the throughput of a system. This system should
-    complete a series of client requests in ten seconds. So long as the server can process each
-    individual client request in time, the test will pass.
-    What happens if the test fails? Short of developing some kind of event polling loop,
-    there is not much to do within a single thread that will make this code any faster. Will
-    using multiple threads solve the problem? It might, but we need to know where the time is
-    being spent. There are two possibilities:
-    - I/O—using a socket, connecting to a database, waiting for virtual memory swapping,
-    and so on.
-    - Processor—numerical calculations, regular expression processing, garbage collection,
-    and so on.
-    Systems typically have some of each, but for a given operation one tends to dominate. If
-    the code is processor bound, more processing hardware can improve throughput, making
-    our test pass. But there are only so many CPU cycles available, so adding threads to a
-    processor-bound problem will not make it go faster.
-    On the other hand, if the process is I/O bound, then concurrency can increase effi-
-    ciency. When one part of the system is waiting for I/O, another part can use that wait time
-    to process something else, making more effective use of the available CPU.
-    Client/Server Example 319
-
-
-    Adding Threading
-    Assume for the moment that the performance test fails. How can we improve the through-
-    put so that the performance test passes? If the process method of the server is I/O bound,
-    then here is one way to make the server use threads (just change the processMessage):
-    void process(final Socket socket) {
-    if (socket == null)
-    return;
-    Runnable clientHandler = new Runnable() {
-    public void run() {
-    try {
-    String message = MessageUtils.getMessage(socket);
-    MessageUtils.sendMessage(socket, "Processed: " + message);
-    closeIgnoringException(socket);
-    } catch (Exception e) {
-    e.printStackTrace();
-    }
-    }
-    };
-    Thread clientConnection = new Thread(clientHandler);
-    clientConnection.start();
-    }
-
-    Assume that this change causes the test to pass;^1 the code is complete, correct?
-
-
-    Server Observations
-    The updated server completes the test successfully in just over one second. Unfortunately,
-    this solution is a bit naive and introduces some new problems.
-    How many threads might our server create? The code sets no limit, so the we could
-    feasibly hit the limit imposed by the Java Virtual Machine (JVM). For many simple sys-
-    tems this may suffice. But what if the system is meant to support many users on the public
-    net? If too many users connect at the same time, the system might grind to a halt.
-    But set the behavioral problem aside for the moment. The solution shown has prob-
-    lems of cleanliness and structure. How many responsibilities does the server code have?
-    - Socket connection management
-    - Client processing
-    - Threading policy
-    - Server shutdown policy
-    Unfortunately, all these responsibilities live in the process function. In addition, the
-    code crosses many different levels of abstraction. So, small as the process function is, it
-    needs to be repartitioned.
-
-    You can verify that for yourself by trying out the before and after code. Review the nonthreaded code starting on page 343.
-    Review the threaded code starting on page 346.
-
-    320 Appendix A: Concurrency II
-    The server has several reasons to change; therefore it violates the Single Responsibility
-    Principle. To keep concurrent systems clean, thread management should be kept to a few,
-    well-controlled places. What's more, any code that manages threads should do nothing
-    other than thread management. Why? If for no other reason than that tracking down con-
-    currency issues is hard enough without having to unwind other nonconcurrency issues at
-    the same time.
-    If we create a separate class for each of the responsibilities listed above, including the
-    thread management responsibility, then when we change the thread management strategy,
-    the change will impact less overall code and will not pollute the other responsibilities. This
-    also makes it much easier to test all the other responsibilities without having to worry
-    about threading. Here is an updated version that does just that:
-    public void run() {
-    while (keepProcessing) {
-    try {
-    ClientConnection clientConnection = connectionManager.awaitClient();
-    ClientRequestProcessor requestProcessor
-    = new ClientRequestProcessor(clientConnection);
-    clientScheduler.schedule(requestProcessor);
-    } catch (Exception e) {
-    e.printStackTrace();
-    }
-    }
-    connectionManager.shutdown();
-    }
-
-    This now focuses all things thread-related into one place, clientScheduler. If there are
-    concurrency problems, there is just one place to look:
-    public interface ClientScheduler {
-    void schedule(ClientRequestProcessor requestProcessor);
-    }
-
-    The current policy is easy to implement:
-    public class ThreadPerRequestScheduler implements ClientScheduler {
-    public void schedule(final ClientRequestProcessor requestProcessor) {
-    Runnable runnable = new Runnable() {
-    public void run() {
-    requestProcessor.process();
-    }
-    };
-    Thread thread = new Thread(runnable);
-    thread.start();
-    }
-    }
-
-    Having isolated all the thread management into a single place, it is much easier to change
-    the way we control threads. For example, moving to the Java 5 Executor framework
-    involves writing a new class and plugging it in (Listing A-1).
-    Possible Paths of Execution 321
-
-
-    Conclusion
-
-    Introducing concurrency in this particular example demonstrates a way to improve the
-    throughput of a system and one way of validating that throughput through a testing frame-
-    work. Focusing all concurrency code into a small number of classes is an example of
-    applying the Single Responsibility Principle. In the case of concurrent programming, this
-    becomes especially important because of its complexity.
-    Possible Paths of Execution
-    Review the method incrementValue, a one-line Java method with no looping or branching:
-    public class IdGenerator {
-    int lastIdUsed;
-    public int incrementValue() {
-    return ++lastIdUsed;
-    }
-    }
-
-    Ignore integer overflow and assume that only one thread has access to a single instance
-    of IdGenerator. In this case there is a single path of execution and a single guaranteed
-    result:
-    - The value returned is equal to the value of lastIdUsed, both of which are one greater
-    than just before calling the method.
-    Listing A-1
-    ExecutorClientScheduler.java
-    import java.util.concurrent.Executor;
-    import java.util.concurrent.Executors;
-    public class ExecutorClientScheduler implements ClientScheduler {
-    Executor executor;
-
-    public ExecutorClientScheduler(int availableThreads) {
-    executor = Executors.newFixedThreadPool(availableThreads);
-    }
-    public void schedule(final ClientRequestProcessor requestProcessor) {
-    Runnable runnable = new Runnable() {
-    public void run() {
-    requestProcessor.process();
-    }
-    };
-    executor.execute(runnable);
-    }
-    }
-
-    322 Appendix A: Concurrency II
-    What happens if we use two threads and leave the method unchanged? What are the
-    possible outcomes if each thread calls incrementValue once? How many possible paths of
-    execution are there? First, the outcomes (assume lastIdUsed starts with a value of 93):
-    - Thread 1 gets the value of 94, thread 2 gets the value of 95, and lastIdUsed is now 95.
-    - Thread 1 gets the value of 95, thread 2 gets the value of 94, and lastIdUsed is now 95.
-    - Thread 1 gets the value of 94, thread 2 gets the value of 94, and lastIdUsed is now 94.
-    The final result, while surprising, is possible. To see how these different results are possi-
-    ble, we need to understand the number of possible paths of execution and how the Java
-    Virtual Machine executes them.
-
-
-    Number of Paths .
-    To calculate the number of possible execution paths, we'll start with the generated byte-
-    code. The one line of java (return ++lastIdUsed;) becomes eight byte-code instructions. It
-    is possible for the two threads to interleave the execution of these eight instructions the
-    way a card dealer interleaves cards as he shuffles a deck.^2 Even with only eight cards in
-    each hand, there are a remarkable number of shuffled outcomes.
-    For this simple case of N instructions in a sequence, no looping or conditionals, and T
-    threads, the total number of possible execution paths is equal to
-
-    This is a bit of a simplification. However, for the purpose of this discussion, we can use this simplifying model.
-
-    Calculating the Possible Orderings
-
-    This comes from an email from Uncle Bob to Brett:
-    With N steps and T threads there are T * N total steps. Prior to each step
-    there is a context switch that chooses between the T threads. Each path can
-    thus be represented as a string of digits denoting the context switches.
-    Given steps A and B and threads 1 and 2, the six possible paths are 1122,
-    1212, 1221, 2112, 2121, and 2211. Or, in terms of steps it is A1B1A2B2,
-    A1A2B1B2, A1A2B2B1, A2A1B1B2, A2A1B2B1, and A2B2A1B1. For
-    three threads the sequence is 112233, 112323, 113223, 113232, 112233,
-    121233, 121323, 121332, 123132, 123123,
-    One characteristic of these strings is that there must always be N
-    instances of each T. So the string 111111 is invalid because it has six
-    instances of 1 and zero instances of 2 and 3.
-
-    () NT!
-    N! T
-
-    --------------
-
-    Possible Paths of Execution 323
-    For our simple case of one line of Java code, which equates to eight lines of byte-code
-    and two threads, the total number of possible paths of execution is 12,870. If the type of
-    lastIdUsed is a long, then every read/write becomes two operations instead of one, and the
-    number of possible orderings becomes 2,704,156.
-    What happens if we make one change to this method?
-    public synchronized void incrementValue() {
-    ++lastIdUsed;
-    }
-
-    The number of possible execution pathways becomes two for two threads and N! in the
-    general case.
-
-
-    Digging Deeper
-    What about the surprising result that two threads could both call the method once (before
-    we added synchronized) and get the same numeric result? How is that possible? First
-    things first.
-    What is an atomic operation? We can define an atomic operation as any operation that
-    is uninterruptable. For example, in the following code, line 5, where 0 is assigned to
-    lastid, is atomic because according to the Java Memory model, assignment to a 32-bit
-    value is uninterruptable.
-    So we want the permutations of N 1's, N 2's,... and N T' s. This is
-    really just the permutations of N * T things taken N * T at a time, which is
-    ( N * T )!, but with all the duplicates removed. So the trick is to count the
-    duplicates and subtract that from ( N * T )!.
-    Given two steps and two threads, how many duplicates are there? Each
-    four-digit string has two 1s and two 2s. Each of those pairs could be
-    swapped without changing the sense of the string. You could swap the 1s or
-    the 2s both, or neither. So there are four isomorphs for each string, which
-    means that there are three duplicates. So three out of four of the options are
-    duplicates; alternatively one of four of the permutations are NOT dupli-
-    cates. 4! * .25 = 6. So this reasoning seems to work.
-    How many duplicates are there? In the case where N = 2 and T = 2, I
-    could swap the 1s, the 2s, or both. In the case where N = 2 and T = 3, I
-    could swap the 1s, the 2s, the 3s, 1s and 2s, 1s and 3s, or 2s and 3s. Swap-
-    ping is just the permutations of N. Let's say there are P permutations of N.
-    The number of different ways to arrange those permutations are P ** T.
-    So the number of possible isomorphs is N !** T. And so the number of
-    paths is ( T * N )!/( N !** T ). Again, in our T = 2, N = 2 case we get 6 (24/4).
-    For N = 2 and T = 3 we get 720/8 = 90.
-    For N = 3 and T = 3 we get 9!/6^3 = 1680.
-
-    Calculating the Possible Orderings (continued)
-
-    324 Appendix A: Concurrency II
-    01: public class Example {
-    02: int lastId;
-    03:
-    04: public void resetId() {
-    05: value = 0;
-    06: }
-    07:
-    08: public int getNextId() {
-    09: ++value;
-    10: }
-    11:}
-    What happens if we change type of lastId from int to long? Is line 5 still atomic?
-    Not according to the JVM specification. It could be atomic on a particular processor,
-    but according to the JVM specification, assignment to any 64-bit value requires two
-    32-bit assignments. This means that between the first 32-bit assignment and the second
-    32-bit assignment, some other thread could sneak in and change one of the values.
-    What about the pre-increment operator, ++, on line 9? The pre-increment operator can
-    be interrupted, so it is not atomic. To understand, let's review the byte-code of both of these
-    methods in detail.
-    Before we go any further, here are three definitions that will be important:
-
-    - Frame—Every method invocation requires a frame. The frame includes the return
-    address, any parameters passed into the method and the local variables defined in the
-    method. This is a standard technique used to define a call stack, which is used by
-    modern languages to allow for basic function/method invocation and to allow for
-    recursive invocation.
-    - Local variable—Any variables defined in the scope of the method. All nonstatic meth-
-    ods have at least one variable, this , which represents the current object, the object
-    that received the most recent message (in the current thread), which caused the
-    method invocation.
-    - Operand stack—Many of the instructions in the Java Virtual Machine take parame-
-    ters. The operand stack is where those parameters are put. The stack is a standard
-    last-in, first-out (LIFO) data structure.
-    Here is the byte-code generated for resetId():
-
-    Mnemonic Description Operand
-    Stack After
-    ALOAD 0 Load the 0th variable onto the operand stack.
-    What is the 0th variable? It is this ., the current
-    object. When the method was called, the
-    receiver of the message, an instance of Example,
-    was pushed into the local variable array of the
-    frame created for method invocation. This is
-    always the first variable put in every instance
-    method.
-
-    this
-
-    Possible Paths of Execution 325
-    These three instructions are guaranteed to be atomic because, although the thread
-    executing them could be interrupted after any one of them, the information for the
-    PUTFIELD instruction (the constant value 0 on the top of the stack and the reference to
-    this one below the top, along with the field value) cannot be touched by another thread.
-    So when the assignment occurs, we are guaranteed that the value 0 will be stored in the
-    field value. The operation is atomic. The operands all deal with information local to the
-    method, so there is no interference between multiple threads.
-    So if these three instructions are executed by ten threads, there are 4.38679733629e+24
-    possible orderings. However, there is only one possible outcome, so the different orderings
-    are irrelevant. It just so happens that the same outcome is guaranteed for longs in this case
-    as well. Why? All ten threads are assigning a constant value. Even if they interleave with
-    each other, the end result is the same.
-    With the ++ operation in the getNextId method, there are going to be problems.
-    Assume that lastId holds 42 at the beginning of this method. Here is the byte-code for this
-    new method:
-    ICONST_0 Put the constant value 0 onto the operand stack. this, 0
-    PUTFIELD lastId Store the top value on the stack (which is 0) into
-    the field value of the object referred to by the
-    object reference one away from the top of the
-    stack, this.
-
-    <empty>
-
-    Mnemonic Description Operand
-    Stack After
-    ALOAD 0 Load this onto the operand stack this
-    DUP Copy the top of the stack. We now have two
-    copies of this on the operand stack.
-
-    this, this
-
-    GETFIELD lastId Retrieve the value of the field lastId from the
-    object pointed to on the top of the stack (this) and
-    store that value back on to the stack.
-
-    this, 42
-
-    ICONST_1 Push the integer constant 1 on the stack. this, 42, 1
-    IADD Integer add the top two values on the operand
-    stack and store the result back on to the operand
-    stack.
-
-    this, 43
-
-    DUP_X1 Duplicate the value 43 and put it before this. 43, this, 43
-    PUTFIELD value Store the top value on the operand stack, 43, into
-    the field value of the current object, represented by
-    the next-to-top value on the operand stack, this.
-
-
-
-    # 43
-    IRETURN return the top (and only) value on the stack. <empty>
-
-    Mnemonic Description Operand
-    Stack After
-
-    326 Appendix A: Concurrency II
-    Imagine the case where the first thread completes the first three instructions, up to and
-    including GETFIELD, and then it is interrupted. A second thread takes over and performs
-    the entire method, incrementing lastId by one; it gets 43 back. Then the first thread picks up
-    where it left off; 42 is still on the operand stack because that was the value of lastId when it
-    executed GETFIELD. It adds one to get 43 again and stores the result. The value 43 is
-    returned to the first thread as well. The result is that one of the increments is lost because the
-    first thread stepped on the second thread after the second thread interrupted the first thread.
-    Making the getNexId() method synchronized fixes this problem.
-
-
-
-    Conclusion
-
-    An intimate understanding of byte-code is not necessary to understand how threads can
-    step on each other. If you can understand this one example, it should demonstrate the pos-
-    sibility of multiple threads stepping on each other, which is enough knowledge.
-    That being said, what this trivial example demonstrates is a need to understand the
-    memory model enough to know what is and is not safe. It is a common misconception that
-    the ++ (pre- or post-increment) operator is atomic, and it clearly is not. This means you
-    need to know:
-    - Where there are shared objects/values
-    - The code that can cause concurrent read/update issues
-    - How to guard such concurrent issues from happening
-    Knowing Your Library
-
-
-    Executor Framework
-    As demonstrated in the ExecutorClientScheduler.java on page 321, the Executor frame-
-    work introduced in Java 5 allows for sophisticated execution using thread pools. This is a
-    class in the java.util.concurrent package.
-    If you are creating threads and are not using a thread pool or are using a hand-written
-    one, you should consider using the Executor. It will make your code cleaner, easier to fol-
-    low, and smaller.
-    The Executor framework will pool threads, resize automatically, and recreate threads
-    if necessary. It also supports futures, a common concurrent programming construct. The
-    Executor framework works with classes that implement Runnable and also works with
-    classes that implement the Callable interface. A Callable looks like a Runnable, but it can
-    return a result, which is a common need in multithreaded solutions.
-    A future is handy when code needs to execute multiple, independent operations and
-    wait for both to finish:
-    public String processRequest(String message) throws Exception {
-    Callable<String> makeExternalCall = new Callable<String>() {
-
-    Knowing Your Library 327
-    public String call() throws Exception {
-    String result = "";
-    // make external request
-    return result;
-    }
-    };
-    Future<String> result = executorService.submit(makeExternalCall);
-    String partialResult = doSomeLocalProcessing();
-    return result.get() + partialResult;
-    }
-
-    In this example, the method starts executing the makeExternalCall object. The method con-
-    tinues other processing. The final line calls result.get(), which blocks until the future
-    completes.
-
-
-    Nonblocking Solutions ...
-    The Java 5 VM takes advantage of modern processor design, which supports reliable,
-    nonblocking updates. Consider, for example, a class that uses synchronization (and there-
-    fore blocking) to provide a thread-safe update of a value:
-    public class ObjectWithValue {
-    private int value;
-    public void synchronized incrementValue() { ++value; }
-    public int getValue() { return value; }
-    }
-    Java 5 has a series of new classes for situations like this: AtomicBoolean,
-    AtomicInteger, and AtomicReference are three examples; there are several more. We can
-    rewrite the above code to use a nonblocking approach as follows:
-    public class ObjectWithValue {
-    private AtomicInteger value = new AtomicInteger(0);
-    public void incrementValue() {
-    value.incrementAndGet();
-    }
-    public int getValue() {
-    return value.get();
-    }
-    }
-
-    Even though this uses an object instead of a primitive and sends messages like
-    incrementAndGet() instead of ++, the performance of this class will nearly always beat the
-    previous version. In some cases it will only be slightly faster, but the cases where it will be
-    slower are virtually nonexistent.
-    How is this possible? Modern processors have an operation typically called Compare
-    and Swap (CAS). This operation is analogous to optimistic locking in databases, whereas
-    the synchronized version is analogous to pessimistic locking.
-    328 Appendix A: Concurrency II
-    The synchronized keyword always acquires a lock, even when a second thread is not
-    trying to update the same value. Even though the performance of intrinsic locks has
-    improved from version to version, they are still costly.
-    The nonblocking version starts with the assumption that multiple threads generally do
-    not modify the same value often enough that a problem will arise. Instead, it efficiently
-    detects whether such a situation has occurred and retries until the update happens success-
-    fully. This detection is almost always less costly than acquiring a lock, even in moderate to
-    high contention situations.
-    How does the Virtual Machine accomplish this? The CAS operation is atomic. Logi-
-    cally, the CAS operation looks something like the following:
-    int variableBeingSet;
-    void simulateNonBlockingSet(int newValue) {
-    int currentValue;
-    do {
-    currentValue = variableBeingSet
-    } while(currentValue != compareAndSwap(currentValue, newValue));
-    }
-    int synchronized compareAndSwap(int currentValue, int newValue) {
-    if(variableBeingSet == currentValue) {
-    variableBeingSet = newValue;
-    return currentValue;
-    }
-    return variableBeingSet;
-    }
-    When a method attempts to update a shared variable, the CAS operation verifies that
-    the variable getting set still has the last known value. If so, then the variable is changed. If
-    not, then the variable is not set because another thread managed to get in the way. The
-    method making the attempt (using the CAS operation) sees that the change was not made
-    and retries.
-
-
-    Nonthread-Safe Classes..
-    There are some classes that are inherently not thread safe. Here are a few examples:
-    - SimpleDateFormat
-    - Database Connections
-    - Containers in java.util
-    - Servlets
-    Note that some collection classes have individual methods that are thread-safe. However,
-    any operation that involves calling more than one method is not. For example, if you do
-    not want to replace something in a HashTable because it is already there, you might write
-    the following code:
-    if(!hashTable.containsKey(someKey)) {
-    hashTable.put(someKey, new SomeValue());
-    }
-
-    Dependencies Between Methods Can Break Concurrent Code 329
-    Each individual method is thread-safe. However, another thread might add a value in
-    between the containsKey and put calls. There are several options to fix this problem.
-    - Lock the HashTable first, and make sure all other users of the HashTable do the same—
-    client-based locking:
-    synchronized(map) {
-    if(!map.conainsKey(key))
-    map.put(key,value);
-    }
-    - Wrap the HashTable in its own object and use a different API—server-based locking
-    using an ADAPTER:
-    public class WrappedHashtable<K, V> {
-    private Map<K, V> map = new Hashtable<K, V>();
-    public synchronized void putIfAbsent(K key, V value) {
-    if (map.containsKey(key))
-    map.put(key, value);
-    }
-    }
-    - Use the thread-safe collections:
-    ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<Integer,
-    String>();
-    map.putIfAbsent(key, value);
-
-    The collections in java.util.concurrent have operations like putIfAbsent() to accommo-
-    date such operations.
-    Dependencies Between Methods
-    Can Break Concurrent Code
-    Here is a trivial example of a way to introduce dependencies between methods:
-    public class IntegerIterator implements Iterator<Integer>
-    private Integer nextValue = 0;
-    public synchronized boolean hasNext() {
-    return nextValue < 100000;
-    }
-    public synchronized Integer next() {
-    if (nextValue == 100000)
-    throw new IteratorPastEndException();
-    return nextValue++;
-    }
-    public synchronized Integer getNextValue() {
-    return nextValue;
-    }
-    }
-
-    Here is some code to use this IntegerIterator:
-    IntegerIterator iterator = new IntegerIterator();
-    while(iterator.hasNext()) {
-
-    330 Appendix A: Concurrency II
-    int nextValue = iterator.next();
-    // do something with nextValue
-    }
-
-    If one thread executes this code, there will be no problem. But what happens if two threads
-    attempt to share a single instance of IngeterIterator with the intent that each thread will
-    process the values it gets, but that each element of the list is processed only once? Most of
-    the time, nothing bad happens; the threads happily share the list, processing the elements
-    they are given by the iterator and stopping when the iterator is complete. However, there is
-    a small chance that, at the end of the iteration, the two threads will interfere with each
-    other and cause one thread to go beyond the end of the iterator and throw an exception.
-    Here's the problem: Thread 1 asks the question hasNext(), which returns true. Thread
-    1 gets preempted and then Thread 2 asks the same question, which is still true. Thread 2
-    then calls next(), which returns a value as expected but has a side effect of making
-    hasNext() return false. Thread 1 starts up again, thinking hasNext() is still true, and then
-    calls next(). Even though the individual methods are synchronized, the client uses two
-    methods.
-    This is a real problem and an example of the kinds of problems that crop up in con-
-    current code. In this particular situation this problem is especially subtle because the only
-    time where this causes a fault is when it happens during the final iteration of the iterator.
-    If the threads happen to break just right, then one of the threads could go beyond the end
-    of the iterator. This is the kind of bug that happens long after a system has been in pro-
-    duction, and it is hard to track down.
-    You have three options:
-
-    - Tolerate the failure.
-    - Solve the problem by changing the client: client-based locking
-    - Solve the problem by changing the server, which additionally changes the client:
-    server-based locking
-
-
-    Tolerate the Failure
-    Sometimes you can set things up such that the failure causes no harm. For example, the
-    above client could catch the exception and clean up. Frankly, this is a bit sloppy. It's rather
-    like cleaning up memory leaks by rebooting at midnight.
-
-
-    Client-Based Locking
-    To make IntegerIterator work correctly with multiple threads, change this client (and
-    every other client) as follows:
-    IntegerIterator iterator = new IntegerIterator();
-    while (true) {
-    int nextValue;
-
-    Dependencies Between Methods Can Break Concurrent Code 331
-    synchronized (iterator) {
-    if (!iterator.hasNext())
-    break;
-    nextValue = iterator.next();
-    }
-    doSometingWith(nextValue);
-    }
-
-    Each client introduces a lock via the synchronized keyword. This duplication violates the
-    DRY principle, but it might be necessary if the code uses non-thread-safe third-party tools.
-    This strategy is risky because all programmers who use the server must remember to
-    lock it before using it and unlock it when done. Many (many!) years ago I worked on a
-    system that employed client-based locking on a shared resource. The resource was used in
-    hundreds of different places throughout the code. One poor programmer forgot to lock the
-    resource in one of those places.
-    The system was a multi-terminal time-sharing system running accounting software
-    for Local 705 of the trucker's union. The computer was in a raised-floor, environment-
-    controlled room 50 miles north of the Local 705 headquarters. At the headquarters they
-    had dozens of data entry clerks typing union dues postings into the terminals. The termi-
-    nals were connected to the computer using dedicated phone lines and 600bps half-duplex
-    modems. (This was a very, very long time ago.)
-    About once per day, one of the terminals would "lock up." There was no rhyme or rea-
-    son to it. The lock up showed no preference for particular terminals or particular times. It
-    was as though there were someone rolling dice choosing the time and terminal to lock up.
-    Sometimes more than one terminal would lock up. Sometimes days would go by without
-    any lock-ups.
-    At first the only solution was a reboot. But reboots were tough to coordinate. We had
-    to call the headquarters and get everyone to finish what they were doing on all the termi-
-    nals. Then we could shut down and restart. If someone was doing something important
-    that took an hour or two, the locked up terminal simply had to stay locked up.
-    After a few weeks of debugging we found that the cause was a ring-buffer counter that
-    had gotten out of sync with its pointer. This buffer controlled output to the terminal. The
-    pointer value indicated that the buffer was empty, but the counter said it was full. Because
-    it was empty, there was nothing to display; but because it was also full, nothing could be
-    added to the buffer to be displayed on the screen.
-    So we knew why the terminals were locking, but we didn't know why the ring buffer
-    was getting out of sync. So we added a hack to work around the problem. It was possible to
-    read the front panel switches on the computer. (This was a very, very, very long time ago.)
-    We wrote a little trap function that detected when one of these switches was thrown and
-    then looked for a ring buffer that was both empty and full. If one was found, it reset that
-    buffer to empty. Voila! The locked-up terminal(s) started displaying again.
-    So now we didn't have to reboot the system when a terminal locked up. The Local
-    would simply call us and tell us we had a lock-up, and then we just walked into the com-
-    puter room and flicked a switch.
-    332 Appendix A: Concurrency II
-    Of course sometimes they worked on the weekends, and we didn't. So we added a
-    function to the scheduler that checked all the ring buffers once per minute and reset any
-    that were both empty and full. This caused the displays to unclog before the Local could
-    even get on the phone.
-    It was several more weeks of poring over page after page of monolithic assembly lan-
-    guage code before we found the culprit. We had done the math and calculated that the fre-
-    quency of the lock-ups was consistent with a single unprotected use of the ring buffer. So
-    all we had to do was find that one faulty usage. Unfortunately, this was so very long ago
-    that we didn't have search tools or cross references or any other kind of automated help.
-    We simply had to pore over listings.
-    I learned an important lesson that cold Chicago winter of 1971. Client-based locking
-    really blows.
-
-
-    Server-Based Locking
-    The duplication can be removed by making the following changes to IntegerIterator:
-    public class IntegerIteratorServerLocked {
-    private Integer nextValue = 0;
-    public synchronized Integer getNextOrNull() {
-    if (nextValue < 100000)
-    return nextValue++;
-    else
-    return null;
-    }
-    }
-
-    And the client code changes as well:
-    while (true) {
-    Integer nextValue = iterator.getNextOrNull();
-    if (next == null)
-    break;
-    // do something with nextValue
-    }
-
-    In this case we actually change the API of our class to be multithread aware.^3 The client
-    needs to perform a null check instead of checking hasNext().
-    In general you should prefer server-based locking for these reasons:
-
-    - It reduces repeated code—Client-based locking forces each client to lock the server
-    properly. By putting the locking code into the server, clients are free to use the object
-    and not worry about writing additional locking code.
-    3. In fact, the Iterator interface is inherently not thread-safe. It was never designed to be used by multiple threads, so this
-    should come as no surprise.
-    Increasing Throughput 333
-    - It allows for better performance—You can swap out a thread-safe server for a non-
-    thread safe one in the case of single-threaded deployment, thereby avoiding all
-    overhead.
-    - It reduces the possibility of error—All it takes is for one programmer to forget to lock
-    properly.
-    - It enforces a single policy—The policy is in one place, the server, rather than many
-    places, each client.
-    - It reduces the scope of the shared variables—The client is not aware of them or how
-    they are locked. All of that is hidden in the server. When things break, the number of
-    places to look is smaller.
-    What if you do not own the server code?
-
-    - Use an ADAPTER to change the API and add locking
-    public class ThreadSafeIntegerIterator {
-    private IntegerIterator iterator = new IntegerIterator();
-    public synchronized Integer getNextOrNull() {
-    if(iterator.hasNext())
-    return iterator.next();
-    return null;
-    }
-    }
-    - OR better yet, use the thread-safe collections with extended interfaces
-    Increasing Throughput
-    Let's assume that we want to go out on the net and read the contents of a set of pages from
-    a list of URLs. As each page is read, we will parse it to accumulate some statistics. Once
-    all the pages are read, we will print a summary report.
-    The following class returns the contents of one page, given a URL.
-    public class PageReader {
-    //...
-    public String getPageFor(String url) {
-    HttpMethod method = new GetMethod(url);
-    try {
-    httpClient.executeMethod(method);
-    String response = method.getResponseBodyAsString();
-    return response;
-    } catch (Exception e) {
-    handle(e);
-    } finally {
-    method.releaseConnection();
-    }
-    }
-    }
-
-    334 Appendix A: Concurrency II
-    The next class is the iterator that provides the contents of the pages based on an iterator of
-    URLs:
-    public class PageIterator {
-    private PageReader reader;
-    private URLIterator urls;
-    public PageIterator(PageReader reader, URLIterator urls) {
-    this.urls = urls;
-    this.reader = reader;
-    }
-    public synchronized String getNextPageOrNull() {
-    if (urls.hasNext())
-    getPageFor(urls.next());
-    else
-    return null;
-    }
-    public String getPageFor(String url) {
-    return reader.getPageFor(url);
-    }
-    }
-    An instance of the PageIterator can be shared between many different threads, each
-    one using it's own instance of the PageReader to read and parse the pages it gets from the
-    iterator.
-    Notice that we've kept the synchronized block very small. It contains just the critical
-    section deep inside the PageIterator. It is always better to synchronize as little as possible
-    as opposed to synchronizing as much as possible.
-
-
-    Single-Thread Calculation of Throughput
-    Now lets do some simple calculations. For the purpose of argument, assume the following:
-    - I/O time to retrieve a page (average): 1 second
-    - Processing time to parse page (average): .5 seconds
-    - I/O requires 0 percent of the CPU while processing requires 100 percent.
-    For N pages being processed by a single thread, the total execution time is 1.5 sec-
-    onds * N. Figure A-1 shows a snapshot of 13 pages or about 19.5 seconds.
-    Figure A-1
-    Single thread
-
-    Deadlock 335
-
-
-    Multithread Calculation of Throughput
-    If it is possible to retrieve pages in any order and process the pages independently, then it
-    is possible to use multiple threads to increase throughput. What happens if we use three
-    threads? How many pages can we acquire in the same time?
-    As you can see in Figure A-2, the multithreaded solution allows the process-bound
-    parsing of the pages to overlap with the I/O-bound reading of the pages. In an idealized
-    world this means that the processor is fully utilized. Each one-second page read is over-
-    lapped with two parses. Thus, we can process two pages per second, which is three times
-    the throughput of the single-threaded solution.
-    Deadlock
-
-    Imagine a Web application with two shared resource pools of some finite size:
-    - A pool of database connections for local work in process storage
-    - A pool of MQ connections to a master repository
-    Assume there are two operations in this application, create and update:
-
-    - Create—Acquire connection to master repository and database. Talk to service master
-    repository and then store work in local work in process database.
-    Figure A-2
-    Three concurrent threads
-
-    336 Appendix A: Concurrency II
-    - Update—Acquire connection to database and then master repository. Read from work
-    in process database and then send to the master repository
-    What happens when there are more users than the pool sizes? Consider each pool has
-    a size of ten.
-    - Ten users attempt to use create, so all ten database connections are acquired, and each
-    thread is interrupted after acquiring a database connection but before acquiring a con-
-    nection to the master repository.
-    - Ten users attempt to use update, so all ten master repository connections are acquired,
-    and each thread is interrupted after acquiring the master repository but before acquir-
-    ing a database connection.
-    - Now the ten "create" threads must wait to acquire a master repository connection, but
-    the ten "update" threads must wait to acquire a database connection.
-    - Deadlock. The system never recovers.
-    This might sound like an unlikely situation, but who wants a system that freezes solid
-    every other week? Who wants to debug a system with symptoms that are so difficult to
-    reproduce? This is the kind of problem that happens in the field, then takes weeks to solve.
-    A typical "solution" is to introduce debugging statements to find out what is happen-
-    ing. Of course, the debug statements change the code enough so that the deadlock happens
-    in a different situation and takes months to again occur.^4
-    To really solve the problem of deadlock, we need to understand what causes it. There
-    are four conditions required for deadlock to occur:
-    - Mutual exclusion
-    - Lock & wait
-    - No preemption
-    - Circular wait
-
-
-    Mutual Exclusion
-    Mutual exclusion occurs when multiple threads need to use the same resources and those
-    resources
-    - Cannot be used by multiple threads at the same time.
-    - Are limited in number.
-    A common example of such a resource is a database connection, a file open for write, a
-    record lock, or a semaphore.
-
-    For example, someone adds some debugging output and the problem "disappears." The debugging code "fixes" the problem
-    so it remains in the system.
-
-    Deadlock 337
-
-
-    Lock & Wait
-
-    Once a thread acquires a resource, it will not release the resource until it has acquired all
-    of the other resources it requires and has completed its work.
-
-
-    No Preemption
-    One thread cannot take resources away from another thread. Once a thread holds a
-    resource, the only way for another thread to get it is for the holding thread to release it.
-
-
-    Circular Wait
-
-    This is also referred to as the deadly embrace. Imagine two threads, T1 and T2, and two
-    resources, R1 and R2. T1 has R1, T2 has R2. T1 also requires R2, and T2 also requires R1.
-    This gives something like Figure A-3:
-    All four of these conditions must hold for deadlock to be possible. Break any one of these
-    conditions and deadlock is not possible.
-
-
-    Breaking Mutual Exclusion
-    One strategy for avoiding deadlock is to sidestep the mutual exclusion condition. You
-    might be able to do this by
-    - Using resources that allow simultaneous use, for example, AtomicInteger.
-    - Increasing the number of resources such that it equals or exceeds the number of com-
-    peting threads.
-    - Checking that all your resources are free before seizing any.
-    Unfortunately, most resources are limited in number and don't allow simultaneous
-    use. And it's not uncommon for the identity of the second resource to be predicated on the
-    results of operating on the first. But don't be discouraged; there are three conditions left.
-    Figure A-3
-
-    338 Appendix A: Concurrency II
-
-
-    Breaking Lock & Wait
-    You can also eliminate deadlock if you refuse to wait. Check each resource before you
-    seize it, and release all resources and start over if you run into one that's busy.
-    This approach introduces several potential problems:
-
-    - Starvation—One thread keeps being unable to acquire the resources it needs (maybe it
-    has a unique combination of resources that seldom all become available).
-    - Livelock—Several threads might get into lockstep and all acquire one resource and
-    then release one resource, over and over again. This is especially likely with simplistic
-    CPU scheduling algorithms (think embedded devices or simplistic hand-written
-    thread balancing algorithms).
-    Both of these can cause poor throughput. The first results in low CPU utilization,
-    whereas the second results in high and useless CPU utilization.
-    As inefficient as this strategy sounds, it's better than nothing. It has the benefit that it
-    can almost always be implemented if all else fails.
-
-
-    Breaking Preemption
-    Another strategy for avoiding deadlock is to allow threads to take resources away from
-    other threads. This is usually done through a simple request mechanism. When a thread
-    discovers that a resource is busy, it asks the owner to release it. If the owner is also waiting
-    for some other resource, it releases them all and starts over.
-    This is similar to the previous approach but has the benefit that a thread is allowed to
-    wait for a resource. This decreases the number of startovers. Be warned, however, that
-    managing all those requests can be tricky.
-
-
-    Breaking Circular Wait...
-    This is the most common approach to preventing deadlock. For most systems it requires
-    no more than a simple convention agreed to by all parties.
-    In the example above with Thread 1 wanting both Resource 1 and Resource 2 and
-    Thread 2 wanting both Resource 2 and then Resource 1, simply forcing both Thread 1 and
-    Thread 2 to allocate resources in the same order makes circular wait impossible.
-    More generally, if all threads can agree on a global ordering of resources and if they
-    all allocate resources in that order, then deadlock is impossible. Like all the other strate-
-    gies, this can cause problems:
-    - The order of acquisition might not correspond to the order of use; thus a resource
-    acquired at the start might not be used until the end. This can cause resources to be
-    locked longer than strictly necessary.
-    Testing Multithreaded Code 339
-    - Sometimes you cannot impose an order on the acquisition of resources. If the ID of
-    the second resource comes from an operation performed on the first, then ordering is
-    not feasible.
-    So there are many ways to avoid deadlock. Some lead to starvation, whereas others
-    make heavy use of the CPU and reduce responsiveness. TANSTAAFL!^5
-    Isolating the thread-related part of your solution to allow for tuning and experimenta-
-    tion is a powerful way to gain the insights needed to determine the best strategies.
-    Testing Multithreaded Code .
-    How can we write a test to demonstrate the following code is broken?
-    01: public class ClassWithThreadingProblem {
-    02: int nextId;
-    03:
-    04: public int takeNextId() {
-    05: return nextId++;
-    06: }
-    07:}
-
-    Here's a description of a test that will prove the code is broken:
-    - Remember the current value of nextId.
-    - Create two threads, both of which call takeNextId() once.
-    - Verify that nextId is two more than what we started with.
-    - Run this until we demonstrate that nextId was only incremented by one instead
-    of two.
-    Listing A-2 shows such a test:
-
-
-    There ain't no such thing as a free lunch.
-
-    Listing A-2
-    ClassWithThreadingProblemTest.java
-    01: package example;
-    02:
-    03: import static org.junit.Assert.fail;
-    04:
-    05: import org.junit.Test;
-    06:
-    07: public class ClassWithThreadingProblemTest {
-    08: @Test
-    09: public void twoThreadsShouldFailEventually() throws Exception {
-    10: final ClassWithThreadingProblem classWithThreadingProblem
-    = new ClassWithThreadingProblem();
-    11:
-
-    340 Appendix A: Concurrency II
-    12: Runnable runnable = new Runnable() {
-    13: public void run() {
-    14: classWithThreadingProblem.takeNextId();
-    15: }
-    16: };
-    17:
-    18: for (int i = 0; i < 50000; ++i) {
-    19: int startingId = classWithThreadingProblem.lastId;
-    20: int expectedResult = 2 + startingId;
-    21:
-    22: Thread t1 = new Thread(runnable);
-    23: Thread t2 = new Thread(runnable);
-    24: t1.start();
-    25: t2.start();
-    26: t1.join();
-    27: t2.join();
-    28:
-    29: int endingId = classWithThreadingProblem.lastId;
-    30:
-    31: if (endingId != expectedResult)
-    32: return;
-    33: }
-    34:
-    35: fail("Should have exposed a threading issue but it did not.");
-    36: }
-    37: }
-
-    Line Description
-    10 Create a single instance of ClassWithThreadingProblem. Note, we must use
-    the final keyword because we use it below in an anonymous inner class.
-    12–16 Create an anonymous inner class that uses the single instance of
-    ClassWithThreadingProblem.
-    18 Run this code "enough" times to demonstrate that the code failed, but not
-    so much that the test "takes too long." This is a balancing act; we don't
-    want to wait too long to demonstrate failure. Picking this number is hard—
-    although later we'll see that we can greatly reduce this number.
-    19 Remember the starting value. This test is trying to prove that the code in
-    ClassWithThreadingProblem is broken. If this test passes, it proved that the
-    code was broken. If this test fails, the test was unable to prove that the code
-    is broken.
-    20 We expect the final value to be two more than the current value.
-    22–23 Create two threads, both of which use the object we created in lines 12–16.
-    This gives us the potential of two threads trying to use our single instance
-    of ClassWithThreadingProblem and interfering with each other.
-
-    Listing A-2 (continued)
-    ClassWithThreadingProblemTest.java
-
-    Testing Multithreaded Code 341
-    This test certainly sets up the conditions for a concurrent update problem. However,
-    the problem occurs so infrequently that the vast majority of times this test won't detect it.
-    Indeed, to truly detect the problem we need to set the number of iterations to over one
-    million. Even then, in ten executions with a loop count of 1,000,000, the problem occurred
-    only once. That means we probably ought to set the iteration count to well over one hun-
-    dred million to get reliable failures. How long are we prepared to wait?
-    Even if we tuned the test to get reliable failures on one machine, we'll probably have
-    to retune the test with different values to demonstrate the failure on another machine,
-    operating system, or version of the JVM.
-    And this is a simple problem. If we cannot demonstrate broken code easily with this
-    problem, how will we ever detect truly complex problems?
-    So what approaches can we take to demonstrate this simple failure? And, more impor-
-    tantly, how can we write tests that will demonstrate failures in more complex code? How
-    will we be able to discover if our code has failures when we do not know where to look?
-    Here are a few ideas:
-
-    - Monte Carlo Testing. Make tests flexible, so they can be tuned. Then run the test over
-    and over—say on a test server—randomly changing the tuning values. If the tests ever
-    fail, the code is broken. Make sure to start writing those tests early so a continuous
-    integration server starts running them soon. By the way, make sure you carefully log
-    the conditions under which the test failed.
-    - Run the test on every one of the target deployment platforms. Repeatedly. Continu-
-    ously. The longer the tests run without failure, the more likely that
-    - The production code is correct or
-    - The tests aren't adequate to expose problems.
-    - Run the tests on a machine with varying loads. If you can simulate loads close to a
-    production environment, do so.
-    24–25 Make our two threads eligible to run.
-    26–27 Wait for both threads to finish before we check the results.
-    29 Record the actual final value.
-    31–32 Did our endingId differ from what we expected? If so, return end the test—
-    we've proven that the code is broken. If not, try again.
-    35 If we got to here, our test was unable to prove the production code was bro-
-    ken in a "reasonable" amount of time; our code has failed. Either the code
-    is not broken or we didn't run enough iterations to get the failure condition
-    to occur.
-
-    Line Description
-
-    342 Appendix A: Concurrency II
-    Yet, even if you do all of these things, you still don't stand a very good chance of find-
-    ing threading problems with your code. The most insidious problems are the ones that
-    have such a small cross section that they only occur once in a billion opportunities. Such
-    problems are the terror of complex systems.
-    Tool Support for Testing Thread-Based Code
-    IBM has created a tool called ConTest.^6 It instruments classes to make it more likely that
-    non-thread-safe code fails.
-    We do not have any direct relationship with IBM or the team that developed ConTest.
-    A colleague of ours pointed us to it. We noticed vast improvement in our ability to find
-    threading issues after a few minutes of using it.
-    Here's an outline of how to use ConTest:
-
-    - Write tests and production code, making sure there are tests specifically designed to
-    simulate multiple users under varying loads, as mentioned above.
-    - Instrument test and production code with ConTest.
-    - Run the tests.
-    When we instrumented code with ConTest, our success rate went from roughly one fail-
-    ure in ten million iterations to roughly one failure in thirty iterations. Here are the loop values
-    for several runs of the test after instrumentation: 13, 23, 0, 54, 16, 14, 6, 69, 107, 49, 2. So
-    clearly the instrumented classes failed much earlier and with much greater reliability.
-    Conclusion
-
-    This chapter has been a very brief sojourn through the large and treacherous territory of
-    concurrent programming. We barely scratched the surface. Our emphasis here was on dis-
-    ciplines to help keep concurrent code clean, but there is much more you should learn if
-    you are going to be writing concurrent systems. We recommend you start with Doug Lea's
-    wonderful book Concurrent Programming in Java: Design Principles and Patterns.^7
-    In this chapter we talked about concurrent update, and the disciplines of clean syn-
-    chronization and locking that can prevent it. We talked about how threads can enhance the
-    throughput of an I/O-bound system and showed the clean techniques for achieving such
-    improvements. We talked about deadlock and the disciplines for preventing it in a clean
-
-    http://www.haifa.ibm.com/projects/verification/contest/index.html
-    See [Lea99] p. 191.
-
-    Tutorial: Full Code Examples 343
-    way. Finally, we talked about strategies for exposing concurrent problems by instrumenting
-    your code.
-    Tutorial: Full Code Examples
-
-
-    Client/Server Nonthreaded .
-    Listing A-3
-    Server.java
-    package com.objectmentor.clientserver.nonthreaded;
-    import java.io.IOException;
-    import java.net.ServerSocket;
-    import java.net.Socket;
-    import java.net.SocketException;
-    import common.MessageUtils;
-    public class Server implements Runnable {
-    ServerSocket serverSocket;
-    volatile boolean keepProcessing = true;
-    public Server(int port, int millisecondsTimeout) throws IOException {
-    serverSocket = new ServerSocket(port);
-    serverSocket.setSoTimeout(millisecondsTimeout);
-    }
-    public void run() {
-    System.out.printf("Server Starting\n");
-    while (keepProcessing) {
-    try {
-    System.out.printf("accepting client\n");
-    Socket socket = serverSocket.accept();
-    System.out.printf("got client\n");
-    process(socket);
-    } catch (Exception e) {
-    handle(e);
-    }
-    }
-    }
-    private void handle(Exception e) {
-    if (!(e instanceof SocketException)) {
-    e.printStackTrace();
-    }
-    }
-    public void stopProcessing() {
-    keepProcessing = false;
-    closeIgnoringException(serverSocket);
-    }
-
-    344 Appendix A: Concurrency II
-    void process(Socket socket) {
-    if (socket == null)
-    return;
-    try {
-    System.out.printf("Server: getting message\n");
-    String message = MessageUtils.getMessage(socket);
-    System.out.printf("Server: got message: %s\n", message);
-    Thread.sleep(1000);
-    System.out.printf("Server: sending reply: %s\n", message);
-    MessageUtils.sendMessage(socket, "Processed: " + message);
-    System.out.printf("Server: sent\n");
-    closeIgnoringException(socket);
-    } catch (Exception e) {
-    e.printStackTrace();
-    }
-    }
-    private void closeIgnoringException(Socket socket) {
-    if (socket != null)
-    try {
-    socket.close();
-    } catch (IOException ignore) {
-    }
-    }
-    private void closeIgnoringException(ServerSocket serverSocket) {
-    if (serverSocket != null)
-    try {
-    serverSocket.close();
-    } catch (IOException ignore) {
-    }
-    }
-    }
-
-    Listing A-4
-    ClientTest.java
-    package com.objectmentor.clientserver.nonthreaded;
-    import java.io.IOException;
-    import java.net.ServerSocket;
-    import java.net.Socket;
-    import java.net.SocketException;
-    import common.MessageUtils;
-    public class Server implements Runnable {
-    ServerSocket serverSocket;
-    volatile boolean keepProcessing = true;
-
-    Listing A-3 (continued)
-    Server.java
-
-    Tutorial: Full Code Examples 345
-    public Server(int port, int millisecondsTimeout) throws IOException {
-    serverSocket = new ServerSocket(port);
-    serverSocket.setSoTimeout(millisecondsTimeout);
-    }
-    public void run() {
-    System.out.printf("Server Starting\n");
-    while (keepProcessing) {
-    try {
-    System.out.printf("accepting client\n");
-    Socket socket = serverSocket.accept();
-    System.out.printf("got client\n");
-    process(socket);
-    } catch (Exception e) {
-    handle(e);
-    }
-    }
-    }
-    private void handle(Exception e) {
-    if (!(e instanceof SocketException)) {
-    e.printStackTrace();
-    }
-    }
-    public void stopProcessing() {
-    keepProcessing = false;
-    closeIgnoringException(serverSocket);
-    }
-    void process(Socket socket) {
-    if (socket == null)
-    return;
-    try {
-    System.out.printf("Server: getting message\n");
-    String message = MessageUtils.getMessage(socket);
-    System.out.printf("Server: got message: %s\n", message);
-    Thread.sleep(1000);
-    System.out.printf("Server: sending reply: %s\n", message);
-    MessageUtils.sendMessage(socket, "Processed: " + message);
-    System.out.printf("Server: sent\n");
-    closeIgnoringException(socket);
-    } catch (Exception e) {
-    e.printStackTrace();
-    }
-    }
-    private void closeIgnoringException(Socket socket) {
-    if (socket != null)
-    try {
-    socket.close();
-
-    Listing A-4 (continued)
-    ClientTest.java
-
-    346 Appendix A: Concurrency II
-
-
-    Client/Server Using Threads
-    Changing the server to use threads simply requires a change to the process message (new
-    lines are emphasized to stand out):
-    void process(final Socket socket) {
-    if (socket == null)
-    return;
-    Runnable clientHandler = new Runnable() {
-    public void run() {
-
-    } catch (IOException ignore) {
-    }
-    }
-    private void closeIgnoringException(ServerSocket serverSocket) {
-    if (serverSocket != null)
-    try {
-    serverSocket.close();
-    } catch (IOException ignore) {
-    }
-    }
-    }
-
-    Listing A-5
-    MessageUtils.java
-    package common;
-    import java.io.IOException;
-    import java.io.InputStream;
-    import java.io.ObjectInputStream;
-    import java.io.ObjectOutputStream;
-    import java.io.OutputStream;
-    import java.net.Socket;
-    public class MessageUtils {
-    public static void sendMessage(Socket socket, String message)
-    throws IOException {
-    OutputStream stream = socket.getOutputStream();
-    ObjectOutputStream oos = new ObjectOutputStream(stream);
-    oos.writeUTF(message);
-    oos.flush();
-    }
-    public static String getMessage(Socket socket) throws IOException {
-    InputStream stream = socket.getInputStream();
-    ObjectInputStream ois = new ObjectInputStream(stream);
-    return ois.readUTF();
-    }
-    }
-
-    Listing A-4 (continued)
-    ClientTest.java
-
-    Tutorial: Full Code Examples 347
-    try {
-    System.out.printf("Server: getting message\n");
-    String message = MessageUtils.getMessage(socket);
-    System.out.printf("Server: got message: %s\n", message);
-    Thread.sleep(1000);
-    System.out.printf("Server: sending reply: %s\n", message);
-    MessageUtils.sendMessage(socket, "Processed: " + message);
-    System.out.printf("Server: sent\n");
-    closeIgnoringException(socket);
-    } catch (Exception e) {
-    e.printStackTrace();
-    }
-    }
-    };
-    Thread clientConnection = new Thread(clientHandler);
-    clientConnection.start();
-    }
-
-
-
-    This page intentionally left blank
-
-
-    # 349
-    Appendix B
-    org.jfree.date.SerialDate
-    Listing B-1
-    SerialDate.Java
-    1 /* ========================================================================
-    2 * JCommon : a free general purpose class library for the Java(tm) platform
-    3 * ========================================================================
-    4 *
-    5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    6 *
-    7 * Project Info: http://www.jfree.org/jcommon/index.html
-    8 *
-    9 * This library is free software; you can redistribute it and/or modify it
-    10 * under the terms of the GNU Lesser General Public License as published by
-    11 * the Free Software Foundation; either version 2.1 of the License, or
-    12 * (at your option) any later version.
-    13 *
-    14 * This library is distributed in the hope that it will be useful, but
-    15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-    16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
-    17 * License for more details.
-    18 *
-    19 * You should have received a copy of the GNU Lesser General Public
-    20 * License along with this library; if not, write to the Free Software
-    21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
-    22 * USA.
-    23 *
-    24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
-    25 * in the United States and other countries.]
-    26 *
-    27 * ---------------
-    28 * SerialDate.java
-    29 * ---------------
-    30 * (C) Copyright 2001-2005, by Object Refinery Limited.
-    31 *
-    32 * Original Author: David Gilbert (for Object Refinery Limited);
-    33 * Contributor(s): -;
-    34 *
-    35 * $Id: SerialDate.java,v 1.7 2005/11/03 09:25:17 mungady Exp $
-    36 *
-    37 * Changes (from 11-Oct-2001)
-    350 Appendix B: org.jfree.date.SerialDate
-    38 * --------------------------
-    39 * 11-Oct-2001 : Re-organised the class and moved it to new package
-    40 * com.jrefinery.date (DG);
-    41 * 05-Nov-2001 : Added a getDescription() method, and eliminated NotableDate
-    42 * class (DG);
-    43 * 12-Nov-2001 : IBD requires setDescription() method, now that NotableDate
-    44 * class is gone (DG); Changed getPreviousDayOfWeek(),
-    45 * getFollowingDayOfWeek() and getNearestDayOfWeek() to correct
-    46 * bugs (DG);
-    47 * 05-Dec-2001 : Fixed bug in SpreadsheetDate class (DG);
-    48 * 29-May-2002 : Moved the month constants into a separate interface
-    49 * (MonthConstants) (DG);
-    50 * 27-Aug-2002 : Fixed bug in addMonths() method, thanks to N???levka Petr (DG);
-    51 * 03-Oct-2002 : Fixed errors reported by Checkstyle (DG);
-    52 * 13-Mar-2003 : Implemented Serializable (DG);
-    53 * 29-May-2003 : Fixed bug in addMonths method (DG);
-    54 * 04-Sep-2003 : Implemented Comparable. Updated the isInRange javadocs (DG);
-    55 * 05-Jan-2005 : Fixed bug in addYears() method (1096282) (DG);
-    56 *
-    57 /
-    58
-    59 package org.jfree.date;
-    60
-    61 import java.io.Serializable;
-    62 import java.text.DateFormatSymbols;
-    63 import java.text.SimpleDateFormat;
-    64 import java.util.Calendar;
-    65 import java.util.GregorianCalendar;
-    66
-    67 /*
-    68 * An abstract class that defines our requirements for manipulating dates,
-    69 * without tying down a particular implementation.
-    70 * 
-    71 * Requirement 1 : match at least what Excel does for dates;
-    72 * Requirement 2 : class is immutable;
-    73 * 
-    74 * Why not just use java.util.Date? We will, when it makes sense. At times,
-    75 * java.util.Date can be too precise - it represents an instant in time,
-    76 * accurate to 1/1000th of a second (with the date itself depending on the
-    77 * time-zone). Sometimes we just want to represent a particular day (e.g. 21
-    78 * January 2015) without concerning ourselves about the time of day, or the
-    79 * time-zone, or anything else. That's what we've defined SerialDate for.
-    80 * 
-    81 * You can call getInstance() to get a concrete subclass of SerialDate,
-    82 * without worrying about the exact implementation.
-    83 *
-    84 * @author David Gilbert
-    85 /
-    86 public abstract class SerialDate implements Comparable,
-    87 Serializable,
-    88 MonthConstants {
-    89
-    90 /* For serialization. /
-    91 private static final long serialVersionUID = -293716040467423637L;
-    92
-    93 /* Date format symbols. /
-    94 public static final DateFormatSymbols
-    95 DATE_FORMAT_SYMBOLS = new SimpleDateFormat().getDateFormatSymbols();
-    96
-    97 /* The serial number for 1 January 1900. /
-    98 public static final int SERIAL_LOWER_BOUND = 2;
-    99
-    100 /* The serial number for 31 December 9999. */
-    101 public static final int SERIAL_UPPER_BOUND = 2958465;
-    102
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 351
-    103 /** The lowest year value supported by this date format. /
-    104 public static final int MINIMUM_YEAR_SUPPORTED = 1900;
-    105
-    106 /* The highest year value supported by this date format. /
-    107 public static final int MAXIMUM_YEAR_SUPPORTED = 9999;
-    108
-    109 /* Useful constant for Monday. Equivalent to java.util.Calendar.MONDAY. /
-    110 public static final int MONDAY = Calendar.MONDAY;
-    111
-    112 /*
-    113 * Useful constant for Tuesday. Equivalent to java.util.Calendar.TUESDAY.
-    114 /
-    115 public static final int TUESDAY = Calendar.TUESDAY;
-    116
-    117 /*
-    118 * Useful constant for Wednesday. Equivalent to
-    119 * java.util.Calendar.WEDNESDAY.
-    120 /
-    121 public static final int WEDNESDAY = Calendar.WEDNESDAY;
-    122
-    123 /*
-    124 * Useful constant for Thrusday. Equivalent to java.util.Calendar.THURSDAY.
-    125 /
-    126 public static final int THURSDAY = Calendar.THURSDAY;
-    127
-    128 /* Useful constant for Friday. Equivalent to java.util.Calendar.FRIDAY. /
-    129 public static final int FRIDAY = Calendar.FRIDAY;
-    130
-    131 /*
-    132 * Useful constant for Saturday. Equivalent to java.util.Calendar.SATURDAY.
-    133 /
-    134 public static final int SATURDAY = Calendar.SATURDAY;
-    135
-    136 /* Useful constant for Sunday. Equivalent to java.util.Calendar.SUNDAY. /
-    137 public static final int SUNDAY = Calendar.SUNDAY;
-    138
-    139 /* The number of days in each month in non leap years. /
-    140 static final int[] LAST_DAY_OF_MONTH =
-    141 {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    142
-    143 /* The number of days in a (non-leap) year up to the end of each month. /
-    144 static final int[] AGGREGATE_DAYS_TO_END_OF_MONTH =
-    145 {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
-    146
-    147 /* The number of days in a year up to the end of the preceding month. /
-    148 static final int[] AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
-    149 {0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
-    150
-    151 /* The number of days in a leap year up to the end of each month. /
-    152 static final int[] LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_MONTH =
-    153 {0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-    154
-    155 /*
-    156 * The number of days in a leap year up to the end of the preceding month.
-    157 /
-    158 static final int[]
-    159 LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
-    160 {0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-    161
-    162 /* A useful constant for referring to the first week in a month. */
-    163 public static final int FIRST_WEEK_IN_MONTH = 1;
-    164
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    352 Appendix B: org.jfree.date.SerialDate
-    165 /** A useful constant for referring to the second week in a month. /
-    166 public static final int SECOND_WEEK_IN_MONTH = 2;
-    167
-    168 /* A useful constant for referring to the third week in a month. /
-    169 public static final int THIRD_WEEK_IN_MONTH = 3;
-    170
-    171 /* A useful constant for referring to the fourth week in a month. /
-    172 public static final int FOURTH_WEEK_IN_MONTH = 4;
-    173
-    174 /* A useful constant for referring to the last week in a month. /
-    175 public static final int LAST_WEEK_IN_MONTH = 0;
-    176
-    177 /* Useful range constant. /
-    178 public static final int INCLUDE_NONE = 0;
-    179
-    180 /* Useful range constant. /
-    181 public static final int INCLUDE_FIRST = 1;
-    182
-    183 /* Useful range constant. /
-    184 public static final int INCLUDE_SECOND = 2;
-    185
-    186 /* Useful range constant. /
-    187 public static final int INCLUDE_BOTH = 3;
-    188
-    189 /*
-    190 * Useful constant for specifying a day of the week relative to a fixed
-    191 * date.
-    192 /
-    193 public static final int PRECEDING = -1;
-    194
-    195 /*
-    196 * Useful constant for specifying a day of the week relative to a fixed
-    197 * date.
-    198 /
-    199 public static final int NEAREST = 0;
-    200
-    201 /*
-    202 * Useful constant for specifying a day of the week relative to a fixed
-    203 * date.
-    204 /
-    205 public static final int FOLLOWING = 1;
-    206
-    207 /* A description for the date. /
-    208 private String description;
-    209
-    210 /*
-    211 * Default constructor.
-    212 /
-    213 protected SerialDate() {
-    214 }
-    215
-    216 /*
-    217 * Returns true if the supplied integer code represents a
-    218 * valid day-of-the-week, and false otherwise.
-    219 *
-    220 * @param code the code being checked for validity.
-    221 *
-    222 * @return true if the supplied integer code represents a
-    223 * valid day-of-the-week, and false otherwise.
-    224 */
-    225 public static boolean isValidWeekdayCode(final int code) {
-    226
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 353
-    227 switch(code) {
-    228 case SUNDAY:
-    229 case MONDAY:
-    230 case TUESDAY:
-    231 case WEDNESDAY:
-    232 case THURSDAY:
-    233 case FRIDAY:
-    234 case SATURDAY:
-    235 return true;
-    236 default:
-    237 return false;
-    238 }
-    239
-    240 }
-    241
-    242 /**
-    243 * Converts the supplied string to a day of the week.
-    244 *
-    245 * @param s a string representing the day of the week.
-    246 *
-    247 * @return -1 if the string is not convertable, the day of
-    248 * the week otherwise.
-    249 /
-    250 public static int stringToWeekdayCode(String s) {
-    251
-    252 final String[] shortWeekdayNames
-    253 = DATE_FORMAT_SYMBOLS.getShortWeekdays();
-    254 final String[] weekDayNames = DATE_FORMAT_SYMBOLS.getWeekdays();
-    255
-    256 int result = -1;
-    257 s = s.trim();
-    258 for (int i = 0; i < weekDayNames.length; i++) {
-    259 if (s.equals(shortWeekdayNames[i])) {
-    260 result = i;
-    261 break;
-    262 }
-    263 if (s.equals(weekDayNames[i])) {
-    264 result = i;
-    265 break;
-    266 }
-    267 }
-    268 return result;
-    269
-    270 }
-    271
-    272 /*
-    273 * Returns a string representing the supplied day-of-the-week.
-    274 * 
-    275 * Need to find a better approach.
-    276 *
-    277 * @param weekday the day of the week.
-    278 *
-    279 * @return a string representing the supplied day-of-the-week.
-    280 /
-    281 public static String weekdayCodeToString(final int weekday) {
-    282
-    283 final String[] weekdays = DATE_FORMAT_SYMBOLS.getWeekdays();
-    284 return weekdays[weekday];
-    285
-    286 }
-    287
-    288 /*
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    354 Appendix B: org.jfree.date.SerialDate
-    289 * Returns an array of month names.
-    290 *
-    291 * @return an array of month names.
-    292 /
-    293 public static String[] getMonths() {
-    294
-    295 return getMonths(false);
-    296
-    297 }
-    298
-    299 /*
-    300 * Returns an array of month names.
-    301 *
-    302 * @param shortened a flag indicating that shortened month names should
-    303 * be returned.
-    304 *
-    305 * @return an array of month names.
-    306 /
-    307 public static String[] getMonths(final boolean shortened) {
-    308
-    309 if (shortened) {
-    310 return DATE_FORMAT_SYMBOLS.getShortMonths();
-    311 }
-    312 else {
-    313 return DATE_FORMAT_SYMBOLS.getMonths();
-    314 }
-    315
-    316 }
-    317
-    318 /*
-    319 * Returns true if the supplied integer code represents a valid month.
-    320 *
-    321 * @param code the code being checked for validity.
-    322 *
-    323 * @return true if the supplied integer code represents a
-    324 * valid month.
-    325 /
-    326 public static boolean isValidMonthCode(final int code) {
-    327
-    328 switch(code) {
-    329 case JANUARY:
-    330 case FEBRUARY:
-    331 case MARCH:
-    332 case APRIL:
-    333 case MAY:
-    334 case JUNE:
-    335 case JULY:
-    336 case AUGUST:
-    337 case SEPTEMBER:
-    338 case OCTOBER:
-    339 case NOVEMBER:
-    340 case DECEMBER:
-    341 return true;
-    342 default:
-    343 return false;
-    344 }
-    345
-    346 }
-    347
-    348 /*
-    349 * Returns the quarter for the specified month.
-    350 *
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 355
-    351 * @param code the month code (1-12).
-    352 *
-    353 * @return the quarter that the month belongs to.
-    354 * @throws java.lang.IllegalArgumentException
-    355 /
-    356 public static int monthCodeToQuarter(final int code) {
-    357
-    358 switch(code) {
-    359 case JANUARY:
-    360 case FEBRUARY:
-    361 case MARCH: return 1;
-    362 case APRIL:
-    363 case MAY:
-    364 case JUNE: return 2;
-    365 case JULY:
-    366 case AUGUST:
-    367 case SEPTEMBER: return 3;
-    368 case OCTOBER:
-    369 case NOVEMBER:
-    370 case DECEMBER: return 4;
-    371 default: throw new IllegalArgumentException(
-    372 "SerialDate.monthCodeToQuarter: invalid month code.");
-    373 }
-    374
-    375 }
-    376
-    377 /*
-    378 * Returns a string representing the supplied month.
-    379 * 
-    380 * The string returned is the long form of the month name taken from the
-    381 * default locale.
-    382 *
-    383 * @param month the month.
-    384 *
-    385 * @return a string representing the supplied month.
-    386 /
-    387 public static String monthCodeToString(final int month) {
-    388
-    389 return monthCodeToString(month, false);
-    390
-    391 }
-    392
-    393 /*
-    394 * Returns a string representing the supplied month.
-    395 * 
-    396 * The string returned is the long or short form of the month name taken
-    397 * from the default locale.
-    398 *
-    399 * @param month the month.
-    400 * @param shortened if true return the abbreviation of the
-    401 * month.
-    402 *
-    403 * @return a string representing the supplied month.
-    404 * @throws java.lang.IllegalArgumentException
-    405 */
-    406 public static String monthCodeToString(final int month,
-    407 final boolean shortened) {
-    408
-    409 // check arguments...
-    410 if (!isValidMonthCode(month)) {
-    411 throw new IllegalArgumentException(
-    412 "SerialDate.monthCodeToString: month outside valid range.");
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    356 Appendix B: org.jfree.date.SerialDate
-    413 }
-    414
-    415 final String[] months;
-    416
-    417 if (shortened) {
-    418 months = DATE_FORMAT_SYMBOLS.getShortMonths();
-    419 }
-    420 else {
-    421 months = DATE_FORMAT_SYMBOLS.getMonths();
-    422 }
-    423
-    424 return months[month - 1];
-    425
-    426 }
-    427
-    428 /**
-    429 * Converts a string to a month code.
-    430 * 
-    431 * This method will return one of the constants JANUARY, FEBRUARY, ...,
-    432 * DECEMBER that corresponds to the string. If the string is not
-    433 * recognised, this method returns -1.
-    434 *
-    435 * @param s the string to parse.
-    436 *
-    437 * @return -1 if the string is not parseable, the month of the
-    438 * year otherwise.
-    439 /
-    440 public static int stringToMonthCode(String s) {
-    441
-    442 final String[] shortMonthNames = DATE_FORMAT_SYMBOLS.getShortMonths();
-    443 final String[] monthNames = DATE_FORMAT_SYMBOLS.getMonths();
-    444
-    445 int result = -1;
-    446 s = s.trim();
-    447
-    448 // first try parsing the string as an integer (1-12)...
-    449 try {
-    450 result = Integer.parseInt(s);
-    451 }
-    452 catch (NumberFormatException e) {
-    453 // suppress
-    454 }
-    455
-    456 // now search through the month names...
-    457 if ((result < 1) || (result > 12)) {
-    458 for (int i = 0; i < monthNames.length; i++) {
-    459 if (s.equals(shortMonthNames[i])) {
-    460 result = i + 1;
-    461 break;
-    462 }
-    463 if (s.equals(monthNames[i])) {
-    464 result = i + 1;
-    465 break;
-    466 }
-    467 }
-    468 }
-    469
-    470 return result;
-    471
-    472 }
-    473
-    474 /*
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 357
-    475 * Returns true if the supplied integer code represents a valid
-    476 * week-in-the-month, and false otherwise.
-    477 *
-    478 * @param code the code being checked for validity.
-    479 * @return true if the supplied integer code represents a
-    480 * valid week-in-the-month.
-    481 /
-    482 public static boolean isValidWeekInMonthCode(final int code) {
-    483
-    484 switch(code) {
-    485 case FIRST_WEEK_IN_MONTH:
-    486 case SECOND_WEEK_IN_MONTH:
-    487 case THIRD_WEEK_IN_MONTH:
-    488 case FOURTH_WEEK_IN_MONTH:
-    489 case LAST_WEEK_IN_MONTH: return true;
-    490 default: return false;
-    491 }
-    492
-    493 }
-    494
-    495 /*
-    496 * Determines whether or not the specified year is a leap year.
-    497 *
-    498 * @param yyyy the year (in the range 1900 to 9999).
-    499 *
-    500 * @return true if the specified year is a leap year.
-    501 /
-    502 public static boolean isLeapYear(final int yyyy) {
-    503
-    504 if ((yyyy % 4) != 0) {
-    505 return false;
-    506 }
-    507 else if ((yyyy % 400) == 0) {
-    508 return true;
-    509 }
-    510 else if ((yyyy % 100) == 0) {
-    511 return false;
-    512 }
-    513 else {
-    514 return true;
-    515 }
-    516
-    517 }
-    518
-    519 /*
-    520 * Returns the number of leap years from 1900 to the specified year
-    521 * INCLUSIVE.
-    522 * 
-    523 * Note that 1900 is not a leap year.
-    524 *
-    525 * @param yyyy the year (in the range 1900 to 9999).
-    526 *
-    527 * @return the number of leap years from 1900 to the specified year.
-    528 */
-    529 public static int leapYearCount(final int yyyy) {
-    530
-    531 final int leap4 = (yyyy - 1896) / 4;
-    532 final int leap100 = (yyyy - 1800) / 100;
-    533 final int leap400 = (yyyy - 1600) / 400;
-    534 return leap4 - leap100 + leap400;
-    535
-    536 }
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    358 Appendix B: org.jfree.date.SerialDate
-    537
-    538 /**
-    539 * Returns the number of the last day of the month, taking into account
-    540 * leap years.
-    541 *
-    542 * @param month the month.
-    543 * @param yyyy the year (in the range 1900 to 9999).
-    544 *
-    545 * @return the number of the last day of the month.
-    546 /
-    547 public static int lastDayOfMonth(final int month, final int yyyy) {
-    548
-    549 final int result = LAST_DAY_OF_MONTH[month];
-    550 if (month != FEBRUARY) {
-    551 return result;
-    552 }
-    553 else if (isLeapYear(yyyy)) {
-    554 return result + 1;
-    555 }
-    556 else {
-    557 return result;
-    558 }
-    559
-    560 }
-    561
-    562 /*
-    563 * Creates a new date by adding the specified number of days to the base
-    564 * date.
-    565 *
-    566 * @param days the number of days to add (can be negative).
-    567 * @param base the base date.
-    568 *
-    569 * @return a new date.
-    570 /
-    571 public static SerialDate addDays(final int days, final SerialDate base) {
-    572
-    573 final int serialDayNumber = base.toSerial() + days;
-    574 return SerialDate.createInstance(serialDayNumber);
-    575
-    576 }
-    577
-    578 /*
-    579 * Creates a new date by adding the specified number of months to the base
-    580 * date.
-    581 * 
-    582 * If the base date is close to the end of the month, the day on the result
-    583 * may be adjusted slightly: 31 May + 1 month = 30 June.
-    584 *
-    585 * @param months the number of months to add (can be negative).
-    586 * @param base the base date.
-    587 *
-    588 * @return a new date.
-    589 */
-    590 public static SerialDate addMonths(final int months,
-    591 final SerialDate base) {
-    592
-    593 final int yy = (12 * base.getYYYY() + base.getMonth() + months - 1)
-    594 / 12;
-    595 final int mm = (12 * base.getYYYY() + base.getMonth() + months - 1)
-    596 % 12 + 1;
-    597 final int dd = Math.min(
-    598 base.getDayOfMonth(), SerialDate.lastDayOfMonth(mm, yy)
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 359
-    599 );
-    600 return SerialDate.createInstance(dd, mm, yy);
-    601
-    602 }
-    603
-    604 /**
-    605 * Creates a new date by adding the specified number of years to the base
-    606 * date.
-    607 *
-    608 * @param years the number of years to add (can be negative).
-    609 * @param base the base date.
-    610 *
-    611 * @return A new date.
-    612 /
-    613 public static SerialDate addYears(final int years, final SerialDate base) {
-    614
-    615 final int baseY = base.getYYYY();
-    616 final int baseM = base.getMonth();
-    617 final int baseD = base.getDayOfMonth();
-    618
-    619 final int targetY = baseY + years;
-    620 final int targetD = Math.min(
-    621 baseD, SerialDate.lastDayOfMonth(baseM, targetY)
-    622 );
-    623
-    624 return SerialDate.createInstance(targetD, baseM, targetY);
-    625
-    626 }
-    627
-    628 /*
-    629 * Returns the latest date that falls on the specified day-of-the-week and
-    630 * is BEFORE the base date.
-    631 *
-    632 * @param targetWeekday a code for the target day-of-the-week.
-    633 * @param base the base date.
-    634 *
-    635 * @return the latest date that falls on the specified day-of-the-week and
-    636 * is BEFORE the base date.
-    637 */
-    638 public static SerialDate getPreviousDayOfWeek(final int targetWeekday,
-    639 final SerialDate base) {
-    640
-    641 // check arguments...
-    642 if (!SerialDate.isValidWeekdayCode(targetWeekday)) {
-    643 throw new IllegalArgumentException(
-    644 "Invalid day-of-the-week code."
-    645 );
-    646 }
-    647
-    648 // find the date...
-    649 final int adjust;
-    650 final int baseDOW = base.getDayOfWeek();
-    651 if (baseDOW > targetWeekday) {
-    652 adjust = Math.min(0, targetWeekday - baseDOW);
-    653 }
-    654 else {
-    655 adjust = -7 + Math.max(0, targetWeekday - baseDOW);
-    656 }
-    657
-    658 return SerialDate.addDays(adjust, base);
-    659
-    660 }
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    360 Appendix B: org.jfree.date.SerialDate
-    661
-    662 /**
-    663 * Returns the earliest date that falls on the specified day-of-the-week
-    664 * and is AFTER the base date.
-    665 *
-    666 * @param targetWeekday a code for the target day-of-the-week.
-    667 * @param base the base date.
-    668 *
-    669 * @return the earliest date that falls on the specified day-of-the-week
-    670 * and is AFTER the base date.
-    671 /
-    672 public static SerialDate getFollowingDayOfWeek(final int targetWeekday,
-    673 final SerialDate base) {
-    674
-    675 // check arguments...
-    676 if (!SerialDate.isValidWeekdayCode(targetWeekday)) {
-    677 throw new IllegalArgumentException(
-    678 "Invalid day-of-the-week code."
-    679 );
-    680 }
-    681
-    682 // find the date...
-    683 final int adjust;
-    684 final int baseDOW = base.getDayOfWeek();
-    685 if (baseDOW > targetWeekday) {
-    686 adjust = 7 + Math.min(0, targetWeekday - baseDOW);
-    687 }
-    688 else {
-    689 adjust = Math.max(0, targetWeekday - baseDOW);
-    690 }
-    691
-    692 return SerialDate.addDays(adjust, base);
-    693 }
-    694
-    695 /*
-    696 * Returns the date that falls on the specified day-of-the-week and is
-    697 * CLOSEST to the base date.
-    698 *
-    699 * @param targetDOW a code for the target day-of-the-week.
-    700 * @param base the base date.
-    701 *
-    702 * @return the date that falls on the specified day-of-the-week and is
-    703 * CLOSEST to the base date.
-    704 */
-    705 public static SerialDate getNearestDayOfWeek(final int targetDOW,
-    706 final SerialDate base) {
-    707
-    708 // check arguments...
-    709 if (!SerialDate.isValidWeekdayCode(targetDOW)) {
-    710 throw new IllegalArgumentException(
-    711 "Invalid day-of-the-week code."
-    712 );
-    713 }
-    714
-    715 // find the date...
-    716 final int baseDOW = base.getDayOfWeek();
-    717 int adjust = -Math.abs(targetDOW - baseDOW);
-    718 if (adjust >= 4) {
-    719 adjust = 7 - adjust;
-    720 }
-    721 if (adjust <= -4) {
-    722 adjust = 7 + adjust;
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 361
-    723 }
-    724 return SerialDate.addDays(adjust, base);
-    725
-    726 }
-    727
-    728 /**
-    729 * Rolls the date forward to the last day of the month.
-    730 *
-    731 * @param base the base date.
-    732 *
-    733 * @return a new serial date.
-    734 /
-    735 public SerialDate getEndOfCurrentMonth(final SerialDate base) {
-    736 final int last = SerialDate.lastDayOfMonth(
-    737 base.getMonth(), base.getYYYY()
-    738 );
-    739 return SerialDate.createInstance(last, base.getMonth(), base.getYYYY());
-    740 }
-    741
-    742 /*
-    743 * Returns a string corresponding to the week-in-the-month code.
-    744 * 
-    745 * Need to find a better approach.
-    746 *
-    747 * @param count an integer code representing the week-in-the-month.
-    748 *
-    749 * @return a string corresponding to the week-in-the-month code.
-    750 /
-    751 public static String weekInMonthToString(final int count) {
-    752
-    753 switch (count) {
-    754 case SerialDate.FIRST_WEEK_IN_MONTH : return "First";
-    755 case SerialDate.SECOND_WEEK_IN_MONTH : return "Second";
-    756 case SerialDate.THIRD_WEEK_IN_MONTH : return "Third";
-    757 case SerialDate.FOURTH_WEEK_IN_MONTH : return "Fourth";
-    758 case SerialDate.LAST_WEEK_IN_MONTH : return "Last";
-    759 default :
-    760 return "SerialDate.weekInMonthToString(): invalid code.";
-    761 }
-    762
-    763 }
-    764
-    765 /*
-    766 * Returns a string representing the supplied 'relative'.
-    767 * 
-    768 * Need to find a better approach.
-    769 *
-    770 * @param relative a constant representing the 'relative'.
-    771 *
-    772 * @return a string representing the supplied 'relative'.
-    773 */
-    774 public static String relativeToString(final int relative) {
-    775
-    776 switch (relative) {
-    777 case SerialDate.PRECEDING : return "Preceding";
-    778 case SerialDate.NEAREST : return "Nearest";
-    779 case SerialDate.FOLLOWING : return "Following";
-    780 default : return "ERROR : Relative To String";
-    781 }
-    782
-    783 }
-    784
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    362 Appendix B: org.jfree.date.SerialDate
-    785 /**
-    786 * Factory method that returns an instance of some concrete subclass of
-    787 * {@link SerialDate}.
-    788 *
-    789 * @param day the day (1-31).
-    790 * @param month the month (1-12).
-    791 * @param yyyy the year (in the range 1900 to 9999).
-    792 *
-    793 * @return An instance of {@link SerialDate}.
-    794 /
-    795 public static SerialDate createInstance(final int day, final int month,
-    796 final int yyyy) {
-    797 return new SpreadsheetDate(day, month, yyyy);
-    798 }
-    799
-    800 /*
-    801 * Factory method that returns an instance of some concrete subclass of
-    802 * {@link SerialDate}.
-    803 *
-    804 * @param serial the serial number for the day (1 January 1900 = 2).
-    805 *
-    806 * @return a instance of SerialDate.
-    807 /
-    808 public static SerialDate createInstance(final int serial) {
-    809 return new SpreadsheetDate(serial);
-    810 }
-    811
-    812 /*
-    813 * Factory method that returns an instance of a subclass of SerialDate.
-    814 *
-    815 * @param date A Java date object.
-    816 *
-    817 * @return a instance of SerialDate.
-    818 /
-    819 public static SerialDate createInstance(final java.util.Date date) {
-    820
-    821 final GregorianCalendar calendar = new GregorianCalendar();
-    822 calendar.setTime(date);
-    823 return new SpreadsheetDate(calendar.get(Calendar.DATE),
-    824 calendar.get(Calendar.MONTH) + 1,
-    825 calendar.get(Calendar.YEAR));
-    826
-    827 }
-    828
-    829 /*
-    830 * Returns the serial number for the date, where 1 January 1900 = 2 (this
-    831 * corresponds, almost, to the numbering system used in Microsoft Excel for
-    832 * Windows and Lotus 1-2-3).
-    833 *
-    834 * @return the serial number for the date.
-    835 /
-    836 public abstract int toSerial();
-    837
-    838 /*
-    839 * Returns a java.util.Date. Since java.util.Date has more precision than
-    840 * SerialDate, we need to define a convention for the 'time of day'.
-    841 *
-    842 * @return this as java.util.Date.
-    843 /
-    844 public abstract java.util.Date toDate();
-    845
-    846 /*
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 363
-    847 * Returns a description of the date.
-    848 *
-    849 * @return a description of the date.
-    850 /
-    851 public String getDescription() {
-    852 return this.description;
-    853 }
-    854
-    855 /*
-    856 * Sets the description for the date.
-    857 *
-    858 * @param description the new description for the date.
-    859 /
-    860 public void setDescription(final String description) {
-    861 this.description = description;
-    862 }
-    863
-    864 /*
-    865 * Converts the date to a string.
-    866 *
-    867 * @return a string representation of the date.
-    868 /
-    869 public String toString() {
-    870 return getDayOfMonth() + "-" + SerialDate.monthCodeToString(getMonth())
-    871 + "-" + getYYYY();
-    872 }
-    873
-    874 /*
-    875 * Returns the year (assume a valid range of 1900 to 9999).
-    876 *
-    877 * @return the year.
-    878 /
-    879 public abstract int getYYYY();
-    880
-    881 /*
-    882 * Returns the month (January = 1, February = 2, March = 3).
-    883 *
-    884 * @return the month of the year.
-    885 /
-    886 public abstract int getMonth();
-    887
-    888 /*
-    889 * Returns the day of the month.
-    890 *
-    891 * @return the day of the month.
-    892 /
-    893 public abstract int getDayOfMonth();
-    894
-    895 /*
-    896 * Returns the day of the week.
-    897 *
-    898 * @return the day of the week.
-    899 /
-    900 public abstract int getDayOfWeek();
-    901
-    902 /*
-    903 * Returns the difference (in days) between this date and the specified
-    904 * 'other' date.
-    905 * 
-    906 * The result is positive if this date is after the 'other' date and
-    907 * negative if it is before the 'other' date.
-    908 *
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    364 Appendix B: org.jfree.date.SerialDate
-    909 * @param other the date being compared to.
-    910 *
-    911 * @return the difference between this and the other date.
-    912 /
-    913 public abstract int compare(SerialDate other);
-    914
-    915 /*
-    916 * Returns true if this SerialDate represents the same date as the
-    917 * specified SerialDate.
-    918 *
-    919 * @param other the date being compared to.
-    920 *
-    921 * @return true if this SerialDate represents the same date as
-    922 * the specified SerialDate.
-    923 /
-    924 public abstract boolean isOn(SerialDate other);
-    925
-    926 /*
-    927 * Returns true if this SerialDate represents an earlier date compared to
-    928 * the specified SerialDate.
-    929 *
-    930 * @param other The date being compared to.
-    931 *
-    932 * @return true if this SerialDate represents an earlier date
-    933 * compared to the specified SerialDate.
-    934 /
-    935 public abstract boolean isBefore(SerialDate other);
-    936
-    937 /*
-    938 * Returns true if this SerialDate represents the same date as the
-    939 * specified SerialDate.
-    940 *
-    941 * @param other the date being compared to.
-    942 *
-    943 * @return true if this SerialDate represents the same date
-    944 * as the specified SerialDate.
-    945 /
-    946 public abstract boolean isOnOrBefore(SerialDate other);
-    947
-    948 /*
-    949 * Returns true if this SerialDate represents the same date as the
-    950 * specified SerialDate.
-    951 *
-    952 * @param other the date being compared to.
-    953 *
-    954 * @return true if this SerialDate represents the same date
-    955 * as the specified SerialDate.
-    956 /
-    957 public abstract boolean isAfter(SerialDate other);
-    958
-    959 /*
-    960 * Returns true if this SerialDate represents the same date as the
-    961 * specified SerialDate.
-    962 *
-    963 * @param other the date being compared to.
-    964 *
-    965 * @return true if this SerialDate represents the same date
-    966 * as the specified SerialDate.
-    967 /
-    968 public abstract boolean isOnOrAfter(SerialDate other);
-    969
-    970 /*
-    971 * Returns true if this {@link SerialDate} is within the
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    Appendix B: org.jfree.date.SerialDate 365
-    972 * specified range (INCLUSIVE). The date order of d1 and d2 is not
-    973 * important.
-    974 *
-    975 * @param d1 a boundary date for the range.
-    976 * @param d2 the other boundary date for the range.
-    977 *
-    978 * @return A boolean.
-    979 /
-    980 public abstract boolean isInRange(SerialDate d1, SerialDate d2);
-    981
-    982 /*
-    983 * Returns true if this {@link SerialDate} is within the
-    984 * specified range (caller specifies whether or not the end-points are
-    985 * included). The date order of d1 and d2 is not important.
-    986 *
-    987 * @param d1 a boundary date for the range.
-    988 * @param d2 the other boundary date for the range.
-    989 * @param include a code that controls whether or not the start and end
-    990 * dates are included in the range.
-    991 *
-    992 * @return A boolean.
-    993 /
-    994 public abstract boolean isInRange(SerialDate d1, SerialDate d2,
-    995 int include);
-    996
-    997 /*
-    998 * Returns the latest date that falls on the specified day-of-the-week and
-    999 * is BEFORE this date.
-    1000 *
-    1001 * @param targetDOW a code for the target day-of-the-week.
-    1002 *
-    1003 * @return the latest date that falls on the specified day-of-the-week and
-    1004 * is BEFORE this date.
-    1005 /
-    1006 public SerialDate getPreviousDayOfWeek(final int targetDOW) {
-    1007 return getPreviousDayOfWeek(targetDOW, this);
-    1008 }
-    1009
-    1010 /*
-    1011 * Returns the earliest date that falls on the specified day-of-the-week
-    1012 * and is AFTER this date.
-    1013 *
-    1014 * @param targetDOW a code for the target day-of-the-week.
-    1015 *
-    1016 * @return the earliest date that falls on the specified day-of-the-week
-    1017 * and is AFTER this date.
-    1018 /
-    1019 public SerialDate getFollowingDayOfWeek(final int targetDOW) {
-    1020 return getFollowingDayOfWeek(targetDOW, this);
-    1021 }
-    1022
-    1023 /*
-    1024 * Returns the nearest date that falls on the specified day-of-the-week.
-    1025 *
-    1026 * @param targetDOW a code for the target day-of-the-week.
-    1027 *
-    1028 * @return the nearest date that falls on the specified day-of-the-week.
-    1029 */
-    1030 public SerialDate getNearestDayOfWeek(final int targetDOW) {
-    1031 return getNearestDayOfWeek(targetDOW, this);
-    1032 }
-    1033
-    1034 }
-    Listing B-1 (continued)
-    SerialDate.Java
-
-    366 Appendix B: org.jfree.date.SerialDate
-    Listing B-2
-    SerialDateTest.java
-    1 /* ========================================================================
-    2 * JCommon : a free general purpose class library for the Java(tm) platform
-    3 * ========================================================================
-    4 *
-    5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    6 *
-    7 * Project Info: http://www.jfree.org/jcommon/index.html
-    8 *
-    9 * This library is free software; you can redistribute it and/or modify it
-    10 * under the terms of the GNU Lesser General Public License as published by
-    11 * the Free Software Foundation; either version 2.1 of the License, or
-    12 * (at your option) any later version.
-    13 *
-    14 * This library is distributed in the hope that it will be useful, but
-    15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-    16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
-    17 * License for more details.
-    18 *
-    19 * You should have received a copy of the GNU Lesser General Public
-    20 * License along with this library; if not, write to the Free Software
-    21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
-    22 * USA.
-    23 *
-    24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
-    25 * in the United States and other countries.]
-    26 *
-    27 * --------------------
-    28 * SerialDateTests.java
-    29 * --------------------
-    30 * (C) Copyright 2001-2005, by Object Refinery Limited.
-    31 *
-    32 * Original Author: David Gilbert (for Object Refinery Limited);
-    33 * Contributor(s): -;
-    34 *
-    35 * $Id: SerialDateTests.java,v 1.6 2005/11/16 15:58:40 taqua Exp $
-    36 *
-    37 * Changes
-    38 * -------
-    39 * 15-Nov-2001 : Version 1 (DG);
-    40 * 25-Jun-2002 : Removed unnecessary import (DG);
-    41 * 24-Oct-2002 : Fixed errors reported by Checkstyle (DG);
-    42 * 13-Mar-2003 : Added serialization test (DG);
-    43 * 05-Jan-2005 : Added test for bug report 1096282 (DG);
-    44 *
-    45 */
-    46
-    47 package org.jfree.date.junit;
-    48
-    49 import java.io.ByteArrayInputStream;
-    50 import java.io.ByteArrayOutputStream;
-    51 import java.io.ObjectInput;
-    52 import java.io.ObjectInputStream;
-    53 import java.io.ObjectOutput;
-    54 import java.io.ObjectOutputStream;
-    55
-    56 import junit.framework.Test;
-    57 import junit.framework.TestCase;
-    58 import junit.framework.TestSuite;
-    59
-    60 import org.jfree.date.MonthConstants;
-    61 import org.jfree.date.SerialDate;
-    62
-    Appendix B: org.jfree.date.SerialDate 367
-    63 /**
-    64 * Some JUnit tests for the {@link SerialDate} class.
-    65 /
-    66 public class SerialDateTests extends TestCase {
-    67
-    68 /* Date representing November 9. /
-    69 private SerialDate nov9Y2001;
-    70
-    71 /*
-    72 * Creates a new test case.
-    73 *
-    74 * @param name the name.
-    75 /
-    76 public SerialDateTests(final String name) {
-    77 super(name);
-    78 }
-    79
-    80 /*
-    81 * Returns a test suite for the JUnit test runner.
-    82 *
-    83 * @return The test suite.
-    84 /
-    85 public static Test suite() {
-    86 return new TestSuite(SerialDateTests.class);
-    87 }
-    88
-    89 /*
-    90 * Problem set up.
-    91 /
-    92 protected void setUp() {
-    93 this.nov9Y2001 = SerialDate.createInstance(9, MonthConstants.NOVEMBER, 2001);
-    94 }
-    95
-    96 /*
-    97 * 9 Nov 2001 plus two months should be 9 Jan 2002.
-    98 /
-    99 public void testAddMonthsTo9Nov2001() {
-    100 final SerialDate jan9Y2002 = SerialDate.addMonths(2, this.nov9Y2001);
-    101 final SerialDate answer = SerialDate.createInstance(9, 1, 2002);
-    102 assertEquals(answer, jan9Y2002);
-    103 }
-    104
-    105 /*
-    106 * A test case for a reported bug, now fixed.
-    107 /
-    108 public void testAddMonthsTo5Oct2003() {
-    109 final SerialDate d1 = SerialDate.createInstance(5, MonthConstants.OCTOBER, 2003);
-    110 final SerialDate d2 = SerialDate.addMonths(2, d1);
-    111 assertEquals(d2, SerialDate.createInstance(5, MonthConstants.DECEMBER, 2003));
-    112 }
-    113
-    114 /*
-    115 * A test case for a reported bug, now fixed.
-    116 /
-    117 public void testAddMonthsTo1Jan2003() {
-    118 final SerialDate d1 = SerialDate.createInstance(1, MonthConstants.JANUARY, 2003);
-    119 final SerialDate d2 = SerialDate.addMonths(0, d1);
-    120 assertEquals(d2, d1);
-    121 }
-    122
-    123 /*
-    124 * Monday preceding Friday 9 November 2001 should be 5 November.
-    Listing B-2 (continued)
-    SerialDateTest.java
-
-    368 Appendix B: org.jfree.date.SerialDate
-    125 /
-    126 public void testMondayPrecedingFriday9Nov2001() {
-    127 SerialDate mondayBefore = SerialDate.getPreviousDayOfWeek(
-    128 SerialDate.MONDAY, this.nov9Y2001
-    129 );
-    130 assertEquals(5, mondayBefore.getDayOfMonth());
-    131 }
-    132
-    133 /*
-    134 * Monday following Friday 9 November 2001 should be 12 November.
-    135 /
-    136 public void testMondayFollowingFriday9Nov2001() {
-    137 SerialDate mondayAfter = SerialDate.getFollowingDayOfWeek(
-    138 SerialDate.MONDAY, this.nov9Y2001
-    139 );
-    140 assertEquals(12, mondayAfter.getDayOfMonth());
-    141 }
-    142
-    143 /*
-    144 * Monday nearest Friday 9 November 2001 should be 12 November.
-    145 /
-    146 public void testMondayNearestFriday9Nov2001() {
-    147 SerialDate mondayNearest = SerialDate.getNearestDayOfWeek(
-    148 SerialDate.MONDAY, this.nov9Y2001
-    149 );
-    150 assertEquals(12, mondayNearest.getDayOfMonth());
-    151 }
-    152
-    153 /*
-    154 * The Monday nearest to 22nd January 1970 falls on the 19th.
-    155 /
-    156 public void testMondayNearest22Jan1970() {
-    157 SerialDate jan22Y1970 = SerialDate.createInstance(22, MonthConstants.JANUARY, 1970);
-    158 SerialDate mondayNearest=SerialDate.getNearestDayOfWeek(SerialDate.MONDAY, jan22Y1970);
-    159 assertEquals(19, mondayNearest.getDayOfMonth());
-    160 }
-    161
-    162 /*
-    163 * Problem that the conversion of days to strings returns the right result. Actually, this
-    164 * result depends on the Locale so this test needs to be modified.
-    165 /
-    166 public void testWeekdayCodeToString() {
-    167
-    168 final String test = SerialDate.weekdayCodeToString(SerialDate.SATURDAY);
-    169 assertEquals("Saturday", test);
-    170
-    171 }
-    172
-    173 /*
-    174 * Test the conversion of a string to a weekday. Note that this test will fail if the
-    175 * default locale doesn't use English weekday names...devise a better test!
-    176 */
-    177 public void testStringToWeekday() {
-    178
-    179 int weekday = SerialDate.stringToWeekdayCode("Wednesday");
-    180 assertEquals(SerialDate.WEDNESDAY, weekday);
-    181
-    182 weekday = SerialDate.stringToWeekdayCode(" Wednesday ");
-    183 assertEquals(SerialDate.WEDNESDAY, weekday);
-    184
-    Listing B-2 (continued)
-    SerialDateTest.java
-
-    Appendix B: org.jfree.date.SerialDate 369
-    185 weekday = SerialDate.stringToWeekdayCode("Wed");
-    186 assertEquals(SerialDate.WEDNESDAY, weekday);
-    187
-    188 }
-    189
-    190 /**
-    191 * Test the conversion of a string to a month. Note that this test will fail if the
-    192 * default locale doesn't use English month names...devise a better test!
-    193 /
-    194 public void testStringToMonthCode() {
-    195
-    196 int m = SerialDate.stringToMonthCode("January");
-    197 assertEquals(MonthConstants.JANUARY, m);
-    198
-    199 m = SerialDate.stringToMonthCode(" January ");
-    200 assertEquals(MonthConstants.JANUARY, m);
-    201
-    202 m = SerialDate.stringToMonthCode("Jan");
-    203 assertEquals(MonthConstants.JANUARY, m);
-    204
-    205 }
-    206
-    207 /*
-    208 * Tests the conversion of a month code to a string.
-    209 /
-    210 public void testMonthCodeToStringCode() {
-    211
-    212 final String test = SerialDate.monthCodeToString(MonthConstants.DECEMBER);
-    213 assertEquals("December", test);
-    214
-    215 }
-    216
-    217 /*
-    218 * 1900 is not a leap year.
-    219 /
-    220 public void testIsNotLeapYear1900() {
-    221 assertTrue(!SerialDate.isLeapYear(1900));
-    222 }
-    223
-    224 /*
-    225 * 2000 is a leap year.
-    226 /
-    227 public void testIsLeapYear2000() {
-    228 assertTrue(SerialDate.isLeapYear(2000));
-    229 }
-    230
-    231 /*
-    232 * The number of leap years from 1900 up-to-and-including 1899 is 0.
-    233 /
-    234 public void testLeapYearCount1899() {
-    235 assertEquals(SerialDate.leapYearCount(1899), 0);
-    236 }
-    237
-    238 /*
-    239 * The number of leap years from 1900 up-to-and-including 1903 is 0.
-    240 /
-    241 public void testLeapYearCount1903() {
-    242 assertEquals(SerialDate.leapYearCount(1903), 0);
-    243 }
-    244
-    245 /*
-    246 * The number of leap years from 1900 up-to-and-including 1904 is 1.
-    247 */
-    Listing B-2 (continued)
-    SerialDateTest.java
-
-    370 Appendix B: org.jfree.date.SerialDate
-    248 public void testLeapYearCount1904() {
-    249 assertEquals(SerialDate.leapYearCount(1904), 1);
-    250 }
-    251
-    252 /**
-    253 * The number of leap years from 1900 up-to-and-including 1999 is 24.
-    254 /
-    255 public void testLeapYearCount1999() {
-    256 assertEquals(SerialDate.leapYearCount(1999), 24);
-    257 }
-    258
-    259 /*
-    260 * The number of leap years from 1900 up-to-and-including 2000 is 25.
-    261 /
-    262 public void testLeapYearCount2000() {
-    263 assertEquals(SerialDate.leapYearCount(2000), 25);
-    264 }
-    265
-    266 /*
-    267 * Serialize an instance, restore it, and check for equality.
-    268 /
-    269 public void testSerialization() {
-    270
-    271 SerialDate d1 = SerialDate.createInstance(15, 4, 2000);
-    272 SerialDate d2 = null;
-    273
-    274 try {
-    275 ByteArrayOutputStream buffer = new ByteArrayOutputStream();
-    276 ObjectOutput out = new ObjectOutputStream(buffer);
-    277 out.writeObject(d1);
-    278 out.close();
-    279
-    280 ObjectInput in = new ObjectInputStream(
-    new ByteArrayInputStream(buffer.toByteArray()));
-    281 d2 = (SerialDate) in.readObject();
-    282 in.close();
-    283 }
-    284 catch (Exception e) {
-    285 System.out.println(e.toString());
-    286 }
-    287 assertEquals(d1, d2);
-    288
-    289 }
-    290
-    291 /*
-    292 * A test for bug report 1096282 (now fixed).
-    293 /
-    294 public void test1096282() {
-    295 SerialDate d = SerialDate.createInstance(29, 2, 2004);
-    296 d = SerialDate.addYears(1, d);
-    297 SerialDate expected = SerialDate.createInstance(28, 2, 2005);
-    298 assertTrue(d.isOn(expected));
-    299 }
-    300
-    301 /*
-    302 * Miscellaneous tests for the addMonths() method.
-    303 */
-    304 public void testAddMonths() {
-    305 SerialDate d1 = SerialDate.createInstance(31, 5, 2004);
-    306
-    Listing B-2 (continued)
-    SerialDateTest.java
-
-    Appendix B: org.jfree.date.SerialDate 371
-    307 SerialDate d2 = SerialDate.addMonths(1, d1);
-    308 assertEquals(30, d2.getDayOfMonth());
-    309 assertEquals(6, d2.getMonth());
-    310 assertEquals(2004, d2.getYYYY());
-    311
-    312 SerialDate d3 = SerialDate.addMonths(2, d1);
-    313 assertEquals(31, d3.getDayOfMonth());
-    314 assertEquals(7, d3.getMonth());
-    315 assertEquals(2004, d3.getYYYY());
-    316
-    317 SerialDate d4 = SerialDate.addMonths(1, SerialDate.addMonths(1, d1));
-    318 assertEquals(30, d4.getDayOfMonth());
-    319 assertEquals(7, d4.getMonth());
-    320 assertEquals(2004, d4.getYYYY());
-    321 }
-    322 }
-    Listing B-2 (continued)
-    SerialDateTest.java
-
-    372 Appendix B: org.jfree.date.SerialDate
-    Listing B-3
-    MonthConstants.java
-    1 /* ========================================================================
-    2 * JCommon : a free general purpose class library for the Java(tm) platform
-    3 * ========================================================================
-    4 *
-    5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    6 *
-    7 * Project Info: http://www.jfree.org/jcommon/index.html
-    8 *
-    9 * This library is free software; you can redistribute it and/or modify it
-    10 * under the terms of the GNU Lesser General Public License as published by
-    11 * the Free Software Foundation; either version 2.1 of the License, or
-    12 * (at your option) any later version.
-    13 *
-    14 * This library is distributed in the hope that it will be useful, but
-    15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-    16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
-    17 * License for more details.
-    18 *
-    19 * You should have received a copy of the GNU Lesser General Public
-    20 * License along with this library; if not, write to the Free Software
-    21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
-    22 * USA.
-    23 *
-    24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
-    25 * in the United States and other countries.]
-    26 *
-    27 * -------------------
-    28 * MonthConstants.java
-    29 * -------------------
-    30 * (C) Copyright 2002, 2003, by Object Refinery Limited.
-    31 *
-    32 * Original Author: David Gilbert (for Object Refinery Limited);
-    33 * Contributor(s): -;
-    34 *
-    35 * $Id: MonthConstants.java,v 1.4 2005/11/16 15:58:40 taqua Exp $
-    36 *
-    37 * Changes
-    38 * -------
-    39 * 29-May-2002 : Version 1 (code moved from SerialDate class) (DG);
-    40 *
-    41 /
-    42
-    43 package org.jfree.date;
-    44
-    45 /*
-    46 * Useful constants for months. Note that these are NOT equivalent to the
-    47 * constants defined by java.util.Calendar (where JANUARY=0 and DECEMBER=11).
-    48 * 
-    49 * Used by the SerialDate and RegularTimePeriod classes.
-    50 *
-    51 * @author David Gilbert
-    52 /
-    53 public interface MonthConstants {
-    54
-    55 /* Constant for January. /
-    56 public static final int JANUARY = 1;
-    57
-    58 /* Constant for February. */
-    59 public static final int FEBRUARY = 2;
-    60
-    Appendix B: org.jfree.date.SerialDate 373
-    61 /** Constant for March. /
-    62 public static final int MARCH = 3;
-    63
-    64 /* Constant for April. /
-    65 public static final int APRIL = 4;
-    66
-    67 /* Constant for May. /
-    68 public static final int MAY = 5;
-    69
-    70 /* Constant for June. /
-    71 public static final int JUNE = 6;
-    72
-    73 /* Constant for July. /
-    74 public static final int JULY = 7;
-    75
-    76 /* Constant for August. /
-    77 public static final int AUGUST = 8;
-    78
-    79 /* Constant for September. /
-    80 public static final int SEPTEMBER = 9;
-    81
-    82 /* Constant for October. /
-    83 public static final int OCTOBER = 10;
-    84
-    85 /* Constant for November. /
-    86 public static final int NOVEMBER = 11;
-    87
-    88 /* Constant for December. */
-    89 public static final int DECEMBER = 12;
-    90
-    91 }
-    Listing B-3 (continued)
-    MonthConstants.java
-
-    374 Appendix B: org.jfree.date.SerialDate
-    Listing B-4
-    BobsSerialDateTest.java
-    1 package org.jfree.date.junit;
-    2
-    3 import junit.framework.TestCase;
-    4 import org.jfree.date.;
-    5 import static org.jfree.date.SerialDate.;
-    6
-    7 import java.util.*;
-    8
-    9 public class BobsSerialDateTest extends TestCase {
-    10
-    11 public void testIsValidWeekdayCode() throws Exception {
-    12 for (int day = 1; day <= 7; day++)
-    13 assertTrue(isValidWeekdayCode(day));
-    14 assertFalse(isValidWeekdayCode(0));
-    15 assertFalse(isValidWeekdayCode(8));
-    16 }
-    17
-    18 public void testStringToWeekdayCode() throws Exception {
-    19
-    20 assertEquals(-1, stringToWeekdayCode("Hello"));
-    21 assertEquals(MONDAY, stringToWeekdayCode("Monday"));
-    22 assertEquals(MONDAY, stringToWeekdayCode("Mon"));
-    23 //todo assertEquals(MONDAY,stringToWeekdayCode("monday"));
-    24 // assertEquals(MONDAY,stringToWeekdayCode("MONDAY"));
-    25 // assertEquals(MONDAY, stringToWeekdayCode("mon"));
-    26
-    27 assertEquals(TUESDAY, stringToWeekdayCode("Tuesday"));
-    28 assertEquals(TUESDAY, stringToWeekdayCode("Tue"));
-    29 // assertEquals(TUESDAY,stringToWeekdayCode("tuesday"));
-    30 // assertEquals(TUESDAY,stringToWeekdayCode("TUESDAY"));
-    31 // assertEquals(TUESDAY, stringToWeekdayCode("tue"));
-    32 // assertEquals(TUESDAY, stringToWeekdayCode("tues"));
-    33
-    34 assertEquals(WEDNESDAY, stringToWeekdayCode("Wednesday"));
-    35 assertEquals(WEDNESDAY, stringToWeekdayCode("Wed"));
-    36 // assertEquals(WEDNESDAY,stringToWeekdayCode("wednesday"));
-    37 // assertEquals(WEDNESDAY,stringToWeekdayCode("WEDNESDAY"));
-    38 // assertEquals(WEDNESDAY, stringToWeekdayCode("wed"));
-    39
-    40 assertEquals(THURSDAY, stringToWeekdayCode("Thursday"));
-    41 assertEquals(THURSDAY, stringToWeekdayCode("Thu"));
-    42 // assertEquals(THURSDAY,stringToWeekdayCode("thursday"));
-    43 // assertEquals(THURSDAY,stringToWeekdayCode("THURSDAY"));
-    44 // assertEquals(THURSDAY, stringToWeekdayCode("thu"));
-    45 // assertEquals(THURSDAY, stringToWeekdayCode("thurs"));
-    46
-    47 assertEquals(FRIDAY, stringToWeekdayCode("Friday"));
-    48 assertEquals(FRIDAY, stringToWeekdayCode("Fri"));
-    49 // assertEquals(FRIDAY,stringToWeekdayCode("friday"));
-    50 // assertEquals(FRIDAY,stringToWeekdayCode("FRIDAY"));
-    51 // assertEquals(FRIDAY, stringToWeekdayCode("fri"));
-    52
-    53 assertEquals(SATURDAY, stringToWeekdayCode("Saturday"));
-    54 assertEquals(SATURDAY, stringToWeekdayCode("Sat"));
-    55 // assertEquals(SATURDAY,stringToWeekdayCode("saturday"));
-    56 // assertEquals(SATURDAY,stringToWeekdayCode("SATURDAY"));
-    57 // assertEquals(SATURDAY, stringToWeekdayCode("sat"));
-    58
-    59 assertEquals(SUNDAY, stringToWeekdayCode("Sunday"));
-    60 assertEquals(SUNDAY, stringToWeekdayCode("Sun"));
-    61 // assertEquals(SUNDAY,stringToWeekdayCode("sunday"));
-    62 // assertEquals(SUNDAY,stringToWeekdayCode("SUNDAY"));
-    63 // assertEquals(SUNDAY, stringToWeekdayCode("sun"));
-    64 }
-    65
-    Appendix B: org.jfree.date.SerialDate 375
-    66 public void testWeekdayCodeToString() throws Exception {
-    67 assertEquals("Sunday", weekdayCodeToString(SUNDAY));
-    68 assertEquals("Monday", weekdayCodeToString(MONDAY));
-    69 assertEquals("Tuesday", weekdayCodeToString(TUESDAY));
-    70 assertEquals("Wednesday", weekdayCodeToString(WEDNESDAY));
-    71 assertEquals("Thursday", weekdayCodeToString(THURSDAY));
-    72 assertEquals("Friday", weekdayCodeToString(FRIDAY));
-    73 assertEquals("Saturday", weekdayCodeToString(SATURDAY));
-    74 }
-    75
-    76 public void testIsValidMonthCode() throws Exception {
-    77 for (int i = 1; i <= 12; i++)
-    78 assertTrue(isValidMonthCode(i));
-    79 assertFalse(isValidMonthCode(0));
-    80 assertFalse(isValidMonthCode(13));
-    81 }
-    82
-    83 public void testMonthToQuarter() throws Exception {
-    84 assertEquals(1, monthCodeToQuarter(JANUARY));
-    85 assertEquals(1, monthCodeToQuarter(FEBRUARY));
-    86 assertEquals(1, monthCodeToQuarter(MARCH));
-    87 assertEquals(2, monthCodeToQuarter(APRIL));
-    88 assertEquals(2, monthCodeToQuarter(MAY));
-    89 assertEquals(2, monthCodeToQuarter(JUNE));
-    90 assertEquals(3, monthCodeToQuarter(JULY));
-    91 assertEquals(3, monthCodeToQuarter(AUGUST));
-    92 assertEquals(3, monthCodeToQuarter(SEPTEMBER));
-    93 assertEquals(4, monthCodeToQuarter(OCTOBER));
-    94 assertEquals(4, monthCodeToQuarter(NOVEMBER));
-    95 assertEquals(4, monthCodeToQuarter(DECEMBER));
-    96
-    97 try {
-    98 monthCodeToQuarter(-1);
-    99 fail("Invalid Month Code should throw exception");
-    100 } catch (IllegalArgumentException e) {
-    101 }
-    102 }
-    103
-    104 public void testMonthCodeToString() throws Exception {
-    105 assertEquals("January", monthCodeToString(JANUARY));
-    106 assertEquals("February", monthCodeToString(FEBRUARY));
-    107 assertEquals("March", monthCodeToString(MARCH));
-    108 assertEquals("April", monthCodeToString(APRIL));
-    109 assertEquals("May", monthCodeToString(MAY));
-    110 assertEquals("June", monthCodeToString(JUNE));
-    111 assertEquals("July", monthCodeToString(JULY));
-    112 assertEquals("August", monthCodeToString(AUGUST));
-    113 assertEquals("September", monthCodeToString(SEPTEMBER));
-    114 assertEquals("October", monthCodeToString(OCTOBER));
-    115 assertEquals("November", monthCodeToString(NOVEMBER));
-    116 assertEquals("December", monthCodeToString(DECEMBER));
-    117
-    118 assertEquals("Jan", monthCodeToString(JANUARY, true));
-    119 assertEquals("Feb", monthCodeToString(FEBRUARY, true));
-    120 assertEquals("Mar", monthCodeToString(MARCH, true));
-    121 assertEquals("Apr", monthCodeToString(APRIL, true));
-    122 assertEquals("May", monthCodeToString(MAY, true));
-    123 assertEquals("Jun", monthCodeToString(JUNE, true));
-    124 assertEquals("Jul", monthCodeToString(JULY, true));
-    125 assertEquals("Aug", monthCodeToString(AUGUST, true));
-    126 assertEquals("Sep", monthCodeToString(SEPTEMBER, true));
-    127 assertEquals("Oct", monthCodeToString(OCTOBER, true));
-    Listing B-4 (continued)
-    BobsSerialDateTest.java
-
-    376 Appendix B: org.jfree.date.SerialDate
-    128 assertEquals("Nov", monthCodeToString(NOVEMBER, true));
-    129 assertEquals("Dec", monthCodeToString(DECEMBER, true));
-    130
-    131 try {
-    132 monthCodeToString(-1);
-    133 fail("Invalid month code should throw exception");
-    134 } catch (IllegalArgumentException e) {
-    135 }
-    136
-    137 }
-    138
-    139 public void testStringToMonthCode() throws Exception {
-    140 assertEquals(JANUARY,stringToMonthCode("1"));
-    141 assertEquals(FEBRUARY,stringToMonthCode("2"));
-    142 assertEquals(MARCH,stringToMonthCode("3"));
-    143 assertEquals(APRIL,stringToMonthCode("4"));
-    144 assertEquals(MAY,stringToMonthCode("5"));
-    145 assertEquals(JUNE,stringToMonthCode("6"));
-    146 assertEquals(JULY,stringToMonthCode("7"));
-    147 assertEquals(AUGUST,stringToMonthCode("8"));
-    148 assertEquals(SEPTEMBER,stringToMonthCode("9"));
-    149 assertEquals(OCTOBER,stringToMonthCode("10"));
-    150 assertEquals(NOVEMBER, stringToMonthCode("11"));
-    151 assertEquals(DECEMBER,stringToMonthCode("12"));
-    152
-    153 //todo assertEquals(-1, stringToMonthCode("0"));
-    154 // assertEquals(-1, stringToMonthCode("13"));
-    155
-    156 assertEquals(-1,stringToMonthCode("Hello"));
-    157
-    158 for (int m = 1; m <= 12; m++) {
-    159 assertEquals(m, stringToMonthCode(monthCodeToString(m, false)));
-    160 assertEquals(m, stringToMonthCode(monthCodeToString(m, true)));
-    161 }
-    162
-    163 // assertEquals(1,stringToMonthCode("jan"));
-    164 // assertEquals(2,stringToMonthCode("feb"));
-    165 // assertEquals(3,stringToMonthCode("mar"));
-    166 // assertEquals(4,stringToMonthCode("apr"));
-    167 // assertEquals(5,stringToMonthCode("may"));
-    168 // assertEquals(6,stringToMonthCode("jun"));
-    169 // assertEquals(7,stringToMonthCode("jul"));
-    170 // assertEquals(8,stringToMonthCode("aug"));
-    171 // assertEquals(9,stringToMonthCode("sep"));
-    172 // assertEquals(10,stringToMonthCode("oct"));
-    173 // assertEquals(11,stringToMonthCode("nov"));
-    174 // assertEquals(12,stringToMonthCode("dec"));
-    175
-    176 // assertEquals(1,stringToMonthCode("JAN"));
-    177 // assertEquals(2,stringToMonthCode("FEB"));
-    178 // assertEquals(3,stringToMonthCode("MAR"));
-    179 // assertEquals(4,stringToMonthCode("APR"));
-    180 // assertEquals(5,stringToMonthCode("MAY"));
-    181 // assertEquals(6,stringToMonthCode("JUN"));
-    182 // assertEquals(7,stringToMonthCode("JUL"));
-    183 // assertEquals(8,stringToMonthCode("AUG"));
-    184 // assertEquals(9,stringToMonthCode("SEP"));
-    185 // assertEquals(10,stringToMonthCode("OCT"));
-    186 // assertEquals(11,stringToMonthCode("NOV"));
-    187 // assertEquals(12,stringToMonthCode("DEC"));
-    188
-    189 // assertEquals(1,stringToMonthCode("january"));
-    190 // assertEquals(2,stringToMonthCode("february"));
-    Listing B-4 (continued)
-    BobsSerialDateTest.java
-
-    Appendix B: org.jfree.date.SerialDate 377
-    191 // assertEquals(3,stringToMonthCode("march"));
-    192 // assertEquals(4,stringToMonthCode("april"));
-    193 // assertEquals(5,stringToMonthCode("may"));
-    194 // assertEquals(6,stringToMonthCode("june"));
-    195 // assertEquals(7,stringToMonthCode("july"));
-    196 // assertEquals(8,stringToMonthCode("august"));
-    197 // assertEquals(9,stringToMonthCode("september"));
-    198 // assertEquals(10,stringToMonthCode("october"));
-    199 // assertEquals(11,stringToMonthCode("november"));
-    200 // assertEquals(12,stringToMonthCode("december"));
-    201
-    202 // assertEquals(1,stringToMonthCode("JANUARY"));
-    203 // assertEquals(2,stringToMonthCode("FEBRUARY"));
-    204 // assertEquals(3,stringToMonthCode("MAR"));
-    205 // assertEquals(4,stringToMonthCode("APRIL"));
-    206 // assertEquals(5,stringToMonthCode("MAY"));
-    207 // assertEquals(6,stringToMonthCode("JUNE"));
-    208 // assertEquals(7,stringToMonthCode("JULY"));
-    209 // assertEquals(8,stringToMonthCode("AUGUST"));
-    210 // assertEquals(9,stringToMonthCode("SEPTEMBER"));
-    211 // assertEquals(10,stringToMonthCode("OCTOBER"));
-    212 // assertEquals(11,stringToMonthCode("NOVEMBER"));
-    213 // assertEquals(12,stringToMonthCode("DECEMBER"));
-    214 }
-    215
-    216 public void testIsValidWeekInMonthCode() throws Exception {
-    217 for (int w = 0; w <= 4; w++) {
-    218 assertTrue(isValidWeekInMonthCode(w));
-    219 }
-    220 assertFalse(isValidWeekInMonthCode(5));
-    221 }
-    222
-    223 public void testIsLeapYear() throws Exception {
-    224 assertFalse(isLeapYear(1900));
-    225 assertFalse(isLeapYear(1901));
-    226 assertFalse(isLeapYear(1902));
-    227 assertFalse(isLeapYear(1903));
-    228 assertTrue(isLeapYear(1904));
-    229 assertTrue(isLeapYear(1908));
-    230 assertFalse(isLeapYear(1955));
-    231 assertTrue(isLeapYear(1964));
-    232 assertTrue(isLeapYear(1980));
-    233 assertTrue(isLeapYear(2000));
-    234 assertFalse(isLeapYear(2001));
-    235 assertFalse(isLeapYear(2100));
-    236 }
-    237
-    238 public void testLeapYearCount() throws Exception {
-    239 assertEquals(0, leapYearCount(1900));
-    240 assertEquals(0, leapYearCount(1901));
-    241 assertEquals(0, leapYearCount(1902));
-    242 assertEquals(0, leapYearCount(1903));
-    243 assertEquals(1, leapYearCount(1904));
-    244 assertEquals(1, leapYearCount(1905));
-    245 assertEquals(1, leapYearCount(1906));
-    246 assertEquals(1, leapYearCount(1907));
-    247 assertEquals(2, leapYearCount(1908));
-    248 assertEquals(24, leapYearCount(1999));
-    249 assertEquals(25, leapYearCount(2001));
-    250 assertEquals(49, leapYearCount(2101));
-    251 assertEquals(73, leapYearCount(2201));
-    Listing B-4 (continued)
-    BobsSerialDateTest.java
-
-    378 Appendix B: org.jfree.date.SerialDate
-    252 assertEquals(97, leapYearCount(2301));
-    253 assertEquals(122, leapYearCount(2401));
-    254 }
-    255
-    256 public void testLastDayOfMonth() throws Exception {
-    257 assertEquals(31, lastDayOfMonth(JANUARY, 1901));
-    258 assertEquals(28, lastDayOfMonth(FEBRUARY, 1901));
-    259 assertEquals(31, lastDayOfMonth(MARCH, 1901));
-    260 assertEquals(30, lastDayOfMonth(APRIL, 1901));
-    261 assertEquals(31, lastDayOfMonth(MAY, 1901));
-    262 assertEquals(30, lastDayOfMonth(JUNE, 1901));
-    263 assertEquals(31, lastDayOfMonth(JULY, 1901));
-    264 assertEquals(31, lastDayOfMonth(AUGUST, 1901));
-    265 assertEquals(30, lastDayOfMonth(SEPTEMBER, 1901));
-    266 assertEquals(31, lastDayOfMonth(OCTOBER, 1901));
-    267 assertEquals(30, lastDayOfMonth(NOVEMBER, 1901));
-    268 assertEquals(31, lastDayOfMonth(DECEMBER, 1901));
-    269 assertEquals(29, lastDayOfMonth(FEBRUARY, 1904));
-    270 }
-    271
-    272 public void testAddDays() throws Exception {
-    273 SerialDate newYears = d(1, JANUARY, 1900);
-    274 assertEquals(d(2, JANUARY, 1900), addDays(1, newYears));
-    275 assertEquals(d(1, FEBRUARY, 1900), addDays(31, newYears));
-    276 assertEquals(d(1, JANUARY, 1901), addDays(365, newYears));
-    277 assertEquals(d(31, DECEMBER, 1904), addDays(5 * 365, newYears));
-    278 }
-    279
-    280 private static SpreadsheetDate d(int day, int month, int year) {return new
-    SpreadsheetDate(day, month, year);}
-    281
-    282 public void testAddMonths() throws Exception {
-    283 assertEquals(d(1, FEBRUARY, 1900), addMonths(1, d(1, JANUARY, 1900)));
-    284 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(31, JANUARY, 1900)));
-    285 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(30, JANUARY, 1900)));
-    286 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(29, JANUARY, 1900)));
-    287 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(28, JANUARY, 1900)));
-    288 assertEquals(d(27, FEBRUARY, 1900), addMonths(1, d(27, JANUARY, 1900)));
-    289
-    290 assertEquals(d(30, JUNE, 1900), addMonths(5, d(31, JANUARY, 1900)));
-    291 assertEquals(d(30, JUNE, 1901), addMonths(17, d(31, JANUARY, 1900)));
-    292
-    293 assertEquals(d(29, FEBRUARY, 1904), addMonths(49, d(31, JANUARY, 1900)));
-    294
-    295 }
-    296
-    297 public void testAddYears() throws Exception {
-    298 assertEquals(d(1, JANUARY, 1901), addYears(1, d(1, JANUARY, 1900)));
-    299 assertEquals(d(28, FEBRUARY, 1905), addYears(1, d(29, FEBRUARY, 1904)));
-    300 assertEquals(d(28, FEBRUARY, 1905), addYears(1, d(28, FEBRUARY, 1904)));
-    301 assertEquals(d(28, FEBRUARY, 1904), addYears(1, d(28, FEBRUARY, 1903)));
-    302 }
-    303
-    304 public void testGetPreviousDayOfWeek() throws Exception {
-    305 assertEquals(d(24, FEBRUARY, 2006), getPreviousDayOfWeek(FRIDAY, d(1, MARCH, 2006)));
-    306 assertEquals(d(22, FEBRUARY, 2006), getPreviousDayOfWeek(WEDNESDAY, d(1, MARCH, 2006)));
-    307 assertEquals(d(29, FEBRUARY, 2004), getPreviousDayOfWeek(SUNDAY, d(3, MARCH, 2004)));
-    308 assertEquals(d(29, DECEMBER, 2004), getPreviousDayOfWeek(WEDNESDAY, d(5, JANUARY, 2005)));
-    309
-    310 try {
-    311 getPreviousDayOfWeek(-1, d(1, JANUARY, 2006));
-    312 fail("Invalid day of week code should throw exception");
-    Listing B-4 (continued)
-    BobsSerialDateTest.java
-
-    Appendix B: org.jfree.date.SerialDate 379
-    313 } catch (IllegalArgumentException e) {
-    314 }
-    315 }
-    316
-    317 public void testGetFollowingDayOfWeek() throws Exception {
-    318 // assertEquals(d(1, JANUARY, 2005),getFollowingDayOfWeek(SATURDAY, d(25, DECEMBER, 2004)));
-    319 assertEquals(d(1, JANUARY, 2005), getFollowingDayOfWeek(SATURDAY, d(26, DECEMBER, 2004)));
-    320 assertEquals(d(3, MARCH, 2004), getFollowingDayOfWeek(WEDNESDAY, d(28, FEBRUARY, 2004)));
-    321
-    322 try {
-    323 getFollowingDayOfWeek(-1, d(1, JANUARY, 2006));
-    324 fail("Invalid day of week code should throw exception");
-    325 } catch (IllegalArgumentException e) {
-    326 }
-    327 }
-    328
-    329 public void testGetNearestDayOfWeek() throws Exception {
-    330 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(16, APRIL, 2006)));
-    331 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(17, APRIL, 2006)));
-    332 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(18, APRIL, 2006)));
-    333 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(19, APRIL, 2006)));
-    334 assertEquals(d(23, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(20, APRIL, 2006)));
-    335 assertEquals(d(23, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(21, APRIL, 2006)));
-    336 assertEquals(d(23, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(22, APRIL, 2006)));
-    337
-    338 //todo assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(16, APRIL, 2006)));
-    339 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(17, APRIL, 2006)));
-    340 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(18, APRIL, 2006)));
-    341 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(19, APRIL, 2006)));
-    342 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(20, APRIL, 2006)));
-    343 assertEquals(d(24, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(21, APRIL, 2006)));
-    344 assertEquals(d(24, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(22, APRIL, 2006)));
-    345
-    346 // assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(16, APRIL, 2006)));
-    347 // assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(17, APRIL, 2006)));
-    348 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(18, APRIL, 2006)));
-    349 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(19, APRIL, 2006)));
-    350 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(20, APRIL, 2006)));
-    351 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(21, APRIL, 2006)));
-    352 assertEquals(d(25, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(22, APRIL, 2006)));
-    353
-    354 // assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(16, APRIL, 2006)));
-    355 // assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(17, APRIL, 2006)));
-    356 // assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(18, APRIL, 2006)));
-    357 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(19, APRIL, 2006)));
-    358 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(20, APRIL, 2006)));
-    359 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(21, APRIL, 2006)));
-    360 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(22, APRIL, 2006)));
-    361
-    362 // assertEquals(d(13, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(16, APRIL, 2006)));
-    363 // assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(17, APRIL, 2006)));
-    364 // assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(18, APRIL, 2006)));
-    365 // assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(19, APRIL, 2006)));
-    366 assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(20, APRIL, 2006)));
-    367 assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(21, APRIL, 2006)));
-    368 assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(22, APRIL, 2006)));
-    369
-    370 // assertEquals(d(14, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(16, APRIL, 2006)));
-    371 // assertEquals(d(14, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(17, APRIL, 2006)));
-    372 // assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(18, APRIL, 2006)));
-    373 // assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(19, APRIL, 2006)));
-    374 // assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(20, APRIL, 2006)));
-    Listing B-4 (continued)
-    BobsSerialDateTest.java
-
-    380 Appendix B: org.jfree.date.SerialDate
-    375 assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(21, APRIL, 2006)));
-    376 assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(22, APRIL, 2006)));
-    377
-    378 // assertEquals(d(15, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(16, APRIL, 2006)));
-    379 // assertEquals(d(15, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(17, APRIL, 2006)));
-    380 // assertEquals(d(15, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(18, APRIL, 2006)));
-    381 // assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(19, APRIL, 2006)));
-    382 // assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(20, APRIL, 2006)));
-    383 // assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(21, APRIL, 2006)));
-    384 assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(22, APRIL, 2006)));
-    385
-    386 try {
-    387 getNearestDayOfWeek(-1, d(1, JANUARY, 2006));
-    388 fail("Invalid day of week code should throw exception");
-    389 } catch (IllegalArgumentException e) {
-    390 }
-    391 }
-    392
-    393 public void testEndOfCurrentMonth() throws Exception {
-    394 SerialDate d = SerialDate.createInstance(2);
-    395 assertEquals(d(31, JANUARY, 2006), d.getEndOfCurrentMonth(d(1, JANUARY, 2006)));
-    396 assertEquals(d(28, FEBRUARY, 2006), d.getEndOfCurrentMonth(d(1, FEBRUARY, 2006)));
-    397 assertEquals(d(31, MARCH, 2006), d.getEndOfCurrentMonth(d(1, MARCH, 2006)));
-    398 assertEquals(d(30, APRIL, 2006), d.getEndOfCurrentMonth(d(1, APRIL, 2006)));
-    399 assertEquals(d(31, MAY, 2006), d.getEndOfCurrentMonth(d(1, MAY, 2006)));
-    400 assertEquals(d(30, JUNE, 2006), d.getEndOfCurrentMonth(d(1, JUNE, 2006)));
-    401 assertEquals(d(31, JULY, 2006), d.getEndOfCurrentMonth(d(1, JULY, 2006)));
-    402 assertEquals(d(31, AUGUST, 2006), d.getEndOfCurrentMonth(d(1, AUGUST, 2006)));
-    403 assertEquals(d(30, SEPTEMBER, 2006), d.getEndOfCurrentMonth(d(1, SEPTEMBER, 2006)));
-    404 assertEquals(d(31, OCTOBER, 2006), d.getEndOfCurrentMonth(d(1, OCTOBER, 2006)));
-    405 assertEquals(d(30, NOVEMBER, 2006), d.getEndOfCurrentMonth(d(1, NOVEMBER, 2006)));
-    406 assertEquals(d(31, DECEMBER, 2006), d.getEndOfCurrentMonth(d(1, DECEMBER, 2006)));
-    407 assertEquals(d(29, FEBRUARY, 2008), d.getEndOfCurrentMonth(d(1, FEBRUARY, 2008)));
-    408 }
-    409
-    410 public void testWeekInMonthToString() throws Exception {
-    411 assertEquals("First",weekInMonthToString(FIRST_WEEK_IN_MONTH));
-    412 assertEquals("Second",weekInMonthToString(SECOND_WEEK_IN_MONTH));
-    413 assertEquals("Third",weekInMonthToString(THIRD_WEEK_IN_MONTH));
-    414 assertEquals("Fourth",weekInMonthToString(FOURTH_WEEK_IN_MONTH));
-    415 assertEquals("Last",weekInMonthToString(LAST_WEEK_IN_MONTH));
-    416
-    417 //todo try {
-    418 // weekInMonthToString(-1);
-    419 // fail("Invalid week code should throw exception");
-    420 // } catch (IllegalArgumentException e) {
-    421 // }
-    422 }
-    423
-    424 public void testRelativeToString() throws Exception {
-    425 assertEquals("Preceding",relativeToString(PRECEDING));
-    426 assertEquals("Nearest",relativeToString(NEAREST));
-    427 assertEquals("Following",relativeToString(FOLLOWING));
-    428
-    429 //todo try {
-    430 // relativeToString(-1000);
-    431 // fail("Invalid relative code should throw exception");
-    432 // } catch (IllegalArgumentException e) {
-    433 // }
-    434 }
-    435
-    Listing B-4 (continued)
-    BobsSerialDateTest.java
-
-    Appendix B: org.jfree.date.SerialDate 381
-    436 public void testCreateInstanceFromDDMMYYY() throws Exception {
-    437 SerialDate date = createInstance(1, JANUARY, 1900);
-    438 assertEquals(1,date.getDayOfMonth());
-    439 assertEquals(JANUARY,date.getMonth());
-    440 assertEquals(1900,date.getYYYY());
-    441 assertEquals(2,date.toSerial());
-    442 }
-    443
-    444 public void testCreateInstanceFromSerial() throws Exception {
-    445 assertEquals(d(1, JANUARY, 1900),createInstance(2));
-    446 assertEquals(d(1, JANUARY, 1901), createInstance(367));
-    447 }
-    448
-    449 public void testCreateInstanceFromJavaDate() throws Exception {
-    450 assertEquals(d(1, JANUARY, 1900),
-    createInstance(new GregorianCalendar(1900,0,1).getTime()));
-    451 assertEquals(d(1, JANUARY, 2006),
-    createInstance(new GregorianCalendar(2006,0,1).getTime()));
-    452 }
-    453
-    454 public static void main(String[] args) {
-    455 junit.textui.TestRunner.run(BobsSerialDateTest.class);
-    456 }
-    457 }
-    Listing B-4 (continued)
-    BobsSerialDateTest.java
-
-    382 Appendix B: org.jfree.date.SerialDate
-    Listing B-5
-    SpreadsheetDate.java
-    1 /* ========================================================================
-    2 * JCommon : a free general purpose class library for the Java(tm) platform
-    3 * ========================================================================
-    4 *
-    5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    6 *
-    7 * Project Info: http://www.jfree.org/jcommon/index.html
-    8 *
-    9 * This library is free software; you can redistribute it and/or modify it
-    10 * under the terms of the GNU Lesser General Public License as published by
-    11 * the Free Software Foundation; either version 2.1 of the License, or
-    12 * (at your option) any later version.
-    13 *
-    14 * This library is distributed in the hope that it will be useful, but
-    15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-    16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
-    17 * License for more details.
-    18 *
-    19 * You should have received a copy of the GNU Lesser General Public
-    20 * License along with this library; if not, write to the Free Software
-    21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
-    22 * USA.
-    23 *
-    24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
-    25 * in the United States and other countries.]
-    26 *
-    27 * --------------------
-    28 * SpreadsheetDate.java
-    29 * --------------------
-    30 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    31 *
-    32 * Original Author: David Gilbert (for Object Refinery Limited);
-    33 * Contributor(s): -;
-    34 *
-    35 * $Id: SpreadsheetDate.java,v 1.8 2005/11/03 09:25:39 mungady Exp $
-    36 *
-    37 * Changes
-    38 * -------
-    39 * 11-Oct-2001 : Version 1 (DG);
-    40 * 05-Nov-2001 : Added getDescription() and setDescription() methods (DG);
-    41 * 12-Nov-2001 : Changed name from ExcelDate.java to SpreadsheetDate.java (DG);
-    42 * Fixed a bug in calculating day, month and year from serial
-    43 * number (DG);
-    44 * 24-Jan-2002 : Fixed a bug in calculating the serial number from the day,
-    45 * month and year. Thanks to Trevor Hills for the report (DG);
-    46 * 29-May-2002 : Added equals(Object) method (SourceForge ID 558850) (DG);
-    47 * 03-Oct-2002 : Fixed errors reported by Checkstyle (DG);
-    48 * 13-Mar-2003 : Implemented Serializable (DG);
-    49 * 04-Sep-2003 : Completed isInRange() methods (DG);
-    50 * 05-Sep-2003 : Implemented Comparable (DG);
-    51 * 21-Oct-2003 : Added hashCode() method (DG);
-    52 *
-    53 /
-    54
-    55 package org.jfree.date;
-    56
-    57 import java.util.Calendar;
-    58 import java.util.Date;
-    59
-    60 /*
-    61 * Represents a date using an integer, in a similar fashion to the
-    62 * implementation in Microsoft Excel. The range of dates supported is
-    Appendix B: org.jfree.date.SerialDate 383
-    63 * 1-Jan-1900 to 31-Dec-9999.
-    64 * 
-    65 * Be aware that there is a deliberate bug in Excel that recognises the year
-    66 * 1900 as a leap year when in fact it is not a leap year. You can find more
-    67 * information on the Microsoft website in article Q181370:
-    68 * 
-    69 * http://support.microsoft.com/support/kb/articles/Q181/3/70.asp
-    70 * 
-    71 * Excel uses the convention that 1-Jan-1900 = 1. This class uses the
-    72 * convention 1-Jan-1900 = 2.
-    73 * The result is that the day number in this class will be different to the
-    74 * Excel figure for January and February 1900...but then Excel adds in an extra
-    75 * day (29-Feb-1900 which does not actually exist!) and from that point forward
-    76 * the day numbers will match.
-    77 *
-    78 * @author David Gilbert
-    79 /
-    80 public class SpreadsheetDate extends SerialDate {
-    81
-    82 /* For serialization. /
-    83 private static final long serialVersionUID = -2039586705374454461L;
-    84
-    85 /*
-    86 * The day number (1-Jan-1900 = 2, 2-Jan-1900 = 3, ..., 31-Dec-9999 =
-    87 * 2958465).
-    88 /
-    89 private int serial;
-    90
-    91 /* The day of the month (1 to 28, 29, 30 or 31 depending on the month). /
-    92 private int day;
-    93
-    94 /* The month of the year (1 to 12). /
-    95 private int month;
-    96
-    97 /* The year (1900 to 9999). /
-    98 private int year;
-    99
-    100 /* An optional description for the date. /
-    101 private String description;
-    102
-    103 /*
-    104 * Creates a new date instance.
-    105 *
-    106 * @param day the day (in the range 1 to 28/29/30/31).
-    107 * @param month the month (in the range 1 to 12).
-    108 * @param year the year (in the range 1900 to 9999).
-    109 */
-    110 public SpreadsheetDate(final int day, final int month, final int year) {
-    111
-    112 if ((year >= 1900) && (year <= 9999)) {
-    113 this.year = year;
-    114 }
-    115 else {
-    116 throw new IllegalArgumentException(
-    117 "The 'year' argument must be in range 1900 to 9999."
-    118 );
-    119 }
-    120
-    121 if ((month >= MonthConstants.JANUARY)
-    122 && (month <= MonthConstants.DECEMBER)) {
-    123 this.month = month;
-    124 }
-    Listing B-5 (continued)
-    SpreadsheetDate.java
-
-    384 Appendix B: org.jfree.date.SerialDate
-    125 else {
-    126 throw new IllegalArgumentException(
-    127 "The 'month' argument must be in the range 1 to 12."
-    128 );
-    129 }
-    130
-    131 if ((day >= 1) && (day <= SerialDate.lastDayOfMonth(month, year))) {
-    132 this.day = day;
-    133 }
-    134 else {
-    135 throw new IllegalArgumentException("Invalid 'day' argument.");
-    136 }
-    137
-    138 // the serial number needs to be synchronised with the day-month-year...
-    139 this.serial = calcSerial(day, month, year);
-    140
-    141 this.description = null;
-    142
-    143 }
-    144
-    145 /**
-    146 * Standard constructor - creates a new date object representing the
-    147 * specified day number (which should be in the range 2 to 2958465.
-    148 *
-    149 * @param serial the serial number for the day (range: 2 to 2958465).
-    150 /
-    151 public SpreadsheetDate(final int serial) {
-    152
-    153 if ((serial >= SERIAL_LOWER_BOUND) && (serial <= SERIAL_UPPER_BOUND)) {
-    154 this.serial = serial;
-    155 }
-    156 else {
-    157 throw new IllegalArgumentException(
-    158 "SpreadsheetDate: Serial must be in range 2 to 2958465.");
-    159 }
-    160
-    161 // the day-month-year needs to be synchronised with the serial number...
-    162 calcDayMonthYear();
-    163
-    164 }
-    165
-    166 /*
-    167 * Returns the description that is attached to the date. It is not
-    168 * required that a date have a description, but for some applications it
-    169 * is useful.
-    170 *
-    171 * @return The description that is attached to the date.
-    172 /
-    173 public String getDescription() {
-    174 return this.description;
-    175 }
-    176
-    177 /*
-    178 * Sets the description for the date.
-    179 *
-    180 * @param description the description for this date (null
-    181 * permitted).
-    182 */
-    183 public void setDescription(final String description) {
-    184 this.description = description;
-    185 }
-    186
-    Listing B-5 (continued)
-    SpreadsheetDate.java
-
-    Appendix B: org.jfree.date.SerialDate 385
-    187 /**
-    188 * Returns the serial number for the date, where 1 January 1900 = 2
-    189 * (this corresponds, almost, to the numbering system used in Microsoft
-    190 * Excel for Windows and Lotus 1-2-3).
-    191 *
-    192 * @return The serial number of this date.
-    193 /
-    194 public int toSerial() {
-    195 return this.serial;
-    196 }
-    197
-    198 /*
-    199 * Returns a java.util.Date equivalent to this date.
-    200 *
-    201 * @return The date.
-    202 /
-    203 public Date toDate() {
-    204 final Calendar calendar = Calendar.getInstance();
-    205 calendar.set(getYYYY(), getMonth() - 1, getDayOfMonth(), 0, 0, 0);
-    206 return calendar.getTime();
-    207 }
-    208
-    209 /*
-    210 * Returns the year (assume a valid range of 1900 to 9999).
-    211 *
-    212 * @return The year.
-    213 /
-    214 public int getYYYY() {
-    215 return this.year;
-    216 }
-    217
-    218 /*
-    219 * Returns the month (January = 1, February = 2, March = 3).
-    220 *
-    221 * @return The month of the year.
-    222 /
-    223 public int getMonth() {
-    224 return this.month;
-    225 }
-    226
-    227 /*
-    228 * Returns the day of the month.
-    229 *
-    230 * @return The day of the month.
-    231 /
-    232 public int getDayOfMonth() {
-    233 return this.day;
-    234 }
-    235
-    236 /*
-    237 * Returns a code representing the day of the week.
-    238 * 
-    239 * The codes are defined in the {@link SerialDate} class as:
-    240 * SUNDAY, MONDAY, TUESDAY,
-    241 * WEDNESDAY, THURSDAY, FRIDAY, and
-    242 * SATURDAY.
-    243 *
-    244 * @return A code representing the day of the week.
-    245 */
-    246 public int getDayOfWeek() {
-    247 return (this.serial + 6) % 7 + 1;
-    248 }
-    Listing B-5 (continued)
-    SpreadsheetDate.java
-
-    386 Appendix B: org.jfree.date.SerialDate
-    249
-    250 /**
-    251 * Tests the equality of this date with an arbitrary object.
-    252 * 
-    253 * This method will return true ONLY if the object is an instance of the
-    254 * {@link SerialDate} base class, and it represents the same day as this
-    255 * {@link SpreadsheetDate}.
-    256 *
-    257 * @param object the object to compare (null permitted).
-    258 *
-    259 * @return A boolean.
-    260 /
-    261 public boolean equals(final Object object) {
-    262
-    263 if (object instanceof SerialDate) {
-    264 final SerialDate s = (SerialDate) object;
-    265 return (s.toSerial() == this.toSerial());
-    266 }
-    267 else {
-    268 return false;
-    269 }
-    270
-    271 }
-    272
-    273 /*
-    274 * Returns a hash code for this object instance.
-    275 *
-    276 * @return A hash code.
-    277 /
-    278 public int hashCode() {
-    279 return toSerial();
-    280 }
-    281
-    282 /*
-    283 * Returns the difference (in days) between this date and the specified
-    284 * 'other' date.
-    285 *
-    286 * @param other the date being compared to.
-    287 *
-    288 * @return The difference (in days) between this date and the specified
-    289 * 'other' date.
-    290 /
-    291 public int compare(final SerialDate other) {
-    292 return this.serial - other.toSerial();
-    293 }
-    294
-    295 /*
-    296 * Implements the method required by the Comparable interface.
-    297 *
-    298 * @param other the other object (usually another SerialDate).
-    299 *
-    300 * @return A negative integer, zero, or a positive integer as this object
-    301 * is less than, equal to, or greater than the specified object.
-    302 /
-    303 public int compareTo(final Object other) {
-    304 return compare((SerialDate) other);
-    305 }
-    306
-    307 /*
-    308 * Returns true if this SerialDate represents the same date as the
-    309 * specified SerialDate.
-    310 *
-    Listing B-5 (continued)
-    SpreadsheetDate.java
-
-    Appendix B: org.jfree.date.SerialDate 387
-    311 * @param other the date being compared to.
-    312 *
-    313 * @return true if this SerialDate represents the same date as
-    314 * the specified SerialDate.
-    315 /
-    316 public boolean isOn(final SerialDate other) {
-    317 return (this.serial == other.toSerial());
-    318 }
-    319
-    320 /*
-    321 * Returns true if this SerialDate represents an earlier date compared to
-    322 * the specified SerialDate.
-    323 *
-    324 * @param other the date being compared to.
-    325 *
-    326 * @return true if this SerialDate represents an earlier date
-    327 * compared to the specified SerialDate.
-    328 /
-    329 public boolean isBefore(final SerialDate other) {
-    330 return (this.serial < other.toSerial());
-    331 }
-    332
-    333 /*
-    334 * Returns true if this SerialDate represents the same date as the
-    335 * specified SerialDate.
-    336 *
-    337 * @param other the date being compared to.
-    338 *
-    339 * @return true if this SerialDate represents the same date
-    340 * as the specified SerialDate.
-    341 /
-    342 public boolean isOnOrBefore(final SerialDate other) {
-    343 return (this.serial <= other.toSerial());
-    344 }
-    345
-    346 /*
-    347 * Returns true if this SerialDate represents the same date as the
-    348 * specified SerialDate.
-    349 *
-    350 * @param other the date being compared to.
-    351 *
-    352 * @return true if this SerialDate represents the same date
-    353 * as the specified SerialDate.
-    354 /
-    355 public boolean isAfter(final SerialDate other) {
-    356 return (this.serial > other.toSerial());
-    357 }
-    358
-    359 /*
-    360 * Returns true if this SerialDate represents the same date as the
-    361 * specified SerialDate.
-    362 *
-    363 * @param other the date being compared to.
-    364 *
-    365 * @return true if this SerialDate represents the same date as
-    366 * the specified SerialDate.
-    367 /
-    368 public boolean isOnOrAfter(final SerialDate other) {
-    369 return (this.serial >= other.toSerial());
-    370 }
-    371
-    372 /*
-    373 * Returns true if this {@link SerialDate} is within the
-    Listing B-5 (continued)
-    SpreadsheetDate.java
-
-    388 Appendix B: org.jfree.date.SerialDate
-    374 * specified range (INCLUSIVE). The date order of d1 and d2 is not
-    375 * important.
-    376 *
-    377 * @param d1 a boundary date for the range.
-    378 * @param d2 the other boundary date for the range.
-    379 *
-    380 * @return A boolean.
-    381 /
-    382 public boolean isInRange(final SerialDate d1, final SerialDate d2) {
-    383 return isInRange(d1, d2, SerialDate.INCLUDE_BOTH);
-    384 }
-    385
-    386 /*
-    387 * Returns true if this SerialDate is within the specified range (caller
-    388 * specifies whether or not the end-points are included). The order of d1
-    389 * and d2 is not important.
-    390 *
-    391 * @param d1 one boundary date for the range.
-    392 * @param d2 a second boundary date for the range.
-    393 * @param include a code that controls whether or not the start and end
-    394 * dates are included in the range.
-    395 *
-    396 * @return true if this SerialDate is within the specified
-    397 * range.
-    398 /
-    399 public boolean isInRange(final SerialDate d1, final SerialDate d2,
-    400 final int include) {
-    401 final int s1 = d1.toSerial();
-    402 final int s2 = d2.toSerial();
-    403 final int start = Math.min(s1, s2);
-    404 final int end = Math.max(s1, s2);
-    405
-    406 final int s = toSerial();
-    407 if (include == SerialDate.INCLUDE_BOTH) {
-    408 return (s >= start && s <= end);
-    409 }
-    410 else if (include == SerialDate.INCLUDE_FIRST) {
-    411 return (s >= start && s < end);
-    412 }
-    413 else if (include == SerialDate.INCLUDE_SECOND) {
-    414 return (s > start && s <= end);
-    415 }
-    416 else {
-    417 return (s > start && s < end);
-    418 }
-    419 }
-    420
-    421 /*
-    422 * Calculate the serial number from the day, month and year.
-    423 * 
-    424 * 1-Jan-1900 = 2.
-    425 *
-    426 * @param d the day.
-    427 * @param m the month.
-    428 * @param y the year.
-    429 *
-    430 * @return the serial number from the day, month and year.
-    431 */
-    432 private int calcSerial(final int d, final int m, final int y) {
-    433 final int yy = ((y - 1900) * 365) + SerialDate.leapYearCount(y - 1);
-    434 int mm = SerialDate.AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[m];
-    435 if (m > MonthConstants.FEBRUARY) {
-    Listing B-5 (continued)
-    SpreadsheetDate.java
-
-    Appendix B: org.jfree.date.SerialDate 389
-    436 if (SerialDate.isLeapYear(y)) {
-    437 mm = mm + 1;
-    438 }
-    439 }
-    440 final int dd = d;
-    441 return yy + mm + dd + 1;
-    442 }
-    443
-    444 /**
-    445 * Calculate the day, month and year from the serial number.
-    446 */
-    447 private void calcDayMonthYear() {
-    448
-    449 // get the year from the serial date
-    450 final int days = this.serial - SERIAL_LOWER_BOUND;
-    451 // overestimated because we ignored leap days
-    452 final int overestimatedYYYY = 1900 + (days / 365);
-    453 final int leaps = SerialDate.leapYearCount(overestimatedYYYY);
-    454 final int nonleapdays = days - leaps;
-    455 // underestimated because we overestimated years
-    456 int underestimatedYYYY = 1900 + (nonleapdays / 365);
-    457
-    458 if (underestimatedYYYY == overestimatedYYYY) {
-    459 this.year = underestimatedYYYY;
-    460 }
-    461 else {
-    462 int ss1 = calcSerial(1, 1, underestimatedYYYY);
-    463 while (ss1 <= this.serial) {
-    464 underestimatedYYYY = underestimatedYYYY + 1;
-    465 ss1 = calcSerial(1, 1, underestimatedYYYY);
-    466 }
-    467 this.year = underestimatedYYYY - 1;
-    468 }
-    469
-    470 final int ss2 = calcSerial(1, 1, this.year);
-    471
-    472 int[] daysToEndOfPrecedingMonth
-    473 = AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH;
-    474
-    475 if (isLeapYear(this.year)) {
-    476 daysToEndOfPrecedingMonth
-    477 = LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH;
-    478 }
-    479
-    480 // get the month from the serial date
-    481 int mm = 1;
-    482 int sss = ss2 + daysToEndOfPrecedingMonth[mm] - 1;
-    483 while (sss < this.serial) {
-    484 mm = mm + 1;
-    485 sss = ss2 + daysToEndOfPrecedingMonth[mm] - 1;
-    486 }
-    487 this.month = mm - 1;
-    488
-    489 // what's left is d(+1);
-    490 this.day = this.serial - ss2
-    491 - daysToEndOfPrecedingMonth[this.month] + 1;
-    492
-    493 }
-    494
-    495 }
-    Listing B-5 (continued)
-    SpreadsheetDate.java
-
-    390 Appendix B: org.jfree.date.SerialDate
-    Listing B-6
-    RelativeDayOfWeekRule.java
-    1 /* ========================================================================
-    2 * JCommon : a free general purpose class library for the Java(tm) platform
-    3 * ========================================================================
-    4 *
-    5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    6 *
-    7 * Project Info: http://www.jfree.org/jcommon/index.html
-    8 *
-    9 * This library is free software; you can redistribute it and/or modify it
-    10 * under the terms of the GNU Lesser General Public License as published by
-    11 * the Free Software Foundation; either version 2.1 of the License, or
-    12 * (at your option) any later version.
-    13 *
-    14 * This library is distributed in the hope that it will be useful, but
-    15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-    16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
-    17 * License for more details.
-    18 *
-    19 * You should have received a copy of the GNU Lesser General Public
-    20 * License along with this library; if not, write to the Free Software
-    21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
-    22 * USA.
-    23 *
-    24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
-    25 * in the United States and other countries.]
-    26 *
-    27 * --------------------------
-    28 * RelativeDayOfWeekRule.java
-    29 * --------------------------
-    30 * (C) Copyright 2000-2003, by Object Refinery Limited and Contributors.
-    31 *
-    32 * Original Author: David Gilbert (for Object Refinery Limited);
-    33 * Contributor(s): -;
-    34 *
-    35 * $Id: RelativeDayOfWeekRule.java,v 1.6 2005/11/16 15:58:40 taqua Exp $
-    36 *
-    37 * Changes (from 26-Oct-2001)
-    38 * --------------------------
-    39 * 26-Oct-2001 : Changed package to com.jrefinery.date.;
-    40 * 03-Oct-2002 : Fixed errors reported by Checkstyle (DG);
-    41 *
-    42 /
-    43
-    44 package org.jfree.date;
-    45
-    46 /
-    47 * An annual date rule that returns a date for each year based on (a) a
-    48 * reference rule; (b) a day of the week; and (c) a selection parameter
-    49 * (SerialDate.PRECEDING, SerialDate.NEAREST, SerialDate.FOLLOWING).
-    50 * 
-    51 * For example, Good Friday can be specified as 'the Friday PRECEDING Easter
-    52 * Sunday'.
-    53 *
-    54 * @author David Gilbert
-    55 /
-    56 public class RelativeDayOfWeekRule extends AnnualDateRule {
-    57
-    58 /* A reference to the annual date rule on which this rule is based. /
-    59 private AnnualDateRule subrule;
-    60
-    61 /*
-    62 * The day of the week (SerialDate.MONDAY, SerialDate.TUESDAY, and so on).
-    Appendix B: org.jfree.date.SerialDate 391
-    63 /
-    64 private int dayOfWeek;
-    65
-    66 /* Specifies which day of the week (PRECEDING, NEAREST or FOLLOWING). /
-    67 private int relative;
-    68
-    69 /*
-    70 * Default constructor - builds a rule for the Monday following 1 January.
-    71 /
-    72 public RelativeDayOfWeekRule() {
-    73 this(new DayAndMonthRule(), SerialDate.MONDAY, SerialDate.FOLLOWING);
-    74 }
-    75
-    76 /*
-    77 * Standard constructor - builds rule based on the supplied sub-rule.
-    78 *
-    79 * @param subrule the rule that determines the reference date.
-    80 * @param dayOfWeek the day-of-the-week relative to the reference date.
-    81 * @param relative indicates which day-of-the-week (preceding, nearest
-    82 * or following).
-    83 /
-    84 public RelativeDayOfWeekRule(final AnnualDateRule subrule,
-    85 final int dayOfWeek, final int relative) {
-    86 this.subrule = subrule;
-    87 this.dayOfWeek = dayOfWeek;
-    88 this.relative = relative;
-    89 }
-    90
-    91 /*
-    92 * Returns the sub-rule (also called the reference rule).
-    93 *
-    94 * @return The annual date rule that determines the reference date for this
-    95 * rule.
-    96 /
-    97 public AnnualDateRule getSubrule() {
-    98 return this.subrule;
-    99 }
-    100
-    101 /*
-    102 * Sets the sub-rule.
-    103 *
-    104 * @param subrule the annual date rule that determines the reference date
-    105 * for this rule.
-    106 /
-    107 public void setSubrule(final AnnualDateRule subrule) {
-    108 this.subrule = subrule;
-    109 }
-    110
-    111 /*
-    112 * Returns the day-of-the-week for this rule.
-    113 *
-    114 * @return the day-of-the-week for this rule.
-    115 /
-    116 public int getDayOfWeek() {
-    117 return this.dayOfWeek;
-    118 }
-    119
-    120 /*
-    121 * Sets the day-of-the-week for this rule.
-    122 *
-    123 * @param dayOfWeek the day-of-the-week (SerialDate.MONDAY,
-    124 * SerialDate.TUESDAY, and so on).
-    Listing B-6 (continued)
-    RelativeDayOfWeekRule.java
-
-    392 Appendix B: org.jfree.date.SerialDate
-    125 /
-    126 public void setDayOfWeek(final int dayOfWeek) {
-    127 this.dayOfWeek = dayOfWeek;
-    128 }
-    129
-    130 /*
-    131 * Returns the 'relative' attribute, that determines which
-    132 * day-of-the-week we are interested in (SerialDate.PRECEDING,
-    133 * SerialDate.NEAREST or SerialDate.FOLLOWING).
-    134 *
-    135 * @return The 'relative' attribute.
-    136 /
-    137 public int getRelative() {
-    138 return this.relative;
-    139 }
-    140
-    141 /*
-    142 * Sets the 'relative' attribute (SerialDate.PRECEDING, SerialDate.NEAREST,
-    143 * SerialDate.FOLLOWING).
-    144 *
-    145 * @param relative determines which day-of-the-week is selected by this
-    146 * rule.
-    147 /
-    148 public void setRelative(final int relative) {
-    149 this.relative = relative;
-    150 }
-    151
-    152 /*
-    153 * Creates a clone of this rule.
-    154 *
-    155 * @return a clone of this rule.
-    156 *
-    157 * @throws CloneNotSupportedException this should never happen.
-    158 /
-    159 public Object clone() throws CloneNotSupportedException {
-    160 final RelativeDayOfWeekRule duplicate
-    161 = (RelativeDayOfWeekRule) super.clone();
-    162 duplicate.subrule = (AnnualDateRule) duplicate.getSubrule().clone();
-    163 return duplicate;
-    164 }
-    165
-    166 /*
-    167 * Returns the date generated by this rule, for the specified year.
-    168 *
-    169 * @param year the year (1900 <= year <= 9999).
-    170 *
-    171 * @return The date generated by the rule for the given year (possibly
-    172 * null).
-    173 */
-    174 public SerialDate getDate(final int year) {
-    175
-    176 // check argument...
-    177 if ((year < SerialDate.MINIMUM_YEAR_SUPPORTED)
-    178 || (year > SerialDate.MAXIMUM_YEAR_SUPPORTED)) {
-    179 throw new IllegalArgumentException(
-    180 "RelativeDayOfWeekRule.getDate(): year outside valid range.");
-    181 }
-    182
-    183 // calculate the date...
-    184 SerialDate result = null;
-    185 final SerialDate base = this.subrule.getDate(year);
-    186
-    Listing B-6 (continued)
-    RelativeDayOfWeekRule.java
-
-    Appendix B: org.jfree.date.SerialDate 393
-    187 if (base != null) {
-    188 switch (this.relative) {
-    189 case(SerialDate.PRECEDING):
-    190 result = SerialDate.getPreviousDayOfWeek(this.dayOfWeek,
-    191 base);
-    192 break;
-    193 case(SerialDate.NEAREST):
-    194 result = SerialDate.getNearestDayOfWeek(this.dayOfWeek,
-    195 base);
-    196 break;
-    197 case(SerialDate.FOLLOWING):
-    198 result = SerialDate.getFollowingDayOfWeek(this.dayOfWeek,
-    199 base);
-    200 break;
-    201 default:
-    202 break;
-    203 }
-    204 }
-    205 return result;
-    206
-    207 }
-    208
-    209 }
-    Listing B-6 (continued)
-    RelativeDayOfWeekRule.java
-
-    394 Appendix B: org.jfree.date.SerialDate
-    Listing B-7
-    DayDate.java (Final)
-    1 /* ========================================================================
-    2 * JCommon : a free general purpose class library for the Java(tm) platform
-    3 * ========================================================================
-    4 *
-    5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    ...
-    36 /
-    37 package org.jfree.date;
-    38
-    39 import java.io.Serializable;
-    40 import java.util.;
-    41
-    42 /**
-    43 * An abstract class that represents immutable dates with a precision of
-    44 * one day. The implementation will map each date to an integer that
-    45 * represents an ordinal number of days from some fixed origin.
-    46 *
-    47 * Why not just use java.util.Date? We will, when it makes sense. At times,
-    48 * java.util.Date can be too precise - it represents an instant in time,
-    49 * accurate to 1/1000th of a second (with the date itself depending on the
-    50 * time-zone). Sometimes we just want to represent a particular day (e.g. 21
-    51 * January 2015) without concerning ourselves about the time of day, or the
-    52 * time-zone, or anything else. That's what we've defined DayDate for.
-    53 *
-    54 * Use DayDateFactory.makeDate to create an instance.
-    55 *
-    56 * @author David Gilbert
-    57 * @author Robert C. Martin did a lot of refactoring.
-    58 */
-    59
-    60 public abstract class DayDate implements Comparable, Serializable {
-    61 public abstract int getOrdinalDay();
-    62 public abstract int getYear();
-    63 public abstract Month getMonth();
-    64 public abstract int getDayOfMonth();
-    65
-    66 protected abstract Day getDayOfWeekForOrdinalZero();
-    67
-    68 public DayDate plusDays(int days) {
-    69 return DayDateFactory.makeDate(getOrdinalDay() + days);
-    70 }
-    71
-    72 public DayDate plusMonths(int months) {
-    73 int thisMonthAsOrdinal = getMonth().toInt() - Month.JANUARY.toInt();
-    74 int thisMonthAndYearAsOrdinal = 12 * getYear() + thisMonthAsOrdinal;
-    75 int resultMonthAndYearAsOrdinal = thisMonthAndYearAsOrdinal + months;
-    76 int resultYear = resultMonthAndYearAsOrdinal / 12;
-    77 int resultMonthAsOrdinal = resultMonthAndYearAsOrdinal % 12 + Month.JANUARY.toInt();
-    78 Month resultMonth = Month.fromInt(resultMonthAsOrdinal);
-    79 int resultDay = correctLastDayOfMonth(getDayOfMonth(), resultMonth, resultYear);
-    80 return DayDateFactory.makeDate(resultDay, resultMonth, resultYear);
-    81 }
-    82
-    83 public DayDate plusYears(int years) {
-    84 int resultYear = getYear() + years;
-    85 int resultDay = correctLastDayOfMonth(getDayOfMonth(), getMonth(), resultYear);
-    86 return DayDateFactory.makeDate(resultDay, getMonth(), resultYear);
-    87 }
-    88
-    89 private int correctLastDayOfMonth(int day, Month month, int year) {
-    90 int lastDayOfMonth = DateUtil.lastDayOfMonth(month, year);
-    91 if (day > lastDayOfMonth)
-    Appendix B: org.jfree.date.SerialDate 395
-    92 day = lastDayOfMonth;
-    93 return day;
-    94 }
-    95
-    96 public DayDate getPreviousDayOfWeek(Day targetDayOfWeek) {
-    97 int offsetToTarget = targetDayOfWeek.toInt() - getDayOfWeek().toInt();
-    98 if (offsetToTarget >= 0)
-    99 offsetToTarget -= 7;
-    100 return plusDays(offsetToTarget);
-    101 }
-    102
-    103 public DayDate getFollowingDayOfWeek(Day targetDayOfWeek) {
-    104 int offsetToTarget = targetDayOfWeek.toInt() - getDayOfWeek().toInt();
-    105 if (offsetToTarget <= 0)
-    106 offsetToTarget += 7;
-    107 return plusDays(offsetToTarget);
-    108 }
-    109
-    110 public DayDate getNearestDayOfWeek(Day targetDayOfWeek) {
-    111 int offsetToThisWeeksTarget = targetDayOfWeek.toInt() - getDayOfWeek().toInt();
-    112 int offsetToFutureTarget = (offsetToThisWeeksTarget + 7) % 7;
-    113 int offsetToPreviousTarget = offsetToFutureTarget - 7;
-    114
-    115 if (offsetToFutureTarget > 3)
-    116 return plusDays(offsetToPreviousTarget);
-    117 else
-    118 return plusDays(offsetToFutureTarget);
-    119 }
-    120
-    121 public DayDate getEndOfMonth() {
-    122 Month month = getMonth();
-    123 int year = getYear();
-    124 int lastDay = DateUtil.lastDayOfMonth(month, year);
-    125 return DayDateFactory.makeDate(lastDay, month, year);
-    126 }
-    127
-    128 public Date toDate() {
-    129 final Calendar calendar = Calendar.getInstance();
-    130 int ordinalMonth = getMonth().toInt() - Month.JANUARY.toInt();
-    131 calendar.set(getYear(), ordinalMonth, getDayOfMonth(), 0, 0, 0);
-    132 return calendar.getTime();
-    133 }
-    134
-    135 public String toString() {
-    136 return String.format("%02d-%s-%d", getDayOfMonth(), getMonth(), getYear());
-    137 }
-    138
-    139 public Day getDayOfWeek() {
-    140 Day startingDay = getDayOfWeekForOrdinalZero();
-    141 int startingOffset = startingDay.toInt() - Day.SUNDAY.toInt();
-    142 int ordinalOfDayOfWeek = (getOrdinalDay() + startingOffset) % 7;
-    143 return Day.fromInt(ordinalOfDayOfWeek + Day.SUNDAY.toInt());
-    144 }
-    145
-    146 public int daysSince(DayDate date) {
-    147 return getOrdinalDay() - date.getOrdinalDay();
-    148 }
-    149
-    150 public boolean isOn(DayDate other) {
-    151 return getOrdinalDay() == other.getOrdinalDay();
-    152 }
-    153
-    Listing B-7 (continued)
-    DayDate.java (Final)
-
-    396 Appendix B: org.jfree.date.SerialDate
-    154 public boolean isBefore(DayDate other) {
-    155 return getOrdinalDay() < other.getOrdinalDay();
-    156 }
-    157
-    158 public boolean isOnOrBefore(DayDate other) {
-    159 return getOrdinalDay() <= other.getOrdinalDay();
-    160 }
-    161
-    162 public boolean isAfter(DayDate other) {
-    163 return getOrdinalDay() > other.getOrdinalDay();
-    164 }
-    165
-    166 public boolean isOnOrAfter(DayDate other) {
-    167 return getOrdinalDay() >= other.getOrdinalDay();
-    168 }
-    169
-    170 public boolean isInRange(DayDate d1, DayDate d2) {
-    171 return isInRange(d1, d2, DateInterval.CLOSED);
-    172 }
-    173
-    174 public boolean isInRange(DayDate d1, DayDate d2, DateInterval interval) {
-    175 int left = Math.min(d1.getOrdinalDay(), d2.getOrdinalDay());
-    176 int right = Math.max(d1.getOrdinalDay(), d2.getOrdinalDay());
-    177 return interval.isIn(getOrdinalDay(), left, right);
-    178 }
-    179 }
-    Listing B-7 (continued)
-    DayDate.java (Final)
-
-    Appendix B: org.jfree.date.SerialDate 397
-    Listing B- 8
-    Month.java (Final)
-    1 package org.jfree.date;
-    2
-    3 import java.text.DateFormatSymbols;
-    4
-    5 public enum Month {
-    6 JANUARY(1), FEBRUARY(2), MARCH(3),
-    7 APRIL(4), MAY(5), JUNE(6),
-    8 JULY(7), AUGUST(8), SEPTEMBER(9),
-    9 OCTOBER(10),NOVEMBER(11),DECEMBER(12);
-    10 private static DateFormatSymbols dateFormatSymbols = new DateFormatSymbols();
-    11 private static final int[] LAST_DAY_OF_MONTH =
-    12 {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    13
-    14 private int index;
-    15
-    16 Month(int index) {
-    17 this.index = index;
-    18 }
-    19
-    20 public static Month fromInt(int monthIndex) {
-    21 for (Month m : Month.values()) {
-    22 if (m.index == monthIndex)
-    23 return m;
-    24 }
-    25 throw new IllegalArgumentException("Invalid month index " + monthIndex);
-    26 }
-    27
-    28 public int lastDay() {
-    29 return LAST_DAY_OF_MONTH[index];
-    30 }
-    31
-    32 public int quarter() {
-    33 return 1 + (index - 1) / 3;
-    34 }
-    35
-    36 public String toString() {
-    37 return dateFormatSymbols.getMonths()[index - 1];
-    38 }
-    39
-    40 public String toShortString() {
-    41 return dateFormatSymbols.getShortMonths()[index - 1];
-    42 }
-    43
-    44 public static Month parse(String s) {
-    45 s = s.trim();
-    46 for (Month m : Month.values())
-    47 if (m.matches(s))
-    48 return m;
-    49
-    50 try {
-    51 return fromInt(Integer.parseInt(s));
-    52 }
-    53 catch (NumberFormatException e) {}
-    54 throw new IllegalArgumentException("Invalid month " + s);
-    55 }
-    56
-    57 private boolean matches(String s) {
-    58 return s.equalsIgnoreCase(toString()) ||
-    59 s.equalsIgnoreCase(toShortString());
-    60 }
-    61
-    62 public int toInt() {
-    63 return index;
-    64 }
-    65 }
-    398 Appendix B: org.jfree.date.SerialDate
-    Listing B-9
-    Day.java (Final)
-    1 package org.jfree.date;
-    2
-    3 import java.util.Calendar;
-    4 import java.text.DateFormatSymbols;
-    5
-    6 public enum Day {
-    7 MONDAY(Calendar.MONDAY),
-    8 TUESDAY(Calendar.TUESDAY),
-    9 WEDNESDAY(Calendar.WEDNESDAY),
-    10 THURSDAY(Calendar.THURSDAY),
-    11 FRIDAY(Calendar.FRIDAY),
-    12 SATURDAY(Calendar.SATURDAY),
-    13 SUNDAY(Calendar.SUNDAY);
-    14
-    15 private final int index;
-    16 private static DateFormatSymbols dateSymbols = new DateFormatSymbols();
-    17
-    18 Day(int day) {
-    19 index = day;
-    20 }
-    21
-    22 public static Day fromInt(int index) throws IllegalArgumentException {
-    23 for (Day d : Day.values())
-    24 if (d.index == index)
-    25 return d;
-    26 throw new IllegalArgumentException(
-    27 String.format("Illegal day index: %d.", index));
-    28 }
-    29
-    30 public static Day parse(String s) throws IllegalArgumentException {
-    31 String[] shortWeekdayNames =
-    32 dateSymbols.getShortWeekdays();
-    33 String[] weekDayNames =
-    34 dateSymbols.getWeekdays();
-    35
-    36 s = s.trim();
-    37 for (Day day : Day.values()) {
-    38 if (s.equalsIgnoreCase(shortWeekdayNames[day.index]) ||
-    39 s.equalsIgnoreCase(weekDayNames[day.index])) {
-    40 return day;
-    41 }
-    42 }
-    43 throw new IllegalArgumentException(
-    44 String.format("%s is not a valid weekday string", s));
-    45 }
-    46
-    47 public String toString() {
-    48 return dateSymbols.getWeekdays()[index];
-    49 }
-    50
-    51 public int toInt() {
-    52 return index;
-    53 }
-    54 }
-    Appendix B: org.jfree.date.SerialDate 399
-    Listing B-10
-    DateInterval.java (Final)
-    1 package org.jfree.date;
-    2
-    3 public enum DateInterval {
-    4 OPEN {
-    5 public boolean isIn(int d, int left, int right) {
-    6 return d > left && d < right;
-    7 }
-    8 },
-    9 CLOSED_LEFT {
-    10 public boolean isIn(int d, int left, int right) {
-    11 return d >= left && d < right;
-    12 }
-    13 },
-    14 CLOSED_RIGHT {
-    15 public boolean isIn(int d, int left, int right) {
-    16 return d > left && d <= right;
-    17 }
-    18 },
-    19 CLOSED {
-    20 public boolean isIn(int d, int left, int right) {
-    21 return d >= left && d <= right;
-    22 }
-    23 };
-    24
-    25 public abstract boolean isIn(int d, int left, int right);
-    26 }
-    400 Appendix B: org.jfree.date.SerialDate
-    Listing B-11
-    WeekInMonth.java (Final)
-    1 package org.jfree.date;
-    2
-    3 public enum WeekInMonth {
-    4 FIRST(1), SECOND(2), THIRD(3), FOURTH(4), LAST(0);
-    5 private final int index;
-    6
-    7 WeekInMonth(int index) {
-    8 this.index = index;
-    9 }
-    10
-    11 public int toInt() {
-    12 return index;
-    13 }
-    14 }
-    Appendix B: org.jfree.date.SerialDate 401
-    Listing B-12
-    WeekdayRange.java (Final)
-    1 package org.jfree.date;
-    2
-    3 public enum WeekdayRange {
-    4 LAST, NEAREST, NEXT
-    5 }
-    402 Appendix B: org.jfree.date.SerialDate
-    Listing B-13
-    DateUtil.java (Final)
-    1 package org.jfree.date;
-    2
-    3 import java.text.DateFormatSymbols;
-    4
-    5 public class DateUtil {
-    6 private static DateFormatSymbols dateFormatSymbols = new DateFormatSymbols();
-    7
-    8 public static String[] getMonthNames() {
-    9 return dateFormatSymbols.getMonths();
-    10 }
-    11
-    12 public static boolean isLeapYear(int year) {
-    13 boolean fourth = year % 4 == 0;
-    14 boolean hundredth = year % 100 == 0;
-    15 boolean fourHundredth = year % 400 == 0;
-    16 return fourth && (!hundredth || fourHundredth);
-    17 }
-    18
-    19 public static int lastDayOfMonth(Month month, int year) {
-    20 if (month == Month.FEBRUARY && isLeapYear(year))
-    21 return month.lastDay() + 1;
-    22 else
-    23 return month.lastDay();
-    24 }
-    25
-    26 public static int leapYearCount(int year) {
-    27 int leap4 = (year - 1896) / 4;
-    28 int leap100 = (year - 1800) / 100;
-    29 int leap400 = (year - 1600) / 400;
-    30 return leap4 - leap100 + leap400;
-    31 }
-    32 }
-    Appendix B: org.jfree.date.SerialDate 403
-    Listing B-14
-    DayDateFactory.java (Final)
-    1 package org.jfree.date;
-    2
-    3 public abstract class DayDateFactory {
-    4 private static DayDateFactory factory = new SpreadsheetDateFactory();
-    5 public static void setInstance(DayDateFactory factory) {
-    6 DayDateFactory.factory = factory;
-    7 }
-    8
-    9 protected abstract DayDate _makeDate(int ordinal);
-    10 protected abstract DayDate _makeDate(int day, Month month, int year);
-    11 protected abstract DayDate _makeDate(int day, int month, int year);
-    12 protected abstract DayDate _makeDate(java.util.Date date);
-    13 protected abstract int _getMinimumYear();
-    14 protected abstract int _getMaximumYear();
-    15
-    16 public static DayDate makeDate(int ordinal) {
-    17 return factory._makeDate(ordinal);
-    18 }
-    19
-    20 public static DayDate makeDate(int day, Month month, int year) {
-    21 return factory._makeDate(day, month, year);
-    22 }
-    23
-    24 public static DayDate makeDate(int day, int month, int year) {
-    25 return factory._makeDate(day, month, year);
-    26 }
-    27
-    28 public static DayDate makeDate(java.util.Date date) {
-    29 return factory._makeDate(date);
-    30 }
-    31
-    32 public static int getMinimumYear() {
-    33 return factory._getMinimumYear();
-    34 }
-    35
-    36 public static int getMaximumYear() {
-    37 return factory._getMaximumYear();
-    38 }
-    39 }
-    404 Appendix B: org.jfree.date.SerialDate
-    Listing B-15
-    SpreadsheetDateFactory.java (Final)
-    1 package org.jfree.date;
-    2
-    3 import java.util.*;
-    4
-    5 public class SpreadsheetDateFactory extends DayDateFactory {
-    6 public DayDate _makeDate(int ordinal) {
-    7 return new SpreadsheetDate(ordinal);
-    8 }
-    9
-    10 public DayDate _makeDate(int day, Month month, int year) {
-    11 return new SpreadsheetDate(day, month, year);
-    12 }
-    13
-    14 public DayDate _makeDate(int day, int month, int year) {
-    15 return new SpreadsheetDate(day, month, year);
-    16 }
-    17
-    18 public DayDate _makeDate(Date date) {
-    19 final GregorianCalendar calendar = new GregorianCalendar();
-    20 calendar.setTime(date);
-    21 return new SpreadsheetDate(
-    22 calendar.get(Calendar.DATE),
-    23 Month.fromInt(calendar.get(Calendar.MONTH) + 1),
-    24 calendar.get(Calendar.YEAR));
-    25 }
-    26
-    27 protected int _getMinimumYear() {
-    28 return SpreadsheetDate.MINIMUM_YEAR_SUPPORTED;
-    29 }
-    30
-    31 protected int _getMaximumYear() {
-    32 return SpreadsheetDate.MAXIMUM_YEAR_SUPPORTED;
-    33 }
-    34 }
-    Appendix B: org.jfree.date.SerialDate 405
-    Listing B-16
-    SpreadsheetDate.java (Final)
-    1 /* ========================================================================
-    2 * JCommon : a free general purpose class library for the Java(tm) platform
-    3 * ========================================================================
-    4 *
-    5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
-    6 *
-    ...
-    52 *
-    53 /
-    54
-    55 package org.jfree.date;
-    56
-    57 import static org.jfree.date.Month.FEBRUARY;
-    58
-    59 import java.util.;
-    60
-    61 /**
-    62 * Represents a date using an integer, in a similar fashion to the
-    63 * implementation in Microsoft Excel. The range of dates supported is
-    64 * 1-Jan-1900 to 31-Dec-9999.
-    65 * 
-    66 * Be aware that there is a deliberate bug in Excel that recognises the year
-    67 * 1900 as a leap year when in fact it is not a leap year. You can find more
-    68 * information on the Microsoft website in article Q181370:
-    69 * 
-    70 * http://support.microsoft.com/support/kb/articles/Q181/3/70.asp
-    71 * 
-    72 * Excel uses the convention that 1-Jan-1900 = 1. This class uses the
-    73 * convention 1-Jan-1900 = 2.
-    74 * The result is that the day number in this class will be different to the
-    75 * Excel figure for January and February 1900...but then Excel adds in an extra
-    76 * day (29-Feb-1900 which does not actually exist!) and from that point forward
-    77 * the day numbers will match.
-    78 *
-    79 * @author David Gilbert
-    80 */
-    81 public class SpreadsheetDate extends DayDate {
-    82 public static final int EARLIEST_DATE_ORDINAL = 2; // 1/1/1900
-    83 public static final int LATEST_DATE_ORDINAL = 2958465; // 12/31/9999
-    84 public static final int MINIMUM_YEAR_SUPPORTED = 1900;
-    85 public static final int MAXIMUM_YEAR_SUPPORTED = 9999;
-    86 static final int[] AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
-    87 {0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
-    88 static final int[] LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
-    89 {0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-    90
-    91 private int ordinalDay;
-    92 private int day;
-    93 private Month month;
-    94 private int year;
-    95
-    96 public SpreadsheetDate(int day, Month month, int year) {
-    97 if (year < MINIMUM_YEAR_SUPPORTED || year > MAXIMUM_YEAR_SUPPORTED)
-    98 throw new IllegalArgumentException(
-    99 "The 'year' argument must be in range " +
-    100 MINIMUM_YEAR_SUPPORTED + " to " + MAXIMUM_YEAR_SUPPORTED + ".");
-    101 if (day < 1 || day > DateUtil.lastDayOfMonth(month, year))
-    102 throw new IllegalArgumentException("Invalid 'day' argument.");
-    103
-    104 this.year = year;
-    105 this.month = month;
-    406 Appendix B: org.jfree.date.SerialDate
-    106 this.day = day;
-    107 ordinalDay = calcOrdinal(day, month, year);
-    108 }
-    109
-    110 public SpreadsheetDate(int day, int month, int year) {
-    111 this(day, Month.fromInt(month), year);
-    112 }
-    113
-    114 public SpreadsheetDate(int serial) {
-    115 if (serial < EARLIEST_DATE_ORDINAL || serial > LATEST_DATE_ORDINAL)
-    116 throw new IllegalArgumentException(
-    117 "SpreadsheetDate: Serial must be in range 2 to 2958465.");
-    118
-    119 ordinalDay = serial;
-    120 calcDayMonthYear();
-    121 }
-    122
-    123 public int getOrdinalDay() {
-    124 return ordinalDay;
-    125 }
-    126
-    127 public int getYear() {
-    128 return year;
-    129 }
-    130
-    131 public Month getMonth() {
-    132 return month;
-    133 }
-    134
-    135 public int getDayOfMonth() {
-    136 return day;
-    137 }
-    138
-    139 protected Day getDayOfWeekForOrdinalZero() {return Day.SATURDAY;}
-    140
-    141 public boolean equals(Object object) {
-    142 if (!(object instanceof DayDate))
-    143 return false;
-    144
-    145 DayDate date = (DayDate) object;
-    146 return date.getOrdinalDay() == getOrdinalDay();
-    147 }
-    148
-    149 public int hashCode() {
-    150 return getOrdinalDay();
-    151 }
-    152
-    153 public int compareTo(Object other) {
-    154 return daysSince((DayDate) other);
-    155 }
-    156
-    157 private int calcOrdinal(int day, Month month, int year) {
-    158 int leapDaysForYear = DateUtil.leapYearCount(year - 1);
-    159 int daysUpToYear = (year - MINIMUM_YEAR_SUPPORTED) * 365 + leapDaysForYear;
-    160 int daysUpToMonth = AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[month.toInt()];
-    161 if (DateUtil.isLeapYear(year) && month.toInt() > FEBRUARY.toInt())
-    162 daysUpToMonth++;
-    163 int daysInMonth = day - 1;
-    164 return daysUpToYear + daysUpToMonth + daysInMonth + EARLIEST_DATE_ORDINAL;
-    165 }
-    166
-    Listing B-16 (continued)
-    SpreadsheetDate.java (Final)
-
-    Appendix B: org.jfree.date.SerialDate 407
-    167 private void calcDayMonthYear() {
-    168 int days = ordinalDay - EARLIEST_DATE_ORDINAL;
-    169 int overestimatedYear = MINIMUM_YEAR_SUPPORTED + days / 365;
-    170 int nonleapdays = days - DateUtil.leapYearCount(overestimatedYear);
-    171 int underestimatedYear = MINIMUM_YEAR_SUPPORTED + nonleapdays / 365;
-    172
-    173 year = huntForYearContaining(ordinalDay, underestimatedYear);
-    174 int firstOrdinalOfYear = firstOrdinalOfYear(year);
-    175 month = huntForMonthContaining(ordinalDay, firstOrdinalOfYear);
-    176 day = ordinalDay - firstOrdinalOfYear - daysBeforeThisMonth(month.toInt());
-    177 }
-    178
-    179 private Month huntForMonthContaining(int anOrdinal, int firstOrdinalOfYear) {
-    180 int daysIntoThisYear = anOrdinal - firstOrdinalOfYear;
-    181 int aMonth = 1;
-    182 while (daysBeforeThisMonth(aMonth) < daysIntoThisYear)
-    183 aMonth++;
-    184
-    185 return Month.fromInt(aMonth - 1);
-    186 }
-    187
-    188 private int daysBeforeThisMonth(int aMonth) {
-    189 if (DateUtil.isLeapYear(year))
-    190 return LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[aMonth] - 1;
-    191 else
-    192 return AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[aMonth] - 1;
-    193 }
-    194
-    195 private int huntForYearContaining(int anOrdinalDay, int startingYear) {
-    196 int aYear = startingYear;
-    197 while (firstOrdinalOfYear(aYear) <= anOrdinalDay)
-    198 aYear++;
-    199
-    200 return aYear - 1;
-    201 }
-    202
-    203 private int firstOrdinalOfYear(int year) {
-    204 return calcOrdinal(1, Month.JANUARY, year);
-    205 }
-    206
-    207 public static DayDate createInstance(Date date) {
-    208 GregorianCalendar calendar = new GregorianCalendar();
-    209 calendar.setTime(date);
-    210 return new SpreadsheetDate(calendar.get(Calendar.DATE),
-    211 Month.fromInt(calendar.get(Calendar.MONTH) + 1),
-    212 calendar.get(Calendar.YEAR));
-    213
-    214 }
-    215 }
-    Listing B-16 (continued)
-    SpreadsheetDate.java (Final)
-
-
-
-    This page intentionally left blank
-
-
-    # 409
-    Appendix C
-    Cross References of Heuristics
-    Cross references of Smells and Heuristics. All other cross references can be deleted.
-
-
-    C116-276, 16-279, 17-292
-
-
-    C2 16-279, 16-285, 16-295, 17-292
-
-
-    C3 16-283, 16-285, 16-288, 17-293
-
-
-    C4
-    --- 17-293
-
-
-    C5
-    --- 17-293
-
-
-    E1
-    --- 17-294
-
-
-    E2
-    --- 17-294
-
-
-    F1
-    --- 14-239, 17-295
-
-
-    F2
-    --- 17-295
-
-
-    F3
-    --- 17-295
-
-
-    F4.14-289, 16-273, 16-285, 16-287, 16-288, 17-295
-
-
-    G1
-    --- 16-276, 17-295
-
-
-    G216-273, 16-274, 17-296
-
-
-    G3
-    --- 16-274, 17-296
-
-
-    G4 9-31, 16-279, 16-286, 16-291, 17-297
-
-
-    G5...9-31, 16-279, 16-286, 16-291, 16-296, 17-297
-
-
-    G66-106, 16-280, 16-283, 16-284, 16-289, 16-293,
-
-
-    16-294, 16-296, 17-299
-
-
-    G716-281, 16-283, 17-300
-
-
-    G8
-    --- 16-283, 17-301
-
-
-    G9 16-283, 16-285, 16-286, 16-287, 17-302
-
-
-    G10 5-86, 15-264, 16-276, 16-284, 17-302
-
-
-    G11 15-264, 16-284, 16-288, 16-292, 17-302
-
-
-    G12. 16-284, 16-285, 16-286, 16-287, 16-288, 16-295, 17-303
-
-
-    G1316-286, 16-288, 17-303
-
-
-    G1416-288, 16-292, 17-304
-    410 Appendix C: Cross References of Heuristics
-
-
-    G15
-    --- 16-288, 17-305
-
-
-    G16
-    --- 16-289, 17-306
-
-
-    G1716-289, 17-307, 17-312
-
-
-    G18 16-289, 16-290, 16-291, 17-308
-
-
-    G19 16-290, 16-291, 16-292, 17-309
-
-
-    G20
-    --- 16-290, 17-309
-
-
-    G21
-    --- 16-291, 17-310
-
-
-    G22
-    --- 16-294, 17-322
-
-
-    G23??-44, 14-239, 16-295, 17-313
-
-
-    G24
-    --- 16-296, 17-313
-
-
-    G25
-    --- 16-296, 17-314
-
-
-    G26
-    --- 17-316
-
-
-    G27
-    --- 17-316
-
-
-    G28
-    --- 15-262, 17-317
-
-
-    G29
-    --- 15-262, 17-317
-
-
-    G30
-    --- 15-263, 17-317
-
-
-    G31
-    --- 15-264, 17-318
-
-
-    G32
-    --- 15-265, 17-319
-
-
-    G3315-265, 15-266, 17-320
-
-
-    G341-40, 6-106, 17-321
-
-
-    G35
-    --- 5-90, 17-323
-
-
-    G36
-    --- 6-103, 17-324
-
-
-    J1
-    --- 16-276, 17-325
-
-
-    J216-278, 16-285, 17-326
-
-
-    J316-283, 16-285, 17-327
-
-
-    N115-264, 16-277, 16-279, 16-282, 16-287, 16-288,
-
-
-    16-289, 16-290, 16-294, 16-296, 17-328
-
-
-    N2
-    --- 16-277, 17-330
-
-
-    N316-284, 16-288, 17-331
-
-
-    N415-263, 16-291, 17-332
-
-
-    N5. 2-26, 14-221, 15-262, 17-332
-
-
-    N6
-    --- 15-261, 17-333
-
-
-    N7
-    --- 15-263, 17-333
-
-
-    T116-273, 16-274, 17-334
-
-
-    T2
-    --- 16-273, 17-334
-
-
-    T3
-    --- 16-274, 17-334
-
-
-    T4
-    --- 17-334
-
-
-    T516-274, 16-275, 17-335
-
-
-    T6
-    --- 16-275, 17-335
-
-
-    T7
-    --- 16-275, 17-335
-
-
-    T8
-    --- 16-275, 17-335
-
-
-    T9
-    --- 17-336
-
-
-    # 411
-    Epilogue
-
-    In 2005, while attending the Agile conference in Denver, Elisabeth Hedrickson^1 handed me
-    a green wrist band similar to the kind that Lance Armstrong made so popular. This one
-    said "Test Obsessed" on it. I gladly put it on and wore it proudly. Since learning TDD from
-    Kent Beck in 1999, I have indeed become obsessed with test-driven development.
-    But then something strange happened. I found I could not take the band off. Not
-    because it was physically stuck, but because it was morally stuck. The band made an overt
-    statement about my professional ethics. It was a visible indication of my committment to
-    writing the best code I could write. Taking it off seemed like a betrayal of those ethics and
-    of that committment.
-    So it is on my wrist still. When I write code, I see it there in my peripheral vision. It is
-    a constant reminder of the promise I made to myself to write clean code.
-
-    http://www.qualitytree.com/
-
-
-
-    This page intentionally left blank
-
-
-    # 413
-    Index
-
-    detection, 237–238
-    ++ (pre- or post-increment) operator,
-    325, 326
-    A
-    aborted computation, 109
-    abstract classes, 149, 271, 290
-    ABSTRACT FACTORY pattern, 38, 156,
-    273, 274
-    abstract interfaces, 94
-    abstract methods
-    adding to ArgumentMarshaler, 234–235
-    modifying, 282
-    abstract terms, 95
-    abstraction
-    classes depending on, 150
-    code at wrong level of, 290–291
-    descending one level at a time, 37
-    functions descending only one level
-    of, 304–306
-    mixing levels of, 36–37
-    names at the appropriate level of, 311
-    separating levels of, 305
-    wrapping an implementation, 11
-    abstraction levels
-    raising, 290
-    separating, 305
-    accessor functions, Law of Demeter
-    and, 98
-    accessors, naming, 25
-    Active Records, 101
-    adapted server, 185
-    affinity, 84
-    Agile Software Development: Principles,
-    Patterns, Practices (PPP) , 15
-    algorithms
-    correcting, 269–270
-    repeating, 48
-    understanding, 297–298
-    ambiguities
-    in code, 301
-    ignored tests as, 313
-    amplification comments, 59
-    analysis functions, 265
-    "annotation form", of AspectJ, 166
-    Ant project, 76, 77
-    AOP (aspect-oriented programming),
-    160, 163
-    APIs. See also public APIs
-    calling a null-returning method
-    from, 110
-    specialized for tests, 127
-    wrapping third-party, 108
-    applications
-    decoupled from Spring, 164
-    decoupling from construction
-    details, 156
-    infrastructure of, 163
-    keeping concurrency-related code
-    separate, 181
-    arbitrary structure, 303–304
-    argsarray, converting into a list, 231–232
-    Args class
-    constructing, 194
-    implementation of, 194–200
-    rough drafts of, 201–212, 226–231
-
-    414 Index
-    ArgsException class
-    listing, 198–200
-    merging exceptions into, 239–242
-    argument(s)
-    flag, 41
-    for a function, 40
-    in functions, 288
-    monadic forms of, 41
-    reducing, 43
-    argument lists, 43
-    argument objects, 43
-    argument types
-    adding, 200, 237
-    negative impact of, 208
-    ArgumentMarshaler class
-    adding the skeleton of, 213–214
-    birth of, 212
-    ArgumentMarshaler interface, 197–198
-    arrays, moving, 279
-    art, of clean code, 6–7
-    artificial coupling, 293
-    AspectJ language, 166
-    aspect-oriented programming (AOP),
-    160, 163
-    aspects
-    in AOP, 160–161
-    "first-class" support for, 166
-    assert statements, 130–131
-    assertEquals, 42
-    assertions, using a set of, 111
-    assignments, unaligned, 87–88
-    atomic operation, 323–324
-    attributes, 68
-    authors
-    of JUnit, 252
-    programmers as, 13–14
-    authorship statements, 55
-    automated code instrumentation, 189–190
-    automated suite, of unit tests, 124
-    B
-    bad code, 3–4. See also dirty code;
-    messy code
-    degrading effect of, 250
-    example, 71–72
-    experience of cleaning, 250
-    not making up for, 55
-    bad comments, 59–74
-    banner, gathering functions beneath, 67
-    base classes, 290, 291
-    BDUF (Big Design Up Front), 167
-    beans, private variables manipulated,
-    100–101
-    Beck, Kent, 3, 34, 71, 171, 252,
-    289, 296
-    behaviors, 288–289
-    Big Design Up Front (BDUF), 167
-    blank lines, in code, 78–79
-    blocks, calling functions within, 35
-    Booch,Grady, 8–9
-    boolean, passing into a function, 41
-    boolean arguments, 194, 288
-    boolean map, deleting, 224
-    boolean output, of tests, 132
-    bound resources, 183, 184
-    boundaries
-    clean, 120
-    exploring and learning, 116
-    incorrect behavior at, 289
-    separating known from unknown,
-    118–119
-    boundary condition errors, 269
-    boundary conditions
-    encapsulating, 304
-    testing, 314
-    boundary tests, easing a migration, 118
-    "Bowling Game", 312
-    Boy Scout Rule, 14–15, 257
-    following, 284
-    satisfying, 265
-    broken windows metaphor, 8
-    bucket brigade, 303
-    BUILD-OPERATE-CHECK pattern, 127
-    builds, 287
-    business logic, separating from error
-    handling, 109
-    bylines, 68
-    byte-manipulation libraries, 161,
-    162–163
-
-    Index 415
-    C
-    The C++ Programming Language , 7
-    calculations, breaking into intermediate
-    values, 296
-    call stack, 324
-    Callable interface, 326
-    caller, cluttering, 104
-    calling hierarchy, 106
-    calls, avoiding chains of, 98
-    caring, for code, 10
-    Cartesian points, 42
-    CAS operation, as atomic, 328
-    change(s)
-    isolating from, 149–150
-    large number of very tiny, 213
-    organizing for, 147–150
-    tests enabling, 124
-    change history, deleting, 270
-    check exceptions, in Java, 106
-    circular wait, 337, 338–339
-    clarification, comments as, 57
-    clarity, 25, 26
-    class names, 25
-    classes
-    cohesion of, 140–141
-    creating for bigger concepts, 28–29
-    declaring instance variables, 81
-    enforcing design and business
-    rules, 115
-    exposing internals of, 294
-    instrumenting into ConTest, 342
-    keeping small, 136, 175
-    minimizing the number of, 176
-    naming, 25, 138
-    nonthread-safe, 328–329
-    as nouns of a language, 49
-    organization of, 136
-    organizing to reduce risk of
-    change, 147
-    supporting advanced concurrency
-    design, 183
-    classification, of errors, 107
-    clean boundaries, 120
-    clean code
-    art of, 6–7
-    described, 7–12
-    writing, 6–7
-    clean tests, 124–127
-    cleanliness
-    acquired sense of, 6–7
-    tied to tests, 9
-    cleanup, of code, 14–15
-    clever names, 26
-    client, using two methods, 330
-    client code, connecting to a server, 318
-    client-based locking, 185, 329, 330–332
-    clientScheduler, 320
-    client/server application, concurrency in,
-    317–321
-    Client/Server nonthreaded, code for,
-    343–346
-    client-server using threads, code changes,
-    346–347
-    ClientTest.java, 318, 344–346
-    closing braces, comments on, 67–68
-    Clover, 268, 269
-    clutter
-    Javadocs as, 276
-    keeping free of, 293
-    code, 2
-    bad, 3–4
-    Beck's rules of, 10
-    commented-out, 68–69, 287
-    dead, 292
-    explaining yourself in, 55
-    expressing yourself in, 54
-    formatting of, 76
-    implicity of, 18–19
-    instrumenting, 188, 342
-    jiggling, 190
-    making readable, 311
-    necessity of, 2
-    reading from top to bottom, 37
-    simplicity of, 18, 19
-    technique for shrouding, 20
-
-    416 Index
-    code, continued
-    third-party, 114–115
-    width of lines in, 85–90
-    at wrong level of abstraction, 290–291
-    code bases, dominated by error
-    handling, 103
-    code changes, comments not always
-    following, 54
-    code completion, automatic, 20
-    code coverage analysis, 254–256
-    code instrumentation, 188–190
-    "code sense", 6, 7
-    code smells, listing of, 285–314
-    coding standard, 299
-    cohesion
-    of classes, 140–141
-    maintaining, 141–146
-    command line arguments, 193–194
-    commands, separating from queries, 45–46
-    comment header standard, 55–56
-    comment headers, replacing, 70
-    commented-out code, 68–69, 287
-    commenting style, example of bad, 71–72
-    comments
-    amplifying importance of
-    something, 59
-    bad, 59–74
-    deleting, 282
-    as failures, 54
-    good, 55–59
-    heuristics on, 286–287
-    HTML, 69
-    inaccurate, 54
-    informative, 56
-    journal, 63–64
-    legal, 55–56
-    mandated, 63
-    misleading, 63
-    mumbling, 59–60
-    as a necessary evil, 53–59
-    noise, 64–66
-    not making up for bad code, 55
-    obsolete, 286
-    poorly written, 287
-    proper use of, 54
-    redundant, 60–62, 272, 275, 286–287
-    restating the obvious, 64
-    separated from code, 54
-    TODO, 58–59
-    too much information in, 70
-    venting in, 65
-    writing, 287
-    "communication gap", minimizing, 168
-    Compare and Swap (CAS) operation,
-    327–328
-    ComparisonCompactor module, 252–265
-    defactored, 256–261
-    final, 263–265
-    interim, 261–263
-    original code, 254–256
-    compiler warnings, turning off, 289
-    complex code, demonstrating failures
-    in, 341
-    complexity, managing, 139–140
-    computer science (CS) terms, using for
-    names, 27
-    concepts
-    keeping close to each other, 80
-    naming, 19
-    one word per, 26
-    separating at different levels, 290
-    spelling similar similarly, 20
-    vertical openness between, 78–79
-    conceptual affinity, of code, 84
-    concerns
-    cross-cutting, 160–161
-    separating, 154, 166, 178, 250
-    concrete classes, 149
-    concrete details, 149
-    concrete terms, 94
-    concurrency
-    defense principles, 180–182
-    issues, 190
-    motives for adopting, 178–179
-    myths and misconceptions about,
-    179–180
-    concurrency code
-    compared to nonconcurrency-related
-    code, 181
-    focusing, 321
-
-    Index 417
-    concurrent algorithms, 179
-    concurrent applications, partition
-    behavior, 183
-    concurrent code
-    breaking, 329–333
-    defending from problems of, 180
-    flaws hiding in, 188
-    concurrent programming, 180
-    Concurrent Programming in Java: Design
-    Principles and Patterns , 182, 342
-    concurrent programs, 178
-    concurrent update problems, 341
-    ConcurrentHashMap implementation, 183
-    conditionals
-    avoiding negative, 302
-    encapsulating, 257–258, 301
-    configurable data, 306
-    configuration constants, 306
-    consequences, warning of, 58
-    consistency
-    in code, 292
-    of enums, 278
-    in names, 40
-    consistent conventions, 259
-    constants
-    versusenums, 308–309
-    hiding, 308
-    inheriting, 271, 307–308
-    keeping at the appropriate level, 83
-    leaving as raw numbers, 300
-    not inheriting, 307–308
-    passing as symbols, 276
-    turning into enums, 275–276
-    construction
-    moving all to main, 155, 156
-    separating with factory, 156
-    of a system, 154
-    constructor arguments, 157
-    constructors, overloading, 25
-    consumer threads, 184
-    ConTest tool, 190, 342
-    context
-    adding meaningful, 27–29
-    not adding gratuitous, 29–30
-    providing with exceptions, 107
-    continuous readers, 184
-    control variables, within loop statements,
-    80–81
-    convenient idioms, 155
-    convention(s)
-    following standard, 299–300
-    over configuration, 164
-    structure over, 301
-    using consistent, 259
-    convoluted code, 175
-    copyright statements, 55
-    cosmic-rays. See one-offs
-    CountDownLatch class, 183
-    coupling. See also decoupling; temporal
-    coupling; tight coupling
-    artificial, 293
-    hidden temporal, 302–303
-    lack of, 150
-    coverage patterns, testing, 314
-    coverage tools, 313
-    "crisp abstraction", 8–9
-    cross-cutting concerns, 160
-    Cunningham, Ward, 11–12
-    cuteness, in code, 26
-
-    D
-    danglingfalse argument, 294
-    data
-    abstraction, 93–95
-    copies of, 181–182
-    encapsulation, 181
-    limiting the scope of, 181
-    sets processed in parallel, 179
-    types, 97, 101
-    data structures. See also structure(s)
-    compared to objects, 95, 97
-    defined, 95
-    interfaces representing, 94
-    treating Active Records as, 101
-    data transfer-objects (DTOs),
-    100–101, 160
-    database normal forms, 48
-    DateInterval enum, 282–283
-    DAY enumeration, 277
-
-    418 Index
-    DayDate class, running SerialDate
-    as, 271
-    DayDateFactory, 273–274
-    dead code, 288, 292
-    dead functions, 288
-    deadlock, 183, 335–339
-    deadly embrace. See circular wait
-    debugging, finding deadlocks, 336
-    decision making, optimizing, 167–168
-    decisions, postponing, 168
-    declarations, unaligned, 87–88
-    DECORATOR objects, 164
-    DECORATOR pattern, 274
-    decoupled architecture, 167
-    decoupling, from construction
-    details, 156
-    decoupling strategy, concurrency
-    as, 178
-    default constructor, deleting, 276
-    degradation, preventing, 14
-    deletions, as the majority of
-    changes, 250
-    density, vertical in code, 79–80
-    dependencies
-    finding and breaking, 250
-    injecting, 157
-    logical, 282
-    making logical physical, 298–299
-    between methods, 329–333
-    between synchronized
-    methods, 185
-    Dependency Injection (DI), 157
-    Dependency Inversion Principle (DIP),
-    15, 150
-    dependency magnet, 47
-    dependent functions, formatting, 82–83
-    derivatives
-    base classes depending on, 291
-    base classes knowing about, 273
-    of the exception class, 48
-    movingset functions into, 232,
-    233–235
-    pushing functionality into, 217
-    description
-    of a class, 138
-    overloading the structure of code
-    into, 310
-    descriptive names
-    choosing, 309–310
-    using, 39–40
-    design(s)
-    of concurrent algorithms, 179
-    minimally coupled, 167
-    principles of, 15
-    design patterns, 290
-    details, paying attention to, 8
-    DI (Dependency Injection), 157
-    Dijkstra, Edsger, 48
-    dining philosophers execution model,
-    184–185
-    DIP (Dependency Inversion Principle),
-    15, 150
-    dirty code. See also bad code;
-    messy code
-    dirty code, cleaning, 200
-    dirty tests, 123
-    disinformation, avoiding, 19–20
-    distance, vertical in code, 80–84
-    distinctions, making meaningful, 20–21
-    domain-specific languages (DSLs),
-    168–169
-    domain-specific testing language, 127
-    DoubleArgumentMarshalerclass, 238
-    DRY principle (Don't Repeat Yourself ),
-    181, 289
-    DTOs (data transfer objects), 100–101, 160
-    dummy scopes, 90
-    duplicateif statements, 276
-    duplication
-    of code, 48
-    in code, 289–290
-    eliminating, 173–175
-    focusing on, 10
-    forms of, 173, 290
-    reduction of, 48
-    strategies for eliminating, 48
-
-    Index 419
-    dyadic argument, 40
-    dyadic functions, 42
-    dynamic proxies, 161
-    E
-    e, as a variable name, 22
-    Eclipse, 26
-    edit sessions, playing back, 13–14
-    efficiency, of code, 7
-    EJB architecture, early as over-engineered,
-    167
-    EJB standard, complete overhaul of, 164
-    EJB2 beans, 160
-    EJB3, Bank object rewritten in, 165–166
-    "elegant" code, 7
-    emergent design, 171–176
-    encapsulation, 136
-    of boundary conditions, 304
-    breaking, 106–107
-    of conditionals, 301
-    encodings, avoiding, 23–24, 312–313
-    entity bean, 158–160
-    enum(s)
-    changingMonthConstants to, 272
-    using, 308–309
-    enumeration, moving, 277
-    environment, heuristics on, 287
-    environment control system, 128–129
-    envying, the scope of a class, 293
-    error check, hiding a side effect, 258
-    Errorclass, 47–48
-    error code constants, 198–200
-    error codes
-    implying a class or enum, 47–48
-    preferring exceptions to, 46
-    returning, 103–104
-    reusing old, 48
-    separating from the Args module,
-    242–250
-    error detection, pushing to the edges, 109
-    error flags, 103–104
-    error handling, 8, 47–48
-    error messages, 107, 250
-    error processing, testing, 238–239
-    errorMessage method, 250
-    errors. See also boundary condition errors;
-    spelling errors; string comparison
-    errors
-    classifying, 107
-    Evans, Eric, 311
-    events, 41
-    exception classification, 107
-    exception clauses, 107–108
-    exception management code, 223
-    exceptions
-    instead of return codes, 103–105
-    narrowing the type of, 105–106
-    preferring to error codes, 46
-    providing context with, 107
-    separating from Args, 242–250
-    throwing, 104–105, 194
-    unchecked, 106–107
-    execution, possible paths of, 321–326
-    execution models, 183–185
-    Executorframework, 326–327
-    ExecutorClientScheduler.java, 321
-    explanation, of intent, 56–57
-    explanatory variables, 296–297
-    explicitness, of code, 19
-    expressive code, 295
-    expressiveness
-    in code, 10–11
-    ensuring, 175–176
-    Extract Method refactoring, 11
-    Extreme Programming Adventures
-    in C# , 10
-    Extreme Programming Installed , 10
-    "eye-full", code fitting into, 79–80
-
-    F
-    factories, 155–156
-    factory classes, 273–275
-    failure
-    to express ourselves in code, 54
-
-    420 Index
-    failure, continued
-    patterns of, 314
-    tolerating with no harm, 330
-    false argument, 294
-    fast tests, 132
-    fast-running threads, starving longer
-    running, 183
-    fear, of renaming, 30
-    Feathers, Michael, 10
-    feature envy
-    eliminating, 293–294
-    smelling of, 278
-    file size, in Java, 76
-    finalkeywords, 276
-    F.I.R.S.T. acronym, 132–133
-    First Law, of TDD, 122
-    FitNesse project
-    coding style for, 90
-    file sizes, 76, 77
-    function in, 32–33
-    invoking all tests, 224
-    flag arguments, 41, 288
-    focussed code, 8
-    foreign code. See third-party code
-    formatting
-    horizontal, 85–90
-    purpose of, 76
-    Uncle Bob's rules, 90–92
-    vertical, 76–85
-    formatting style, for a team of
-    developers, 90
-    Fortran, forcing encodings, 23
-    Fowler, Martin, 285, 293
-    frame, 324
-    function arguments, 40–45
-    function call dependencies, 84–85
-    function headers, 70
-    function signature, 45
-    functionality, placement of, 295–296
-    functions
-    breaking into smaller, 141–146
-    calling within a block, 35
-    dead, 288
-    defining private, 292
-    descending one level of abstraction,
-    304–306
-    doing one thing, 35–36, 302
-    dyadic, 42
-    eliminating extraneous if statements,
-    262
-    establishing the temporal nature
-    of, 260
-    formatting dependent, 82–83
-    gathering beneath a banner, 67
-    heuristics on, 288
-    intention-revealing, 19
-    keeping small, 175
-    length of, 34–35
-    moving, 279
-    naming, 39, 297
-    number of arguments in, 288
-    one level of abstraction per, 36–37
-    in place of comments, 67
-    renaming for clarity, 258
-    rewriting for clarity, 258–259
-    sections within, 36
-    small as better, 34
-    structured programming with, 49
-    understanding, 297–298
-    as verbs of a language, 49
-    writing, 49
-    futures, 326
-
-    G
-    Gamma, Eric, 252
-    general heuristics, 288–307
-    generated byte-code, 180
-    generics, improving code readability, 115
-    getfunctions, 218
-    getBoolean function, 224
-    GETFIELD instruction, 325, 326
-    getNextIdmethod, 326
-    getStatefunction, 129
-    Gilbert, David, 267, 268
-    given-when-then convention, 130
-    glitches. See one-offs
-
-    Index 421
-    global setup strategy, 155
-    "God class", 136–137
-    good comments, 55–59
-    gotostatements, avoiding, 48, 49
-    grand redesign, 5
-    gratuitous context, 29–30
-    H
-    hand-coded instrumentation, 189
-    HashTable, 328–329
-    headers. See comment headers; function
-    headers
-    heuristics
-    cross references of, 286, 409
-    general, 288–307
-    listing of, 285–314
-    hidden temporal coupling, 259, 302–303
-    hidden things, in a function, 44
-    hiding
-    implementation, 94
-    structures, 99
-    hierarchy of scopes, 88
-    HN. See Hungarian Notation
-    horizontal alignment, of code, 87–88
-    horizontal formatting, 85–90
-    horizontal white space, 86
-    HTML, in source code, 69
-    Hungarian Notation (HN), 23–24, 295
-    Hunt, Andy, 8, 289
-    hybrid structures, 99
-    I
-    ifstatements
-    duplicate, 276
-    eliminating, 262
-    if-else chain
-    appearing again and again, 290
-    eliminating, 233
-    ignored tests, 313
-    implementation
-    duplication of, 173
-    encoding, 24
-    exposing, 94
-    hiding, 94
-    wrapping an abstraction, 11
-    Implementation Patterns , 3, 296
-    implicity, of code, 18
-    import lists
-    avoiding long, 307
-    shortening in SerialDate, 270
-    imports, as hard dependencies, 307
-    imprecision, in code, 301
-    inaccurate comments, 54
-    inappropriate information, in
-    comments, 286
-    inappropriate static methods, 296
-    include method, 48
-    inconsistency, in code, 292
-    inconsistent spellings, 20
-    incrementalism, 212–214
-    indent level, of a function, 35
-    indentation, of code, 88–89
-    indentation rules, 89
-    independent tests, 132
-    information
-    inappropriate, 286
-    too much, 70, 291–292
-    informative comments, 56
-    inheritance hierarchy, 308
-    inobvious connection, between a comment
-    and code, 70
-    input arguments, 41
-    instance variables
-    in classes, 140
-    declaring, 81
-    hiding the declaration of, 81–82
-    passing as function
-    arguments, 231
-    proliferation of, 140
-    instrumented classes, 342
-    insufficient tests, 313
-    integer argument(s)
-    defining, 194
-    integrating, 224–225
-    integer argument functionality,
-    moving into ArgumentMarshaler,
-    215–216
-
-    422 Index
-    integer argument type, adding
-    toArgs, 212
-    integers, pattern of changes for, 220
-    IntelliJ, 26
-    intent
-    explaining in code, 55
-    explanation of, 56–57
-    obscured, 295
-    intention-revealing function, 19
-    intention-revealing names, 18–19
-    interface(s)
-    defining local or remote, 158–160
-    encoding, 24
-    implementing, 149–150
-    representing abstract concerns, 150
-    turning ArgumentMarshaler into, 237
-    well-defined, 291–292
-    writing, 119
-    internal structures, objects hiding, 97
-    intersection, of domains, 160
-    intuition, not relying on, 289
-    inventor of C++, 7
-    Inversion of Control (IoC), 157
-    InvocationHandler object, 162
-    I/O bound, 318
-    isolating, from change, 149–150
-    isxxxArgmethods, 221–222
-    iterative process, refactoring as, 265
-    J
-    jar files, deploying derivatives and bases
-    in, 291
-    Java
-    aspects or aspect-like mechanisms,
-    161–166
-    heuristics on, 307–309
-    as a wordy language, 200
-    Java 5, improvements for concurrent
-    development, 182–183
-    Java 5 Executor framework, 320–321
-    Java 5 VM, nonblocking solutions in,
-    327–328
-    Java AOP frameworks, 163–166
-    Java programmers, encoding not
-    needed, 24
-    Java proxies, 161–163
-    Java source files, 76–77
-    javadocs
-    as clutter, 276
-    in nonpublic code, 71
-    preserving formatting in, 270
-    in public APIs, 59
-    requiring for every function, 63
-    java.util.concurrentpackage, collections
-    in, 182–183
-    JBoss AOP, proxies in, 163
-    JCommon library, 267
-    JCommon unit tests, 270
-    JDepend project, 76, 77
-    JDK proxy, providing persistence support,
-    161–163
-    Jeffries, Ron, 10–11, 289
-    jiggling strategies, 190
-    JNDI lookups, 157
-    journal comments, 63–64
-    JUnit, 34
-    JUnit framework, 252–265
-    Junit project, 76, 77
-    Just-In-Time Compiler, 180
-
-    K
-    keyword form, of a function name, 43
-
-    L
-    L, lower-case in variable names, 20
-    language design, art of programming as, 49
-    languages
-    appearing to be simple, 12
-    level of abstraction, 2
-    multiple in one source file, 288
-    multiples in a comment, 270
-    last-in, first-out (LIFO) data structure,
-    operand stack as, 324
-    Law of Demeter, 97–98, 306
-
-    Index 423
-
-
-    # LAZY INITIALIZATION/
-    EVALUATION idiom, 154
-    LAZY-INITIALIZATION, 157
-    Lea, Doug, 182, 342
-    learning tests, 116, 118
-    LeBlanc's law, 4
-    legacy code, 307
-    legal comments, 55–56
-    level of abstraction, 36–37
-    levels of detail, 99
-    lexicon, having a consistent, 26
-    lines of code
-    duplicating, 173
-    width of, 85
-    list(s)
-    of arguments, 43
-    meaning specific to programmers, 19
-    returning a predefined immutable, 110
-    literate code, 9
-    literate programming, 9
-    Literate Programming , 141
-    livelock, 183, 338
-    local comments, 69–70
-    local variables, 324
-    declaring, 292
-    at the top of each function, 80
-    lock & wait, 337, 338
-    locks, introducing, 185
-    log4j package, 116–118
-    logical dependencies, 282, 298–299
-    LOGO language, 36
-    long descriptive names, 39
-    long names, for long scopes, 312
-    loop counters, single-letter names for, 25
-    M
-    magic numbers
-    obscuring intent, 295
-    replacing with named constants,
-    300–301
-    main function, moving construction to,
-    155, 156
-    managers, role of, 6
-    mandated comments, 63
-    manual control, over a serial ID, 272
-    Map
-    adding for ArgumentMarshaler, 221
-    methods of, 114
-    maps, breaking the use of, 222–223
-    marshalling implementation,
-    214–215
-    meaningful context, 27–29
-    member variables
-    f prefix for, 257
-    prefixing, 24
-    renaming for clarity, 259
-    mental mapping, avoiding, 25
-    messy code. See also bad code; dirty code
-    total cost of owning, 4–12
-    method invocations, 324
-    method names, 25
-    methods
-    affecting the order of execution, 188
-    calling a twin with a flag, 278
-    changing from static to instance, 280
-    of classes, 140
-    dependencies between, 329–333
-    eliminating duplication between,
-    173–174
-    minimizing assert statements in, 176
-    naming, 25
-    tests exposing bugs in, 269
-    minimal code, 9
-    misleading comments, 63
-    misplaced responsibility, 295–296, 299
-    MOCK OBJECT, assigning, 155
-    monadic argument, 40
-    monadic forms, of arguments, 41
-    monads, converting dyads into, 42
-    Monte Carlo testing, 341
-    Monthenum, 278
-    MonthConstants class, 271
-    multithread aware, 332
-    multithread-calculation, of throughput,
-    335
-
-    424 Index
-    multithreaded code, 188, 339–342
-    mumbling, 59–60
-    mutators, naming, 25
-    mutual exclusion, 183, 336, 337
-    N
-    named constants, replacing magic
-    numbers, 300–301
-    name-length-challenged languages, 23
-    names
-    abstractions, appropriate level of, 311
-    changing, 40
-    choosing, 175, 309–310
-    of classes, 270–271
-    clever, 26
-    descriptive, 39–40
-    of functions, 297
-    heuristics on, 309–313
-    importance of, 309–310
-    intention-revealing, 18–19
-    length of corresponding to scope,
-    22–23
-    long names for long scopes, 312
-    making unambiguous, 258
-    problem domain, 27
-    pronounceable, 21–22
-    rules for creating, 18–30
-    searchable, 22–23
-    shorter generally better than longer, 30
-    solution domain, 27
-    with subtle differences, 20
-    unambiguous, 312
-    at the wrong level of abstraction, 271
-    naming, classes, 138
-    naming conventions, as inferior to
-    structures, 301
-    navigational methods, in Active
-    Records, 101
-    near bugs, testing, 314
-    negative conditionals, avoiding, 302
-    negatives, 258
-    nested structures, 46
-    Newkirk, Jim, 116
-    newspaper metaphor, 77–78
-    niladic argument, 40
-    no preemption, 337
-    noise
-    comments, 64–66
-    scary, 66
-    words, 21
-    nomenclature, using standard, 311–312
-    nonblocking solutions, 327–328
-    nonconcurrency-related code, 181
-    noninformative names, 21
-    nonlocal information, 69–70
-    nonpublic code, javadocs in, 71
-    nonstatic methods, preferred to static, 296
-    nonthreaded code, getting working
-    first, 187
-    nonthread-safe classes, 328–329
-    normal flow, 109
-    null
-    not passing into methods, 111–112
-    not returning, 109–110
-    passed by a caller accidentally, 111
-    null detection logic, for ArgumentMarshaler,
-    214
-    NullPointerException, 110, 111
-    number-series naming, 21
-
-    O
-    Object Oriented Analysis and Design with
-    Applications , 8
-    object-oriented design, 15
-    objects
-    compared to data structures, 95, 97
-    compared to data types and proce-
-    dures, 101
-    copying read-only, 181
-    defined, 95
-    obscured intent, 295
-    obsolete comments, 286
-    obvious behavior, 288–289
-    obvious code, 12
-
-    Index 425
-    "Once and only once" principle, 289
-    "ONE SWITCH" rule, 299
-    one thing, functions doing, 35–36, 302
-    one-offs, 180, 187, 191
-    OO code, 97
-    OO design, 139
-    Open Closed Principle (OCP), 15, 38
-    by checked exceptions, 106
-    supporting, 149
-    operand stack, 324
-    operating systems, threading policies, 188
-    operators, precedence of, 86
-    optimistic locking, 327
-    optimizations, LAZY-EVALUATION
-    as, 157
-    optimizing, decision making, 167–168
-    orderings, calculating the possible, 322–323
-    organization
-    for change, 147–150
-    of classes, 136
-    managing complexity, 139–140
-    outbound tests, exercising an interface, 118
-    output arguments, 41, 288
-    avoiding, 45
-    need for disappearing, 45
-    outputs, arguments as, 45
-    overhead, incurred by concurrency, 179
-    overloading, of code with description, 310
-    P
-    paperback model, as an academic
-    model, 27
-    parameters, taken by instructions, 324
-    parseoperation, throwing an
-    exception, 220
-    partitioning, 250
-    paths of execution, 321–326
-    pathways, through critical sections, 188
-    pattern names, using standard, 175
-    patterns
-    of failure, 314
-    as one kind of standard, 311
-    performance
-    of a client/server pair, 318
-    concurrency improving, 179
-    of server-based locking, 333
-    permutations, calculating, 323
-    persistence, 160, 161
-    pessimistic locking, 327
-    phraseology, in similar names, 40
-    physicalizing, a dependency, 299
-    Plain-Old Java Objects. See POJOs
-    platforms, running threaded code, 188
-    pleasing code, 7
-    pluggable thread-based code, 187
-    POJO system, agility provided by, 168
-    POJOs (Plain-Old Java Objects)
-    creating, 187
-    implementing business logic, 162
-    separating threaded-aware code, 190
-    in Spring, 163
-    writing application domain logic, 166
-    polyadic argument, 40
-    polymorphic behavior, of functions, 296
-    polymorphic changes, 96–97
-    polymorphism, 37, 299
-    position markers, 67
-    positives
-    as easier to understand, 258
-    expressing conditionals as, 302
-    of decisions, 301precision
-    as the point of all naming, 30
-    predicates, naming, 25
-    preemption, breaking, 338
-    prefixes
-    for member variables, 24
-    as useless in today's environments,
-    312–313
-    pre-increment operator, ++, 324, 325, 326
-    "prequel", this book as, 15
-    principle of least surprise, 288–289, 295
-    principles, of design, 15
-    PrintPrimes program, translation into
-    Java, 141
-    private behavior, isolating, 148–149
-
-    426 Index
-    private functions, 292
-    private method behavior, 147
-    problem domain names, 27
-    procedural code, 97
-    procedural shape example, 95–96
-    procedures, compared to objects, 101
-    process function, repartitioning, 319–320
-    process method, I/O bound, 319
-    processes, competing for resources, 184
-    processor bound, code as, 318
-    producer consumer execution model, 184
-    producer threads, 184
-    production environment, 127–130
-    productivity, decreased by messy code, 4
-    professional programmer, 25
-    professional review, of code, 268
-    programmers
-    as authors, 13–14
-    conundrum faced by, 6
-    responsibility for messes, 5–6
-    unprofessional, 5–6
-    programming
-    defined, 2
-    structured, 48–49
-    programs, getting them to work, 201
-    pronounceable names, 21–22
-    protected variables, avoiding, 80
-    proxies, drawbacks of, 163
-    public APIs, javadocs in, 59
-    puns, avoiding, 26–27
-    PUTFIELD instruction, as atomic, 325
-    Q
-    queries, separating from commands, 45–46
-    R
-    random jiggling, tests running, 190
-    range, including end-point dates in, 276
-    readability
-    of clean tests, 124
-    of code, 76
-    Dave Thomas on, 9
-    improving using generics, 115
-    readability perspective, 8
-    readers
-    of code, 13–14
-    continuous, 184
-    readers-writers execution model, 184
-    reading
-    clean code, 8
-    code from top to bottom, 37
-    versus writing, 14
-    reboots, as a lock up solution, 331
-    recommendations, in this book, 13
-    redesign, demanded by the team, 5
-    redundancy, of noise words, 21
-    redundant comments, 60–62, 272, 275,
-    286–287
-    ReentrantLock class, 183
-    refactored programs, as longer, 146
-    refactoring
-    Args, 212
-    code incrementally, 172
-    as an iterative process, 265
-    putting things in to take out, 233
-    test code, 127
-    Refactoring (Fowler), 285
-    renaming, fear of, 30
-    repeatability, of concurrency bugs, 180
-    repeatable tests, 132
-    requirements, specifying, 2
-    resetId, byte-code generated for, 324–325
-    resources
-    bound, 183
-    processes competing for, 184
-    threads agreeing on a global ordering
-    of, 338
-    responsibilities
-    counting in classes, 136
-    definition of, 138
-    identifying, 139
-    misplaced, 295–296, 299
-    splitting a program into main, 146
-    return codes, using exceptions instead,
-    103–105
-
-    Index 427
-    reuse, 174
-    risk of change, reducing, 147
-    robust clear code, writing, 112
-    rough drafts, writing, 200
-    runnable interface, 326
-    run-on expressions, 295
-    run-on journal entries, 63–64
-    runtime logic, separating startup from, 154
-    S
-    safety mechanisms, overridden, 289
-    scaling up, 157–161
-    scary noise, 66
-    schema, of a class, 194
-    schools of thought, about clean code,
-    12–13
-    scissors rule, in C++, 81
-    scope(s)
-    defined by exceptions, 105
-    dummy, 90
-    envying, 293
-    expanding and indenting, 89
-    hierarchy in a source file, 88
-    limiting for data, 181
-    names related to the length of,
-    22–23, 312
-    of shared variables, 333
-    searchable names, 22–23
-    Second Law, of TDD, 122
-    sections, within functions, 36
-    selector arguments, avoiding, 294–295
-    self validating tests, 132
-    Semaphoreclass, 183
-    semicolon, making visible, 90
-    "serial number", SerialDate using, 271
-    SerialDateclass
-    making it right, 270–284
-    naming of, 270–271
-    refactoring, 267–284
-    SerialDateTests class, 268
-    serialization, 272
-    server, threads created by, 319–321
-    server application, 317–318, 343–344
-    server code, responsibilities of, 319
-    server-based locking, 329
-    as preferred, 332–333
-    with synchronized methods, 185
-    "Servlet" model, of Web applications, 178
-    Servlets, synchronization problems, 182
-    setfunctions, moving into appropriate
-    derivatives, 232, 233–235
-    setArgument, changing, 232–233
-    setBoolean function, 217
-    setter methods, injecting dependencies,
-    157
-    setup strategy, 155
-    SetupTeardownIncluder.java listing,
-    50–52
-    shape classes, 95–96
-    shared data, limiting access, 181
-    shared variables
-    method updating, 328
-    reducing the scope of, 333
-    shotgun approach, hand-coded instrumen-
-    tation as, 189
-    shut-down code, 186
-    shutdowns, graceful, 186
-    side effects
-    having none, 44
-    names describing, 313
-    Simmons, Robert, 276
-    simple code, 10, 12
-    Simple Design, rules of, 171–176
-    simplicity, of code, 18, 19
-    single assert rule, 130–131
-    single concepts, in each test function,
-    131–132
-    Single Responsibility Principle (SRP), 15,
-    138–140
-    applying, 321
-    breaking, 155
-    as a concurrency defense principle,
-    181
-    recognizing violations of, 174
-    server violating, 320
-
-    428 Index
-    Single Responsibility Principle (SRP),
-    continued
-    Sql class violating, 147
-    supporting, 157
-    in test classes conforming to, 172
-    violating, 38
-    single value, ordered components of, 42
-    single-letter names, 22, 25
-    single-thread calculation, of throughput,
-    334
-    SINGLETON pattern, 274
-    small classes, 136
-    Smalltalk Best Practice Patterns , 296
-    smart programmer, 25
-    software project, maintenance of, 175
-    software systems. See also system(s)
-    compared to physical systems, 158
-    SOLID class design principle, 150
-    solution domain names, 27
-    source code control systems, 64, 68, 69
-    source files
-    compared to newspaper articles,
-    77–78
-    multiple languages in, 288
-    Sparkle program, 34
-    spawned threads, deadlocked, 186
-    special case objects, 110
-    SPECIAL CASE PATTERN, 109
-    specifications, purpose of, 2
-    spelling errors, correcting, 20
-    SpreadsheetDateFactory, 274–275
-    Spring AOP, proxies in, 163
-    Spring Framework, 157
-    Spring model, following EJB3, 165
-    Spring V2.5 configuration file, 163–164
-    spurious failures, 187
-    Sql class, changing, 147–149
-    square root, as the iteration limit, 74
-    SRP. See Single Responsibility Principle
-    standard conventions, 299–300
-    standard nomenclature, 175, 311–312
-    standards, using wisely, 168
-    startup process, separating from runtime
-    logic, 154
-    starvation, 183, 184, 338
-    static function, 279
-    static import, 308
-    static methods, inappropriate, 296
-    The Step-down Rule , 37
-    stories, implementing only today's, 158
-    STRATEGY pattern, 290
-    stringarguments, 194, 208–212, 214–225
-    string comparison errors, 252
-    StringBuffers, 129
-    Stroustrup, Bjarne, 7–8
-    structure(s). See also data structures
-    hiding, 99
-    hybrid, 99
-    making massive changes to, 212
-    over convention, 301
-    structured programming, 48–49
-    SuperDashboard class, 136–137
-    swapping, as permutations, 323
-    switch statements
-    burying, 37, 38
-    considering polymorphism
-    before, 299
-    reasons to tolerate, 38–39
-    switch/casechain, 290
-    synchronization problems, avoiding with
-    Servlets, 182
-    synchronized block, 334
-    synchronized keyword, 185
-    adding, 323
-    always acquiring a lock, 328
-    introducing a lock via, 331
-    protecting a critical section
-    in code, 181
-    synchronized methods, 185
-    synchronizing, avoiding, 182
-    synthesis functions, 265
-    system(s). See also software systems
-    file sizes of significant, 77
-    keeping running during development,
-    213
-    needing domain-specific, 168
-    system architecture, test driving,
-    166–167
-
-    Index 429
-    system failures, not ignoring
-    one-offs, 187
-    system level, staying clean at, 154
-    system-wide information, in a local
-    comment, 69–70
-    T
-    tables, moving, 275
-    target deployment platforms, running tests
-    on, 341
-    task swapping, encouraging, 188
-    TDD (Test Driven Development), 213
-    building logic, 106
-    as fundamental discipline, 9
-    laws of, 122–123
-    team rules, 90
-    teams
-    coding standard for every, 299–300
-    slowed by messy code, 4
-    technical names, choosing, 27
-    technical notes, reserving comments
-    for, 286
-    TEMPLATE METHOD pattern
-    addressing duplication, 290
-    removing higher-level duplication,
-    174–175
-    using, 130
-    temporal coupling. See also coupling
-    exposing, 259–260
-    hidden, 302–303
-    side effect creating, 44
-    temporary variables, explaining, 279–281
-    test cases
-    adding to check arguments, 237
-    inComparisonCompactor, 252–254
-    patterns of failure, 269, 314
-    turning off, 58
-    test code, 124, 127
-    TEST DOUBLE, assigning, 155
-    Test Driven Development. See TDD
-    test driving, architecture, 166–167
-    test environment, 127–130
-    test functions, single concepts in, 131–132
-    test implementation, of an interface, 150
-    test suite
-    automated, 213
-    of unit tests, 124, 268
-    verifying precise behavior, 146
-    testable systems, 172
-    test-driven development. See TDD
-    testing
-    arguments making harder, 40
-    construction logic mixed with
-    runtime, 155
-    testing language, domain-specific, 127
-    testNG project, 76, 77
-    tests
-    clean, 124–127
-    cleanliness tied to, 9
-    commented out for SerialDate,
-    268–270
-    dirty, 123
-    enabling the -ilities, 124
-    fast, 132
-    fast versus slow, 314
-    heuristics on, 313–314
-    ignored, 313
-    independent, 132
-    insufficient, 313
-    keeping clean, 123–124
-    minimizing assert statements in,
-    130–131
-    not stopping trivial, 313
-    refactoring, 126–127
-    repeatable, 132
-    requiring more than one step, 287
-    running, 341
-    self validating, 132
-    simple design running all, 172
-    suite of automated, 213
-    timely, 133
-    writing for multithreaded code,
-    339–342
-    writing for threaded code, 186–190
-    writing good, 122–123
-
-    430 Index
-    Third Law, of TDD, 122
-    third-party code
-    integrating, 116
-    learning, 116
-    using, 114–115
-    writing tests for, 116
-    this variable, 324
-    Thomas, Dave, 8, 9, 289
-    thread(s)
-    adding to a method, 322
-    interfering with each other, 330
-    making as independent as
-    possible, 182
-    stepping on each other, 180, 326
-    taking resources from other
-    threads, 338
-    thread management strategy, 320
-    thread pools, 326
-    thread-based code, testing, 342
-    threaded code
-    making pluggable, 187
-    making tunable, 187–188
-    symptoms of bugs in, 187
-    testing, 186–190
-    writing in Java 5, 182–183
-    threading
-    adding to a client/server application,
-    319, 346–347
-    problems in complex systems, 342
-    thread-safe collections, 182–183, 329
-    throughput
-    causing starvation, 184
-    improving, 319
-    increasing, 333–335
-    validating, 318
-    throws clause, 106
-    tiger team, 5
-    tight coupling, 172
-    time, taking to go fast, 6
-    Time and Money project, 76
-    file sizes, 77
-    timely tests, 133
-    timer program, testing, 121–122
-    "TO" keyword, 36
-    TO paragraphs, 37
-    TODOcomments, 58–59
-    tokens, used as magic numbers, 300
-    Tomcat project, 76, 77
-    tools
-    ConTest tool, 190, 342
-    coverage, 313
-    handling proxy boilerplate, 163
-    testing thread-based code, 342
-    train wrecks, 98–99
-    transformations, as return values, 41
-    transitive navigation, avoiding, 306–307
-    triadic argument, 40
-    triads, 42
-    tryblocks, 105
-    try/catch blocks, 46–47, 65–66
-    try-catch-finally statement, 105–106
-    tunable threaded-based code, 187–188
-    type encoding, 24
-
-    U
-    ubiquitous language, 311–312
-    unambiguous names, 312
-    unchecked exceptions, 106–107
-    unencapsulated conditional, encapsulating,
-    257
-    unit testing, isolated as difficult, 160
-    unit tests, 124, 175, 268
-    unprofessional programming, 5–6
-    uppercaseC, in variable names, 20
-    usability, of newspapers, 78
-    use, of a system, 154
-    users, handling concurrently, 179
-
-    V
-    validation, of throughput, 318
-    variable names, single-letter, 25
-
-    Index 431
-    variables
-    1 based versus zero based, 261
-    declaring, 80, 81, 292
-    explaining temporary, 279–281
-    explanatory, 296–297
-    keeping private, 93
-    local, 292, 324
-    moving to a different class, 273
-    in place of comments, 67
-    promoting to instance variables of
-    classes, 141
-    with unclear context, 28
-    venting, in comments, 65
-    verbs, keywords and, 43
-    Version class, 139
-    versions, not deserializing across, 272
-    vertical density, in code, 79–80
-    vertical distance, in code, 80–84
-    vertical formatting, 76–85
-    vertical openness, between concepts,
-    78–79
-    vertical ordering, in code, 84–85
-    vertical separation, 292
-    W
-    wading, through bad code, 3
-    Web containers, decoupling provided
-    by, 178
-    what, decoupling from when, 178
-    white space, use of horizontal, 86
-    wildcards, 307
-    Working Effectively with Legacy
-    Code , 10
-    "working" programs, 201
-    workmanship, 176
-    wrappers, 108
-    wrapping, 108
-    writers, starvation of, 184
-    "Writing Shy Code", 306
-
-    X
-
-
-    # XML
-    deployment descriptors, 160
-    "policy" specified configuration
-    files, 164
-    ```
+- and
+- in the source code? A better strategy might be to just surround the whole comment with
+
+  ```
+  so that the formatting that is
+  apparent in the source code is preserved within the Javadoc.^1
+  Line 86 is the class declaration. Why is this class named SerialDate? What is the sig-
+  nificance of the world "serial"? Is it because the class is derived from Serializable? That
+  doesn't seem likely.
+  int delta = targetDOW - base.getDayOfWeek();
+  int positiveDelta = delta + 7;
+  int adjust = positiveDelta % 7;
+  if (adjust > 3)
+  adjust -= 7;
+  return SerialDate.addDays(adjust, base);
+
+
+  An even better solution would have been for Javadoc to present all comments as preformatted, so that comments appear the
+  same in both code and document.
+
+  Then Make It Right 271
+  I won't keep you guessing. I know why (or at least I think I know why) the word
+  "serial" was used. The clue is in the constants SERIAL_LOWER_BOUND and
+  SERIAL_UPPER_BOUND on line 98 and line 101. An even better clue is in the comment
+  that begins on line 830. This class is named SerialDatebecause it is implemented using a
+  "serial number," which happens to be the number of days since December 30th, 1899.
+  I have two problems with this. First, the term "serial number" is not really correct.
+  This may be a quibble, but the representation is more of a relative offset than a serial num-
+  ber. The term "serial number" has more to do with product identification markers than
+  dates. So I don't find this name particularly descriptive [N1]. A more descriptive term
+  might be "ordinal."
+  The second problem is more significant. The name SerialDateimplies an implementa-
+  tion. This class is an abstract class. There is no need to imply anything at all about the
+  implementation. Indeed, there is good reason to hide the implementation! So I find this
+  name to be at the wrong level of abstraction [N2]. In my opinion, the name of this class
+  should simply be Date.
+  Unfortunately, there are already too many classes in the Java library named Date, so
+  this is probably not the best name to choose. Because this class is all about days, instead of
+  time, I considered naming it Day, but this name is also heavily used in other places. In the
+  end, I chose DayDate as the best compromise.
+  From now on in this discussion I will use the term DayDate. I leave it to you to remem-
+  ber that the listings you are looking at still use SerialDate.
+  I understand why DayDateinherits from ComparableandSerializable. But why does it
+  inherit from MonthConstants? The class MonthConstants(Listing B-3, page 372) is just a
+  bunch of static final constants that define the months. Inheriting from classes with con-
+  stants is an old trick that Java programmers used so that they could avoid using expres-
+  sions like MonthConstants.January, but it's a bad idea [J2]. MonthConstants should really be
+  an enum.
+  public abstract class DayDate implements Comparable,
+  Serializable {
+  public static enum Month {
+  JANUARY(1),
+  FEBRUARY(2),
+  MARCH(3),
+  APRIL(4),
+  MAY(5),
+  JUNE(6),
+  JULY(7),
+  AUGUST(8),
+  SEPTEMBER(9),
+  OCTOBER(10),
+  NOVEMBER(11),
+  DECEMBER(12);
+  Month(int index) {
+  this.index = index;
+  }
+
+  272 Chapter 16: Refactoring SerialDate
+  ChangingMonthConstantsto this enumforces quite a few changes to the DayDateclass
+  and all it's users. It took me an hour to make all the changes. However, any function that
+  used to take an intfor a month, now takes a Monthenumerator. This means we can get rid
+  of the isValidMonthCodemethod (line 326), and all the month code error checking such as
+  that in monthCodeToQuarter (line 356) [G5].
+  Next, we have line 91, serialVersionUID. This variable is used to control the serializer.
+  If we change it, then any DayDatewritten with an older version of the software won't be
+  readable anymore and will result in an InvalidClassException. If you don't declare the
+  serialVersionUIDvariable, then the compiler automatically generates one for you, and it
+  will be different every time you make a change to the module. I know that all the docu-
+  ments recommend manual control of this variable, but it seems to me that automatic con-
+  trol of serialization is a lot safer [G4]. After all, I'd much rather debug an
+  InvalidClassExceptionthan the odd behavior that would ensue if I forgot to change the
+  serialVersionUID. So I'm going to delete the variable—at least for the time being.^2
+  I find the comment on line 93 redundant. Redundant comments are just places to col-
+  lect lies and misinformation [C2]. So I'm going to get rid of it and its ilk.
+  The comments at line 97 and line 100 talk about serial numbers, which I discussed
+  earlier [C1]. The variables they describe are the earliest and latest possible dates that
+  DayDate can describe. This can be made a bit clearer [N1].
+  It's not clear to me why EARLIEST_DATE_ORDINALis 2 instead of 0. There is a hint in the
+  comment on line 829 that suggests that this has something to do with the way dates are
+  represented in Microsoft Excel. There is a much deeper insight provided in a derivative of
+  DayDatecalledSpreadsheetDate(Listing B-5, page 382). The comment on line 71 describes
+  the issue nicely.
+  The problem I have with this is that the issue seems to be related to the implementa-
+  tion of SpreadsheetDateand has nothing to do with DayDate. I conclude from this that
+  public static Month make(int monthIndex) {
+  for (Month m : Month.values()) {
+  if (m.index == monthIndex)
+  return m;
+  }
+  throw new IllegalArgumentException("Invalid month index " + monthIndex);
+  }
+  public final int index;
+  }
+
+
+  Several of the reviewers of this text have taken exception to this decision. They contend that in an open source framework itis
+  better to assert manual control over the serial ID so that minor changes to the software don't cause old serialized dates to be
+  invalid. This is a fair point. However, at least the failure, inconvenient though it might be, has a clear-cut cause. On the other
+  hand, if the author of the class forgets to update the ID, then the failure mode is undefined and might very well be silent. I
+  think the real moral of this story is that you should not expect to deserialize across versions.
+
+  public static final int EARLIEST_DATE_ORDINAL = 2; // 1/1/1900
+  public static final int LATEST_DATE_ORDINAL = 2958465; // 12/31/9999
+
+  Then Make It Right 273
+  EARLIEST_DATE_ORDINALand LATEST_DATE_ORDINALdo not really belong in DayDateand
+  should be moved to SpreadsheetDate[G6].
+  Indeed, a search of the code shows that these variables are used only within
+  SpreadsheetDate. Nothing in DayDate, nor in any other class in the JCommonframework, uses
+  them. Therefore, I'll move them down into SpreadsheetDate.
+  The next variables, MINIMUM_YEAR_SUPPORTED, and MAXIMUM_YEAR_SUPPORTED(line 104
+  and line 107), provide something of a dilemma. It seems clear that if DayDate is an abstract
+  class that provides no foreshadowing of implementation, then it should not inform us
+  about a minimum or maximum year. Again, I am tempted to move these variables down
+  intoSpreadsheetDate[G6]. However, a quick search of the users of these variables shows
+  that one other class uses them: RelativeDayOfWeekRule(Listing B-6, page 390). We see that
+  usage at line 177 and line 178 in the getDatefunction, where they are used to check that
+  the argument to getDateis a valid year. The dilemma is that a user of an abstract class
+  needs information about its implementation.
+  What we need to do is provide this information without polluting DayDateitself.
+  Usually, we would get implementation information from an instance of a derivative.
+  However, the getDatefunction is not passed an instance of a DayDate. It does, however,
+  return such an instance, which means that somewhere it must be creating it. Line 187
+  through line 205 provide the hint. The DayDateinstance is being created by one of the
+  three functions, getPreviousDayOfWeek,getNearestDayOfWeek, or getFollowingDayOfWeek.
+  Looking back at the DayDatelisting, we see that these functions (lines 638–724) all return
+  a date created by addDays(line 571), which calls createInstance(line 808), which creates
+  aSpreadsheetDate! [G7].
+  It's generally a bad idea for base classes to know about their derivatives. To fix this, we
+  should use the ABSTRACT FACTORY^3 pattern and create a DayDateFactory. This factory will
+  create the instances of DayDatethat we need and can also answer questions about the
+  implementation, such as the maximum and minimum dates.
+
+  [GOF].
+
+  public abstract class DayDateFactory {
+  private static DayDateFactory factory = new SpreadsheetDateFactory();
+  public static void setInstance(DayDateFactory factory) {
+  DayDateFactory.factory = factory;
+  }
+  protected abstract DayDate _makeDate(int ordinal);
+  protected abstract DayDate _makeDate(int day, DayDate.Month month, int year);
+  protected abstract DayDate _makeDate(int day, int month, int year);
+  protected abstract DayDate _makeDate(java.util.Date date);
+  protected abstract int _getMinimumYear();
+  protected abstract int _getMaximumYear();
+  public static DayDate makeDate(int ordinal) {
+  return factory._makeDate(ordinal);
+  }
+
+  274 Chapter 16: Refactoring SerialDate
+  This factory class replaces the createInstancemethods with makeDatemethods, which
+  improves the names quite a bit [N1]. It defaults to a SpreadsheetDateFactorybut can be
+  changed at any time to use a different factory. The static methods that delegate to abstract
+  methods use a combination of the SINGLETON,^4 DECORATOR,^5 and ABSTRACT FACTORY
+  patterns that I have found to be useful.
+  TheSpreadsheetDateFactory looks like this.
+
+  public static DayDate makeDate(int day, DayDate.Month month, int year) {
+  return factory._makeDate(day, month, year);
+  }
+  public static DayDate makeDate(int day, int month, int year) {
+  return factory._makeDate(day, month, year);
+  }
+  public static DayDate makeDate(java.util.Date date) {
+  return factory._makeDate(date);
+  }
+  public static int getMinimumYear() {
+  return factory._getMinimumYear();
+  }
+  public static int getMaximumYear() {
+  return factory._getMaximumYear();
+  }
+  }
+
+
+  Ibid.
+  Ibid.
+
+  public class SpreadsheetDateFactory extends DayDateFactory {
+  public DayDate _makeDate(int ordinal) {
+  return new SpreadsheetDate(ordinal);
+  }
+  public DayDate _makeDate(int day, DayDate.Month month, int year) {
+  return new SpreadsheetDate(day, month, year);
+  }
+  public DayDate _makeDate(int day, int month, int year) {
+  return new SpreadsheetDate(day, month, year);
+  }
+  public DayDate _makeDate(Date date) {
+  final GregorianCalendar calendar = new GregorianCalendar();
+  calendar.setTime(date);
+  return new SpreadsheetDate(
+  calendar.get(Calendar.DATE),
+  DayDate.Month.make(calendar.get(Calendar.MONTH) + 1),
+  calendar.get(Calendar.YEAR));
+  }
+
+  Then Make It Right 275
+  As you can see, I have already moved the MINIMUM_YEAR_SUPPORTED and
+  MAXIMUM_YEAR_SUPPORTED variables into SpreadsheetDate, where they belong [G6].
+  The next issue in DayDateare the day constants beginning at line 109. These should
+  really be another enum [J3]. We've seen this pattern before, so I won't repeat it here. You'll
+  see it in the final listings.
+  Next, we see a series of tables starting with LAST_DAY_OF_MONTHat line 140. My first
+  issue with these tables is that the comments that describe them are redundant [C3]. Their
+  names are sufficient. So I'm going to delete the comments.
+  There seems to be no good reason that this table isn't private [G8], because there is a
+  static function lastDayOfMonth that provides the same data.
+  The next table, AGGREGATE_DAYS_TO_END_OF_MONTH, is a bit more mysterious because it is
+  not used anywhere in the JCommon framework [G9]. So I deleted it.
+  The same goes for LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_MONTH.
+  The next table, AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH, is used only in Spread-
+  sheetDate(line 434 and line 473). This begs the question of whether it should be moved
+  toSpreadsheetDate. The argument for not moving it is that the table is not specific to any
+  particular implementation [G6]. On the other hand, no implementation other than
+  SpreadsheetDateactually exists, and so the table should be moved close to where it is
+  used [G10].
+  What settles the argument for me is that to be consistent [G11], we should make the
+  table private and expose it through a function like julianDateOfLastDayOfMonth. Nobody
+  seems to need a function like that. Moreover, the table can be moved back to DayDateeasily
+  if any new implementation of DayDate needs it. So I moved it.
+  The same goes for the table, LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_MONTH.
+  Next, we see three sets of constants that can be turned into enums (lines 162–205).
+  The first of the three selects a week within a month. I changed it into an enum named
+  WeekInMonth.
+  protected int _getMinimumYear() {
+  return SpreadsheetDate.MINIMUM_YEAR_SUPPORTED;
+  }
+  protected int _getMaximumYear() {
+  return SpreadsheetDate.MAXIMUM_YEAR_SUPPORTED;
+  }
+  }
+
+  public enum WeekInMonth {
+  FIRST(1), SECOND(2), THIRD(3), FOURTH(4), LAST(0);
+  public final int index;
+  WeekInMonth(int index) {
+  this.index = index;
+  }
+  }
+
+  276 Chapter 16: Refactoring SerialDate
+  The second set of constants (lines 177–187) is a bit more obscure. The INCLUDE_NONE,
+  INCLUDE_FIRST,INCLUDE_SECOND, and INCLUDE_BOTHconstants are used to describe whether
+  the defining end-point dates of a range should be included in that range. Mathematically,
+  this is described using the terms "open interval," "half-open interval," and "closed inter-
+  val." I think it is clearer using the mathematical nomenclature [N3], so I changed it to an
+  enum named DateInterval with CLOSED,CLOSED_LEFT,CLOSED_RIGHT, and OPEN enumerators.
+  The third set of constants (lines 18–205) describe whether a search for a particular
+  day of the week should result in the last, next, or nearest instance. Deciding what to call
+  this is difficult at best. In the end, I settled for WeekdayRangewithLAST,NEXT, and NEAREST
+  enumerators.
+  You might not agree with the names I've chosen. They make sense to me, but they
+  may not make sense to you. The point is that they are now in a form that makes them easy
+  to change [J3]. They aren't passed as integers anymore; they are passed as symbols. I can
+  use the "change name" function of my IDE to change the names, or the types, without
+  worrying that I missed some -1or 2 somewhere in the code or that some intargument dec-
+  laration is left poorly described.
+  The description field at line 208 does not seem to be used by anyone. I deleted it along
+  with its accessor and mutator [G9].
+  I also deleted the degenerate default constructor at line 213 [G12]. The compiler will
+  generate it for us.
+  We can skip over the isValidWeekdayCodemethod (lines 216–238) because we deleted
+  it when we created the Day enumeration.
+  This brings us to the stringToWeekdayCodemethod (lines 242–270). Javadocs that
+  don't add much to the method signature are just clutter [C3],[G12]. The only value this
+  Javadoc adds is the description of the -1return value. However, because we changed to the
+  Dayenumeration, the comment is actually wrong [C2]. The method now throws an
+  IllegalArgumentException. So I deleted the Javadoc.
+  I also deleted all the final keywords in arguments and variable declarations. As far as
+  I could tell, they added no real value but did add to the clutter [G12]. Eliminating final
+  flies in the face of some conventional wisdom. For example, Robert Simmons^6 strongly
+  recommends us to "... spread finalall over your code." Clearly I disagree. I think that
+  there are a few good uses for final, such as the occasional finalconstant, but otherwise
+  the keyword adds little value and creates a lot of clutter. Perhaps I feel this way because the
+  kinds of errors that final might catch are already caught by the unit tests I write.
+  I didn't care for the duplicate ifstatements [G5] inside the forloop (line 259 and
+  line 263), so I connected them into a single ifstatement using the ||operator. I also used
+  theDay enumeration to direct the for loop and made a few other cosmetic changes.
+  It occurred to me that this method does not really belong in DayDate. It's really the
+  parse function of Day. So I moved it into the Dayenumeration. However, that made the Day
+
+  [Simmons04], p. 73.
+
+  Then Make It Right 277
+  enumeration pretty large. Because the concept of Daydoes not depend on DayDate, I moved
+  theDay enumeration outside of the DayDate class into its own source file [G13].
+  I also moved the next function, weekdayCodeToString(lines 272–286) into the Day
+  enumeration and called it toString.
+  There are two getMonthsfunctions (lines 288–316). The first calls the second. The
+  second is never called by anyone but the first. Therefore, I collapsed the two into one and
+  vastly simplified them [G9],[G12],[F4]. Finally, I changed the name to be a bit more self-
+  descriptive [N1].
+  public enum Day {
+  MONDAY(Calendar.MONDAY),
+  TUESDAY(Calendar.TUESDAY),
+  WEDNESDAY(Calendar.WEDNESDAY),s
+  THURSDAY(Calendar.THURSDAY),
+  FRIDAY(Calendar.FRIDAY),
+  SATURDAY(Calendar.SATURDAY),
+  SUNDAY(Calendar.SUNDAY);
+  public final int index;
+  private static DateFormatSymbols dateSymbols = new DateFormatSymbols();
+  Day(int day) {
+  index = day;
+  }
+  public static Day make(int index) throws IllegalArgumentException {
+  for (Day d : Day.values())
+  if (d.index == index)
+  return d;
+  throw new IllegalArgumentException(
+  String.format("Illegal day index: %d.", index));
+  }
+  public static Day parse(String s) throws IllegalArgumentException {
+  String[] shortWeekdayNames =
+  dateSymbols.getShortWeekdays();
+  String[] weekDayNames =
+  dateSymbols.getWeekdays();
+  s = s.trim();
+  for (Day day : Day.values()) {
+  if (s.equalsIgnoreCase(shortWeekdayNames[day.index]) ||
+  s.equalsIgnoreCase(weekDayNames[day.index])) {
+  return day;
+  }
+  }
+  throw new IllegalArgumentException(
+  String.format("%s is not a valid weekday string", s));
+  }
+  public String toString() {
+  return dateSymbols.getWeekdays()[index];
+  }
+  }
+
+  278 Chapter 16: Refactoring SerialDate
+  TheisValidMonthCodefunction (lines 326–346) was made irrelevant by the Month
+  enum, so I deleted it [G9].
+  ThemonthCodeToQuarterfunction (lines 356–375) smells of FEATURE ENVY^7 [G14]
+  and probably belongs in the Month enum as a method named quarter. So I replaced it.
+  This made the Monthenum big enough to be in its own class. So I moved it out of
+  DayDate to be consistent with the Day enum [G11],[G13].
+  The next two methods are named monthCodeToString(lines 377–426). Again, we see
+  the pattern of one method calling its twin with a flag. It is usually a bad idea to pass a flag
+  as an argument to a function, especially when that flag simply selects the format of the out-
+  put[G15]. I renamed, simplified, and restructured these functions and moved them into the
+  Month enum [N1],[N3],[C3],[G14].
+  The next method is stringToMonthCode(lines 428–472). I renamed it, moved it into the
+  Month enum, and simplified it [N1],[N3],[C3],[G14],[G12].
+  public static String[] getMonthNames() {
+  return dateFormatSymbols.getMonths();
+  }
+
+
+  [Refactoring].
+
+  public int quarter() {
+  return 1 + (index-1)/3;
+  }
+
+  public String toString() {
+  return dateFormatSymbols.getMonths()[index - 1];
+  }
+  public String toShortString() {
+  return dateFormatSymbols.getShortMonths()[index - 1];
+  }
+
+  public static Month parse(String s) {
+  s = s.trim();
+  for (Month m : Month.values())
+  if (m.matches(s))
+  return m;
+  try {
+  return make(Integer.parseInt(s));
+  }
+  catch (NumberFormatException e) {}
+  throw new IllegalArgumentException("Invalid month " + s);
+  }
+
+  Then Make It Right 279
+  TheisLeapYear method (lines 495–517) can be made a bit more expressive [G16].
+
+  The next function, leapYearCount(lines 519–536) doesn't really belong in DayDate.
+  Nobody calls it except for two methods in SpreadsheetDate. So I pushed it down [G6].
+  ThelastDayOfMonthfunction (lines 538–560) makes use of the LAST_DAY_OF_MONTH
+  array. This array really belongs in the Month enum [G17], so I moved it there. I also simpli-
+  fied the function and made it a bit more expressive [G16].
+  Now things start to get a bit more interesting. The next function is addDays(lines 562–
+  576). First of all, because this function operates on the variables of DayDate, it should not
+  be static [G18]. So I changed it to an instance method. Second, it calls the function
+  toSerial. This function should be renamed toOrdinal[N1]. Finally, the method can be
+  simplified.
+  The same goes for addMonths(lines 578–602). It should be an instance method [G18].
+  The algorithm is a bit complicated, so I used EXPLAINING TEMPORARY VARIABLES^8 [G19]
+  to make it more transparent. I also renamed the method getYYY to getYear [N1].
+  private boolean matches(String s) {
+  return s.equalsIgnoreCase(toString()) ||
+  s.equalsIgnoreCase(toShortString());
+  }
+
+  public static boolean isLeapYear(int year) {
+  boolean fourth = year % 4 == 0;
+  boolean hundredth = year % 100 == 0;
+  boolean fourHundredth = year % 400 == 0;
+  return fourth && (!hundredth || fourHundredth);
+  }
+
+  public static int lastDayOfMonth(Month month, int year) {
+  if (month == Month.FEBRUARY && isLeapYear(year))
+  return month.lastDay() + 1;
+  else
+  return month.lastDay();
+  }
+
+  public DayDate addDays(int days) {
+  return DayDateFactory.makeDate(toOrdinal() + days);
+  }
+
+
+  [Beck97].
+
+  public DayDate addMonths(int months) {
+  int thisMonthAsOrdinal = 12 * getYear() + getMonth().index - 1;
+  int resultMonthAsOrdinal = thisMonthAsOrdinal + months;
+  int resultYear = resultMonthAsOrdinal / 12;
+  Month resultMonth = Month.make(resultMonthAsOrdinal % 12 + 1);
+
+  280 Chapter 16: Refactoring SerialDate
+  TheaddYears function (lines 604–626) provides no surprises over the others.
+
+  There is a little itch at the back of my mind that is bothering me about changing
+  these methods from static to instance. Does the expression date.addDays(5)make it
+  clear that the dateobject does not change and that a new instance of DayDateis returned?
+  Or does it erroneously imply that we are adding five days to the dateobject? You might
+  not think that is a big problem, but a bit of code that looks like the following can be very
+  deceiving [G20].
+  DayDate date = DateFactory.makeDate(5, Month.DECEMBER, 1952);
+  date.addDays(7); // bump date by one week.
+  Someone reading this code would very likely just accept that addDaysis changing the
+  dateobject. So we need a name that breaks this ambiguity [N4]. So I changed the names to
+  plusDays and plusMonths. It seems to me that the intent of the method is captured nicely by
+  DayDate date = oldDate.plusDays(5);
+
+  whereas the following doesn't read fluidly enough for a reader to simply accept that the
+  date object is changed:
+  date.plusDays(5);
+  The algorithms continue to get more interesting. getPreviousDayOfWeek(lines 628–
+  660) works but is a bit complicated. After some thought about what was really going on
+  [G21], I was able to simplify it and use EXPLAINING TEMPORARY VARIABLES[G19] to
+  make it clearer. I also changed it from a static method to an instance method [G18], and
+  got rid of the duplicate instance method [G5] (lines 997–1008).
+  The exact same analysis and result occurred for getFollowingDayOfWeek(lines 662–693).
+
+  int lastDayOfResultMonth = lastDayOfMonth(resultMonth, resultYear);
+  int resultDay = Math.min(getDayOfMonth(), lastDayOfResultMonth);
+  return DayDateFactory.makeDate(resultDay, resultMonth, resultYear);
+  }
+
+  public DayDate plusYears(int years) {
+  int resultYear = getYear() + years;
+  int lastDayOfMonthInResultYear = lastDayOfMonth(getMonth(), resultYear);
+  int resultDay = Math.min(getDayOfMonth(), lastDayOfMonthInResultYear);
+  return DayDateFactory.makeDate(resultDay, getMonth(), resultYear);
+  }
+
+  public DayDate getPreviousDayOfWeek(Day targetDayOfWeek) {
+  int offsetToTarget = targetDayOfWeek.index - getDayOfWeek().index;
+  if (offsetToTarget >= 0)
+  offsetToTarget -= 7;
+  return plusDays(offsetToTarget);
+  }
+
+  public DayDate getFollowingDayOfWeek(Day targetDayOfWeek) {
+  int offsetToTarget = targetDayOfWeek.index - getDayOfWeek().index;
+  if (offsetToTarget <= 0)
+
+  Then Make It Right 281
+  The next function is getNearestDayOfWeek(lines 695–726), which we corrected back
+  on page 270. But the changes I made back then aren't consistent with the current pattern in
+  the last two functions [G11]. So I made it consistent and used some EXPLAINING TEMPO-
+  RARY VARIABLES [G19] to clarify the algorithm.
+  ThegetEndOfCurrentMonthmethod (lines 728–740) is a little strange because it is an
+  instance method that envies [G14] its own class by taking a DayDateargument. I made it a
+  true instance method and clarified a few names.
+  Refactoring weekInMonthToString(lines 742–761) turned out to be very interesting
+  indeed. Using the refactoring tools of my IDE, I first moved the method to the WeekInMonth
+  enum that I created back on page 275. Then I renamed the method to toString. Next, I
+  changed it from a static method to an instance method. All the tests still passed. (Can you
+  guess where I am going?)
+  Next, I deleted the method entirely! Five asserts failed (lines 411–415, Listing B-4,
+  page 374). I changed these lines to use the names of the enumerators (FIRST,
+  SECOND,.. .). All the tests passed. Can you see why? Can you also see why each of these
+  steps was necessary? The refactoring tool made sure that all previous callers of
+  weekInMonthToStringnow called toStringon the weekInMonthenumerator because all enu-
+  merators implement toString to simply return their names
+  Unfortunately, I was a bit too clever. As elegant as that wonderful chain of refactor-
+  ings was, I finally realized that the only users of this function were the tests I had just mod-
+  ified, so I deleted the tests.
+  Fool me once, shame on you. Fool me twice, shame on me! So after determining that
+  nobody other than the tests called relativeToString(lines 765–781), I simply deleted the
+  function and its tests.
+  offsetToTarget += 7;
+  return plusDays(offsetToTarget);
+  }
+
+  public DayDate getNearestDayOfWeek(final Day targetDay) {
+  int offsetToThisWeeksTarget = targetDay.index - getDayOfWeek().index;
+  int offsetToFutureTarget = (offsetToThisWeeksTarget + 7) % 7;
+  int offsetToPreviousTarget = offsetToFutureTarget - 7;
+  if (offsetToFutureTarget > 3)
+  return plusDays(offsetToPreviousTarget);
+  else
+  return plusDays(offsetToFutureTarget);
+  }
+
+  public DayDate getEndOfMonth() {
+  Month month = getMonth();
+  int year = getYear();
+  int lastDay = lastDayOfMonth(month, year);
+  return DayDateFactory.makeDate(lastDay, month, year);
+  }
+
+  282 Chapter 16: Refactoring SerialDate
+  We have finally made it to the abstract methods of this abstract class. And the first one
+  is as appropriate as they come: toSerial(lines 838–844). Back on page 279 I had changed
+  the name to toOrdinal. Having looked at it in this context, I decided the name should be
+  changed to getOrdinalDay.
+  The next abstract method is toDate(lines 838–844). It converts a DayDate to a
+  java.util.Date. Why is this method abstract? If we look at its implementation in
+  SpreadsheetDate(lines 198–207, Listing B-5, page 382), we see that it doesn't depend on
+  anything in the implementation of that class [G6]. So I pushed it up.
+  ThegetYYYY,getMonth, and getDayOfMonthmethods are nicely abstract. However, the
+  getDayOfWeekmethod is another one that should be pulled up from SpreadSheetDate
+  because it doesn't depend on anything that can't be found in DayDate[G6]. Or does it?
+  If you look carefully (line 247, Listing B-5, page 382), you'll see that the algorithm
+  implicitly depends on the origin of the ordinal day (in other words, the day of the week of
+  day 0). So even though this function has no physical dependencies that couldn't be moved
+  toDayDate, it does have a logical dependency.
+  Logical dependencies like this bother me [G22]. If something logical depends on
+  the implementation, then something physical should too. Also, it seems to me that the
+  algorithm itself could be generic with a much smaller portion of it dependent on the
+  implementation[G6].
+  So I created an abstract method in DayDatenamedgetDayOfWeekForOrdinalZeroand
+  implemented it in SpreadsheetDateto return Day.SATURDAY. Then I moved the getDayOfWeek
+  method up to DayDateand changed it to call getOrdinalDayandgetDayOfWeekForOrdinal-
+  Zero.
+  As a side note, look carefully at the comment on line 895 through line 899. Was this
+  repetition really necessary? As usual, I deleted this comment along with all the others.
+  The next method is compare(lines 902–913). Again, this method is inappropriately
+  abstract [G6], so I pulled the implementation up into DayDate. Also, the name does not
+  communicate enough [N1]. This method actually returns the difference in days since the
+  argument. So I changed the name to daysSince. Also, I noted that there weren't any tests
+  for this method, so I wrote them.
+  The next six functions (lines 915–980) are all abstract methods that should be imple-
+  mented in DayDate. So I pulled them all up from SpreadsheetDate.
+  The last function, isInRange(lines 9 8 2–995) also needs to be pulled up and refac-
+  tored. The switchstatement is a bit ugly [G23]and can be replaced by moving the cases
+  into the DateInterval enum.
+  public Day getDayOfWeek() {
+  Day startingDay = getDayOfWeekForOrdinalZero();
+  int startingOffset = startingDay.index - Day.SUNDAY.index;
+  return Day.make((getOrdinalDay() + startingOffset) % 7 + 1);
+  }
+
+  Then Make It Right 283
+  That brings us to the end of DayDate. So now we'll make one more pass over the whole
+  class to see how well it flows.
+  First, the opening comment is long out of date, so I shortened and improved it [C2].
+  Next, I moved all the remaining enums out into their own files [G12].
+  Next, I moved the static variable (dateFormatSymbols) and three static methods
+  (getMonthNames , isLeapYear , lastDayOfMonth) into a new class named DateUtil[G6].
+  I moved the abstract methods up to the top where they belong[G24].
+  I changed Month.make to Month.fromInt[N1] and did the same for all the other enums.
+  I also created a toInt() accessor for all the enums and made the index field private.
+  There was some interesting duplication [G5] in plusYearsandplusMonthsthat I was
+  able to eliminate by extracting a new method named correctLastDayOfMonth, making the
+  all three methods much clearer.
+  I got rid of the magic number 1 [G25],replacing it with Month.JANUARY.toInt()or
+  Day.SUNDAY.toInt(), as appropriate. I spent a little time with SpreadsheetDate, cleaning up
+  the algorithms a bit. The end result is contained in Listing B-7, page 394, through
+  Listing B-16, page 405.
+  public enum DateInterval {
+  OPEN {
+  public boolean isIn(int d, int left, int right) {
+  return d > left && d < right;
+  }
+  },
+  CLOSED_LEFT {
+  public boolean isIn(int d, int left, int right) {
+  return d >= left && d < right;
+  }
+  },
+  CLOSED_RIGHT {
+  public boolean isIn(int d, int left, int right) {
+  return d > left && d <= right;
+  }
+  },
+  CLOSED {
+  public boolean isIn(int d, int left, int right) {
+  return d >= left && d <= right;
+  }
+  };
+  public abstract boolean isIn(int d, int left, int right);
+  }
+
+  public boolean isInRange(DayDate d1, DayDate d2, DateInterval interval) {
+  int left = Math.min(d1.getOrdinalDay(), d2.getOrdinalDay());
+  int right = Math.max(d1.getOrdinalDay(), d2.getOrdinalDay());
+  return interval.isIn(getOrdinalDay(), left, right);
+  }
+
+  284 Chapter 16: Refactoring SerialDate
+  Interestingly the code coverage in DayDatehas decreased to 84.9 percent! This is not
+  because less functionality is being tested; rather it is because the class has shrunk so much
+  that the few uncovered lines have a greater weight. DayDatenow has 45 out of 53 execut-
+  able statements covered by tests. The uncovered lines are so trivial that they weren't worth
+  testing.
+  Conclusion
+
+  So once again we've followed the Boy Scout Rule. We've checked the code in a bit cleaner
+  than when we checked it out. It took a little time, but it was worth it. Test coverage was
+  increased, some bugs were fixed, the code was clarified and shrunk. The next person to
+  look at this code will hopefully find it easier to deal with than we did. That person will also
+  probably be able to clean it up a bit more than we did.
+  Bibliography
+
+  [GOF]: Design Patterns: Elements of Reusable Object Oriented Software , Gamma et al.,
+  Addison-Wesley, 1996.
+  [Simmons04]: Hardcore Java , Robert Simmons, Jr., O'Reilly, 2004.
+  [Refactoring]: Refactoring: Improving the Design of Existing Code , Martin Fowler et al.,
+  Addison-Wesley, 1999.
+  [Beck97]: Smalltalk Best Practice Patterns , Kent Beck, Prentice Hall, 1997.
+
+
+  # 285
+  17
+  Smells and Heuristics
+  In his wonderful book Refactoring ,^1 Martin Fowler identified many different "Code
+  Smells." The list that follows includes many of Martin's smells and adds many more of my
+  own. It also includes other pearls and heuristics that I use to practice my trade.
+
+  [Refactoring].
+
+  286 Chapter 17: Smells and Heuristics
+  I compiled this list by walking through several different programs and refactoring
+  them. As I made each change, I asked myself why I made that change and then wrote the
+  reason down here. The result is a rather long list of things that smell bad to me when I read
+  code.
+  This list is meant to be read from top to bottom and also to be used as a reference.
+  There is a cross-reference for each heuristic that shows you where it is referenced in the
+  rest of the text in "Appendix C" on page 409.
+  Comments
+
+
+
+  C1: Inappropriate Information
+  It is inappropriate for a comment to hold information better held in a different kind of sys-
+  tem such as your source code control system, your issue tracking system, or any other
+  record-keeping system. Change histories, for example, just clutter up source files with
+  volumes of historical and uninteresting text. In general, meta-data such as authors, last-
+  modified-date, SPR number, and so on should not appear in comments. Comments should
+  be reserved for technical notes about the code and design.
+
+
+  C2: Obsolete Comment ...
+  A comment that has gotten old, irrelevant, and incorrect is obsolete. Comments get old
+  quickly. It is best not to write a comment that will become obsolete. If you find an obsolete
+  comment, it is best to update it or get rid of it as quickly as possible. Obsolete comments
+  tend to migrate away from the code they once described. They become floating islands of
+  irrelevance and misdirection in the code.
+
+
+  C3: Redundant Comment .
+  A comment is redundant if it describes something that adequately describes itself. For
+  example:
+  i++; // increment i
+
+  Another example is a Javadoc that says nothing more than (or even less than) the function
+  signature:
+  /**
+  * @param sellRequest
+  * @return
+  * @throws ManagedComponentException
+  */
+  public SellResponse beginSellItem(SellRequest sellRequest)
+  throws ManagedComponentException
+
+  Comments should say things that the code cannot say for itself.
+  Environment 287
+
+
+  C4: Poorly Written Comment
+  A comment worth writing is worth writing well. If you are going to write a comment,
+  take the time to make sure it is the best comment you can write. Choose your words
+  carefully. Use correct grammar and punctuation. Don't ramble. Don't state the obvious.
+  Be brief.
+
+
+  C5: Commented-Out Code .
+  It makes me crazy to see stretches of code that are commented out. Who knows how old it
+  is? Who knows whether or not it's meaningful? Yet no one will delete it because everyone
+  assumes someone else needs it or has plans for it.
+  That code sits there and rots, getting less and less relevant with every passing day. It
+  calls functions that no longer exist. It uses variables whose names have changed. It follows
+  conventions that are long obsolete. It pollutes the modules that contain it and distracts the
+  people who try to read it. Commented-out code is an abomination.
+  When you see commented-out code, delete it! Don't worry, the source code control
+  system still remembers it. If anyone really needs it, he or she can go back and check out a
+  previous version. Don't suffer commented-out code to survive.
+  Environment
+
+
+
+  E1: Build Requires More Than One Step
+  Building a project should be a single trivial operation. You should not have to check many
+  little pieces out from source code control. You should not need a sequence of arcane com-
+  mands or context dependent scripts in order to build the individual elements. You should
+  not have to search near and far for all the various little extra JARs, XML files, and other
+  artifacts that the system requires. You should be able to check out the system with one sim-
+  ple command and then issue one other simple command to build it.
+  svn get mySystem
+  cd mySystem
+  ant all
+
+
+
+  E2: Tests Require More Than One Step
+  You should be able to run all the unit tests with just one command. In the best case you
+  can run all the tests by clicking on one button in your IDE. In the worst case you should
+  be able to issue a single simple command in a shell. Being able to run all the tests is so
+  fundamental and so important that it should be quick, easy, and obvious to do.
+  288 Chapter 17: Smells and Heuristics
+  Functions
+
+
+
+  F1: Too Many Arguments
+  Functions should have a small number of arguments. No argument is best, followed by
+  one, two, and three. More than three is very questionable and should be avoided with prej-
+  udice. (See "Function Arguments" on page 40.)
+
+
+  F2: Output Arguments
+  Output arguments are counterintuitive. Readers expect arguments to be inputs, not out-
+  puts. If your function must change the state of something, have it change the state of the
+  object it is called on. (See "Output Arguments" on page 45.)
+
+
+  F3: Flag Arguments
+  Boolean arguments loudly declare that the function does more than one thing. They are
+  confusing and should be eliminated. (See "Flag Arguments" on page 41.)
+
+
+  F4: Dead Function
+  Methods that are never called should be discarded. Keeping dead code around is wasteful.
+  Don't be afraid to delete the function. Remember, your source code control system still
+  remembers it.
+  General
+
+
+
+  G1: Multiple Languages in One Source File ..
+  Today's modern programming environments make it possible to put many different languages
+  into a single source file. For example, a Java source file might contain snippets of XML,
+  HTML, YAML, JavaDoc, English, JavaScript, and so on. For another example, in addition to
+  HTML a JSP file might contain Java, a tag library syntax, English comments, Javadocs,
+  XML, JavaScript, and so forth. This is confusing at best and carelessly sloppy at worst.
+  The ideal is for a source file to contain one, and only one, language. Realistically, we
+  will probably have to use more than one. But we should take pains to minimize both the
+  number and extent of extra languages in our source files.
+
+
+  G2: Obvious Behavior Is Unimplemented
+  Following "The Principle of Least Surprise,"^2 any function or class should implement the
+  behaviors that another programmer could reasonably expect. For example, consider a
+  function that translates the name of a day to an enum that represents the day.
+
+  Or "The Principle of Least Astonishment": http://en.wikipedia.org/wiki/
+  Principle_of_least_astonishment
+
+  General 289
+  Day day = DayDate.StringToDay(String dayName);
+
+  We would expect the string "Monday"to be translated to Day.MONDAY. We would also expect
+  the common abbreviations to be translated, and we would expect the function to ignore
+  case.
+  When an obvious behavior is not implemented, readers and users of the code can no
+  longer depend on their intuition about function names. They lose their trust in the original
+  author and must fall back on reading the details of the code.
+
+
+  G3: Incorrect Behavior at the Boundaries
+  It seems obvious to say that code should behave correctly. The problem is that we seldom
+  realize just how complicated correct behavior is. Developers often write functions that
+  they think will work, and then trust their intuition rather than going to the effort to prove
+  that their code works in all the corner and boundary cases.
+  There is no replacement for due diligence. Every boundary condition, every corner
+  case, every quirk and exception represents something that can confound an elegant and
+  intuitive algorithm. Don't rely on your intuition. Look for every boundary condition and
+  write a test for it.
+
+
+  G4: Overridden Safeties .
+  Chernobyl melted down because the plant manager overrode each of the safety mecha-
+  nisms one by one. The safeties were making it inconvenient to run an experiment. The
+  result was that the experiment did not get run, and the world saw it's first major civilian
+  nuclear catastrophe.
+  It is risky to override safeties. Exerting manual control over serialVersionUIDmay be
+  necessary, but it is always risky. Turning off certain compiler warnings (or all warnings!)
+  may help you get the build to succeed, but at the risk of endless debugging sessions. Turn-
+  ing off failing tests and telling yourself you'll get them to pass later is as bad as pretending
+  your credit cards are free money.
+
+
+  G5: Duplication
+  This is one of the most important rules in this book, and you should take it very seriously.
+  Virtually every author who writes about software design mentions this rule. Dave Thomas
+  and Andy Hunt called it the DRY^3 principle (Don't Repeat Yourself). Kent Beck made it
+  one of the core principles of Extreme Programming and called it: "Once, and only once."
+  Ron Jeffries ranks this rule second, just below getting all the tests to pass.
+  Every time you see duplication in the code, it represents a missed opportunity for
+  abstraction. That duplication could probably become a subroutine or perhaps another
+  class outright. By folding the duplication into such an abstraction, you increase the vocab-
+  ulary of the language of your design. Other programmers can use the abstract facilities
+
+  [PRAG].
+
+  290 Chapter 17: Smells and Heuristics
+  you create. Coding becomes faster and less error prone because you have raised the
+  abstraction level.
+  The most obvious form of duplication is when you have clumps of identical code that
+  look like some programmers went wild with the mouse, pasting the same code over and
+  over again. These should be replaced with simple methods.
+  A more subtle form is the switch/caseorif/elsechain that appears again and again in
+  various modules, always testing for the same set of conditions. These should be replaced
+  with polymorphism.
+  Still more subtle are the modules that have similar algorithms, but that don't share
+  similar lines of code. This is still duplication and should be addressed by using the TEM-
+  PLATE METHOD,^4 or STRATEGY^5 pattern.
+  Indeed, most of the design patterns that have appeared in the last fifteen years are sim-
+  ply well-known ways to eliminate duplication. So too the Codd Normal Forms are a strat-
+  egy for eliminating duplication in database schemae. OO itself is a strategy for organizing
+  modules and eliminating duplication. Not surprisingly, so is structured programming.
+  I think the point has been made. Find and eliminate duplication wherever you can.
+
+
+
+  G6: Code at Wrong Level of Abstraction
+  It is important to create abstractions that separate higher level general concepts from lower
+  level detailed concepts. Sometimes we do this by creating abstract classes to hold the
+  higher level concepts and derivatives to hold the lower level concepts. When we do this,
+  we need to make sure that the separation is complete. We want all the lower level concepts
+  to be in the derivatives and all the higher level concepts to be in the base class.
+  For example, constants, variables, or utility functions that pertain only to the detailed
+  implementation should not be present in the base class. The base class should know noth-
+  ing about them.
+  This rule also pertains to source files, components, and modules. Good software
+  design requires that we separate concepts at different levels and place them in different
+  containers. Sometimes these containers are base classes or derivatives and sometimes they
+  are source files, modules, or components. Whatever the case may be, the separation needs
+  to be complete. We don't want lower and higher level concepts mixed together.
+  Consider the following code:
+  public interface Stack {
+  Object pop() throws EmptyException;
+  void push(Object o) throws FullException;
+  double percentFull();
+
+
+  [GOF].
+  [GOF].
+
+  General 291
+  class EmptyException extends Exception {}
+  class FullException extends Exception {}
+  }
+  ThepercentFullfunction is at the wrong level of abstraction. Although there are
+  many implementations of Stackwhere the concept of fullness is reasonable, there are other
+  implementations that simply could not know how full they are. So the function would be
+  better placed in a derivative interface such as BoundedStack.
+  Perhaps you are thinking that the implementation could just return zero if the stack
+  were boundless. The problem with that is that no stack is truly boundless. You cannot
+  really prevent an OutOfMemoryException by checking for
+  stack.percentFull() < 50.0.
+
+  Implementing the function to return 0 would be telling a lie.
+  The point is that you cannot lie or fake your way out of a misplaced abstraction. Iso-
+  lating abstractions is one of the hardest things that software developers do, and there is no
+  quick fix when you get it wrong.
+
+
+  G7: Base Classes Depending on Their Derivatives
+  The most common reason for partitioning concepts into base and derivative classes is so
+  that the higher level base class concepts can be independent of the lower level derivative
+  class concepts. Therefore, when we see base classes mentioning the names of their deriva-
+  tives, we suspect a problem. In general, base classes should know nothing about their
+  derivatives.
+  There are exceptions to this rule, of course. Sometimes the number of derivatives is
+  strictly fixed, and the base class has code that selects between the derivatives. We see this a
+  lot in finite state machine implementations. However, in that case the derivatives and base
+  class are strongly coupled and always deploy together in the same jar file. In the general
+  case we want to be able to deploy derivatives and bases in different jar files.
+  Deploying derivatives and bases in different jar files and making sure the base jar files
+  know nothing about the contents of the derivative jar files allow us to deploy our systems
+  in discrete and independent components. When such components are modified, they can
+  be redeployed without having to redeploy the base components. This means that the
+  impact of a change is greatly lessened, and maintaining systems in the field is made much
+  simpler.
+
+
+  G8: Too Much Information .
+  Well-defined modules have very small interfaces that allow you to do a lot with a little.
+  Poorly defined modules have wide and deep interfaces that force you to use many different
+  gestures to get simple things done. A well-defined interface does not offer very many func-
+  tions to depend upon, so coupling is low. A poorly defined interface provides lots of func-
+  tions that you must call, so coupling is high.
+  292 Chapter 17: Smells and Heuristics
+  Good software developers learn to limit what they expose at the interfaces of their
+  classes and modules. The fewer methods a class has, the better. The fewer variables a func-
+  tion knows about, the better. The fewer instance variables a class has, the better.
+  Hide your data. Hide your utility functions. Hide your constants and your temporaries.
+  Don't create classes with lots of methods or lots of instance variables. Don't create lots of
+  protected variables and functions for your subclasses. Concentrate on keeping interfaces
+  very tight and very small. Help keep coupling low by limiting information.
+
+
+  G9: Dead Code .
+  Dead code is code that isn't executed. You find it in the body of an ifstatement that checks
+  for a condition that can't happen. You find it in the catchblock of a trythat never throws.
+  You find it in little utility methods that are never called or switch/caseconditions that
+  never occur.
+  The problem with dead code is that after awhile it starts to smell. The older it is, the
+  stronger and sourer the odor becomes. This is because dead code is not completely
+  updated when designs change. It still compiles , but it does not follow newer conventions or
+  rules. It was written at a time when the system was different. When you find dead code, do
+  the right thing. Give it a decent burial. Delete it from the system.
+
+
+  G10: Vertical Separation
+  Variables and function should be defined close to where they are used. Local variables
+  should be declared just above their first usage and should have a small vertical scope. We
+  don't want local variables declared hundreds of lines distant from their usages.
+  Private functions should be defined just below their first usage. Private functions
+  belong to the scope of the whole class, but we'd still like to limit the vertical distance
+  between the invocations and definitions. Finding a private function should just be a matter
+  of scanning downward from the first usage.
+
+
+  G11: Inconsistency
+  If you do something a certain way, do all similar things in the same way. This goes back
+  to the principle of least surprise. Be careful with the conventions you choose, and once
+  chosen, be careful to continue to follow them.
+  If within a particular function you use a variable named responseto hold an
+  HttpServletResponse, then use the same variable name consistently in the other functions
+  that use HttpServletResponseobjects. If you name a method processVerificationRequest,
+  then use a similar name, such as processDeletionRequest, for the methods that process
+  other kinds of requests.
+  Simple consistency like this, when reliably applied, can make code much easier to
+  read and modify.
+  General 293
+
+
+  G12: Clutter
+
+  Of what use is a default constructor with no implementation? All it serves to do is clutter
+  up the code with meaningless artifacts. Variables that aren't used, functions that are never
+  called, comments that add no information, and so forth. All these things are clutter and
+  should be removed. Keep your source files clean, well organized, and free of clutter.
+
+
+  G13: Artificial Coupling
+  Things that don't depend upon each other should not be artificially coupled. For example,
+  generalenumsshould not be contained within more specific classes because this forces the
+  whole application to know about these more specific classes. The same goes for general
+  purpose static functions being declared in specific classes.
+  In general an artificial coupling is a coupling between two modules that serves no
+  direct purpose. It is a result of putting a variable, constant, or function in a temporarily
+  convenient, though inappropriate, location. This is lazy and careless.
+  Take the time to figure out where functions, constants, and variables ought to be
+  declared. Don't just toss them in the most convenient place at hand and then leave them
+  there.
+  G14: Feature Envy
+  This is one of Martin Fowler's code smells.^6 The methods of a class should be interested in
+  the variables and functions of the class they belong to, and not the variables and functions
+  of other classes. When a method uses accessors and mutators of some other object to
+  manipulate the data within that object, then it envies the scope of the class of that other
+  object. It wishes that it were inside that other class so that it could have direct access to the
+  variables it is manipulating. For example:
+  public class HourlyPayCalculator {
+  public Money calculateWeeklyPay(HourlyEmployee e) {
+  int tenthRate = e.getTenthRate().getPennies();
+  int tenthsWorked = e.getTenthsWorked();
+  int straightTime = Math.min(400, tenthsWorked);
+  int overTime = Math.max(0, tenthsWorked - straightTime);
+  int straightPay = straightTime * tenthRate;
+  int overtimePay = (int)Math.round(overTime*tenthRate*1.5);
+  return new Money(straightPay + overtimePay);
+  }
+  }
+
+  ThecalculateWeeklyPaymethod reaches into the HourlyEmployeeobject to get the data on
+  which it operates. The calculateWeeklyPaymethod envies the scope of HourlyEmployee. It
+  "wishes" that it could be inside HourlyEmployee.
+
+  [Refactoring].
+
+  294 Chapter 17: Smells and Heuristics
+  All else being equal, we want to eliminate Feature Envy because it exposes the internals
+  of one class to another. Sometimes, however, Feature Envy is a necessary evil. Consider the
+  following:
+  public class HourlyEmployeeReport {
+  private HourlyEmployee employee ;
+  public HourlyEmployeeReport(HourlyEmployee e) {
+  this.employee = e;
+  }
+  String reportHours() {
+  return String.format(
+  "Name: %s\tHours:%d.%1d\n",
+  employee.getName(),
+  employee.getTenthsWorked()/10,
+  employee.getTenthsWorked()%10);
+  }
+  }
+
+  Clearly, the reportHoursmethod envies the HourlyEmployeeclass. On the other hand, we
+  don't want HourlyEmployeeto have to know about the format of the report. Moving that for-
+  mat string into the HourlyEmployee class would violate several principles of object oriented
+  design.^7 It would couple HourlyEmployee to the format of the report, exposing it to changes
+  in that format.
+  G15: Selector Arguments
+  There is hardly anything more abominable than a dangling falseargument at the end of a
+  function call. What does it mean? What would it change if it were true? Not only is the
+  purpose of a selector argument difficult to remember, each selector argument combines
+  many functions into one. Selector arguments are just a lazy way to avoid splitting a large
+  function into several smaller functions. Consider:
+  public int calculateWeeklyPay(boolean overtime) {
+  int tenthRate = getTenthRate();
+  int tenthsWorked = getTenthsWorked();
+  int straightTime = Math.min(400, tenthsWorked);
+  int overTime = Math.max(0, tenthsWorked - straightTime);
+  int straightPay = straightTime * tenthRate;
+  double overtimeRate = overtime? 1.5 : 1.0 * tenthRate;
+  int overtimePay = (int)Math.round(overTime*overtimeRate);
+  return straightPay + overtimePay;
+  }
+  You call this function with a trueif overtime is paid as time and a half, and with a
+  falseif overtime is paid as straight time. It's bad enough that you must remember what
+  calculateWeeklyPay(false)means whenever you happen to stumble across it. But the
+
+  Specifically, the Single Responsibility Principle, the Open Closed Principle, and the Common Closure Principle. See [PPP].
+
+  General 295
+  real shame of a function like this is that the author missed the opportunity to write the
+  following:
+  public int straightPay() {
+  return getTenthsWorked() * getTenthRate();
+  }
+  public int overTimePay() {
+  int overTimeTenths = Math.max(0, getTenthsWorked() - 400);
+  int overTimePay = overTimeBonus(overTimeTenths);
+  return straightPay() + overTimePay;
+  }
+  private int overTimeBonus(int overTimeTenths) {
+  double bonus = 0.5 * getTenthRate() * overTimeTenths;
+  return (int) Math.round(bonus);
+  }
+  Of course, selectors need not be boolean. They can be enums, integers, or any other
+  type of argument that is used to select the behavior of the function. In general it is better to
+  have many functions than to pass some code into a function to select the behavior.
+  G16: Obscured Intent
+  We want code to be as expressive as possible. Run-on expressions, Hungarian notation,
+  and magic numbers all obscure the author's intent. For example, here is the overTimePay
+  function as it might have appeared:
+  public int m_otCalc() {
+  return iThsWkd * iThsRte +
+  (int) Math.round(0.5 * iThsRte *
+  Math.max(0, iThsWkd - 400)
+  );
+  }
+  Small and dense as this might appear, it's also virtually impenetrable. It is worth tak-
+  ing the time to make the intent of our code visible to our readers.
+  G17: Misplaced Responsibility
+  One of the most important decisions a software developer can make is where to put code.
+  For example, where should the PIconstant go? Should it be in the Mathclass? Perhaps it
+  belongs in the Trigonometry class? Or maybe in the Circle class?
+  The principle of least surprise comes into play here. Code should be placed where a
+  reader would naturally expect it to be. The PIconstant should go where the trig functions
+  are declared. The OVERTIME_RATE constant should be declared in the HourlyPay-
+  Calculator class.
+  Sometimes we get "clever" about where to put certain functionality. We'll put it in a
+  function that's convenient for us, but not necessarily intuitive to the reader. For example,
+  perhaps we need to print a report with the total of hours that an employee worked. We
+  296 Chapter 17: Smells and Heuristics
+  could sum up those hours in the code that prints the report, or we could try to keep a run-
+  ning total in the code that accepts time cards.
+  One way to make this decision is to look at the names of the functions. Let's say that
+  our report module has a function named getTotalHours. Let's also say that the module that
+  accepts time cards has a saveTimeCardfunction. Which of these two functions, by it's name,
+  implies that it calculates the total? The answer should be obvious.
+  Clearly, there are sometimes performance reasons why the total should be calculated
+  as time cards are accepted rather than when the report is printed. That's fine, but the names
+  of the functions ought to reflect this. For example, there should be a computeRunning-
+  TotalOfHours function in the timecard module.
+  G18: Inappropriate Static .
+  Math.max(double a, double b)is a good static method. It does not operate on a single
+  instance; indeed, it would be silly to have to say new Math().max(a,b)or even a.max(b).
+  All the data that maxuses comes from its two arguments, and not from any "owning"
+  object. More to the point, there is almost no chance that we'd want Math.maxto be
+  polymorphic.
+  Sometimes, however, we write static functions that should not be static. For example,
+  consider:
+  HourlyPayCalculator.calculatePay(employee, overtimeRate).
+
+  Again, this seems like a reasonable staticfunction. It doesn't operate on any particular
+  object and gets all it's data from it's arguments. However, there is a reasonable chance that
+  we'll want this function to be polymorphic. We may wish to implement several different
+  algorithms for calculating hourly pay, for example, OvertimeHourlyPayCalculatorand
+  StraightTimeHourlyPayCalculator. So in this case the function should not be static. It
+  should be a nonstatic member function of Employee.
+  In general you should prefer nonstatic methods to static methods. When in doubt,
+  make the function nonstatic. If you really want a function to be static, make sure that there
+  is no chance that you'll want it to behave polymorphically.
+  G19: Use Explanatory Variables
+  Kent Beck wrote about this in his great book Smalltalk Best Practice Patterns^8 and again
+  more recently in his equally great book Implementation Patterns.^9 One of the more power-
+  ful ways to make a program readable is to break the calculations up into intermediate val-
+  ues that are held in variables with meaningful names.
+
+  [Beck97], p. 108.
+  [Beck07].
+
+  General 297
+  Consider this example from FitNesse:
+  Matcher match = headerPattern.matcher(line);
+  if(match.find())
+  {
+  String key = match.group(1);
+  String value = match.group(2);
+  headers.put(key.toLowerCase(), value);
+  }
+  The simple use of explanatory variables makes it clear that the first matched group is
+  the key, and the second matched group is the value.
+  It is hard to overdo this. More explanatory variables are generally better than fewer. It
+  is remarkable how an opaque module can suddenly become transparent simply by break-
+  ing the calculations up into well-named intermediate values.
+  G20: Function Names Should Say What They Do
+  Look at this code:
+  Date newDate = date.add(5);
+
+  Would you expect this to add five days to the date? Or is it weeks, or hours? Is the date
+  instance changed or does the function just return a new Datewithout changing the old one?
+  You can't tell from the call what the function does.
+  If the function adds five days to the date and changes the date, then it should be called
+  addDaysToorincreaseByDays. If, on the other hand, the function returns a new date that is
+  five days later but does not change the date instance, it should be called daysLateror
+  daysSince.
+  If you have to look at the implementation (or documentation) of the function to know
+  what it does, then you should work to find a better name or rearrange the functionality so
+  that it can be placed in functions with better names.
+  G21: Understand the Algorithm
+  Lots of very funny code is written because people don't take the time to understand the
+  algorithm. They get something to work by plugging in enough ifstatements and flags,
+  without really stopping to consider what is really going on.
+  Programming is often an exploration. You think you know the right algorithm for
+  something, but then you wind up fiddling with it, prodding and poking at it, until you get it
+  to "work." How do you know it "works"? Because it passes the test cases you can think of.
+  There is nothing wrong with this approach. Indeed, often it is the only way to get a
+  function to do what you think it should. However, it is not sufficient to leave the quotation
+  marks around the word "work."
+  298 Chapter 17: Smells and Heuristics
+  Before you consider yourself to be done with a function, make sure you understand
+  how it works. It is not good enough that it passes all the tests. You must know^10 that the
+  solution is correct.
+  Often the best way to gain this knowledge and understanding is to refactor the func-
+  tion into something that is so clean and expressive that it is obvious how it works.
+  G22: Make Logical Dependencies Physical ...
+  If one module depends upon another, that dependency should be physical, not just logical.
+  The dependent module should not make assumptions (in other words, logical dependen-
+  cies) about the module it depends upon. Rather it should explicitly ask that module for all
+  the information it depends upon.
+  For example, imagine that you are writing a function that prints a plain text report of
+  hours worked by employees. One class named HourlyReportergathers all the data into a
+  convenient form and then passes it to HourlyReportFormatterto print it. (See Listing 17-1.)
+
+  There is a difference between knowing how the code works and knowing whether the algorithm will do the job required of it.
+  Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness.
+
+  Listing 17-1
+  HourlyReporter.java
+  public class HourlyReporter {
+  private HourlyReportFormatter formatter;
+  private List<LineItem> page;
+  private final int PAGE_SIZE = 55;
+  public HourlyReporter(HourlyReportFormatter formatter) {
+  this.formatter = formatter;
+  page = new ArrayList<LineItem>();
+  }
+  public void generateReport(List<HourlyEmployee> employees) {
+  for (HourlyEmployee e : employees) {
+  addLineItemToPage(e);
+  if (page.size() == PAGE_SIZE)
+  printAndClearItemList();
+  }
+  if (page.size() > 0)
+  printAndClearItemList();
+  }
+
+  private void printAndClearItemList() {
+  formatter.format(page);
+  page.clear();
+  }
+  private void addLineItemToPage(HourlyEmployee e) {
+  LineItem item = new LineItem();
+  item.name = e.getName();
+  item.hours = e.getTenthsWorked() / 10;
+
+  General 299
+  This code has a logical dependency that has not been physicalized. Can you spot it? It
+  is the constant PAGE_SIZE. Why should the HourlyReporter know the size of the page? Page
+  size should be the responsibility of the HourlyReportFormatter.
+  The fact that PAGE_SIZE is declared in HourlyReporterrepresents a misplaced
+  responsibility [G17] that causes HourlyReporterto assume that it knows what the page size
+  ought to be. Such an assumption is a logical dependency. HourlyReporterdepends on the
+  fact that HourlyReportFormatter can deal with page sizes of 55. If some implementation of
+  HourlyReportFormatter could not deal with such sizes, then there would be an error.
+  We can physicalize this dependency by creating a new method in HourlyReport-
+  FormatternamedgetMaxPageSize().HourlyReporterwill then call that function rather than
+  using the PAGE_SIZE constant.
+  G23: Prefer Polymorphism to If/Else or Switch/Case
+  This might seem a strange suggestion given the topic of Chapter 6. After all, in that chapter I
+  make the point that switch statements are probably appropriate in the parts of the system
+  where adding new functions is more likely than adding new types.
+  First, most people use switch statements because it's the obvious brute force solution,
+  not because it's the right solution for the situation. So this heuristic is here to remind us to
+  consider polymorphism before using a switch.
+  Second, the cases where functions are more volatile than types are relatively rare. So
+  every switch statement should be suspect.
+  I use the following "ONE SWITCH" rule: There may be no more than one switch state-
+  ment for a given type of selection. The cases in that switch statement must create polymor-
+  phic objects that take the place of other such switch statements in the rest of the system.
+  G24: Follow Standard Conventions
+  Every team should follow a coding standard based on common industry norms. This cod-
+  ing standard should specify things like where to declare instance variables; how to name
+  classes, methods, and variables; where to put braces; and so on. The team should not need
+  a document to describe these conventions because their code provides the examples.
+  item.tenths = e.getTenthsWorked() % 10;
+  page.add(item);
+  }
+
+  public class LineItem {
+  public String name;
+  public int hours;
+  public int tenths;
+  }
+  }
+
+  Listing 17-1 (continued)
+  HourlyReporter.java
+
+  300 Chapter 17: Smells and Heuristics
+  Everyone on the team should follow these conventions. This means that each team
+  member must be mature enough to realize that it doesn't matter a whit where you put your
+  braces so long as you all agree on where to put them.
+  If you would like to know what conventions I follow, you'll see them in the refactored
+  code in Listing B-7 on page 394, through Listing B-14.
+  G25: Replace Magic Numbers with Named Constants ..
+  This is probably one of the oldest rules in software development. I remember reading it in the
+  late sixties in introductory COBOL, FORTRAN, and PL/1 manuals. In general it is a bad
+  idea to have raw numbers in your code. You should hide them behind well-named constants.
+  For example, the number 86,400 should be hidden behind the constant
+  SECONDS_PER_DAY. If you are printing 55 lines per page, then the constant 55 should be hid-
+  den behind the constant LINES_PER_PAGE.
+  Some constants are so easy to recognize that they don't always need a named constant
+  to hide behind so long as they are used in conjunction with very self-explanatory code. For
+  example:
+  double milesWalked = feetWalked/5280.0;
+  int dailyPay = hourlyRate * 8;
+  double circumference = radius * Math.PI * 2;
+  Do we really need the constants FEET_PER_MILE,WORK_HOURS_PER_DAY, and TWOin the
+  above examples? Clearly, the last case is absurd. There are some formulae in which con-
+  stants are simply better written as raw numbers. You might quibble about the
+  WORK_HOURS_PER_DAYcase because the laws or conventions might change. On the other
+  hand, that formula reads so nicely with the 8 in it that I would be reluctant to add 17 extra
+  characters to the readers' burden. And in the FEET_PER_MILEcase, the number 5280 is so
+  very well known and so unique a constant that readers would recognize it even if it stood
+  alone on a page with no context surrounding it.
+  Constants like 3.141592653589793 are also very well known and easily recognizable.
+  However, the chance for error is too great to leave them raw. Every time someone sees
+  3.1415927535890793, they know that it is p, and so they fail to scrutinize it. (Did you
+  catch the single-digit error?) We also don't want people using 3.14, 3.14159, 3.142, and so
+  forth. Therefore, it is a good thing that Math.PI has already been defined for us.
+  The term "Magic Number" does not apply only to numbers. It applies to any token
+  that has a value that is not self-describing. For example:
+  assertEquals(7777, Employee.find("John Doe").employeeNumber());
+  There are two magic numbers in this assertion. The first is obviously 7777, though
+  what it might mean is not obvious. The second magic number is "John Doe," and again the
+  intent is not clear.
+  It turns out that "John Doe"is the name of employee #7777 in a well-known test data-
+  base created by our team. Everyone in the team knows that when you connect to this
+  General 301
+  database, it will have several employees already cooked into it with well-known values
+  and attributes. It also turns out that "John Doe"represents the sole hourly employee in
+  that test database. So this test should really read:
+  assertEquals(
+  HOURLY_EMPLOYEE_ID,
+  Employee.find(HOURLY_EMPLOYEE_NAME).employeeNumber());
+
+  G26: Be Precise
+  Expecting the first match to be the only match to a query is probably naive. Using floating
+  point numbers to represent currency is almost criminal. Avoiding locks and/or transaction
+  management because you don't think concurrent update is likely is lazy at best. Declaring
+  a variable to be an ArrayListwhen a Listwill due is overly constraining. Making all vari-
+  ables protected by default is not constraining enough.
+  When you make a decision in your code, make sure you make it precisely. Know why
+  you have made it and how you will deal with any exceptions. Don't be lazy about the pre-
+  cision of your decisions. If you decide to call a function that might return null, make sure
+  you check for null. If you query for what you think is the only record in the database,
+  make sure your code checks to be sure there aren't others. If you need to deal with cur-
+  rency, use integers^11 and deal with rounding appropriately. If there is the possibility of
+  concurrent update, make sure you implement some kind of locking mechanism.
+  Ambiguities and imprecision in code are either a result of disagreements or laziness.
+  In either case they should be eliminated.
+  G27: Structure over Convention
+  Enforce design decisions with structure over convention. Naming conventions are good,
+  but they are inferior to structures that force compliance. For example, switch/cases with
+  nicely named enumerations are inferior to base classes with abstract methods. No one is
+  forced to implement the switch/casestatement the same way each time; but the base
+  classes do enforce that concrete classes have all abstract methods implemented.
+  G28: Encapsulate Conditionals
+  Boolean logic is hard enough to understand without having to see it in the context of an if
+  orwhile statement. Extract functions that explain the intent of the conditional.
+  For example:
+  if (shouldBeDeleted(timer))
+
+  is preferable to
+  if (timer.hasExpired() && !timer.isRecurrent())
+
+
+  Or better yet, a Money class that uses integers.
+
+  302 Chapter 17: Smells and Heuristics
+  G29: Avoid Negative Conditionals .
+  Negatives are just a bit harder to understand than positives. So, when possible, condition-
+  als should be expressed as positives. For example:
+  if (buffer.shouldCompact())
+
+  is preferable to
+  if (!buffer.shouldNotCompact())
+
+  G30: Functions Should Do One Thing
+  It is often tempting to create functions that have multiple sections that perform a series of
+  operations. Functions of this kind do more than one thing , and should be converted into
+  many smaller functions, each of which does one thing.
+  For example:
+  public void pay() {
+  for (Employee e : employees) {
+  if (e.isPayday()) {
+  Money pay = e.calculatePay();
+  e.deliverPay(pay);
+  }
+  }
+  }
+
+  This bit of code does three things. It loops over all the employees, checks to see whether
+  each employee ought to be paid, and then pays the employee. This code would be better
+  written as:
+  public void pay() {
+  for (Employee e : employees)
+  payIfNecessary(e);
+  }
+  private void payIfNecessary(Employee e) {
+  if (e.isPayday())
+  calculateAndDeliverPay(e);
+  }
+  private void calculateAndDeliverPay(Employee e) {
+  Money pay = e.calculatePay();
+  e.deliverPay(pay);
+  }
+
+  Each of these functions does one thing. (See "Do One Thing" on page 35.)
+  G31: Hidden Temporal Couplings ..
+  Temporal couplings are often necessary, but you should not hide the coupling. Structure
+  the arguments of your functions such that the order in which they should be called is obvi-
+  ous. Consider the following:
+  General 303
+  public class MoogDiver {
+  Gradient gradient;
+  List<Spline> splines;
+  public void dive(String reason) {
+  saturateGradient();
+  reticulateSplines();
+  diveForMoog(reason);
+  }
+  }
+
+  The order of the three functions is important. You must saturate the gradient before you
+  can reticulate the splines, and only then can you dive for the moog. Unfortunately, the code
+  does not enforce this temporal coupling. Another programmer could call reticulate-
+  SplinesbeforesaturateGradientwas called, leading to an UnsaturatedGradientException.
+  A better solution is:
+  public class MoogDiver {
+  Gradient gradient;
+  List<Spline> splines;
+  public void dive(String reason) {
+  Gradient gradient = saturateGradient();
+  List<Spline> splines = reticulateSplines(gradient);
+  diveForMoog(splines, reason);
+  }
+  }
+
+  This exposes the temporal coupling by creating a bucket brigade. Each function produces a
+  result that the next function needs, so there is no reasonable way to call them out of order.
+  You might complain that this increases the complexity of the functions, and you'd be
+  right. But that extra syntactic complexity exposes the true temporal complexity of the situation.
+  Note that I left the instance variables in place. I presume that they are needed by pri-
+  vate methods in the class. Even so, I want the arguments in place to make the temporal
+  coupling explicit.
+  G32: Don't Be Arbitrary .
+  Have a reason for the way you structure your code, and make sure that reason is communi-
+  cated by the structure of the code. If a structure appears arbitrary, others will feel empowered
+  to change it. If a structure appears consistently throughout the system, others will use it
+  and preserve the convention. For example, I was recently merging changes to FitNesse and
+  discovered that one of our committers had done this:
+  public class AliasLinkWidget extends ParentWidget
+  {
+  public static class VariableExpandingWidgetRoot {
+  ...
+  ...
+  }
+
+  304 Chapter 17: Smells and Heuristics
+  The problem with this was that VariableExpandingWidgetRoothad no need to be
+  inside the scope of AliasLinkWidget. Moreover, other unrelated classes made use of
+  AliasLinkWidget.VariableExpandingWidgetRoot. These classes had no need to know
+  aboutAliasLinkWidget.
+  Perhaps the programmer had plopped the VariableExpandingWidgetRoot into
+  AliasWidgetas a matter of convenience, or perhaps he thought it really needed to be
+  scoped inside AliasWidget. Whatever the reason, the result wound up being arbitrary. Pub-
+  lic classes that are not utilities of some other class should not be scoped inside another
+  class. The convention is to make them public at the top level of their package.
+  G33: Encapsulate Boundary Conditions
+  Boundary conditions are hard to keep track of. Put the processing for them in one place.
+  Don't let them leak all over the code. We don't want swarms of +1s and -1s scattered hither
+  and yon. Consider this simple example from FIT:
+  if(level + 1 < tags.length)
+  {
+  parts = new Parse(body, tags, level + 1, offset + endTag);
+  body = null;
+  }
+
+  Notice that level+1appears twice. This is a boundary condition that should be encapsu-
+  lated within a variable named something like nextLevel.
+  int nextLevel = level + 1;
+  if(nextLevel < tags.length)
+  {
+  parts = new Parse(body, tags, nextLevel, offset + endTag);
+  body = null;
+  }
+
+
+
+  G34: Functions Should Descend Only One Level of Abstraction
+  The statements within a function should all be written at the same level of abstraction,
+  which should be one level below the operation described by the name of the function. This
+  may be the hardest of these heuristics to interpret and follow. Though the idea is plain
+  enough, humans are just far too good at seamlessly mixing levels of abstraction. Consider,
+  for example, the following code taken from FitNesse:
+  public String render() throws Exception
+  {
+  StringBuffer html = new StringBuffer("<hr");
+  if(size > 0)
+  html.append(" size=\"").append(size + 1).append("\"");
+  html.append(">");
+  return html.toString();
+  }
+
+  General 305
+  A moment's study and you can see what's going on. This function constructs the HTML
+  tag that draws a horizontal rule across the page. The height of that rule is specified in the
+  size variable.
+  Now look again. This method is mixing at least two levels of abstraction. The first is
+  the notion that a horizontal rule has a size. The second is the syntax of the HRtag itself.
+  This code comes from the HruleWidgetmodule in FitNesse. This module detects a row of
+  four or more dashes and converts it into the appropriate HR tag. The more dashes, the
+  larger the size.
+  I refactored this bit of code as follows. Note that I changed the name of the sizefield
+  to reflect its true purpose. It held the number of extra dashes.
+  public String render() throws Exception
+  {
+  HtmlTag hr = new HtmlTag("hr");
+  if (extraDashes > 0)
+  hr.addAttribute("size", hrSize(extraDashes));
+  return hr.html();
+  }
+  private String hrSize(int height)
+  {
+  int hrSize = height + 1;
+  return String.format("%d", hrSize);
+  }
+
+  This change separates the two levels of abstraction nicely. The renderfunction simply con-
+  structs an HR tag, without having to know anything about the HTML syntax of that tag.
+  TheHtmlTag module takes care of all the nasty syntax issues.
+  Indeed, by making this change I caught a subtle error. The original code did not put
+  the closing slash on the HR tag, as the XHTML standard would have it. (In other words, it
+  emittedinstead of .) The HtmlTagmodule had been changed to conform to
+  XHTML long ago.
+  Separating levels of abstraction is one of the most important functions of refactor-
+  ing, and it's one of the hardest to do well. As an example, look at the code below. This
+  was my first attempt at separating the abstraction levels in the HruleWidget.render
+  method.
+  public String render() throws Exception
+  {
+  HtmlTag hr = new HtmlTag("hr");
+  if (size > 0) {
+  hr.addAttribute("size", ""+(size+1));
+  }
+  return hr.html();
+  }
+
+  My goal, at this point, was to create the necessary separation and get the tests to pass.
+  I accomplished that goal easily, but the result was a function that still had mixed levels
+  of abstraction. In this case the mixed levels were the construction of the HR tag and the
+  306 Chapter 17: Smells and Heuristics
+  interpretation and formatting of the sizevariable. This points out that when you break a
+  function along lines of abstraction, you often uncover new lines of abstraction that were
+  obscured by the previous structure.
+  G35: Keep Configurable Data at High Levels
+  If you have a constant such as a default or configuration value that is known and expected
+  at a high level of abstraction, do not bury it in a low-level function. Expose it as an argu-
+  ment to that low-level function called from the high-level function. Consider the following
+  code from FitNesse:
+  public static void main(String[] args) throws Exception
+  {
+  Arguments arguments = parseCommandLine(args);
+  }
+  public class Arguments
+  {
+  public static final String DEFAULT_PATH = ".";
+  public static final String DEFAULT_ROOT = "FitNesseRoot";
+  public static final int DEFAULT_PORT = 80;
+  public static final int DEFAULT_VERSION_DAYS = 14;
+  }
+
+  The command-line arguments are parsed in the very first executable line of FitNesse. The
+  default values of those arguments are specified at the top of the Argumentclass. You don't
+  have to go looking in low levels of the system for statements like this one:
+  if (arguments.port == 0) // use 80 by default
+
+  The configuration constants reside at a very high level and are easy to change. They get
+  passed down to the rest of the application. The lower levels of the application do not own
+  the values of these constants.
+  G36: Avoid Transitive Navigation ...
+  In general we don't want a single module to know much about its collaborators. More spe-
+  cifically, if Acollaborates with B, and Bcollaborates with C, we don't want modules that use
+  A to know about C. (For example, we don't want a.getB().getC().doSomething();.)
+  This is sometimes called the Law of Demeter. The Pragmatic Programmers call it
+  "Writing Shy Code."^12 In either case it comes down to making sure that modules know
+  only about their immediate collaborators and do not know the navigation map of the whole
+  system.
+  If many modules used some form of the statement a.getB().getC(), then it would be
+  difficult to change the design and architecture to interpose a Qbetween BandC. You'd
+
+  [PRAG], p. 138.
+
+  Java 307
+  have to find every instance of a.getB().getC() and convert it to a.getB().getQ().getC().
+  This is how architectures become rigid. Too many modules know too much about the
+  architecture.
+  Rather we want our immediate collaborators to offer all the services we need. We
+  should not have to roam through the object graph of the system, hunting for the method we
+  want to call. Rather we should simply be able to say:
+  myCollaborator.doSomething().
+
+  Java
+
+  J1: Avoid Long Import Lists by Using Wildcards
+  If you use two or more classes from a package, then import the whole package with
+  import package.*;
+
+  Long lists of imports are daunting to the reader. We don't want to clutter up the tops of our
+  modules with 80 lines of imports. Rather we want the imports to be a concise statement
+  about which packages we collaborate with.
+  Specific imports are hard dependencies, whereas wildcard imports are not. If you spe-
+  cifically import a class, then that class must exist. But if you import a package with a wild-
+  card, no particular classes need to exist. The import statement simply adds the package to
+  the search path when hunting for names. So no true dependency is created by such
+  imports, and they therefore serve to keep our modules less coupled.
+  There are times when the long list of specific imports can be useful. For example, if
+  you are dealing with legacy code and you want to find out what classes you need to build
+  mocks and stubs for, you can walk down the list of specific imports to find out the true
+  qualified names of all those classes and then put the appropriate stubs in place. However,
+  this use for specific imports is very rare. Furthermore, most modern IDEs will allow you
+  to convert the wildcarded imports to a list of specific imports with a single command. So
+  even in the legacy case it's better to import wildcards.
+  Wildcard imports can sometimes cause name conflicts and ambiguities. Two classes
+  with the same name, but in different packages, will need to be specifically imported, or at
+  least specifically qualified when used. This can be a nuisance but is rare enough that using
+  wildcard imports is still generally better than specific imports.
+  J2: Don't Inherit Constants
+  I have seen this several times and it always makes me grimace. A programmer puts some
+  constants in an interface and then gains access to those constants by inheriting that inter-
+  face. Take a look at the following code:
+  public class HourlyEmployee extends Employee {
+  private int tenthsWorked;
+  private double hourlyRate;
+
+  308 Chapter 17: Smells and Heuristics
+  public Money calculatePay() {
+  int straightTime = Math.min(tenthsWorked, TENTHS_PER_WEEK);
+  int overTime = tenthsWorked - straightTime;
+  return new Money(
+  hourlyRate * (tenthsWorked + OVERTIME_RATE * overTime)
+  );
+  }
+  }
+
+  Where did the constants TENTHS_PER_WEEKandOVERTIME_RATEcome from? They might have
+  come from class Employee; so let's take a look at that:
+  public abstract class Employee implements PayrollConstants {
+  public abstract boolean isPayday();
+  public abstract Money calculatePay();
+  public abstract void deliverPay(Money pay);
+  }
+
+  Nope, not there. But then where? Look closely at class Employee. It implements
+  PayrollConstants.
+  public interface PayrollConstants {
+  public static final int TENTHS_PER_WEEK = 400;
+  public static final double OVERTIME_RATE = 1.5;
+  }
+
+  This is a hideous practice! The constants are hidden at the top of the inheritance hierarchy.
+  Ick! Don't use inheritance as a way to cheat the scoping rules of the language. Use a static
+  import instead.
+  import static PayrollConstants.*;
+  public class HourlyEmployee extends Employee {
+  private int tenthsWorked;
+  private double hourlyRate;
+  public Money calculatePay() {
+  int straightTime = Math.min(tenthsWorked, TENTHS_PER_WEEK);
+  int overTime = tenthsWorked - straightTime;
+  return new Money(
+  hourlyRate * (tenthsWorked + OVERTIME_RATE * overTime)
+  );
+  }
+  }
+
+  J3: Constants versus Enums
+  Now that enums have been added to the language (Java 5), use them! Don't keep using the
+  old trick of public static final ints. The meaning of ints can get lost. The meaning of
+  enums cannot, because they belong to an enumeration that is named.
+  What's more, study the syntax for enums carefully. They can have methods and fields.
+  This makes them very powerful tools that allow much more expression and flexibility than
+  ints. Consider this variation on the payroll code:
+  Names 309
+  public class HourlyEmployee extends Employee {
+  private int tenthsWorked;
+  HourlyPayGrade grade;
+  public Money calculatePay() {
+  int straightTime = Math.min(tenthsWorked, TENTHS_PER_WEEK);
+  int overTime = tenthsWorked - straightTime;
+  return new Money(
+  grade.rate() * (tenthsWorked + OVERTIME_RATE * overTime)
+  );
+  }
+  }
+  public enum HourlyPayGrade {
+  APPRENTICE {
+  public double rate() {
+  return 1.0;
+  }
+  },
+  LEUTENANT_JOURNEYMAN {
+  public double rate() {
+  return 1.2;
+  }
+  },
+  JOURNEYMAN {
+  public double rate() {
+  return 1.5;
+  }
+  },
+  MASTER {
+  public double rate() {
+  return 2.0;
+  }
+  };
+  public abstract double rate();
+  }
+
+  Names
+
+  N1: Choose Descriptive Names
+  Don't be too quick to choose a name. Make sure the name is descriptive. Remember that
+  meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of
+  the names you choose.
+  This is not just a "feel-good" recommendation. Names in software are 90 percent of
+  what make software readable. You need to take the time to choose them wisely and keep
+  them relevant. Names are too important to treat carelessly.
+  Consider the code below. What does it do? If I show you the code with well-chosen
+  names, it will make perfect sense to you, but like this it's just a hodge-podge of symbols
+  and magic numbers.
+  310 Chapter 17: Smells and Heuristics
+  public int x() {
+  int q = 0;
+  int z = 0;
+  for (int kk = 0; kk < 10; kk++) {
+  if (l[z] == 10)
+  {
+  q += 10 + (l[z + 1] + l[z + 2]);
+  z += 1;
+  }
+  else if (l[z] + l[z + 1] == 10)
+  {
+  q += 10 + l[z + 2];
+  z += 2;
+  } else {
+  q += l[z] + l[z + 1];
+  z += 2;
+  }
+  }
+  return q;
+  }
+  Here is the code the way it should be written. This snippet is actually less complete
+  than the one above. Yet you can infer immediately what it is trying to do, and you could
+  very likely write the missing functions based on that inferred meaning. The magic num-
+  bers are no longer magic, and the structure of the algorithm is compellingly descriptive.
+  public int score() {
+  int score = 0;
+  int frame = 0;
+  for (int frameNumber = 0; frameNumber < 10; frameNumber++) {
+  if (isStrike(frame)) {
+  score += 10 + nextTwoBallsForStrike(frame);
+  frame += 1;
+  } else if (isSpare(frame)) {
+  score += 10 + nextBallForSpare(frame);
+  frame += 2;
+  } else {
+  score += twoBallsInFrame(frame);
+  frame += 2;
+  }
+  }
+  return score;
+  }
+  The power of carefully chosen names is that they overload the structure of the code
+  with description. That overloading sets the readers' expectations about what the other
+  functions in the module do. You can infer the implementation of isStrike()by looking at
+  the code above. When you read the isStrikemethod, it will be "pretty much what you
+  expected."^13
+  private boolean isStrike(int frame) {
+  return rolls[frame] == 10;
+  }
+
+
+  See Ward Cunningham's quote on page 11.
+
+  Names 311
+  N2: Choose Names at the Appropriate Level of Abstraction
+  Don't pick names that communicate implementation; choose names the reflect the level of
+  abstraction of the class or function you are working in. This is hard to do. Again, people
+  are just too good at mixing levels of abstractions. Each time you make a pass over your
+  code, you will likely find some variable that is named at too low a level. You should take
+  the opportunity to change those names when you find them. Making code readable
+  requires a dedication to continuous improvement. Consider the Modem interface below:
+  public interface Modem {
+  boolean dial(String phoneNumber);
+  boolean disconnect();
+  boolean send(char c);
+  char recv();
+  String getConnectedPhoneNumber();
+  }
+
+  At first this looks fine. The functions all seem appropriate. Indeed, for many applications
+  they are. But now consider an application in which some modems aren't connected by
+  dialling. Rather they are connected permanently by hard wiring them together (think of the
+  cable modems that provide Internet access to most homes nowadays). Perhaps some are
+  connected by sending a port number to a switch over a USB connection. Clearly the notion
+  of phone numbers is at the wrong level of abstraction. A better naming strategy for this
+  scenario might be:
+  public interface Modem {
+  boolean connect(String connectionLocator);
+  boolean disconnect();
+  boolean send(char c);
+  char recv();
+  String getConnectedLocator();
+  }
+
+  Now the names don't make any commitments about phone numbers. They can still be used
+  for phone numbers, or they could be used for any other kind of connection strategy.
+  N3: Use Standard Nomenclature Where Possible
+  Names are easier to understand if they are based on existing convention or usage. For exam-
+  ple, if you are using the DECORATOR pattern, you should use the word Decorator in the names
+  of the decorating classes. For example, AutoHangupModemDecoratormight be the name of a
+  class that decorates a Modem with the ability to automatically hang up at the end of a session.
+  Patterns are just one kind of standard. In Java, for example, functions that convert
+  objects to string representations are often named toString. It is better to follow conven-
+  tions like these than to invent your own.
+  Teams will often invent their own standard system of names for a particular project.
+  Eric Evans refers to this as a ubiquitous language for the project.^14 Your code should use
+
+  [DDD].
+
+  312 Chapter 17: Smells and Heuristics
+  the terms from this language extensively. In short, the more you can use names that are
+  overloaded with special meanings that are relevant to your project, the easier it will be for
+  readers to know what your code is talking about.
+  N4: Unambiguous Names .
+  Choose names that make the workings of a function or variable unambiguous. Consider
+  this example from FitNesse:
+  private String doRename() throws Exception
+  {
+  if(refactorReferences)
+  renameReferences();
+  renamePage();
+  pathToRename.removeNameFromEnd();
+  pathToRename.addNameToEnd(newName);
+  return PathParser.render(pathToRename);
+  }
+
+  The name of this function does not say what the function does except in broad and vague
+  terms. This is emphasized by the fact that there is a function named renamePageinside the
+  function named doRename! What do the names tell you about the difference between the
+  two functions? Nothing.
+  A better name for that function is renamePageAndOptionallyAllReferences. This may
+  seem long, and it is, but it's only called from one place in the module, so it's explanatory
+  value outweighs the length.
+  N5: Use Long Names for Long Scopes
+  The length of a name should be related to the length of the scope. You can use very short
+  variable names for tiny scopes, but for big scopes you should use longer names.
+  Variable names like iandjare just fine if their scope is five lines long. Consider this
+  snippet from the old standard "Bowling Game":
+  private void rollMany(int n, int pins)
+  {
+  for (int i=0; i<n; i++)
+  g.roll(pins);
+  }
+
+  This is perfectly clear and would be obfuscated if the variable iwere replaced with some-
+  thing annoying like rollCount. On the other hand, variables and functions with short names
+  lose their meaning over long distances. So the longer the scope of the name, the longer and
+  more precise the name should be.
+  N6: Avoid Encodings
+  Names should not be encoded with type or scope information. Prefixes such as m_orf
+  are useless in today's environments. Also project and/or subsystem encodings such as
+  Tests 313
+  vis_(for visual imaging system) are distracting and redundant. Again, today's environ-
+  ments provide all that information without having to mangle the names. Keep your
+  names free of Hungarian pollution.
+  N7: Names Should Describe Side-Effects.
+  Names should describe everything that a function, variable, or class is or does. Don't hide
+  side effects with a name. Don't use a simple verb to describe a function that does more
+  than just that simple action. For example, consider this code from TestNG:
+  public ObjectOutputStream getOos() throws IOException {
+  if (m_oos == null) {
+  m_oos = new ObjectOutputStream(m_socket.getOutputStream());
+  }
+  return m_oos;
+  }
+
+  This function does a bit more than get an "oos"; it creates the "oos" if it hasn't been cre-
+  ated already. Thus, a better name might be createOrReturnOos.
+  Tests
+
+
+  T1: Insufficient Tests
+  How many tests should be in a test suite? Unfortunately, the metric many programmers use
+  is "That seems like enough." A test suite should test everything that could possibly break.
+  The tests are insufficient so long as there are conditions that have not been explored by the
+  tests or calculations that have not been validated.
+
+
+  T2: Use a Coverage Tool! .
+  Coverage tools reports gaps in your testing strategy. They make it easy to find modules,
+  classes, and functions that are insufficiently tested. Most IDEs give you a visual indication,
+  marking lines that are covered in green and those that are uncovered in red. This makes it
+  quick and easy to find if or catch statements whose bodies haven't been checked.
+
+
+  T3: Don't Skip Trivial Tests
+  They are easy to write and their documentary value is higher than the cost to produce
+  them.
+
+
+  T4: An Ignored Test Is a Question about an Ambiguity ..
+  Sometimes we are uncertain about a behavioral detail because the requirements are
+  unclear. We can express our question about the requirements as a test that is commented
+  out, or as a test that annotated with @Ignore. Which you choose depends upon whether the
+  ambiguity is about something that would compile or not.
+  314 Chapter 17: Smells and Heuristics
+
+
+  T5: Test Boundary Conditions
+  Take special care to test boundary conditions. We often get the middle of an algorithm
+  right but misjudge the boundaries.
+
+
+  T6: Exhaustively Test Near Bugs
+  Bugs tend to congregate. When you find a bug in a function, it is wise to do an exhaustive
+  test of that function. You'll probably find that the bug was not alone.
+
+
+  T7: Patterns of Failure Are Revealing
+  Sometimes you can diagnose a problem by finding patterns in the way the test cases fail.
+  This is another argument for making the test cases as complete as possible. Complete test
+  cases, ordered in a reasonable way, expose patterns.
+  As a simple example, suppose you noticed that all tests with an input larger than five
+  characters failed? Or what if any test that passed a negative number into the second argu-
+  ment of a function failed? Sometimes just seeing the pattern of red and green on the test
+  report is enough to spark the "Aha!" that leads to the solution. Look back at page 267 to
+  see an interesting example of this in the SerialDate example.
+
+
+  T8: Test Coverage Patterns Can Be Revealing .
+  Looking at the code that is or is not executed by the passing tests gives clues to why the
+  failing tests fail.
+
+
+  T9: Tests Should Be Fast .
+  A slow test is a test that won't get run. When things get tight, it's the slow tests that will be
+  dropped from the suite. So do what you must to keep your tests fast.
+  Conclusion
+
+  This list of heuristics and smells could hardly be said to be complete. Indeed, I'm not sure
+  that such a list can ever be complete. But perhaps completeness should not be the goal,
+  because what this list does do is imply a value system.
+  Indeed, that value system has been the goal, and the topic, of this book. Clean code is
+  not written by following a set of rules. You don't become a software craftsman by learn-
+  ing a list of heuristics. Professionalism and craftsmanship come from values that drive
+  disciplines.
+  Bibliography 315
+  Bibliography
+
+  [Refactoring]: Refactoring: Improving the Design of Existing Code , Martin Fowler et al.,
+  Addison-Wesley, 1999.
+  [PRAG]: The Pragmatic Programmer , Andrew Hunt, Dave Thomas, Addison-Wesley,
+  2000.
+  [GOF]: Design Patterns: Elements of Reusable Object Oriented Software , Gamma et al.,
+  Addison-Wesley, 1996.
+  [Beck97]: Smalltalk Best Practice Patterns , Kent Beck, Prentice Hall, 1997.
+  [Beck07]: Implementation Patterns , Kent Beck, Addison-Wesley, 2008.
+  [PPP]: Agile Software Development: Principles, Patterns, and Practices , Robert C. Martin,
+  Prentice Hall, 2002.
+  [DDD]: Domain Driven Design , Eric Evans, Addison-Wesley, 2003.
+
+
+  This page intentionally left blank
+
+
+  # 317
+  Appendix A
+  Concurrency II
+  by Brett L. Schuchert
+
+  This appendix supports and amplifies the Concurrency chapter on page 177. It is written
+  as a series of independent topics and you can generally read them in any order. There is
+  some duplication between sections to allow for such reading.
+  Client/Server Example
+  Imagine a simple client/server application. A server sits and waits listening on a socket for
+  a client to connect. A client connects and sends a request.
+
+
+  The Server
+
+  Here is a simplified version of a server application. Full source for this example is avail-
+  able starting on page 343, Client/Server Nonthreaded.
+  ServerSocket serverSocket = new ServerSocket(8009);
+  while (keepProcessing) {
+  try {
+  Socket socket = serverSocket.accept();
+  process(socket);
+  } catch (Exception e) {
+  handle(e);
+  }
+  }
+
+  318 Appendix A: Concurrency II
+  This simple application waits for a connection, processes an incoming message, and then
+  again waits for the next client request to come in. Here's client code that connects to this
+  server:
+  private void connectSendReceive(int i) {
+  try {
+  Socket socket = new Socket("localhost", PORT);
+  MessageUtils.sendMessage(socket, Integer.toString(i));
+  MessageUtils.getMessage(socket);
+  socket.close();
+  } catch (Exception e) {
+  e.printStackTrace();
+  }
+  }
+
+  How well does this client/server pair perform? How can we formally describe that perfor-
+  mance? Here's a test that asserts that the performance is "acceptable":
+  @Test(timeout = 10000)
+  public void shouldRunInUnder10Seconds() throws Exception {
+  Thread[] threads = createThreads();
+  startAllThreadsw(threads);
+  waitForAllThreadsToFinish(threads);
+  }
+
+  The setup is left out to keep the example simple (see "ClientTest.java" on page 344). This
+  test asserts that it should complete within 10,000 milliseconds.
+  This is a classic example of validating the throughput of a system. This system should
+  complete a series of client requests in ten seconds. So long as the server can process each
+  individual client request in time, the test will pass.
+  What happens if the test fails? Short of developing some kind of event polling loop,
+  there is not much to do within a single thread that will make this code any faster. Will
+  using multiple threads solve the problem? It might, but we need to know where the time is
+  being spent. There are two possibilities:
+  - I/O—using a socket, connecting to a database, waiting for virtual memory swapping,
+  and so on.
+  - Processor—numerical calculations, regular expression processing, garbage collection,
+  and so on.
+  Systems typically have some of each, but for a given operation one tends to dominate. If
+  the code is processor bound, more processing hardware can improve throughput, making
+  our test pass. But there are only so many CPU cycles available, so adding threads to a
+  processor-bound problem will not make it go faster.
+  On the other hand, if the process is I/O bound, then concurrency can increase effi-
+  ciency. When one part of the system is waiting for I/O, another part can use that wait time
+  to process something else, making more effective use of the available CPU.
+  Client/Server Example 319
+
+
+  Adding Threading
+  Assume for the moment that the performance test fails. How can we improve the through-
+  put so that the performance test passes? If the process method of the server is I/O bound,
+  then here is one way to make the server use threads (just change the processMessage):
+  void process(final Socket socket) {
+  if (socket == null)
+  return;
+  Runnable clientHandler = new Runnable() {
+  public void run() {
+  try {
+  String message = MessageUtils.getMessage(socket);
+  MessageUtils.sendMessage(socket, "Processed: " + message);
+  closeIgnoringException(socket);
+  } catch (Exception e) {
+  e.printStackTrace();
+  }
+  }
+  };
+  Thread clientConnection = new Thread(clientHandler);
+  clientConnection.start();
+  }
+
+  Assume that this change causes the test to pass;^1 the code is complete, correct?
+
+
+  Server Observations
+  The updated server completes the test successfully in just over one second. Unfortunately,
+  this solution is a bit naive and introduces some new problems.
+  How many threads might our server create? The code sets no limit, so the we could
+  feasibly hit the limit imposed by the Java Virtual Machine (JVM). For many simple sys-
+  tems this may suffice. But what if the system is meant to support many users on the public
+  net? If too many users connect at the same time, the system might grind to a halt.
+  But set the behavioral problem aside for the moment. The solution shown has prob-
+  lems of cleanliness and structure. How many responsibilities does the server code have?
+  - Socket connection management
+  - Client processing
+  - Threading policy
+  - Server shutdown policy
+  Unfortunately, all these responsibilities live in the process function. In addition, the
+  code crosses many different levels of abstraction. So, small as the process function is, it
+  needs to be repartitioned.
+
+  You can verify that for yourself by trying out the before and after code. Review the nonthreaded code starting on page 343.
+  Review the threaded code starting on page 346.
+
+  320 Appendix A: Concurrency II
+  The server has several reasons to change; therefore it violates the Single Responsibility
+  Principle. To keep concurrent systems clean, thread management should be kept to a few,
+  well-controlled places. What's more, any code that manages threads should do nothing
+  other than thread management. Why? If for no other reason than that tracking down con-
+  currency issues is hard enough without having to unwind other nonconcurrency issues at
+  the same time.
+  If we create a separate class for each of the responsibilities listed above, including the
+  thread management responsibility, then when we change the thread management strategy,
+  the change will impact less overall code and will not pollute the other responsibilities. This
+  also makes it much easier to test all the other responsibilities without having to worry
+  about threading. Here is an updated version that does just that:
+  public void run() {
+  while (keepProcessing) {
+  try {
+  ClientConnection clientConnection = connectionManager.awaitClient();
+  ClientRequestProcessor requestProcessor
+  = new ClientRequestProcessor(clientConnection);
+  clientScheduler.schedule(requestProcessor);
+  } catch (Exception e) {
+  e.printStackTrace();
+  }
+  }
+  connectionManager.shutdown();
+  }
+
+  This now focuses all things thread-related into one place, clientScheduler. If there are
+  concurrency problems, there is just one place to look:
+  public interface ClientScheduler {
+  void schedule(ClientRequestProcessor requestProcessor);
+  }
+
+  The current policy is easy to implement:
+  public class ThreadPerRequestScheduler implements ClientScheduler {
+  public void schedule(final ClientRequestProcessor requestProcessor) {
+  Runnable runnable = new Runnable() {
+  public void run() {
+  requestProcessor.process();
+  }
+  };
+  Thread thread = new Thread(runnable);
+  thread.start();
+  }
+  }
+
+  Having isolated all the thread management into a single place, it is much easier to change
+  the way we control threads. For example, moving to the Java 5 Executor framework
+  involves writing a new class and plugging it in (Listing A-1).
+  Possible Paths of Execution 321
+
+
+  Conclusion
+
+  Introducing concurrency in this particular example demonstrates a way to improve the
+  throughput of a system and one way of validating that throughput through a testing frame-
+  work. Focusing all concurrency code into a small number of classes is an example of
+  applying the Single Responsibility Principle. In the case of concurrent programming, this
+  becomes especially important because of its complexity.
+  Possible Paths of Execution
+  Review the method incrementValue, a one-line Java method with no looping or branching:
+  public class IdGenerator {
+  int lastIdUsed;
+  public int incrementValue() {
+  return ++lastIdUsed;
+  }
+  }
+
+  Ignore integer overflow and assume that only one thread has access to a single instance
+  of IdGenerator. In this case there is a single path of execution and a single guaranteed
+  result:
+  - The value returned is equal to the value of lastIdUsed, both of which are one greater
+  than just before calling the method.
+  Listing A-1
+  ExecutorClientScheduler.java
+  import java.util.concurrent.Executor;
+  import java.util.concurrent.Executors;
+  public class ExecutorClientScheduler implements ClientScheduler {
+  Executor executor;
+
+  public ExecutorClientScheduler(int availableThreads) {
+  executor = Executors.newFixedThreadPool(availableThreads);
+  }
+  public void schedule(final ClientRequestProcessor requestProcessor) {
+  Runnable runnable = new Runnable() {
+  public void run() {
+  requestProcessor.process();
+  }
+  };
+  executor.execute(runnable);
+  }
+  }
+
+  322 Appendix A: Concurrency II
+  What happens if we use two threads and leave the method unchanged? What are the
+  possible outcomes if each thread calls incrementValue once? How many possible paths of
+  execution are there? First, the outcomes (assume lastIdUsed starts with a value of 93):
+  - Thread 1 gets the value of 94, thread 2 gets the value of 95, and lastIdUsed is now 95.
+  - Thread 1 gets the value of 95, thread 2 gets the value of 94, and lastIdUsed is now 95.
+  - Thread 1 gets the value of 94, thread 2 gets the value of 94, and lastIdUsed is now 94.
+  The final result, while surprising, is possible. To see how these different results are possi-
+  ble, we need to understand the number of possible paths of execution and how the Java
+  Virtual Machine executes them.
+
+
+  Number of Paths .
+  To calculate the number of possible execution paths, we'll start with the generated byte-
+  code. The one line of java (return ++lastIdUsed;) becomes eight byte-code instructions. It
+  is possible for the two threads to interleave the execution of these eight instructions the
+  way a card dealer interleaves cards as he shuffles a deck.^2 Even with only eight cards in
+  each hand, there are a remarkable number of shuffled outcomes.
+  For this simple case of N instructions in a sequence, no looping or conditionals, and T
+  threads, the total number of possible execution paths is equal to
+
+  This is a bit of a simplification. However, for the purpose of this discussion, we can use this simplifying model.
+
+  Calculating the Possible Orderings
+
+  This comes from an email from Uncle Bob to Brett:
+  With N steps and T threads there are T * N total steps. Prior to each step
+  there is a context switch that chooses between the T threads. Each path can
+  thus be represented as a string of digits denoting the context switches.
+  Given steps A and B and threads 1 and 2, the six possible paths are 1122,
+  1212, 1221, 2112, 2121, and 2211. Or, in terms of steps it is A1B1A2B2,
+  A1A2B1B2, A1A2B2B1, A2A1B1B2, A2A1B2B1, and A2B2A1B1. For
+  three threads the sequence is 112233, 112323, 113223, 113232, 112233,
+  121233, 121323, 121332, 123132, 123123,
+  One characteristic of these strings is that there must always be N
+  instances of each T. So the string 111111 is invalid because it has six
+  instances of 1 and zero instances of 2 and 3.
+
+  () NT!
+  N! T
+
+  --------------
+
+  Possible Paths of Execution 323
+  For our simple case of one line of Java code, which equates to eight lines of byte-code
+  and two threads, the total number of possible paths of execution is 12,870. If the type of
+  lastIdUsed is a long, then every read/write becomes two operations instead of one, and the
+  number of possible orderings becomes 2,704,156.
+  What happens if we make one change to this method?
+  public synchronized void incrementValue() {
+  ++lastIdUsed;
+  }
+
+  The number of possible execution pathways becomes two for two threads and N! in the
+  general case.
+
+
+  Digging Deeper
+  What about the surprising result that two threads could both call the method once (before
+  we added synchronized) and get the same numeric result? How is that possible? First
+  things first.
+  What is an atomic operation? We can define an atomic operation as any operation that
+  is uninterruptable. For example, in the following code, line 5, where 0 is assigned to
+  lastid, is atomic because according to the Java Memory model, assignment to a 32-bit
+  value is uninterruptable.
+  So we want the permutations of N 1's, N 2's,... and N T' s. This is
+  really just the permutations of N * T things taken N * T at a time, which is
+  ( N * T )!, but with all the duplicates removed. So the trick is to count the
+  duplicates and subtract that from ( N * T )!.
+  Given two steps and two threads, how many duplicates are there? Each
+  four-digit string has two 1s and two 2s. Each of those pairs could be
+  swapped without changing the sense of the string. You could swap the 1s or
+  the 2s both, or neither. So there are four isomorphs for each string, which
+  means that there are three duplicates. So three out of four of the options are
+  duplicates; alternatively one of four of the permutations are NOT dupli-
+  cates. 4! * .25 = 6. So this reasoning seems to work.
+  How many duplicates are there? In the case where N = 2 and T = 2, I
+  could swap the 1s, the 2s, or both. In the case where N = 2 and T = 3, I
+  could swap the 1s, the 2s, the 3s, 1s and 2s, 1s and 3s, or 2s and 3s. Swap-
+  ping is just the permutations of N. Let's say there are P permutations of N.
+  The number of different ways to arrange those permutations are P ** T.
+  So the number of possible isomorphs is N !** T. And so the number of
+  paths is ( T * N )!/( N !** T ). Again, in our T = 2, N = 2 case we get 6 (24/4).
+  For N = 2 and T = 3 we get 720/8 = 90.
+  For N = 3 and T = 3 we get 9!/6^3 = 1680.
+
+  Calculating the Possible Orderings (continued)
+
+  324 Appendix A: Concurrency II
+  01: public class Example {
+  02: int lastId;
+  03:
+  04: public void resetId() {
+  05: value = 0;
+  06: }
+  07:
+  08: public int getNextId() {
+  09: ++value;
+  10: }
+  11:}
+  What happens if we change type of lastId from int to long? Is line 5 still atomic?
+  Not according to the JVM specification. It could be atomic on a particular processor,
+  but according to the JVM specification, assignment to any 64-bit value requires two
+  32-bit assignments. This means that between the first 32-bit assignment and the second
+  32-bit assignment, some other thread could sneak in and change one of the values.
+  What about the pre-increment operator, ++, on line 9? The pre-increment operator can
+  be interrupted, so it is not atomic. To understand, let's review the byte-code of both of these
+  methods in detail.
+  Before we go any further, here are three definitions that will be important:
+
+  - Frame—Every method invocation requires a frame. The frame includes the return
+  address, any parameters passed into the method and the local variables defined in the
+  method. This is a standard technique used to define a call stack, which is used by
+  modern languages to allow for basic function/method invocation and to allow for
+  recursive invocation.
+  - Local variable—Any variables defined in the scope of the method. All nonstatic meth-
+  ods have at least one variable, this , which represents the current object, the object
+  that received the most recent message (in the current thread), which caused the
+  method invocation.
+  - Operand stack—Many of the instructions in the Java Virtual Machine take parame-
+  ters. The operand stack is where those parameters are put. The stack is a standard
+  last-in, first-out (LIFO) data structure.
+  Here is the byte-code generated for resetId():
+
+  Mnemonic Description Operand
+  Stack After
+  ALOAD 0 Load the 0th variable onto the operand stack.
+  What is the 0th variable? It is this ., the current
+  object. When the method was called, the
+  receiver of the message, an instance of Example,
+  was pushed into the local variable array of the
+  frame created for method invocation. This is
+  always the first variable put in every instance
+  method.
+
+  this
+
+  Possible Paths of Execution 325
+  These three instructions are guaranteed to be atomic because, although the thread
+  executing them could be interrupted after any one of them, the information for the
+  PUTFIELD instruction (the constant value 0 on the top of the stack and the reference to
+  this one below the top, along with the field value) cannot be touched by another thread.
+  So when the assignment occurs, we are guaranteed that the value 0 will be stored in the
+  field value. The operation is atomic. The operands all deal with information local to the
+  method, so there is no interference between multiple threads.
+  So if these three instructions are executed by ten threads, there are 4.38679733629e+24
+  possible orderings. However, there is only one possible outcome, so the different orderings
+  are irrelevant. It just so happens that the same outcome is guaranteed for longs in this case
+  as well. Why? All ten threads are assigning a constant value. Even if they interleave with
+  each other, the end result is the same.
+  With the ++ operation in the getNextId method, there are going to be problems.
+  Assume that lastId holds 42 at the beginning of this method. Here is the byte-code for this
+  new method:
+  ICONST_0 Put the constant value 0 onto the operand stack. this, 0
+  PUTFIELD lastId Store the top value on the stack (which is 0) into
+  the field value of the object referred to by the
+  object reference one away from the top of the
+  stack, this.
+
+  <empty>
+
+  Mnemonic Description Operand
+  Stack After
+  ALOAD 0 Load this onto the operand stack this
+  DUP Copy the top of the stack. We now have two
+  copies of this on the operand stack.
+
+  this, this
+
+  GETFIELD lastId Retrieve the value of the field lastId from the
+  object pointed to on the top of the stack (this) and
+  store that value back on to the stack.
+
+  this, 42
+
+  ICONST_1 Push the integer constant 1 on the stack. this, 42, 1
+  IADD Integer add the top two values on the operand
+  stack and store the result back on to the operand
+  stack.
+
+  this, 43
+
+  DUP_X1 Duplicate the value 43 and put it before this. 43, this, 43
+  PUTFIELD value Store the top value on the operand stack, 43, into
+  the field value of the current object, represented by
+  the next-to-top value on the operand stack, this.
+
+
+
+  # 43
+  IRETURN return the top (and only) value on the stack. <empty>
+
+  Mnemonic Description Operand
+  Stack After
+
+  326 Appendix A: Concurrency II
+  Imagine the case where the first thread completes the first three instructions, up to and
+  including GETFIELD, and then it is interrupted. A second thread takes over and performs
+  the entire method, incrementing lastId by one; it gets 43 back. Then the first thread picks up
+  where it left off; 42 is still on the operand stack because that was the value of lastId when it
+  executed GETFIELD. It adds one to get 43 again and stores the result. The value 43 is
+  returned to the first thread as well. The result is that one of the increments is lost because the
+  first thread stepped on the second thread after the second thread interrupted the first thread.
+  Making the getNexId() method synchronized fixes this problem.
+
+
+
+  Conclusion
+
+  An intimate understanding of byte-code is not necessary to understand how threads can
+  step on each other. If you can understand this one example, it should demonstrate the pos-
+  sibility of multiple threads stepping on each other, which is enough knowledge.
+  That being said, what this trivial example demonstrates is a need to understand the
+  memory model enough to know what is and is not safe. It is a common misconception that
+  the ++ (pre- or post-increment) operator is atomic, and it clearly is not. This means you
+  need to know:
+  - Where there are shared objects/values
+  - The code that can cause concurrent read/update issues
+  - How to guard such concurrent issues from happening
+  Knowing Your Library
+
+
+  Executor Framework
+  As demonstrated in the ExecutorClientScheduler.java on page 321, the Executor frame-
+  work introduced in Java 5 allows for sophisticated execution using thread pools. This is a
+  class in the java.util.concurrent package.
+  If you are creating threads and are not using a thread pool or are using a hand-written
+  one, you should consider using the Executor. It will make your code cleaner, easier to fol-
+  low, and smaller.
+  The Executor framework will pool threads, resize automatically, and recreate threads
+  if necessary. It also supports futures, a common concurrent programming construct. The
+  Executor framework works with classes that implement Runnable and also works with
+  classes that implement the Callable interface. A Callable looks like a Runnable, but it can
+  return a result, which is a common need in multithreaded solutions.
+  A future is handy when code needs to execute multiple, independent operations and
+  wait for both to finish:
+  public String processRequest(String message) throws Exception {
+  Callable<String> makeExternalCall = new Callable<String>() {
+
+  Knowing Your Library 327
+  public String call() throws Exception {
+  String result = "";
+  // make external request
+  return result;
+  }
+  };
+  Future<String> result = executorService.submit(makeExternalCall);
+  String partialResult = doSomeLocalProcessing();
+  return result.get() + partialResult;
+  }
+
+  In this example, the method starts executing the makeExternalCall object. The method con-
+  tinues other processing. The final line calls result.get(), which blocks until the future
+  completes.
+
+
+  Nonblocking Solutions ...
+  The Java 5 VM takes advantage of modern processor design, which supports reliable,
+  nonblocking updates. Consider, for example, a class that uses synchronization (and there-
+  fore blocking) to provide a thread-safe update of a value:
+  public class ObjectWithValue {
+  private int value;
+  public void synchronized incrementValue() { ++value; }
+  public int getValue() { return value; }
+  }
+  Java 5 has a series of new classes for situations like this: AtomicBoolean,
+  AtomicInteger, and AtomicReference are three examples; there are several more. We can
+  rewrite the above code to use a nonblocking approach as follows:
+  public class ObjectWithValue {
+  private AtomicInteger value = new AtomicInteger(0);
+  public void incrementValue() {
+  value.incrementAndGet();
+  }
+  public int getValue() {
+  return value.get();
+  }
+  }
+
+  Even though this uses an object instead of a primitive and sends messages like
+  incrementAndGet() instead of ++, the performance of this class will nearly always beat the
+  previous version. In some cases it will only be slightly faster, but the cases where it will be
+  slower are virtually nonexistent.
+  How is this possible? Modern processors have an operation typically called Compare
+  and Swap (CAS). This operation is analogous to optimistic locking in databases, whereas
+  the synchronized version is analogous to pessimistic locking.
+  328 Appendix A: Concurrency II
+  The synchronized keyword always acquires a lock, even when a second thread is not
+  trying to update the same value. Even though the performance of intrinsic locks has
+  improved from version to version, they are still costly.
+  The nonblocking version starts with the assumption that multiple threads generally do
+  not modify the same value often enough that a problem will arise. Instead, it efficiently
+  detects whether such a situation has occurred and retries until the update happens success-
+  fully. This detection is almost always less costly than acquiring a lock, even in moderate to
+  high contention situations.
+  How does the Virtual Machine accomplish this? The CAS operation is atomic. Logi-
+  cally, the CAS operation looks something like the following:
+  int variableBeingSet;
+  void simulateNonBlockingSet(int newValue) {
+  int currentValue;
+  do {
+  currentValue = variableBeingSet
+  } while(currentValue != compareAndSwap(currentValue, newValue));
+  }
+  int synchronized compareAndSwap(int currentValue, int newValue) {
+  if(variableBeingSet == currentValue) {
+  variableBeingSet = newValue;
+  return currentValue;
+  }
+  return variableBeingSet;
+  }
+  When a method attempts to update a shared variable, the CAS operation verifies that
+  the variable getting set still has the last known value. If so, then the variable is changed. If
+  not, then the variable is not set because another thread managed to get in the way. The
+  method making the attempt (using the CAS operation) sees that the change was not made
+  and retries.
+
+
+  Nonthread-Safe Classes..
+  There are some classes that are inherently not thread safe. Here are a few examples:
+  - SimpleDateFormat
+  - Database Connections
+  - Containers in java.util
+  - Servlets
+  Note that some collection classes have individual methods that are thread-safe. However,
+  any operation that involves calling more than one method is not. For example, if you do
+  not want to replace something in a HashTable because it is already there, you might write
+  the following code:
+  if(!hashTable.containsKey(someKey)) {
+  hashTable.put(someKey, new SomeValue());
+  }
+
+  Dependencies Between Methods Can Break Concurrent Code 329
+  Each individual method is thread-safe. However, another thread might add a value in
+  between the containsKey and put calls. There are several options to fix this problem.
+  - Lock the HashTable first, and make sure all other users of the HashTable do the same—
+  client-based locking:
+  synchronized(map) {
+  if(!map.conainsKey(key))
+  map.put(key,value);
+  }
+  - Wrap the HashTable in its own object and use a different API—server-based locking
+  using an ADAPTER:
+  public class WrappedHashtable<K, V> {
+  private Map<K, V> map = new Hashtable<K, V>();
+  public synchronized void putIfAbsent(K key, V value) {
+  if (map.containsKey(key))
+  map.put(key, value);
+  }
+  }
+  - Use the thread-safe collections:
+  ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<Integer,
+  String>();
+  map.putIfAbsent(key, value);
+
+  The collections in java.util.concurrent have operations like putIfAbsent() to accommo-
+  date such operations.
+  Dependencies Between Methods
+  Can Break Concurrent Code
+  Here is a trivial example of a way to introduce dependencies between methods:
+  public class IntegerIterator implements Iterator<Integer>
+  private Integer nextValue = 0;
+  public synchronized boolean hasNext() {
+  return nextValue < 100000;
+  }
+  public synchronized Integer next() {
+  if (nextValue == 100000)
+  throw new IteratorPastEndException();
+  return nextValue++;
+  }
+  public synchronized Integer getNextValue() {
+  return nextValue;
+  }
+  }
+
+  Here is some code to use this IntegerIterator:
+  IntegerIterator iterator = new IntegerIterator();
+  while(iterator.hasNext()) {
+
+  330 Appendix A: Concurrency II
+  int nextValue = iterator.next();
+  // do something with nextValue
+  }
+
+  If one thread executes this code, there will be no problem. But what happens if two threads
+  attempt to share a single instance of IngeterIterator with the intent that each thread will
+  process the values it gets, but that each element of the list is processed only once? Most of
+  the time, nothing bad happens; the threads happily share the list, processing the elements
+  they are given by the iterator and stopping when the iterator is complete. However, there is
+  a small chance that, at the end of the iteration, the two threads will interfere with each
+  other and cause one thread to go beyond the end of the iterator and throw an exception.
+  Here's the problem: Thread 1 asks the question hasNext(), which returns true. Thread
+  1 gets preempted and then Thread 2 asks the same question, which is still true. Thread 2
+  then calls next(), which returns a value as expected but has a side effect of making
+  hasNext() return false. Thread 1 starts up again, thinking hasNext() is still true, and then
+  calls next(). Even though the individual methods are synchronized, the client uses two
+  methods.
+  This is a real problem and an example of the kinds of problems that crop up in con-
+  current code. In this particular situation this problem is especially subtle because the only
+  time where this causes a fault is when it happens during the final iteration of the iterator.
+  If the threads happen to break just right, then one of the threads could go beyond the end
+  of the iterator. This is the kind of bug that happens long after a system has been in pro-
+  duction, and it is hard to track down.
+  You have three options:
+
+  - Tolerate the failure.
+  - Solve the problem by changing the client: client-based locking
+  - Solve the problem by changing the server, which additionally changes the client:
+  server-based locking
+
+
+  Tolerate the Failure
+  Sometimes you can set things up such that the failure causes no harm. For example, the
+  above client could catch the exception and clean up. Frankly, this is a bit sloppy. It's rather
+  like cleaning up memory leaks by rebooting at midnight.
+
+
+  Client-Based Locking
+  To make IntegerIterator work correctly with multiple threads, change this client (and
+  every other client) as follows:
+  IntegerIterator iterator = new IntegerIterator();
+  while (true) {
+  int nextValue;
+
+  Dependencies Between Methods Can Break Concurrent Code 331
+  synchronized (iterator) {
+  if (!iterator.hasNext())
+  break;
+  nextValue = iterator.next();
+  }
+  doSometingWith(nextValue);
+  }
+
+  Each client introduces a lock via the synchronized keyword. This duplication violates the
+  DRY principle, but it might be necessary if the code uses non-thread-safe third-party tools.
+  This strategy is risky because all programmers who use the server must remember to
+  lock it before using it and unlock it when done. Many (many!) years ago I worked on a
+  system that employed client-based locking on a shared resource. The resource was used in
+  hundreds of different places throughout the code. One poor programmer forgot to lock the
+  resource in one of those places.
+  The system was a multi-terminal time-sharing system running accounting software
+  for Local 705 of the trucker's union. The computer was in a raised-floor, environment-
+  controlled room 50 miles north of the Local 705 headquarters. At the headquarters they
+  had dozens of data entry clerks typing union dues postings into the terminals. The termi-
+  nals were connected to the computer using dedicated phone lines and 600bps half-duplex
+  modems. (This was a very, very long time ago.)
+  About once per day, one of the terminals would "lock up." There was no rhyme or rea-
+  son to it. The lock up showed no preference for particular terminals or particular times. It
+  was as though there were someone rolling dice choosing the time and terminal to lock up.
+  Sometimes more than one terminal would lock up. Sometimes days would go by without
+  any lock-ups.
+  At first the only solution was a reboot. But reboots were tough to coordinate. We had
+  to call the headquarters and get everyone to finish what they were doing on all the termi-
+  nals. Then we could shut down and restart. If someone was doing something important
+  that took an hour or two, the locked up terminal simply had to stay locked up.
+  After a few weeks of debugging we found that the cause was a ring-buffer counter that
+  had gotten out of sync with its pointer. This buffer controlled output to the terminal. The
+  pointer value indicated that the buffer was empty, but the counter said it was full. Because
+  it was empty, there was nothing to display; but because it was also full, nothing could be
+  added to the buffer to be displayed on the screen.
+  So we knew why the terminals were locking, but we didn't know why the ring buffer
+  was getting out of sync. So we added a hack to work around the problem. It was possible to
+  read the front panel switches on the computer. (This was a very, very, very long time ago.)
+  We wrote a little trap function that detected when one of these switches was thrown and
+  then looked for a ring buffer that was both empty and full. If one was found, it reset that
+  buffer to empty. Voila! The locked-up terminal(s) started displaying again.
+  So now we didn't have to reboot the system when a terminal locked up. The Local
+  would simply call us and tell us we had a lock-up, and then we just walked into the com-
+  puter room and flicked a switch.
+  332 Appendix A: Concurrency II
+  Of course sometimes they worked on the weekends, and we didn't. So we added a
+  function to the scheduler that checked all the ring buffers once per minute and reset any
+  that were both empty and full. This caused the displays to unclog before the Local could
+  even get on the phone.
+  It was several more weeks of poring over page after page of monolithic assembly lan-
+  guage code before we found the culprit. We had done the math and calculated that the fre-
+  quency of the lock-ups was consistent with a single unprotected use of the ring buffer. So
+  all we had to do was find that one faulty usage. Unfortunately, this was so very long ago
+  that we didn't have search tools or cross references or any other kind of automated help.
+  We simply had to pore over listings.
+  I learned an important lesson that cold Chicago winter of 1971. Client-based locking
+  really blows.
+
+
+  Server-Based Locking
+  The duplication can be removed by making the following changes to IntegerIterator:
+  public class IntegerIteratorServerLocked {
+  private Integer nextValue = 0;
+  public synchronized Integer getNextOrNull() {
+  if (nextValue < 100000)
+  return nextValue++;
+  else
+  return null;
+  }
+  }
+
+  And the client code changes as well:
+  while (true) {
+  Integer nextValue = iterator.getNextOrNull();
+  if (next == null)
+  break;
+  // do something with nextValue
+  }
+
+  In this case we actually change the API of our class to be multithread aware.^3 The client
+  needs to perform a null check instead of checking hasNext().
+  In general you should prefer server-based locking for these reasons:
+
+  - It reduces repeated code—Client-based locking forces each client to lock the server
+  properly. By putting the locking code into the server, clients are free to use the object
+  and not worry about writing additional locking code.
+  3. In fact, the Iterator interface is inherently not thread-safe. It was never designed to be used by multiple threads, so this
+  should come as no surprise.
+  Increasing Throughput 333
+  - It allows for better performance—You can swap out a thread-safe server for a non-
+  thread safe one in the case of single-threaded deployment, thereby avoiding all
+  overhead.
+  - It reduces the possibility of error—All it takes is for one programmer to forget to lock
+  properly.
+  - It enforces a single policy—The policy is in one place, the server, rather than many
+  places, each client.
+  - It reduces the scope of the shared variables—The client is not aware of them or how
+  they are locked. All of that is hidden in the server. When things break, the number of
+  places to look is smaller.
+  What if you do not own the server code?
+
+  - Use an ADAPTER to change the API and add locking
+  public class ThreadSafeIntegerIterator {
+  private IntegerIterator iterator = new IntegerIterator();
+  public synchronized Integer getNextOrNull() {
+  if(iterator.hasNext())
+  return iterator.next();
+  return null;
+  }
+  }
+  - OR better yet, use the thread-safe collections with extended interfaces
+  Increasing Throughput
+  Let's assume that we want to go out on the net and read the contents of a set of pages from
+  a list of URLs. As each page is read, we will parse it to accumulate some statistics. Once
+  all the pages are read, we will print a summary report.
+  The following class returns the contents of one page, given a URL.
+  public class PageReader {
+  //...
+  public String getPageFor(String url) {
+  HttpMethod method = new GetMethod(url);
+  try {
+  httpClient.executeMethod(method);
+  String response = method.getResponseBodyAsString();
+  return response;
+  } catch (Exception e) {
+  handle(e);
+  } finally {
+  method.releaseConnection();
+  }
+  }
+  }
+
+  334 Appendix A: Concurrency II
+  The next class is the iterator that provides the contents of the pages based on an iterator of
+  URLs:
+  public class PageIterator {
+  private PageReader reader;
+  private URLIterator urls;
+  public PageIterator(PageReader reader, URLIterator urls) {
+  this.urls = urls;
+  this.reader = reader;
+  }
+  public synchronized String getNextPageOrNull() {
+  if (urls.hasNext())
+  getPageFor(urls.next());
+  else
+  return null;
+  }
+  public String getPageFor(String url) {
+  return reader.getPageFor(url);
+  }
+  }
+  An instance of the PageIterator can be shared between many different threads, each
+  one using it's own instance of the PageReader to read and parse the pages it gets from the
+  iterator.
+  Notice that we've kept the synchronized block very small. It contains just the critical
+  section deep inside the PageIterator. It is always better to synchronize as little as possible
+  as opposed to synchronizing as much as possible.
+
+
+  Single-Thread Calculation of Throughput
+  Now lets do some simple calculations. For the purpose of argument, assume the following:
+  - I/O time to retrieve a page (average): 1 second
+  - Processing time to parse page (average): .5 seconds
+  - I/O requires 0 percent of the CPU while processing requires 100 percent.
+  For N pages being processed by a single thread, the total execution time is 1.5 sec-
+  onds * N. Figure A-1 shows a snapshot of 13 pages or about 19.5 seconds.
+  Figure A-1
+  Single thread
+
+  Deadlock 335
+
+
+  Multithread Calculation of Throughput
+  If it is possible to retrieve pages in any order and process the pages independently, then it
+  is possible to use multiple threads to increase throughput. What happens if we use three
+  threads? How many pages can we acquire in the same time?
+  As you can see in Figure A-2, the multithreaded solution allows the process-bound
+  parsing of the pages to overlap with the I/O-bound reading of the pages. In an idealized
+  world this means that the processor is fully utilized. Each one-second page read is over-
+  lapped with two parses. Thus, we can process two pages per second, which is three times
+  the throughput of the single-threaded solution.
+  Deadlock
+
+  Imagine a Web application with two shared resource pools of some finite size:
+  - A pool of database connections for local work in process storage
+  - A pool of MQ connections to a master repository
+  Assume there are two operations in this application, create and update:
+
+  - Create—Acquire connection to master repository and database. Talk to service master
+  repository and then store work in local work in process database.
+  Figure A-2
+  Three concurrent threads
+
+  336 Appendix A: Concurrency II
+  - Update—Acquire connection to database and then master repository. Read from work
+  in process database and then send to the master repository
+  What happens when there are more users than the pool sizes? Consider each pool has
+  a size of ten.
+  - Ten users attempt to use create, so all ten database connections are acquired, and each
+  thread is interrupted after acquiring a database connection but before acquiring a con-
+  nection to the master repository.
+  - Ten users attempt to use update, so all ten master repository connections are acquired,
+  and each thread is interrupted after acquiring the master repository but before acquir-
+  ing a database connection.
+  - Now the ten "create" threads must wait to acquire a master repository connection, but
+  the ten "update" threads must wait to acquire a database connection.
+  - Deadlock. The system never recovers.
+  This might sound like an unlikely situation, but who wants a system that freezes solid
+  every other week? Who wants to debug a system with symptoms that are so difficult to
+  reproduce? This is the kind of problem that happens in the field, then takes weeks to solve.
+  A typical "solution" is to introduce debugging statements to find out what is happen-
+  ing. Of course, the debug statements change the code enough so that the deadlock happens
+  in a different situation and takes months to again occur.^4
+  To really solve the problem of deadlock, we need to understand what causes it. There
+  are four conditions required for deadlock to occur:
+  - Mutual exclusion
+  - Lock & wait
+  - No preemption
+  - Circular wait
+
+
+  Mutual Exclusion
+  Mutual exclusion occurs when multiple threads need to use the same resources and those
+  resources
+  - Cannot be used by multiple threads at the same time.
+  - Are limited in number.
+  A common example of such a resource is a database connection, a file open for write, a
+  record lock, or a semaphore.
+
+  For example, someone adds some debugging output and the problem "disappears." The debugging code "fixes" the problem
+  so it remains in the system.
+
+  Deadlock 337
+
+
+  Lock & Wait
+
+  Once a thread acquires a resource, it will not release the resource until it has acquired all
+  of the other resources it requires and has completed its work.
+
+
+  No Preemption
+  One thread cannot take resources away from another thread. Once a thread holds a
+  resource, the only way for another thread to get it is for the holding thread to release it.
+
+
+  Circular Wait
+
+  This is also referred to as the deadly embrace. Imagine two threads, T1 and T2, and two
+  resources, R1 and R2. T1 has R1, T2 has R2. T1 also requires R2, and T2 also requires R1.
+  This gives something like Figure A-3:
+  All four of these conditions must hold for deadlock to be possible. Break any one of these
+  conditions and deadlock is not possible.
+
+
+  Breaking Mutual Exclusion
+  One strategy for avoiding deadlock is to sidestep the mutual exclusion condition. You
+  might be able to do this by
+  - Using resources that allow simultaneous use, for example, AtomicInteger.
+  - Increasing the number of resources such that it equals or exceeds the number of com-
+  peting threads.
+  - Checking that all your resources are free before seizing any.
+  Unfortunately, most resources are limited in number and don't allow simultaneous
+  use. And it's not uncommon for the identity of the second resource to be predicated on the
+  results of operating on the first. But don't be discouraged; there are three conditions left.
+  Figure A-3
+
+  338 Appendix A: Concurrency II
+
+
+  Breaking Lock & Wait
+  You can also eliminate deadlock if you refuse to wait. Check each resource before you
+  seize it, and release all resources and start over if you run into one that's busy.
+  This approach introduces several potential problems:
+
+  - Starvation—One thread keeps being unable to acquire the resources it needs (maybe it
+  has a unique combination of resources that seldom all become available).
+  - Livelock—Several threads might get into lockstep and all acquire one resource and
+  then release one resource, over and over again. This is especially likely with simplistic
+  CPU scheduling algorithms (think embedded devices or simplistic hand-written
+  thread balancing algorithms).
+  Both of these can cause poor throughput. The first results in low CPU utilization,
+  whereas the second results in high and useless CPU utilization.
+  As inefficient as this strategy sounds, it's better than nothing. It has the benefit that it
+  can almost always be implemented if all else fails.
+
+
+  Breaking Preemption
+  Another strategy for avoiding deadlock is to allow threads to take resources away from
+  other threads. This is usually done through a simple request mechanism. When a thread
+  discovers that a resource is busy, it asks the owner to release it. If the owner is also waiting
+  for some other resource, it releases them all and starts over.
+  This is similar to the previous approach but has the benefit that a thread is allowed to
+  wait for a resource. This decreases the number of startovers. Be warned, however, that
+  managing all those requests can be tricky.
+
+
+  Breaking Circular Wait...
+  This is the most common approach to preventing deadlock. For most systems it requires
+  no more than a simple convention agreed to by all parties.
+  In the example above with Thread 1 wanting both Resource 1 and Resource 2 and
+  Thread 2 wanting both Resource 2 and then Resource 1, simply forcing both Thread 1 and
+  Thread 2 to allocate resources in the same order makes circular wait impossible.
+  More generally, if all threads can agree on a global ordering of resources and if they
+  all allocate resources in that order, then deadlock is impossible. Like all the other strate-
+  gies, this can cause problems:
+  - The order of acquisition might not correspond to the order of use; thus a resource
+  acquired at the start might not be used until the end. This can cause resources to be
+  locked longer than strictly necessary.
+  Testing Multithreaded Code 339
+  - Sometimes you cannot impose an order on the acquisition of resources. If the ID of
+  the second resource comes from an operation performed on the first, then ordering is
+  not feasible.
+  So there are many ways to avoid deadlock. Some lead to starvation, whereas others
+  make heavy use of the CPU and reduce responsiveness. TANSTAAFL!^5
+  Isolating the thread-related part of your solution to allow for tuning and experimenta-
+  tion is a powerful way to gain the insights needed to determine the best strategies.
+  Testing Multithreaded Code .
+  How can we write a test to demonstrate the following code is broken?
+  01: public class ClassWithThreadingProblem {
+  02: int nextId;
+  03:
+  04: public int takeNextId() {
+  05: return nextId++;
+  06: }
+  07:}
+
+  Here's a description of a test that will prove the code is broken:
+  - Remember the current value of nextId.
+  - Create two threads, both of which call takeNextId() once.
+  - Verify that nextId is two more than what we started with.
+  - Run this until we demonstrate that nextId was only incremented by one instead
+  of two.
+  Listing A-2 shows such a test:
+
+
+  There ain't no such thing as a free lunch.
+
+  Listing A-2
+  ClassWithThreadingProblemTest.java
+  01: package example;
+  02:
+  03: import static org.junit.Assert.fail;
+  04:
+  05: import org.junit.Test;
+  06:
+  07: public class ClassWithThreadingProblemTest {
+  08: @Test
+  09: public void twoThreadsShouldFailEventually() throws Exception {
+  10: final ClassWithThreadingProblem classWithThreadingProblem
+  = new ClassWithThreadingProblem();
+  11:
+
+  340 Appendix A: Concurrency II
+  12: Runnable runnable = new Runnable() {
+  13: public void run() {
+  14: classWithThreadingProblem.takeNextId();
+  15: }
+  16: };
+  17:
+  18: for (int i = 0; i < 50000; ++i) {
+  19: int startingId = classWithThreadingProblem.lastId;
+  20: int expectedResult = 2 + startingId;
+  21:
+  22: Thread t1 = new Thread(runnable);
+  23: Thread t2 = new Thread(runnable);
+  24: t1.start();
+  25: t2.start();
+  26: t1.join();
+  27: t2.join();
+  28:
+  29: int endingId = classWithThreadingProblem.lastId;
+  30:
+  31: if (endingId != expectedResult)
+  32: return;
+  33: }
+  34:
+  35: fail("Should have exposed a threading issue but it did not.");
+  36: }
+  37: }
+
+  Line Description
+  10 Create a single instance of ClassWithThreadingProblem. Note, we must use
+  the final keyword because we use it below in an anonymous inner class.
+  12–16 Create an anonymous inner class that uses the single instance of
+  ClassWithThreadingProblem.
+  18 Run this code "enough" times to demonstrate that the code failed, but not
+  so much that the test "takes too long." This is a balancing act; we don't
+  want to wait too long to demonstrate failure. Picking this number is hard—
+  although later we'll see that we can greatly reduce this number.
+  19 Remember the starting value. This test is trying to prove that the code in
+  ClassWithThreadingProblem is broken. If this test passes, it proved that the
+  code was broken. If this test fails, the test was unable to prove that the code
+  is broken.
+  20 We expect the final value to be two more than the current value.
+  22–23 Create two threads, both of which use the object we created in lines 12–16.
+  This gives us the potential of two threads trying to use our single instance
+  of ClassWithThreadingProblem and interfering with each other.
+
+  Listing A-2 (continued)
+  ClassWithThreadingProblemTest.java
+
+  Testing Multithreaded Code 341
+  This test certainly sets up the conditions for a concurrent update problem. However,
+  the problem occurs so infrequently that the vast majority of times this test won't detect it.
+  Indeed, to truly detect the problem we need to set the number of iterations to over one
+  million. Even then, in ten executions with a loop count of 1,000,000, the problem occurred
+  only once. That means we probably ought to set the iteration count to well over one hun-
+  dred million to get reliable failures. How long are we prepared to wait?
+  Even if we tuned the test to get reliable failures on one machine, we'll probably have
+  to retune the test with different values to demonstrate the failure on another machine,
+  operating system, or version of the JVM.
+  And this is a simple problem. If we cannot demonstrate broken code easily with this
+  problem, how will we ever detect truly complex problems?
+  So what approaches can we take to demonstrate this simple failure? And, more impor-
+  tantly, how can we write tests that will demonstrate failures in more complex code? How
+  will we be able to discover if our code has failures when we do not know where to look?
+  Here are a few ideas:
+
+  - Monte Carlo Testing. Make tests flexible, so they can be tuned. Then run the test over
+  and over—say on a test server—randomly changing the tuning values. If the tests ever
+  fail, the code is broken. Make sure to start writing those tests early so a continuous
+  integration server starts running them soon. By the way, make sure you carefully log
+  the conditions under which the test failed.
+  - Run the test on every one of the target deployment platforms. Repeatedly. Continu-
+  ously. The longer the tests run without failure, the more likely that
+  - The production code is correct or
+  - The tests aren't adequate to expose problems.
+  - Run the tests on a machine with varying loads. If you can simulate loads close to a
+  production environment, do so.
+  24–25 Make our two threads eligible to run.
+  26–27 Wait for both threads to finish before we check the results.
+  29 Record the actual final value.
+  31–32 Did our endingId differ from what we expected? If so, return end the test—
+  we've proven that the code is broken. If not, try again.
+  35 If we got to here, our test was unable to prove the production code was bro-
+  ken in a "reasonable" amount of time; our code has failed. Either the code
+  is not broken or we didn't run enough iterations to get the failure condition
+  to occur.
+
+  Line Description
+
+  342 Appendix A: Concurrency II
+  Yet, even if you do all of these things, you still don't stand a very good chance of find-
+  ing threading problems with your code. The most insidious problems are the ones that
+  have such a small cross section that they only occur once in a billion opportunities. Such
+  problems are the terror of complex systems.
+  Tool Support for Testing Thread-Based Code
+  IBM has created a tool called ConTest.^6 It instruments classes to make it more likely that
+  non-thread-safe code fails.
+  We do not have any direct relationship with IBM or the team that developed ConTest.
+  A colleague of ours pointed us to it. We noticed vast improvement in our ability to find
+  threading issues after a few minutes of using it.
+  Here's an outline of how to use ConTest:
+
+  - Write tests and production code, making sure there are tests specifically designed to
+  simulate multiple users under varying loads, as mentioned above.
+  - Instrument test and production code with ConTest.
+  - Run the tests.
+  When we instrumented code with ConTest, our success rate went from roughly one fail-
+  ure in ten million iterations to roughly one failure in thirty iterations. Here are the loop values
+  for several runs of the test after instrumentation: 13, 23, 0, 54, 16, 14, 6, 69, 107, 49, 2. So
+  clearly the instrumented classes failed much earlier and with much greater reliability.
+  Conclusion
+
+  This chapter has been a very brief sojourn through the large and treacherous territory of
+  concurrent programming. We barely scratched the surface. Our emphasis here was on dis-
+  ciplines to help keep concurrent code clean, but there is much more you should learn if
+  you are going to be writing concurrent systems. We recommend you start with Doug Lea's
+  wonderful book Concurrent Programming in Java: Design Principles and Patterns.^7
+  In this chapter we talked about concurrent update, and the disciplines of clean syn-
+  chronization and locking that can prevent it. We talked about how threads can enhance the
+  throughput of an I/O-bound system and showed the clean techniques for achieving such
+  improvements. We talked about deadlock and the disciplines for preventing it in a clean
+
+  http://www.haifa.ibm.com/projects/verification/contest/index.html
+  See [Lea99] p. 191.
+
+  Tutorial: Full Code Examples 343
+  way. Finally, we talked about strategies for exposing concurrent problems by instrumenting
+  your code.
+  Tutorial: Full Code Examples
+
+
+  Client/Server Nonthreaded .
+  Listing A-3
+  Server.java
+  package com.objectmentor.clientserver.nonthreaded;
+  import java.io.IOException;
+  import java.net.ServerSocket;
+  import java.net.Socket;
+  import java.net.SocketException;
+  import common.MessageUtils;
+  public class Server implements Runnable {
+  ServerSocket serverSocket;
+  volatile boolean keepProcessing = true;
+  public Server(int port, int millisecondsTimeout) throws IOException {
+  serverSocket = new ServerSocket(port);
+  serverSocket.setSoTimeout(millisecondsTimeout);
+  }
+  public void run() {
+  System.out.printf("Server Starting\n");
+  while (keepProcessing) {
+  try {
+  System.out.printf("accepting client\n");
+  Socket socket = serverSocket.accept();
+  System.out.printf("got client\n");
+  process(socket);
+  } catch (Exception e) {
+  handle(e);
+  }
+  }
+  }
+  private void handle(Exception e) {
+  if (!(e instanceof SocketException)) {
+  e.printStackTrace();
+  }
+  }
+  public void stopProcessing() {
+  keepProcessing = false;
+  closeIgnoringException(serverSocket);
+  }
+
+  344 Appendix A: Concurrency II
+  void process(Socket socket) {
+  if (socket == null)
+  return;
+  try {
+  System.out.printf("Server: getting message\n");
+  String message = MessageUtils.getMessage(socket);
+  System.out.printf("Server: got message: %s\n", message);
+  Thread.sleep(1000);
+  System.out.printf("Server: sending reply: %s\n", message);
+  MessageUtils.sendMessage(socket, "Processed: " + message);
+  System.out.printf("Server: sent\n");
+  closeIgnoringException(socket);
+  } catch (Exception e) {
+  e.printStackTrace();
+  }
+  }
+  private void closeIgnoringException(Socket socket) {
+  if (socket != null)
+  try {
+  socket.close();
+  } catch (IOException ignore) {
+  }
+  }
+  private void closeIgnoringException(ServerSocket serverSocket) {
+  if (serverSocket != null)
+  try {
+  serverSocket.close();
+  } catch (IOException ignore) {
+  }
+  }
+  }
+
+  Listing A-4
+  ClientTest.java
+  package com.objectmentor.clientserver.nonthreaded;
+  import java.io.IOException;
+  import java.net.ServerSocket;
+  import java.net.Socket;
+  import java.net.SocketException;
+  import common.MessageUtils;
+  public class Server implements Runnable {
+  ServerSocket serverSocket;
+  volatile boolean keepProcessing = true;
+
+  Listing A-3 (continued)
+  Server.java
+
+  Tutorial: Full Code Examples 345
+  public Server(int port, int millisecondsTimeout) throws IOException {
+  serverSocket = new ServerSocket(port);
+  serverSocket.setSoTimeout(millisecondsTimeout);
+  }
+  public void run() {
+  System.out.printf("Server Starting\n");
+  while (keepProcessing) {
+  try {
+  System.out.printf("accepting client\n");
+  Socket socket = serverSocket.accept();
+  System.out.printf("got client\n");
+  process(socket);
+  } catch (Exception e) {
+  handle(e);
+  }
+  }
+  }
+  private void handle(Exception e) {
+  if (!(e instanceof SocketException)) {
+  e.printStackTrace();
+  }
+  }
+  public void stopProcessing() {
+  keepProcessing = false;
+  closeIgnoringException(serverSocket);
+  }
+  void process(Socket socket) {
+  if (socket == null)
+  return;
+  try {
+  System.out.printf("Server: getting message\n");
+  String message = MessageUtils.getMessage(socket);
+  System.out.printf("Server: got message: %s\n", message);
+  Thread.sleep(1000);
+  System.out.printf("Server: sending reply: %s\n", message);
+  MessageUtils.sendMessage(socket, "Processed: " + message);
+  System.out.printf("Server: sent\n");
+  closeIgnoringException(socket);
+  } catch (Exception e) {
+  e.printStackTrace();
+  }
+  }
+  private void closeIgnoringException(Socket socket) {
+  if (socket != null)
+  try {
+  socket.close();
+
+  Listing A-4 (continued)
+  ClientTest.java
+
+  346 Appendix A: Concurrency II
+
+
+  Client/Server Using Threads
+  Changing the server to use threads simply requires a change to the process message (new
+  lines are emphasized to stand out):
+  void process(final Socket socket) {
+  if (socket == null)
+  return;
+  Runnable clientHandler = new Runnable() {
+  public void run() {
+
+  } catch (IOException ignore) {
+  }
+  }
+  private void closeIgnoringException(ServerSocket serverSocket) {
+  if (serverSocket != null)
+  try {
+  serverSocket.close();
+  } catch (IOException ignore) {
+  }
+  }
+  }
+
+  Listing A-5
+  MessageUtils.java
+  package common;
+  import java.io.IOException;
+  import java.io.InputStream;
+  import java.io.ObjectInputStream;
+  import java.io.ObjectOutputStream;
+  import java.io.OutputStream;
+  import java.net.Socket;
+  public class MessageUtils {
+  public static void sendMessage(Socket socket, String message)
+  throws IOException {
+  OutputStream stream = socket.getOutputStream();
+  ObjectOutputStream oos = new ObjectOutputStream(stream);
+  oos.writeUTF(message);
+  oos.flush();
+  }
+  public static String getMessage(Socket socket) throws IOException {
+  InputStream stream = socket.getInputStream();
+  ObjectInputStream ois = new ObjectInputStream(stream);
+  return ois.readUTF();
+  }
+  }
+
+  Listing A-4 (continued)
+  ClientTest.java
+
+  Tutorial: Full Code Examples 347
+  try {
+  System.out.printf("Server: getting message\n");
+  String message = MessageUtils.getMessage(socket);
+  System.out.printf("Server: got message: %s\n", message);
+  Thread.sleep(1000);
+  System.out.printf("Server: sending reply: %s\n", message);
+  MessageUtils.sendMessage(socket, "Processed: " + message);
+  System.out.printf("Server: sent\n");
+  closeIgnoringException(socket);
+  } catch (Exception e) {
+  e.printStackTrace();
+  }
+  }
+  };
+  Thread clientConnection = new Thread(clientHandler);
+  clientConnection.start();
+  }
+
+
+
+  This page intentionally left blank
+
+
+  # 349
+  Appendix B
+  org.jfree.date.SerialDate
+  Listing B-1
+  SerialDate.Java
+  1 /* ========================================================================
+  2 * JCommon : a free general purpose class library for the Java(tm) platform
+  3 * ========================================================================
+  4 *
+  5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  6 *
+  7 * Project Info: http://www.jfree.org/jcommon/index.html
+  8 *
+  9 * This library is free software; you can redistribute it and/or modify it
+  10 * under the terms of the GNU Lesser General Public License as published by
+  11 * the Free Software Foundation; either version 2.1 of the License, or
+  12 * (at your option) any later version.
+  13 *
+  14 * This library is distributed in the hope that it will be useful, but
+  15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+  17 * License for more details.
+  18 *
+  19 * You should have received a copy of the GNU Lesser General Public
+  20 * License along with this library; if not, write to the Free Software
+  21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+  22 * USA.
+  23 *
+  24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
+  25 * in the United States and other countries.]
+  26 *
+  27 * ---------------
+  28 * SerialDate.java
+  29 * ---------------
+  30 * (C) Copyright 2001-2005, by Object Refinery Limited.
+  31 *
+  32 * Original Author: David Gilbert (for Object Refinery Limited);
+  33 * Contributor(s): -;
+  34 *
+  35 * $Id: SerialDate.java,v 1.7 2005/11/03 09:25:17 mungady Exp $
+  36 *
+  37 * Changes (from 11-Oct-2001)
+  350 Appendix B: org.jfree.date.SerialDate
+  38 * --------------------------
+  39 * 11-Oct-2001 : Re-organised the class and moved it to new package
+  40 * com.jrefinery.date (DG);
+  41 * 05-Nov-2001 : Added a getDescription() method, and eliminated NotableDate
+  42 * class (DG);
+  43 * 12-Nov-2001 : IBD requires setDescription() method, now that NotableDate
+  44 * class is gone (DG); Changed getPreviousDayOfWeek(),
+  45 * getFollowingDayOfWeek() and getNearestDayOfWeek() to correct
+  46 * bugs (DG);
+  47 * 05-Dec-2001 : Fixed bug in SpreadsheetDate class (DG);
+  48 * 29-May-2002 : Moved the month constants into a separate interface
+  49 * (MonthConstants) (DG);
+  50 * 27-Aug-2002 : Fixed bug in addMonths() method, thanks to N???levka Petr (DG);
+  51 * 03-Oct-2002 : Fixed errors reported by Checkstyle (DG);
+  52 * 13-Mar-2003 : Implemented Serializable (DG);
+  53 * 29-May-2003 : Fixed bug in addMonths method (DG);
+  54 * 04-Sep-2003 : Implemented Comparable. Updated the isInRange javadocs (DG);
+  55 * 05-Jan-2005 : Fixed bug in addYears() method (1096282) (DG);
+  56 *
+  57 /
+  58
+  59 package org.jfree.date;
+  60
+  61 import java.io.Serializable;
+  62 import java.text.DateFormatSymbols;
+  63 import java.text.SimpleDateFormat;
+  64 import java.util.Calendar;
+  65 import java.util.GregorianCalendar;
+  66
+  67 /*
+  68 * An abstract class that defines our requirements for manipulating dates,
+  69 * without tying down a particular implementation.
+  70 *
+  71 * Requirement 1 : match at least what Excel does for dates;
+  72 * Requirement 2 : class is immutable;
+  73 *
+  74 * Why not just use java.util.Date? We will, when it makes sense. At times,
+  75 * java.util.Date can be too precise - it represents an instant in time,
+  76 * accurate to 1/1000th of a second (with the date itself depending on the
+  77 * time-zone). Sometimes we just want to represent a particular day (e.g. 21
+  78 * January 2015) without concerning ourselves about the time of day, or the
+  79 * time-zone, or anything else. That's what we've defined SerialDate for.
+  80 *
+  81 * You can call getInstance() to get a concrete subclass of SerialDate,
+  82 * without worrying about the exact implementation.
+  83 *
+  84 * @author David Gilbert
+  85 /
+  86 public abstract class SerialDate implements Comparable,
+  87 Serializable,
+  88 MonthConstants {
+  89
+  90 /* For serialization. /
+  91 private static final long serialVersionUID = -293716040467423637L;
+  92
+  93 /* Date format symbols. /
+  94 public static final DateFormatSymbols
+  95 DATE_FORMAT_SYMBOLS = new SimpleDateFormat().getDateFormatSymbols();
+  96
+  97 /* The serial number for 1 January 1900. /
+  98 public static final int SERIAL_LOWER_BOUND = 2;
+  99
+  100 /* The serial number for 31 December 9999. */
+  101 public static final int SERIAL_UPPER_BOUND = 2958465;
+  102
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 351
+  103 /** The lowest year value supported by this date format. /
+  104 public static final int MINIMUM_YEAR_SUPPORTED = 1900;
+  105
+  106 /* The highest year value supported by this date format. /
+  107 public static final int MAXIMUM_YEAR_SUPPORTED = 9999;
+  108
+  109 /* Useful constant for Monday. Equivalent to java.util.Calendar.MONDAY. /
+  110 public static final int MONDAY = Calendar.MONDAY;
+  111
+  112 /*
+  113 * Useful constant for Tuesday. Equivalent to java.util.Calendar.TUESDAY.
+  114 /
+  115 public static final int TUESDAY = Calendar.TUESDAY;
+  116
+  117 /*
+  118 * Useful constant for Wednesday. Equivalent to
+  119 * java.util.Calendar.WEDNESDAY.
+  120 /
+  121 public static final int WEDNESDAY = Calendar.WEDNESDAY;
+  122
+  123 /*
+  124 * Useful constant for Thrusday. Equivalent to java.util.Calendar.THURSDAY.
+  125 /
+  126 public static final int THURSDAY = Calendar.THURSDAY;
+  127
+  128 /* Useful constant for Friday. Equivalent to java.util.Calendar.FRIDAY. /
+  129 public static final int FRIDAY = Calendar.FRIDAY;
+  130
+  131 /*
+  132 * Useful constant for Saturday. Equivalent to java.util.Calendar.SATURDAY.
+  133 /
+  134 public static final int SATURDAY = Calendar.SATURDAY;
+  135
+  136 /* Useful constant for Sunday. Equivalent to java.util.Calendar.SUNDAY. /
+  137 public static final int SUNDAY = Calendar.SUNDAY;
+  138
+  139 /* The number of days in each month in non leap years. /
+  140 static final int[] LAST_DAY_OF_MONTH =
+  141 {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+  142
+  143 /* The number of days in a (non-leap) year up to the end of each month. /
+  144 static final int[] AGGREGATE_DAYS_TO_END_OF_MONTH =
+  145 {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
+  146
+  147 /* The number of days in a year up to the end of the preceding month. /
+  148 static final int[] AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
+  149 {0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
+  150
+  151 /* The number of days in a leap year up to the end of each month. /
+  152 static final int[] LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_MONTH =
+  153 {0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
+  154
+  155 /*
+  156 * The number of days in a leap year up to the end of the preceding month.
+  157 /
+  158 static final int[]
+  159 LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
+  160 {0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
+  161
+  162 /* A useful constant for referring to the first week in a month. */
+  163 public static final int FIRST_WEEK_IN_MONTH = 1;
+  164
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  352 Appendix B: org.jfree.date.SerialDate
+  165 /** A useful constant for referring to the second week in a month. /
+  166 public static final int SECOND_WEEK_IN_MONTH = 2;
+  167
+  168 /* A useful constant for referring to the third week in a month. /
+  169 public static final int THIRD_WEEK_IN_MONTH = 3;
+  170
+  171 /* A useful constant for referring to the fourth week in a month. /
+  172 public static final int FOURTH_WEEK_IN_MONTH = 4;
+  173
+  174 /* A useful constant for referring to the last week in a month. /
+  175 public static final int LAST_WEEK_IN_MONTH = 0;
+  176
+  177 /* Useful range constant. /
+  178 public static final int INCLUDE_NONE = 0;
+  179
+  180 /* Useful range constant. /
+  181 public static final int INCLUDE_FIRST = 1;
+  182
+  183 /* Useful range constant. /
+  184 public static final int INCLUDE_SECOND = 2;
+  185
+  186 /* Useful range constant. /
+  187 public static final int INCLUDE_BOTH = 3;
+  188
+  189 /*
+  190 * Useful constant for specifying a day of the week relative to a fixed
+  191 * date.
+  192 /
+  193 public static final int PRECEDING = -1;
+  194
+  195 /*
+  196 * Useful constant for specifying a day of the week relative to a fixed
+  197 * date.
+  198 /
+  199 public static final int NEAREST = 0;
+  200
+  201 /*
+  202 * Useful constant for specifying a day of the week relative to a fixed
+  203 * date.
+  204 /
+  205 public static final int FOLLOWING = 1;
+  206
+  207 /* A description for the date. /
+  208 private String description;
+  209
+  210 /*
+  211 * Default constructor.
+  212 /
+  213 protected SerialDate() {
+  214 }
+  215
+  216 /*
+  217 * Returns true if the supplied integer code represents a
+  218 * valid day-of-the-week, and false otherwise.
+  219 *
+  220 * @param code the code being checked for validity.
+  221 *
+  222 * @return true if the supplied integer code represents a
+  223 * valid day-of-the-week, and false otherwise.
+  224 */
+  225 public static boolean isValidWeekdayCode(final int code) {
+  226
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 353
+  227 switch(code) {
+  228 case SUNDAY:
+  229 case MONDAY:
+  230 case TUESDAY:
+  231 case WEDNESDAY:
+  232 case THURSDAY:
+  233 case FRIDAY:
+  234 case SATURDAY:
+  235 return true;
+  236 default:
+  237 return false;
+  238 }
+  239
+  240 }
+  241
+  242 /**
+  243 * Converts the supplied string to a day of the week.
+  244 *
+  245 * @param s a string representing the day of the week.
+  246 *
+  247 * @return -1 if the string is not convertable, the day of
+  248 * the week otherwise.
+  249 /
+  250 public static int stringToWeekdayCode(String s) {
+  251
+  252 final String[] shortWeekdayNames
+  253 = DATE_FORMAT_SYMBOLS.getShortWeekdays();
+  254 final String[] weekDayNames = DATE_FORMAT_SYMBOLS.getWeekdays();
+  255
+  256 int result = -1;
+  257 s = s.trim();
+  258 for (int i = 0; i < weekDayNames.length; i++) {
+  259 if (s.equals(shortWeekdayNames[i])) {
+  260 result = i;
+  261 break;
+  262 }
+  263 if (s.equals(weekDayNames[i])) {
+  264 result = i;
+  265 break;
+  266 }
+  267 }
+  268 return result;
+  269
+  270 }
+  271
+  272 /*
+  273 * Returns a string representing the supplied day-of-the-week.
+  274 *
+  275 * Need to find a better approach.
+  276 *
+  277 * @param weekday the day of the week.
+  278 *
+  279 * @return a string representing the supplied day-of-the-week.
+  280 /
+  281 public static String weekdayCodeToString(final int weekday) {
+  282
+  283 final String[] weekdays = DATE_FORMAT_SYMBOLS.getWeekdays();
+  284 return weekdays[weekday];
+  285
+  286 }
+  287
+  288 /*
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  354 Appendix B: org.jfree.date.SerialDate
+  289 * Returns an array of month names.
+  290 *
+  291 * @return an array of month names.
+  292 /
+  293 public static String[] getMonths() {
+  294
+  295 return getMonths(false);
+  296
+  297 }
+  298
+  299 /*
+  300 * Returns an array of month names.
+  301 *
+  302 * @param shortened a flag indicating that shortened month names should
+  303 * be returned.
+  304 *
+  305 * @return an array of month names.
+  306 /
+  307 public static String[] getMonths(final boolean shortened) {
+  308
+  309 if (shortened) {
+  310 return DATE_FORMAT_SYMBOLS.getShortMonths();
+  311 }
+  312 else {
+  313 return DATE_FORMAT_SYMBOLS.getMonths();
+  314 }
+  315
+  316 }
+  317
+  318 /*
+  319 * Returns true if the supplied integer code represents a valid month.
+  320 *
+  321 * @param code the code being checked for validity.
+  322 *
+  323 * @return true if the supplied integer code represents a
+  324 * valid month.
+  325 /
+  326 public static boolean isValidMonthCode(final int code) {
+  327
+  328 switch(code) {
+  329 case JANUARY:
+  330 case FEBRUARY:
+  331 case MARCH:
+  332 case APRIL:
+  333 case MAY:
+  334 case JUNE:
+  335 case JULY:
+  336 case AUGUST:
+  337 case SEPTEMBER:
+  338 case OCTOBER:
+  339 case NOVEMBER:
+  340 case DECEMBER:
+  341 return true;
+  342 default:
+  343 return false;
+  344 }
+  345
+  346 }
+  347
+  348 /*
+  349 * Returns the quarter for the specified month.
+  350 *
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 355
+  351 * @param code the month code (1-12).
+  352 *
+  353 * @return the quarter that the month belongs to.
+  354 * @throws java.lang.IllegalArgumentException
+  355 /
+  356 public static int monthCodeToQuarter(final int code) {
+  357
+  358 switch(code) {
+  359 case JANUARY:
+  360 case FEBRUARY:
+  361 case MARCH: return 1;
+  362 case APRIL:
+  363 case MAY:
+  364 case JUNE: return 2;
+  365 case JULY:
+  366 case AUGUST:
+  367 case SEPTEMBER: return 3;
+  368 case OCTOBER:
+  369 case NOVEMBER:
+  370 case DECEMBER: return 4;
+  371 default: throw new IllegalArgumentException(
+  372 "SerialDate.monthCodeToQuarter: invalid month code.");
+  373 }
+  374
+  375 }
+  376
+  377 /*
+  378 * Returns a string representing the supplied month.
+  379 *
+  380 * The string returned is the long form of the month name taken from the
+  381 * default locale.
+  382 *
+  383 * @param month the month.
+  384 *
+  385 * @return a string representing the supplied month.
+  386 /
+  387 public static String monthCodeToString(final int month) {
+  388
+  389 return monthCodeToString(month, false);
+  390
+  391 }
+  392
+  393 /*
+  394 * Returns a string representing the supplied month.
+  395 *
+  396 * The string returned is the long or short form of the month name taken
+  397 * from the default locale.
+  398 *
+  399 * @param month the month.
+  400 * @param shortened if true return the abbreviation of the
+  401 * month.
+  402 *
+  403 * @return a string representing the supplied month.
+  404 * @throws java.lang.IllegalArgumentException
+  405 */
+  406 public static String monthCodeToString(final int month,
+  407 final boolean shortened) {
+  408
+  409 // check arguments...
+  410 if (!isValidMonthCode(month)) {
+  411 throw new IllegalArgumentException(
+  412 "SerialDate.monthCodeToString: month outside valid range.");
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  356 Appendix B: org.jfree.date.SerialDate
+  413 }
+  414
+  415 final String[] months;
+  416
+  417 if (shortened) {
+  418 months = DATE_FORMAT_SYMBOLS.getShortMonths();
+  419 }
+  420 else {
+  421 months = DATE_FORMAT_SYMBOLS.getMonths();
+  422 }
+  423
+  424 return months[month - 1];
+  425
+  426 }
+  427
+  428 /**
+  429 * Converts a string to a month code.
+  430 *
+  431 * This method will return one of the constants JANUARY, FEBRUARY, ...,
+  432 * DECEMBER that corresponds to the string. If the string is not
+  433 * recognised, this method returns -1.
+  434 *
+  435 * @param s the string to parse.
+  436 *
+  437 * @return -1 if the string is not parseable, the month of the
+  438 * year otherwise.
+  439 /
+  440 public static int stringToMonthCode(String s) {
+  441
+  442 final String[] shortMonthNames = DATE_FORMAT_SYMBOLS.getShortMonths();
+  443 final String[] monthNames = DATE_FORMAT_SYMBOLS.getMonths();
+  444
+  445 int result = -1;
+  446 s = s.trim();
+  447
+  448 // first try parsing the string as an integer (1-12)...
+  449 try {
+  450 result = Integer.parseInt(s);
+  451 }
+  452 catch (NumberFormatException e) {
+  453 // suppress
+  454 }
+  455
+  456 // now search through the month names...
+  457 if ((result < 1) || (result > 12)) {
+  458 for (int i = 0; i < monthNames.length; i++) {
+  459 if (s.equals(shortMonthNames[i])) {
+  460 result = i + 1;
+  461 break;
+  462 }
+  463 if (s.equals(monthNames[i])) {
+  464 result = i + 1;
+  465 break;
+  466 }
+  467 }
+  468 }
+  469
+  470 return result;
+  471
+  472 }
+  473
+  474 /*
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 357
+  475 * Returns true if the supplied integer code represents a valid
+  476 * week-in-the-month, and false otherwise.
+  477 *
+  478 * @param code the code being checked for validity.
+  479 * @return true if the supplied integer code represents a
+  480 * valid week-in-the-month.
+  481 /
+  482 public static boolean isValidWeekInMonthCode(final int code) {
+  483
+  484 switch(code) {
+  485 case FIRST_WEEK_IN_MONTH:
+  486 case SECOND_WEEK_IN_MONTH:
+  487 case THIRD_WEEK_IN_MONTH:
+  488 case FOURTH_WEEK_IN_MONTH:
+  489 case LAST_WEEK_IN_MONTH: return true;
+  490 default: return false;
+  491 }
+  492
+  493 }
+  494
+  495 /*
+  496 * Determines whether or not the specified year is a leap year.
+  497 *
+  498 * @param yyyy the year (in the range 1900 to 9999).
+  499 *
+  500 * @return true if the specified year is a leap year.
+  501 /
+  502 public static boolean isLeapYear(final int yyyy) {
+  503
+  504 if ((yyyy % 4) != 0) {
+  505 return false;
+  506 }
+  507 else if ((yyyy % 400) == 0) {
+  508 return true;
+  509 }
+  510 else if ((yyyy % 100) == 0) {
+  511 return false;
+  512 }
+  513 else {
+  514 return true;
+  515 }
+  516
+  517 }
+  518
+  519 /*
+  520 * Returns the number of leap years from 1900 to the specified year
+  521 * INCLUSIVE.
+  522 *
+  523 * Note that 1900 is not a leap year.
+  524 *
+  525 * @param yyyy the year (in the range 1900 to 9999).
+  526 *
+  527 * @return the number of leap years from 1900 to the specified year.
+  528 */
+  529 public static int leapYearCount(final int yyyy) {
+  530
+  531 final int leap4 = (yyyy - 1896) / 4;
+  532 final int leap100 = (yyyy - 1800) / 100;
+  533 final int leap400 = (yyyy - 1600) / 400;
+  534 return leap4 - leap100 + leap400;
+  535
+  536 }
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  358 Appendix B: org.jfree.date.SerialDate
+  537
+  538 /**
+  539 * Returns the number of the last day of the month, taking into account
+  540 * leap years.
+  541 *
+  542 * @param month the month.
+  543 * @param yyyy the year (in the range 1900 to 9999).
+  544 *
+  545 * @return the number of the last day of the month.
+  546 /
+  547 public static int lastDayOfMonth(final int month, final int yyyy) {
+  548
+  549 final int result = LAST_DAY_OF_MONTH[month];
+  550 if (month != FEBRUARY) {
+  551 return result;
+  552 }
+  553 else if (isLeapYear(yyyy)) {
+  554 return result + 1;
+  555 }
+  556 else {
+  557 return result;
+  558 }
+  559
+  560 }
+  561
+  562 /*
+  563 * Creates a new date by adding the specified number of days to the base
+  564 * date.
+  565 *
+  566 * @param days the number of days to add (can be negative).
+  567 * @param base the base date.
+  568 *
+  569 * @return a new date.
+  570 /
+  571 public static SerialDate addDays(final int days, final SerialDate base) {
+  572
+  573 final int serialDayNumber = base.toSerial() + days;
+  574 return SerialDate.createInstance(serialDayNumber);
+  575
+  576 }
+  577
+  578 /*
+  579 * Creates a new date by adding the specified number of months to the base
+  580 * date.
+  581 *
+  582 * If the base date is close to the end of the month, the day on the result
+  583 * may be adjusted slightly: 31 May + 1 month = 30 June.
+  584 *
+  585 * @param months the number of months to add (can be negative).
+  586 * @param base the base date.
+  587 *
+  588 * @return a new date.
+  589 */
+  590 public static SerialDate addMonths(final int months,
+  591 final SerialDate base) {
+  592
+  593 final int yy = (12 * base.getYYYY() + base.getMonth() + months - 1)
+  594 / 12;
+  595 final int mm = (12 * base.getYYYY() + base.getMonth() + months - 1)
+  596 % 12 + 1;
+  597 final int dd = Math.min(
+  598 base.getDayOfMonth(), SerialDate.lastDayOfMonth(mm, yy)
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 359
+  599 );
+  600 return SerialDate.createInstance(dd, mm, yy);
+  601
+  602 }
+  603
+  604 /**
+  605 * Creates a new date by adding the specified number of years to the base
+  606 * date.
+  607 *
+  608 * @param years the number of years to add (can be negative).
+  609 * @param base the base date.
+  610 *
+  611 * @return A new date.
+  612 /
+  613 public static SerialDate addYears(final int years, final SerialDate base) {
+  614
+  615 final int baseY = base.getYYYY();
+  616 final int baseM = base.getMonth();
+  617 final int baseD = base.getDayOfMonth();
+  618
+  619 final int targetY = baseY + years;
+  620 final int targetD = Math.min(
+  621 baseD, SerialDate.lastDayOfMonth(baseM, targetY)
+  622 );
+  623
+  624 return SerialDate.createInstance(targetD, baseM, targetY);
+  625
+  626 }
+  627
+  628 /*
+  629 * Returns the latest date that falls on the specified day-of-the-week and
+  630 * is BEFORE the base date.
+  631 *
+  632 * @param targetWeekday a code for the target day-of-the-week.
+  633 * @param base the base date.
+  634 *
+  635 * @return the latest date that falls on the specified day-of-the-week and
+  636 * is BEFORE the base date.
+  637 */
+  638 public static SerialDate getPreviousDayOfWeek(final int targetWeekday,
+  639 final SerialDate base) {
+  640
+  641 // check arguments...
+  642 if (!SerialDate.isValidWeekdayCode(targetWeekday)) {
+  643 throw new IllegalArgumentException(
+  644 "Invalid day-of-the-week code."
+  645 );
+  646 }
+  647
+  648 // find the date...
+  649 final int adjust;
+  650 final int baseDOW = base.getDayOfWeek();
+  651 if (baseDOW > targetWeekday) {
+  652 adjust = Math.min(0, targetWeekday - baseDOW);
+  653 }
+  654 else {
+  655 adjust = -7 + Math.max(0, targetWeekday - baseDOW);
+  656 }
+  657
+  658 return SerialDate.addDays(adjust, base);
+  659
+  660 }
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  360 Appendix B: org.jfree.date.SerialDate
+  661
+  662 /**
+  663 * Returns the earliest date that falls on the specified day-of-the-week
+  664 * and is AFTER the base date.
+  665 *
+  666 * @param targetWeekday a code for the target day-of-the-week.
+  667 * @param base the base date.
+  668 *
+  669 * @return the earliest date that falls on the specified day-of-the-week
+  670 * and is AFTER the base date.
+  671 /
+  672 public static SerialDate getFollowingDayOfWeek(final int targetWeekday,
+  673 final SerialDate base) {
+  674
+  675 // check arguments...
+  676 if (!SerialDate.isValidWeekdayCode(targetWeekday)) {
+  677 throw new IllegalArgumentException(
+  678 "Invalid day-of-the-week code."
+  679 );
+  680 }
+  681
+  682 // find the date...
+  683 final int adjust;
+  684 final int baseDOW = base.getDayOfWeek();
+  685 if (baseDOW > targetWeekday) {
+  686 adjust = 7 + Math.min(0, targetWeekday - baseDOW);
+  687 }
+  688 else {
+  689 adjust = Math.max(0, targetWeekday - baseDOW);
+  690 }
+  691
+  692 return SerialDate.addDays(adjust, base);
+  693 }
+  694
+  695 /*
+  696 * Returns the date that falls on the specified day-of-the-week and is
+  697 * CLOSEST to the base date.
+  698 *
+  699 * @param targetDOW a code for the target day-of-the-week.
+  700 * @param base the base date.
+  701 *
+  702 * @return the date that falls on the specified day-of-the-week and is
+  703 * CLOSEST to the base date.
+  704 */
+  705 public static SerialDate getNearestDayOfWeek(final int targetDOW,
+  706 final SerialDate base) {
+  707
+  708 // check arguments...
+  709 if (!SerialDate.isValidWeekdayCode(targetDOW)) {
+  710 throw new IllegalArgumentException(
+  711 "Invalid day-of-the-week code."
+  712 );
+  713 }
+  714
+  715 // find the date...
+  716 final int baseDOW = base.getDayOfWeek();
+  717 int adjust = -Math.abs(targetDOW - baseDOW);
+  718 if (adjust >= 4) {
+  719 adjust = 7 - adjust;
+  720 }
+  721 if (adjust <= -4) {
+  722 adjust = 7 + adjust;
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 361
+  723 }
+  724 return SerialDate.addDays(adjust, base);
+  725
+  726 }
+  727
+  728 /**
+  729 * Rolls the date forward to the last day of the month.
+  730 *
+  731 * @param base the base date.
+  732 *
+  733 * @return a new serial date.
+  734 /
+  735 public SerialDate getEndOfCurrentMonth(final SerialDate base) {
+  736 final int last = SerialDate.lastDayOfMonth(
+  737 base.getMonth(), base.getYYYY()
+  738 );
+  739 return SerialDate.createInstance(last, base.getMonth(), base.getYYYY());
+  740 }
+  741
+  742 /*
+  743 * Returns a string corresponding to the week-in-the-month code.
+  744 *
+  745 * Need to find a better approach.
+  746 *
+  747 * @param count an integer code representing the week-in-the-month.
+  748 *
+  749 * @return a string corresponding to the week-in-the-month code.
+  750 /
+  751 public static String weekInMonthToString(final int count) {
+  752
+  753 switch (count) {
+  754 case SerialDate.FIRST_WEEK_IN_MONTH : return "First";
+  755 case SerialDate.SECOND_WEEK_IN_MONTH : return "Second";
+  756 case SerialDate.THIRD_WEEK_IN_MONTH : return "Third";
+  757 case SerialDate.FOURTH_WEEK_IN_MONTH : return "Fourth";
+  758 case SerialDate.LAST_WEEK_IN_MONTH : return "Last";
+  759 default :
+  760 return "SerialDate.weekInMonthToString(): invalid code.";
+  761 }
+  762
+  763 }
+  764
+  765 /*
+  766 * Returns a string representing the supplied 'relative'.
+  767 *
+  768 * Need to find a better approach.
+  769 *
+  770 * @param relative a constant representing the 'relative'.
+  771 *
+  772 * @return a string representing the supplied 'relative'.
+  773 */
+  774 public static String relativeToString(final int relative) {
+  775
+  776 switch (relative) {
+  777 case SerialDate.PRECEDING : return "Preceding";
+  778 case SerialDate.NEAREST : return "Nearest";
+  779 case SerialDate.FOLLOWING : return "Following";
+  780 default : return "ERROR : Relative To String";
+  781 }
+  782
+  783 }
+  784
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  362 Appendix B: org.jfree.date.SerialDate
+  785 /**
+  786 * Factory method that returns an instance of some concrete subclass of
+  787 * {@link SerialDate}.
+  788 *
+  789 * @param day the day (1-31).
+  790 * @param month the month (1-12).
+  791 * @param yyyy the year (in the range 1900 to 9999).
+  792 *
+  793 * @return An instance of {@link SerialDate}.
+  794 /
+  795 public static SerialDate createInstance(final int day, final int month,
+  796 final int yyyy) {
+  797 return new SpreadsheetDate(day, month, yyyy);
+  798 }
+  799
+  800 /*
+  801 * Factory method that returns an instance of some concrete subclass of
+  802 * {@link SerialDate}.
+  803 *
+  804 * @param serial the serial number for the day (1 January 1900 = 2).
+  805 *
+  806 * @return a instance of SerialDate.
+  807 /
+  808 public static SerialDate createInstance(final int serial) {
+  809 return new SpreadsheetDate(serial);
+  810 }
+  811
+  812 /*
+  813 * Factory method that returns an instance of a subclass of SerialDate.
+  814 *
+  815 * @param date A Java date object.
+  816 *
+  817 * @return a instance of SerialDate.
+  818 /
+  819 public static SerialDate createInstance(final java.util.Date date) {
+  820
+  821 final GregorianCalendar calendar = new GregorianCalendar();
+  822 calendar.setTime(date);
+  823 return new SpreadsheetDate(calendar.get(Calendar.DATE),
+  824 calendar.get(Calendar.MONTH) + 1,
+  825 calendar.get(Calendar.YEAR));
+  826
+  827 }
+  828
+  829 /*
+  830 * Returns the serial number for the date, where 1 January 1900 = 2 (this
+  831 * corresponds, almost, to the numbering system used in Microsoft Excel for
+  832 * Windows and Lotus 1-2-3).
+  833 *
+  834 * @return the serial number for the date.
+  835 /
+  836 public abstract int toSerial();
+  837
+  838 /*
+  839 * Returns a java.util.Date. Since java.util.Date has more precision than
+  840 * SerialDate, we need to define a convention for the 'time of day'.
+  841 *
+  842 * @return this as java.util.Date.
+  843 /
+  844 public abstract java.util.Date toDate();
+  845
+  846 /*
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 363
+  847 * Returns a description of the date.
+  848 *
+  849 * @return a description of the date.
+  850 /
+  851 public String getDescription() {
+  852 return this.description;
+  853 }
+  854
+  855 /*
+  856 * Sets the description for the date.
+  857 *
+  858 * @param description the new description for the date.
+  859 /
+  860 public void setDescription(final String description) {
+  861 this.description = description;
+  862 }
+  863
+  864 /*
+  865 * Converts the date to a string.
+  866 *
+  867 * @return a string representation of the date.
+  868 /
+  869 public String toString() {
+  870 return getDayOfMonth() + "-" + SerialDate.monthCodeToString(getMonth())
+  871 + "-" + getYYYY();
+  872 }
+  873
+  874 /*
+  875 * Returns the year (assume a valid range of 1900 to 9999).
+  876 *
+  877 * @return the year.
+  878 /
+  879 public abstract int getYYYY();
+  880
+  881 /*
+  882 * Returns the month (January = 1, February = 2, March = 3).
+  883 *
+  884 * @return the month of the year.
+  885 /
+  886 public abstract int getMonth();
+  887
+  888 /*
+  889 * Returns the day of the month.
+  890 *
+  891 * @return the day of the month.
+  892 /
+  893 public abstract int getDayOfMonth();
+  894
+  895 /*
+  896 * Returns the day of the week.
+  897 *
+  898 * @return the day of the week.
+  899 /
+  900 public abstract int getDayOfWeek();
+  901
+  902 /*
+  903 * Returns the difference (in days) between this date and the specified
+  904 * 'other' date.
+  905 *
+  906 * The result is positive if this date is after the 'other' date and
+  907 * negative if it is before the 'other' date.
+  908 *
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  364 Appendix B: org.jfree.date.SerialDate
+  909 * @param other the date being compared to.
+  910 *
+  911 * @return the difference between this and the other date.
+  912 /
+  913 public abstract int compare(SerialDate other);
+  914
+  915 /*
+  916 * Returns true if this SerialDate represents the same date as the
+  917 * specified SerialDate.
+  918 *
+  919 * @param other the date being compared to.
+  920 *
+  921 * @return true if this SerialDate represents the same date as
+  922 * the specified SerialDate.
+  923 /
+  924 public abstract boolean isOn(SerialDate other);
+  925
+  926 /*
+  927 * Returns true if this SerialDate represents an earlier date compared to
+  928 * the specified SerialDate.
+  929 *
+  930 * @param other The date being compared to.
+  931 *
+  932 * @return true if this SerialDate represents an earlier date
+  933 * compared to the specified SerialDate.
+  934 /
+  935 public abstract boolean isBefore(SerialDate other);
+  936
+  937 /*
+  938 * Returns true if this SerialDate represents the same date as the
+  939 * specified SerialDate.
+  940 *
+  941 * @param other the date being compared to.
+  942 *
+  943 * @return true if this SerialDate represents the same date
+  944 * as the specified SerialDate.
+  945 /
+  946 public abstract boolean isOnOrBefore(SerialDate other);
+  947
+  948 /*
+  949 * Returns true if this SerialDate represents the same date as the
+  950 * specified SerialDate.
+  951 *
+  952 * @param other the date being compared to.
+  953 *
+  954 * @return true if this SerialDate represents the same date
+  955 * as the specified SerialDate.
+  956 /
+  957 public abstract boolean isAfter(SerialDate other);
+  958
+  959 /*
+  960 * Returns true if this SerialDate represents the same date as the
+  961 * specified SerialDate.
+  962 *
+  963 * @param other the date being compared to.
+  964 *
+  965 * @return true if this SerialDate represents the same date
+  966 * as the specified SerialDate.
+  967 /
+  968 public abstract boolean isOnOrAfter(SerialDate other);
+  969
+  970 /*
+  971 * Returns true if this {@link SerialDate} is within the
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  Appendix B: org.jfree.date.SerialDate 365
+  972 * specified range (INCLUSIVE). The date order of d1 and d2 is not
+  973 * important.
+  974 *
+  975 * @param d1 a boundary date for the range.
+  976 * @param d2 the other boundary date for the range.
+  977 *
+  978 * @return A boolean.
+  979 /
+  980 public abstract boolean isInRange(SerialDate d1, SerialDate d2);
+  981
+  982 /*
+  983 * Returns true if this {@link SerialDate} is within the
+  984 * specified range (caller specifies whether or not the end-points are
+  985 * included). The date order of d1 and d2 is not important.
+  986 *
+  987 * @param d1 a boundary date for the range.
+  988 * @param d2 the other boundary date for the range.
+  989 * @param include a code that controls whether or not the start and end
+  990 * dates are included in the range.
+  991 *
+  992 * @return A boolean.
+  993 /
+  994 public abstract boolean isInRange(SerialDate d1, SerialDate d2,
+  995 int include);
+  996
+  997 /*
+  998 * Returns the latest date that falls on the specified day-of-the-week and
+  999 * is BEFORE this date.
+  1000 *
+  1001 * @param targetDOW a code for the target day-of-the-week.
+  1002 *
+  1003 * @return the latest date that falls on the specified day-of-the-week and
+  1004 * is BEFORE this date.
+  1005 /
+  1006 public SerialDate getPreviousDayOfWeek(final int targetDOW) {
+  1007 return getPreviousDayOfWeek(targetDOW, this);
+  1008 }
+  1009
+  1010 /*
+  1011 * Returns the earliest date that falls on the specified day-of-the-week
+  1012 * and is AFTER this date.
+  1013 *
+  1014 * @param targetDOW a code for the target day-of-the-week.
+  1015 *
+  1016 * @return the earliest date that falls on the specified day-of-the-week
+  1017 * and is AFTER this date.
+  1018 /
+  1019 public SerialDate getFollowingDayOfWeek(final int targetDOW) {
+  1020 return getFollowingDayOfWeek(targetDOW, this);
+  1021 }
+  1022
+  1023 /*
+  1024 * Returns the nearest date that falls on the specified day-of-the-week.
+  1025 *
+  1026 * @param targetDOW a code for the target day-of-the-week.
+  1027 *
+  1028 * @return the nearest date that falls on the specified day-of-the-week.
+  1029 */
+  1030 public SerialDate getNearestDayOfWeek(final int targetDOW) {
+  1031 return getNearestDayOfWeek(targetDOW, this);
+  1032 }
+  1033
+  1034 }
+  Listing B-1 (continued)
+  SerialDate.Java
+
+  366 Appendix B: org.jfree.date.SerialDate
+  Listing B-2
+  SerialDateTest.java
+  1 /* ========================================================================
+  2 * JCommon : a free general purpose class library for the Java(tm) platform
+  3 * ========================================================================
+  4 *
+  5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  6 *
+  7 * Project Info: http://www.jfree.org/jcommon/index.html
+  8 *
+  9 * This library is free software; you can redistribute it and/or modify it
+  10 * under the terms of the GNU Lesser General Public License as published by
+  11 * the Free Software Foundation; either version 2.1 of the License, or
+  12 * (at your option) any later version.
+  13 *
+  14 * This library is distributed in the hope that it will be useful, but
+  15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+  17 * License for more details.
+  18 *
+  19 * You should have received a copy of the GNU Lesser General Public
+  20 * License along with this library; if not, write to the Free Software
+  21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+  22 * USA.
+  23 *
+  24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
+  25 * in the United States and other countries.]
+  26 *
+  27 * --------------------
+  28 * SerialDateTests.java
+  29 * --------------------
+  30 * (C) Copyright 2001-2005, by Object Refinery Limited.
+  31 *
+  32 * Original Author: David Gilbert (for Object Refinery Limited);
+  33 * Contributor(s): -;
+  34 *
+  35 * $Id: SerialDateTests.java,v 1.6 2005/11/16 15:58:40 taqua Exp $
+  36 *
+  37 * Changes
+  38 * -------
+  39 * 15-Nov-2001 : Version 1 (DG);
+  40 * 25-Jun-2002 : Removed unnecessary import (DG);
+  41 * 24-Oct-2002 : Fixed errors reported by Checkstyle (DG);
+  42 * 13-Mar-2003 : Added serialization test (DG);
+  43 * 05-Jan-2005 : Added test for bug report 1096282 (DG);
+  44 *
+  45 */
+  46
+  47 package org.jfree.date.junit;
+  48
+  49 import java.io.ByteArrayInputStream;
+  50 import java.io.ByteArrayOutputStream;
+  51 import java.io.ObjectInput;
+  52 import java.io.ObjectInputStream;
+  53 import java.io.ObjectOutput;
+  54 import java.io.ObjectOutputStream;
+  55
+  56 import junit.framework.Test;
+  57 import junit.framework.TestCase;
+  58 import junit.framework.TestSuite;
+  59
+  60 import org.jfree.date.MonthConstants;
+  61 import org.jfree.date.SerialDate;
+  62
+  Appendix B: org.jfree.date.SerialDate 367
+  63 /**
+  64 * Some JUnit tests for the {@link SerialDate} class.
+  65 /
+  66 public class SerialDateTests extends TestCase {
+  67
+  68 /* Date representing November 9. /
+  69 private SerialDate nov9Y2001;
+  70
+  71 /*
+  72 * Creates a new test case.
+  73 *
+  74 * @param name the name.
+  75 /
+  76 public SerialDateTests(final String name) {
+  77 super(name);
+  78 }
+  79
+  80 /*
+  81 * Returns a test suite for the JUnit test runner.
+  82 *
+  83 * @return The test suite.
+  84 /
+  85 public static Test suite() {
+  86 return new TestSuite(SerialDateTests.class);
+  87 }
+  88
+  89 /*
+  90 * Problem set up.
+  91 /
+  92 protected void setUp() {
+  93 this.nov9Y2001 = SerialDate.createInstance(9, MonthConstants.NOVEMBER, 2001);
+  94 }
+  95
+  96 /*
+  97 * 9 Nov 2001 plus two months should be 9 Jan 2002.
+  98 /
+  99 public void testAddMonthsTo9Nov2001() {
+  100 final SerialDate jan9Y2002 = SerialDate.addMonths(2, this.nov9Y2001);
+  101 final SerialDate answer = SerialDate.createInstance(9, 1, 2002);
+  102 assertEquals(answer, jan9Y2002);
+  103 }
+  104
+  105 /*
+  106 * A test case for a reported bug, now fixed.
+  107 /
+  108 public void testAddMonthsTo5Oct2003() {
+  109 final SerialDate d1 = SerialDate.createInstance(5, MonthConstants.OCTOBER, 2003);
+  110 final SerialDate d2 = SerialDate.addMonths(2, d1);
+  111 assertEquals(d2, SerialDate.createInstance(5, MonthConstants.DECEMBER, 2003));
+  112 }
+  113
+  114 /*
+  115 * A test case for a reported bug, now fixed.
+  116 /
+  117 public void testAddMonthsTo1Jan2003() {
+  118 final SerialDate d1 = SerialDate.createInstance(1, MonthConstants.JANUARY, 2003);
+  119 final SerialDate d2 = SerialDate.addMonths(0, d1);
+  120 assertEquals(d2, d1);
+  121 }
+  122
+  123 /*
+  124 * Monday preceding Friday 9 November 2001 should be 5 November.
+  Listing B-2 (continued)
+  SerialDateTest.java
+
+  368 Appendix B: org.jfree.date.SerialDate
+  125 /
+  126 public void testMondayPrecedingFriday9Nov2001() {
+  127 SerialDate mondayBefore = SerialDate.getPreviousDayOfWeek(
+  128 SerialDate.MONDAY, this.nov9Y2001
+  129 );
+  130 assertEquals(5, mondayBefore.getDayOfMonth());
+  131 }
+  132
+  133 /*
+  134 * Monday following Friday 9 November 2001 should be 12 November.
+  135 /
+  136 public void testMondayFollowingFriday9Nov2001() {
+  137 SerialDate mondayAfter = SerialDate.getFollowingDayOfWeek(
+  138 SerialDate.MONDAY, this.nov9Y2001
+  139 );
+  140 assertEquals(12, mondayAfter.getDayOfMonth());
+  141 }
+  142
+  143 /*
+  144 * Monday nearest Friday 9 November 2001 should be 12 November.
+  145 /
+  146 public void testMondayNearestFriday9Nov2001() {
+  147 SerialDate mondayNearest = SerialDate.getNearestDayOfWeek(
+  148 SerialDate.MONDAY, this.nov9Y2001
+  149 );
+  150 assertEquals(12, mondayNearest.getDayOfMonth());
+  151 }
+  152
+  153 /*
+  154 * The Monday nearest to 22nd January 1970 falls on the 19th.
+  155 /
+  156 public void testMondayNearest22Jan1970() {
+  157 SerialDate jan22Y1970 = SerialDate.createInstance(22, MonthConstants.JANUARY, 1970);
+  158 SerialDate mondayNearest=SerialDate.getNearestDayOfWeek(SerialDate.MONDAY, jan22Y1970);
+  159 assertEquals(19, mondayNearest.getDayOfMonth());
+  160 }
+  161
+  162 /*
+  163 * Problem that the conversion of days to strings returns the right result. Actually, this
+  164 * result depends on the Locale so this test needs to be modified.
+  165 /
+  166 public void testWeekdayCodeToString() {
+  167
+  168 final String test = SerialDate.weekdayCodeToString(SerialDate.SATURDAY);
+  169 assertEquals("Saturday", test);
+  170
+  171 }
+  172
+  173 /*
+  174 * Test the conversion of a string to a weekday. Note that this test will fail if the
+  175 * default locale doesn't use English weekday names...devise a better test!
+  176 */
+  177 public void testStringToWeekday() {
+  178
+  179 int weekday = SerialDate.stringToWeekdayCode("Wednesday");
+  180 assertEquals(SerialDate.WEDNESDAY, weekday);
+  181
+  182 weekday = SerialDate.stringToWeekdayCode(" Wednesday ");
+  183 assertEquals(SerialDate.WEDNESDAY, weekday);
+  184
+  Listing B-2 (continued)
+  SerialDateTest.java
+
+  Appendix B: org.jfree.date.SerialDate 369
+  185 weekday = SerialDate.stringToWeekdayCode("Wed");
+  186 assertEquals(SerialDate.WEDNESDAY, weekday);
+  187
+  188 }
+  189
+  190 /**
+  191 * Test the conversion of a string to a month. Note that this test will fail if the
+  192 * default locale doesn't use English month names...devise a better test!
+  193 /
+  194 public void testStringToMonthCode() {
+  195
+  196 int m = SerialDate.stringToMonthCode("January");
+  197 assertEquals(MonthConstants.JANUARY, m);
+  198
+  199 m = SerialDate.stringToMonthCode(" January ");
+  200 assertEquals(MonthConstants.JANUARY, m);
+  201
+  202 m = SerialDate.stringToMonthCode("Jan");
+  203 assertEquals(MonthConstants.JANUARY, m);
+  204
+  205 }
+  206
+  207 /*
+  208 * Tests the conversion of a month code to a string.
+  209 /
+  210 public void testMonthCodeToStringCode() {
+  211
+  212 final String test = SerialDate.monthCodeToString(MonthConstants.DECEMBER);
+  213 assertEquals("December", test);
+  214
+  215 }
+  216
+  217 /*
+  218 * 1900 is not a leap year.
+  219 /
+  220 public void testIsNotLeapYear1900() {
+  221 assertTrue(!SerialDate.isLeapYear(1900));
+  222 }
+  223
+  224 /*
+  225 * 2000 is a leap year.
+  226 /
+  227 public void testIsLeapYear2000() {
+  228 assertTrue(SerialDate.isLeapYear(2000));
+  229 }
+  230
+  231 /*
+  232 * The number of leap years from 1900 up-to-and-including 1899 is 0.
+  233 /
+  234 public void testLeapYearCount1899() {
+  235 assertEquals(SerialDate.leapYearCount(1899), 0);
+  236 }
+  237
+  238 /*
+  239 * The number of leap years from 1900 up-to-and-including 1903 is 0.
+  240 /
+  241 public void testLeapYearCount1903() {
+  242 assertEquals(SerialDate.leapYearCount(1903), 0);
+  243 }
+  244
+  245 /*
+  246 * The number of leap years from 1900 up-to-and-including 1904 is 1.
+  247 */
+  Listing B-2 (continued)
+  SerialDateTest.java
+
+  370 Appendix B: org.jfree.date.SerialDate
+  248 public void testLeapYearCount1904() {
+  249 assertEquals(SerialDate.leapYearCount(1904), 1);
+  250 }
+  251
+  252 /**
+  253 * The number of leap years from 1900 up-to-and-including 1999 is 24.
+  254 /
+  255 public void testLeapYearCount1999() {
+  256 assertEquals(SerialDate.leapYearCount(1999), 24);
+  257 }
+  258
+  259 /*
+  260 * The number of leap years from 1900 up-to-and-including 2000 is 25.
+  261 /
+  262 public void testLeapYearCount2000() {
+  263 assertEquals(SerialDate.leapYearCount(2000), 25);
+  264 }
+  265
+  266 /*
+  267 * Serialize an instance, restore it, and check for equality.
+  268 /
+  269 public void testSerialization() {
+  270
+  271 SerialDate d1 = SerialDate.createInstance(15, 4, 2000);
+  272 SerialDate d2 = null;
+  273
+  274 try {
+  275 ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+  276 ObjectOutput out = new ObjectOutputStream(buffer);
+  277 out.writeObject(d1);
+  278 out.close();
+  279
+  280 ObjectInput in = new ObjectInputStream(
+  new ByteArrayInputStream(buffer.toByteArray()));
+  281 d2 = (SerialDate) in.readObject();
+  282 in.close();
+  283 }
+  284 catch (Exception e) {
+  285 System.out.println(e.toString());
+  286 }
+  287 assertEquals(d1, d2);
+  288
+  289 }
+  290
+  291 /*
+  292 * A test for bug report 1096282 (now fixed).
+  293 /
+  294 public void test1096282() {
+  295 SerialDate d = SerialDate.createInstance(29, 2, 2004);
+  296 d = SerialDate.addYears(1, d);
+  297 SerialDate expected = SerialDate.createInstance(28, 2, 2005);
+  298 assertTrue(d.isOn(expected));
+  299 }
+  300
+  301 /*
+  302 * Miscellaneous tests for the addMonths() method.
+  303 */
+  304 public void testAddMonths() {
+  305 SerialDate d1 = SerialDate.createInstance(31, 5, 2004);
+  306
+  Listing B-2 (continued)
+  SerialDateTest.java
+
+  Appendix B: org.jfree.date.SerialDate 371
+  307 SerialDate d2 = SerialDate.addMonths(1, d1);
+  308 assertEquals(30, d2.getDayOfMonth());
+  309 assertEquals(6, d2.getMonth());
+  310 assertEquals(2004, d2.getYYYY());
+  311
+  312 SerialDate d3 = SerialDate.addMonths(2, d1);
+  313 assertEquals(31, d3.getDayOfMonth());
+  314 assertEquals(7, d3.getMonth());
+  315 assertEquals(2004, d3.getYYYY());
+  316
+  317 SerialDate d4 = SerialDate.addMonths(1, SerialDate.addMonths(1, d1));
+  318 assertEquals(30, d4.getDayOfMonth());
+  319 assertEquals(7, d4.getMonth());
+  320 assertEquals(2004, d4.getYYYY());
+  321 }
+  322 }
+  Listing B-2 (continued)
+  SerialDateTest.java
+
+  372 Appendix B: org.jfree.date.SerialDate
+  Listing B-3
+  MonthConstants.java
+  1 /* ========================================================================
+  2 * JCommon : a free general purpose class library for the Java(tm) platform
+  3 * ========================================================================
+  4 *
+  5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  6 *
+  7 * Project Info: http://www.jfree.org/jcommon/index.html
+  8 *
+  9 * This library is free software; you can redistribute it and/or modify it
+  10 * under the terms of the GNU Lesser General Public License as published by
+  11 * the Free Software Foundation; either version 2.1 of the License, or
+  12 * (at your option) any later version.
+  13 *
+  14 * This library is distributed in the hope that it will be useful, but
+  15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+  17 * License for more details.
+  18 *
+  19 * You should have received a copy of the GNU Lesser General Public
+  20 * License along with this library; if not, write to the Free Software
+  21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+  22 * USA.
+  23 *
+  24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
+  25 * in the United States and other countries.]
+  26 *
+  27 * -------------------
+  28 * MonthConstants.java
+  29 * -------------------
+  30 * (C) Copyright 2002, 2003, by Object Refinery Limited.
+  31 *
+  32 * Original Author: David Gilbert (for Object Refinery Limited);
+  33 * Contributor(s): -;
+  34 *
+  35 * $Id: MonthConstants.java,v 1.4 2005/11/16 15:58:40 taqua Exp $
+  36 *
+  37 * Changes
+  38 * -------
+  39 * 29-May-2002 : Version 1 (code moved from SerialDate class) (DG);
+  40 *
+  41 /
+  42
+  43 package org.jfree.date;
+  44
+  45 /*
+  46 * Useful constants for months. Note that these are NOT equivalent to the
+  47 * constants defined by java.util.Calendar (where JANUARY=0 and DECEMBER=11).
+  48 *
+  49 * Used by the SerialDate and RegularTimePeriod classes.
+  50 *
+  51 * @author David Gilbert
+  52 /
+  53 public interface MonthConstants {
+  54
+  55 /* Constant for January. /
+  56 public static final int JANUARY = 1;
+  57
+  58 /* Constant for February. */
+  59 public static final int FEBRUARY = 2;
+  60
+  Appendix B: org.jfree.date.SerialDate 373
+  61 /** Constant for March. /
+  62 public static final int MARCH = 3;
+  63
+  64 /* Constant for April. /
+  65 public static final int APRIL = 4;
+  66
+  67 /* Constant for May. /
+  68 public static final int MAY = 5;
+  69
+  70 /* Constant for June. /
+  71 public static final int JUNE = 6;
+  72
+  73 /* Constant for July. /
+  74 public static final int JULY = 7;
+  75
+  76 /* Constant for August. /
+  77 public static final int AUGUST = 8;
+  78
+  79 /* Constant for September. /
+  80 public static final int SEPTEMBER = 9;
+  81
+  82 /* Constant for October. /
+  83 public static final int OCTOBER = 10;
+  84
+  85 /* Constant for November. /
+  86 public static final int NOVEMBER = 11;
+  87
+  88 /* Constant for December. */
+  89 public static final int DECEMBER = 12;
+  90
+  91 }
+  Listing B-3 (continued)
+  MonthConstants.java
+
+  374 Appendix B: org.jfree.date.SerialDate
+  Listing B-4
+  BobsSerialDateTest.java
+  1 package org.jfree.date.junit;
+  2
+  3 import junit.framework.TestCase;
+  4 import org.jfree.date.;
+  5 import static org.jfree.date.SerialDate.;
+  6
+  7 import java.util.*;
+  8
+  9 public class BobsSerialDateTest extends TestCase {
+  10
+  11 public void testIsValidWeekdayCode() throws Exception {
+  12 for (int day = 1; day <= 7; day++)
+  13 assertTrue(isValidWeekdayCode(day));
+  14 assertFalse(isValidWeekdayCode(0));
+  15 assertFalse(isValidWeekdayCode(8));
+  16 }
+  17
+  18 public void testStringToWeekdayCode() throws Exception {
+  19
+  20 assertEquals(-1, stringToWeekdayCode("Hello"));
+  21 assertEquals(MONDAY, stringToWeekdayCode("Monday"));
+  22 assertEquals(MONDAY, stringToWeekdayCode("Mon"));
+  23 //todo assertEquals(MONDAY,stringToWeekdayCode("monday"));
+  24 // assertEquals(MONDAY,stringToWeekdayCode("MONDAY"));
+  25 // assertEquals(MONDAY, stringToWeekdayCode("mon"));
+  26
+  27 assertEquals(TUESDAY, stringToWeekdayCode("Tuesday"));
+  28 assertEquals(TUESDAY, stringToWeekdayCode("Tue"));
+  29 // assertEquals(TUESDAY,stringToWeekdayCode("tuesday"));
+  30 // assertEquals(TUESDAY,stringToWeekdayCode("TUESDAY"));
+  31 // assertEquals(TUESDAY, stringToWeekdayCode("tue"));
+  32 // assertEquals(TUESDAY, stringToWeekdayCode("tues"));
+  33
+  34 assertEquals(WEDNESDAY, stringToWeekdayCode("Wednesday"));
+  35 assertEquals(WEDNESDAY, stringToWeekdayCode("Wed"));
+  36 // assertEquals(WEDNESDAY,stringToWeekdayCode("wednesday"));
+  37 // assertEquals(WEDNESDAY,stringToWeekdayCode("WEDNESDAY"));
+  38 // assertEquals(WEDNESDAY, stringToWeekdayCode("wed"));
+  39
+  40 assertEquals(THURSDAY, stringToWeekdayCode("Thursday"));
+  41 assertEquals(THURSDAY, stringToWeekdayCode("Thu"));
+  42 // assertEquals(THURSDAY,stringToWeekdayCode("thursday"));
+  43 // assertEquals(THURSDAY,stringToWeekdayCode("THURSDAY"));
+  44 // assertEquals(THURSDAY, stringToWeekdayCode("thu"));
+  45 // assertEquals(THURSDAY, stringToWeekdayCode("thurs"));
+  46
+  47 assertEquals(FRIDAY, stringToWeekdayCode("Friday"));
+  48 assertEquals(FRIDAY, stringToWeekdayCode("Fri"));
+  49 // assertEquals(FRIDAY,stringToWeekdayCode("friday"));
+  50 // assertEquals(FRIDAY,stringToWeekdayCode("FRIDAY"));
+  51 // assertEquals(FRIDAY, stringToWeekdayCode("fri"));
+  52
+  53 assertEquals(SATURDAY, stringToWeekdayCode("Saturday"));
+  54 assertEquals(SATURDAY, stringToWeekdayCode("Sat"));
+  55 // assertEquals(SATURDAY,stringToWeekdayCode("saturday"));
+  56 // assertEquals(SATURDAY,stringToWeekdayCode("SATURDAY"));
+  57 // assertEquals(SATURDAY, stringToWeekdayCode("sat"));
+  58
+  59 assertEquals(SUNDAY, stringToWeekdayCode("Sunday"));
+  60 assertEquals(SUNDAY, stringToWeekdayCode("Sun"));
+  61 // assertEquals(SUNDAY,stringToWeekdayCode("sunday"));
+  62 // assertEquals(SUNDAY,stringToWeekdayCode("SUNDAY"));
+  63 // assertEquals(SUNDAY, stringToWeekdayCode("sun"));
+  64 }
+  65
+  Appendix B: org.jfree.date.SerialDate 375
+  66 public void testWeekdayCodeToString() throws Exception {
+  67 assertEquals("Sunday", weekdayCodeToString(SUNDAY));
+  68 assertEquals("Monday", weekdayCodeToString(MONDAY));
+  69 assertEquals("Tuesday", weekdayCodeToString(TUESDAY));
+  70 assertEquals("Wednesday", weekdayCodeToString(WEDNESDAY));
+  71 assertEquals("Thursday", weekdayCodeToString(THURSDAY));
+  72 assertEquals("Friday", weekdayCodeToString(FRIDAY));
+  73 assertEquals("Saturday", weekdayCodeToString(SATURDAY));
+  74 }
+  75
+  76 public void testIsValidMonthCode() throws Exception {
+  77 for (int i = 1; i <= 12; i++)
+  78 assertTrue(isValidMonthCode(i));
+  79 assertFalse(isValidMonthCode(0));
+  80 assertFalse(isValidMonthCode(13));
+  81 }
+  82
+  83 public void testMonthToQuarter() throws Exception {
+  84 assertEquals(1, monthCodeToQuarter(JANUARY));
+  85 assertEquals(1, monthCodeToQuarter(FEBRUARY));
+  86 assertEquals(1, monthCodeToQuarter(MARCH));
+  87 assertEquals(2, monthCodeToQuarter(APRIL));
+  88 assertEquals(2, monthCodeToQuarter(MAY));
+  89 assertEquals(2, monthCodeToQuarter(JUNE));
+  90 assertEquals(3, monthCodeToQuarter(JULY));
+  91 assertEquals(3, monthCodeToQuarter(AUGUST));
+  92 assertEquals(3, monthCodeToQuarter(SEPTEMBER));
+  93 assertEquals(4, monthCodeToQuarter(OCTOBER));
+  94 assertEquals(4, monthCodeToQuarter(NOVEMBER));
+  95 assertEquals(4, monthCodeToQuarter(DECEMBER));
+  96
+  97 try {
+  98 monthCodeToQuarter(-1);
+  99 fail("Invalid Month Code should throw exception");
+  100 } catch (IllegalArgumentException e) {
+  101 }
+  102 }
+  103
+  104 public void testMonthCodeToString() throws Exception {
+  105 assertEquals("January", monthCodeToString(JANUARY));
+  106 assertEquals("February", monthCodeToString(FEBRUARY));
+  107 assertEquals("March", monthCodeToString(MARCH));
+  108 assertEquals("April", monthCodeToString(APRIL));
+  109 assertEquals("May", monthCodeToString(MAY));
+  110 assertEquals("June", monthCodeToString(JUNE));
+  111 assertEquals("July", monthCodeToString(JULY));
+  112 assertEquals("August", monthCodeToString(AUGUST));
+  113 assertEquals("September", monthCodeToString(SEPTEMBER));
+  114 assertEquals("October", monthCodeToString(OCTOBER));
+  115 assertEquals("November", monthCodeToString(NOVEMBER));
+  116 assertEquals("December", monthCodeToString(DECEMBER));
+  117
+  118 assertEquals("Jan", monthCodeToString(JANUARY, true));
+  119 assertEquals("Feb", monthCodeToString(FEBRUARY, true));
+  120 assertEquals("Mar", monthCodeToString(MARCH, true));
+  121 assertEquals("Apr", monthCodeToString(APRIL, true));
+  122 assertEquals("May", monthCodeToString(MAY, true));
+  123 assertEquals("Jun", monthCodeToString(JUNE, true));
+  124 assertEquals("Jul", monthCodeToString(JULY, true));
+  125 assertEquals("Aug", monthCodeToString(AUGUST, true));
+  126 assertEquals("Sep", monthCodeToString(SEPTEMBER, true));
+  127 assertEquals("Oct", monthCodeToString(OCTOBER, true));
+  Listing B-4 (continued)
+  BobsSerialDateTest.java
+
+  376 Appendix B: org.jfree.date.SerialDate
+  128 assertEquals("Nov", monthCodeToString(NOVEMBER, true));
+  129 assertEquals("Dec", monthCodeToString(DECEMBER, true));
+  130
+  131 try {
+  132 monthCodeToString(-1);
+  133 fail("Invalid month code should throw exception");
+  134 } catch (IllegalArgumentException e) {
+  135 }
+  136
+  137 }
+  138
+  139 public void testStringToMonthCode() throws Exception {
+  140 assertEquals(JANUARY,stringToMonthCode("1"));
+  141 assertEquals(FEBRUARY,stringToMonthCode("2"));
+  142 assertEquals(MARCH,stringToMonthCode("3"));
+  143 assertEquals(APRIL,stringToMonthCode("4"));
+  144 assertEquals(MAY,stringToMonthCode("5"));
+  145 assertEquals(JUNE,stringToMonthCode("6"));
+  146 assertEquals(JULY,stringToMonthCode("7"));
+  147 assertEquals(AUGUST,stringToMonthCode("8"));
+  148 assertEquals(SEPTEMBER,stringToMonthCode("9"));
+  149 assertEquals(OCTOBER,stringToMonthCode("10"));
+  150 assertEquals(NOVEMBER, stringToMonthCode("11"));
+  151 assertEquals(DECEMBER,stringToMonthCode("12"));
+  152
+  153 //todo assertEquals(-1, stringToMonthCode("0"));
+  154 // assertEquals(-1, stringToMonthCode("13"));
+  155
+  156 assertEquals(-1,stringToMonthCode("Hello"));
+  157
+  158 for (int m = 1; m <= 12; m++) {
+  159 assertEquals(m, stringToMonthCode(monthCodeToString(m, false)));
+  160 assertEquals(m, stringToMonthCode(monthCodeToString(m, true)));
+  161 }
+  162
+  163 // assertEquals(1,stringToMonthCode("jan"));
+  164 // assertEquals(2,stringToMonthCode("feb"));
+  165 // assertEquals(3,stringToMonthCode("mar"));
+  166 // assertEquals(4,stringToMonthCode("apr"));
+  167 // assertEquals(5,stringToMonthCode("may"));
+  168 // assertEquals(6,stringToMonthCode("jun"));
+  169 // assertEquals(7,stringToMonthCode("jul"));
+  170 // assertEquals(8,stringToMonthCode("aug"));
+  171 // assertEquals(9,stringToMonthCode("sep"));
+  172 // assertEquals(10,stringToMonthCode("oct"));
+  173 // assertEquals(11,stringToMonthCode("nov"));
+  174 // assertEquals(12,stringToMonthCode("dec"));
+  175
+  176 // assertEquals(1,stringToMonthCode("JAN"));
+  177 // assertEquals(2,stringToMonthCode("FEB"));
+  178 // assertEquals(3,stringToMonthCode("MAR"));
+  179 // assertEquals(4,stringToMonthCode("APR"));
+  180 // assertEquals(5,stringToMonthCode("MAY"));
+  181 // assertEquals(6,stringToMonthCode("JUN"));
+  182 // assertEquals(7,stringToMonthCode("JUL"));
+  183 // assertEquals(8,stringToMonthCode("AUG"));
+  184 // assertEquals(9,stringToMonthCode("SEP"));
+  185 // assertEquals(10,stringToMonthCode("OCT"));
+  186 // assertEquals(11,stringToMonthCode("NOV"));
+  187 // assertEquals(12,stringToMonthCode("DEC"));
+  188
+  189 // assertEquals(1,stringToMonthCode("january"));
+  190 // assertEquals(2,stringToMonthCode("february"));
+  Listing B-4 (continued)
+  BobsSerialDateTest.java
+
+  Appendix B: org.jfree.date.SerialDate 377
+  191 // assertEquals(3,stringToMonthCode("march"));
+  192 // assertEquals(4,stringToMonthCode("april"));
+  193 // assertEquals(5,stringToMonthCode("may"));
+  194 // assertEquals(6,stringToMonthCode("june"));
+  195 // assertEquals(7,stringToMonthCode("july"));
+  196 // assertEquals(8,stringToMonthCode("august"));
+  197 // assertEquals(9,stringToMonthCode("september"));
+  198 // assertEquals(10,stringToMonthCode("october"));
+  199 // assertEquals(11,stringToMonthCode("november"));
+  200 // assertEquals(12,stringToMonthCode("december"));
+  201
+  202 // assertEquals(1,stringToMonthCode("JANUARY"));
+  203 // assertEquals(2,stringToMonthCode("FEBRUARY"));
+  204 // assertEquals(3,stringToMonthCode("MAR"));
+  205 // assertEquals(4,stringToMonthCode("APRIL"));
+  206 // assertEquals(5,stringToMonthCode("MAY"));
+  207 // assertEquals(6,stringToMonthCode("JUNE"));
+  208 // assertEquals(7,stringToMonthCode("JULY"));
+  209 // assertEquals(8,stringToMonthCode("AUGUST"));
+  210 // assertEquals(9,stringToMonthCode("SEPTEMBER"));
+  211 // assertEquals(10,stringToMonthCode("OCTOBER"));
+  212 // assertEquals(11,stringToMonthCode("NOVEMBER"));
+  213 // assertEquals(12,stringToMonthCode("DECEMBER"));
+  214 }
+  215
+  216 public void testIsValidWeekInMonthCode() throws Exception {
+  217 for (int w = 0; w <= 4; w++) {
+  218 assertTrue(isValidWeekInMonthCode(w));
+  219 }
+  220 assertFalse(isValidWeekInMonthCode(5));
+  221 }
+  222
+  223 public void testIsLeapYear() throws Exception {
+  224 assertFalse(isLeapYear(1900));
+  225 assertFalse(isLeapYear(1901));
+  226 assertFalse(isLeapYear(1902));
+  227 assertFalse(isLeapYear(1903));
+  228 assertTrue(isLeapYear(1904));
+  229 assertTrue(isLeapYear(1908));
+  230 assertFalse(isLeapYear(1955));
+  231 assertTrue(isLeapYear(1964));
+  232 assertTrue(isLeapYear(1980));
+  233 assertTrue(isLeapYear(2000));
+  234 assertFalse(isLeapYear(2001));
+  235 assertFalse(isLeapYear(2100));
+  236 }
+  237
+  238 public void testLeapYearCount() throws Exception {
+  239 assertEquals(0, leapYearCount(1900));
+  240 assertEquals(0, leapYearCount(1901));
+  241 assertEquals(0, leapYearCount(1902));
+  242 assertEquals(0, leapYearCount(1903));
+  243 assertEquals(1, leapYearCount(1904));
+  244 assertEquals(1, leapYearCount(1905));
+  245 assertEquals(1, leapYearCount(1906));
+  246 assertEquals(1, leapYearCount(1907));
+  247 assertEquals(2, leapYearCount(1908));
+  248 assertEquals(24, leapYearCount(1999));
+  249 assertEquals(25, leapYearCount(2001));
+  250 assertEquals(49, leapYearCount(2101));
+  251 assertEquals(73, leapYearCount(2201));
+  Listing B-4 (continued)
+  BobsSerialDateTest.java
+
+  378 Appendix B: org.jfree.date.SerialDate
+  252 assertEquals(97, leapYearCount(2301));
+  253 assertEquals(122, leapYearCount(2401));
+  254 }
+  255
+  256 public void testLastDayOfMonth() throws Exception {
+  257 assertEquals(31, lastDayOfMonth(JANUARY, 1901));
+  258 assertEquals(28, lastDayOfMonth(FEBRUARY, 1901));
+  259 assertEquals(31, lastDayOfMonth(MARCH, 1901));
+  260 assertEquals(30, lastDayOfMonth(APRIL, 1901));
+  261 assertEquals(31, lastDayOfMonth(MAY, 1901));
+  262 assertEquals(30, lastDayOfMonth(JUNE, 1901));
+  263 assertEquals(31, lastDayOfMonth(JULY, 1901));
+  264 assertEquals(31, lastDayOfMonth(AUGUST, 1901));
+  265 assertEquals(30, lastDayOfMonth(SEPTEMBER, 1901));
+  266 assertEquals(31, lastDayOfMonth(OCTOBER, 1901));
+  267 assertEquals(30, lastDayOfMonth(NOVEMBER, 1901));
+  268 assertEquals(31, lastDayOfMonth(DECEMBER, 1901));
+  269 assertEquals(29, lastDayOfMonth(FEBRUARY, 1904));
+  270 }
+  271
+  272 public void testAddDays() throws Exception {
+  273 SerialDate newYears = d(1, JANUARY, 1900);
+  274 assertEquals(d(2, JANUARY, 1900), addDays(1, newYears));
+  275 assertEquals(d(1, FEBRUARY, 1900), addDays(31, newYears));
+  276 assertEquals(d(1, JANUARY, 1901), addDays(365, newYears));
+  277 assertEquals(d(31, DECEMBER, 1904), addDays(5 * 365, newYears));
+  278 }
+  279
+  280 private static SpreadsheetDate d(int day, int month, int year) {return new
+  SpreadsheetDate(day, month, year);}
+  281
+  282 public void testAddMonths() throws Exception {
+  283 assertEquals(d(1, FEBRUARY, 1900), addMonths(1, d(1, JANUARY, 1900)));
+  284 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(31, JANUARY, 1900)));
+  285 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(30, JANUARY, 1900)));
+  286 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(29, JANUARY, 1900)));
+  287 assertEquals(d(28, FEBRUARY, 1900), addMonths(1, d(28, JANUARY, 1900)));
+  288 assertEquals(d(27, FEBRUARY, 1900), addMonths(1, d(27, JANUARY, 1900)));
+  289
+  290 assertEquals(d(30, JUNE, 1900), addMonths(5, d(31, JANUARY, 1900)));
+  291 assertEquals(d(30, JUNE, 1901), addMonths(17, d(31, JANUARY, 1900)));
+  292
+  293 assertEquals(d(29, FEBRUARY, 1904), addMonths(49, d(31, JANUARY, 1900)));
+  294
+  295 }
+  296
+  297 public void testAddYears() throws Exception {
+  298 assertEquals(d(1, JANUARY, 1901), addYears(1, d(1, JANUARY, 1900)));
+  299 assertEquals(d(28, FEBRUARY, 1905), addYears(1, d(29, FEBRUARY, 1904)));
+  300 assertEquals(d(28, FEBRUARY, 1905), addYears(1, d(28, FEBRUARY, 1904)));
+  301 assertEquals(d(28, FEBRUARY, 1904), addYears(1, d(28, FEBRUARY, 1903)));
+  302 }
+  303
+  304 public void testGetPreviousDayOfWeek() throws Exception {
+  305 assertEquals(d(24, FEBRUARY, 2006), getPreviousDayOfWeek(FRIDAY, d(1, MARCH, 2006)));
+  306 assertEquals(d(22, FEBRUARY, 2006), getPreviousDayOfWeek(WEDNESDAY, d(1, MARCH, 2006)));
+  307 assertEquals(d(29, FEBRUARY, 2004), getPreviousDayOfWeek(SUNDAY, d(3, MARCH, 2004)));
+  308 assertEquals(d(29, DECEMBER, 2004), getPreviousDayOfWeek(WEDNESDAY, d(5, JANUARY, 2005)));
+  309
+  310 try {
+  311 getPreviousDayOfWeek(-1, d(1, JANUARY, 2006));
+  312 fail("Invalid day of week code should throw exception");
+  Listing B-4 (continued)
+  BobsSerialDateTest.java
+
+  Appendix B: org.jfree.date.SerialDate 379
+  313 } catch (IllegalArgumentException e) {
+  314 }
+  315 }
+  316
+  317 public void testGetFollowingDayOfWeek() throws Exception {
+  318 // assertEquals(d(1, JANUARY, 2005),getFollowingDayOfWeek(SATURDAY, d(25, DECEMBER, 2004)));
+  319 assertEquals(d(1, JANUARY, 2005), getFollowingDayOfWeek(SATURDAY, d(26, DECEMBER, 2004)));
+  320 assertEquals(d(3, MARCH, 2004), getFollowingDayOfWeek(WEDNESDAY, d(28, FEBRUARY, 2004)));
+  321
+  322 try {
+  323 getFollowingDayOfWeek(-1, d(1, JANUARY, 2006));
+  324 fail("Invalid day of week code should throw exception");
+  325 } catch (IllegalArgumentException e) {
+  326 }
+  327 }
+  328
+  329 public void testGetNearestDayOfWeek() throws Exception {
+  330 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(16, APRIL, 2006)));
+  331 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(17, APRIL, 2006)));
+  332 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(18, APRIL, 2006)));
+  333 assertEquals(d(16, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(19, APRIL, 2006)));
+  334 assertEquals(d(23, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(20, APRIL, 2006)));
+  335 assertEquals(d(23, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(21, APRIL, 2006)));
+  336 assertEquals(d(23, APRIL, 2006), getNearestDayOfWeek(SUNDAY, d(22, APRIL, 2006)));
+  337
+  338 //todo assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(16, APRIL, 2006)));
+  339 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(17, APRIL, 2006)));
+  340 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(18, APRIL, 2006)));
+  341 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(19, APRIL, 2006)));
+  342 assertEquals(d(17, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(20, APRIL, 2006)));
+  343 assertEquals(d(24, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(21, APRIL, 2006)));
+  344 assertEquals(d(24, APRIL, 2006), getNearestDayOfWeek(MONDAY, d(22, APRIL, 2006)));
+  345
+  346 // assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(16, APRIL, 2006)));
+  347 // assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(17, APRIL, 2006)));
+  348 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(18, APRIL, 2006)));
+  349 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(19, APRIL, 2006)));
+  350 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(20, APRIL, 2006)));
+  351 assertEquals(d(18, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(21, APRIL, 2006)));
+  352 assertEquals(d(25, APRIL, 2006), getNearestDayOfWeek(TUESDAY, d(22, APRIL, 2006)));
+  353
+  354 // assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(16, APRIL, 2006)));
+  355 // assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(17, APRIL, 2006)));
+  356 // assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(18, APRIL, 2006)));
+  357 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(19, APRIL, 2006)));
+  358 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(20, APRIL, 2006)));
+  359 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(21, APRIL, 2006)));
+  360 assertEquals(d(19, APRIL, 2006), getNearestDayOfWeek(WEDNESDAY, d(22, APRIL, 2006)));
+  361
+  362 // assertEquals(d(13, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(16, APRIL, 2006)));
+  363 // assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(17, APRIL, 2006)));
+  364 // assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(18, APRIL, 2006)));
+  365 // assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(19, APRIL, 2006)));
+  366 assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(20, APRIL, 2006)));
+  367 assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(21, APRIL, 2006)));
+  368 assertEquals(d(20, APRIL, 2006), getNearestDayOfWeek(THURSDAY, d(22, APRIL, 2006)));
+  369
+  370 // assertEquals(d(14, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(16, APRIL, 2006)));
+  371 // assertEquals(d(14, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(17, APRIL, 2006)));
+  372 // assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(18, APRIL, 2006)));
+  373 // assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(19, APRIL, 2006)));
+  374 // assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(20, APRIL, 2006)));
+  Listing B-4 (continued)
+  BobsSerialDateTest.java
+
+  380 Appendix B: org.jfree.date.SerialDate
+  375 assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(21, APRIL, 2006)));
+  376 assertEquals(d(21, APRIL, 2006), getNearestDayOfWeek(FRIDAY, d(22, APRIL, 2006)));
+  377
+  378 // assertEquals(d(15, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(16, APRIL, 2006)));
+  379 // assertEquals(d(15, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(17, APRIL, 2006)));
+  380 // assertEquals(d(15, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(18, APRIL, 2006)));
+  381 // assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(19, APRIL, 2006)));
+  382 // assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(20, APRIL, 2006)));
+  383 // assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(21, APRIL, 2006)));
+  384 assertEquals(d(22, APRIL, 2006), getNearestDayOfWeek(SATURDAY, d(22, APRIL, 2006)));
+  385
+  386 try {
+  387 getNearestDayOfWeek(-1, d(1, JANUARY, 2006));
+  388 fail("Invalid day of week code should throw exception");
+  389 } catch (IllegalArgumentException e) {
+  390 }
+  391 }
+  392
+  393 public void testEndOfCurrentMonth() throws Exception {
+  394 SerialDate d = SerialDate.createInstance(2);
+  395 assertEquals(d(31, JANUARY, 2006), d.getEndOfCurrentMonth(d(1, JANUARY, 2006)));
+  396 assertEquals(d(28, FEBRUARY, 2006), d.getEndOfCurrentMonth(d(1, FEBRUARY, 2006)));
+  397 assertEquals(d(31, MARCH, 2006), d.getEndOfCurrentMonth(d(1, MARCH, 2006)));
+  398 assertEquals(d(30, APRIL, 2006), d.getEndOfCurrentMonth(d(1, APRIL, 2006)));
+  399 assertEquals(d(31, MAY, 2006), d.getEndOfCurrentMonth(d(1, MAY, 2006)));
+  400 assertEquals(d(30, JUNE, 2006), d.getEndOfCurrentMonth(d(1, JUNE, 2006)));
+  401 assertEquals(d(31, JULY, 2006), d.getEndOfCurrentMonth(d(1, JULY, 2006)));
+  402 assertEquals(d(31, AUGUST, 2006), d.getEndOfCurrentMonth(d(1, AUGUST, 2006)));
+  403 assertEquals(d(30, SEPTEMBER, 2006), d.getEndOfCurrentMonth(d(1, SEPTEMBER, 2006)));
+  404 assertEquals(d(31, OCTOBER, 2006), d.getEndOfCurrentMonth(d(1, OCTOBER, 2006)));
+  405 assertEquals(d(30, NOVEMBER, 2006), d.getEndOfCurrentMonth(d(1, NOVEMBER, 2006)));
+  406 assertEquals(d(31, DECEMBER, 2006), d.getEndOfCurrentMonth(d(1, DECEMBER, 2006)));
+  407 assertEquals(d(29, FEBRUARY, 2008), d.getEndOfCurrentMonth(d(1, FEBRUARY, 2008)));
+  408 }
+  409
+  410 public void testWeekInMonthToString() throws Exception {
+  411 assertEquals("First",weekInMonthToString(FIRST_WEEK_IN_MONTH));
+  412 assertEquals("Second",weekInMonthToString(SECOND_WEEK_IN_MONTH));
+  413 assertEquals("Third",weekInMonthToString(THIRD_WEEK_IN_MONTH));
+  414 assertEquals("Fourth",weekInMonthToString(FOURTH_WEEK_IN_MONTH));
+  415 assertEquals("Last",weekInMonthToString(LAST_WEEK_IN_MONTH));
+  416
+  417 //todo try {
+  418 // weekInMonthToString(-1);
+  419 // fail("Invalid week code should throw exception");
+  420 // } catch (IllegalArgumentException e) {
+  421 // }
+  422 }
+  423
+  424 public void testRelativeToString() throws Exception {
+  425 assertEquals("Preceding",relativeToString(PRECEDING));
+  426 assertEquals("Nearest",relativeToString(NEAREST));
+  427 assertEquals("Following",relativeToString(FOLLOWING));
+  428
+  429 //todo try {
+  430 // relativeToString(-1000);
+  431 // fail("Invalid relative code should throw exception");
+  432 // } catch (IllegalArgumentException e) {
+  433 // }
+  434 }
+  435
+  Listing B-4 (continued)
+  BobsSerialDateTest.java
+
+  Appendix B: org.jfree.date.SerialDate 381
+  436 public void testCreateInstanceFromDDMMYYY() throws Exception {
+  437 SerialDate date = createInstance(1, JANUARY, 1900);
+  438 assertEquals(1,date.getDayOfMonth());
+  439 assertEquals(JANUARY,date.getMonth());
+  440 assertEquals(1900,date.getYYYY());
+  441 assertEquals(2,date.toSerial());
+  442 }
+  443
+  444 public void testCreateInstanceFromSerial() throws Exception {
+  445 assertEquals(d(1, JANUARY, 1900),createInstance(2));
+  446 assertEquals(d(1, JANUARY, 1901), createInstance(367));
+  447 }
+  448
+  449 public void testCreateInstanceFromJavaDate() throws Exception {
+  450 assertEquals(d(1, JANUARY, 1900),
+  createInstance(new GregorianCalendar(1900,0,1).getTime()));
+  451 assertEquals(d(1, JANUARY, 2006),
+  createInstance(new GregorianCalendar(2006,0,1).getTime()));
+  452 }
+  453
+  454 public static void main(String[] args) {
+  455 junit.textui.TestRunner.run(BobsSerialDateTest.class);
+  456 }
+  457 }
+  Listing B-4 (continued)
+  BobsSerialDateTest.java
+
+  382 Appendix B: org.jfree.date.SerialDate
+  Listing B-5
+  SpreadsheetDate.java
+  1 /* ========================================================================
+  2 * JCommon : a free general purpose class library for the Java(tm) platform
+  3 * ========================================================================
+  4 *
+  5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  6 *
+  7 * Project Info: http://www.jfree.org/jcommon/index.html
+  8 *
+  9 * This library is free software; you can redistribute it and/or modify it
+  10 * under the terms of the GNU Lesser General Public License as published by
+  11 * the Free Software Foundation; either version 2.1 of the License, or
+  12 * (at your option) any later version.
+  13 *
+  14 * This library is distributed in the hope that it will be useful, but
+  15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+  17 * License for more details.
+  18 *
+  19 * You should have received a copy of the GNU Lesser General Public
+  20 * License along with this library; if not, write to the Free Software
+  21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+  22 * USA.
+  23 *
+  24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
+  25 * in the United States and other countries.]
+  26 *
+  27 * --------------------
+  28 * SpreadsheetDate.java
+  29 * --------------------
+  30 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  31 *
+  32 * Original Author: David Gilbert (for Object Refinery Limited);
+  33 * Contributor(s): -;
+  34 *
+  35 * $Id: SpreadsheetDate.java,v 1.8 2005/11/03 09:25:39 mungady Exp $
+  36 *
+  37 * Changes
+  38 * -------
+  39 * 11-Oct-2001 : Version 1 (DG);
+  40 * 05-Nov-2001 : Added getDescription() and setDescription() methods (DG);
+  41 * 12-Nov-2001 : Changed name from ExcelDate.java to SpreadsheetDate.java (DG);
+  42 * Fixed a bug in calculating day, month and year from serial
+  43 * number (DG);
+  44 * 24-Jan-2002 : Fixed a bug in calculating the serial number from the day,
+  45 * month and year. Thanks to Trevor Hills for the report (DG);
+  46 * 29-May-2002 : Added equals(Object) method (SourceForge ID 558850) (DG);
+  47 * 03-Oct-2002 : Fixed errors reported by Checkstyle (DG);
+  48 * 13-Mar-2003 : Implemented Serializable (DG);
+  49 * 04-Sep-2003 : Completed isInRange() methods (DG);
+  50 * 05-Sep-2003 : Implemented Comparable (DG);
+  51 * 21-Oct-2003 : Added hashCode() method (DG);
+  52 *
+  53 /
+  54
+  55 package org.jfree.date;
+  56
+  57 import java.util.Calendar;
+  58 import java.util.Date;
+  59
+  60 /*
+  61 * Represents a date using an integer, in a similar fashion to the
+  62 * implementation in Microsoft Excel. The range of dates supported is
+  Appendix B: org.jfree.date.SerialDate 383
+  63 * 1-Jan-1900 to 31-Dec-9999.
+  64 *
+  65 * Be aware that there is a deliberate bug in Excel that recognises the year
+  66 * 1900 as a leap year when in fact it is not a leap year. You can find more
+  67 * information on the Microsoft website in article Q181370:
+  68 *
+  69 * http://support.microsoft.com/support/kb/articles/Q181/3/70.asp
+  70 *
+  71 * Excel uses the convention that 1-Jan-1900 = 1. This class uses the
+  72 * convention 1-Jan-1900 = 2.
+  73 * The result is that the day number in this class will be different to the
+  74 * Excel figure for January and February 1900...but then Excel adds in an extra
+  75 * day (29-Feb-1900 which does not actually exist!) and from that point forward
+  76 * the day numbers will match.
+  77 *
+  78 * @author David Gilbert
+  79 /
+  80 public class SpreadsheetDate extends SerialDate {
+  81
+  82 /* For serialization. /
+  83 private static final long serialVersionUID = -2039586705374454461L;
+  84
+  85 /*
+  86 * The day number (1-Jan-1900 = 2, 2-Jan-1900 = 3, ..., 31-Dec-9999 =
+  87 * 2958465).
+  88 /
+  89 private int serial;
+  90
+  91 /* The day of the month (1 to 28, 29, 30 or 31 depending on the month). /
+  92 private int day;
+  93
+  94 /* The month of the year (1 to 12). /
+  95 private int month;
+  96
+  97 /* The year (1900 to 9999). /
+  98 private int year;
+  99
+  100 /* An optional description for the date. /
+  101 private String description;
+  102
+  103 /*
+  104 * Creates a new date instance.
+  105 *
+  106 * @param day the day (in the range 1 to 28/29/30/31).
+  107 * @param month the month (in the range 1 to 12).
+  108 * @param year the year (in the range 1900 to 9999).
+  109 */
+  110 public SpreadsheetDate(final int day, final int month, final int year) {
+  111
+  112 if ((year >= 1900) && (year <= 9999)) {
+  113 this.year = year;
+  114 }
+  115 else {
+  116 throw new IllegalArgumentException(
+  117 "The 'year' argument must be in range 1900 to 9999."
+  118 );
+  119 }
+  120
+  121 if ((month >= MonthConstants.JANUARY)
+  122 && (month <= MonthConstants.DECEMBER)) {
+  123 this.month = month;
+  124 }
+  Listing B-5 (continued)
+  SpreadsheetDate.java
+
+  384 Appendix B: org.jfree.date.SerialDate
+  125 else {
+  126 throw new IllegalArgumentException(
+  127 "The 'month' argument must be in the range 1 to 12."
+  128 );
+  129 }
+  130
+  131 if ((day >= 1) && (day <= SerialDate.lastDayOfMonth(month, year))) {
+  132 this.day = day;
+  133 }
+  134 else {
+  135 throw new IllegalArgumentException("Invalid 'day' argument.");
+  136 }
+  137
+  138 // the serial number needs to be synchronised with the day-month-year...
+  139 this.serial = calcSerial(day, month, year);
+  140
+  141 this.description = null;
+  142
+  143 }
+  144
+  145 /**
+  146 * Standard constructor - creates a new date object representing the
+  147 * specified day number (which should be in the range 2 to 2958465.
+  148 *
+  149 * @param serial the serial number for the day (range: 2 to 2958465).
+  150 /
+  151 public SpreadsheetDate(final int serial) {
+  152
+  153 if ((serial >= SERIAL_LOWER_BOUND) && (serial <= SERIAL_UPPER_BOUND)) {
+  154 this.serial = serial;
+  155 }
+  156 else {
+  157 throw new IllegalArgumentException(
+  158 "SpreadsheetDate: Serial must be in range 2 to 2958465.");
+  159 }
+  160
+  161 // the day-month-year needs to be synchronised with the serial number...
+  162 calcDayMonthYear();
+  163
+  164 }
+  165
+  166 /*
+  167 * Returns the description that is attached to the date. It is not
+  168 * required that a date have a description, but for some applications it
+  169 * is useful.
+  170 *
+  171 * @return The description that is attached to the date.
+  172 /
+  173 public String getDescription() {
+  174 return this.description;
+  175 }
+  176
+  177 /*
+  178 * Sets the description for the date.
+  179 *
+  180 * @param description the description for this date (null
+  181 * permitted).
+  182 */
+  183 public void setDescription(final String description) {
+  184 this.description = description;
+  185 }
+  186
+  Listing B-5 (continued)
+  SpreadsheetDate.java
+
+  Appendix B: org.jfree.date.SerialDate 385
+  187 /**
+  188 * Returns the serial number for the date, where 1 January 1900 = 2
+  189 * (this corresponds, almost, to the numbering system used in Microsoft
+  190 * Excel for Windows and Lotus 1-2-3).
+  191 *
+  192 * @return The serial number of this date.
+  193 /
+  194 public int toSerial() {
+  195 return this.serial;
+  196 }
+  197
+  198 /*
+  199 * Returns a java.util.Date equivalent to this date.
+  200 *
+  201 * @return The date.
+  202 /
+  203 public Date toDate() {
+  204 final Calendar calendar = Calendar.getInstance();
+  205 calendar.set(getYYYY(), getMonth() - 1, getDayOfMonth(), 0, 0, 0);
+  206 return calendar.getTime();
+  207 }
+  208
+  209 /*
+  210 * Returns the year (assume a valid range of 1900 to 9999).
+  211 *
+  212 * @return The year.
+  213 /
+  214 public int getYYYY() {
+  215 return this.year;
+  216 }
+  217
+  218 /*
+  219 * Returns the month (January = 1, February = 2, March = 3).
+  220 *
+  221 * @return The month of the year.
+  222 /
+  223 public int getMonth() {
+  224 return this.month;
+  225 }
+  226
+  227 /*
+  228 * Returns the day of the month.
+  229 *
+  230 * @return The day of the month.
+  231 /
+  232 public int getDayOfMonth() {
+  233 return this.day;
+  234 }
+  235
+  236 /*
+  237 * Returns a code representing the day of the week.
+  238 *
+  239 * The codes are defined in the {@link SerialDate} class as:
+  240 * SUNDAY, MONDAY, TUESDAY,
+  241 * WEDNESDAY, THURSDAY, FRIDAY, and
+  242 * SATURDAY.
+  243 *
+  244 * @return A code representing the day of the week.
+  245 */
+  246 public int getDayOfWeek() {
+  247 return (this.serial + 6) % 7 + 1;
+  248 }
+  Listing B-5 (continued)
+  SpreadsheetDate.java
+
+  386 Appendix B: org.jfree.date.SerialDate
+  249
+  250 /**
+  251 * Tests the equality of this date with an arbitrary object.
+  252 *
+  253 * This method will return true ONLY if the object is an instance of the
+  254 * {@link SerialDate} base class, and it represents the same day as this
+  255 * {@link SpreadsheetDate}.
+  256 *
+  257 * @param object the object to compare (null permitted).
+  258 *
+  259 * @return A boolean.
+  260 /
+  261 public boolean equals(final Object object) {
+  262
+  263 if (object instanceof SerialDate) {
+  264 final SerialDate s = (SerialDate) object;
+  265 return (s.toSerial() == this.toSerial());
+  266 }
+  267 else {
+  268 return false;
+  269 }
+  270
+  271 }
+  272
+  273 /*
+  274 * Returns a hash code for this object instance.
+  275 *
+  276 * @return A hash code.
+  277 /
+  278 public int hashCode() {
+  279 return toSerial();
+  280 }
+  281
+  282 /*
+  283 * Returns the difference (in days) between this date and the specified
+  284 * 'other' date.
+  285 *
+  286 * @param other the date being compared to.
+  287 *
+  288 * @return The difference (in days) between this date and the specified
+  289 * 'other' date.
+  290 /
+  291 public int compare(final SerialDate other) {
+  292 return this.serial - other.toSerial();
+  293 }
+  294
+  295 /*
+  296 * Implements the method required by the Comparable interface.
+  297 *
+  298 * @param other the other object (usually another SerialDate).
+  299 *
+  300 * @return A negative integer, zero, or a positive integer as this object
+  301 * is less than, equal to, or greater than the specified object.
+  302 /
+  303 public int compareTo(final Object other) {
+  304 return compare((SerialDate) other);
+  305 }
+  306
+  307 /*
+  308 * Returns true if this SerialDate represents the same date as the
+  309 * specified SerialDate.
+  310 *
+  Listing B-5 (continued)
+  SpreadsheetDate.java
+
+  Appendix B: org.jfree.date.SerialDate 387
+  311 * @param other the date being compared to.
+  312 *
+  313 * @return true if this SerialDate represents the same date as
+  314 * the specified SerialDate.
+  315 /
+  316 public boolean isOn(final SerialDate other) {
+  317 return (this.serial == other.toSerial());
+  318 }
+  319
+  320 /*
+  321 * Returns true if this SerialDate represents an earlier date compared to
+  322 * the specified SerialDate.
+  323 *
+  324 * @param other the date being compared to.
+  325 *
+  326 * @return true if this SerialDate represents an earlier date
+  327 * compared to the specified SerialDate.
+  328 /
+  329 public boolean isBefore(final SerialDate other) {
+  330 return (this.serial < other.toSerial());
+  331 }
+  332
+  333 /*
+  334 * Returns true if this SerialDate represents the same date as the
+  335 * specified SerialDate.
+  336 *
+  337 * @param other the date being compared to.
+  338 *
+  339 * @return true if this SerialDate represents the same date
+  340 * as the specified SerialDate.
+  341 /
+  342 public boolean isOnOrBefore(final SerialDate other) {
+  343 return (this.serial <= other.toSerial());
+  344 }
+  345
+  346 /*
+  347 * Returns true if this SerialDate represents the same date as the
+  348 * specified SerialDate.
+  349 *
+  350 * @param other the date being compared to.
+  351 *
+  352 * @return true if this SerialDate represents the same date
+  353 * as the specified SerialDate.
+  354 /
+  355 public boolean isAfter(final SerialDate other) {
+  356 return (this.serial > other.toSerial());
+  357 }
+  358
+  359 /*
+  360 * Returns true if this SerialDate represents the same date as the
+  361 * specified SerialDate.
+  362 *
+  363 * @param other the date being compared to.
+  364 *
+  365 * @return true if this SerialDate represents the same date as
+  366 * the specified SerialDate.
+  367 /
+  368 public boolean isOnOrAfter(final SerialDate other) {
+  369 return (this.serial >= other.toSerial());
+  370 }
+  371
+  372 /*
+  373 * Returns true if this {@link SerialDate} is within the
+  Listing B-5 (continued)
+  SpreadsheetDate.java
+
+  388 Appendix B: org.jfree.date.SerialDate
+  374 * specified range (INCLUSIVE). The date order of d1 and d2 is not
+  375 * important.
+  376 *
+  377 * @param d1 a boundary date for the range.
+  378 * @param d2 the other boundary date for the range.
+  379 *
+  380 * @return A boolean.
+  381 /
+  382 public boolean isInRange(final SerialDate d1, final SerialDate d2) {
+  383 return isInRange(d1, d2, SerialDate.INCLUDE_BOTH);
+  384 }
+  385
+  386 /*
+  387 * Returns true if this SerialDate is within the specified range (caller
+  388 * specifies whether or not the end-points are included). The order of d1
+  389 * and d2 is not important.
+  390 *
+  391 * @param d1 one boundary date for the range.
+  392 * @param d2 a second boundary date for the range.
+  393 * @param include a code that controls whether or not the start and end
+  394 * dates are included in the range.
+  395 *
+  396 * @return true if this SerialDate is within the specified
+  397 * range.
+  398 /
+  399 public boolean isInRange(final SerialDate d1, final SerialDate d2,
+  400 final int include) {
+  401 final int s1 = d1.toSerial();
+  402 final int s2 = d2.toSerial();
+  403 final int start = Math.min(s1, s2);
+  404 final int end = Math.max(s1, s2);
+  405
+  406 final int s = toSerial();
+  407 if (include == SerialDate.INCLUDE_BOTH) {
+  408 return (s >= start && s <= end);
+  409 }
+  410 else if (include == SerialDate.INCLUDE_FIRST) {
+  411 return (s >= start && s < end);
+  412 }
+  413 else if (include == SerialDate.INCLUDE_SECOND) {
+  414 return (s > start && s <= end);
+  415 }
+  416 else {
+  417 return (s > start && s < end);
+  418 }
+  419 }
+  420
+  421 /*
+  422 * Calculate the serial number from the day, month and year.
+  423 *
+  424 * 1-Jan-1900 = 2.
+  425 *
+  426 * @param d the day.
+  427 * @param m the month.
+  428 * @param y the year.
+  429 *
+  430 * @return the serial number from the day, month and year.
+  431 */
+  432 private int calcSerial(final int d, final int m, final int y) {
+  433 final int yy = ((y - 1900) * 365) + SerialDate.leapYearCount(y - 1);
+  434 int mm = SerialDate.AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[m];
+  435 if (m > MonthConstants.FEBRUARY) {
+  Listing B-5 (continued)
+  SpreadsheetDate.java
+
+  Appendix B: org.jfree.date.SerialDate 389
+  436 if (SerialDate.isLeapYear(y)) {
+  437 mm = mm + 1;
+  438 }
+  439 }
+  440 final int dd = d;
+  441 return yy + mm + dd + 1;
+  442 }
+  443
+  444 /**
+  445 * Calculate the day, month and year from the serial number.
+  446 */
+  447 private void calcDayMonthYear() {
+  448
+  449 // get the year from the serial date
+  450 final int days = this.serial - SERIAL_LOWER_BOUND;
+  451 // overestimated because we ignored leap days
+  452 final int overestimatedYYYY = 1900 + (days / 365);
+  453 final int leaps = SerialDate.leapYearCount(overestimatedYYYY);
+  454 final int nonleapdays = days - leaps;
+  455 // underestimated because we overestimated years
+  456 int underestimatedYYYY = 1900 + (nonleapdays / 365);
+  457
+  458 if (underestimatedYYYY == overestimatedYYYY) {
+  459 this.year = underestimatedYYYY;
+  460 }
+  461 else {
+  462 int ss1 = calcSerial(1, 1, underestimatedYYYY);
+  463 while (ss1 <= this.serial) {
+  464 underestimatedYYYY = underestimatedYYYY + 1;
+  465 ss1 = calcSerial(1, 1, underestimatedYYYY);
+  466 }
+  467 this.year = underestimatedYYYY - 1;
+  468 }
+  469
+  470 final int ss2 = calcSerial(1, 1, this.year);
+  471
+  472 int[] daysToEndOfPrecedingMonth
+  473 = AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH;
+  474
+  475 if (isLeapYear(this.year)) {
+  476 daysToEndOfPrecedingMonth
+  477 = LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH;
+  478 }
+  479
+  480 // get the month from the serial date
+  481 int mm = 1;
+  482 int sss = ss2 + daysToEndOfPrecedingMonth[mm] - 1;
+  483 while (sss < this.serial) {
+  484 mm = mm + 1;
+  485 sss = ss2 + daysToEndOfPrecedingMonth[mm] - 1;
+  486 }
+  487 this.month = mm - 1;
+  488
+  489 // what's left is d(+1);
+  490 this.day = this.serial - ss2
+  491 - daysToEndOfPrecedingMonth[this.month] + 1;
+  492
+  493 }
+  494
+  495 }
+  Listing B-5 (continued)
+  SpreadsheetDate.java
+
+  390 Appendix B: org.jfree.date.SerialDate
+  Listing B-6
+  RelativeDayOfWeekRule.java
+  1 /* ========================================================================
+  2 * JCommon : a free general purpose class library for the Java(tm) platform
+  3 * ========================================================================
+  4 *
+  5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  6 *
+  7 * Project Info: http://www.jfree.org/jcommon/index.html
+  8 *
+  9 * This library is free software; you can redistribute it and/or modify it
+  10 * under the terms of the GNU Lesser General Public License as published by
+  11 * the Free Software Foundation; either version 2.1 of the License, or
+  12 * (at your option) any later version.
+  13 *
+  14 * This library is distributed in the hope that it will be useful, but
+  15 * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  16 * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+  17 * License for more details.
+  18 *
+  19 * You should have received a copy of the GNU Lesser General Public
+  20 * License along with this library; if not, write to the Free Software
+  21 * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+  22 * USA.
+  23 *
+  24 * [Java is a trademark or registered trademark of Sun Microsystems, Inc.
+  25 * in the United States and other countries.]
+  26 *
+  27 * --------------------------
+  28 * RelativeDayOfWeekRule.java
+  29 * --------------------------
+  30 * (C) Copyright 2000-2003, by Object Refinery Limited and Contributors.
+  31 *
+  32 * Original Author: David Gilbert (for Object Refinery Limited);
+  33 * Contributor(s): -;
+  34 *
+  35 * $Id: RelativeDayOfWeekRule.java,v 1.6 2005/11/16 15:58:40 taqua Exp $
+  36 *
+  37 * Changes (from 26-Oct-2001)
+  38 * --------------------------
+  39 * 26-Oct-2001 : Changed package to com.jrefinery.date.;
+  40 * 03-Oct-2002 : Fixed errors reported by Checkstyle (DG);
+  41 *
+  42 /
+  43
+  44 package org.jfree.date;
+  45
+  46 /
+  47 * An annual date rule that returns a date for each year based on (a) a
+  48 * reference rule; (b) a day of the week; and (c) a selection parameter
+  49 * (SerialDate.PRECEDING, SerialDate.NEAREST, SerialDate.FOLLOWING).
+  50 *
+  51 * For example, Good Friday can be specified as 'the Friday PRECEDING Easter
+  52 * Sunday'.
+  53 *
+  54 * @author David Gilbert
+  55 /
+  56 public class RelativeDayOfWeekRule extends AnnualDateRule {
+  57
+  58 /* A reference to the annual date rule on which this rule is based. /
+  59 private AnnualDateRule subrule;
+  60
+  61 /*
+  62 * The day of the week (SerialDate.MONDAY, SerialDate.TUESDAY, and so on).
+  Appendix B: org.jfree.date.SerialDate 391
+  63 /
+  64 private int dayOfWeek;
+  65
+  66 /* Specifies which day of the week (PRECEDING, NEAREST or FOLLOWING). /
+  67 private int relative;
+  68
+  69 /*
+  70 * Default constructor - builds a rule for the Monday following 1 January.
+  71 /
+  72 public RelativeDayOfWeekRule() {
+  73 this(new DayAndMonthRule(), SerialDate.MONDAY, SerialDate.FOLLOWING);
+  74 }
+  75
+  76 /*
+  77 * Standard constructor - builds rule based on the supplied sub-rule.
+  78 *
+  79 * @param subrule the rule that determines the reference date.
+  80 * @param dayOfWeek the day-of-the-week relative to the reference date.
+  81 * @param relative indicates which day-of-the-week (preceding, nearest
+  82 * or following).
+  83 /
+  84 public RelativeDayOfWeekRule(final AnnualDateRule subrule,
+  85 final int dayOfWeek, final int relative) {
+  86 this.subrule = subrule;
+  87 this.dayOfWeek = dayOfWeek;
+  88 this.relative = relative;
+  89 }
+  90
+  91 /*
+  92 * Returns the sub-rule (also called the reference rule).
+  93 *
+  94 * @return The annual date rule that determines the reference date for this
+  95 * rule.
+  96 /
+  97 public AnnualDateRule getSubrule() {
+  98 return this.subrule;
+  99 }
+  100
+  101 /*
+  102 * Sets the sub-rule.
+  103 *
+  104 * @param subrule the annual date rule that determines the reference date
+  105 * for this rule.
+  106 /
+  107 public void setSubrule(final AnnualDateRule subrule) {
+  108 this.subrule = subrule;
+  109 }
+  110
+  111 /*
+  112 * Returns the day-of-the-week for this rule.
+  113 *
+  114 * @return the day-of-the-week for this rule.
+  115 /
+  116 public int getDayOfWeek() {
+  117 return this.dayOfWeek;
+  118 }
+  119
+  120 /*
+  121 * Sets the day-of-the-week for this rule.
+  122 *
+  123 * @param dayOfWeek the day-of-the-week (SerialDate.MONDAY,
+  124 * SerialDate.TUESDAY, and so on).
+  Listing B-6 (continued)
+  RelativeDayOfWeekRule.java
+
+  392 Appendix B: org.jfree.date.SerialDate
+  125 /
+  126 public void setDayOfWeek(final int dayOfWeek) {
+  127 this.dayOfWeek = dayOfWeek;
+  128 }
+  129
+  130 /*
+  131 * Returns the 'relative' attribute, that determines which
+  132 * day-of-the-week we are interested in (SerialDate.PRECEDING,
+  133 * SerialDate.NEAREST or SerialDate.FOLLOWING).
+  134 *
+  135 * @return The 'relative' attribute.
+  136 /
+  137 public int getRelative() {
+  138 return this.relative;
+  139 }
+  140
+  141 /*
+  142 * Sets the 'relative' attribute (SerialDate.PRECEDING, SerialDate.NEAREST,
+  143 * SerialDate.FOLLOWING).
+  144 *
+  145 * @param relative determines which day-of-the-week is selected by this
+  146 * rule.
+  147 /
+  148 public void setRelative(final int relative) {
+  149 this.relative = relative;
+  150 }
+  151
+  152 /*
+  153 * Creates a clone of this rule.
+  154 *
+  155 * @return a clone of this rule.
+  156 *
+  157 * @throws CloneNotSupportedException this should never happen.
+  158 /
+  159 public Object clone() throws CloneNotSupportedException {
+  160 final RelativeDayOfWeekRule duplicate
+  161 = (RelativeDayOfWeekRule) super.clone();
+  162 duplicate.subrule = (AnnualDateRule) duplicate.getSubrule().clone();
+  163 return duplicate;
+  164 }
+  165
+  166 /*
+  167 * Returns the date generated by this rule, for the specified year.
+  168 *
+  169 * @param year the year (1900 <= year <= 9999).
+  170 *
+  171 * @return The date generated by the rule for the given year (possibly
+  172 * null).
+  173 */
+  174 public SerialDate getDate(final int year) {
+  175
+  176 // check argument...
+  177 if ((year < SerialDate.MINIMUM_YEAR_SUPPORTED)
+  178 || (year > SerialDate.MAXIMUM_YEAR_SUPPORTED)) {
+  179 throw new IllegalArgumentException(
+  180 "RelativeDayOfWeekRule.getDate(): year outside valid range.");
+  181 }
+  182
+  183 // calculate the date...
+  184 SerialDate result = null;
+  185 final SerialDate base = this.subrule.getDate(year);
+  186
+  Listing B-6 (continued)
+  RelativeDayOfWeekRule.java
+
+  Appendix B: org.jfree.date.SerialDate 393
+  187 if (base != null) {
+  188 switch (this.relative) {
+  189 case(SerialDate.PRECEDING):
+  190 result = SerialDate.getPreviousDayOfWeek(this.dayOfWeek,
+  191 base);
+  192 break;
+  193 case(SerialDate.NEAREST):
+  194 result = SerialDate.getNearestDayOfWeek(this.dayOfWeek,
+  195 base);
+  196 break;
+  197 case(SerialDate.FOLLOWING):
+  198 result = SerialDate.getFollowingDayOfWeek(this.dayOfWeek,
+  199 base);
+  200 break;
+  201 default:
+  202 break;
+  203 }
+  204 }
+  205 return result;
+  206
+  207 }
+  208
+  209 }
+  Listing B-6 (continued)
+  RelativeDayOfWeekRule.java
+
+  394 Appendix B: org.jfree.date.SerialDate
+  Listing B-7
+  DayDate.java (Final)
+  1 /* ========================================================================
+  2 * JCommon : a free general purpose class library for the Java(tm) platform
+  3 * ========================================================================
+  4 *
+  5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  ...
+  36 /
+  37 package org.jfree.date;
+  38
+  39 import java.io.Serializable;
+  40 import java.util.;
+  41
+  42 /**
+  43 * An abstract class that represents immutable dates with a precision of
+  44 * one day. The implementation will map each date to an integer that
+  45 * represents an ordinal number of days from some fixed origin.
+  46 *
+  47 * Why not just use java.util.Date? We will, when it makes sense. At times,
+  48 * java.util.Date can be too precise - it represents an instant in time,
+  49 * accurate to 1/1000th of a second (with the date itself depending on the
+  50 * time-zone). Sometimes we just want to represent a particular day (e.g. 21
+  51 * January 2015) without concerning ourselves about the time of day, or the
+  52 * time-zone, or anything else. That's what we've defined DayDate for.
+  53 *
+  54 * Use DayDateFactory.makeDate to create an instance.
+  55 *
+  56 * @author David Gilbert
+  57 * @author Robert C. Martin did a lot of refactoring.
+  58 */
+  59
+  60 public abstract class DayDate implements Comparable, Serializable {
+  61 public abstract int getOrdinalDay();
+  62 public abstract int getYear();
+  63 public abstract Month getMonth();
+  64 public abstract int getDayOfMonth();
+  65
+  66 protected abstract Day getDayOfWeekForOrdinalZero();
+  67
+  68 public DayDate plusDays(int days) {
+  69 return DayDateFactory.makeDate(getOrdinalDay() + days);
+  70 }
+  71
+  72 public DayDate plusMonths(int months) {
+  73 int thisMonthAsOrdinal = getMonth().toInt() - Month.JANUARY.toInt();
+  74 int thisMonthAndYearAsOrdinal = 12 * getYear() + thisMonthAsOrdinal;
+  75 int resultMonthAndYearAsOrdinal = thisMonthAndYearAsOrdinal + months;
+  76 int resultYear = resultMonthAndYearAsOrdinal / 12;
+  77 int resultMonthAsOrdinal = resultMonthAndYearAsOrdinal % 12 + Month.JANUARY.toInt();
+  78 Month resultMonth = Month.fromInt(resultMonthAsOrdinal);
+  79 int resultDay = correctLastDayOfMonth(getDayOfMonth(), resultMonth, resultYear);
+  80 return DayDateFactory.makeDate(resultDay, resultMonth, resultYear);
+  81 }
+  82
+  83 public DayDate plusYears(int years) {
+  84 int resultYear = getYear() + years;
+  85 int resultDay = correctLastDayOfMonth(getDayOfMonth(), getMonth(), resultYear);
+  86 return DayDateFactory.makeDate(resultDay, getMonth(), resultYear);
+  87 }
+  88
+  89 private int correctLastDayOfMonth(int day, Month month, int year) {
+  90 int lastDayOfMonth = DateUtil.lastDayOfMonth(month, year);
+  91 if (day > lastDayOfMonth)
+  Appendix B: org.jfree.date.SerialDate 395
+  92 day = lastDayOfMonth;
+  93 return day;
+  94 }
+  95
+  96 public DayDate getPreviousDayOfWeek(Day targetDayOfWeek) {
+  97 int offsetToTarget = targetDayOfWeek.toInt() - getDayOfWeek().toInt();
+  98 if (offsetToTarget >= 0)
+  99 offsetToTarget -= 7;
+  100 return plusDays(offsetToTarget);
+  101 }
+  102
+  103 public DayDate getFollowingDayOfWeek(Day targetDayOfWeek) {
+  104 int offsetToTarget = targetDayOfWeek.toInt() - getDayOfWeek().toInt();
+  105 if (offsetToTarget <= 0)
+  106 offsetToTarget += 7;
+  107 return plusDays(offsetToTarget);
+  108 }
+  109
+  110 public DayDate getNearestDayOfWeek(Day targetDayOfWeek) {
+  111 int offsetToThisWeeksTarget = targetDayOfWeek.toInt() - getDayOfWeek().toInt();
+  112 int offsetToFutureTarget = (offsetToThisWeeksTarget + 7) % 7;
+  113 int offsetToPreviousTarget = offsetToFutureTarget - 7;
+  114
+  115 if (offsetToFutureTarget > 3)
+  116 return plusDays(offsetToPreviousTarget);
+  117 else
+  118 return plusDays(offsetToFutureTarget);
+  119 }
+  120
+  121 public DayDate getEndOfMonth() {
+  122 Month month = getMonth();
+  123 int year = getYear();
+  124 int lastDay = DateUtil.lastDayOfMonth(month, year);
+  125 return DayDateFactory.makeDate(lastDay, month, year);
+  126 }
+  127
+  128 public Date toDate() {
+  129 final Calendar calendar = Calendar.getInstance();
+  130 int ordinalMonth = getMonth().toInt() - Month.JANUARY.toInt();
+  131 calendar.set(getYear(), ordinalMonth, getDayOfMonth(), 0, 0, 0);
+  132 return calendar.getTime();
+  133 }
+  134
+  135 public String toString() {
+  136 return String.format("%02d-%s-%d", getDayOfMonth(), getMonth(), getYear());
+  137 }
+  138
+  139 public Day getDayOfWeek() {
+  140 Day startingDay = getDayOfWeekForOrdinalZero();
+  141 int startingOffset = startingDay.toInt() - Day.SUNDAY.toInt();
+  142 int ordinalOfDayOfWeek = (getOrdinalDay() + startingOffset) % 7;
+  143 return Day.fromInt(ordinalOfDayOfWeek + Day.SUNDAY.toInt());
+  144 }
+  145
+  146 public int daysSince(DayDate date) {
+  147 return getOrdinalDay() - date.getOrdinalDay();
+  148 }
+  149
+  150 public boolean isOn(DayDate other) {
+  151 return getOrdinalDay() == other.getOrdinalDay();
+  152 }
+  153
+  Listing B-7 (continued)
+  DayDate.java (Final)
+
+  396 Appendix B: org.jfree.date.SerialDate
+  154 public boolean isBefore(DayDate other) {
+  155 return getOrdinalDay() < other.getOrdinalDay();
+  156 }
+  157
+  158 public boolean isOnOrBefore(DayDate other) {
+  159 return getOrdinalDay() <= other.getOrdinalDay();
+  160 }
+  161
+  162 public boolean isAfter(DayDate other) {
+  163 return getOrdinalDay() > other.getOrdinalDay();
+  164 }
+  165
+  166 public boolean isOnOrAfter(DayDate other) {
+  167 return getOrdinalDay() >= other.getOrdinalDay();
+  168 }
+  169
+  170 public boolean isInRange(DayDate d1, DayDate d2) {
+  171 return isInRange(d1, d2, DateInterval.CLOSED);
+  172 }
+  173
+  174 public boolean isInRange(DayDate d1, DayDate d2, DateInterval interval) {
+  175 int left = Math.min(d1.getOrdinalDay(), d2.getOrdinalDay());
+  176 int right = Math.max(d1.getOrdinalDay(), d2.getOrdinalDay());
+  177 return interval.isIn(getOrdinalDay(), left, right);
+  178 }
+  179 }
+  Listing B-7 (continued)
+  DayDate.java (Final)
+
+  Appendix B: org.jfree.date.SerialDate 397
+  Listing B- 8
+  Month.java (Final)
+  1 package org.jfree.date;
+  2
+  3 import java.text.DateFormatSymbols;
+  4
+  5 public enum Month {
+  6 JANUARY(1), FEBRUARY(2), MARCH(3),
+  7 APRIL(4), MAY(5), JUNE(6),
+  8 JULY(7), AUGUST(8), SEPTEMBER(9),
+  9 OCTOBER(10),NOVEMBER(11),DECEMBER(12);
+  10 private static DateFormatSymbols dateFormatSymbols = new DateFormatSymbols();
+  11 private static final int[] LAST_DAY_OF_MONTH =
+  12 {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+  13
+  14 private int index;
+  15
+  16 Month(int index) {
+  17 this.index = index;
+  18 }
+  19
+  20 public static Month fromInt(int monthIndex) {
+  21 for (Month m : Month.values()) {
+  22 if (m.index == monthIndex)
+  23 return m;
+  24 }
+  25 throw new IllegalArgumentException("Invalid month index " + monthIndex);
+  26 }
+  27
+  28 public int lastDay() {
+  29 return LAST_DAY_OF_MONTH[index];
+  30 }
+  31
+  32 public int quarter() {
+  33 return 1 + (index - 1) / 3;
+  34 }
+  35
+  36 public String toString() {
+  37 return dateFormatSymbols.getMonths()[index - 1];
+  38 }
+  39
+  40 public String toShortString() {
+  41 return dateFormatSymbols.getShortMonths()[index - 1];
+  42 }
+  43
+  44 public static Month parse(String s) {
+  45 s = s.trim();
+  46 for (Month m : Month.values())
+  47 if (m.matches(s))
+  48 return m;
+  49
+  50 try {
+  51 return fromInt(Integer.parseInt(s));
+  52 }
+  53 catch (NumberFormatException e) {}
+  54 throw new IllegalArgumentException("Invalid month " + s);
+  55 }
+  56
+  57 private boolean matches(String s) {
+  58 return s.equalsIgnoreCase(toString()) ||
+  59 s.equalsIgnoreCase(toShortString());
+  60 }
+  61
+  62 public int toInt() {
+  63 return index;
+  64 }
+  65 }
+  398 Appendix B: org.jfree.date.SerialDate
+  Listing B-9
+  Day.java (Final)
+  1 package org.jfree.date;
+  2
+  3 import java.util.Calendar;
+  4 import java.text.DateFormatSymbols;
+  5
+  6 public enum Day {
+  7 MONDAY(Calendar.MONDAY),
+  8 TUESDAY(Calendar.TUESDAY),
+  9 WEDNESDAY(Calendar.WEDNESDAY),
+  10 THURSDAY(Calendar.THURSDAY),
+  11 FRIDAY(Calendar.FRIDAY),
+  12 SATURDAY(Calendar.SATURDAY),
+  13 SUNDAY(Calendar.SUNDAY);
+  14
+  15 private final int index;
+  16 private static DateFormatSymbols dateSymbols = new DateFormatSymbols();
+  17
+  18 Day(int day) {
+  19 index = day;
+  20 }
+  21
+  22 public static Day fromInt(int index) throws IllegalArgumentException {
+  23 for (Day d : Day.values())
+  24 if (d.index == index)
+  25 return d;
+  26 throw new IllegalArgumentException(
+  27 String.format("Illegal day index: %d.", index));
+  28 }
+  29
+  30 public static Day parse(String s) throws IllegalArgumentException {
+  31 String[] shortWeekdayNames =
+  32 dateSymbols.getShortWeekdays();
+  33 String[] weekDayNames =
+  34 dateSymbols.getWeekdays();
+  35
+  36 s = s.trim();
+  37 for (Day day : Day.values()) {
+  38 if (s.equalsIgnoreCase(shortWeekdayNames[day.index]) ||
+  39 s.equalsIgnoreCase(weekDayNames[day.index])) {
+  40 return day;
+  41 }
+  42 }
+  43 throw new IllegalArgumentException(
+  44 String.format("%s is not a valid weekday string", s));
+  45 }
+  46
+  47 public String toString() {
+  48 return dateSymbols.getWeekdays()[index];
+  49 }
+  50
+  51 public int toInt() {
+  52 return index;
+  53 }
+  54 }
+  Appendix B: org.jfree.date.SerialDate 399
+  Listing B-10
+  DateInterval.java (Final)
+  1 package org.jfree.date;
+  2
+  3 public enum DateInterval {
+  4 OPEN {
+  5 public boolean isIn(int d, int left, int right) {
+  6 return d > left && d < right;
+  7 }
+  8 },
+  9 CLOSED_LEFT {
+  10 public boolean isIn(int d, int left, int right) {
+  11 return d >= left && d < right;
+  12 }
+  13 },
+  14 CLOSED_RIGHT {
+  15 public boolean isIn(int d, int left, int right) {
+  16 return d > left && d <= right;
+  17 }
+  18 },
+  19 CLOSED {
+  20 public boolean isIn(int d, int left, int right) {
+  21 return d >= left && d <= right;
+  22 }
+  23 };
+  24
+  25 public abstract boolean isIn(int d, int left, int right);
+  26 }
+  400 Appendix B: org.jfree.date.SerialDate
+  Listing B-11
+  WeekInMonth.java (Final)
+  1 package org.jfree.date;
+  2
+  3 public enum WeekInMonth {
+  4 FIRST(1), SECOND(2), THIRD(3), FOURTH(4), LAST(0);
+  5 private final int index;
+  6
+  7 WeekInMonth(int index) {
+  8 this.index = index;
+  9 }
+  10
+  11 public int toInt() {
+  12 return index;
+  13 }
+  14 }
+  Appendix B: org.jfree.date.SerialDate 401
+  Listing B-12
+  WeekdayRange.java (Final)
+  1 package org.jfree.date;
+  2
+  3 public enum WeekdayRange {
+  4 LAST, NEAREST, NEXT
+  5 }
+  402 Appendix B: org.jfree.date.SerialDate
+  Listing B-13
+  DateUtil.java (Final)
+  1 package org.jfree.date;
+  2
+  3 import java.text.DateFormatSymbols;
+  4
+  5 public class DateUtil {
+  6 private static DateFormatSymbols dateFormatSymbols = new DateFormatSymbols();
+  7
+  8 public static String[] getMonthNames() {
+  9 return dateFormatSymbols.getMonths();
+  10 }
+  11
+  12 public static boolean isLeapYear(int year) {
+  13 boolean fourth = year % 4 == 0;
+  14 boolean hundredth = year % 100 == 0;
+  15 boolean fourHundredth = year % 400 == 0;
+  16 return fourth && (!hundredth || fourHundredth);
+  17 }
+  18
+  19 public static int lastDayOfMonth(Month month, int year) {
+  20 if (month == Month.FEBRUARY && isLeapYear(year))
+  21 return month.lastDay() + 1;
+  22 else
+  23 return month.lastDay();
+  24 }
+  25
+  26 public static int leapYearCount(int year) {
+  27 int leap4 = (year - 1896) / 4;
+  28 int leap100 = (year - 1800) / 100;
+  29 int leap400 = (year - 1600) / 400;
+  30 return leap4 - leap100 + leap400;
+  31 }
+  32 }
+  Appendix B: org.jfree.date.SerialDate 403
+  Listing B-14
+  DayDateFactory.java (Final)
+  1 package org.jfree.date;
+  2
+  3 public abstract class DayDateFactory {
+  4 private static DayDateFactory factory = new SpreadsheetDateFactory();
+  5 public static void setInstance(DayDateFactory factory) {
+  6 DayDateFactory.factory = factory;
+  7 }
+  8
+  9 protected abstract DayDate _makeDate(int ordinal);
+  10 protected abstract DayDate _makeDate(int day, Month month, int year);
+  11 protected abstract DayDate _makeDate(int day, int month, int year);
+  12 protected abstract DayDate _makeDate(java.util.Date date);
+  13 protected abstract int _getMinimumYear();
+  14 protected abstract int _getMaximumYear();
+  15
+  16 public static DayDate makeDate(int ordinal) {
+  17 return factory._makeDate(ordinal);
+  18 }
+  19
+  20 public static DayDate makeDate(int day, Month month, int year) {
+  21 return factory._makeDate(day, month, year);
+  22 }
+  23
+  24 public static DayDate makeDate(int day, int month, int year) {
+  25 return factory._makeDate(day, month, year);
+  26 }
+  27
+  28 public static DayDate makeDate(java.util.Date date) {
+  29 return factory._makeDate(date);
+  30 }
+  31
+  32 public static int getMinimumYear() {
+  33 return factory._getMinimumYear();
+  34 }
+  35
+  36 public static int getMaximumYear() {
+  37 return factory._getMaximumYear();
+  38 }
+  39 }
+  404 Appendix B: org.jfree.date.SerialDate
+  Listing B-15
+  SpreadsheetDateFactory.java (Final)
+  1 package org.jfree.date;
+  2
+  3 import java.util.*;
+  4
+  5 public class SpreadsheetDateFactory extends DayDateFactory {
+  6 public DayDate _makeDate(int ordinal) {
+  7 return new SpreadsheetDate(ordinal);
+  8 }
+  9
+  10 public DayDate _makeDate(int day, Month month, int year) {
+  11 return new SpreadsheetDate(day, month, year);
+  12 }
+  13
+  14 public DayDate _makeDate(int day, int month, int year) {
+  15 return new SpreadsheetDate(day, month, year);
+  16 }
+  17
+  18 public DayDate _makeDate(Date date) {
+  19 final GregorianCalendar calendar = new GregorianCalendar();
+  20 calendar.setTime(date);
+  21 return new SpreadsheetDate(
+  22 calendar.get(Calendar.DATE),
+  23 Month.fromInt(calendar.get(Calendar.MONTH) + 1),
+  24 calendar.get(Calendar.YEAR));
+  25 }
+  26
+  27 protected int _getMinimumYear() {
+  28 return SpreadsheetDate.MINIMUM_YEAR_SUPPORTED;
+  29 }
+  30
+  31 protected int _getMaximumYear() {
+  32 return SpreadsheetDate.MAXIMUM_YEAR_SUPPORTED;
+  33 }
+  34 }
+  Appendix B: org.jfree.date.SerialDate 405
+  Listing B-16
+  SpreadsheetDate.java (Final)
+  1 /* ========================================================================
+  2 * JCommon : a free general purpose class library for the Java(tm) platform
+  3 * ========================================================================
+  4 *
+  5 * (C) Copyright 2000-2005, by Object Refinery Limited and Contributors.
+  6 *
+  ...
+  52 *
+  53 /
+  54
+  55 package org.jfree.date;
+  56
+  57 import static org.jfree.date.Month.FEBRUARY;
+  58
+  59 import java.util.;
+  60
+  61 /**
+  62 * Represents a date using an integer, in a similar fashion to the
+  63 * implementation in Microsoft Excel. The range of dates supported is
+  64 * 1-Jan-1900 to 31-Dec-9999.
+  65 *
+  66 * Be aware that there is a deliberate bug in Excel that recognises the year
+  67 * 1900 as a leap year when in fact it is not a leap year. You can find more
+  68 * information on the Microsoft website in article Q181370:
+  69 *
+  70 * http://support.microsoft.com/support/kb/articles/Q181/3/70.asp
+  71 *
+  72 * Excel uses the convention that 1-Jan-1900 = 1. This class uses the
+  73 * convention 1-Jan-1900 = 2.
+  74 * The result is that the day number in this class will be different to the
+  75 * Excel figure for January and February 1900...but then Excel adds in an extra
+  76 * day (29-Feb-1900 which does not actually exist!) and from that point forward
+  77 * the day numbers will match.
+  78 *
+  79 * @author David Gilbert
+  80 */
+  81 public class SpreadsheetDate extends DayDate {
+  82 public static final int EARLIEST_DATE_ORDINAL = 2; // 1/1/1900
+  83 public static final int LATEST_DATE_ORDINAL = 2958465; // 12/31/9999
+  84 public static final int MINIMUM_YEAR_SUPPORTED = 1900;
+  85 public static final int MAXIMUM_YEAR_SUPPORTED = 9999;
+  86 static final int[] AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
+  87 {0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
+  88 static final int[] LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH =
+  89 {0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
+  90
+  91 private int ordinalDay;
+  92 private int day;
+  93 private Month month;
+  94 private int year;
+  95
+  96 public SpreadsheetDate(int day, Month month, int year) {
+  97 if (year < MINIMUM_YEAR_SUPPORTED || year > MAXIMUM_YEAR_SUPPORTED)
+  98 throw new IllegalArgumentException(
+  99 "The 'year' argument must be in range " +
+  100 MINIMUM_YEAR_SUPPORTED + " to " + MAXIMUM_YEAR_SUPPORTED + ".");
+  101 if (day < 1 || day > DateUtil.lastDayOfMonth(month, year))
+  102 throw new IllegalArgumentException("Invalid 'day' argument.");
+  103
+  104 this.year = year;
+  105 this.month = month;
+  406 Appendix B: org.jfree.date.SerialDate
+  106 this.day = day;
+  107 ordinalDay = calcOrdinal(day, month, year);
+  108 }
+  109
+  110 public SpreadsheetDate(int day, int month, int year) {
+  111 this(day, Month.fromInt(month), year);
+  112 }
+  113
+  114 public SpreadsheetDate(int serial) {
+  115 if (serial < EARLIEST_DATE_ORDINAL || serial > LATEST_DATE_ORDINAL)
+  116 throw new IllegalArgumentException(
+  117 "SpreadsheetDate: Serial must be in range 2 to 2958465.");
+  118
+  119 ordinalDay = serial;
+  120 calcDayMonthYear();
+  121 }
+  122
+  123 public int getOrdinalDay() {
+  124 return ordinalDay;
+  125 }
+  126
+  127 public int getYear() {
+  128 return year;
+  129 }
+  130
+  131 public Month getMonth() {
+  132 return month;
+  133 }
+  134
+  135 public int getDayOfMonth() {
+  136 return day;
+  137 }
+  138
+  139 protected Day getDayOfWeekForOrdinalZero() {return Day.SATURDAY;}
+  140
+  141 public boolean equals(Object object) {
+  142 if (!(object instanceof DayDate))
+  143 return false;
+  144
+  145 DayDate date = (DayDate) object;
+  146 return date.getOrdinalDay() == getOrdinalDay();
+  147 }
+  148
+  149 public int hashCode() {
+  150 return getOrdinalDay();
+  151 }
+  152
+  153 public int compareTo(Object other) {
+  154 return daysSince((DayDate) other);
+  155 }
+  156
+  157 private int calcOrdinal(int day, Month month, int year) {
+  158 int leapDaysForYear = DateUtil.leapYearCount(year - 1);
+  159 int daysUpToYear = (year - MINIMUM_YEAR_SUPPORTED) * 365 + leapDaysForYear;
+  160 int daysUpToMonth = AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[month.toInt()];
+  161 if (DateUtil.isLeapYear(year) && month.toInt() > FEBRUARY.toInt())
+  162 daysUpToMonth++;
+  163 int daysInMonth = day - 1;
+  164 return daysUpToYear + daysUpToMonth + daysInMonth + EARLIEST_DATE_ORDINAL;
+  165 }
+  166
+  Listing B-16 (continued)
+  SpreadsheetDate.java (Final)
+
+  Appendix B: org.jfree.date.SerialDate 407
+  167 private void calcDayMonthYear() {
+  168 int days = ordinalDay - EARLIEST_DATE_ORDINAL;
+  169 int overestimatedYear = MINIMUM_YEAR_SUPPORTED + days / 365;
+  170 int nonleapdays = days - DateUtil.leapYearCount(overestimatedYear);
+  171 int underestimatedYear = MINIMUM_YEAR_SUPPORTED + nonleapdays / 365;
+  172
+  173 year = huntForYearContaining(ordinalDay, underestimatedYear);
+  174 int firstOrdinalOfYear = firstOrdinalOfYear(year);
+  175 month = huntForMonthContaining(ordinalDay, firstOrdinalOfYear);
+  176 day = ordinalDay - firstOrdinalOfYear - daysBeforeThisMonth(month.toInt());
+  177 }
+  178
+  179 private Month huntForMonthContaining(int anOrdinal, int firstOrdinalOfYear) {
+  180 int daysIntoThisYear = anOrdinal - firstOrdinalOfYear;
+  181 int aMonth = 1;
+  182 while (daysBeforeThisMonth(aMonth) < daysIntoThisYear)
+  183 aMonth++;
+  184
+  185 return Month.fromInt(aMonth - 1);
+  186 }
+  187
+  188 private int daysBeforeThisMonth(int aMonth) {
+  189 if (DateUtil.isLeapYear(year))
+  190 return LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[aMonth] - 1;
+  191 else
+  192 return AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[aMonth] - 1;
+  193 }
+  194
+  195 private int huntForYearContaining(int anOrdinalDay, int startingYear) {
+  196 int aYear = startingYear;
+  197 while (firstOrdinalOfYear(aYear) <= anOrdinalDay)
+  198 aYear++;
+  199
+  200 return aYear - 1;
+  201 }
+  202
+  203 private int firstOrdinalOfYear(int year) {
+  204 return calcOrdinal(1, Month.JANUARY, year);
+  205 }
+  206
+  207 public static DayDate createInstance(Date date) {
+  208 GregorianCalendar calendar = new GregorianCalendar();
+  209 calendar.setTime(date);
+  210 return new SpreadsheetDate(calendar.get(Calendar.DATE),
+  211 Month.fromInt(calendar.get(Calendar.MONTH) + 1),
+  212 calendar.get(Calendar.YEAR));
+  213
+  214 }
+  215 }
+  Listing B-16 (continued)
+  SpreadsheetDate.java (Final)
+
+
+
+  This page intentionally left blank
+
+
+  # 409
+  Appendix C
+  Cross References of Heuristics
+  Cross references of Smells and Heuristics. All other cross references can be deleted.
+
+
+  C116-276, 16-279, 17-292
+
+
+  C2 16-279, 16-285, 16-295, 17-292
+
+
+  C3 16-283, 16-285, 16-288, 17-293
+
+
+  C4
+  --- 17-293
+
+
+  C5
+  --- 17-293
+
+
+  E1
+  --- 17-294
+
+
+  E2
+  --- 17-294
+
+
+  F1
+  --- 14-239, 17-295
+
+
+  F2
+  --- 17-295
+
+
+  F3
+  --- 17-295
+
+
+  F4.14-289, 16-273, 16-285, 16-287, 16-288, 17-295
+
+
+  G1
+  --- 16-276, 17-295
+
+
+  G216-273, 16-274, 17-296
+
+
+  G3
+  --- 16-274, 17-296
+
+
+  G4 9-31, 16-279, 16-286, 16-291, 17-297
+
+
+  G5...9-31, 16-279, 16-286, 16-291, 16-296, 17-297
+
+
+  G66-106, 16-280, 16-283, 16-284, 16-289, 16-293,
+
+
+  16-294, 16-296, 17-299
+
+
+  G716-281, 16-283, 17-300
+
+
+  G8
+  --- 16-283, 17-301
+
+
+  G9 16-283, 16-285, 16-286, 16-287, 17-302
+
+
+  G10 5-86, 15-264, 16-276, 16-284, 17-302
+
+
+  G11 15-264, 16-284, 16-288, 16-292, 17-302
+
+
+  G12. 16-284, 16-285, 16-286, 16-287, 16-288, 16-295, 17-303
+
+
+  G1316-286, 16-288, 17-303
+
+
+  G1416-288, 16-292, 17-304
+  410 Appendix C: Cross References of Heuristics
+
+
+  G15
+  --- 16-288, 17-305
+
+
+  G16
+  --- 16-289, 17-306
+
+
+  G1716-289, 17-307, 17-312
+
+
+  G18 16-289, 16-290, 16-291, 17-308
+
+
+  G19 16-290, 16-291, 16-292, 17-309
+
+
+  G20
+  --- 16-290, 17-309
+
+
+  G21
+  --- 16-291, 17-310
+
+
+  G22
+  --- 16-294, 17-322
+
+
+  G23??-44, 14-239, 16-295, 17-313
+
+
+  G24
+  --- 16-296, 17-313
+
+
+  G25
+  --- 16-296, 17-314
+
+
+  G26
+  --- 17-316
+
+
+  G27
+  --- 17-316
+
+
+  G28
+  --- 15-262, 17-317
+
+
+  G29
+  --- 15-262, 17-317
+
+
+  G30
+  --- 15-263, 17-317
+
+
+  G31
+  --- 15-264, 17-318
+
+
+  G32
+  --- 15-265, 17-319
+
+
+  G3315-265, 15-266, 17-320
+
+
+  G341-40, 6-106, 17-321
+
+
+  G35
+  --- 5-90, 17-323
+
+
+  G36
+  --- 6-103, 17-324
+
+
+  J1
+  --- 16-276, 17-325
+
+
+  J216-278, 16-285, 17-326
+
+
+  J316-283, 16-285, 17-327
+
+
+  N115-264, 16-277, 16-279, 16-282, 16-287, 16-288,
+
+
+  16-289, 16-290, 16-294, 16-296, 17-328
+
+
+  N2
+  --- 16-277, 17-330
+
+
+  N316-284, 16-288, 17-331
+
+
+  N415-263, 16-291, 17-332
+
+
+  N5. 2-26, 14-221, 15-262, 17-332
+
+
+  N6
+  --- 15-261, 17-333
+
+
+  N7
+  --- 15-263, 17-333
+
+
+  T116-273, 16-274, 17-334
+
+
+  T2
+  --- 16-273, 17-334
+
+
+  T3
+  --- 16-274, 17-334
+
+
+  T4
+  --- 17-334
+
+
+  T516-274, 16-275, 17-335
+
+
+  T6
+  --- 16-275, 17-335
+
+
+  T7
+  --- 16-275, 17-335
+
+
+  T8
+  --- 16-275, 17-335
+
+
+  T9
+  --- 17-336
+
+
+  # 411
+  Epilogue
+
+  In 2005, while attending the Agile conference in Denver, Elisabeth Hedrickson^1 handed me
+  a green wrist band similar to the kind that Lance Armstrong made so popular. This one
+  said "Test Obsessed" on it. I gladly put it on and wore it proudly. Since learning TDD from
+  Kent Beck in 1999, I have indeed become obsessed with test-driven development.
+  But then something strange happened. I found I could not take the band off. Not
+  because it was physically stuck, but because it was morally stuck. The band made an overt
+  statement about my professional ethics. It was a visible indication of my committment to
+  writing the best code I could write. Taking it off seemed like a betrayal of those ethics and
+  of that committment.
+  So it is on my wrist still. When I write code, I see it there in my peripheral vision. It is
+  a constant reminder of the promise I made to myself to write clean code.
+
+  http://www.qualitytree.com/
+
+
+
+  This page intentionally left blank
+
+
+  # 413
+  Index
+
+  detection, 237–238
+  ++ (pre- or post-increment) operator,
+  325, 326
+  A
+  aborted computation, 109
+  abstract classes, 149, 271, 290
+  ABSTRACT FACTORY pattern, 38, 156,
+  273, 274
+  abstract interfaces, 94
+  abstract methods
+  adding to ArgumentMarshaler, 234–235
+  modifying, 282
+  abstract terms, 95
+  abstraction
+  classes depending on, 150
+  code at wrong level of, 290–291
+  descending one level at a time, 37
+  functions descending only one level
+  of, 304–306
+  mixing levels of, 36–37
+  names at the appropriate level of, 311
+  separating levels of, 305
+  wrapping an implementation, 11
+  abstraction levels
+  raising, 290
+  separating, 305
+  accessor functions, Law of Demeter
+  and, 98
+  accessors, naming, 25
+  Active Records, 101
+  adapted server, 185
+  affinity, 84
+  Agile Software Development: Principles,
+  Patterns, Practices (PPP) , 15
+  algorithms
+  correcting, 269–270
+  repeating, 48
+  understanding, 297–298
+  ambiguities
+  in code, 301
+  ignored tests as, 313
+  amplification comments, 59
+  analysis functions, 265
+  "annotation form", of AspectJ, 166
+  Ant project, 76, 77
+  AOP (aspect-oriented programming),
+  160, 163
+  APIs. See also public APIs
+  calling a null-returning method
+  from, 110
+  specialized for tests, 127
+  wrapping third-party, 108
+  applications
+  decoupled from Spring, 164
+  decoupling from construction
+  details, 156
+  infrastructure of, 163
+  keeping concurrency-related code
+  separate, 181
+  arbitrary structure, 303–304
+  argsarray, converting into a list, 231–232
+  Args class
+  constructing, 194
+  implementation of, 194–200
+  rough drafts of, 201–212, 226–231
+
+  414 Index
+  ArgsException class
+  listing, 198–200
+  merging exceptions into, 239–242
+  argument(s)
+  flag, 41
+  for a function, 40
+  in functions, 288
+  monadic forms of, 41
+  reducing, 43
+  argument lists, 43
+  argument objects, 43
+  argument types
+  adding, 200, 237
+  negative impact of, 208
+  ArgumentMarshaler class
+  adding the skeleton of, 213–214
+  birth of, 212
+  ArgumentMarshaler interface, 197–198
+  arrays, moving, 279
+  art, of clean code, 6–7
+  artificial coupling, 293
+  AspectJ language, 166
+  aspect-oriented programming (AOP),
+  160, 163
+  aspects
+  in AOP, 160–161
+  "first-class" support for, 166
+  assert statements, 130–131
+  assertEquals, 42
+  assertions, using a set of, 111
+  assignments, unaligned, 87–88
+  atomic operation, 323–324
+  attributes, 68
+  authors
+  of JUnit, 252
+  programmers as, 13–14
+  authorship statements, 55
+  automated code instrumentation, 189–190
+  automated suite, of unit tests, 124
+  B
+  bad code, 3–4. See also dirty code;
+  messy code
+  degrading effect of, 250
+  example, 71–72
+  experience of cleaning, 250
+  not making up for, 55
+  bad comments, 59–74
+  banner, gathering functions beneath, 67
+  base classes, 290, 291
+  BDUF (Big Design Up Front), 167
+  beans, private variables manipulated,
+  100–101
+  Beck, Kent, 3, 34, 71, 171, 252,
+  289, 296
+  behaviors, 288–289
+  Big Design Up Front (BDUF), 167
+  blank lines, in code, 78–79
+  blocks, calling functions within, 35
+  Booch,Grady, 8–9
+  boolean, passing into a function, 41
+  boolean arguments, 194, 288
+  boolean map, deleting, 224
+  boolean output, of tests, 132
+  bound resources, 183, 184
+  boundaries
+  clean, 120
+  exploring and learning, 116
+  incorrect behavior at, 289
+  separating known from unknown,
+  118–119
+  boundary condition errors, 269
+  boundary conditions
+  encapsulating, 304
+  testing, 314
+  boundary tests, easing a migration, 118
+  "Bowling Game", 312
+  Boy Scout Rule, 14–15, 257
+  following, 284
+  satisfying, 265
+  broken windows metaphor, 8
+  bucket brigade, 303
+  BUILD-OPERATE-CHECK pattern, 127
+  builds, 287
+  business logic, separating from error
+  handling, 109
+  bylines, 68
+  byte-manipulation libraries, 161,
+  162–163
+
+  Index 415
+  C
+  The C++ Programming Language , 7
+  calculations, breaking into intermediate
+  values, 296
+  call stack, 324
+  Callable interface, 326
+  caller, cluttering, 104
+  calling hierarchy, 106
+  calls, avoiding chains of, 98
+  caring, for code, 10
+  Cartesian points, 42
+  CAS operation, as atomic, 328
+  change(s)
+  isolating from, 149–150
+  large number of very tiny, 213
+  organizing for, 147–150
+  tests enabling, 124
+  change history, deleting, 270
+  check exceptions, in Java, 106
+  circular wait, 337, 338–339
+  clarification, comments as, 57
+  clarity, 25, 26
+  class names, 25
+  classes
+  cohesion of, 140–141
+  creating for bigger concepts, 28–29
+  declaring instance variables, 81
+  enforcing design and business
+  rules, 115
+  exposing internals of, 294
+  instrumenting into ConTest, 342
+  keeping small, 136, 175
+  minimizing the number of, 176
+  naming, 25, 138
+  nonthread-safe, 328–329
+  as nouns of a language, 49
+  organization of, 136
+  organizing to reduce risk of
+  change, 147
+  supporting advanced concurrency
+  design, 183
+  classification, of errors, 107
+  clean boundaries, 120
+  clean code
+  art of, 6–7
+  described, 7–12
+  writing, 6–7
+  clean tests, 124–127
+  cleanliness
+  acquired sense of, 6–7
+  tied to tests, 9
+  cleanup, of code, 14–15
+  clever names, 26
+  client, using two methods, 330
+  client code, connecting to a server, 318
+  client-based locking, 185, 329, 330–332
+  clientScheduler, 320
+  client/server application, concurrency in,
+  317–321
+  Client/Server nonthreaded, code for,
+  343–346
+  client-server using threads, code changes,
+  346–347
+  ClientTest.java, 318, 344–346
+  closing braces, comments on, 67–68
+  Clover, 268, 269
+  clutter
+  Javadocs as, 276
+  keeping free of, 293
+  code, 2
+  bad, 3–4
+  Beck's rules of, 10
+  commented-out, 68–69, 287
+  dead, 292
+  explaining yourself in, 55
+  expressing yourself in, 54
+  formatting of, 76
+  implicity of, 18–19
+  instrumenting, 188, 342
+  jiggling, 190
+  making readable, 311
+  necessity of, 2
+  reading from top to bottom, 37
+  simplicity of, 18, 19
+  technique for shrouding, 20
+
+  416 Index
+  code, continued
+  third-party, 114–115
+  width of lines in, 85–90
+  at wrong level of abstraction, 290–291
+  code bases, dominated by error
+  handling, 103
+  code changes, comments not always
+  following, 54
+  code completion, automatic, 20
+  code coverage analysis, 254–256
+  code instrumentation, 188–190
+  "code sense", 6, 7
+  code smells, listing of, 285–314
+  coding standard, 299
+  cohesion
+  of classes, 140–141
+  maintaining, 141–146
+  command line arguments, 193–194
+  commands, separating from queries, 45–46
+  comment header standard, 55–56
+  comment headers, replacing, 70
+  commented-out code, 68–69, 287
+  commenting style, example of bad, 71–72
+  comments
+  amplifying importance of
+  something, 59
+  bad, 59–74
+  deleting, 282
+  as failures, 54
+  good, 55–59
+  heuristics on, 286–287
+  HTML, 69
+  inaccurate, 54
+  informative, 56
+  journal, 63–64
+  legal, 55–56
+  mandated, 63
+  misleading, 63
+  mumbling, 59–60
+  as a necessary evil, 53–59
+  noise, 64–66
+  not making up for bad code, 55
+  obsolete, 286
+  poorly written, 287
+  proper use of, 54
+  redundant, 60–62, 272, 275, 286–287
+  restating the obvious, 64
+  separated from code, 54
+  TODO, 58–59
+  too much information in, 70
+  venting in, 65
+  writing, 287
+  "communication gap", minimizing, 168
+  Compare and Swap (CAS) operation,
+  327–328
+  ComparisonCompactor module, 252–265
+  defactored, 256–261
+  final, 263–265
+  interim, 261–263
+  original code, 254–256
+  compiler warnings, turning off, 289
+  complex code, demonstrating failures
+  in, 341
+  complexity, managing, 139–140
+  computer science (CS) terms, using for
+  names, 27
+  concepts
+  keeping close to each other, 80
+  naming, 19
+  one word per, 26
+  separating at different levels, 290
+  spelling similar similarly, 20
+  vertical openness between, 78–79
+  conceptual affinity, of code, 84
+  concerns
+  cross-cutting, 160–161
+  separating, 154, 166, 178, 250
+  concrete classes, 149
+  concrete details, 149
+  concrete terms, 94
+  concurrency
+  defense principles, 180–182
+  issues, 190
+  motives for adopting, 178–179
+  myths and misconceptions about,
+  179–180
+  concurrency code
+  compared to nonconcurrency-related
+  code, 181
+  focusing, 321
+
+  Index 417
+  concurrent algorithms, 179
+  concurrent applications, partition
+  behavior, 183
+  concurrent code
+  breaking, 329–333
+  defending from problems of, 180
+  flaws hiding in, 188
+  concurrent programming, 180
+  Concurrent Programming in Java: Design
+  Principles and Patterns , 182, 342
+  concurrent programs, 178
+  concurrent update problems, 341
+  ConcurrentHashMap implementation, 183
+  conditionals
+  avoiding negative, 302
+  encapsulating, 257–258, 301
+  configurable data, 306
+  configuration constants, 306
+  consequences, warning of, 58
+  consistency
+  in code, 292
+  of enums, 278
+  in names, 40
+  consistent conventions, 259
+  constants
+  versusenums, 308–309
+  hiding, 308
+  inheriting, 271, 307–308
+  keeping at the appropriate level, 83
+  leaving as raw numbers, 300
+  not inheriting, 307–308
+  passing as symbols, 276
+  turning into enums, 275–276
+  construction
+  moving all to main, 155, 156
+  separating with factory, 156
+  of a system, 154
+  constructor arguments, 157
+  constructors, overloading, 25
+  consumer threads, 184
+  ConTest tool, 190, 342
+  context
+  adding meaningful, 27–29
+  not adding gratuitous, 29–30
+  providing with exceptions, 107
+  continuous readers, 184
+  control variables, within loop statements,
+  80–81
+  convenient idioms, 155
+  convention(s)
+  following standard, 299–300
+  over configuration, 164
+  structure over, 301
+  using consistent, 259
+  convoluted code, 175
+  copyright statements, 55
+  cosmic-rays. See one-offs
+  CountDownLatch class, 183
+  coupling. See also decoupling; temporal
+  coupling; tight coupling
+  artificial, 293
+  hidden temporal, 302–303
+  lack of, 150
+  coverage patterns, testing, 314
+  coverage tools, 313
+  "crisp abstraction", 8–9
+  cross-cutting concerns, 160
+  Cunningham, Ward, 11–12
+  cuteness, in code, 26
+
+  D
+  danglingfalse argument, 294
+  data
+  abstraction, 93–95
+  copies of, 181–182
+  encapsulation, 181
+  limiting the scope of, 181
+  sets processed in parallel, 179
+  types, 97, 101
+  data structures. See also structure(s)
+  compared to objects, 95, 97
+  defined, 95
+  interfaces representing, 94
+  treating Active Records as, 101
+  data transfer-objects (DTOs),
+  100–101, 160
+  database normal forms, 48
+  DateInterval enum, 282–283
+  DAY enumeration, 277
+
+  418 Index
+  DayDate class, running SerialDate
+  as, 271
+  DayDateFactory, 273–274
+  dead code, 288, 292
+  dead functions, 288
+  deadlock, 183, 335–339
+  deadly embrace. See circular wait
+  debugging, finding deadlocks, 336
+  decision making, optimizing, 167–168
+  decisions, postponing, 168
+  declarations, unaligned, 87–88
+  DECORATOR objects, 164
+  DECORATOR pattern, 274
+  decoupled architecture, 167
+  decoupling, from construction
+  details, 156
+  decoupling strategy, concurrency
+  as, 178
+  default constructor, deleting, 276
+  degradation, preventing, 14
+  deletions, as the majority of
+  changes, 250
+  density, vertical in code, 79–80
+  dependencies
+  finding and breaking, 250
+  injecting, 157
+  logical, 282
+  making logical physical, 298–299
+  between methods, 329–333
+  between synchronized
+  methods, 185
+  Dependency Injection (DI), 157
+  Dependency Inversion Principle (DIP),
+  15, 150
+  dependency magnet, 47
+  dependent functions, formatting, 82–83
+  derivatives
+  base classes depending on, 291
+  base classes knowing about, 273
+  of the exception class, 48
+  movingset functions into, 232,
+  233–235
+  pushing functionality into, 217
+  description
+  of a class, 138
+  overloading the structure of code
+  into, 310
+  descriptive names
+  choosing, 309–310
+  using, 39–40
+  design(s)
+  of concurrent algorithms, 179
+  minimally coupled, 167
+  principles of, 15
+  design patterns, 290
+  details, paying attention to, 8
+  DI (Dependency Injection), 157
+  Dijkstra, Edsger, 48
+  dining philosophers execution model,
+  184–185
+  DIP (Dependency Inversion Principle),
+  15, 150
+  dirty code. See also bad code;
+  messy code
+  dirty code, cleaning, 200
+  dirty tests, 123
+  disinformation, avoiding, 19–20
+  distance, vertical in code, 80–84
+  distinctions, making meaningful, 20–21
+  domain-specific languages (DSLs),
+  168–169
+  domain-specific testing language, 127
+  DoubleArgumentMarshalerclass, 238
+  DRY principle (Don't Repeat Yourself ),
+  181, 289
+  DTOs (data transfer objects), 100–101, 160
+  dummy scopes, 90
+  duplicateif statements, 276
+  duplication
+  of code, 48
+  in code, 289–290
+  eliminating, 173–175
+  focusing on, 10
+  forms of, 173, 290
+  reduction of, 48
+  strategies for eliminating, 48
+
+  Index 419
+  dyadic argument, 40
+  dyadic functions, 42
+  dynamic proxies, 161
+  E
+  e, as a variable name, 22
+  Eclipse, 26
+  edit sessions, playing back, 13–14
+  efficiency, of code, 7
+  EJB architecture, early as over-engineered,
+  167
+  EJB standard, complete overhaul of, 164
+  EJB2 beans, 160
+  EJB3, Bank object rewritten in, 165–166
+  "elegant" code, 7
+  emergent design, 171–176
+  encapsulation, 136
+  of boundary conditions, 304
+  breaking, 106–107
+  of conditionals, 301
+  encodings, avoiding, 23–24, 312–313
+  entity bean, 158–160
+  enum(s)
+  changingMonthConstants to, 272
+  using, 308–309
+  enumeration, moving, 277
+  environment, heuristics on, 287
+  environment control system, 128–129
+  envying, the scope of a class, 293
+  error check, hiding a side effect, 258
+  Errorclass, 47–48
+  error code constants, 198–200
+  error codes
+  implying a class or enum, 47–48
+  preferring exceptions to, 46
+  returning, 103–104
+  reusing old, 48
+  separating from the Args module,
+  242–250
+  error detection, pushing to the edges, 109
+  error flags, 103–104
+  error handling, 8, 47–48
+  error messages, 107, 250
+  error processing, testing, 238–239
+  errorMessage method, 250
+  errors. See also boundary condition errors;
+  spelling errors; string comparison
+  errors
+  classifying, 107
+  Evans, Eric, 311
+  events, 41
+  exception classification, 107
+  exception clauses, 107–108
+  exception management code, 223
+  exceptions
+  instead of return codes, 103–105
+  narrowing the type of, 105–106
+  preferring to error codes, 46
+  providing context with, 107
+  separating from Args, 242–250
+  throwing, 104–105, 194
+  unchecked, 106–107
+  execution, possible paths of, 321–326
+  execution models, 183–185
+  Executorframework, 326–327
+  ExecutorClientScheduler.java, 321
+  explanation, of intent, 56–57
+  explanatory variables, 296–297
+  explicitness, of code, 19
+  expressive code, 295
+  expressiveness
+  in code, 10–11
+  ensuring, 175–176
+  Extract Method refactoring, 11
+  Extreme Programming Adventures
+  in C# , 10
+  Extreme Programming Installed , 10
+  "eye-full", code fitting into, 79–80
+
+  F
+  factories, 155–156
+  factory classes, 273–275
+  failure
+  to express ourselves in code, 54
+
+  420 Index
+  failure, continued
+  patterns of, 314
+  tolerating with no harm, 330
+  false argument, 294
+  fast tests, 132
+  fast-running threads, starving longer
+  running, 183
+  fear, of renaming, 30
+  Feathers, Michael, 10
+  feature envy
+  eliminating, 293–294
+  smelling of, 278
+  file size, in Java, 76
+  finalkeywords, 276
+  F.I.R.S.T. acronym, 132–133
+  First Law, of TDD, 122
+  FitNesse project
+  coding style for, 90
+  file sizes, 76, 77
+  function in, 32–33
+  invoking all tests, 224
+  flag arguments, 41, 288
+  focussed code, 8
+  foreign code. See third-party code
+  formatting
+  horizontal, 85–90
+  purpose of, 76
+  Uncle Bob's rules, 90–92
+  vertical, 76–85
+  formatting style, for a team of
+  developers, 90
+  Fortran, forcing encodings, 23
+  Fowler, Martin, 285, 293
+  frame, 324
+  function arguments, 40–45
+  function call dependencies, 84–85
+  function headers, 70
+  function signature, 45
+  functionality, placement of, 295–296
+  functions
+  breaking into smaller, 141–146
+  calling within a block, 35
+  dead, 288
+  defining private, 292
+  descending one level of abstraction,
+  304–306
+  doing one thing, 35–36, 302
+  dyadic, 42
+  eliminating extraneous if statements,
+  262
+  establishing the temporal nature
+  of, 260
+  formatting dependent, 82–83
+  gathering beneath a banner, 67
+  heuristics on, 288
+  intention-revealing, 19
+  keeping small, 175
+  length of, 34–35
+  moving, 279
+  naming, 39, 297
+  number of arguments in, 288
+  one level of abstraction per, 36–37
+  in place of comments, 67
+  renaming for clarity, 258
+  rewriting for clarity, 258–259
+  sections within, 36
+  small as better, 34
+  structured programming with, 49
+  understanding, 297–298
+  as verbs of a language, 49
+  writing, 49
+  futures, 326
+
+  G
+  Gamma, Eric, 252
+  general heuristics, 288–307
+  generated byte-code, 180
+  generics, improving code readability, 115
+  getfunctions, 218
+  getBoolean function, 224
+  GETFIELD instruction, 325, 326
+  getNextIdmethod, 326
+  getStatefunction, 129
+  Gilbert, David, 267, 268
+  given-when-then convention, 130
+  glitches. See one-offs
+
+  Index 421
+  global setup strategy, 155
+  "God class", 136–137
+  good comments, 55–59
+  gotostatements, avoiding, 48, 49
+  grand redesign, 5
+  gratuitous context, 29–30
+  H
+  hand-coded instrumentation, 189
+  HashTable, 328–329
+  headers. See comment headers; function
+  headers
+  heuristics
+  cross references of, 286, 409
+  general, 288–307
+  listing of, 285–314
+  hidden temporal coupling, 259, 302–303
+  hidden things, in a function, 44
+  hiding
+  implementation, 94
+  structures, 99
+  hierarchy of scopes, 88
+  HN. See Hungarian Notation
+  horizontal alignment, of code, 87–88
+  horizontal formatting, 85–90
+  horizontal white space, 86
+  HTML, in source code, 69
+  Hungarian Notation (HN), 23–24, 295
+  Hunt, Andy, 8, 289
+  hybrid structures, 99
+  I
+  ifstatements
+  duplicate, 276
+  eliminating, 262
+  if-else chain
+  appearing again and again, 290
+  eliminating, 233
+  ignored tests, 313
+  implementation
+  duplication of, 173
+  encoding, 24
+  exposing, 94
+  hiding, 94
+  wrapping an abstraction, 11
+  Implementation Patterns , 3, 296
+  implicity, of code, 18
+  import lists
+  avoiding long, 307
+  shortening in SerialDate, 270
+  imports, as hard dependencies, 307
+  imprecision, in code, 301
+  inaccurate comments, 54
+  inappropriate information, in
+  comments, 286
+  inappropriate static methods, 296
+  include method, 48
+  inconsistency, in code, 292
+  inconsistent spellings, 20
+  incrementalism, 212–214
+  indent level, of a function, 35
+  indentation, of code, 88–89
+  indentation rules, 89
+  independent tests, 132
+  information
+  inappropriate, 286
+  too much, 70, 291–292
+  informative comments, 56
+  inheritance hierarchy, 308
+  inobvious connection, between a comment
+  and code, 70
+  input arguments, 41
+  instance variables
+  in classes, 140
+  declaring, 81
+  hiding the declaration of, 81–82
+  passing as function
+  arguments, 231
+  proliferation of, 140
+  instrumented classes, 342
+  insufficient tests, 313
+  integer argument(s)
+  defining, 194
+  integrating, 224–225
+  integer argument functionality,
+  moving into ArgumentMarshaler,
+  215–216
+
+  422 Index
+  integer argument type, adding
+  toArgs, 212
+  integers, pattern of changes for, 220
+  IntelliJ, 26
+  intent
+  explaining in code, 55
+  explanation of, 56–57
+  obscured, 295
+  intention-revealing function, 19
+  intention-revealing names, 18–19
+  interface(s)
+  defining local or remote, 158–160
+  encoding, 24
+  implementing, 149–150
+  representing abstract concerns, 150
+  turning ArgumentMarshaler into, 237
+  well-defined, 291–292
+  writing, 119
+  internal structures, objects hiding, 97
+  intersection, of domains, 160
+  intuition, not relying on, 289
+  inventor of C++, 7
+  Inversion of Control (IoC), 157
+  InvocationHandler object, 162
+  I/O bound, 318
+  isolating, from change, 149–150
+  isxxxArgmethods, 221–222
+  iterative process, refactoring as, 265
+  J
+  jar files, deploying derivatives and bases
+  in, 291
+  Java
+  aspects or aspect-like mechanisms,
+  161–166
+  heuristics on, 307–309
+  as a wordy language, 200
+  Java 5, improvements for concurrent
+  development, 182–183
+  Java 5 Executor framework, 320–321
+  Java 5 VM, nonblocking solutions in,
+  327–328
+  Java AOP frameworks, 163–166
+  Java programmers, encoding not
+  needed, 24
+  Java proxies, 161–163
+  Java source files, 76–77
+  javadocs
+  as clutter, 276
+  in nonpublic code, 71
+  preserving formatting in, 270
+  in public APIs, 59
+  requiring for every function, 63
+  java.util.concurrentpackage, collections
+  in, 182–183
+  JBoss AOP, proxies in, 163
+  JCommon library, 267
+  JCommon unit tests, 270
+  JDepend project, 76, 77
+  JDK proxy, providing persistence support,
+  161–163
+  Jeffries, Ron, 10–11, 289
+  jiggling strategies, 190
+  JNDI lookups, 157
+  journal comments, 63–64
+  JUnit, 34
+  JUnit framework, 252–265
+  Junit project, 76, 77
+  Just-In-Time Compiler, 180
+
+  K
+  keyword form, of a function name, 43
+
+  L
+  L, lower-case in variable names, 20
+  language design, art of programming as, 49
+  languages
+  appearing to be simple, 12
+  level of abstraction, 2
+  multiple in one source file, 288
+  multiples in a comment, 270
+  last-in, first-out (LIFO) data structure,
+  operand stack as, 324
+  Law of Demeter, 97–98, 306
+
+  Index 423
+
+
+  # LAZY INITIALIZATION/
+  EVALUATION idiom, 154
+  LAZY-INITIALIZATION, 157
+  Lea, Doug, 182, 342
+  learning tests, 116, 118
+  LeBlanc's law, 4
+  legacy code, 307
+  legal comments, 55–56
+  level of abstraction, 36–37
+  levels of detail, 99
+  lexicon, having a consistent, 26
+  lines of code
+  duplicating, 173
+  width of, 85
+  list(s)
+  of arguments, 43
+  meaning specific to programmers, 19
+  returning a predefined immutable, 110
+  literate code, 9
+  literate programming, 9
+  Literate Programming , 141
+  livelock, 183, 338
+  local comments, 69–70
+  local variables, 324
+  declaring, 292
+  at the top of each function, 80
+  lock & wait, 337, 338
+  locks, introducing, 185
+  log4j package, 116–118
+  logical dependencies, 282, 298–299
+  LOGO language, 36
+  long descriptive names, 39
+  long names, for long scopes, 312
+  loop counters, single-letter names for, 25
+  M
+  magic numbers
+  obscuring intent, 295
+  replacing with named constants,
+  300–301
+  main function, moving construction to,
+  155, 156
+  managers, role of, 6
+  mandated comments, 63
+  manual control, over a serial ID, 272
+  Map
+  adding for ArgumentMarshaler, 221
+  methods of, 114
+  maps, breaking the use of, 222–223
+  marshalling implementation,
+  214–215
+  meaningful context, 27–29
+  member variables
+  f prefix for, 257
+  prefixing, 24
+  renaming for clarity, 259
+  mental mapping, avoiding, 25
+  messy code. See also bad code; dirty code
+  total cost of owning, 4–12
+  method invocations, 324
+  method names, 25
+  methods
+  affecting the order of execution, 188
+  calling a twin with a flag, 278
+  changing from static to instance, 280
+  of classes, 140
+  dependencies between, 329–333
+  eliminating duplication between,
+  173–174
+  minimizing assert statements in, 176
+  naming, 25
+  tests exposing bugs in, 269
+  minimal code, 9
+  misleading comments, 63
+  misplaced responsibility, 295–296, 299
+  MOCK OBJECT, assigning, 155
+  monadic argument, 40
+  monadic forms, of arguments, 41
+  monads, converting dyads into, 42
+  Monte Carlo testing, 341
+  Monthenum, 278
+  MonthConstants class, 271
+  multithread aware, 332
+  multithread-calculation, of throughput,
+  335
+
+  424 Index
+  multithreaded code, 188, 339–342
+  mumbling, 59–60
+  mutators, naming, 25
+  mutual exclusion, 183, 336, 337
+  N
+  named constants, replacing magic
+  numbers, 300–301
+  name-length-challenged languages, 23
+  names
+  abstractions, appropriate level of, 311
+  changing, 40
+  choosing, 175, 309–310
+  of classes, 270–271
+  clever, 26
+  descriptive, 39–40
+  of functions, 297
+  heuristics on, 309–313
+  importance of, 309–310
+  intention-revealing, 18–19
+  length of corresponding to scope,
+  22–23
+  long names for long scopes, 312
+  making unambiguous, 258
+  problem domain, 27
+  pronounceable, 21–22
+  rules for creating, 18–30
+  searchable, 22–23
+  shorter generally better than longer, 30
+  solution domain, 27
+  with subtle differences, 20
+  unambiguous, 312
+  at the wrong level of abstraction, 271
+  naming, classes, 138
+  naming conventions, as inferior to
+  structures, 301
+  navigational methods, in Active
+  Records, 101
+  near bugs, testing, 314
+  negative conditionals, avoiding, 302
+  negatives, 258
+  nested structures, 46
+  Newkirk, Jim, 116
+  newspaper metaphor, 77–78
+  niladic argument, 40
+  no preemption, 337
+  noise
+  comments, 64–66
+  scary, 66
+  words, 21
+  nomenclature, using standard, 311–312
+  nonblocking solutions, 327–328
+  nonconcurrency-related code, 181
+  noninformative names, 21
+  nonlocal information, 69–70
+  nonpublic code, javadocs in, 71
+  nonstatic methods, preferred to static, 296
+  nonthreaded code, getting working
+  first, 187
+  nonthread-safe classes, 328–329
+  normal flow, 109
+  null
+  not passing into methods, 111–112
+  not returning, 109–110
+  passed by a caller accidentally, 111
+  null detection logic, for ArgumentMarshaler,
+  214
+  NullPointerException, 110, 111
+  number-series naming, 21
+
+  O
+  Object Oriented Analysis and Design with
+  Applications , 8
+  object-oriented design, 15
+  objects
+  compared to data structures, 95, 97
+  compared to data types and proce-
+  dures, 101
+  copying read-only, 181
+  defined, 95
+  obscured intent, 295
+  obsolete comments, 286
+  obvious behavior, 288–289
+  obvious code, 12
+
+  Index 425
+  "Once and only once" principle, 289
+  "ONE SWITCH" rule, 299
+  one thing, functions doing, 35–36, 302
+  one-offs, 180, 187, 191
+  OO code, 97
+  OO design, 139
+  Open Closed Principle (OCP), 15, 38
+  by checked exceptions, 106
+  supporting, 149
+  operand stack, 324
+  operating systems, threading policies, 188
+  operators, precedence of, 86
+  optimistic locking, 327
+  optimizations, LAZY-EVALUATION
+  as, 157
+  optimizing, decision making, 167–168
+  orderings, calculating the possible, 322–323
+  organization
+  for change, 147–150
+  of classes, 136
+  managing complexity, 139–140
+  outbound tests, exercising an interface, 118
+  output arguments, 41, 288
+  avoiding, 45
+  need for disappearing, 45
+  outputs, arguments as, 45
+  overhead, incurred by concurrency, 179
+  overloading, of code with description, 310
+  P
+  paperback model, as an academic
+  model, 27
+  parameters, taken by instructions, 324
+  parseoperation, throwing an
+  exception, 220
+  partitioning, 250
+  paths of execution, 321–326
+  pathways, through critical sections, 188
+  pattern names, using standard, 175
+  patterns
+  of failure, 314
+  as one kind of standard, 311
+  performance
+  of a client/server pair, 318
+  concurrency improving, 179
+  of server-based locking, 333
+  permutations, calculating, 323
+  persistence, 160, 161
+  pessimistic locking, 327
+  phraseology, in similar names, 40
+  physicalizing, a dependency, 299
+  Plain-Old Java Objects. See POJOs
+  platforms, running threaded code, 188
+  pleasing code, 7
+  pluggable thread-based code, 187
+  POJO system, agility provided by, 168
+  POJOs (Plain-Old Java Objects)
+  creating, 187
+  implementing business logic, 162
+  separating threaded-aware code, 190
+  in Spring, 163
+  writing application domain logic, 166
+  polyadic argument, 40
+  polymorphic behavior, of functions, 296
+  polymorphic changes, 96–97
+  polymorphism, 37, 299
+  position markers, 67
+  positives
+  as easier to understand, 258
+  expressing conditionals as, 302
+  of decisions, 301precision
+  as the point of all naming, 30
+  predicates, naming, 25
+  preemption, breaking, 338
+  prefixes
+  for member variables, 24
+  as useless in today's environments,
+  312–313
+  pre-increment operator, ++, 324, 325, 326
+  "prequel", this book as, 15
+  principle of least surprise, 288–289, 295
+  principles, of design, 15
+  PrintPrimes program, translation into
+  Java, 141
+  private behavior, isolating, 148–149
+
+  426 Index
+  private functions, 292
+  private method behavior, 147
+  problem domain names, 27
+  procedural code, 97
+  procedural shape example, 95–96
+  procedures, compared to objects, 101
+  process function, repartitioning, 319–320
+  process method, I/O bound, 319
+  processes, competing for resources, 184
+  processor bound, code as, 318
+  producer consumer execution model, 184
+  producer threads, 184
+  production environment, 127–130
+  productivity, decreased by messy code, 4
+  professional programmer, 25
+  professional review, of code, 268
+  programmers
+  as authors, 13–14
+  conundrum faced by, 6
+  responsibility for messes, 5–6
+  unprofessional, 5–6
+  programming
+  defined, 2
+  structured, 48–49
+  programs, getting them to work, 201
+  pronounceable names, 21–22
+  protected variables, avoiding, 80
+  proxies, drawbacks of, 163
+  public APIs, javadocs in, 59
+  puns, avoiding, 26–27
+  PUTFIELD instruction, as atomic, 325
+  Q
+  queries, separating from commands, 45–46
+  R
+  random jiggling, tests running, 190
+  range, including end-point dates in, 276
+  readability
+  of clean tests, 124
+  of code, 76
+  Dave Thomas on, 9
+  improving using generics, 115
+  readability perspective, 8
+  readers
+  of code, 13–14
+  continuous, 184
+  readers-writers execution model, 184
+  reading
+  clean code, 8
+  code from top to bottom, 37
+  versus writing, 14
+  reboots, as a lock up solution, 331
+  recommendations, in this book, 13
+  redesign, demanded by the team, 5
+  redundancy, of noise words, 21
+  redundant comments, 60–62, 272, 275,
+  286–287
+  ReentrantLock class, 183
+  refactored programs, as longer, 146
+  refactoring
+  Args, 212
+  code incrementally, 172
+  as an iterative process, 265
+  putting things in to take out, 233
+  test code, 127
+  Refactoring (Fowler), 285
+  renaming, fear of, 30
+  repeatability, of concurrency bugs, 180
+  repeatable tests, 132
+  requirements, specifying, 2
+  resetId, byte-code generated for, 324–325
+  resources
+  bound, 183
+  processes competing for, 184
+  threads agreeing on a global ordering
+  of, 338
+  responsibilities
+  counting in classes, 136
+  definition of, 138
+  identifying, 139
+  misplaced, 295–296, 299
+  splitting a program into main, 146
+  return codes, using exceptions instead,
+  103–105
+
+  Index 427
+  reuse, 174
+  risk of change, reducing, 147
+  robust clear code, writing, 112
+  rough drafts, writing, 200
+  runnable interface, 326
+  run-on expressions, 295
+  run-on journal entries, 63–64
+  runtime logic, separating startup from, 154
+  S
+  safety mechanisms, overridden, 289
+  scaling up, 157–161
+  scary noise, 66
+  schema, of a class, 194
+  schools of thought, about clean code,
+  12–13
+  scissors rule, in C++, 81
+  scope(s)
+  defined by exceptions, 105
+  dummy, 90
+  envying, 293
+  expanding and indenting, 89
+  hierarchy in a source file, 88
+  limiting for data, 181
+  names related to the length of,
+  22–23, 312
+  of shared variables, 333
+  searchable names, 22–23
+  Second Law, of TDD, 122
+  sections, within functions, 36
+  selector arguments, avoiding, 294–295
+  self validating tests, 132
+  Semaphoreclass, 183
+  semicolon, making visible, 90
+  "serial number", SerialDate using, 271
+  SerialDateclass
+  making it right, 270–284
+  naming of, 270–271
+  refactoring, 267–284
+  SerialDateTests class, 268
+  serialization, 272
+  server, threads created by, 319–321
+  server application, 317–318, 343–344
+  server code, responsibilities of, 319
+  server-based locking, 329
+  as preferred, 332–333
+  with synchronized methods, 185
+  "Servlet" model, of Web applications, 178
+  Servlets, synchronization problems, 182
+  setfunctions, moving into appropriate
+  derivatives, 232, 233–235
+  setArgument, changing, 232–233
+  setBoolean function, 217
+  setter methods, injecting dependencies,
+  157
+  setup strategy, 155
+  SetupTeardownIncluder.java listing,
+  50–52
+  shape classes, 95–96
+  shared data, limiting access, 181
+  shared variables
+  method updating, 328
+  reducing the scope of, 333
+  shotgun approach, hand-coded instrumen-
+  tation as, 189
+  shut-down code, 186
+  shutdowns, graceful, 186
+  side effects
+  having none, 44
+  names describing, 313
+  Simmons, Robert, 276
+  simple code, 10, 12
+  Simple Design, rules of, 171–176
+  simplicity, of code, 18, 19
+  single assert rule, 130–131
+  single concepts, in each test function,
+  131–132
+  Single Responsibility Principle (SRP), 15,
+  138–140
+  applying, 321
+  breaking, 155
+  as a concurrency defense principle,
+  181
+  recognizing violations of, 174
+  server violating, 320
+
+  428 Index
+  Single Responsibility Principle (SRP),
+  continued
+  Sql class violating, 147
+  supporting, 157
+  in test classes conforming to, 172
+  violating, 38
+  single value, ordered components of, 42
+  single-letter names, 22, 25
+  single-thread calculation, of throughput,
+  334
+  SINGLETON pattern, 274
+  small classes, 136
+  Smalltalk Best Practice Patterns , 296
+  smart programmer, 25
+  software project, maintenance of, 175
+  software systems. See also system(s)
+  compared to physical systems, 158
+  SOLID class design principle, 150
+  solution domain names, 27
+  source code control systems, 64, 68, 69
+  source files
+  compared to newspaper articles,
+  77–78
+  multiple languages in, 288
+  Sparkle program, 34
+  spawned threads, deadlocked, 186
+  special case objects, 110
+  SPECIAL CASE PATTERN, 109
+  specifications, purpose of, 2
+  spelling errors, correcting, 20
+  SpreadsheetDateFactory, 274–275
+  Spring AOP, proxies in, 163
+  Spring Framework, 157
+  Spring model, following EJB3, 165
+  Spring V2.5 configuration file, 163–164
+  spurious failures, 187
+  Sql class, changing, 147–149
+  square root, as the iteration limit, 74
+  SRP. See Single Responsibility Principle
+  standard conventions, 299–300
+  standard nomenclature, 175, 311–312
+  standards, using wisely, 168
+  startup process, separating from runtime
+  logic, 154
+  starvation, 183, 184, 338
+  static function, 279
+  static import, 308
+  static methods, inappropriate, 296
+  The Step-down Rule , 37
+  stories, implementing only today's, 158
+  STRATEGY pattern, 290
+  stringarguments, 194, 208–212, 214–225
+  string comparison errors, 252
+  StringBuffers, 129
+  Stroustrup, Bjarne, 7–8
+  structure(s). See also data structures
+  hiding, 99
+  hybrid, 99
+  making massive changes to, 212
+  over convention, 301
+  structured programming, 48–49
+  SuperDashboard class, 136–137
+  swapping, as permutations, 323
+  switch statements
+  burying, 37, 38
+  considering polymorphism
+  before, 299
+  reasons to tolerate, 38–39
+  switch/casechain, 290
+  synchronization problems, avoiding with
+  Servlets, 182
+  synchronized block, 334
+  synchronized keyword, 185
+  adding, 323
+  always acquiring a lock, 328
+  introducing a lock via, 331
+  protecting a critical section
+  in code, 181
+  synchronized methods, 185
+  synchronizing, avoiding, 182
+  synthesis functions, 265
+  system(s). See also software systems
+  file sizes of significant, 77
+  keeping running during development,
+  213
+  needing domain-specific, 168
+  system architecture, test driving,
+  166–167
+
+  Index 429
+  system failures, not ignoring
+  one-offs, 187
+  system level, staying clean at, 154
+  system-wide information, in a local
+  comment, 69–70
+  T
+  tables, moving, 275
+  target deployment platforms, running tests
+  on, 341
+  task swapping, encouraging, 188
+  TDD (Test Driven Development), 213
+  building logic, 106
+  as fundamental discipline, 9
+  laws of, 122–123
+  team rules, 90
+  teams
+  coding standard for every, 299–300
+  slowed by messy code, 4
+  technical names, choosing, 27
+  technical notes, reserving comments
+  for, 286
+  TEMPLATE METHOD pattern
+  addressing duplication, 290
+  removing higher-level duplication,
+  174–175
+  using, 130
+  temporal coupling. See also coupling
+  exposing, 259–260
+  hidden, 302–303
+  side effect creating, 44
+  temporary variables, explaining, 279–281
+  test cases
+  adding to check arguments, 237
+  inComparisonCompactor, 252–254
+  patterns of failure, 269, 314
+  turning off, 58
+  test code, 124, 127
+  TEST DOUBLE, assigning, 155
+  Test Driven Development. See TDD
+  test driving, architecture, 166–167
+  test environment, 127–130
+  test functions, single concepts in, 131–132
+  test implementation, of an interface, 150
+  test suite
+  automated, 213
+  of unit tests, 124, 268
+  verifying precise behavior, 146
+  testable systems, 172
+  test-driven development. See TDD
+  testing
+  arguments making harder, 40
+  construction logic mixed with
+  runtime, 155
+  testing language, domain-specific, 127
+  testNG project, 76, 77
+  tests
+  clean, 124–127
+  cleanliness tied to, 9
+  commented out for SerialDate,
+  268–270
+  dirty, 123
+  enabling the -ilities, 124
+  fast, 132
+  fast versus slow, 314
+  heuristics on, 313–314
+  ignored, 313
+  independent, 132
+  insufficient, 313
+  keeping clean, 123–124
+  minimizing assert statements in,
+  130–131
+  not stopping trivial, 313
+  refactoring, 126–127
+  repeatable, 132
+  requiring more than one step, 287
+  running, 341
+  self validating, 132
+  simple design running all, 172
+  suite of automated, 213
+  timely, 133
+  writing for multithreaded code,
+  339–342
+  writing for threaded code, 186–190
+  writing good, 122–123
+
+  430 Index
+  Third Law, of TDD, 122
+  third-party code
+  integrating, 116
+  learning, 116
+  using, 114–115
+  writing tests for, 116
+  this variable, 324
+  Thomas, Dave, 8, 9, 289
+  thread(s)
+  adding to a method, 322
+  interfering with each other, 330
+  making as independent as
+  possible, 182
+  stepping on each other, 180, 326
+  taking resources from other
+  threads, 338
+  thread management strategy, 320
+  thread pools, 326
+  thread-based code, testing, 342
+  threaded code
+  making pluggable, 187
+  making tunable, 187–188
+  symptoms of bugs in, 187
+  testing, 186–190
+  writing in Java 5, 182–183
+  threading
+  adding to a client/server application,
+  319, 346–347
+  problems in complex systems, 342
+  thread-safe collections, 182–183, 329
+  throughput
+  causing starvation, 184
+  improving, 319
+  increasing, 333–335
+  validating, 318
+  throws clause, 106
+  tiger team, 5
+  tight coupling, 172
+  time, taking to go fast, 6
+  Time and Money project, 76
+  file sizes, 77
+  timely tests, 133
+  timer program, testing, 121–122
+  "TO" keyword, 36
+  TO paragraphs, 37
+  TODOcomments, 58–59
+  tokens, used as magic numbers, 300
+  Tomcat project, 76, 77
+  tools
+  ConTest tool, 190, 342
+  coverage, 313
+  handling proxy boilerplate, 163
+  testing thread-based code, 342
+  train wrecks, 98–99
+  transformations, as return values, 41
+  transitive navigation, avoiding, 306–307
+  triadic argument, 40
+  triads, 42
+  tryblocks, 105
+  try/catch blocks, 46–47, 65–66
+  try-catch-finally statement, 105–106
+  tunable threaded-based code, 187–188
+  type encoding, 24
+
+  U
+  ubiquitous language, 311–312
+  unambiguous names, 312
+  unchecked exceptions, 106–107
+  unencapsulated conditional, encapsulating,
+  257
+  unit testing, isolated as difficult, 160
+  unit tests, 124, 175, 268
+  unprofessional programming, 5–6
+  uppercaseC, in variable names, 20
+  usability, of newspapers, 78
+  use, of a system, 154
+  users, handling concurrently, 179
+
+  V
+  validation, of throughput, 318
+  variable names, single-letter, 25
+
+  Index 431
+  variables
+  1 based versus zero based, 261
+  declaring, 80, 81, 292
+  explaining temporary, 279–281
+  explanatory, 296–297
+  keeping private, 93
+  local, 292, 324
+  moving to a different class, 273
+  in place of comments, 67
+  promoting to instance variables of
+  classes, 141
+  with unclear context, 28
+  venting, in comments, 65
+  verbs, keywords and, 43
+  Version class, 139
+  versions, not deserializing across, 272
+  vertical density, in code, 79–80
+  vertical distance, in code, 80–84
+  vertical formatting, 76–85
+  vertical openness, between concepts,
+  78–79
+  vertical ordering, in code, 84–85
+  vertical separation, 292
+  W
+  wading, through bad code, 3
+  Web containers, decoupling provided
+  by, 178
+  what, decoupling from when, 178
+  white space, use of horizontal, 86
+  wildcards, 307
+  Working Effectively with Legacy
+  Code , 10
+  "working" programs, 201
+  workmanship, 176
+  wrappers, 108
+  wrapping, 108
+  writers, starvation of, 184
+  "Writing Shy Code", 306
+
+  X
+
+
+  # XML
+  deployment descriptors, 160
+  "policy" specified configuration
+  files, 164
+  ```

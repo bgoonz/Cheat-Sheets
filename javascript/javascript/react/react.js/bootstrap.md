@@ -13,9 +13,7 @@
 Min:
 
 ```scss
-@media (min-width: @screen-sm-min) // >= 768px (small tablet)
-@media (min-width: @screen-md-min) // >= 992px (medium laptop)
-@media (min-width: @screen-lg-min) // >= 1200px (large desktop)
+@media (min-width: @screen-sm-min) // >= 768px (small tablet) @media (min-width: @screen-md-min) // >= 992px (medium laptop) @media (min-width: @screen-lg-min); // >= 1200px (large desktop)
 ```
 
 Max:
@@ -84,7 +82,7 @@ Mixins:
 #### Modal
 
 ```html
-<a data-toggle='modal' data-target='#new'>
+<a data-toggle="modal" data-target="#new"></a>
 ```
 
 ```haml
@@ -128,15 +126,16 @@ Mixins:
 
 ```html
 <span
-  data-toggle='tooltip'
-  title='tooltip'
-  data-placement='left|top|bottom|right'>
+  data-toggle="tooltip"
+  title="tooltip"
+  data-placement="left|top|bottom|right"
+></span>
 ```
 
 ```js
 $(function () {
-  $('[data-toogle~="tooltip"]').tooltip()
-})
+  $('[data-toogle~="tooltip"]').tooltip();
+});
 ```
 
 #### Input groups

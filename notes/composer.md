@@ -1,28 +1,32 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: composer
 category: CLI
 layout: 2017/sheet
 weight: -1
 authors:
-  - github: benolot
-updated: 2020-02-23
-description: |
+
+- github: benolot
+  updated: 2020-02-23
+  description: |
   Basic guide on how to use Composer, the PHP Package manager.
+
 ---
 
 All composer commands, depending on your install, may need to use `php composer.phar` in the install folder for composer, instead of plain `composer`.

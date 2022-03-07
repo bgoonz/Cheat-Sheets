@@ -2,34 +2,32 @@
 
 > Learn to code online with access to App Academy’s entire full-stack course for free
 
-*   ⏱ 10 minutes
-    
+- ⏱ 10 minutes
 
-*   Catalog
-*   Js Py Sep 2020 Online
-*   Week 6 Sep 2020 Online
-*   Wt Part Three Testing Classes With Chai
+- Catalog
+- Js Py Sep 2020 Online
+- Week 6 Sep 2020 Online
+- Wt Part Three Testing Classes With Chai
 
 In this reading we'll be covering:
 
-*   how to test classes using `Mocha` and `Chai`
+- how to test classes using `Mocha` and `Chai`
 
-Part Three: Testing classes using Mocha and Chai
-------------------------------------------------
+## Part Three: Testing classes using Mocha and Chai
 
 Let's expand our knowledge of testing syntax by testing some classes! In order to fully test a class, we'll be looking to test that class's instance and static methods. Create a new file in the `problems` folder - `dog.js`. We'll use the following code for the rest of our tests so make sure to copy it over:
 
     // testing-demo/problems/dog.js
-    
+
     class Dog {
       constructor(name) {
         this.name = name;
       }
-    
+
       bark() {
         return `${this.name} is barking`;
       }
-    
+
       chainChaseTail(num) {
         if (typeof num !== "number") {
           throw new TypeError("please only use numbers for this function");
@@ -38,11 +36,11 @@ Let's expand our knowledge of testing syntax by testing some classes! In order t
           this.chaseTail();
         }
       }
-    
+
       chaseTail() {
         console.log(`${this.name} is chasing their tail`);
       }
-    
+
       static cleanDogs(dogs) {
         let cleanDogs = [];
         dogs.forEach(dog => {
@@ -52,7 +50,7 @@ Let's expand our knowledge of testing syntax by testing some classes! In order t
         return cleanDogs;
       }
     }
-    
+
     // ensure to export our class!
     module.exports = Dog;
 
@@ -75,7 +73,7 @@ Here is what that will look like in your terminal:
 
     ~ testing-demo $ npm init --y
     Wrote to /testing-demo/problems/package.json:
-    
+
     {
       "name": "testing-demo",
       "version": "1.0.0",
@@ -91,20 +89,20 @@ Here is what that will look like in your terminal:
       "author": "",
       "license": "ISC"
     }
-    
+
     ~ testing-demo $ npm install chai
 
 Now that we've installed `Chai` we can set up our test file. Create a new file in the `test` folder named `dog-spec.js` We'll require the `expect` module from Chai for our assertions, import our `Dog` class, and set up our outer `describe` function for testing the `Dog` class:
 
     // testing-demo/test/dog-spec.js
-    
+
     // set up chai
     const chai = require("chai");
     const expect = chai.expect;
-    
+
     // don't forget to import the class you are testing!
     const Dog = require("../problems/dog.js");
-    
+
     // our outer describe for the whole Dog class
     describe("Dog", function() {});
 
@@ -141,8 +139,8 @@ Now to test our new spec we can run just the Dog class specs by running `mocha t
     Dog
       Dog Constructor Function
         ✓ should have a "name" property
-    
-    
+
+
     1 passing (8ms)
 
 Nice! We tested that the name property exists on a new dog instance. Next, we can make sure our name is set properly with another test:
@@ -152,7 +150,7 @@ Nice! We tested that the name property exists on a new dog instance. Next, we ca
         const layla = new Dog("Layla");
         expect(layla).to.have.property("name");
       });
-    
+
       it('should set the "name" property when a new dog is created', function() {
         const layla = new Dog("Layla");
         // we are using the eql function to compare the value of layla.name
@@ -166,6 +164,5 @@ Running the above using `mocha` we'll see both of our specs passing! Now take ex
 Head to the next reading to refactor some of the code we just wrote using `Mocha` hooks!
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/js-py---sep-2020-online/week-6-sep-2020-online/wt-part-three--testing-classes-with-chai)

@@ -46,7 +46,7 @@ To import the **re** library in Python, add the following code to your script:
 import re
 ```
 
-Note that while passing regular expressions in Python, we use raw strings as they do not interpret special characters such as  and  differently.
+Note that while passing regular expressions in Python, we use raw strings as they do not interpret special characters such as and differently.
 
 #### Match()
 

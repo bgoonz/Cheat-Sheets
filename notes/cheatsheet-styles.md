@@ -1,27 +1,30 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Cheatsheet styles
 layout: 2017/sheet
 tags: [WIP]
 updated: 2017-10-26
 intro: |
-  This is a reference of styles that you can use on Devhints cheatsheets. How
-  meta!
-  You can refer to this when contributing your own cheatsheets to the [GitHub repo](https://github.com/rstacruz/cheatsheets/).
+This is a reference of styles that you can use on Devhints cheatsheets. How
+meta!
+You can refer to this when contributing your own cheatsheets to the [GitHub repo](https://github.com/rstacruz/cheatsheets/).
+
 ---
 
 ## Intro

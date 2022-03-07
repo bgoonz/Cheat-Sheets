@@ -9,7 +9,7 @@ excerpt: >-
   same name of the table it represents in the database. Usually, models have
   singular names (such as User) while tables have pluralized names (such as
   Users), although this is fully configurable.
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_path: images/sequelize-77de8eb1.png
 thumb_img_alt: Sequelize cheat sheet
 content_img_path: images/sequelize-05bcc5c4.png
@@ -22,32 +22,32 @@ seo:
     connection to one database. This is the recommended convention and it will
     be followed throughout the documentation.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: article
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Sequelize Cheat Sheet
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         Sequelize is a promise-based Node.js ORM tool for Postgres, MySQL,
         MariaDB, SQLite, Microsoft SQL Server, Amazon Redshift and Snowflake's
         Data Cloud. It features solid transaction support, relations, eager and
         lazy loading, read replication and more.
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/7.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Sequelize Cheat Sheet
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: >-
         Iceland is a Nordic country between the North Atlantic and the Arctic
         Ocean.
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/7.jpg
       relativeUrl: true
 template: post
@@ -2128,14 +2128,9 @@ Most of the methods provided by Sequelize are asynchronous and therefore return 
 
 Of course, using `async` and `await` works normally as well.
 
-
-
-
-
 <details>
 
 <summary>Concepts</summary>
-
 
 ## Installing
 
@@ -2189,9 +2184,9 @@ You can use the `.authenticate()` function to test if the connection is OK:
 ```js
 try {
   await sequelize.authenticate();
-  console.log('Connection has been established successfully.');
+  console.log("Connection has been established successfully.");
 } catch (error) {
-  console.error('Unable to connect to the database:', error);
+  console.error("Unable to connect to the database:", error);
 }
 ```
 
@@ -2229,13 +2224,13 @@ By default, Sequelize will log to console every SQL query it performs. The `opti
 Common useful values for `options.logging`:
 
 ```js
-const sequelize = new Sequelize('sqlite::memory:', {
+const sequelize = new Sequelize("sqlite::memory:", {
   // Choose one of the logging options
-  logging: console.log,                  // Default, displays the first parameter of the log function call
+  logging: console.log, // Default, displays the first parameter of the log function call
   logging: (...msg) => console.log(msg), // Displays all log function call parameters
-  logging: false,                        // Disables logging
-  logging: msg => logger.debug(msg),     // Use custom logger (e.g. Winston or Bunyan), displays the first parameter
-  logging: logger.debug.bind(logger)     // Alternative way to use custom logger, displays all messages
+  logging: false, // Disables logging
+  logging: (msg) => logger.debug(msg), // Use custom logger (e.g. Winston or Bunyan), displays the first parameter
+  logging: logger.debug.bind(logger), // Alternative way to use custom logger, displays all messages
 });
 ```
 
@@ -2244,8 +2239,6 @@ const sequelize = new Sequelize('sqlite::memory:', {
 Most of the methods provided by Sequelize are asynchronous and therefore return Promises. They are all [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) , so you can use the Promise API (for example, using `then`, `catch`, `finally`) out of the box.
 
 Of course, using `async` and `await` works normally as well.
-
-
 
 ## Concept
 
@@ -2259,8 +2252,8 @@ A model in Sequelize has a name. This name does not have to be the same name of 
 
 Models can be defined in two equivalent ways in Sequelize:
 
-* Calling [`sequelize.define(modelName, attributes, options)`](../class/lib/sequelize.js~Sequelize.html#instance-method-define)
-* Extending [Model](../class/lib/model.js~Model.html) and calling [`init(attributes, options)`](../class/lib/model.js~Model.html#static-method-init)
+- Calling [`sequelize.define(modelName, attributes, options)`](../class/lib/sequelize.js~Sequelize.html#instance-method-define)
+- Extending [Model](../class/lib/model.js~Model.html) and calling [`init(attributes, options)`](../class/lib/model.js~Model.html#static-method-init)
 
 After a model is defined, it is available within `sequelize.models` by its model name.
 
@@ -2271,22 +2264,26 @@ Both ways to define this model are shown below. After being defined, we can acce
 ### Using [`sequelize.define`](../class/lib/sequelize.js~Sequelize.html#instance-method-define):
 
 ```js
-const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('sqlite::memory:');
+const { Sequelize, DataTypes } = require("sequelize");
+const sequelize = new Sequelize("sqlite::memory:");
 
-const User = sequelize.define('User', {
-  // Model attributes are defined here
-  firstName: {
-    type: DataTypes.STRING,
-    allowNull: false
+const User = sequelize.define(
+  "User",
+  {
+    // Model attributes are defined here
+    firstName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    lastName: {
+      type: DataTypes.STRING,
+      // allowNull defaults to true
+    },
   },
-  lastName: {
-    type: DataTypes.STRING
-    // allowNull defaults to true
+  {
+    // Other model options go here
   }
-}, {
-  // Other model options go here
-});
+);
 
 // `sequelize.define` also returns the model
 console.log(User === sequelize.models.User); // true
@@ -2295,26 +2292,29 @@ console.log(User === sequelize.models.User); // true
 ### Extending [Model](../class/lib/model.js~Model.html)
 
 ```js
-const { Sequelize, DataTypes, Model } = require('sequelize');
-const sequelize = new Sequelize('sqlite::memory:');
+const { Sequelize, DataTypes, Model } = require("sequelize");
+const sequelize = new Sequelize("sqlite::memory:");
 
 class User extends Model {}
 
-User.init({
-  // Model attributes are defined here
-  firstName: {
-    type: DataTypes.STRING,
-    allowNull: false
+User.init(
+  {
+    // Model attributes are defined here
+    firstName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    lastName: {
+      type: DataTypes.STRING,
+      // allowNull defaults to true
+    },
   },
-  lastName: {
-    type: DataTypes.STRING
-    // allowNull defaults to true
+  {
+    // Other model options go here
+    sequelize, // We need to pass the connection instance
+    modelName: "User", // We need to choose the model name
   }
-}, {
-  // Other model options go here
-  sequelize, // We need to pass the connection instance
-  modelName: 'User' // We need to choose the model name
-});
+);
 
 // the defined model is the class itself
 console.log(User === sequelize.models.User); // true
@@ -2335,13 +2335,16 @@ class User extends Model {
   otherPublicField; // this field does not shadow anything. It is fine.
 }
 
-User.init({
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true
-  }
-}, { sequelize });
+User.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+  },
+  { sequelize }
+);
 
 const user = new User({ id: 1 });
 user.id; // undefined
@@ -2353,13 +2356,16 @@ class User extends Model {
   otherPublicField;
 }
 
-User.init({
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true
-  }
-}, { sequelize });
+User.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+  },
+  { sequelize }
+);
 
 const user = new User({ id: 1 });
 user.id; // 1
@@ -2373,13 +2379,16 @@ class User extends Model {
   declare id: number; // this is ok! The 'declare' keyword ensures this field will not be emitted by TypeScript.
 }
 
-User.init({
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true
-  }
-}, { sequelize });
+User.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+  },
+  { sequelize }
+);
 
 const user = new User({ id: 1 });
 user.id; // 1
@@ -2398,11 +2407,15 @@ Of course, this behavior is easily configurable.
 You can stop the auto-pluralization performed by Sequelize using the `freezeTableName: true` option. This way, Sequelize will infer the table name to be equal to the model name, without any modifications:
 
 ```js
-sequelize.define('User', {
-  // ... (attributes)
-}, {
-  freezeTableName: true
-});
+sequelize.define(
+  "User",
+  {
+    // ... (attributes)
+  },
+  {
+    freezeTableName: true,
+  }
+);
 ```
 
 The example above will create a model named `User` pointing to a table also named `User`.
@@ -2410,10 +2423,10 @@ The example above will create a model named `User` pointing to a table also name
 This behavior can also be defined globally for the sequelize instance, when it is created:
 
 ```js
-const sequelize = new Sequelize('sqlite::memory:', {
+const sequelize = new Sequelize("sqlite::memory:", {
   define: {
-    freezeTableName: true
-  }
+    freezeTableName: true,
+  },
 });
 ```
 
@@ -2424,11 +2437,15 @@ This way, all tables will use the same name as the model name.
 You can simply tell Sequelize the name of the table directly as well:
 
 ```js
-sequelize.define('User', {
-  // ... (attributes)
-}, {
-  tableName: 'Employees'
-});
+sequelize.define(
+  "User",
+  {
+    // ... (attributes)
+  },
+  {
+    tableName: "Employees",
+  }
+);
 ```
 
 ## Model synchronization
@@ -2437,9 +2454,9 @@ When you define a model, you're telling Sequelize a few things about its table i
 
 This is where model synchronization comes in. A model can be synchronized with the database by calling [`model.sync(options)`](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-sync), an asynchronous function (that returns a Promise). With this call, Sequelize will automatically perform an SQL query to the database. Note that this changes only the table in the database, not the model in the JavaScript side.
 
-* `User.sync()` - This creates the table if it doesn't exist (and does nothing if it already exists)
-* `User.sync({ force: true })` - This creates the table, dropping it first if it already existed
-* `User.sync({ alter: true })` - This checks what is the current state of the table in the database (which columns it has, what are their data types, etc), and then performs the necessary changes in the table to make it match the model.
+- `User.sync()` - This creates the table if it doesn't exist (and does nothing if it already exists)
+- `User.sync({ force: true })` - This creates the table, dropping it first if it already existed
+- `User.sync({ alter: true })` - This checks what is the current state of the table in the database (which columns it has, what are their data types, etc), and then performs the necessary changes in the table to make it match the model.
 
 Example:
 
@@ -2490,34 +2507,43 @@ As shown above, `sync({ force: true })` and `sync({ alter: true })` can be destr
 
 By default, Sequelize automatically adds the fields `createdAt` and `updatedAt` to every model, using the data type `DataTypes.DATE`. Those fields are automatically managed as well - whenever you use Sequelize to create or update something, those fields will be set correctly. The `createdAt` field will contain the timestamp representing the moment of creation, and the `updatedAt` will contain the timestamp of the latest update.
 
-**Note:** This is done in the Sequelize level (i.e. not done with *SQL triggers*). This means that direct SQL queries (for example queries performed without Sequelize by any other means) will not cause these fields to be updated automatically.
+**Note:** This is done in the Sequelize level (i.e. not done with _SQL triggers_). This means that direct SQL queries (for example queries performed without Sequelize by any other means) will not cause these fields to be updated automatically.
 
 This behavior can be disabled for a model with the `timestamps: false` option:
 
 ```js
-sequelize.define('User', {
-  // ... (attributes)
-}, {
-  timestamps: false
-});
+sequelize.define(
+  "User",
+  {
+    // ... (attributes)
+  },
+  {
+    timestamps: false,
+  }
+);
 ```
 
 It is also possible to enable only one of `createdAt`/`updatedAt`, and to provide a custom name for these columns:
 
 ```js
 class Foo extends Model {}
-Foo.init({ /* attributes */ }, {
-  sequelize,
+Foo.init(
+  {
+    /* attributes */
+  },
+  {
+    sequelize,
 
-  // don't forget to enable timestamps!
-  timestamps: true,
+    // don't forget to enable timestamps!
+    timestamps: true,
 
-  // I don't want createdAt
-  createdAt: false,
+    // I don't want createdAt
+    createdAt: false,
 
-  // I want updatedAt to actually be called updateTimestamp
-  updatedAt: 'updateTimestamp'
-});
+    // I want updatedAt to actually be called updateTimestamp
+    updatedAt: "updateTimestamp",
+  }
+);
 ```
 
 ## Column declaration shorthand syntax
@@ -2526,14 +2552,14 @@ If the only thing being specified about a column is its data type, the syntax ca
 
 ```js
 // This:
-sequelize.define('User', {
+sequelize.define("User", {
   name: {
-    type: DataTypes.STRING
-  }
+    type: DataTypes.STRING,
+  },
 });
 
 // Can be simplified to:
-sequelize.define('User', { name: DataTypes.STRING });
+sequelize.define("User", { name: DataTypes.STRING });
 ```
 
 ## Default Values
@@ -2541,23 +2567,23 @@ sequelize.define('User', { name: DataTypes.STRING });
 By default, Sequelize assumes that the default value of a column is `NULL`. This behavior can be changed by passing a specific `defaultValue` to the column definition:
 
 ```js
-sequelize.define('User', {
+sequelize.define("User", {
   name: {
     type: DataTypes.STRING,
-    defaultValue: "John Doe"
-  }
+    defaultValue: "John Doe",
+  },
 });
 ```
 
 Some special values, such as `DataTypes.NOW`, are also accepted:
 
 ```js
-sequelize.define('Foo', {
+sequelize.define("Foo", {
   bar: {
     type: DataTypes.DATETIME,
-    defaultValue: DataTypes.NOW
+    defaultValue: DataTypes.NOW,
     // This way, the current date/time will be used to populate this column (at the moment of insertion)
-  }
+  },
 });
 ```
 
@@ -2572,42 +2598,42 @@ const { DataTypes } = require("sequelize"); // Import the built-in data types
 ### Strings
 
 ```js
-DataTypes.STRING             // VARCHAR(255)
-DataTypes.STRING(1234)       // VARCHAR(1234)
-DataTypes.STRING.BINARY      // VARCHAR BINARY
-DataTypes.TEXT               // TEXT
-DataTypes.TEXT('tiny')       // TINYTEXT
-DataTypes.CITEXT             // CITEXT          PostgreSQL and SQLite only.
-DataTypes.TSVECTOR           // TSVECTOR        PostgreSQL only.
+DataTypes.STRING; // VARCHAR(255)
+DataTypes.STRING(1234); // VARCHAR(1234)
+DataTypes.STRING.BINARY; // VARCHAR BINARY
+DataTypes.TEXT; // TEXT
+DataTypes.TEXT("tiny"); // TINYTEXT
+DataTypes.CITEXT; // CITEXT          PostgreSQL and SQLite only.
+DataTypes.TSVECTOR; // TSVECTOR        PostgreSQL only.
 ```
 
 ### Boolean
 
 ```js
-DataTypes.BOOLEAN            // TINYINT(1)
+DataTypes.BOOLEAN; // TINYINT(1)
 ```
 
 ### Numbers
 
 ```js
-DataTypes.INTEGER            // INTEGER
-DataTypes.BIGINT             // BIGINT
-DataTypes.BIGINT(11)         // BIGINT(11)
+DataTypes.INTEGER; // INTEGER
+DataTypes.BIGINT; // BIGINT
+DataTypes.BIGINT(11); // BIGINT(11)
 
-DataTypes.FLOAT              // FLOAT
-DataTypes.FLOAT(11)          // FLOAT(11)
-DataTypes.FLOAT(11, 10)      // FLOAT(11,10)
+DataTypes.FLOAT; // FLOAT
+DataTypes.FLOAT(11); // FLOAT(11)
+DataTypes.FLOAT(11, 10); // FLOAT(11,10)
 
-DataTypes.REAL               // REAL            PostgreSQL only.
-DataTypes.REAL(11)           // REAL(11)        PostgreSQL only.
-DataTypes.REAL(11, 12)       // REAL(11,12)     PostgreSQL only.
+DataTypes.REAL; // REAL            PostgreSQL only.
+DataTypes.REAL(11); // REAL(11)        PostgreSQL only.
+DataTypes.REAL(11, 12); // REAL(11,12)     PostgreSQL only.
 
-DataTypes.DOUBLE             // DOUBLE
-DataTypes.DOUBLE(11)         // DOUBLE(11)
-DataTypes.DOUBLE(11, 10)     // DOUBLE(11,10)
+DataTypes.DOUBLE; // DOUBLE
+DataTypes.DOUBLE(11); // DOUBLE(11)
+DataTypes.DOUBLE(11, 10); // DOUBLE(11,10)
 
-DataTypes.DECIMAL            // DECIMAL
-DataTypes.DECIMAL(10, 2)     // DECIMAL(10,2)
+DataTypes.DECIMAL; // DECIMAL
+DataTypes.DECIMAL(10, 2); // DECIMAL(10,2)
 ```
 
 #### Unsigned & Zerofill integers - MySQL/MariaDB only
@@ -2615,9 +2641,9 @@ DataTypes.DECIMAL(10, 2)     // DECIMAL(10,2)
 In MySQL and MariaDB, the data types `INTEGER`, `BIGINT`, `FLOAT` and `DOUBLE` can be set as unsigned or zerofill (or both), as follows:
 
 ```js
-DataTypes.INTEGER.UNSIGNED
-DataTypes.INTEGER.ZEROFILL
-DataTypes.INTEGER.UNSIGNED.ZEROFILL
+DataTypes.INTEGER.UNSIGNED;
+DataTypes.INTEGER.ZEROFILL;
+DataTypes.INTEGER.UNSIGNED.ZEROFILL;
 // You can also specify the size i.e. INTEGER(10) instead of simply INTEGER
 // Same for BIGINT, FLOAT and DOUBLE
 ```
@@ -2625,9 +2651,9 @@ DataTypes.INTEGER.UNSIGNED.ZEROFILL
 ### Dates
 
 ```js
-DataTypes.DATE       // DATETIME for mysql / sqlite, TIMESTAMP WITH TIME ZONE for postgres
-DataTypes.DATE(6)    // DATETIME(6) for mysql 5.6.4+. Fractional seconds support with up to 6 digits of precision
-DataTypes.DATEONLY   // DATE without time
+DataTypes.DATE; // DATETIME for mysql / sqlite, TIMESTAMP WITH TIME ZONE for postgres
+DataTypes.DATE(6); // DATETIME(6) for mysql 5.6.4+. Fractional seconds support with up to 6 digits of precision
+DataTypes.DATEONLY; // DATE without time
 ```
 
 ### UUIDs
@@ -2653,68 +2679,74 @@ When defining a column, apart from specifying the `type` of the column, and the 
 const { Model, DataTypes, Deferrable } = require("sequelize");
 
 class Foo extends Model {}
-Foo.init({
-  // instantiating will automatically set the flag to true if not set
-  flag: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true },
+Foo.init(
+  {
+    // instantiating will automatically set the flag to true if not set
+    flag: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true },
 
-  // default values for dates => current time
-  myDate: { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
+    // default values for dates => current time
+    myDate: { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
 
-  // setting allowNull to false will add NOT NULL to the column, which means an error will be
-  // thrown from the DB when the query is executed if the column is null. If you want to check that a value
-  // is not null before querying the DB, look at the validations section below.
-  title: { type: DataTypes.STRING, allowNull: false },
+    // setting allowNull to false will add NOT NULL to the column, which means an error will be
+    // thrown from the DB when the query is executed if the column is null. If you want to check that a value
+    // is not null before querying the DB, look at the validations section below.
+    title: { type: DataTypes.STRING, allowNull: false },
 
-  // Creating two objects with the same value will throw an error. The unique property can be either a
-  // boolean, or a string. If you provide the same string for multiple columns, they will form a
-  // composite unique key.
-  uniqueOne: { type: DataTypes.STRING,  unique: 'compositeIndex' },
-  uniqueTwo: { type: DataTypes.INTEGER, unique: 'compositeIndex' },
+    // Creating two objects with the same value will throw an error. The unique property can be either a
+    // boolean, or a string. If you provide the same string for multiple columns, they will form a
+    // composite unique key.
+    uniqueOne: { type: DataTypes.STRING, unique: "compositeIndex" },
+    uniqueTwo: { type: DataTypes.INTEGER, unique: "compositeIndex" },
 
-  // The unique property is simply a shorthand to create a unique constraint.
-  someUnique: { type: DataTypes.STRING, unique: true },
+    // The unique property is simply a shorthand to create a unique constraint.
+    someUnique: { type: DataTypes.STRING, unique: true },
 
-  // Go on reading for further information about primary keys
-  identifier: { type: DataTypes.STRING, primaryKey: true },
+    // Go on reading for further information about primary keys
+    identifier: { type: DataTypes.STRING, primaryKey: true },
 
-  // autoIncrement can be used to create auto_incrementing integer columns
-  incrementMe: { type: DataTypes.INTEGER, autoIncrement: true },
+    // autoIncrement can be used to create auto_incrementing integer columns
+    incrementMe: { type: DataTypes.INTEGER, autoIncrement: true },
 
-  // You can specify a custom column name via the 'field' attribute:
-  fieldWithUnderscores: { type: DataTypes.STRING, field: 'field_with_underscores' },
+    // You can specify a custom column name via the 'field' attribute:
+    fieldWithUnderscores: {
+      type: DataTypes.STRING,
+      field: "field_with_underscores",
+    },
 
-  // It is possible to create foreign keys:
-  bar_id: {
-    type: DataTypes.INTEGER,
+    // It is possible to create foreign keys:
+    bar_id: {
+      type: DataTypes.INTEGER,
 
-    references: {
-      // This is a reference to another model
-      model: Bar,
+      references: {
+        // This is a reference to another model
+        model: Bar,
 
-      // This is the column name of the referenced model
-      key: 'id',
+        // This is the column name of the referenced model
+        key: "id",
 
-      // With PostgreSQL, it is optionally possible to declare when to check the foreign key constraint, passing the Deferrable type.
-      deferrable: Deferrable.INITIALLY_IMMEDIATE
-      // Options:
-      // - `Deferrable.INITIALLY_IMMEDIATE` - Immediately check the foreign key constraints
-      // - `Deferrable.INITIALLY_DEFERRED` - Defer all foreign key constraint check to the end of a transaction
-      // - `Deferrable.NOT` - Don't defer the checks at all (default) - This won't allow you to dynamically change the rule in a transaction
-    }
+        // With PostgreSQL, it is optionally possible to declare when to check the foreign key constraint, passing the Deferrable type.
+        deferrable: Deferrable.INITIALLY_IMMEDIATE,
+        // Options:
+        // - `Deferrable.INITIALLY_IMMEDIATE` - Immediately check the foreign key constraints
+        // - `Deferrable.INITIALLY_DEFERRED` - Defer all foreign key constraint check to the end of a transaction
+        // - `Deferrable.NOT` - Don't defer the checks at all (default) - This won't allow you to dynamically change the rule in a transaction
+      },
+    },
+
+    // Comments can only be added to columns in MySQL, MariaDB, PostgreSQL and MSSQL
+    commentMe: {
+      type: DataTypes.INTEGER,
+      comment: "This is a column name that has a comment",
+    },
   },
+  {
+    sequelize,
+    modelName: "foo",
 
-  // Comments can only be added to columns in MySQL, MariaDB, PostgreSQL and MSSQL
-  commentMe: {
-    type: DataTypes.INTEGER,
-    comment: 'This is a column name that has a comment'
+    // Using `unique: true` in an attribute above is exactly the same as creating the index in the model's options:
+    indexes: [{ unique: true, fields: ["someUnique"] }],
   }
-}, {
-  sequelize,
-  modelName: 'foo',
-
-  // Using `unique: true` in an attribute above is exactly the same as creating the index in the model's options:
-  indexes: [{ unique: true, fields: ['someUnique'] }]
-});
+);
 ```
 
 ## Taking advantage of Models being classes
@@ -2724,22 +2756,25 @@ The Sequelize models are [ES6 classes](https://developer.mozilla.org/en-US/docs/
 ```js
 class User extends Model {
   static classLevelMethod() {
-    return 'foo';
+    return "foo";
   }
   instanceLevelMethod() {
-    return 'bar';
+    return "bar";
   }
   getFullname() {
-    return [this.firstname, this.lastname].join(' ');
+    return [this.firstname, this.lastname].join(" ");
   }
 }
-User.init({
-  firstname: Sequelize.TEXT,
-  lastname: Sequelize.TEXT
-}, { sequelize });
+User.init(
+  {
+    firstname: Sequelize.TEXT,
+    lastname: Sequelize.TEXT,
+  },
+  { sequelize }
+);
 
 console.log(User.classLevelMethod()); // 'foo'
-const user = User.build({ firstname: 'Jane', lastname: 'Doe' });
+const user = User.build({ firstname: "Jane", lastname: "Doe" });
 console.log(user.instanceLevelMethod()); // 'bar'
 console.log(user.getFullname()); // 'Jane Doe'
 ```
@@ -2758,10 +2793,10 @@ const User = sequelize.define("user", {
   name: DataTypes.TEXT,
   favoriteColor: {
     type: DataTypes.TEXT,
-    defaultValue: 'green'
+    defaultValue: "green",
   },
   age: DataTypes.INTEGER,
-  cash: DataTypes.INTEGER
+  cash: DataTypes.INTEGER,
 });
 
 (async () => {
@@ -2780,11 +2815,11 @@ console.log(jane instanceof User); // true
 console.log(jane.name); // "Jane"
 ```
 
-However, the code above does not communicate with the database at all (note that it is not even asynchronous)! This is because the [`build`](../class/lib/model.js~Model.html#static-method-build) method only creates an object that *represents* data that *can* be mapped to a database. In order to really save (i.e. persist) this instance in the database, the [`save`](../class/lib/model.js~Model.html#instance-method-save) method should be used:
+However, the code above does not communicate with the database at all (note that it is not even asynchronous)! This is because the [`build`](../class/lib/model.js~Model.html#static-method-build) method only creates an object that _represents_ data that _can_ be mapped to a database. In order to really save (i.e. persist) this instance in the database, the [`save`](../class/lib/model.js~Model.html#instance-method-save) method should be used:
 
 ```js
 await jane.save();
-console.log('Jane was saved to the database!');
+console.log("Jane was saved to the database!");
 ```
 
 Note, from the usage of `await` in the snippet above, that `save` is an asynchronous method. In fact, almost every Sequelize method is asynchronous; `build` is one of the very few exceptions.
@@ -2840,7 +2875,7 @@ const jane = await User.create({ name: "Jane" });
 
 jane.set({
   name: "Ada",
-  favoriteColor: "blue"
+  favoriteColor: "blue",
 });
 // As above, the database still has "Jane" and "green"
 await jane.save();
@@ -2851,10 +2886,10 @@ Note that the `save()` here will also persist any other changes that have been m
 
 ```js
 const jane = await User.create({ name: "Jane" });
-jane.favoriteColor = "blue"
-await jane.update({ name: "Ada" })
+jane.favoriteColor = "blue";
+await jane.update({ name: "Ada" });
 // The database now has "Ada" for name, but still has the default "green" for favorite color
-await jane.save()
+await jane.save();
 // Now the database has "Ada" for name and "blue" for favorite color
 ```
 
@@ -2896,7 +2931,7 @@ console.log(jane.name); // "Jane"
 console.log(jane.favoriteColor); // "green"
 jane.name = "Jane II";
 jane.favoriteColor = "blue";
-await jane.save({ fields: ['name'] });
+await jane.save({ fields: ["name"] });
 console.log(jane.name); // "Jane II"
 console.log(jane.favoriteColor); // "blue"
 // The above printed blue because the local object has it set to blue, but
@@ -2918,7 +2953,7 @@ In order to increment/decrement values of an instance without running into concu
 
 ```js
 const jane = await User.create({ name: "Jane", age: 100 });
-const incrementResult = await jane.increment('age', { by: 2 });
+const incrementResult = await jane.increment("age", { by: 2 });
 // Note: to increment by 1 you can omit the `by` option and just do `user.increment('age')`
 
 // In PostgreSQL, `incrementResult` will be the updated user, unless the option
@@ -2932,23 +2967,21 @@ You can also increment multiple fields at once:
 ```js
 const jane = await User.create({ name: "Jane", age: 100, cash: 5000 });
 await jane.increment({
-  'age': 2,
-  'cash': 100
+  age: 2,
+  cash: 100,
 });
 
 // If the values are incremented by the same amount, you can use this other syntax as well:
-await jane.increment(['age', 'cash'], { by: 2 });
+await jane.increment(["age", "cash"], { by: 2 });
 ```
 
 Decrementing works in the exact same way.
-
-
 
 # Model Querying - Basics
 
 Sequelize provides various methods to assist querying your database for data.
 
-*Important notice: to perform production-ready queries with Sequelize, make sure you have read the [Transactions guide](transactions.html) as well. Transactions are important to ensure data integrity and to provide other benefits.*
+_Important notice: to perform production-ready queries with Sequelize, make sure you have read the [Transactions guide](transactions.html) as well. Transactions are important to ensure data integrity and to provide other benefits._
 
 This guide will show how to make the standard [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) queries.
 
@@ -2967,10 +3000,13 @@ The [`Model.create()`](../class/lib/model.js~Model.html#static-method-create) me
 It is also possible to define which attributes can be set in the `create` method. This can be especially useful if you create database entries based on a form which can be filled by a user. Using that would, for example, allow you to restrict the `User` model to set only an username but not an admin flag (i.e., `isAdmin`):
 
 ```js
-const user = await User.create({
-  username: 'alice123',
-  isAdmin: true
-}, { fields: ['username'] });
+const user = await User.create(
+  {
+    username: "alice123",
+    isAdmin: true,
+  },
+  { fields: ["username"] }
+);
 // let's assume the default of isAdmin is false
 console.log(user.username); // 'alice123'
 console.log(user.isAdmin); // false
@@ -2983,7 +3019,7 @@ You can read the whole table from the database with the [`findAll`](../class/lib
 ```js
 // Find all users
 const users = await User.findAll();
-console.log(users.every(user => user instanceof User)); // true
+console.log(users.every((user) => user instanceof User)); // true
 console.log("All users:", JSON.stringify(users, null, 2));
 ```
 
@@ -2997,7 +3033,7 @@ To select only some attributes, you can use the `attributes` option:
 
 ```js
 Model.findAll({
-  attributes: ['foo', 'bar']
+  attributes: ["foo", "bar"],
 });
 ```
 
@@ -3009,7 +3045,7 @@ Attributes can be renamed using a nested array:
 
 ```js
 Model.findAll({
-  attributes: ['foo', ['bar', 'baz'], 'qux']
+  attributes: ["foo", ["bar", "baz"], "qux"],
 });
 ```
 
@@ -3022,10 +3058,10 @@ You can use [`sequelize.fn`](../class/lib/sequelize.js~Sequelize.html#static-met
 ```js
 Model.findAll({
   attributes: [
-    'foo',
-    [sequelize.fn('COUNT', sequelize.col('hats')), 'n_hats'],
-    'bar'
-  ]
+    "foo",
+    [sequelize.fn("COUNT", sequelize.col("hats")), "n_hats"],
+    "bar",
+  ],
 });
 ```
 
@@ -3041,18 +3077,21 @@ Sometimes it may be tiresome to list all the attributes of the model if you only
 // This is a tiresome way of getting the number of hats (along with every column)
 Model.findAll({
   attributes: [
-    'id', 'foo', 'bar', 'baz', 'qux', 'hats', // We had to list all attributes...
-    [sequelize.fn('COUNT', sequelize.col('hats')), 'n_hats'] // To add the aggregation...
-  ]
+    "id",
+    "foo",
+    "bar",
+    "baz",
+    "qux",
+    "hats", // We had to list all attributes...
+    [sequelize.fn("COUNT", sequelize.col("hats")), "n_hats"], // To add the aggregation...
+  ],
 });
 
 // This is shorter, and less error prone because it still works if you add / remove attributes from your model later
 Model.findAll({
   attributes: {
-    include: [
-      [sequelize.fn('COUNT', sequelize.col('hats')), 'n_hats']
-    ]
-  }
+    include: [[sequelize.fn("COUNT", sequelize.col("hats")), "n_hats"]],
+  },
 });
 ```
 
@@ -3064,7 +3103,7 @@ Similarly, it's also possible to remove a selected few attributes:
 
 ```js
 Model.findAll({
-  attributes: { exclude: ['baz'] }
+  attributes: { exclude: ["baz"] },
 });
 ```
 
@@ -3082,8 +3121,8 @@ The `where` option is used to filter the query. There are lots of operators to u
 ```js
 Post.findAll({
   where: {
-    authorId: 2
-  }
+    authorId: 2,
+  },
 });
 // SELECT * FROM post WHERE authorId = 2;
 ```
@@ -3095,9 +3134,9 @@ const { Op } = require("sequelize");
 Post.findAll({
   where: {
     authorId: {
-      [Op.eq]: 2
-    }
-  }
+      [Op.eq]: 2,
+    },
+  },
 });
 // SELECT * FROM post WHERE authorId = 2;
 ```
@@ -3108,8 +3147,8 @@ Multiple checks can be passed:
 Post.findAll({
   where: {
     authorId: 12,
-    status: 'active'
-  }
+    status: "active",
+  },
 });
 // SELECT * FROM post WHERE authorId = 12 AND status = 'active';
 ```
@@ -3120,11 +3159,8 @@ Just like Sequelize inferred the `Op.eq` operator in the first example, here Seq
 const { Op } = require("sequelize");
 Post.findAll({
   where: {
-    [Op.and]: [
-      { authorId: 12 },
-      { status: 'active' }
-    ]
-  }
+    [Op.and]: [{ authorId: 12 }, { status: "active" }],
+  },
 });
 // SELECT * FROM post WHERE authorId = 12 AND status = 'active';
 ```
@@ -3135,11 +3171,8 @@ An `OR` can be easily performed in a similar way:
 const { Op } = require("sequelize");
 Post.findAll({
   where: {
-    [Op.or]: [
-      { authorId: 12 },
-      { authorId: 13 }
-    ]
-  }
+    [Op.or]: [{ authorId: 12 }, { authorId: 13 }],
+  },
 });
 // SELECT * FROM post WHERE authorId = 12 OR authorId = 13;
 ```
@@ -3151,9 +3184,9 @@ const { Op } = require("sequelize");
 Post.destroy({
   where: {
     authorId: {
-      [Op.or]: [12, 13]
-    }
-  }
+      [Op.or]: [12, 13],
+    },
+  },
 });
 // DELETE FROM post WHERE authorId = 12 OR authorId = 13;
 ```
@@ -3225,8 +3258,8 @@ Passing an array directly to the `where` option will implicitly use the `IN` ope
 ```js
 Post.findAll({
   where: {
-    id: [1,2,3] // Same as using `id: { [Op.in]: [1,2,3] }`
-  }
+    id: [1, 2, 3], // Same as using `id: { [Op.in]: [1,2,3] }`
+  },
 });
 // SELECT ... FROM "posts" AS "post" WHERE "post"."id" IN (1, 2, 3);
 ```
@@ -3282,16 +3315,16 @@ Foo.findAll({
 ```js
 Project.findAll({
   where: {
-    name: 'Some Project',
+    name: "Some Project",
     [Op.not]: [
-      { id: [1,2,3] },
+      { id: [1, 2, 3] },
       {
         description: {
-          [Op.like]: 'Hello%'
-        }
-      }
-    ]
-  }
+          [Op.like]: "Hello%",
+        },
+      },
+    ],
+  },
 });
 ```
 
@@ -3316,12 +3349,15 @@ What if you wanted to obtain something like `WHERE char_length("content") = 7`?
 
 ```js
 Post.findAll({
-  where: sequelize.where(sequelize.fn('char_length', sequelize.col('content')), 7)
+  where: sequelize.where(
+    sequelize.fn("char_length", sequelize.col("content")),
+    7
+  ),
 });
 // SELECT ... FROM "posts" AS "post" WHERE char_length("content") = 7
 ```
 
-Note the usage of the  [`sequelize.fn`](../class/lib/sequelize.js~Sequelize.html#static-method-fn) and [`sequelize.col`](../class/lib/sequelize.js~Sequelize.html#static-method-col) methods, which should be used to specify an SQL function call and a table column, respectively. These methods should be used instead of passing a plain string (such as `char_length(content)`) because Sequelize needs to treat this situation differently (for example, using other symbol escaping approaches).
+Note the usage of the [`sequelize.fn`](../class/lib/sequelize.js~Sequelize.html#static-method-fn) and [`sequelize.col`](../class/lib/sequelize.js~Sequelize.html#static-method-col) methods, which should be used to specify an SQL function call and a table column, respectively. These methods should be used instead of passing a plain string (such as `char_length(content)`) because Sequelize needs to treat this situation differently (for example, using other symbol escaping approaches).
 
 What if you need something even more complex?
 
@@ -3329,22 +3365,25 @@ What if you need something even more complex?
 Post.findAll({
   where: {
     [Op.or]: [
-      sequelize.where(sequelize.fn('char_length', sequelize.col('content')), 7),
+      sequelize.where(sequelize.fn("char_length", sequelize.col("content")), 7),
       {
         content: {
-          [Op.like]: 'Hello%'
-        }
+          [Op.like]: "Hello%",
+        },
       },
       {
         [Op.and]: [
-          { status: 'draft' },
-          sequelize.where(sequelize.fn('char_length', sequelize.col('content')), {
-            [Op.gt]: 10
-          })
-        ]
-      }
-    ]
-  }
+          { status: "draft" },
+          sequelize.where(
+            sequelize.fn("char_length", sequelize.col("content")),
+            {
+              [Op.gt]: 10,
+            }
+          ),
+        ],
+      },
+    ],
+  },
 });
 ```
 
@@ -3392,17 +3431,17 @@ For example:
 
 ```js
 const { Sequelize, Op } = require("sequelize");
-const sequelize = new Sequelize('sqlite::memory:', {
+const sequelize = new Sequelize("sqlite::memory:", {
   operatorsAliases: {
-    $gt: Op.gt
-  }
+    $gt: Op.gt,
+  },
 });
 
 // Now we can use `$gt` instead of `[Op.gt]` in where clauses:
 Foo.findAll({
   where: {
-    $gt: 6 // Works like using [Op.gt]
-  }
+    $gt: 6, // Works like using [Op.gt]
+  },
 });
 ```
 
@@ -3412,11 +3451,14 @@ Update queries also accept the `where` option, just like the read queries shown 
 
 ```js
 // Change everyone without a last name to "Doe"
-await User.update({ lastName: "Doe" }, {
-  where: {
-    lastName: null
+await User.update(
+  { lastName: "Doe" },
+  {
+    where: {
+      lastName: null,
+    },
   }
-});
+);
 ```
 
 ## Simple DELETE queries
@@ -3427,8 +3469,8 @@ Delete queries also accept the `where` option, just like the read queries shown 
 // Delete everyone named "Jane"
 await User.destroy({
   where: {
-    firstName: "Jane"
-  }
+    firstName: "Jane",
+  },
 });
 ```
 
@@ -3437,7 +3479,7 @@ To destroy everything the `TRUNCATE` SQL can be used:
 ```js
 // Truncate the table
 await User.destroy({
-  truncate: true
+  truncate: true,
 });
 ```
 
@@ -3449,8 +3491,8 @@ The usage of `Model.bulkCreate` is very similar to `Model.create`, by receiving 
 
 ```js
 const captains = await Captain.bulkCreate([
-  { name: 'Jack Sparrow' },
-  { name: 'Davy Jones' }
+  { name: "Jack Sparrow" },
+  { name: "Davy Jones" },
 ]);
 console.log(captains.length); // 2
 console.log(captains[0] instanceof Captain); // true
@@ -3461,35 +3503,30 @@ console.log(captains[0].id); // 1 // (or another auto-generated value)
 However, by default, `bulkCreate` does not run validations on each object that is going to be created (which `create` does). To make `bulkCreate` run these validations as well, you must pass the `validate: true` option. This will decrease performance. Usage example:
 
 ```js
-const Foo = sequelize.define('foo', {
+const Foo = sequelize.define("foo", {
   bar: {
     type: DataTypes.TEXT,
     validate: {
-      len: [4, 6]
-    }
-  }
+      len: [4, 6],
+    },
+  },
 });
 
 // This will not throw an error, both instances will be created
-await Foo.bulkCreate([
-  { name: 'abc123' },
-  { name: 'name too long' }
-]);
+await Foo.bulkCreate([{ name: "abc123" }, { name: "name too long" }]);
 
 // This will throw an error, nothing will be created
-await Foo.bulkCreate([
-  { name: 'abc123' },
-  { name: 'name too long' }
-], { validate: true });
+await Foo.bulkCreate([{ name: "abc123" }, { name: "name too long" }], {
+  validate: true,
+});
 ```
 
 If you are accepting values directly from the user, it might be beneficial to limit the columns that you want to actually insert. To support this, `bulkCreate()` accepts a `fields` option, an array defining which fields must be considered (the rest will be ignored).
 
 ```js
-await User.bulkCreate([
-  { username: 'foo' },
-  { username: 'bar', admin: true }
-], { fields: ['username'] });
+await User.bulkCreate([{ username: "foo" }, { username: "bar", admin: true }], {
+  fields: ["username"],
+});
 // Neither foo nor bar are admins.
 ```
 
@@ -3499,88 +3536,105 @@ Sequelize provides the `order` and `group` options to work with `ORDER BY` and `
 
 ### Ordering
 
-The `order` option takes an array of items to order the query by or a sequelize method. These *items* are themselves arrays in the form `[column, direction]`. The column will be escaped correctly and the direction will be checked in a whitelist of valid directions (such as `ASC`, `DESC`, `NULLS FIRST`, etc).
+The `order` option takes an array of items to order the query by or a sequelize method. These _items_ are themselves arrays in the form `[column, direction]`. The column will be escaped correctly and the direction will be checked in a whitelist of valid directions (such as `ASC`, `DESC`, `NULLS FIRST`, etc).
 
 ```js
 Subtask.findAll({
   order: [
     // Will escape title and validate DESC against a list of valid direction parameters
-    ['title', 'DESC'],
+    ["title", "DESC"],
 
     // Will order by max(age)
-    sequelize.fn('max', sequelize.col('age')),
+    sequelize.fn("max", sequelize.col("age")),
 
     // Will order by max(age) DESC
-    [sequelize.fn('max', sequelize.col('age')), 'DESC'],
+    [sequelize.fn("max", sequelize.col("age")), "DESC"],
 
     // Will order by  otherfunction(`col1`, 12, 'lalala') DESC
-    [sequelize.fn('otherfunction', sequelize.col('col1'), 12, 'lalala'), 'DESC'],
+    [
+      sequelize.fn("otherfunction", sequelize.col("col1"), 12, "lalala"),
+      "DESC",
+    ],
 
     // Will order an associated model's createdAt using the model name as the association's name.
-    [Task, 'createdAt', 'DESC'],
+    [Task, "createdAt", "DESC"],
 
     // Will order through an associated model's createdAt using the model names as the associations' names.
-    [Task, Project, 'createdAt', 'DESC'],
+    [Task, Project, "createdAt", "DESC"],
 
     // Will order by an associated model's createdAt using the name of the association.
-    ['Task', 'createdAt', 'DESC'],
+    ["Task", "createdAt", "DESC"],
 
     // Will order by a nested associated model's createdAt using the names of the associations.
-    ['Task', 'Project', 'createdAt', 'DESC'],
+    ["Task", "Project", "createdAt", "DESC"],
 
     // Will order by an associated model's createdAt using an association object. (preferred method)
-    [Subtask.associations.Task, 'createdAt', 'DESC'],
+    [Subtask.associations.Task, "createdAt", "DESC"],
 
     // Will order by a nested associated model's createdAt using association objects. (preferred method)
-    [Subtask.associations.Task, Task.associations.Project, 'createdAt', 'DESC'],
+    [Subtask.associations.Task, Task.associations.Project, "createdAt", "DESC"],
 
     // Will order by an associated model's createdAt using a simple association object.
-    [{model: Task, as: 'Task'}, 'createdAt', 'DESC'],
+    [{ model: Task, as: "Task" }, "createdAt", "DESC"],
 
     // Will order by a nested associated model's createdAt simple association objects.
-    [{model: Task, as: 'Task'}, {model: Project, as: 'Project'}, 'createdAt', 'DESC']
+    [
+      { model: Task, as: "Task" },
+      { model: Project, as: "Project" },
+      "createdAt",
+      "DESC",
+    ],
   ],
 
   // Will order by max age descending
-  order: sequelize.literal('max(age) DESC'),
+  order: sequelize.literal("max(age) DESC"),
 
   // Will order by max age ascending assuming ascending is the default order when direction is omitted
-  order: sequelize.fn('max', sequelize.col('age')),
+  order: sequelize.fn("max", sequelize.col("age")),
 
   // Will order by age ascending assuming ascending is the default order when direction is omitted
-  order: sequelize.col('age'),
+  order: sequelize.col("age"),
 
   // Will order randomly based on the dialect (instead of fn('RAND') or fn('RANDOM'))
-  order: sequelize.random()
+  order: sequelize.random(),
 });
 
 Foo.findOne({
   order: [
     // will return `name`
-    ['name'],
+    ["name"],
     // will return `username` DESC
-    ['username', 'DESC'],
+    ["username", "DESC"],
     // will return max(`age`)
-    sequelize.fn('max', sequelize.col('age')),
+    sequelize.fn("max", sequelize.col("age")),
     // will return max(`age`) DESC
-    [sequelize.fn('max', sequelize.col('age')), 'DESC'],
+    [sequelize.fn("max", sequelize.col("age")), "DESC"],
     // will return otherfunction(`col1`, 12, 'lalala') DESC
-    [sequelize.fn('otherfunction', sequelize.col('col1'), 12, 'lalala'), 'DESC'],
+    [
+      sequelize.fn("otherfunction", sequelize.col("col1"), 12, "lalala"),
+      "DESC",
+    ],
     // will return otherfunction(awesomefunction(`col`)) DESC, This nesting is potentially infinite!
-    [sequelize.fn('otherfunction', sequelize.fn('awesomefunction', sequelize.col('col'))), 'DESC']
-  ]
+    [
+      sequelize.fn(
+        "otherfunction",
+        sequelize.fn("awesomefunction", sequelize.col("col"))
+      ),
+      "DESC",
+    ],
+  ],
 });
 ```
 
 To recap, the elements of the order array can be the following:
 
-* A string (which will be automatically quoted)
-* An array, whose first element will be quoted, second will be appended verbatim
-* An object with a `raw` field:
-  * The content of `raw` will be added verbatim without quoting
-  * Everything else is ignored, and if raw is not set, the query will fail
-* A call to `Sequelize.fn` (which will generate a function call in SQL)
-* A call to `Sequelize.col` (which will quoute the column name)
+- A string (which will be automatically quoted)
+- An array, whose first element will be quoted, second will be appended verbatim
+- An object with a `raw` field:
+  - The content of `raw` will be added verbatim without quoting
+  - Everything else is ignored, and if raw is not set, the query will fail
+- A call to `Sequelize.fn` (which will generate a function call in SQL)
+- A call to `Sequelize.col` (which will quoute the column name)
 
 ### Grouping
 
@@ -3589,7 +3643,7 @@ The syntax for grouping and ordering are equal, except that grouping does not ac
 You can also pass a string directly to `group`, which will be included directly (verbatim) into the generated SQL. Use with caution and don't use with user generated content.
 
 ```js
-Project.findAll({ group: 'name' });
+Project.findAll({ group: "name" });
 // yields 'GROUP BY name'
 ```
 
@@ -3624,9 +3678,9 @@ console.log(`There are ${await Project.count()} projects`);
 const amount = await Project.count({
   where: {
     id: {
-      [Op.gt]: 25
-    }
-  }
+      [Op.gt]: 25,
+    },
+  },
 });
 console.log(`There are ${amount} projects with an id greater than 25`);
 ```
@@ -3638,12 +3692,12 @@ Sequelize also provides the `max`, `min` and `sum` convenience methods.
 Let's assume we have three users, whose ages are 10, 5, and 40.
 
 ```js
-await User.max('age'); // 40
-await User.max('age', { where: { age: { [Op.lt]: 20 } } }); // 10
-await User.min('age'); // 5
-await User.min('age', { where: { age: { [Op.gt]: 5 } } }); // 10
-await User.sum('age'); // 55
-await User.sum('age', { where: { age: { [Op.gt]: 5 } } }); // 50
+await User.max("age"); // 40
+await User.max("age", { where: { age: { [Op.lt]: 20 } } }); // 10
+await User.min("age"); // 5
+await User.min("age", { where: { age: { [Op.gt]: 5 } } }); // 10
+await User.sum("age"); // 55
+await User.sum("age", { where: { age: { [Op.gt]: 5 } } }); // 50
 ```
 
 ### `increment`, `decrement`
@@ -3653,15 +3707,11 @@ Sequelize also provides the `increment` convenience method.
 Let's assume we have a user, whose age is 10.
 
 ```js
-await User.increment({age: 5}, { where: { id: 1 } }) // Will increase age to 15
-await User.increment({age: -5}, { where: { id: 1 } }) // Will decrease age to 5
+await User.increment({ age: 5 }, { where: { id: 1 } }); // Will increase age to 15
+await User.increment({ age: -5 }, { where: { id: 1 } }); // Will decrease age to 5
 ```
 
-
-
 ## Migrations:
-
-
 
 A Migration in Sequelize is javascript file which exports two functions, `up` and `down`, that dictate how to perform the migration and undo it. You define those functions manually, but you don't call them manually; they will be called automatically by the CLI. In these functions, you should simply perform whatever queries you need, with the help of `sequelize.query` and whichever other methods Sequelize provides to you. There is no extra magic beyond that.
 
@@ -3685,10 +3735,10 @@ npx sequelize-cli init
 
 This will create following folders
 
--   `config`, contains config file, which tells CLI how to connect with database
--   `models`, contains all models for your project
--   `migrations`, contains all migration files
--   `seeders`, contains all seed files
+- `config`, contains config file, which tells CLI how to connect with database
+- `models`, contains all models for your project
+- `migrations`, contains all migration files
+- `seeders`, contains all seed files
 
 ### Configuration
 
@@ -3734,8 +3784,8 @@ Once you have properly configured CLI config file you are ready to create your f
 
 We will use `model:generate` command. This command requires two options:
 
--   `name`: the name of the model;
--   `attributes`: the list of model attributes.
+- `name`: the name of the model;
+- `attributes`: the list of model attributes.
 
 Let's create a model named `User`.
 
@@ -3745,8 +3795,8 @@ npx sequelize-cli model:generate --name User --attributes firstName:string,lastN
 
 This will:
 
--   Create a model file `user` in `models` folder;
--   Create a migration file with name like `XXXXXXXXXXXXXX-create-user.js` in `migrations` folder.
+- Create a model file `user` in `models` folder;
+- Create a migration file with name like `XXXXXXXXXXXXXX-create-user.js` in `migrations` folder.
 
 **Note:** _Sequelize will only use Model files, it's the table representation. On the other hand, the migration file is a change in that model or more specifically that table, used by CLI. Treat migrations like a commit or a log for some change in database._
 
@@ -3760,9 +3810,9 @@ npx sequelize-cli db:migrate
 
 This command will execute these steps:
 
--   Will ensure a table called `SequelizeMeta` in database. This table is used to record which migrations have run on the current database
--   Start looking for any migration files which haven't run yet. This is possible by checking `SequelizeMeta` table. In this case it will run `XXXXXXXXXXXXXX-create-user.js` migration, which we created in last step.
--   Creates a table called `Users` with all columns as specified in its migration file.
+- Will ensure a table called `SequelizeMeta` in database. This table is used to record which migrations have run on the current database
+- Start looking for any migration files which haven't run yet. This is possible by checking `SequelizeMeta` table. In this case it will run `XXXXXXXXXXXXXX-create-user.js` migration, which we created in last step.
+- Creates a table called `Users` with all columns as specified in its migration file.
 
 ## Undoing Migrations
 
@@ -4021,19 +4071,19 @@ module.exports = {
 
 This is a special configuration file. It lets you specify the following options that you would usually pass as arguments to CLI:
 
--   `env`: The environment to run the command in
--   `config`: The path to the config file
--   `options-path`: The path to a JSON file with additional options
--   `migrations-path`: The path to the migrations folder
--   `seeders-path`: The path to the seeders folder
--   `models-path`: The path to the models folder
--   `url`: The database connection string to use. Alternative to using --config files
--   `debug`: When available show various debug information
+- `env`: The environment to run the command in
+- `config`: The path to the config file
+- `options-path`: The path to a JSON file with additional options
+- `migrations-path`: The path to the migrations folder
+- `seeders-path`: The path to the seeders folder
+- `models-path`: The path to the models folder
+- `url`: The database connection string to use. Alternative to using --config files
+- `debug`: When available show various debug information
 
 Some scenarios where you can use it:
 
--   You want to override default path to `migrations`, `models`, `seeders` or `config` folder.
--   You want to rename `config.json` to something else like `database.json`
+- You want to override default path to `migrations`, `models`, `seeders` or `config` folder.
+- You want to rename `config.json` to something else like `database.json`
 
 And a whole lot more. Let's see how you can use this file for custom configuration.
 
@@ -4054,10 +4104,10 @@ module.exports = {
 
 With this config you are telling the CLI to:
 
--   Use `config/database.json` file for config settings;
--   Use `db/models` as models folder;
--   Use `db/seeders` as seeders folder;
--   Use `db/migrations` as migrations folder.
+- Use `config/database.json` file for config settings;
+- Use `db/models` as models folder;
+- Use `db/seeders` as seeders folder;
+- Use `db/migrations` as migrations folder.
 
 ### Dynamic configuration
 
@@ -4155,9 +4205,9 @@ Use environment variables for config settings. This is because secrets such as p
 
 There are three types of storage that you can use: `sequelize`, `json`, and `none`.
 
--   `sequelize` : stores migrations and seeds in a table on the sequelize database
--   `json` : stores migrations and seeds on a json file
--   `none` : does not store any migration/seed
+- `sequelize` : stores migrations and seeds in a table on the sequelize database
+- `json` : stores migrations and seeds on a json file
+- `none` : does not store any migration/seed
 
 #### Migration Storage
 

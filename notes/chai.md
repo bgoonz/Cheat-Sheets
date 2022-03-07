@@ -1,19 +1,21 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Chai.js
 category: JavaScript libraries
 layout: 2017/sheet
@@ -21,7 +23,8 @@ weight: -3
 updated: 2018-06-25
 version: chai v4.x
 description: |
-  expect(x).to.be.equal(y) 〉 assert.equal(x, y) 〉 .to.be.true 〉 jQuery, assertions, TDD and BDD, and other Chai examples.
+expect(x).to.be.equal(y) 〉 assert.equal(x, y) 〉 .to.be.true 〉 jQuery, assertions, TDD and BDD, and other Chai examples.
+
 ---
 
 ### Assert

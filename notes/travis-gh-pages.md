@@ -18,13 +18,13 @@ travis encrypt -r user/repo GITHUB_TOKEN=[the token here]
 ### Make it run the deploy script on deploy
 
 ```yaml
- # .travis.yml
+# .travis.yml
 script:
   - bash ./scripts/deploy-to-gh-pages.sh
 env:
   global:
     - GITHUB_REPO: "user/repo"
-    - secure: "nlnXJW/imf/w..."  # <-- from travis-encrypt
+    - secure: "nlnXJW/imf/w..." # <-- from travis-encrypt
 ```
 
 ### Write deployer

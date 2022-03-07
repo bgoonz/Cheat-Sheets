@@ -5,8 +5,6 @@ coverY: 0
 
 # Github Cheat Sheet
 
-
-
 Git is a distributed version control and source code management system.
 
 It does this through a series of snapshots of your project, and it works with those snapshots to provide you with functionality to version and manage your source code.
@@ -19,21 +17,21 @@ Version control is a system that records changes to a file(s), over time.
 
 #### Centralized Versioning vs. Distributed Versioning
 
-* Centralized version control focuses on synchronizing, tracking, and backing up files.
-* Distributed version control focuses on sharing changes. Every change has a unique id.
-* Distributed systems have no defined structure. You could easily have a SVN style, centralized system, with git.
+- Centralized version control focuses on synchronizing, tracking, and backing up files.
+- Distributed version control focuses on sharing changes. Every change has a unique id.
+- Distributed systems have no defined structure. You could easily have a SVN style, centralized system, with git.
 
 [Additional Information](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
 #### Why Use Git?
 
-* Can work offline.
-* Collaborating with others is easy!
-* Branching is easy!
-* Branching is fast!
-* Merging is easy!
-* Git is fast.
-* Git is flexible.
+- Can work offline.
+- Collaborating with others is easy!
+- Branching is easy!
+- Branching is fast!
+- Merging is easy!
+- Git is fast.
+- Git is flexible.
 
 ### Git Architecture
 
@@ -73,14 +71,14 @@ HEAD is a pointer that points to the current branch. A repository only has 1 _ac
 
 #### Stages of Git
 
-* Modified - Changes have been made to a file but file has not been committed to Git Database yet
-* Staged - Marks a modified file to go into your next commit snapshot
-* Committed - Files have been committed to the Git Database
+- Modified - Changes have been made to a file but file has not been committed to Git Database yet
+- Staged - Marks a modified file to go into your next commit snapshot
+- Committed - Files have been committed to the Git Database
 
 #### Conceptual Resources
 
-* [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
-* [Git For Designers](http://hoth.entp.com/output/git\_for\_designers.html)
+- [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
+- [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
 
 ### Commands
 
@@ -531,16 +529,16 @@ $ git rm /pather/to/the/file/HelloWorld.c
 
 ### Further Information
 
-* [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
-* [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranching.js.org)
-* [Udemy Git Tutorial: A Comprehensive Guide](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/)
-* [Git Immersion - A Guided tour that walks through the fundamentals of git](http://gitimmersion.com)
-* [git-scm - Video Tutorials](http://git-scm.com/videos)
-* [git-scm - Documentation](http://git-scm.com/docs)
-* [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
-* [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF\_git\_cheatsheet.pdf)
-* [GitGuys](http://www.gitguys.com)
-* [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
-* [Pro Git](http://www.git-scm.com/book/en/v2)
-* [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-* [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD\_iKpNC0bGHxGhcx)
+- [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
+- [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranching.js.org)
+- [Udemy Git Tutorial: A Comprehensive Guide](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/)
+- [Git Immersion - A Guided tour that walks through the fundamentals of git](http://gitimmersion.com)
+- [git-scm - Video Tutorials](http://git-scm.com/videos)
+- [git-scm - Documentation](http://git-scm.com/docs)
+- [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
+- [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf)
+- [GitGuys](http://www.gitguys.com)
+- [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
+- [Pro Git](http://www.git-scm.com/book/en/v2)
+- [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+- [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)

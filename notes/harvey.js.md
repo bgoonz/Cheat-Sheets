@@ -1,24 +1,27 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: Harvey.js
 category: JavaScript libraries
 layout: 2017/sheet
 intro: |
-  [Harvey.js](http://harvesthq.github.io/harvey/) helps you build responsive interfaces.
+[Harvey.js](http://harvesthq.github.io/harvey/) helps you build responsive interfaces.
+
 ---
 
 ### Usage

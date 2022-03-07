@@ -1,30 +1,34 @@
 ---
 title: title
 subtitle: subtitle
-date: '2022-01-03'
+date: "2022-01-03"
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: CSS
 category: CSS
 layout: 2017/sheet
 weight: -1
 keywords:
-  - "margin, padding, border"
-  - "div, .class, #id, [attr]"
-  - "font, background"
-  - "display: block, inline, flex"
-  - Selectors
-  - Properties
+
+- "margin, padding, border"
+- "div, .class, #id, [attr]"
+- "font, background"
+- "display: block, inline, flex"
+- Selectors
+- Properties
+
 ---
 
 ## Basics
