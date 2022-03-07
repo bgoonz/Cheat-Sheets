@@ -173,7 +173,7 @@ text-transform: lowercase; /* hello */
 
 ```css
 background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('background.jpg') center center / cover, #333;
+  url("background.jpg") center center / cover, #333;
 ```
 
 ### Animation

@@ -1,11 +1,11 @@
 # CSS Cheat Sheet
 
-
-
 #### Heading kerning pairs and ligature
 
 ```css
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-rendering: optimizeLegibility;
 }
 ```
@@ -20,7 +20,13 @@ overflow-y: auto;
 #### Gradient text
 
 ```css
-background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
+background: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  from(#eee),
+  to(#333)
+);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 ```
@@ -44,12 +50,13 @@ document.ontouchstart = (e) ->
 
 ```scss
 %ios-scrollable {
-  &, >div {
+  &,
+  > div {
     -webkit-overflow-scrolling: touch;
     overflow: auto;
   }
 
-  >div {
+  > div {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,9 +72,9 @@ Relevant in iOS6, but maybe not anymore.
 
 ```css
 * {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-user-select: none;                /* disable text select */
-  -webkit-touch-callout: none;              /* disable callout, image save panel (popup) */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none; /* disable text select */
+  -webkit-touch-callout: none; /* disable callout, image save panel (popup) */
   -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
 }
 
@@ -92,7 +99,9 @@ Not recommended, but here they are if you ever need them. Note that vendor prefi
 
 ```css
 @-moz-document url-prefix() {
-  .box { color: blue; }
+  .box {
+    color: blue;
+  }
 }
 ```
 

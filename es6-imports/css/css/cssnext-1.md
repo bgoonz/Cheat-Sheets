@@ -21,8 +21,8 @@ body {
 a {
   /* Adjustments */
   color: color(red alpha(-10%));
-  color: color(red tint(-10%));    /* lighten */
-  color: color(red shade(-10%));   /* darken */
+  color: color(red tint(-10%)); /* lighten */
+  color: color(red shade(-10%)); /* darken */
 
   /* Absolute */
   color: color(red alpha(50%));
@@ -30,15 +30,15 @@ a {
   color: color(red saturation(100%));
   color: color(red lightness(50%));
 
-  color: gray(33);       /* rgb(33, 33, 33) */
-  color: gray(33%);      /* rgb(84, 84, 84) */
+  color: gray(33); /* rgb(33, 33, 33) */
+  color: gray(33%); /* rgb(84, 84, 84) */
   color: gray(33%, 50%); /* rgba(84, 84, 84, 0.5) */
-  color: #0000ff80;      /* rgba(0, 0, 255, 0.5) */
+  color: #0000ff80; /* rgba(0, 0, 255, 0.5) */
 
-  color: hwb(90, 0%, 0%, 0.5);     /* like hsl() but easier for humans */
-  color: hsl(90deg 90% 70%);       /* hsl(180, 90%, 70%) -- supports deg */
+  color: hwb(90, 0%, 0%, 0.5); /* like hsl() but easier for humans */
+  color: hsl(90deg 90% 70%); /* hsl(180, 90%, 70%) -- supports deg */
   color: hsl(90deg 90% 70% / 30%); /* hsla(180, 90%, 70%, 0.3) */
-  color: rgb(30 60 90 / 30%);      /* rgba(30, 60, 90, 0.3) */
+  color: rgb(30 60 90 / 30%); /* rgba(30, 60, 90, 0.3) */
 }
 ```
 
@@ -52,7 +52,7 @@ Also see [colorme.io](http://colorme.io).
     display: flex;
     align-items: center;
     justify-content: center;
-  };
+  }
 }
 
 .centered {
@@ -120,13 +120,21 @@ a::before { ··· }         /* a:before -- for IE compatibility */
 
 ```scss
 /* font-feature-settings fallback */
-h2 { font-variant-caps: small-caps; }
-table { font-variant-numeric: lining-nums; }
+h2 {
+  font-variant-caps: small-caps;
+}
+table {
+  font-variant-numeric: lining-nums;
+}
 ```
 
 ```scss
-div { filter: blur(4px); }          /* svg filter fallback */
-div { overflow-wrap: break-word; }  /* word-wrap fallback */
+div {
+  filter: blur(4px);
+} /* svg filter fallback */
+div {
+  overflow-wrap: break-word;
+} /* word-wrap fallback */
 ```
 
 #### Autoprefixing
@@ -159,5 +167,5 @@ Sets animation, background, margin, padding, and so on.
 
 {: .-one-column}
 
-* Based on cssnext 2.9.0.
-* [http://cssnext.io/features/](http://cssnext.io/features/)
+- Based on cssnext 2.9.0.
+- [http://cssnext.io/features/](http://cssnext.io/features/)

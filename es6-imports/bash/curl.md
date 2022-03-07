@@ -24,7 +24,7 @@
 
 ```bash
 -X POST          # --request
--L               # follow link if page redirects 
+-L               # follow link if page redirects
 ```
 
 #### Data

@@ -5,79 +5,79 @@
 > Global object: properties
 
 ```js
-Object.length(obj)
+Object.length(obj);
 ```
 
 > length is a property of a function object, and indicates how many arguments the function expects, i.e. the number of formal parameters. This number does not include the rest parameter. Has a value of 1.
 
 ```js
-Object.prototype
+Object.prototype;
 ```
 
 > Represents the Object prototype object and allows to add new properties and methods to all objects of type Object. Methods of the Object constructor
 
 ```js
-Object.assign(target, ...sources)
+Object.assign(target, ...sources);
 ```
 
 > Copies the values of all enumerable own properties from one or more source objects to a target object. method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object
 
 ```js
-Object.create(MyObject)
+Object.create(MyObject);
 ```
 
 > Creates a new object with the specified prototype object and properties. The object which should be the prototype of the newly-created object.
 
 ```js
-Object.defineProperty(obj, prop, descriptor)
+Object.defineProperty(obj, prop, descriptor);
 ```
 
 > Adds the named property described by a given descriptor to an object.
 
 ```js
-Object.defineProperties(obj, props)
+Object.defineProperties(obj, props);
 ```
 
 > Adds the named properties described by the given descriptors to an object.
 
 ```js
-Object.entries(obj)
+Object.entries(obj);
 ```
 
 > Returns an array containing all of the \[key, value] pairs of a given object's own enumerable string properties.
 
 ```js
-Object.freeze(obj)
+Object.freeze(obj);
 ```
 
 > Freezes an object: other code can't delete or change any properties.
 
 ```js
-Object.getOwnPropertyDescriptor(obj, prop)
+Object.getOwnPropertyDescriptor(obj, prop);
 ```
 
 > Returns a property descriptor for a named property on an object.
 
 ```js
-Object.getOwnPropertyDescriptors(obj)
+Object.getOwnPropertyDescriptors(obj);
 ```
 
 > Returns an object containing all own property descriptors for an object.
 
 ```js
-Object.getOwnPropertyNames(obj)
+Object.getOwnPropertyNames(obj);
 ```
 
 > Returns an array containing the names of all of the given object's own enumerable and non-enumerable properties.
 
 ```js
-Object.getOwnPropertySymbols(obj)
+Object.getOwnPropertySymbols(obj);
 ```
 
 > Returns an array of all symbol properties found directly upon a given object.
 
 ```js
-Object.getPrototypeOf(obj)
+Object.getPrototypeOf(obj);
 ```
 
 > Returns the prototype of the specified object.
@@ -89,97 +89,97 @@ Object.is(value1, value2);
 > Compares if two values are the same value. Equates all NaN values (which differs from both Abstract Equality Comparison and Strict Equality Comparison).
 
 ```js
-Object.isExtensible(obj)
+Object.isExtensible(obj);
 ```
 
 > Determines if extending of an object is allowed.
 
 ```js
-Object.isFrozen(obj)
+Object.isFrozen(obj);
 ```
 
 > Determines if an object was frozen.
 
 ```js
-Object.isSealed(obj)
+Object.isSealed(obj);
 ```
 
 > Determines if an object is sealed.
 
 ```js
-Object.keys(obj)
+Object.keys(obj);
 ```
 
 > Returns an array containing the names of all of the given object's own enumerable string properties.
 
 ```js
-Object.preventExtensions(obj)
+Object.preventExtensions(obj);
 ```
 
 > Prevents any extensions of an object.
 
 ```js
-Object.seal(obj)
+Object.seal(obj);
 ```
 
 > Prevents other code from deleting properties of an object.
 
 ```js
-Object.setPrototypeOf(obj, prototype)
+Object.setPrototypeOf(obj, prototype);
 ```
 
 > Sets the prototype (i.e., the internal \[\[Prototype]] property).
 
 ```js
-Object.values(obj)
+Object.values(obj);
 ```
 
 > Returns an array containing the values that correspond to all of a given object's own enumerable string properties. Object instances and Object prototype object (Object.prototype.property or Object.prototype.method()) Properties
 
 ```js
-obj.constructor
+obj.constructor;
 ```
 
 > Specifies the function that creates an object's prototype.
 
 ```js
-obj.__proto__
+obj.__proto__;
 ```
 
 > Points to the object which was used as prototype when the object was instantiated. Methods
 
 ```js
-obj.hasOwnProperty(prop)
+obj.hasOwnProperty(prop);
 ```
 
 > Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain.
 
 ```js
-prototypeObj.isPrototypeOf(object)
+prototypeObj.isPrototypeOf(object);
 ```
 
 > Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object.
 
 ```js
-obj.propertyIsEnumerable(prop)
+obj.propertyIsEnumerable(prop);
 ```
 
 > Returns a boolean indicating if the internal ECMAScript \[\[Enumerable]] attribute is set.
 
 ```js
-obj.toLocaleString()
+obj.toLocaleString();
 ```
 
 > Calls toString().
 
 ```js
-obj.toString()
+obj.toString();
 ```
 
 > Returns a string representation of the object.
 
 ```js
-object.valueOf()
+object.valueOf();
 ```
 
 > Returns the primitive value of the specified object.
@@ -187,13 +187,13 @@ object.valueOf()
 ### Global object: properties
 
 ```js
-Array.length
+Array.length;
 ```
 
 > Reflects the number of elements in an array.
 
 ```js
-Array.prototype
+Array.prototype;
 ```
 
 > Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.
@@ -207,7 +207,7 @@ Array.from(arrayLike[, mapFn[, thisArg]])
 > Creates a new Array instance from an array-like or iterable object.
 
 ```js
-Array.isArray(obj)
+Array.isArray(obj);
 ```
 
 > Returns true if a variable is an array, if not false.
@@ -219,25 +219,25 @@ Array.of(element0[, element1[, ...[, elementN]]]);
 > Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. Instance: properties
 
 ```js
-arr.length
+arr.length;
 ```
 
 > Reflects the number of elements in an array. Instance: mutator methods
 
 ```js
-arr.copyWithin(target, start, end)
+arr.copyWithin(target, start, end);
 ```
 
 > Copies a sequence of array elements within the array.
 
 ```js
-arr.fill(value, start, end)
+arr.fill(value, start, end);
 ```
 
 > Fills all the elements of an array from a start index to an end index with a static value.
 
 ```js
-arr.pop()
+arr.pop();
 ```
 
 > Removes the last element from an array and returns that element.
@@ -249,19 +249,19 @@ arr.push([element1[, ...[, elementN]]])
 > Adds one or more elements to the end of an array and returns the new length of the array.
 
 ```js
-arr.reverse()
+arr.reverse();
 ```
 
 > Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.
 
 ```js
-arr.shift()
+arr.shift();
 ```
 
 > Removes the first element from an array and returns that element.
 
 ```js
-arr.sort()
+arr.sort();
 ```
 
 > Sorts the elements of an array in place and returns the array.
@@ -285,7 +285,7 @@ arr.concat(value1[, value2[, ...[, valueN]]])
 > Returns a new array comprised of this array joined with other array(s) and/or value(s).
 
 ```js
-arr.includes(searchElement, fromIndex)
+arr.includes(searchElement, fromIndex);
 ```
 
 > Determines whether an array contains a certain element, returning true or false as appropriate.
@@ -297,37 +297,37 @@ arr.indexOf(searchElement[, fromIndex])
 > Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
 
 ```js
-arr.join(separator)
+arr.join(separator);
 ```
 
 > Joins all elements of an array into a string.
 
 ```js
-arr.lastIndexOf(searchElement, fromIndex)
+arr.lastIndexOf(searchElement, fromIndex);
 ```
 
 > Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
 
 ```js
-arr.slice(begin, end)
+arr.slice(begin, end);
 ```
 
 > Extracts a section of an array and returns a new array.
 
 ```js
-arr.toString()
+arr.toString();
 ```
 
 > Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.
 
 ```js
-arr.toLocaleString(locales, options)
+arr.toLocaleString(locales, options);
 ```
 
 > Returns a localized string representing the array and its elements. Overrides the Object.prototype.toLocaleString() method. Instance: iteration methods
 
 ```js
-arr.entries()
+arr.entries();
 ```
 
 > Returns a new Array Iterator object that contains the key/value pairs for each index in the array.
@@ -363,7 +363,7 @@ arr.forEach(callback[, thisArg])
 > Calls a function for each element in the array.
 
 ```js
-arr.keys()
+arr.keys();
 ```
 
 > Returns a new Array Iterator that contains the keys for each index in the array.
@@ -393,29 +393,31 @@ arr.some(callback[, initialValue])
 > Returns true if at least one element in this array satisfies the provided testing function.
 
 ```js
-arr.values()
+arr.values();
 ```
 
 > Returns a new Array Iterator object that contains the values for each index in the array.
 
-***
+---
 
 ## NodeJS
 
-***
+---
 
 ```js
-let http = require('http');
+let http = require("http");
 ```
 
 > An example of a web server written with Node which responds with 'Hello World'. To run the server, put the code into a file called example.js and execute it with the node program.
 
 ```js
-http.createServer(function (request, response) {
-response.writeHead(200, {'Content-Type': 'text/plain'});
-response.end('Hello World\n');
-}).listen(8124);
-console.log('Server running at http://127.0.0.1:8124/');
+http
+  .createServer(function (request, response) {
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.end("Hello World\n");
+  })
+  .listen(8124);
+console.log("Server running at http://127.0.0.1:8124/");
 ```
 
 ### GLOBAL OBJECTS
@@ -425,43 +427,43 @@ console.log('Server running at http://127.0.0.1:8124/');
 > That means that in browsers if you're in the global scope let something will define a global variable. In Node this is different. The top-level scope is not the global scope; let something inside a Node module will be local to that module.
 
 ```js
-__filename;  
+__filename;
 ```
 
-***
+---
 
 > The filename of the code being executed. (absolute path) \_\_dirname;
 
 ```
 >  The name of the directory that the currently executing script resides in. (absolute path)
-module;      
+module;
 ```
 
-***
+---
 
 > A reference to the current module. In particular module.exports is used for defining what a module exports and makes available through require().
 
 ```js
-exports;     
+exports;
 ```
 
-***
+---
 
 > A reference to the module.exports that is shorter to type.
 
 ```js
-process;     
+process;
 ```
 
-***
+---
 
 > The process object is a global object and can be accessed from anywhere. It is an instance of EventEmitter.
 
 ```js
-Buffer;      
+Buffer;
 ```
 
-***
+---
 
 > The Buffer class is a global type for dealing with binary data directly.
 
@@ -469,7 +471,7 @@ Buffer;
 console.log([data], [...]);
 ```
 
-***
+---
 
 > Prints to stdout with newline.
 
@@ -483,7 +485,7 @@ console.info([data], [...]);
 console.error([data], [...]);
 ```
 
-***
+---
 
 > Same as console.log but prints to stderr.
 
@@ -491,68 +493,68 @@ console.error([data], [...]);
 console.warn([data], [...]);
 ```
 
-***
+---
 
 > Same as console.error.
 
 ```js
-console.dir(obj);       
+console.dir(obj);
 ```
 
 > Uses util.inspect on obj and prints resulting string to stdout.
 
 ```js
-console.time(label);    
+console.time(label);
 ```
 
-***
+---
 
 > Mark a time.
 
 ```js
-console.timeEnd(label); 
+console.timeEnd(label);
 ```
 
 > Finish timer, record output.
 
 ```js
-console.trace(label);   
+console.trace(label);
 ```
 
-***
+---
 
 > Print a stack trace to stderr of the current position.
 
 ```js
-console.assert(expression, [message]);  
+console.assert(expression, [message]);
 ```
 
-***
+---
 
 > Same as assert.ok() where if the expression evaluates as false throw an AssertionError with message.
 
 ```js
-setTimeout(callback, delay, [arg], [...]);   
+setTimeout(callback, delay, [arg], [...]);
 ```
 
 > To schedule execution of a one-time callback after delay milliseconds. Optionally you can also pass arguments to the callback.
 
 ```js
-clearTimeout(t);             
+clearTimeout(t);
 ```
 
 > Stop a timer that was previously created with setTimeout().
 
 ```js
-setInterval(callback, delay, [arg], [...]);  
+setInterval(callback, delay, [arg], [...]);
 ```
 
-***
+---
 
 > To schedule the repeated execution of callback every delay milliseconds. Optionally you can also pass arguments to the callback.
 
 ```js
-clearInterval(t);            
+clearInterval(t);
 ```
 
 > Stop a timer that was previously created with setInterval().
@@ -564,13 +566,13 @@ setImmediate(callback, [arg], [...]);
 > To schedule the "immediate" execution of callback after I/O events callbacks and before setTimeout and setInterval.
 
 ```js
-clearImmediate(immediateObject);             
+clearImmediate(immediateObject);
 ```
 
 > Stop a timer that was previously created with setImmediate().
 
 ```js
-unref();  
+unref();
 ```
 
 > Allow you to create a timer that is active but if it is the only item left in the event loop, node won't keep the program running.
@@ -587,24 +589,24 @@ let module = require('./module.js');
 > Loads the module module.js in the same directory.
 
 ```js
-module.require('./another_module.js');  
+module.require("./another_module.js");
 ```
 
-***
+---
 
-> load another\_module as if require() was called from the module itself.
+> load another_module as if require() was called from the module itself.
 
 ```js
-module.id;        
+module.id;
 ```
 
 > The identifier for the module. Typically this is the fully resolved filename.
 
 ```js
-module.filename;  
+module.filename;
 ```
 
-***
+---
 
 > The fully resolved filename to the module.
 
@@ -629,16 +631,16 @@ module.parent;
 
 ```js
 
-module.children;  
+module.children;
 ````
 
-***
+---
 
 > The module objects required by this one.
 
 ```js
 exports.area = function (r) {
-return Math.PI * r * r;
+  return Math.PI * r * r;
 };
 ```
 
@@ -657,7 +659,7 @@ return {
  * http://nodejs.org/api/process.html
 */
 > ---------------------------------------------------------------------------\\
-process.on('exit', function(code) {});              
+process.on('exit', function(code) {});
 ```
 
 > Emitted when the process is about to exit process.on('uncaughtException', function(err) {});
@@ -665,164 +667,164 @@ process.on('exit', function(code) {});
 ```
 ---
 >  Emitted when an exception bubbles all the way back to the event loop. (should not be used)
-process.stdout;              
+process.stdout;
 ```
 
 > A writable stream to stdout.
 
 ```js
-process.stderr;              
+process.stderr;
 ```
 
 > A writable stream to stderr.
 
 ```js
-process.stdin;            
+process.stdin;
 ```
 
-***
+---
 
 > A readable stream for stdin.
 
 ````js
-process.argv;             
+process.argv;
 >  An array containing the command line arguments.
 
 
 
 ```js
 
-process.env;              
+process.env;
 ````
 
 > An object containing the user environment.
 
 ```js
-process.execPath;         
+process.execPath;
 ```
 
 > This is the absolute pathname of the executable that started the process.
 
 ```js
-process.execArgv;         
+process.execArgv;
 ```
 
 > This is the set of node-specific command line options from the executable that started the process.
 
 ````js
-process.arch;             
+process.arch;
 >  What processor architecture you're running on: 'arm', 'ia32', or 'x64'.
 
 
 
 ```js
 
-process.config;              
+process.config;
 ````
 
 > An Object containing the JavaScript representation of the configure options that were used to compile the current node executable.
 
 ```js
-process.pid;              
+process.pid;
 ```
 
 > The PID of the process.
 
 ```js
-process.platform;         
+process.platform;
 ```
 
 > What platform you're running on: 'darwin', 'freebsd', 'linux', 'sunos' or 'win32'.
 
 ```js
-process.title;            
+process.title;
 ```
 
-***
+---
 
 > Getter/setter to set what is displayed in 'ps'.
 
 ```js
-process.version;              
+process.version;
 ```
 
-> A compiled-in property t hat exposes NODE\_VERSION.
+> A compiled-in property t hat exposes NODE_VERSION.
 
 ```js
-process.versions;         
+process.versions;
 ```
 
 > A property exposing version strings of node and its dependencies.
 
 ```js
-> process.abort();              
+> process.abort();
 ```
 
 > This causes node to emit an abort. This will cause node to exit and generate a core file.
 
 ````js
-process.chdir(dir);       
+process.chdir(dir);
 >  Changes the current working directory of the process or throws an exception if that fails.
 
 
 
 ```js
 
-process.cwd();            
+process.cwd();
 ````
 
-***
+---
 
 > Returns the current working directory of the process. ?process.exit(\[code]);\
 > Ends the process with the specified code. If omitted, exit uses the 'success' code 0.
 
 ```js
-process.getgid();         
+process.getgid();
 ```
 
 > Gets the group identity of the process.
 
 ````js
-process.setgid(id);       
+process.setgid(id);
 >  Sets the group identity of the process.
 
 
 
 ```js
 
-process.getuid();         
+process.getuid();
 ````
 
 > Gets the user identity of the process.
 
 ````js
-process.setuid(id);       
+process.setuid(id);
 >  Sets the user identity of the process.
 
 
 
 ```js
 
-process.getgroups();      
+process.getgroups();
 ````
 
-***
+---
 
 > Returns an array with the supplementary group IDs.
 
 ```js
-process.setgroups(grps);  
+process.setgroups(grps);
 ```
 
-***
+---
 
 > Sets the supplementary group IDs.
 
 ```js
-process.initgroups(user, extra_grp);  
+process.initgroups(user, extra_grp);
 ```
 
-***
+---
 
 > Reads /etc/group and initializes the group access list, using all groups of which the user is a member.
 
@@ -839,13 +841,13 @@ process.memoryUsage();
 > Returns an object describing the memory usage of the Node process measured in bytes.
 
 ```js
-process.nextTick(callback);              
+process.nextTick(callback);
 ```
 
 > On the next loop around the event loop call this callback.
 
 ````js
-process.maxTickDepth;                 
+process.maxTickDepth;
 >  Callbacks passed to process.nextTick will usually be called at the end of the current flow of execution, and are thus approximately as fast as calling a function synchronously.
 
 
@@ -882,27 +884,27 @@ process.hrtime();
 
 ```js
 
-ChildProcess;                                                 
+ChildProcess;
 >  Class. ChildProcess is an EventEmitter.
 
 
 
 ```js
 
-child.stdin;                                                  
+child.stdin;
 >  A Writable Stream that represents the child process's stdin
-child.stdout;                                                 
+child.stdout;
 >  A Readable Stream that represents the child process's stdout
-child.stderr;                                                 
+child.stderr;
 >  A Readable Stream that represents the child process's stderr.
 
 
 
 ```js
 
-child.pid;                                                    
+child.pid;
 >  The PID of the child process
-child.connected;                                              
+child.connected;
 >  If .connected is false, it is no longer possible to send messages
 child.kill([signal]);
 ````
@@ -928,17 +930,17 @@ child_process.spawn(command, [args], [options]);
 > Launches a new process with the given command, with command line arguments in args. If omitted, args defaults to an empty Array.
 
 ````js
-child_process.exec(command, [options], callback);             
+child_process.exec(command, [options], callback);
 >  Runs a command in a shell and buffers the output.
 
 
 
 ```js
 
-child_process.execFile(file, [args], [options], [callback]);  
+child_process.execFile(file, [args], [options], [callback]);
 ````
 
-***
+---
 
 > Runs a command in a shell and buffers the output.
 
@@ -946,7 +948,7 @@ child_process.execFile(file, [args], [options], [callback]);
 child_process.fork(modulePath, [args], [options]);
 ```
 
-***
+---
 
 > This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in.
 
@@ -999,10 +1001,10 @@ util.print([...]);
 
 ```js
 
-util.inspect(object, [opts]);  
+util.inspect(object, [opts]);
 ````
 
-***
+---
 
 > Return a string representation of object, which is useful for debugging. (options: showHidden, depth, colors, customInspect) util.isArray(object);
 
@@ -1013,35 +1015,35 @@ util.inspect(object, [opts]);
 
 ```js
 
-util.isRegExp(object);         
+util.isRegExp(object);
 ````
 
 > Returns true if the given "object" is a RegExp. false otherwise.
 
 ```js
-util.isDate(object);              
+util.isDate(object);
 ```
 
 > Returns true if the given "object" is a Date. false otherwise.
 
 ```js
-util.isError(object);              
+util.isError(object);
 ```
 
 > Returns true if the given "object" is an Error. false otherwise.
 
 ````js
-util.promisify(fn)             
+util.promisify(fn)
 >  Takes a function whose last argument is a callback and returns a version that returns promises.
 
 
 
 ```js
 
-util.inherits(constructor, superConstructor);  
+util.inherits(constructor, superConstructor);
 ````
 
-***
+---
 
 > Inherit the prototype methods from one constructor into another.
 
@@ -1057,13 +1059,13 @@ util.inherits(constructor, superConstructor);
 > To access the EventEmitter class, require('events').EventEmitter. All EventEmitters emit the event 'newListener' when new listeners are added and 'removeListener' when a listener is removed.
 
 ```js
-emitter.addListener(event, listener);        
+emitter.addListener(event, listener);
 ```
 
 > Adds a listener to the end of the listeners array for the specified event.
 
 ````js
-emitter.on(event, listener); 
+emitter.on(event, listener);
 >  Same as emitter.addListener().
 
 
@@ -1076,7 +1078,7 @@ emitter.once(event, listener);
 > Adds a one time listener for the event. This listener is invoked only the next time the event is fired, after which it is removed.
 
 ````js
-emitter.removeListener(event, listener);     
+emitter.removeListener(event, listener);
 >  Remove a listener from the listener array for the specified event.
 
 
@@ -1089,81 +1091,81 @@ emitter.removeAllListeners([event]);
 > Removes all listeners, or those of the specified event.
 
 ````js
-emitter.setMaxListeners(n);  
+emitter.setMaxListeners(n);
 >  By default EventEmitters will print a warning if more than 10 listeners are added for a particular event.
 
 
 
 ```js
 
-emitter.listeners(event);    
+emitter.listeners(event);
 >  Returns an array of listeners for the specified event.
 
 
 
 ```js
 
-emitter.emit(event, [arg1], [arg2], [...]);  
+emitter.emit(event, [arg1], [arg2], [...]);
 ````
 
-***
+---
 
 > Execute each of the listeners in order with the supplied arguments. Returns true if event had listeners, false otherwise.
 
 ```js
-EventEmitter.listenerCount(emitter, event);  
+EventEmitter.listenerCount(emitter, event);
 ```
 
-***
+---
 
 > Return the number of listeners for a given event. A stream is an abstract interface implemented by various objects in Node. For example a request to an HTTP server is a stream, as is stdout. Streams are readable, writable, or both. All streams are instances of EventEmitter. The Readable stream interface is the abstraction for a source of data that you are reading from. In other words, data comes out of a Readable stream. A Readable stream will not start emitting data until you indicate that you are ready to receive it. Examples of readable streams include: http responses on the client, http requests on the server, fs read streams zlib streams, crypto streams, tcp sockets, child process stdout and stderr, process.stdin.
 
 ```js
 let readable = getReadableStreamSomehow();
-readable.on('readable', function() {});   
+readable.on("readable", function () {});
 ```
 
 > When a chunk of data can be read from the stream, it will emit a 'readable' event.
 
 ```js
-readable.on('data', function(chunk) {});  
+readable.on("data", function (chunk) {});
 ```
 
-***
+---
 
 > If you attach a data event listener, then it will switch the stream into flowing mode, and data will be passed to your handler as soon as it is available.
 
 ```js
-readable.on('end', function() {});        
+readable.on("end", function () {});
 ```
 
 > This event fires when there will be no more data to read.
 
 ```js
-readable.on('close', function() {});      
+readable.on("close", function () {});
 ```
 
-***
+---
 
 > Emitted when the underlying resource (for example, the backing file descriptor) has been closed. Not all streams will emit this.
 
 ```js
-readable.on('error', function() {});      
+readable.on("error", function () {});
 ```
 
-***
+---
 
 > Emitted if there was an error receiving data. The read() method pulls some data out of the internal buffer and returns it. If there is no data available, then it will return null. This method should only be called in non-flowing mode. In flowing-mode, this method is called automatically until the internal buffer is drained.
 
 ```js
 readable.read([size]);
-readable.setEncoding(encoding);              
+readable.setEncoding(encoding);
 ```
 
 > Call this function to cause the stream to return strings of the specified encoding instead of Buffer objects.
 
 ```js
-readable.resume();      
+readable.resume();
 ```
 
 > This method will cause the readable stream to resume emitting data events.
@@ -1187,7 +1189,7 @@ readable.unpipe([destination]);
 > This method will remove the hooks set up for a previous pipe() call. If the destination is not specified, then all pipes are removed.
 
 ````js
-readable.unshift(chunk);  
+readable.unshift(chunk);
 >  This is useful in certain cases where a stream is being consumed by a parser, which needs to "un-consume" some data that it has optimistically pulled out of the source, so that the stream can be passed on to some other party.
 >  The Writable stream interface is an abstraction for a destination that you are writing data to.
  > Examples of writable streams include: http requests on the client, http responses on the server, fs write streams,
@@ -1198,51 +1200,51 @@ readable.unshift(chunk);
 ```js
 
 let writer = getWritableStreamSomehow();
-writable.write(chunk, [encoding], [callback]);  
+writable.write(chunk, [encoding], [callback]);
 ````
 
-***
+---
 
 > This method writes some data to the underlying system, and calls the supplied callback once the data has been fully handled.
 
 ````js
-writer.once('drain', write);    
+writer.once('drain', write);
 >  If a writable.write(chunk) call returns false, then the drain event will indicate when it is appropriate to begin writing more data to the stream.
 
 
 
 ```js
 
-writable.end([chunk], [encoding], [callback]);  
+writable.end([chunk], [encoding], [callback]);
 ````
 
-***
+---
 
 > Call this method when no more data will be written to the stream.
 
 ````js
-writer.on('finish', function() {});             
+writer.on('finish', function() {});
 >  When the end() method has been called, and all data has been flushed to the underlying system, this event is emitted.
 
 
 
 ```js
 
-writer.on('pipe', function(src) {});            
+writer.on('pipe', function(src) {});
 ````
 
-***
+---
 
 > This is emitted whenever the pipe() method is called on a readable stream, adding this writable to its set of destinations.
 
 ```js
-writer.on('unpipe', function(src) {});              
+writer.on("unpipe", function (src) {});
 ```
 
 > This is emitted whenever the unpipe() method is called on a readable stream, removing this writable from its set of destinations.
 
 ```js
-writer.on('error', function(src) {});              
+writer.on("error", function (src) {});
 ```
 
 > Emitted if there was an error when writing or piping data. Duplex streams are streams that implement both the Readable and Writable interfaces. See above for usage. Examples of Duplex streams include: tcp sockets, zlib streams, crypto streams. Transform streams are Duplex streams where the output is in some way computed from the input. They implement both the Readable and Writable interfaces. See above for usage. Examples of Transform streams include: zlib streams, crypto streams.
@@ -1260,71 +1262,71 @@ writer.on('error', function(src) {});
 
 ```js
 
-fs.rename(oldPath, newPath, callback);  
+fs.rename(oldPath, newPath, callback);
 ````
 
-***
+---
 
 > Asynchronous rename. No arguments other than a possible exception are given to the completion callback.Asynchronous ftruncate. No arguments other than a possible exception are given to the completion callback.
 
 ```js
-fs.renameSync(oldPath, newPath);        
+fs.renameSync(oldPath, newPath);
 ```
 
 > Synchronous rename.
 
 ```js
-fs.ftruncate(fd, len, callback);        
+fs.ftruncate(fd, len, callback);
 ```
 
 > Asynchronous ftruncate. No arguments other than a possible exception are given to the completion callback.
 
 ```js
-fs.ftruncateSync(fd, len);              
+fs.ftruncateSync(fd, len);
 ```
 
 > Synchronous ftruncate.
 
 ````js
-fs.truncate(path, len, callback);       
+fs.truncate(path, len, callback);
 >  Asynchronous truncate. No arguments other than a possible exception are given to the completion callback.
 
 
 
 ```js
 
-fs.truncateSync(path, len);             
+fs.truncateSync(path, len);
 >  Synchronous truncate.
 
 
 
 ```js
 
-fs.chown(path, uid, gid, callback);     
+fs.chown(path, uid, gid, callback);
 >  Asynchronous chown. No arguments other than a possible exception are given to the completion callback.
 
 
 
 ```js
 
-fs.chownSync(path, uid, gid);              
+fs.chownSync(path, uid, gid);
 ````
 
 > Synchronous chown.
 
 ```js
-fs.fchown(fd, uid, gid, callback);      
+fs.fchown(fd, uid, gid, callback);
 ```
 
-***
+---
 
 > Asynchronous fchown. No arguments other than a possible exception are given to the completion callback.
 
 ```js
-fs.fchownSync(fd, uid, gid);            
+fs.fchownSync(fd, uid, gid);
 ```
 
-***
+---
 
 > Synchronous fchown.
 
@@ -1335,13 +1337,13 @@ fs.lchown(path, uid, gid, callback);
 > Asynchronous lchown. No arguments other than a possible exception are given to the completion callback.
 
 ```js
-fs.lchownSync(path, uid, gid);              
+fs.lchownSync(path, uid, gid);
 ```
 
 > Synchronous lchown.
 
 ```js
-fs.chmod(path, mode, callback);         
+fs.chmod(path, mode, callback);
 ```
 
 > Asynchronous chmod. No arguments other than a possible exception are given to the completion callback.
@@ -1353,7 +1355,7 @@ fs.chmodSync(path, mode);
 > Synchronous chmod.
 
 ```js
-fs.fchmod(fd, mode, callback);              
+fs.fchmod(fd, mode, callback);
 ```
 
 > Asynchronous fchmod. No arguments other than a possible exception are given to the completion callback.
@@ -1365,13 +1367,13 @@ fs.fchmodSync(fd, mode);
 > Synchronous fchmod.
 
 ```js
-fs.lchmod(path, mode, callback);        
+fs.lchmod(path, mode, callback);
 ```
 
 > Asynchronous lchmod. No arguments other than a possible exception are given to the completion callback.
 
 ```js
-fs.lchmodSync(path, mode);              
+fs.lchmodSync(path, mode);
 ```
 
 > Synchronous lchmod.
@@ -1383,7 +1385,7 @@ fs.stat(path, callback);
 > Asynchronous stat. The callback gets two arguments (err, stats) where stats is a fs.Stats object.
 
 ```js
-fs.statSync(path);      
+fs.statSync(path);
 ```
 
 > Synchronous stat. Returns an instance of fs.Stats.
@@ -1401,38 +1403,38 @@ fs.lstatSync(path);
 > Synchronous lstat. Returns an instance of fs.Stats.
 
 ````js
-fs.fstat(fd, callback); 
+fs.fstat(fd, callback);
 >  Asynchronous fstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. fstat() is identical to stat(), except that the file to be stat-ed is specified by the file descriptor fd.
 
 
 
 ```js
 
-fs.fstatSync(fd);       
+fs.fstatSync(fd);
 ````
 
-***
+---
 
 > Synchronous fstat. Returns an instance of fs.Stats.
 
 ````js
-fs.link(srcpath, dstpath, callback);             
+fs.link(srcpath, dstpath, callback);
 >  Asynchronous link. No arguments other than a possible exception are given to the completion callback.
 
 
 
 ```js
 
-fs.linkSync(srcpath, dstpath);               
+fs.linkSync(srcpath, dstpath);
 ````
 
 > Synchronous link.
 
 ```js
-fs.symlink(srcpath, dstpath, [type], callback);  
+fs.symlink(srcpath, dstpath, [type], callback);
 ```
 
-***
+---
 
 > Asynchronous symlink. No arguments other than a possible exception are given to the completion callback. The type argument can be set to 'dir', 'file', or 'junction' (default is 'file') and is only available on Windows (ignored on other platforms)
 
@@ -1449,30 +1451,30 @@ fs.readlink(path, callback);
 > Asynchronous readlink. The callback gets two arguments (err, linkString).
 
 ```js
-fs.readlinkSync(path);           
+fs.readlinkSync(path);
 ```
 
-***
+---
 
 > Synchronous readlink. Returns the symbolic link's string value.
 
 ```js
-fs.unlink(path, callback);       
+fs.unlink(path, callback);
 ```
 
-***
+---
 
 > Asynchronous unlink. No arguments other than a possible exception are given to the completion callback.
 
 ````js
-fs.unlinkSync(path);             
+fs.unlinkSync(path);
 >  Synchronous unlink.
 
 
 
 ```js
 
-fs.realpath(path, [cache], callback);     
+fs.realpath(path, [cache], callback);
 >  Asynchronous realpath. The callback gets two arguments (err, resolvedPath).
 
 
@@ -1485,22 +1487,22 @@ fs.realpathSync(path, [cache]);
 > Synchronous realpath. Returns the resolved path.
 
 ````js
-fs.rmdir(path, callback); 
+fs.rmdir(path, callback);
 >  Asynchronous rmdir. No arguments other than a possible exception are given to the completion callback.
 
 
 
 ```js
 
-fs.rmdirSync(path);       
+fs.rmdirSync(path);
 ````
 
-***
+---
 
 > Synchronous rmdir.
 
 ```js
-fs.mkdir(path, [mode], callback);         
+fs.mkdir(path, [mode], callback);
 ```
 
 > Asynchronous mkdir. No arguments other than a possible exception are given to the completion callback. mode defaults to 0777.
@@ -1524,7 +1526,7 @@ fs.readdirSync(path);
 > Synchronous readdir. Returns an array of filenames excluding '.' and '..'.
 
 ```js
-fs.close(fd, callback);               
+fs.close(fd, callback);
 ```
 
 > Asynchronous close. No arguments other than a possible exception are given to the completion callback.
@@ -1536,7 +1538,7 @@ fs.closeSync(fd);
 > Synchronous close.
 
 ```js
-fs.open(path, flags, [mode], callback);   
+fs.open(path, flags, [mode], callback);
 ```
 
 > Asynchronous file open.
@@ -1548,33 +1550,33 @@ fs.openSync(path, flags, [mode]);
 > Synchronous version of fs.open().
 
 ```js
-fs.utimes(path, atime, mtime, callback);  
+fs.utimes(path, atime, mtime, callback);
 ```
 
-***
+---
 
 > Change file timestamps of the file referenced by the supplied path.
 
 ```js
-fs.utimesSync(path, atime, mtime);        
+fs.utimesSync(path, atime, mtime);
 ```
 
 > Synchronous version of fs.utimes().
 
 ```js
-fs.futimes(fd, atime, mtime, callback);   
+fs.futimes(fd, atime, mtime, callback);
 ```
 
 > Change the file timestamps of a file referenced by the supplied file descriptor.
 
 ```js
-fs.futimesSync(fd, atime, mtime);         
+fs.futimesSync(fd, atime, mtime);
 ```
 
 > Synchronous version of fs.futimes().
 
 ```js
-fs.fsync(fd, callback);               
+fs.fsync(fd, callback);
 ```
 
 > Asynchronous fsync. No arguments other than a possible exception are given to the completion callback.
@@ -1586,27 +1588,27 @@ fs.fsyncSync(fd);
 > Synchronous fsync.
 
 ```js
-fs.write(fd, buffer, offset, length, position, callback);  
+fs.write(fd, buffer, offset, length, position, callback);
 ```
 
-***
+---
 
 > Write buffer to the file specified by fd.
 
 ```js
-fs.writeSync(fd, buffer, offset, length, position);        
+fs.writeSync(fd, buffer, offset, length, position);
 ```
 
 > Synchronous version of fs.write(). Returns the number of bytes written.
 
 ```js
-fs.read(fd, buffer, offset, length, position, callback);   
+fs.read(fd, buffer, offset, length, position, callback);
 ```
 
 > Read data from the file specified by fd.
 
 ```js
-fs.readSync(fd, buffer, offset, length, position);         
+fs.readSync(fd, buffer, offset, length, position);
 ```
 
 > Synchronous version of fs.read. Returns the number of bytesRead.
@@ -1624,7 +1626,7 @@ fs.readFileSync(filename, [options]);
 > Synchronous version of fs.readFile. Returns the contents of the filename. If the encoding option is specified then this function returns a string. Otherwise it returns a buffer.
 
 ```js
-fs.writeFile(filename, data, [options], callback);   
+fs.writeFile(filename, data, [options], callback);
 ```
 
 > Asynchronously writes data to a file, replacing the file if it already exists. data can be a string or a buffer.
@@ -1636,10 +1638,10 @@ fs.writeFileSync(filename, data, [options]);
 > The synchronous version of fs.writeFile.
 
 ```js
-fs.appendFile(filename, data, [options], callback);  
+fs.appendFile(filename, data, [options], callback);
 ```
 
-***
+---
 
 > Asynchronously append data to a file, creating the file if it not yet exists. data can be a string or a buffer.
 
@@ -1656,10 +1658,10 @@ fs.watch(filename, [options], [listener]);
 > Watch for changes on filename, where filename is either a file or a directory. The returned object is a fs.FSWatcher. The listener callback gets two arguments (event, filename). event is either 'rename' or 'change', and filename is the name of the file which triggered the event.
 
 ```js
-fs.exists(path, callback);           
+fs.exists(path, callback);
 ```
 
-***
+---
 
 > Test whether or not the given path exists by checking with the file system. Then call the callback argument with either true or false. (should not be used) fs.existsSync(path);
 
@@ -1675,50 +1677,50 @@ stats.isFile();
 stats.isDirectory()
 stats.isBlockDevice()
 stats.isCharacterDevice()
-stats.isSymbolicLink()  
+stats.isSymbolicLink()
 >  (only valid with fs.lstat())
 stats.isFIFO()
 stats.isSocket()
-fs.createReadStream(path, [options]);   
+fs.createReadStream(path, [options]);
 ````
 
 > Returns a new ReadStream object.
 
 ```js
-fs.createWriteStream(path, [options]);  
+fs.createWriteStream(path, [options]);
 ```
 
-***
+---
 
 > Returns a new WriteStream object. Use require('path') to use this module. This module contains utilities for handling and transforming file paths. Almost all these methods perform only string transformations. The file system is not consulted to check whether paths are valid.
 
 ````js
-path.normalize(p);    
+path.normalize(p);
 >  Normalize a string path, taking care of '..' and '.' parts.
 
 
 
 ```js
 
-path.join([path1], [path2], [...]);   
+path.join([path1], [path2], [...]);
 ````
 
 > Join all arguments together and normalize the resulting path.
 
 ```js
-path.resolve([from ...], to);         
+path.resolve([from ...], to);
 ```
 
 > Resolves 'to' to an absolute path.
 
 ```js
-path.relative(from, to);              
+path.relative(from, to);
 ```
 
 > Solve the relative path from 'from' to 'to'.
 
 ````js
-path.dirname(p);      
+path.dirname(p);
 >  Return the directory name of a path. Similar to the Unix dirname command.
 
 
@@ -1731,31 +1733,31 @@ path.basename(p, [ext]);
 > Return the last portion of a path. Similar to the Unix basename command.
 
 ```js
-path.extname(p);      
+path.extname(p);
 ```
 
-***
+---
 
 > Return the extension of the path, from the last '.' to end of string in the last portion of the path.
 
 ```js
-path.sep;                             
+path.sep;
 ```
 
-***
+---
 
 > The platform-specific file separator. '\\' or '/'.
 
 ```js
-path.delimiter;                       
+path.delimiter;
 ```
 
-***
+---
 
 > The platform-specific path delimiter, ';' or ':'. To use the HTTP server and client one must require('http').
 
 ```js
-http.STATUS_CODES;                                             
+http.STATUS_CODES;
 ```
 
 > A collection of all the standard HTTP response status codes, and the short description of each.
@@ -1781,7 +1783,7 @@ http.get(options, [callback]);
 server = http.createServer([requestListener]);
 ```
 
-***
+---
 
 > Returns a new web server object. The requestListener is a function which is automatically added to the 'request' event.
 
@@ -1810,68 +1812,68 @@ server.close([callback]);
 > Stops the server from accepting new connections.
 
 ````js
-server.setTimeout(msecs, callback);            
+server.setTimeout(msecs, callback);
 >  Sets the timeout value for sockets, and emits a 'timeout' event on the Server object, passing the socket as an argument, if a timeout occurs.
 
 
 
 ```js
 
-server.maxHeadersCount;  
+server.maxHeadersCount;
 ````
 
-***
+---
 
 > Limits maximum incoming headers count, equal to 1000 by default. If set to 0 - no limit will be applied.
 
 ```js
-server.timeout;              
+server.timeout;
 ```
 
 > The number of milliseconds of inactivity before a socket is presumed to have timed out.
 
 ```js
-server.on('request', function (request, response) { });        
+server.on("request", function (request, response) {});
 ```
 
 > Emitted each time there is a request.
 
 ```js
-server.on('connection', function (socket) { });
+server.on("connection", function (socket) {});
 ```
 
 > When a new TCP stream is established.
 
 ```js
-server.on('close', function () { });           
+server.on("close", function () {});
 ```
 
-***
+---
 
 > Emitted when the server closes.
 
 ```js
-server.on('checkContinue', function (request, response) { });  
+server.on("checkContinue", function (request, response) {});
 ```
 
-***
+---
 
 > Emitted each time a request with an http Expect: 100-continue is received.
 
 ```js
-server.on('connect', function (request, socket, head) { });
+server.on("connect", function (request, socket, head) {});
 ```
 
 > Emitted each time a client requests a http CONNECT method.
 
 ```js
-server.on('upgrade', function (request, socket, head) { });
+server.on("upgrade", function (request, socket, head) {});
 ```
 
 > Emitted each time a client requests a http upgrade.
 
 ```js
-server.on('clientError', function (exception, socket) { });
+server.on("clientError", function (exception, socket) {});
 ```
 
 > If a client connection emits an 'error' event - it will forwarded here.
@@ -1898,7 +1900,7 @@ request.abort();
 request.setTimeout(timeout, [callback]);
 ```
 
-***
+---
 
 > Once a socket is assigned to this request and is connected socket.setTimeout() will be called.
 
@@ -1915,32 +1917,32 @@ request.setSocketKeepAlive([enable], [initialDelay]);
 > Once a socket is assigned to this request and is connected socket.setKeepAlive() will be called.
 
 ```js
-request.on('response', function(response) { });
+request.on("response", function (response) {});
 ```
 
 > Emitted when a response is received to this request. This event is emitted only once.
 
 ````js
-request.on('socket', function(socket) { });    
+request.on('socket', function(socket) { });
 >  Emitted after a socket is assigned to this request.
 
 
 
 ```js
 
-request.on('connect', function(response, socket, head) { });   
+request.on('connect', function(response, socket, head) { });
 ````
 
 > Emitted each time a server responds to a request with a CONNECT method. If this event isn't being listened for, clients receiving a CONNECT method will have their connections closed.
 
 ```js
-request.on('upgrade', function(response, socket, head) { });   
+request.on("upgrade", function (response, socket, head) {});
 ```
 
 > Emitted each time a server responds to a request with an upgrade. If this event isn't being listened for, clients receiving an upgrade header will have their connections closed.
 
 ```js
-request.on('continue', function() { });      
+request.on("continue", function () {});
 ```
 
 > Emitted when the server sends a '100 Continue' HTTP response, usually because the request contained 'Expect: 100-continue'. This is an instruction that the client should send the request body.
@@ -1958,21 +1960,21 @@ response.writeContinue();
 > Sends a HTTP/1.1 100 Continue message to the client, indicating that the request body should be sent.
 
 ````js
-response.writeHead(statusCode, [reasonPhrase], [headers]);     
+response.writeHead(statusCode, [reasonPhrase], [headers]);
 >  Sends a response header to the request.
 
 
 
 ```js
 
-response.setTimeout(msecs, callback);          
+response.setTimeout(msecs, callback);
 >  Sets the Socket's timeout value to msecs. If a callback is provided, then it is added as a listener on the 'timeout' event on the response object.
 
 
 
 ```js
 
-response.setHeader(name, value);               
+response.setHeader(name, value);
 >  Sets a single header value for implicit headers. If this header already exists in the to-be-sent headers, its value will be replaced. Use an array of strings here if you need to send multiple headers with the same name.
 
 
@@ -2003,60 +2005,60 @@ response.end([data], [encoding]);
 > This method signals to the server that all of the response headers and body have been sent; that server should consider this message complete. The method, response.end(), MUST be called on each response.
 
 ````js
-response.statusCode;                                           
+response.statusCode;
 >  When using implicit headers (not calling response.writeHead() explicitly), this property controls the status code that will be sent to the client when the headers get flushed.
 
 
 
 ```js
 
-response.headersSent;                                          
+response.headersSent;
 >  Boolean (read-only). True if headers were sent, false otherwise.
 
 
 
 ```js
 
-response.sendDate;                                             
+response.sendDate;
 >  When true, the Date header will be automatically generated and sent in the response if it is not already present in the headers. Defaults to true.
 
 
 
 ```js
 
-response.on('close', function () { });  
+response.on('close', function () { });
 ````
 
-***
+---
 
 > Indicates that the underlying connection was terminated before response.end() was called or able to flush.
 
 ```js
-response.on('finish', function() { });  
+response.on("finish", function () {});
 ```
 
-***
+---
 
 > Emitted when the response has been sent.
 
 ````js
-message.httpVersion;                    
+message.httpVersion;
 >  In case of server request, the HTTP version sent by the client. In the case of client response, the HTTP version of the connected-to server.
 
 
 
 ```js
 
-message.headers;      
+message.headers;
 ````
 
 > The request/response headers object.
 
 ```js
-message.trailers;                       
+message.trailers;
 ```
 
-***
+---
 
 > The request/response trailers object. Only populated after the 'end' event.
 
@@ -2067,7 +2069,7 @@ message.method;
 > The request method as a string. Read only. Example: 'GET', 'DELETE'.
 
 ````js
-message.url;                            
+message.url;
 >  Request URL string. This contains only the URL that is present in the actual HTTP request.
 
 
@@ -2092,10 +2094,10 @@ message.setTimeout(msecs, callback);
 > Calls message.connection.setTimeout(msecs, callback). This module has utilities for URL resolution and parsing. Call require('url') to use it.
 
 ```js
-url.parse(urlStr, [parseQueryString], [slashesDenoteHost]);  
+url.parse(urlStr, [parseQueryString], [slashesDenoteHost]);
 ```
 
-***
+---
 
 > Take a URL string, and return an object.
 
@@ -2129,24 +2131,25 @@ querystring.stringify(obj, [sep], [eq]);
 > Serialize an object to a query string. Optionally override the default separator ('&') and assignment ('=') characters.
 
 ```js
-querystring.parse(str, [sep], [eq], [options]);  
+querystring.parse(str, [sep], [eq], [options]);
 ```
 
-***
+---
 
 > Deserialize a query string to an object. Optionally override the default separator ('&') and assignment ('=') characters. This module is used for writing unit tests for your applications, you can access it with require('assert').
 
 ```js
-assert.fail(actual, expected, message, operator);     
+assert.fail(actual, expected, message, operator);
 ```
 
 > Throws an exception that displays the values for actual and expected separated by the provided operator.
 
 ```js
-assert(value, message); assert.ok(value, [message]);  
+assert(value, message);
+assert.ok(value, [message]);
 ```
 
-***
+---
 
 > Tests if value is truthy, it is equivalent to assert.equal(true, !!value, message);
 
@@ -2154,7 +2157,7 @@ assert(value, message); assert.ok(value, [message]);
 assert.equal(actual, expected, [message]);
 ```
 
-***
+---
 
 > Tests shallow, coercive equality with the equal comparison operator ( == ).
 
@@ -2171,7 +2174,7 @@ assert.deepEqual(actual, expected, [message]);
 > Tests for deep equality.
 
 ```js
-assert.notDeepEqual(actual, expected, [message]);     
+assert.notDeepEqual(actual, expected, [message]);
 ```
 
 > Tests for any deep inequality.
@@ -2180,12 +2183,12 @@ assert.notDeepEqual(actual, expected, [message]);
 assert.strictEqual(actual, expected, [message]);
 ```
 
-***
+---
 
 > Tests strict equality, as determined by the strict equality operator ( === )
 
 ```js
-assert.notStrictEqual(actual, expected, [message]);   
+assert.notStrictEqual(actual, expected, [message]);
 ```
 
 > Tests strict non-equality, as determined by the strict not equal operator ( !== )
@@ -2203,25 +2206,25 @@ assert.doesNotThrow(block, [message]);
 > Expects block not to throw an error, see assert.throws for details.
 
 ```js
-assert.ifError(value);                
+assert.ifError(value);
 ```
 
 > Tests if value is not a false value, throws if it is a true value. Useful when testing the first argument, error in callbacks. Provides a few basic operating-system related utility functions. Use require('os') to access this module.
 
 ```js
-os.tmpdir();             
+os.tmpdir();
 ```
 
 > Returns the operating system's default directory for temp files.
 
 ```js
-os.endianness();         
+os.endianness();
 ```
 
 > Returns the endianness of the CPU. Possible values are "BE" or "LE".
 
 ```js
-os.hostname();              
+os.hostname();
 ```
 
 > Returns the hostname of the operating system.
@@ -2233,7 +2236,7 @@ os.type();
 > Returns the operating system name.
 
 ```js
-os.platform();              
+os.platform();
 ```
 
 > Returns the operating system platform.
@@ -2245,39 +2248,39 @@ os.arch();
 > Returns the operating system CPU architecture.
 
 ```js
-os.release();            
+os.release();
 ```
 
-***
+---
 
 > Returns the operating system release.
 
 ````js
-os.uptime();             
+os.uptime();
 >  Returns the system uptime in seconds.
 
 
 
 ```js
 
-os.loadavg();            
+os.loadavg();
 ````
 
-***
+---
 
 > Returns an array containing the 1, 5, and 15 minute load averages.
 
 ```js
-os.totalmem();              
+os.totalmem();
 ```
 
 > Returns the total amount of system memory in bytes.
 
 ```js
-os.freemem();            
+os.freemem();
 ```
 
-***
+---
 
 > Returns the amount of free system memory in bytes.
 
@@ -2288,15 +2291,15 @@ os.cpus();
 > Returns an array of objects containing information about each CPU/core installed: model, speed (in MHz), and times (an object containing the number of milliseconds the CPU/core spent in: user, nice, sys, idle, and irq).
 
 ```js
-os.networkInterfaces();  
+os.networkInterfaces();
 ```
 
-***
+---
 
 > Get a list of network interfaces.
 
 ```js
-os.EOL;                  
+os.EOL;
 >  A constant defining the appropriate End-of-line marker for the operating system.
 ```
 
@@ -2364,10 +2367,10 @@ buf.toJSON();
 > Returns a JSON-representation of the Buffer instance, which is identical to the output for JSON Arrays
 
 ```js
-buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd]);  
+buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd]);
 ```
 
-***
+---
 
 > Does copy between buffers. The source and target regions can be overlapped
 
@@ -2384,36 +2387,37 @@ buf.fill(value, [offset], [end]);
 > Fills the buffer with the specified value
 
 ```js
-buf[index];                                                         
+buf[index];
 ```
 
 > Get and set the octet at index
 
 ```js
-buf.length;                                                     
+buf.length;
 ```
 
 > The size of the buffer in bytes, Note that this is not necessarily the size of the contents
 
 ```js
-buffer.INSPECT_MAX_BYTES;                                           
+buffer.INSPECT_MAX_BYTES;
 ```
 
 > How many bytes will be returned when buffer.inspect() is called. This can be overridden by user modules.
 
 ```js
+
 ```
 
 ## ReactJS
 
-***
+---
 
 ```bash
-npm install --save react       
+npm install --save react
 #// declarative and flexible JavaScript library for building UI
 npm install --save react-dom
 # > serves as the entry point of the DOM-related rendering paths
-npm install --save prop-types  
+npm install --save prop-types
 #// runtime type checking for React props and similar objects
 ```
 
@@ -2426,11 +2430,7 @@ npm install --save prop-types
 > You will not typically invoke React.createElement() directly if you are using JSX.
 
 ```js
-React.createElement(
-type,
-[props],
-[...children]
-)
+React.createElement(type, [props], [...children]);
 ```
 
 > Clone and return a new React element using element as the starting point.
@@ -2438,17 +2438,13 @@ type,
 > The resulting element will have the original element’s props with the new props merged in shallowly.
 
 ```js
-React.cloneElement(
-element,
-[props],
-[...children]
-)
+React.cloneElement(element, [props], [...children]);
 ```
 
 > Verifies the object is a React element. Returns true or false.
 
 ```js
-React.isValidElement(object)
+React.isValidElement(object);
 ```
 
 > React.Children> provides utilities for dealing with the this.props.children opaque data structure. Invokes a function on every immediate child contained within children with this set to thisArg.
@@ -2466,7 +2462,7 @@ React.Children.forEach(children, function[(thisArg)])
 > Returns the total number of components in children, equal to the number of times that a callback passed to map or forEach would be invoked.
 
 ```js
-React.Children.count(children)
+React.Children.count(children);
 ```
 
 > Verifies that children has only one child (a React element) and returns it.
@@ -2474,7 +2470,7 @@ React.Children.count(children)
 > Otherwise this method throws an error.
 
 ```js
-React.Children.only(children)
+React.Children.only(children);
 ```
 
 > Returns the children opaque data structure as a flat array with keys assigned to each child.
@@ -2482,7 +2478,7 @@ React.Children.only(children)
 > Useful if you want to manipulate collections of children in your render methods, especially if you want to reorder or slice this.props.children before passing it down.
 
 ```js
-React.Children.toArray(children)
+React.Children.toArray(children);
 ```
 
 > The React.Fragment component lets you return multiple elements in a render() method without creating an additional DOM element
@@ -2501,7 +2497,7 @@ class Component extends React.Component {
 > Binding makes sure the method has access to component attributes like this.props and this.state
 
 ```js
-  this.method = this.method.bind(this);
+this.method = this.method.bind(this);
 ```
 
 > The constructor is the right place to initialize state.
@@ -2644,7 +2640,7 @@ render() {
 > Contains the props that were defined by the caller of this component.
 
 ```js
-  console.log(this.props);
+console.log(this.props);
 ```
 
 > Contains data specific to this component that may change over time.
@@ -2697,7 +2693,7 @@ render() {
 
 ```js
 Component.defaultProps = {
-color: 'blue'
+  color: "blue",
 };
 component = new Component();
 ```
@@ -2762,7 +2758,7 @@ ReactDOM.hydrate(element, container[, callback])
 > Returns true if a component was unmounted and false if there was no component to unmount.
 
 ```js
-ReactDOM.unmountComponentAtNode(container)
+ReactDOM.unmountComponentAtNode(container);
 ```
 
 > If this component has been mounted into the DOM, this returns the corresponding native browser
@@ -2830,7 +2826,7 @@ ReactDOMServer.renderToString(element)
 > page generator, as stripping away the extra attributes can save some bytes.
 
 ```js
-ReactDOMServer.renderToStaticMarkup(element)
+ReactDOMServer.renderToStaticMarkup(element);
 ```
 
 > Render a React element to its initial HTML. Returns a Readable stream that outputs an HTML string.

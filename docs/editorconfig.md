@@ -66,4 +66,4 @@ indent_size = 2
 
 #### References
 
-* [https://EditorConfig.org](https://editorconfig.org)
+- [https://EditorConfig.org](https://editorconfig.org)

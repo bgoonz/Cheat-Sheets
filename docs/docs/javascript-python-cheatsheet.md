@@ -2,26 +2,26 @@
 
 ### Contents
 
-* Versions
-* Development Environments
-* Running Programs
-* Comments
-* Semicolons
-* Whitespace, Blocks
-* Functions
-* Arithmetic Operators
-* Variables
-* Data Types
-* Arrays/Lists
-* Slices
-* Objects/Dicts
-* String Formatting
-* Booleans and Conditionals
-* `for` Loops
-* `while` Loops
-* `switch` Statement
-* `if` Conditionals
-* Classes
+- Versions
+- Development Environments
+- Running Programs
+- Comments
+- Semicolons
+- Whitespace, Blocks
+- Functions
+- Arithmetic Operators
+- Variables
+- Data Types
+- Arrays/Lists
+- Slices
+- Objects/Dicts
+- String Formatting
+- Booleans and Conditionals
+- `for` Loops
+- `while` Loops
+- `switch` Statement
+- `if` Conditionals
+- Classes
 
 ### Versions
 

@@ -1,7 +1,5 @@
 # Linux
 
-
-
 ### Linux Commands List <a href="#ftoc-heading-2" id="ftoc-heading-2"></a>
 
 The commands found in the downloadable cheat sheet are listed below.
@@ -137,7 +135,7 @@ mkdir [directory]
 [Remove a file](https://phoenixnap.com/kb/how-to-remove-files-directories-linux-command-line):
 
 ```
-rm [file_name] 
+rm [file_name]
 ```
 
 **Remove a directory** recursively:
@@ -291,7 +289,7 @@ scp [file_name.txt] [server/tmp]
 **Synchronize** the contents of a directory **with a backup directory** using the [rsync command](https://phoenixnap.com/kb/rsync-command-linux-examples):
 
 ```
-rsync -a [/your/directory] [/backup/] 
+rsync -a [/your/directory] [/backup/]
 ```
 
 #### Users <a href="#ftoc-heading-9" id="ftoc-heading-9"></a>
@@ -347,7 +345,7 @@ sudo [command_to_be_executed_as_superuser]
 **Delete** a user:
 
 ```
-userdel [user_name] 
+userdel [user_name]
 ```
 
 **Modify** user information with:
@@ -493,19 +491,19 @@ lsof
 Show **system information**:
 
 ```
-uname -r 
+uname -r
 ```
 
 See [kernel release information](https://phoenixnap.com/kb/check-linux-kernel-version):
 
 ```
-uname -a  
+uname -a
 ```
 
 Display **how long the system has been running**, including load average:
 
 ```
-uptime 
+uptime
 ```
 
 See system **hostname**:
@@ -517,13 +515,13 @@ hostname
 Show the **IP address** of the system:
 
 ```
-hostname -i 
+hostname -i
 ```
 
 List system **reboot history**:
 
 ```
-last reboot 
+last reboot
 ```
 
 See current **time and date**:
@@ -535,7 +533,7 @@ date
 Query and **change the system clock** with:
 
 ```
-timedatectl 
+timedatectl
 ```
 
 Show current **calendar** (month and day):
@@ -713,7 +711,7 @@ whois [domain]
 Show **DNS information** about a domain using the [dig command](https://phoenixnap.com/kb/linux-dig-command-examples):
 
 ```
-dig [domain] 
+dig [domain]
 ```
 
 Do a **reverse lookup** **on domain**:

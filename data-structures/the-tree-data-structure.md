@@ -8,7 +8,7 @@ Of course, all the code can also be found on Github in the repository [data-stru
 
 ## Definition
 
-> A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. **From** [**Wikipedia**](https://en.wikipedia.org/wiki/Tree\_\(data\_structure\))
+> A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. **From** [**Wikipedia**](<https://en.wikipedia.org/wiki/Tree_(data_structure)>)
 
 ## Complexity
 
@@ -181,10 +181,10 @@ tree.remove('cfo');
 tree.print(); // => ceo | cto | dev1 dev2 dev3
 ```
 
-***
+---
 
-***
+---
 
-***
+---
 
 [Source](http://blog.benoitvallon.com/data-structures-in-javascript/the-tree-data-structure/)

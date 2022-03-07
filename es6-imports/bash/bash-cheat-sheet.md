@@ -6,20 +6,16 @@ coverY: -16.14267515923567
 
 # Bash Cheat Sheet
 
-
-
-
-
-* One Liners
-  * Block Bad IPs
-* If Statements
-  * Check if args are passed
-  * Check if required variables exist
-  * Check if environment variables exists
-* While Loops
-  * Run for 5 Seconds
-* Redirecting Outputs
-  * Stdout, Stderr
+- One Liners
+  - Block Bad IPs
+- If Statements
+  - Check if args are passed
+  - Check if required variables exist
+  - Check if environment variables exists
+- While Loops
+  - Run for 5 Seconds
+- Redirecting Outputs
+  - Stdout, Stderr
 
 ### Commands
 
@@ -161,21 +157,21 @@ grep -irl faker . &> file.log
 ```
 
 ```bash
-	pushd 
+	pushd
 	# goes to a directory from directory
-	popd 
+	popd
 	# returns to the original directory
 	file
 	# gives info about the file
-	locate <name> 
+	locate <name>
 	# locates find
 	sudo updatedb
 	# updates database
-	which <name> 
+	which <name>
 	# tells if install
-	history 
+	history
 	# shows command history
-	whatis 
+	whatis
 	# tells info about command
 	apropos <search term>
 	# displays commands with that search term

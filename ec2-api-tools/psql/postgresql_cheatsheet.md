@@ -1,8 +1,6 @@
-# postgreSQL\_cheatsheet
+# postgreSQL_cheatsheet
 
 ### \PostgreSQL commands\\\\\\
-
-
 
 Create a new [role](https://www.postgresqltutorial.com/postgresql-roles/):
 

@@ -8,7 +8,7 @@ Of course, all the code can also be found on Github in the repository [data-stru
 
 ## Definition
 
-> A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed. **From** [**Wikipedia**](https://en.wikipedia.org/wiki/Queue\_\(abstract\_data\_type\))
+> A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed. **From** [**Wikipedia**](<https://en.wikipedia.org/wiki/Queue_(abstract_data_type)>)
 
 As for the Stack data structure, a peek operation is often added to the Queue data structure. It returns the value of the front element without dequeuing it.
 
@@ -61,10 +61,10 @@ console.log('peek is undefined:', queue.peek()); // => undefined
 console.log('dequeue is undefined:', queue.dequeue()); // => undefined
 ```
 
-***
+---
 
-***
+---
 
-***
+---
 
 [Source](http://blog.benoitvallon.com/data-structures-in-javascript/the-queue-data-structure/)

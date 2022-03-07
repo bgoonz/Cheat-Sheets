@@ -32,7 +32,7 @@
 
 > Create account->create droplet
 
-#### Create Keys For Droplet (id\_rsa\_do)
+#### Create Keys For Droplet (id_rsa_do)
 
 `$ ssh-keygen -t rsa`
 
@@ -82,7 +82,7 @@
 
 `$ touch authorized_keys`
 
-`> sudo nano authorized_keys` (paste in the id\_rsa\_do.pub key, exit and log in as bryan)
+`> sudo nano authorized_keys` (paste in the id_rsa_do.pub key, exit and log in as bryan)
 
 #### Disable root password login
 
@@ -114,7 +114,7 @@
 
 #### Generate Github Key(On Server)
 
-`$ ssh-keygen -t rsa` (id\_rsa\_github or whatever you want)
+`$ ssh-keygen -t rsa` (id_rsa_github or whatever you want)
 
 ### Add new key
 
@@ -182,7 +182,7 @@
 
 > Create account->create droplet
 
-#### Create Keys For Droplet (id\_rsa\_do)
+#### Create Keys For Droplet (id_rsa_do)
 
 `$ ssh-keygen -t rsa`
 
@@ -232,7 +232,7 @@
 
 `$ touch authorized_keys`
 
-`> sudo nano authorized_keys` (paste in the id\_rsa\_do.pub key, exit and log in as bryan)
+`> sudo nano authorized_keys` (paste in the id_rsa_do.pub key, exit and log in as bryan)
 
 #### Disable root password login
 
@@ -264,7 +264,7 @@
 
 #### Generate Github Key(On Server)
 
-`$ ssh-keygen -t rsa` (id\_rsa\_github or whatever you want)
+`$ ssh-keygen -t rsa` (id_rsa_github or whatever you want)
 
 ### Add new key
 
